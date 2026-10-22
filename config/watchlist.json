@@ -1,0 +1,17 @@
+{
+  "_comentario": "Fabricantes e produtos que elevam a prioridade. Borda e acesso privilegiado primeiro. Edite à vontade: a comparação é por texto, sem diferenciar maiúsculas.",
+  "borda_e_acesso": [
+    "fortinet", "fortios", "fortigate", "fortiproxy", "fortipam", "fortimail", "fortimanager",
+    "cisco", "palo alto", "pan-os", "globalprotect", "ivanti", "connect secure", "pulse secure",
+    "citrix", "netscaler", "f5", "big-ip", "sonicwall", "check point", "juniper", "junos",
+    "beyondtrust", "cyberark", "okta", "zscaler", "arista", "velocloud", "vmware", "broadcom",
+    "vcenter", "esxi", "openssl", "openssh"
+  ],
+  "plataformas_corporativas": [
+    "microsoft", "windows", "exchange", "sharepoint", "active directory", "entra",
+    "oracle", "weblogic", "e-business suite", "peoplesoft", "sap", "netweaver", "s/4hana",
+    "gitlab", "github", "jenkins", "atlassian", "confluence", "jira", "bitbucket",
+    "kubernetes", "red hat", "ibm", "websphere", "apache", "tomcat", "struts", "php",
+    "databricks", "snowflake", "aws", "azure", "google cloud", "salesforce", "servicenow"
+  ]
+}
