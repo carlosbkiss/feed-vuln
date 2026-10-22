@@ -14,11 +14,14 @@ O `data/status.json` (hora da última verificação e saúde das fontes) é gera
 
 ## Regras de prioridade dos alertas
 
-- **P0**: está no CISA KEV e é de fabricante de borda ou acesso (ou tem CVSS ≥ 9)
-- **P1**: está no KEV, ou tem CVSS ≥ 9 em fabricante da lista
-- **P2**: CVSS ≥ 9 fora da lista
+| Prioridade | Regra |
+| --- | --- |
+| P0 | No KEV **e** (borda, acesso, identidade ou CI/CD **ou** CVSS ≥ 9) |
+| P1 | No KEV em plataforma corporativa, **ou** CVSS ≥ 9 sem exploração em borda/acesso/CI/CD |
+| P2 | CVSS ≥ 9 sem exploração em plataforma corporativa, **ou** KEV fora das listas (shadow IT) |
+| fora | CVSS ≥ 9 sem exploração e fora das listas: não vira alerta |
 
-A lista de fabricantes fica em `config/watchlist.json`.
+As listas ficam em `config/watchlist.json` e a comparação é por palavra inteira. Termos amplos como "oracle" ou "azure" geram ruído; prefira o produto (`weblogic`, `soa suite`). Mudou a lista, a próxima rodada reaplica as regras a todos os alertas guardados.
 
 ## Configuração
 

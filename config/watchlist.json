@@ -1,17 +1,19 @@
 {
-  "_comentario": "Fabricantes e produtos que elevam a prioridade. Borda e acesso privilegiado primeiro. Edite à vontade: a comparação é por texto, sem diferenciar maiúsculas.",
+  "_comentario": "Termos comparados por palavra inteira, sem diferenciar maiúsculas. Grupo 1 sobe prioridade (borda, acesso, identidade, CI/CD). Grupo 2 só entra como P2. CVE fora do KEV e fora das duas listas não vira alerta. Evite termos amplos (ex.: 'oracle', 'azure'), que trazem ruído.",
   "borda_e_acesso": [
-    "fortinet", "fortios", "fortigate", "fortiproxy", "fortipam", "fortimail", "fortimanager",
+    "fortinet", "fortios", "fortigate", "fortiproxy", "fortipam", "fortimail", "fortimanager", "fortiweb",
     "cisco", "palo alto", "pan-os", "globalprotect", "ivanti", "connect secure", "pulse secure",
     "citrix", "netscaler", "f5", "big-ip", "sonicwall", "check point", "juniper", "junos",
-    "beyondtrust", "cyberark", "okta", "zscaler", "arista", "velocloud", "vmware", "broadcom",
-    "vcenter", "esxi", "openssl", "openssh"
+    "beyondtrust", "cyberark", "okta", "zscaler", "arista", "velocloud",
+    "vcenter", "esxi", "openssh", "openssl",
+    "oracle access manager", "weblogic", "active directory", "exchange server", "entra id",
+    "gitlab", "jenkins", "github enterprise", "bitbucket", "teamcity", "argo cd"
   ],
   "plataformas_corporativas": [
-    "microsoft", "windows", "exchange", "sharepoint", "active directory", "entra",
-    "oracle", "weblogic", "e-business suite", "peoplesoft", "sap", "netweaver", "s/4hana",
-    "gitlab", "github", "jenkins", "atlassian", "confluence", "jira", "bitbucket",
-    "kubernetes", "red hat", "ibm", "websphere", "apache", "tomcat", "struts", "php",
-    "databricks", "snowflake", "aws", "azure", "google cloud", "salesforce", "servicenow"
+    "windows", "sharepoint", "microsoft office", "sql server",
+    "e-business suite", "peoplesoft", "oracle database", "soa suite", "fusion middleware", "oracle apex", "mysql",
+    "sap", "netweaver", "s/4hana",
+    "confluence", "jira", "kubernetes", "red hat", "websphere", "db2", "ibm mq",
+    "tomcat", "struts", "php", "servicenow", "salesforce", "databricks", "snowflake"
   ]
 }

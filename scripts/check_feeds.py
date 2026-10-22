@@ -43,7 +43,8 @@ TRATAMENTO = {
     "P0": "Explorado em fabricante de borda ou acesso: corrigir em até 24h e caçar IOCs retroativos.",
     "P1-KEV": "Explorado ativamente: confirmar inventário e corrigir em até 72h.",
     "P1-WATCH": "Crítico em fabricante relevante: checar exposição; se estiver exposto à internet, tratar como P0.",
-    "P2": "Crítico fora da lista prioritária: confirmar se existe no inventário e seguir o ciclo normal.",
+    "P2-KEV": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+    "P2": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
 }
 
 
@@ -170,18 +171,30 @@ def buscar_nvd_por_id(cve_id: str) -> dict | None:
 
 # ---------------------------------------------------------------- regras
 
-def priorizar(texto: str, cvss: float | None, kev: bool, borda: re.Pattern, corp: re.Pattern) -> tuple[str, str, str]:
+def priorizar(texto: str, cvss: float | None, kev: bool, borda: re.Pattern, corp: re.Pattern) -> tuple[str | None, str, str]:
+    """Regras (em ordem):
+    P0  KEV + (fabricante de borda/acesso ou CVSS >= 9)
+    P1  KEV em plataforma corporativa
+    P2  KEV fora das listas (sinal de shadow IT)
+    P1  fora do KEV, CVSS >= 9, fabricante de borda/acesso
+    P2  fora do KEV, CVSS >= 9, plataforma corporativa
+    --  fora do KEV e fora das listas: não vira alerta
+    """
     t = texto.lower()
     em_borda = bool(borda.search(t))
     em_corp = bool(corp.search(t))
     nota = cvss or 0.0
     if kev and (em_borda or nota >= CVSS_CORTE):
-        return "P0", "KEV + fabricante de borda/acesso ou CVSS ≥ 9", TRATAMENTO["P0"]
+        return "P0", "KEV + borda/acesso ou CVSS ≥ 9", TRATAMENTO["P0"]
+    if kev and em_corp:
+        return "P1", "KEV em plataforma corporativa", TRATAMENTO["P1-KEV"]
     if kev:
-        return "P1", "KEV", TRATAMENTO["P1-KEV"]
-    if nota >= CVSS_CORTE and (em_borda or em_corp):
-        return "P1", "CVSS ≥ 9 em fabricante da lista", TRATAMENTO["P1-WATCH"]
-    return "P2", "CVSS ≥ 9 fora da lista", TRATAMENTO["P2"]
+        return "P2", "KEV fora das listas", TRATAMENTO["P2-KEV"]
+    if nota >= CVSS_CORTE and em_borda:
+        return "P1", "CVSS ≥ 9 em borda/acesso", TRATAMENTO["P1-WATCH"]
+    if nota >= CVSS_CORTE and em_corp:
+        return "P2", "CVSS ≥ 9 em plataforma corporativa", TRATAMENTO["P2"]
+    return None, "", ""
 
 
 # ---------------------------------------------------------------- principal
@@ -240,6 +253,8 @@ def main() -> int:
             continue
         desc = descricao(cve)
         p, regra, trat = priorizar(desc, cvss, False, borda, corp)
+        if p is None:  # fora do KEV e das listas: ignora
+            continue
         candidatos[cve_id] = {
             "id": cve_id,
             "origem": "NVD",
@@ -270,6 +285,16 @@ def main() -> int:
             c["detectado"] = iso(t0)
             novos += 1
         existentes[cve_id] = {**existentes.get(cve_id, {}), **c}
+
+    # reaplica as regras atuais a tudo que está guardado (mudança de regra vale para trás)
+    for cve_id in list(existentes):
+        i = existentes[cve_id]
+        texto = f'{i.get("produto", "")} {i.get("titulo", "")} {i.get("resumo", "")}'
+        p, regra, trat = priorizar(texto, i.get("cvss"), i.get("origem") == "KEV", borda, corp)
+        if p is None:
+            del existentes[cve_id]
+        else:
+            i.update({"prioridade": p, "regra": regra, "tratamento": trat})
 
     limite = iso(t0 - timedelta(days=RETENCAO_DIAS))
     itens = [i for i in existentes.values() if (i.get("detectado") or "") >= limite]

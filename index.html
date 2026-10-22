@@ -161,6 +161,12 @@ td.wide{min-width:260px}
 .sources{columns:2;column-gap:28px;list-style:none;margin:0;padding:0;font-size:13.5px}
 .sources li{break-inside:avoid;padding:6px 0;border-bottom:1px solid var(--line)}
 
+.rules{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--orange);border-radius:12px;padding:12px 16px;margin:0 0 14px}
+.rules summary{cursor:pointer;font:600 13.5px "IBM Plex Sans",sans-serif}
+.rules-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:12px}
+.rules-grid p{margin:6px 0 0;font-size:13px;color:var(--muted)}
+.rules-grid b{color:var(--ink)}
+@media (max-width:760px){.rules-grid{grid-template-columns:1fr 1fr}}
 .notice{background:var(--orange-soft);border:1px solid var(--orange);color:var(--ink);border-radius:12px;padding:14px 16px;margin-bottom:20px;font-size:14px;display:none}
 
 footer{border-top:1px solid var(--line);padding:18px 0 36px;color:var(--muted);font-size:12.5px}
@@ -233,7 +239,16 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       <div><div class="eyebrow">Camada 1 · a cada 2h, 8h–20h</div><h2>Alertas automáticos</h2></div>
       <div class="meta">Regras fixas, sem IA · KEV + NVD com CVSS ≥ 9</div>
     </div>
-    <p class="lead">Tudo que entrou no catálogo KEV da CISA ou na NVD com nota crítica. A prioridade sai de regra: explorado + fabricante de borda vira P0. Itens já analisados na triagem aparecem marcados.</p>
+    <p class="lead">O que entrou no catálogo KEV da CISA (explorado de verdade) ou na NVD com CVSS ≥ 9, filtrado por uma lista de fabricantes relevantes para banco. Itens já analisados na triagem aparecem marcados.</p>
+    <details class="rules" open>
+      <summary>Como a prioridade é calculada</summary>
+      <div class="rules-grid">
+        <div><span class="pill p0">P0</span><p><b>Explorado e crítico.</b> Está no KEV e é de borda, acesso, identidade ou CI/CD, ou tem CVSS ≥ 9. Corrigir em 24h.</p></div>
+        <div><span class="pill p1">P1</span><p><b>Explorado em plataforma corporativa</b> (KEV), ou <b>CVSS ≥ 9 sem exploração</b> em borda, acesso ou CI/CD. Checar exposição; exposto à internet vira P0.</p></div>
+        <div><span class="pill p2">P2</span><p><b>CVSS ≥ 9 sem exploração</b> em plataforma corporativa, ou <b>KEV fora das listas</b> (sinal de shadow IT). Confirmar no inventário.</p></div>
+        <div><span class="pill" style="background:var(--line);color:var(--muted)">fora</span><p>CVSS ≥ 9 sem exploração e fora das duas listas <b>não vira alerta</b>. Lista editável em <span class="mono">config/watchlist.json</span>.</p></div>
+      </div>
+    </details>
     <div class="filters" id="fAl" role="group" aria-label="Filtrar alertas">
       <button class="chip" type="button" data-w="3" aria-pressed="true">72h</button>
       <button class="chip" type="button" data-w="7" aria-pressed="false">7 dias</button>
