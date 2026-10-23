@@ -1,0 +1,1978 @@
+{
+  "atualizado": "2026-10-23T12:14:22Z",
+  "itens": [
+    {
+      "cve": "CVE-2026-102764",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-102764",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764",
+          "publicado": "2026-10-15T21:17:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-102764",
+          "publicado": "2026-10-16",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Urges Patching Critical Vulnerability in BeyondTrust Remote Support",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-urges-patching-critical-vulnerability-beyondtrust-remote-support",
+          "publicado": "2026-10-16T12:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-16",
+        "prazo": "2026-10-19",
+        "ransomware": "Unknown"
+      },
+      "produto": "BeyondTrust Remote Support",
+      "titulo": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+      "resumo": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "NVD",
+      "publicado_nvd": "2026-10-15T21:17:00Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-15T21:17:00Z",
+      "primeira_noticia": "2026-10-16T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0118,
+        "percentil": 0.6743,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 2,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-102764.json",
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-76519",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-76519",
+          "publicado": "2026-10-14",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "cisco",
+          "nome": "Cisco PSIRT",
+          "titulo": "Cisco Secure Email Gateway Arbitrary File Write Vulnerability",
+          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Email%20Gateway%20Arbitrary%20File%20Write%20Vulnerability%26vs_k=1",
+          "publicado": "2026-10-14T16:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-76519",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519",
+          "publicado": "2026-10-14T17:19:10Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-14",
+        "prazo": "2026-10-17",
+        "ransomware": "Unknown"
+      },
+      "produto": "Cisco Secure Email Gateway",
+      "titulo": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+      "resumo": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-14T17:19:10Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-14T00:00:00Z",
+      "primeira_noticia": "2026-10-14T16:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0157,
+        "percentil": 0.7521,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76519.json",
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-0322",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-0322",
+          "publicado": "2026-10-14",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-0322",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322",
+          "publicado": "2026-10-14T18:17:07Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "paloalto",
+          "nome": "Palo Alto Security Advisories",
+          "titulo": "CVE-2026-0322 PAN-OS: Authenticated Remote Code Execution (RCE) in the Management Interface (Severity: HIGH)",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-0322",
+          "publicado": "2026-10-15T18:30:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-14",
+        "prazo": "2026-10-17",
+        "ransomware": "Unknown"
+      },
+      "produto": "Palo Alto Networks PAN-OS",
+      "titulo": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
+      "resumo": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.",
+      "cvss": 8.6,
+      "cvss_versao": "4.0",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-14T18:17:07Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-14T00:00:00Z",
+      "primeira_noticia": "2026-10-15T18:30:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0121,
+        "percentil": 0.6834,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-0322.json",
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-104935",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-104935",
+          "publicado": "2026-10-13",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-104935",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935",
+          "publicado": "2026-10-13T16:17:11Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "darkreading",
+          "nome": "Dark Reading",
+          "titulo": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
+          "link": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
+          "publicado": "2026-10-14T21:20:13Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-13",
+        "prazo": "2026-10-16",
+        "ransomware": "Unknown"
+      },
+      "produto": "Ivanti Connect Secure",
+      "titulo": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+      "resumo": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
+      "cvss": 8.6,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-13T16:17:11Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-13T00:00:00Z",
+      "primeira_noticia": "2026-10-14T21:20:13Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.2598,
+        "percentil": 0.9798,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 4,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-104935.json",
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-21589",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-21589",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589",
+          "publicado": "2026-10-05T22:16:58Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-21589",
+          "publicado": "2026-10-15",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-15",
+        "prazo": "2026-10-18",
+        "ransomware": "Unknown"
+      },
+      "produto": "Atlassian Multiple Products",
+      "titulo": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+      "resumo": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external…",
+      "cvss": 9.3,
+      "cvss_versao": "4.0",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-05T22:16:58Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-05T22:16:58Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.1271,
+        "percentil": 0.9626,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 12,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-21589.json",
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-105134",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-105134",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134",
+          "publicado": "2026-10-04T07:16:33Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Ahsay AhsayCBS Command Injection Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-105134",
+          "publicado": "2026-10-14",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-14",
+        "prazo": "2026-10-17",
+        "ransomware": "Unknown"
+      },
+      "produto": "Ahsay AhsayCBS",
+      "titulo": "Ahsay AhsayCBS Command Injection Vulnerability",
+      "resumo": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This…",
+      "cvss": 10.0,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-04T07:16:33Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-04T07:16:33Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.3831,
+        "percentil": 0.9857,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2025-61624",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2025-61624",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624",
+          "publicado": "2026-04-14T16:16:31Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Fortinet Multiple Products Path Traversal Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-61624",
+          "publicado": "2026-10-16",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-16",
+        "prazo": "2026-10-19",
+        "ransomware": "Unknown"
+      },
+      "produto": "Fortinet Multiple Products",
+      "titulo": "Fortinet Multiple Products Path Traversal Vulnerability",
+      "resumo": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands.",
+      "cvss": 6.5,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "NVD",
+      "publicado_nvd": "2026-04-14T16:16:31Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-04-14T16:16:31Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0108,
+        "percentil": 0.6484,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2022-51026",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2022-51026",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-51026",
+          "publicado": "2026-10-22T19:17:30Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-22T19:17:30Z",
+      "resumo": "Bytebase 0.12.0 before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to log in as any user. The flaw stems from trusting client-supplied GitLab provider configuration in the POST /api/auth/login/GITLAB_SELF_HOST…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-22T19:17:30Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2022-51026",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-109618",
+      "fontes": [
+        {
+          "id": "fortinet",
+          "nome": "Fortinet PSIRT",
+          "titulo": "PHP core RCE vulnerability patches (CVE-2026-109618 and CVE-2026-109619)",
+          "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-186",
+          "publicado": "2026-10-21T07:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "Critical Vulnerabilities in PHP Require Immediate Patching",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching",
+          "publicado": "2026-10-21T12:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "bleeping",
+          "nome": "BleepingComputer",
+          "titulo": "PHP ships emergency patches for critical PHP2Shell flaws",
+          "link": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+          "publicado": "2026-10-21T14:07:05Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-109618",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
+          "publicado": "2026-10-21T14:17:09Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "cisco",
+          "nome": "Cisco PSIRT",
+          "titulo": "Vulnerabilities in PHP Affecting Cisco Products: October 2026",
+          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20PHP%20Affecting%20Cisco%20Products:%20October%202026%26vs_k=1",
+          "publicado": "2026-10-22T23:00:35Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "paloalto",
+          "nome": "Palo Alto Security Advisories",
+          "titulo": "CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products (Severity: HIGH)",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-109618",
+          "publicado": "2026-10-23T03:45:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
+          "link": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
+          "publicado": "2026-10-23T07:40:45Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "NVD",
+      "publicado_nvd": "2026-10-21T14:17:09Z",
+      "resumo": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-21T07:00:00Z",
+      "primeira_noticia": "2026-10-21T07:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "epss": {
+        "score": 0.0531,
+        "percentil": 0.9256,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 521,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109618.json",
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-87337",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-87337",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-87337",
+          "publicado": "2026-10-20T22:20:11Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 10.0,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-20T22:20:11Z",
+      "resumo": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-20T22:20:11Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-87337",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "epss": {
+        "score": 0.0043,
+        "percentil": 0.3593,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-96951",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Microsoft Windows Command Injection Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-96951",
+          "publicado": "2026-10-13",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "msrc",
+          "nome": "Microsoft Security Update Guide",
+          "titulo": "CVE-2026-96951 Windows Shell Security Feature Bypass Vulnerability",
+          "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96951",
+          "publicado": "2026-10-13T14:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-96951",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96951",
+          "publicado": "2026-10-13T19:22:07Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-13",
+        "prazo": "2026-10-16",
+        "ransomware": "Unknown"
+      },
+      "produto": "Microsoft Windows",
+      "titulo": "Microsoft Windows Command Injection Vulnerability",
+      "resumo": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network.",
+      "cvss": 8.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-13T19:22:07Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-13T00:00:00Z",
+      "primeira_noticia": "2026-10-13T14:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-96951",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P1",
+      "regra": "explorado em plataforma corporativa",
+      "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
+      "epss": {
+        "score": 0.0151,
+        "percentil": 0.7427,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-83938",
+      "fontes": [
+        {
+          "id": "msrc",
+          "nome": "Microsoft Security Update Guide",
+          "titulo": "CVE-2026-83938 Azure Kubernetes Configuration Service Elevation of Privilege Vulnerability",
+          "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938",
+          "publicado": "2026-10-22T14:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-83938",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-83938",
+          "publicado": "2026-10-22T22:19:18Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 10.0,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-22T22:19:18Z",
+      "resumo": "Missing authentication for critical function in Azure Kubernetes Configuration Service allows an unauthorized attacker to elevate privileges over a network.",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-22T14:00:00Z",
+      "primeira_noticia": "2026-10-22T14:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-83938",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2021-48016",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2021-48016",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-48016",
+          "publicado": "2026-10-22T11:17:04Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-22T11:17:04Z",
+      "resumo": "DedeCMS through 5.8.1-beta contains a PHP code injection vulnerability in ShowMsg() where the HTTP Referer header is written into a DedeTemplate string and included. Unauthenticated attackers can send a crafted Referer to /plus/flink.php?dopost=save with an…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-22T11:17:04Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2021-48016",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-114119",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-114119",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-114119",
+          "publicado": "2026-10-21T01:17:38Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-21T01:17:38Z",
+      "resumo": "Best Practice Software Bp Premier before 1.14.1.1128 uses a hardcoded Microsoft SQL Server administrative password that is shared across all installations and cannot be changed without breaking the application. Attackers with network access to the database…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-21T01:17:38Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-114119",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0043,
+        "percentil": 0.3601,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-91354",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-91354",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91354",
+          "publicado": "2026-10-20T22:20:38Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-20T22:20:38Z",
+      "resumo": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows low privileged attacker with network…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-20T22:20:38Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91354",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0033,
+        "percentil": 0.2469,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-91341",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-91341",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91341",
+          "publicado": "2026-10-20T22:20:36Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.1,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-20T22:20:36Z",
+      "resumo": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows unauthenticated attacker with network…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-20T22:20:36Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91341",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0044,
+        "percentil": 0.3724,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-91251",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-91251",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91251",
+          "publicado": "2026-10-20T22:20:26Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-20T22:20:26Z",
+      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-20T22:20:26Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91251",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0045,
+        "percentil": 0.3782,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-91243",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-91243",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91243",
+          "publicado": "2026-10-20T22:20:25Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.6,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-20T22:20:25Z",
+      "resumo": "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-20T22:20:25Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91243",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0037,
+        "percentil": 0.2918,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-91250",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-91250",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91250",
+          "publicado": "2026-10-20T22:20:25Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-20T22:20:25Z",
+      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-20T22:20:25Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91250",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0045,
+        "percentil": 0.3782,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-91225",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-91225",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91225",
+          "publicado": "2026-10-20T22:20:23Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.1,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-20T22:20:23Z",
+      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-20T22:20:23Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91225",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0044,
+        "percentil": 0.3724,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-91230",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-91230",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91230",
+          "publicado": "2026-10-20T22:20:23Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.3,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-20T22:20:23Z",
+      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-20T22:20:23Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91230",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0034,
+        "percentil": 0.2608,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-91231",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-91231",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91231",
+          "publicado": "2026-10-20T22:20:23Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 10.0,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-20T22:20:23Z",
+      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-20T22:20:23Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91231",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0052,
+        "percentil": 0.4344,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-91232",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-91232",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91232",
+          "publicado": "2026-10-20T22:20:23Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-20T22:20:23Z",
+      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-20T22:20:23Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91232",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0045,
+        "percentil": 0.3782,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-91216",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-91216",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91216",
+          "publicado": "2026-10-20T22:20:22Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 10.0,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-20T22:20:22Z",
+      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-20T22:20:22Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91216",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0052,
+        "percentil": 0.4344,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-91218",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-91218",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91218",
+          "publicado": "2026-10-20T22:20:22Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.6,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-20T22:20:22Z",
+      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-20T22:20:22Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91218",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0037,
+        "percentil": 0.2918,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-91221",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-91221",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91221",
+          "publicado": "2026-10-20T22:20:22Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 10.0,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-20T22:20:22Z",
+      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-20T22:20:22Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91221",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0052,
+        "percentil": 0.4344,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-91222",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-91222",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91222",
+          "publicado": "2026-10-20T22:20:22Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-20T22:20:22Z",
+      "resumo": "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Human Workflow (11g+)).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-20T22:20:22Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91222",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0045,
+        "percentil": 0.3783,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-91224",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-91224",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91224",
+          "publicado": "2026-10-20T22:20:22Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-20T22:20:22Z",
+      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-20T22:20:22Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91224",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0033,
+        "percentil": 0.2469,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-87347",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-87347",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-87347",
+          "publicado": "2026-10-20T22:20:12Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.6,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-20T22:20:12Z",
+      "resumo": "Vulnerability in the Oracle HTTP Server product of Oracle Fusion Middleware (component: OSSL Module).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-20T22:20:12Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-87347",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0037,
+        "percentil": 0.2922,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-101528",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-101528",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-101528",
+          "publicado": "2026-10-20T22:18:02Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-20T22:18:02Z",
+      "resumo": "Vulnerability in the Oracle Enterprise Manager for Oracle Database product of Oracle Enterprise Manager (component: Data Guard Management).  Supported versions that are affected are 13.5 and  24.1. Easily exploitable vulnerability allows low privileged…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-20T22:18:02Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-101528",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0048,
+        "percentil": 0.4039,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-101529",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-101529",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-101529",
+          "publicado": "2026-10-20T22:18:02Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-20T22:18:02Z",
+      "resumo": "Vulnerability in the Oracle Enterprise Manager for Oracle Database product of Oracle Enterprise Manager (component: Data Guard Management).  Supported versions that are affected are 13.5 and  24.1. Easily exploitable vulnerability allows low privileged…",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-20T22:18:02Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-101529",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0048,
+        "percentil": 0.4039,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-110936",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-110936",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-110936",
+          "publicado": "2026-10-15T15:17:30Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-110936",
+          "publicado": "2026-10-20",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
+          "link": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
+          "publicado": "2026-10-20T07:11:45Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-10-20T12:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "Siemens Software Center",
+          "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-03",
+          "publicado": "2026-10-22T12:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-20",
+        "prazo": "2026-11-03",
+        "ransomware": "Unknown"
+      },
+      "produto": "Siemens Software Center",
+      "titulo": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
+      "resumo": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the…",
+      "cvss": 8.4,
+      "cvss_versao": "4.0",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-15T15:17:30Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-15T15:17:30Z",
+      "primeira_noticia": "2026-10-20T07:11:45Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-110936",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0024,
+        "percentil": 0.14,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110936.json",
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-106931",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-106931",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-106931",
+          "publicado": "2026-10-14T05:16:42Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-106931",
+          "publicado": "2026-10-20",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-10-20T12:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-20",
+        "prazo": "2026-10-23",
+        "ransomware": "Unknown"
+      },
+      "produto": "EG Secure Solutions SiteGuard Server Edition",
+      "titulo": "EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
+      "resumo": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product.",
+      "cvss": 8.5,
+      "cvss_versao": "4.0",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-14T05:16:42Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-14T05:16:42Z",
+      "primeira_noticia": "2026-10-20T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-106931",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0117,
+        "percentil": 0.6715,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-105133",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-105133",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-105133",
+          "publicado": "2026-10-04T07:16:33Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Ahsay AhsayCBS Improper Authentication Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-105133",
+          "publicado": "2026-10-14",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-14",
+        "prazo": "2026-10-17",
+        "ransomware": "Unknown"
+      },
+      "produto": "Ahsay AhsayCBS",
+      "titulo": "Ahsay AhsayCBS Improper Authentication Vulnerability",
+      "resumo": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vulnerability can be chained with…",
+      "cvss": 7.3,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-04T07:16:33Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-04T07:16:33Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-105133",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0579,
+        "percentil": 0.9309,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-105133.json",
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-96652",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-96652",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96652",
+          "publicado": "2026-09-23T17:17:23Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-96652",
+          "publicado": "2026-10-20",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-10-20T12:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
+          "link": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
+          "publicado": "2026-10-21T07:26:49Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-20",
+        "prazo": "2026-11-03",
+        "ransomware": "Unknown"
+      },
+      "produto": "Plex Media Server",
+      "titulo": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+      "resumo": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination.…",
+      "cvss": 5.3,
+      "cvss_versao": "4.0",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-09-23T17:17:23Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-09-23T17:17:23Z",
+      "primeira_noticia": "2026-10-20T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-96652",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0046,
+        "percentil": 0.3853,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 5,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-96652.json",
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-96654",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-96654",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96654",
+          "publicado": "2026-09-23T17:17:23Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-96654",
+          "publicado": "2026-10-20",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-10-20T12:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-20",
+        "prazo": "2026-10-23",
+        "ransomware": "Unknown"
+      },
+      "produto": "Plex Media Server",
+      "titulo": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+      "resumo": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652,…",
+      "cvss": 6.9,
+      "cvss_versao": "4.0",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-09-23T17:17:23Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-09-23T17:17:23Z",
+      "primeira_noticia": "2026-10-20T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-96654",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0046,
+        "percentil": 0.3929,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-96655",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-96655",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96655",
+          "publicado": "2026-09-23T17:17:23Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-96655",
+          "publicado": "2026-10-20",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-10-20T12:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-20",
+        "prazo": "2026-11-03",
+        "ransomware": "Unknown"
+      },
+      "produto": "Plex Media Server",
+      "titulo": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+      "resumo": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained…",
+      "cvss": 5.3,
+      "cvss_versao": "4.0",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-09-23T17:17:23Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-09-23T17:17:23Z",
+      "primeira_noticia": "2026-10-20T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-96655",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0046,
+        "percentil": 0.3853,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-96656",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-96656",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96656",
+          "publicado": "2026-09-23T17:17:23Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Plex Media Server External Control of File Name or Path Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-96656",
+          "publicado": "2026-10-20",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-10-20T12:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-20",
+        "prazo": "2026-10-23",
+        "ransomware": "Unknown"
+      },
+      "produto": "Plex Media Server",
+      "titulo": "Plex Media Server External Control of File Name or Path Vulnerability",
+      "resumo": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
+      "cvss": 8.6,
+      "cvss_versao": "4.0",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-09-23T17:17:23Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-09-23T17:17:23Z",
+      "primeira_noticia": "2026-10-20T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-96656",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0082,
+        "percentil": 0.5665,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-96656.json",
+        "checado": "2026-10-23T12:14:22Z"
+      }
+    }
+  ],
+  "sem_cve": [
+    {
+      "fonte": "The Hacker News",
+      "titulo": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
+      "link": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
+      "publicado": "2026-10-22T19:05:17Z"
+    },
+    {
+      "fonte": "BleepingComputer",
+      "titulo": "Arista patches new VeloCloud Orchestrator zero-day exploited in attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/",
+      "publicado": "2026-10-22T17:18:22Z"
+    },
+    {
+      "fonte": "The Hacker News",
+      "titulo": "Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed",
+      "link": "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html",
+      "publicado": "2026-10-22T06:34:10Z"
+    },
+    {
+      "fonte": "Dark Reading",
+      "titulo": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
+      "link": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
+      "publicado": "2026-10-16T20:34:37Z"
+    }
+  ]
+}
