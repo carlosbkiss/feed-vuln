@@ -458,15 +458,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   function renderBig(st){
     var m = (st && st.metricas) || {};
     var nd = 'sem dados suficientes ainda';
-    var ant = m.antecipacao_nvd_mediana_h;
-    var antTxt = ant == null ? '—' : (ant >= 0 ? '+' : '') + (Math.abs(ant) >= 48 ? Math.round(ant / 24) + '<small>dias</small>' : Math.round(ant) + '<small>h</small>');
+    var hrs = function(h){ return h == null ? null : (Math.abs(h) >= 48 ? Math.round(h / 24) + '<small>dias</small>' : Math.round(h) + '<small>h</small>'); };
+    var notaTxt = m.antes_da_nota_mediana_h != null ? '+' + hrs(m.antes_da_nota_mediana_h) : (m.aguardando_nota ? esc(m.aguardando_nota) + '<small>aguardando</small>' : '—');
     var tiles = [
       {n: m.elegiveis, l: 'Vulnerabilidades no radar', s: m.elegiveis != null ? 'P0 ' + m.p0 + ' · P1 ' + m.p1 + ' · P2 ' + m.p2 : nd},
       {n: m.explorados, l: 'Exploradas ativamente', s: m.explorados != null ? 'KEV ou exploração relatada' + (m.com_poc ? ' · ' + m.com_poc + ' com PoC público' : '') : nd},
       {n: m.p0, l: 'P0 para corrigir em 24h', s: 'explorado em borda, acesso ou CI/CD', hot: true},
-      {html: antTxt, l: 'Antecipação vs NVD', s: m.antecipacao_nvd_n ? 'mediana · ' + pct(m.antes_da_nvd_pct) + ' vistas antes da NVD (' + m.antecipacao_nvd_n + ')' : nd, hot: true},
+      {html: notaTxt, l: 'Vistas antes da nota da NVD', s: m.antes_da_nota_n ? m.antes_da_nota_n + ' CVE(s) · mediana de antecedência' : (m.aguardando_nota ? m.aguardando_nota + ' CVE(s) em fontes aguardando nota da NVD agora' : nd), hot: true},
       {html: m.kev_cobertura_pct == null ? '—' : Math.round(m.kev_cobertura_pct * 100) + '<small>%</small>', l: 'Cobertura do CISA KEV', s: m.kev_semana != null ? m.kev_com_noticia_antes + ' de ' + m.kev_semana + ' com notícia antes ou no dia' : nd},
-      {n: m.artigos, l: 'Notícias analisadas', s: m.fontes_total ? 'de ' + m.fontes_total + ' fontes ativas · ' + (m.artigos_com_cve || 0) + ' citam CVE' : nd}
+      {n: m.artigos, l: 'Itens de fontes lidos', s: m.fontes_total ? 'de ' + m.fontes_total + ' fontes ativas · ' + (m.artigos_com_cve || 0) + ' citam CVE' : nd}
     ];
     $('bign').innerHTML = tiles.map(function(t){
       var v = t.html != null ? t.html : (t.n == null ? '—' : esc(t.n));
@@ -479,7 +479,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   function renderRadar(){
     var lim = Date.now() - fRad.w * 86400000;
     var rows = VULNS.filter(function(r){
-      if (new Date(r.primeira_vez || r.detectado).getTime() < lim) return false;
+      if (new Date(r.ultima_atividade || r.primeira_vez || r.detectado).getTime() < lim) return false;
       if (fRad.p === 'exp') return r.zero_day;
       return fRad.p === 'all' || r.prioridade === fRad.p;
     });
@@ -581,8 +581,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   function renderMetricas(st, ex){
     var m = (st && st.metricas) || {};
     var cards = [
-      {k:'Antecipação vs NVD', v: m.antecipacao_nvd_mediana_h == null ? '—' : (m.antecipacao_nvd_mediana_h >= 0 ? '+' : '') + Math.round(m.antecipacao_nvd_mediana_h) + 'h', or:true,
-       p: m.antecipacao_nvd_n ? 'Mediana entre a primeira notícia e a publicação na NVD, em <b>' + m.antecipacao_nvd_n + '</b> vulnerabilidades. <b>' + pct(m.antes_da_nvd_pct) + '</b> apareceram em alguma fonte antes da NVD.' : 'Precisa de alguns dias de coleta para ter amostra.'},
+      {k:'Antes da nota da NVD', v: m.antes_da_nota_mediana_h == null ? (m.aguardando_nota ? m.aguardando_nota + ' aguardando' : '—') : '+' + Math.round(m.antes_da_nota_mediana_h) + 'h', or:true,
+       p: 'CVEs que apareceram em notícia ou advisory quando a NVD ainda não tinha nota (e por isso não passariam no filtro CVSS ≥ 9). ' + (m.antes_da_nota_n ? '<b>' + m.antes_da_nota_n + '</b> já receberam nota; mediana de espera mostrada acima. ' : '') + '<b>' + (m.aguardando_nota || 0) + '</b> seguem sem nota agora.'},
+      {k:'Notícia vs publicação na NVD', v: m.antecipacao_nvd_mediana_h == null ? '—' : (m.antecipacao_nvd_mediana_h >= 0 ? '+' : '') + Math.round(m.antecipacao_nvd_mediana_h) + 'h',
+       p: m.antecipacao_nvd_n ? 'Mediana entre a primeira notícia e a publicação do registro na NVD (' + m.antecipacao_nvd_n + ' CVEs; ' + pct(m.antes_da_nvd_pct) + ' antes). Negativo é esperado: o fabricante publica a CVE junto com o advisory e a imprensa vem depois. O ganho real está na nota e no KEV.' : 'Precisa de alguns dias de coleta para ter amostra.'},
       {k:'Cobertura do CISA KEV', v: pct(m.kev_cobertura_pct), or:true,
        p: m.kev_semana != null ? '<b>' + m.kev_com_noticia_antes + '</b> de <b>' + m.kev_semana + '</b> entradas da semana no KEV já tinham notícia antes ou no mesmo dia (' + m.kev_relevantes + ' relevantes para banco). Mediana: ' + (m.antecipacao_kev_mediana_dias == null ? '—' : m.antecipacao_kev_mediana_dias + ' dia(s)') + ' de antecedência.' : '—'},
       {k:'Ruído da palavra-chave (RN-004)', v: pct(m.keyword_precisao),

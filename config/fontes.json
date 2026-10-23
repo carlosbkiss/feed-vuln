@@ -13,6 +13,6 @@
     {"id": "cisco", "nome": "Cisco PSIRT", "site": "https://sec.cloudapps.cisco.com/security/center/publicationListing.x", "feed": "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml", "grupo": "fabricante", "ativo": true},
     {"id": "paloalto", "nome": "Palo Alto Security Advisories", "site": "https://security.paloaltonetworks.com/", "feed": "https://security.paloaltonetworks.com/rss.xml", "grupo": "fabricante", "ativo": true},
     {"id": "chrome", "nome": "Chrome Releases", "site": "https://chromereleases.googleblog.com/", "feed": "https://chromereleases.googleblog.com/feeds/posts/default", "grupo": "produto", "ativo": true},
-    {"id": "firefox", "nome": "Mozilla Security Advisories", "site": "https://www.mozilla.org/en-US/security/advisories/", "feed": "https://www.mozilla.org/en-US/security/advisories/feed/", "grupo": "produto", "ativo": true}
+    {"id": "firefox", "nome": "Mozilla Security Advisories", "site": "https://www.mozilla.org/en-US/security/advisories/", "feed": "https://www.mozilla.org/en-US/security/advisories/feed/", "grupo": "produto", "ativo": false, "obs": "feed oficial retornando vazio"}
   ]
 }

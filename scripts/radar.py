@@ -449,6 +449,11 @@ def main() -> int:
                       f"https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext={cve_id}",
                       v.get("dateAdded"))
 
+    for r in registros.values():
+        ds = [parse_iso(f.get("publicado")) for f in r["fontes"] if f["id"] not in ("nvd", "kev") and f.get("publicado")]
+        ds = [d for d in ds if d]
+        r["primeira_noticia_calc"] = iso(min(ds)) if ds else None
+
     # 4) NVD: críticos recentes + consulta individual de quem veio de notícia/KEV
     criticos, st_nvd = nvd_criticos(t0 - timedelta(days=JANELA_NVD_DIAS), t0)
     status_fontes["nvd"] = {"estado": "ok" if st_nvd == "ok" else "erro", "erro": None if st_nvd == "ok" else st_nvd}
@@ -490,12 +495,23 @@ def main() -> int:
         else:
             r["nvd_checado_em"] = iso(t0)
 
+    # 4b) antecedência sobre a nota da NVD: CVE vista em fonte de texto antes de ter CVSS
+    for cve_id, r in registros.items():
+        veio_de_texto = any(f["id"] not in ("nvd", "kev") for f in r["fontes"])
+        if not veio_de_texto:
+            continue
+        if r.get("cvss") is None and not r.get("aguardando_nota_desde"):
+            r["aguardando_nota_desde"] = r.get("primeira_noticia_calc") or iso(t0)
+        elif r.get("cvss") is not None and r.get("aguardando_nota_desde") and not r.get("nota_chegou_em"):
+            r["nota_chegou_em"] = iso(t0)
+
     # 5) elegibilidade e prioridade
     exibidos: dict[str, dict] = {}
     novos_candidatos: dict[str, dict] = {}
     elegiveis_fora = 0
     for cve_id, r in registros.items():
         titulos = r.pop("_titulos", set())
+        r.pop("primeira_noticia_calc", None)
         if r.get("kev"):
             r["zero_day"] = True
             r["zero_day_motivo"] = "CISA KEV"
@@ -514,6 +530,11 @@ def main() -> int:
         noticias = [d for d in noticias if d]
         r["primeira_noticia"] = iso(min(noticias)) if noticias else None
         r["link_nvd"] = f"https://nvd.nist.gov/vuln/detail/{cve_id}"
+        atv = [parse_iso(f.get("publicado")) for f in r["fontes"] if f.get("publicado")]
+        if r.get("kev"):
+            atv.append(parse_iso(r["kev"]["adicionado"]))
+        atv = [d for d in atv if d]
+        r["ultima_atividade"] = iso(max(atv)) if atv else r.get("detectado")
         texto = " ".join([r.get("produto", ""), r.get("titulo", ""), r.get("resumo", "")] + sorted(titulos))
         if not motivos:
             novos_candidatos[cve_id] = r
@@ -576,7 +597,7 @@ def main() -> int:
 
     # 8) métricas do piloto (janela de 7 dias)
     j = t0 - timedelta(days=JANELA_METRICAS_DIAS)
-    na_janela = [r for r in itens if (parse_iso(r["primeira_vez"]) or t0) >= j]
+    na_janela = [r for r in itens if (parse_iso(r.get("ultima_atividade")) or t0) >= j]
     arts = [a for a in artigos_mem.values() if (parse_iso(a.get("publicado")) or parse_iso(a.get("coletado")) or t0) >= j]
     exibidos_ids = {r["cve"] for r in itens}
     kw = [a for a in arts if a["keyword_rn004"]]
@@ -590,6 +611,13 @@ def main() -> int:
             deltas_nvd.append((nvd_pub - pn).total_seconds() / 3600)
         if pn and r.get("kev"):
             deltas_kev.append((parse_iso(r["kev"]["adicionado"]).date() - pn.date()).days)
+
+    esperas = []
+    for r in itens:
+        a, b = parse_iso(r.get("aguardando_nota_desde")), parse_iso(r.get("nota_chegou_em"))
+        if a and b:
+            esperas.append((b - a).total_seconds() / 3600)
+    aguardando = [r for r in itens + list(novos_candidatos.values()) if r.get("aguardando_nota_desde") and not r.get("nota_chegou_em")]
 
     kev_semana = [r for r in itens if r.get("kev") and r["kev"]["adicionado"] >= j.strftime("%Y-%m-%d")]
     kev_rel = [r for r in kev_semana if r["prioridade"] in ("P0", "P1")]
@@ -641,6 +669,9 @@ def main() -> int:
         "antes_da_nvd_pct": round(sum(1 for d in deltas_nvd if d > 0) / len(deltas_nvd), 3) if deltas_nvd else None,
         "antecipacao_nvd_n": len(deltas_nvd),
         "antecipacao_kev_mediana_dias": mediana(deltas_kev),
+        "antes_da_nota_n": len(esperas),
+        "antes_da_nota_mediana_h": mediana(esperas),
+        "aguardando_nota": len(aguardando),
         "kev_semana": len(kev_semana),
         "kev_relevantes": len(kev_rel),
         "kev_com_noticia_antes": sum(1 for r in kev_semana if antes_do_kev(r)),
