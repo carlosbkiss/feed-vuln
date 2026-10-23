@@ -15,6 +15,7 @@
   --orange:#f2711c; --orange-2:#ff8a3d; --orange-soft:#fff0e5;
   --red:#d32f2f; --red-soft:#fdecec; --green:#1f8a4c; --green-soft:#e5f5ec;
   --amber:#b45f06; --amber-soft:#fdf2e1;
+  --orange-txt:#b3480b; --red-txt:#b42318; --amber-txt:#8f4a05; --green-txt:#17703c; --on-red:#ffffff;
   --shadow:0 1px 2px rgba(13,27,51,.05),0 8px 28px rgba(13,27,51,.06);
 }
 @media (prefers-color-scheme: dark){
@@ -24,6 +25,7 @@
     --orange:#ff8a3d; --orange-2:#ffa364; --orange-soft:#3a2010;
     --red:#ff6b6b; --red-soft:#3a1518; --green:#5fd394; --green-soft:#11301f;
     --amber:#f3b25b; --amber-soft:#33240f; --shadow:none;
+    --orange-txt:#ff8a3d; --red-txt:#ff6b6b; --amber-txt:#f3b25b; --green-txt:#5fd394; --on-red:#1f0505;
   }
 }
 :root[data-theme="dark"]{
@@ -32,6 +34,7 @@
   --orange:#ff8a3d; --orange-2:#ffa364; --orange-soft:#3a2010;
   --red:#ff6b6b; --red-soft:#3a1518; --green:#5fd394; --green-soft:#11301f;
   --amber:#f3b25b; --amber-soft:#33240f; --shadow:none;
+  --orange-txt:#ff8a3d; --red-txt:#ff6b6b; --amber-txt:#f3b25b; --green-txt:#5fd394; --on-red:#1f0505;
 }
 *{box-sizing:border-box}
 html,body{margin:0}
@@ -85,13 +88,13 @@ h1 span{color:var(--orange-2)}
 .nav .wrap{display:flex;gap:4px;overflow-x:auto}
 .nav a{padding:12px 14px;font:600 13.5px "IBM Plex Sans",sans-serif;color:var(--muted);text-decoration:none;border-bottom:3px solid transparent;white-space:nowrap}
 .nav a:hover{color:var(--ink);border-bottom-color:var(--orange)}
-.nav .badge{font:700 11px "JetBrains Mono",monospace;background:var(--orange-soft);color:var(--orange);border-radius:999px;padding:1px 7px;margin-left:6px}
+.nav .badge{font:700 11px "JetBrains Mono",monospace;background:var(--orange-soft);color:var(--orange-txt);border-radius:999px;padding:1px 7px;margin-left:6px}
 
 /* seções */
 main{padding:28px 0 8px}
 section{margin:0 0 44px;scroll-margin-top:60px}
 .sh{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
-.eyebrow{font:600 11.5px "JetBrains Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--orange)}
+.eyebrow{font:600 11.5px "JetBrains Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-txt)}
 h2{font:700 clamp(21px,2.8vw,27px)/1.15 "Space Grotesk",sans-serif;letter-spacing:-.015em;margin:4px 0 0}
 h3.sub{font:700 17px "Space Grotesk",sans-serif;margin:26px 0 10px}
 .meta{font-size:13px;color:var(--muted)}
@@ -118,28 +121,28 @@ td.mid{min-width:170px}
 .empty b{display:block;color:var(--ink);font:600 16px "Space Grotesk",sans-serif;margin-bottom:4px}
 
 .pill{display:inline-block;font:700 11.5px "JetBrains Mono",monospace;padding:3px 8px;border-radius:6px;white-space:nowrap}
-.p0{background:var(--red);color:#fff}
-.p1{background:var(--orange-soft);color:var(--orange)}
+.p0{background:var(--red);color:var(--on-red)}
+.p1{background:var(--orange-soft);color:var(--orange-txt);box-shadow:inset 0 0 0 1px var(--orange)}
 .p2{background:var(--blue-soft);color:var(--blue)}
 .cv{font:700 12.5px "JetBrains Mono",monospace;padding:2px 7px;border-radius:6px;white-space:nowrap}
-.cv.crit{background:var(--red-soft);color:var(--red)}
-.cv.high{background:var(--amber-soft);color:var(--amber)}
+.cv.crit{background:var(--red-soft);color:var(--red-txt)}
+.cv.high{background:var(--amber-soft);color:var(--amber-txt)}
 .cv.na{color:var(--muted);font-weight:500}
 .tag{display:inline-block;font:600 11px "JetBrains Mono",monospace;padding:2px 7px;border-radius:6px;border:1px solid var(--line);margin:0 4px 4px 0;white-space:nowrap;text-decoration:none;color:inherit}
-.tag.kev{background:var(--red-soft);color:var(--red);border-color:transparent}
+.tag.kev{background:var(--red-soft);color:var(--red-txt);border-color:transparent}
 .tag.zd{background:var(--navy);color:#fff;border-color:transparent}
 .tag.up{background:var(--orange);color:#1b0d02;border-color:transparent}
-.tag.poc{background:var(--amber-soft);color:var(--amber);border-color:transparent}
+.tag.poc{background:var(--amber-soft);color:var(--amber-txt);border-color:transparent}
 .tag.epss{background:var(--blue-soft);color:var(--blue);border-color:transparent}
 a.tag:hover{filter:brightness(.95);text-decoration:underline}
 .src{display:block;font-size:13px;line-height:1.35;margin-bottom:5px}
 .src a{font-weight:600}
 .src span{color:var(--muted);font-size:12px}
 .more{font-size:12px;color:var(--muted)}
-.ex-yes{color:var(--red);font-weight:600}
-.st-novo{color:var(--orange);font-weight:600}
-.st-pend{color:var(--red);font-weight:600}
-.st-res{color:var(--green);font-weight:600}
+.ex-yes{color:var(--red-txt);font-weight:600}
+.st-novo{color:var(--orange-txt);font-weight:600}
+.st-pend{color:var(--red-txt);font-weight:600}
+.st-res{color:var(--green-txt);font-weight:600}
 
 .rules{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--orange);border-radius:12px;padding:12px 16px;margin:0 0 14px}
 .rules summary{cursor:pointer;font:600 13.5px "IBM Plex Sans",sans-serif}
@@ -158,7 +161,7 @@ a.tag:hover{filter:brightness(.95);text-decoration:underline}
 .kpi .n{font:700 clamp(28px,3.6vw,38px)/1 "Space Grotesk",sans-serif;letter-spacing:-.03em;color:var(--navy)}
 :root[data-theme="dark"] .kpi .n{color:var(--ink)}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .kpi .n{color:var(--ink)}}
-.kpi.hot .n{color:var(--orange)}
+.kpi.hot .n{color:var(--orange-txt)}
 .kpi .l{font-size:13px;color:var(--muted);margin-top:6px}
 .story{display:grid;grid-template-columns:1.5fr 1fr;gap:18px;margin-bottom:22px}
 .timeline{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line)}
@@ -172,16 +175,16 @@ a.tag:hover{filter:brightness(.95);text-decoration:underline}
 .card{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--red);border-radius:12px;padding:16px;box-shadow:var(--shadow);display:flex;flex-direction:column}
 .card .row{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
 .card h3{margin:0;font:700 16.5px/1.25 "Space Grotesk",sans-serif}
-.card .sc{font:700 20px "JetBrains Mono",monospace;color:var(--red)}
+.card .sc{font:700 20px "JetBrains Mono",monospace;color:var(--red-txt)}
 .card .id{font:500 11.5px "JetBrains Mono",monospace;color:var(--muted);margin:4px 0 10px}
 .card p{margin:0 0 8px;font-size:13.5px}
 .card p b{display:block;font:600 10.5px "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .card .act{margin-top:auto;padding-top:10px;border-top:1px dashed var(--line);font-size:13.5px}
-.card .act::before{content:"Ação → ";font-weight:700;color:var(--orange)}
+.card .act::before{content:"Ação → ";font-weight:700;color:var(--orange-txt)}
 .plan{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:22px}
 .col{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:var(--shadow)}
 .col .h{font:700 24px "Space Grotesk",sans-serif;margin:0}
-.col.c0 .h{color:var(--red)} .col.c1 .h{color:var(--orange)} .col.c2 .h{color:var(--blue)}
+.col.c0 .h{color:var(--red-txt)} .col.c1 .h{color:var(--orange-txt)} .col.c2 .h{color:var(--blue)}
 .col .t{font:600 11px "JetBrains Mono",monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
 .col ul{list-style:none;margin:0;padding:0}
 .col li{position:relative;padding:9px 0 9px 26px;border-top:1px solid var(--line);font-size:14px}
@@ -195,13 +198,18 @@ a.tag:hover{filter:brightness(.95);text-decoration:underline}
 .mcard{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:var(--shadow)}
 .mcard .k{font:600 11px "JetBrains Mono",monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .mcard .v{font:700 30px/1.1 "Space Grotesk",sans-serif;margin:6px 0 4px}
-.mcard .v.or{color:var(--orange)}
+.mcard .v.or{color:var(--orange-txt)}
 .mcard p{margin:0;font-size:13px;color:var(--muted)}
 .mcard p b{color:var(--ink)}
 .bar{display:flex;align-items:center;gap:8px}
 .bar i{display:block;height:8px;border-radius:4px;background:var(--orange);min-width:2px}
-.ok{color:var(--green);font-weight:600}
-.err{color:var(--red);font-weight:600}
+.ok{color:var(--green-txt);font-weight:600}
+.papel{font:600 12px "IBM Plex Sans",sans-serif;padding:2px 8px;border-radius:6px;white-space:nowrap}
+.p-ant{background:var(--orange-soft);color:var(--orange-txt);box-shadow:inset 0 0 0 1px var(--orange)}
+.p-amp{background:var(--blue-soft);color:var(--blue)}
+.p-mes{background:var(--line);color:var(--ink)}
+.p-sem{color:var(--muted)}
+.err{color:var(--red-txt);font-weight:600}
 .off{color:var(--muted)}
 
 .notice{background:var(--orange-soft);border:1px solid var(--orange);border-radius:12px;padding:14px 16px;margin-bottom:20px;font-size:14px;display:none}
@@ -357,9 +365,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     </div>
     <div class="mgrid" id="mgrid"></div>
     <h3 class="sub">Fontes monitoradas</h3>
-    <p class="lead">"Primeira a publicar" conta em quantas vulnerabilidades do radar a fonte saiu antes de todas as outras. É o que decide quais fontes valem a pena.</p>
+    <p class="lead">Papel de cada fonte nos últimos 7 dias. <b>Antecipa</b>: publicou alguma vulnerabilidade do radar antes de todas as outras, NVD e KEV inclusos. <b>Amplia cobertura</b>: foi a única fonte de texto em alguma. <b>Mais do mesmo</b>: só repetiu o que já tinha saído. <b>Sem retorno</b>: publicou, mas nada entrou no radar.</p>
     <div class="panel"><div class="tbl"><table>
-      <thead><tr><th>Fonte</th><th>Tipo</th><th>Status</th><th>Artigos</th><th>CVEs no radar</th><th>Primeira a publicar</th><th>Último ok</th></tr></thead>
+      <thead><tr><th>Fonte</th><th>Papel</th><th>Tipo</th><th>Status</th><th>Artigos</th><th>CVEs no radar</th><th>Antecipou</th><th>Exclusivas</th><th>Atraso mediano</th></tr></thead>
       <tbody id="fontesBody"></tbody>
     </table></div></div>
     <h3 class="sub">Últimas execuções</h3>
@@ -602,14 +610,18 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
     var fontes = (st && st.fontes) || [];
     var maxP = Math.max.apply(null, [1].concat(fontes.map(function(f){ return f.primeira || 0; })));
-    fontes.sort(function(a, b){ return (b.primeira || 0) - (a.primeira || 0) || (b.cves_elegiveis || 0) - (a.cves_elegiveis || 0); });
+    var ORD = {'antecipa':0,'amplia cobertura':1,'mais do mesmo':2,'sem retorno':3,'sem dados':4};
+    fontes.sort(function(a, b){ return ((ORD[a.papel] == null ? 9 : ORD[a.papel]) - (ORD[b.papel] == null ? 9 : ORD[b.papel])) || (b.primeira || 0) - (a.primeira || 0) || (b.cves_elegiveis || 0) - (a.cves_elegiveis || 0); });
+    var PAPEL = {'antecipa':['▲ antecipa','p-ant'],'amplia cobertura':['◆ amplia cobertura','p-amp'],'mais do mesmo':['= mais do mesmo','p-mes'],'sem retorno':['○ sem retorno','p-sem'],'sem dados':['– sem dados','p-sem']};
     $('fontesBody').innerHTML = fontes.length ? fontes.map(function(f){
-      var est = f.estado === 'ok' ? '<span class="ok">ok</span>' : (f.estado === 'erro' ? '<span class="err" title="' + esc(f.erro) + '">falha</span>' : '<span class="off" title="' + esc(f.obs) + '">inativa</span>');
-      return '<tr><td>' + link(f.site, f.nome) + '</td><td>' + esc(GRUPO[f.grupo] || f.grupo) + '</td><td>' + est + (f.estado === 'erro' ? '<br><span class="small">' + esc((f.erro || '').slice(0, 60)) + '</span>' : (f.obs ? '<br><span class="small">' + esc(f.obs) + '</span>' : '')) + '</td>' +
+      var est = f.estado === 'ok' ? '<span class="ok">✓ ok</span>' : (f.estado === 'erro' ? '<span class="err" title="' + esc(f.erro) + '">✕ falha</span>' : '<span class="off" title="' + esc(f.obs) + '">– inativa</span>');
+      var pp = f.estado === 'inativa' ? ['– inativa','p-sem'] : (PAPEL[f.papel] || ['–','p-sem']);
+      return '<tr><td>' + link(f.site, f.nome) + '</td><td><span class="papel ' + pp[1] + '">' + esc(pp[0]) + '</span></td><td>' + esc(GRUPO[f.grupo] || f.grupo) + '</td><td>' + est + (f.estado === 'erro' ? '<br><span class="small">' + esc((f.erro || '').slice(0, 60)) + '</span>' : (f.obs ? '<br><span class="small">' + esc(f.obs) + '</span>' : '')) + '</td>' +
         '<td class="c">' + (f.artigos || 0) + '</td><td class="c">' + (f.cves_elegiveis || 0) + '</td>' +
-        '<td><div class="bar"><i style="width:' + Math.round(((f.primeira || 0) / maxP) * 90) + 'px"></i><span class="mono">' + (f.primeira || 0) + '</span></div></td>' +
-        '<td class="c">' + (f.ultimo_ok ? fmt(f.ultimo_ok, true) : '—') + '</td></tr>';
-    }).join('') : '<tr><td colspan="7"><div class="empty"><b>Sem dados de fontes ainda</b></div></td></tr>';
+        '<td><div class="bar"><i style="width:' + Math.round(((f.primeira || 0) / maxP) * 70) + 'px"></i><span class="mono">' + (f.primeira || 0) + '</span></div></td>' +
+        '<td class="c">' + (f.exclusivas || 0) + '</td>' +
+        '<td class="c">' + (f.atraso_mediano_h == null ? '—' : (f.atraso_mediano_h < 48 ? Math.round(f.atraso_mediano_h) + 'h' : Math.round(f.atraso_mediano_h / 24) + ' dias')) + '</td></tr>';
+    }).join('') : '<tr><td colspan="9"><div class="empty"><b>Sem dados de fontes ainda</b></div></td></tr>';
 
     $('execBody').innerHTML = (ex && ex.length) ? ex.slice(0, 10).map(function(r){
       return '<tr><td class="c">' + fmt(r.inicio, true) + '</td><td class="c">' + Math.round(r.duracao_s) + 's</td><td class="c">' + r.fontes_ok + '/' + r.fontes_total + '</td>' +

@@ -631,11 +631,35 @@ def main() -> int:
     for f in fontes_cfg:
         meus = [a for a in arts if a["fonte"] == f["id"]]
         cves_f = {c for a in meus for c in a["cves"]} & exibidos_ids
-        contrib[f["id"]] = {"artigos": len(meus), "cves_elegiveis": len(cves_f), "primeira": 0}
+        contrib[f["id"]] = {"artigos": len(meus), "cves_elegiveis": len(cves_f), "primeira": 0, "exclusivas": 0, "_atrasos": []}
     for r in na_janela:
-        cand = [(f.get("publicado"), f["id"]) for f in r["fontes"] if f["id"] in contrib and f.get("publicado")]
-        if cand:
-            contrib[min(cand)[1]]["primeira"] += 1
+        pubs = [(parse_iso(f.get("publicado")), f["id"]) for f in r["fontes"] if f.get("publicado")]
+        pubs = [(d, i) for d, i in pubs if d]
+        if not pubs:
+            continue
+        t_ini = min(d for d, _ in pubs)                       # primeira aparição em qualquer lugar, NVD/KEV inclusos
+        textuais = {i for _, i in pubs if i in contrib}
+        cand = [(d, i) for d, i in pubs if i in contrib]
+        if cand and min(cand)[0] <= t_ini:
+            contrib[min(cand)[1]]["primeira"] += 1            # fonte saiu antes até da NVD/KEV
+        for fid in textuais:
+            meu = min(d for d, i in pubs if i == fid)
+            contrib[fid]["_atrasos"].append((meu - t_ini).total_seconds() / 3600)
+            if len(textuais) == 1:
+                contrib[fid]["exclusivas"] += 1
+    for c in contrib.values():
+        at = c.pop("_atrasos")
+        c["atraso_mediano_h"] = round(statistics.median(at), 1) if at else None
+        if c["primeira"] > 0:
+            c["papel"] = "antecipa"
+        elif c["exclusivas"] > 0:
+            c["papel"] = "amplia cobertura"
+        elif c["cves_elegiveis"] > 0:
+            c["papel"] = "mais do mesmo"
+        elif c["artigos"] > 0:
+            c["papel"] = "sem retorno"
+        else:
+            c["papel"] = "sem dados"
 
     def mediana(xs):
         return round(statistics.median(xs), 1) if xs else None
