@@ -1,0 +1,1338 @@
+{
+  "CVE-2021-48016": {
+    "cve": "CVE-2021-48016",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.8,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-22T11:17:04Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-22T11:17:04Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-48016",
+        "publicado": "2026-10-22T11:17:04Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2022-51026": {
+    "cve": "CVE-2022-51026",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.8,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-22T19:17:30Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-22T19:17:30Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-51026",
+        "publicado": "2026-10-22T19:17:30Z"
+      }
+    ],
+    "prioridade_max": "P1"
+  },
+  "CVE-2026-0322": {
+    "cve": "CVE-2026-0322",
+    "produto": "Palo Alto Networks PAN-OS",
+    "titulo": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
+    "cvss": 8.6,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-14",
+      "prazo": "2026-10-17",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-10-14T00:00:00Z",
+    "primeira_noticia": "2026-10-15T18:30:00Z",
+    "publicado_nvd": "2026-10-14T18:17:07Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0121,
+    "poc_qtd": 1,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-0322",
+        "publicado": "2026-10-14"
+      },
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322",
+        "publicado": "2026-10-14T18:17:07Z"
+      },
+      {
+        "nome": "Palo Alto Security Advisories",
+        "link": "https://security.paloaltonetworks.com/CVE-2026-0322",
+        "publicado": "2026-10-15T18:30:00Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
+  "CVE-2026-101528": {
+    "cve": "CVE-2026-101528",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.9,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-20T22:18:02Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-20T22:18:02Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0048,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-101528",
+        "publicado": "2026-10-20T22:18:02Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-101529": {
+    "cve": "CVE-2026-101529",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.9,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-20T22:18:02Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-20T22:18:02Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0048,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-101529",
+        "publicado": "2026-10-20T22:18:02Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-102764": {
+    "cve": "CVE-2026-102764",
+    "produto": "BeyondTrust Remote Support",
+    "titulo": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+    "cvss": 9.8,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-16",
+      "prazo": "2026-10-19",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-10-15T21:17:00Z",
+    "primeira_noticia": "2026-10-16T12:00:00Z",
+    "publicado_nvd": "2026-10-15T21:17:00Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0118,
+    "poc_qtd": 2,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764",
+        "publicado": "2026-10-15T21:17:00Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-102764",
+        "publicado": "2026-10-16"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-urges-patching-critical-vulnerability-beyondtrust-remote-support",
+        "publicado": "2026-10-16T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
+  "CVE-2026-104935": {
+    "cve": "CVE-2026-104935",
+    "produto": "Ivanti Connect Secure",
+    "titulo": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+    "cvss": 8.6,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-13",
+      "prazo": "2026-10-16",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-10-13T00:00:00Z",
+    "primeira_noticia": "2026-10-14T21:20:13Z",
+    "publicado_nvd": "2026-10-13T16:17:11Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.2598,
+    "poc_qtd": 4,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-104935",
+        "publicado": "2026-10-13"
+      },
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935",
+        "publicado": "2026-10-13T16:17:11Z"
+      },
+      {
+        "nome": "Dark Reading",
+        "link": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
+        "publicado": "2026-10-14T21:20:13Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
+  "CVE-2026-105133": {
+    "cve": "CVE-2026-105133",
+    "produto": "Ahsay AhsayCBS",
+    "titulo": "Ahsay AhsayCBS Improper Authentication Vulnerability",
+    "cvss": 7.3,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-14",
+      "prazo": "2026-10-17",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-10-04T07:16:33Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-04T07:16:33Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0579,
+    "poc_qtd": 1,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-105133",
+        "publicado": "2026-10-04T07:16:33Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-105133",
+        "publicado": "2026-10-14"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-105134": {
+    "cve": "CVE-2026-105134",
+    "produto": "Ahsay AhsayCBS",
+    "titulo": "Ahsay AhsayCBS Command Injection Vulnerability",
+    "cvss": 10.0,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-14",
+      "prazo": "2026-10-17",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-10-04T07:16:33Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-04T07:16:33Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.3831,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134",
+        "publicado": "2026-10-04T07:16:33Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-105134",
+        "publicado": "2026-10-14"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
+  "CVE-2026-106173": {
+    "cve": "CVE-2026-106173",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.8,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-13T18:17:14Z",
+    "primeira_noticia": "2026-10-20T15:38:52Z",
+    "publicado_nvd": "2026-10-13T18:17:14Z",
+    "exibido_em": "2026-10-23T12:22:11Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0046,
+    "poc_qtd": 3,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-106173",
+        "publicado": "2026-10-13T18:17:14Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
+        "publicado": "2026-10-20T15:38:52Z"
+      }
+    ],
+    "prioridade_max": "P1"
+  },
+  "CVE-2026-106931": {
+    "cve": "CVE-2026-106931",
+    "produto": "EG Secure Solutions SiteGuard Server Edition",
+    "titulo": "EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
+    "cvss": 8.5,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-20",
+      "prazo": "2026-10-23",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-10-14T05:16:42Z",
+    "primeira_noticia": "2026-10-20T12:00:00Z",
+    "publicado_nvd": "2026-10-14T05:16:42Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0117,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-106931",
+        "publicado": "2026-10-14T05:16:42Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-106931",
+        "publicado": "2026-10-20"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-10-20T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-109618": {
+    "cve": "CVE-2026-109618",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.8,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-21T07:00:00Z",
+    "primeira_noticia": "2026-10-21T07:00:00Z",
+    "publicado_nvd": "2026-10-21T14:17:09Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0531,
+    "poc_qtd": 521,
+    "fontes": [
+      {
+        "nome": "Fortinet PSIRT",
+        "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-186",
+        "publicado": "2026-10-21T07:00:00Z"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching",
+        "publicado": "2026-10-21T12:00:00Z"
+      },
+      {
+        "nome": "BleepingComputer",
+        "link": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+        "publicado": "2026-10-21T14:07:05Z"
+      },
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
+        "publicado": "2026-10-21T14:17:09Z"
+      },
+      {
+        "nome": "Cisco PSIRT",
+        "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20PHP%20Affecting%20Cisco%20Products:%20October%202026%26vs_k=1",
+        "publicado": "2026-10-22T23:00:35Z"
+      },
+      {
+        "nome": "Palo Alto Security Advisories",
+        "link": "https://security.paloaltonetworks.com/CVE-2026-109618",
+        "publicado": "2026-10-23T03:45:00Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
+        "publicado": "2026-10-23T07:40:45Z"
+      }
+    ],
+    "prioridade_max": "P1"
+  },
+  "CVE-2026-109619": {
+    "cve": "CVE-2026-109619",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.2,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-21T07:00:00Z",
+    "primeira_noticia": "2026-10-21T07:00:00Z",
+    "publicado_nvd": "2026-10-21T14:17:09Z",
+    "exibido_em": "2026-10-23T12:22:11Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0576,
+    "poc_qtd": 16,
+    "fontes": [
+      {
+        "nome": "Fortinet PSIRT",
+        "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-186",
+        "publicado": "2026-10-21T07:00:00Z"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching",
+        "publicado": "2026-10-21T12:00:00Z"
+      },
+      {
+        "nome": "BleepingComputer",
+        "link": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+        "publicado": "2026-10-21T14:07:05Z"
+      },
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619",
+        "publicado": "2026-10-21T14:17:09Z"
+      },
+      {
+        "nome": "Cisco PSIRT",
+        "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20PHP%20Affecting%20Cisco%20Products:%20October%202026%26vs_k=1",
+        "publicado": "2026-10-22T23:00:35Z"
+      },
+      {
+        "nome": "Palo Alto Security Advisories",
+        "link": "https://security.paloaltonetworks.com/CVE-2026-109618",
+        "publicado": "2026-10-23T03:45:00Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
+        "publicado": "2026-10-23T07:40:45Z"
+      }
+    ],
+    "prioridade_max": "P1"
+  },
+  "CVE-2026-110936": {
+    "cve": "CVE-2026-110936",
+    "produto": "Siemens Software Center",
+    "titulo": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
+    "cvss": 8.4,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-20",
+      "prazo": "2026-11-03",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-10-15T15:17:30Z",
+    "primeira_noticia": "2026-10-20T07:11:45Z",
+    "publicado_nvd": "2026-10-15T15:17:30Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0024,
+    "poc_qtd": 1,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-110936",
+        "publicado": "2026-10-15T15:17:30Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-110936",
+        "publicado": "2026-10-20"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
+        "publicado": "2026-10-20T07:11:45Z"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-10-20T12:00:00Z"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-03",
+        "publicado": "2026-10-22T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-114119": {
+    "cve": "CVE-2026-114119",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.8,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-21T01:17:38Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-21T01:17:38Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0043,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-114119",
+        "publicado": "2026-10-21T01:17:38Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-21589": {
+    "cve": "CVE-2026-21589",
+    "produto": "Atlassian Multiple Products",
+    "titulo": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+    "cvss": 9.3,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-15",
+      "prazo": "2026-10-18",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-10-05T22:16:58Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-05T22:16:58Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.1271,
+    "poc_qtd": 12,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589",
+        "publicado": "2026-10-05T22:16:58Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-21589",
+        "publicado": "2026-10-15"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
+  "CVE-2026-76299": {
+    "cve": "CVE-2026-76299",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.9,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-21T23:17:27Z",
+    "primeira_noticia": "2026-10-23T03:41:41Z",
+    "publicado_nvd": "2026-10-21T23:17:27Z",
+    "exibido_em": "2026-10-23T12:27:14Z",
+    "aguardando_nota_desde": "2026-10-23T03:41:41Z",
+    "nota_chegou_em": "2026-10-23T12:27:14Z",
+    "epss_max": 0.0014,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76299",
+        "publicado": "2026-10-21T23:17:27Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
+        "publicado": "2026-10-23T03:41:41Z"
+      }
+    ],
+    "prioridade_max": "P1"
+  },
+  "CVE-2026-76302": {
+    "cve": "CVE-2026-76302",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.9,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-21T23:17:28Z",
+    "primeira_noticia": "2026-10-23T03:41:41Z",
+    "publicado_nvd": "2026-10-21T23:17:28Z",
+    "exibido_em": "2026-10-23T12:27:14Z",
+    "aguardando_nota_desde": "2026-10-23T03:41:41Z",
+    "nota_chegou_em": "2026-10-23T12:27:14Z",
+    "epss_max": 0.0019,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76302",
+        "publicado": "2026-10-21T23:17:28Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
+        "publicado": "2026-10-23T03:41:41Z"
+      }
+    ],
+    "prioridade_max": "P1"
+  },
+  "CVE-2026-76466": {
+    "cve": "CVE-2026-76466",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.8,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-21T16:00:00Z",
+    "primeira_noticia": "2026-10-21T16:00:00Z",
+    "publicado_nvd": "2026-10-21T17:19:06Z",
+    "exibido_em": "2026-10-23T12:22:11Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0038,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "Cisco PSIRT",
+        "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Expressway%20Series%20Remote%20Code%20Execution%20Vulnerability%26vs_k=1",
+        "publicado": "2026-10-21T16:00:00Z"
+      },
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
+        "publicado": "2026-10-21T17:19:06Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/",
+        "publicado": "2026-10-23T04:47:50Z"
+      }
+    ],
+    "prioridade_max": "P1"
+  },
+  "CVE-2026-76519": {
+    "cve": "CVE-2026-76519",
+    "produto": "Cisco Secure Email Gateway",
+    "titulo": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+    "cvss": 9.8,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-14",
+      "prazo": "2026-10-17",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-10-14T00:00:00Z",
+    "primeira_noticia": "2026-10-14T16:00:00Z",
+    "publicado_nvd": "2026-10-14T17:19:10Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0157,
+    "poc_qtd": 1,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-76519",
+        "publicado": "2026-10-14"
+      },
+      {
+        "nome": "Cisco PSIRT",
+        "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Email%20Gateway%20Arbitrary%20File%20Write%20Vulnerability%26vs_k=1",
+        "publicado": "2026-10-14T16:00:00Z"
+      },
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519",
+        "publicado": "2026-10-14T17:19:10Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
+  "CVE-2026-76531": {
+    "cve": "CVE-2026-76531",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.9,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-21T23:17:30Z",
+    "primeira_noticia": "2026-10-23T03:41:41Z",
+    "publicado_nvd": "2026-10-21T23:17:30Z",
+    "exibido_em": "2026-10-23T12:27:14Z",
+    "aguardando_nota_desde": "2026-10-23T03:41:41Z",
+    "nota_chegou_em": "2026-10-23T12:27:14Z",
+    "epss_max": 0.0019,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76531",
+        "publicado": "2026-10-21T23:17:30Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
+        "publicado": "2026-10-23T03:41:41Z"
+      }
+    ],
+    "prioridade_max": "P1"
+  },
+  "CVE-2026-83938": {
+    "cve": "CVE-2026-83938",
+    "produto": "",
+    "titulo": "",
+    "cvss": 10.0,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-22T14:00:00Z",
+    "primeira_noticia": "2026-10-22T14:00:00Z",
+    "publicado_nvd": "2026-10-22T22:19:18Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "Microsoft Security Update Guide",
+        "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938",
+        "publicado": "2026-10-22T14:00:00Z"
+      },
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-83938",
+        "publicado": "2026-10-22T22:19:18Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-87337": {
+    "cve": "CVE-2026-87337",
+    "produto": "",
+    "titulo": "",
+    "cvss": 10.0,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-20T22:20:11Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-20T22:20:11Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0043,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-87337",
+        "publicado": "2026-10-20T22:20:11Z"
+      }
+    ],
+    "prioridade_max": "P1"
+  },
+  "CVE-2026-87347": {
+    "cve": "CVE-2026-87347",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.6,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-20T22:20:12Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-20T22:20:12Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0037,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-87347",
+        "publicado": "2026-10-20T22:20:12Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-91216": {
+    "cve": "CVE-2026-91216",
+    "produto": "",
+    "titulo": "",
+    "cvss": 10.0,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-20T22:20:22Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-20T22:20:22Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0052,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91216",
+        "publicado": "2026-10-20T22:20:22Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-91218": {
+    "cve": "CVE-2026-91218",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.6,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-20T22:20:22Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-20T22:20:22Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0037,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91218",
+        "publicado": "2026-10-20T22:20:22Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-91221": {
+    "cve": "CVE-2026-91221",
+    "produto": "",
+    "titulo": "",
+    "cvss": 10.0,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-20T22:20:22Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-20T22:20:22Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0052,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91221",
+        "publicado": "2026-10-20T22:20:22Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-91222": {
+    "cve": "CVE-2026-91222",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.9,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-20T22:20:22Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-20T22:20:22Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0045,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91222",
+        "publicado": "2026-10-20T22:20:22Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-91224": {
+    "cve": "CVE-2026-91224",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.9,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-20T22:20:22Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-20T22:20:22Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0033,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91224",
+        "publicado": "2026-10-20T22:20:22Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-91225": {
+    "cve": "CVE-2026-91225",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.1,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-20T22:20:23Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-20T22:20:23Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0044,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91225",
+        "publicado": "2026-10-20T22:20:23Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-91230": {
+    "cve": "CVE-2026-91230",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.3,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-20T22:20:23Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-20T22:20:23Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0034,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91230",
+        "publicado": "2026-10-20T22:20:23Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-91231": {
+    "cve": "CVE-2026-91231",
+    "produto": "",
+    "titulo": "",
+    "cvss": 10.0,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-20T22:20:23Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-20T22:20:23Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0052,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91231",
+        "publicado": "2026-10-20T22:20:23Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-91232": {
+    "cve": "CVE-2026-91232",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.9,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-20T22:20:23Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-20T22:20:23Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0045,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91232",
+        "publicado": "2026-10-20T22:20:23Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-91243": {
+    "cve": "CVE-2026-91243",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.6,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-20T22:20:25Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-20T22:20:25Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0037,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91243",
+        "publicado": "2026-10-20T22:20:25Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-91250": {
+    "cve": "CVE-2026-91250",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.9,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-20T22:20:25Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-20T22:20:25Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0045,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91250",
+        "publicado": "2026-10-20T22:20:25Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-91251": {
+    "cve": "CVE-2026-91251",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.9,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-20T22:20:26Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-20T22:20:26Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0045,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91251",
+        "publicado": "2026-10-20T22:20:26Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-91341": {
+    "cve": "CVE-2026-91341",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.1,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-20T22:20:36Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-20T22:20:36Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0044,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91341",
+        "publicado": "2026-10-20T22:20:36Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-91354": {
+    "cve": "CVE-2026-91354",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.9,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-20T22:20:38Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-20T22:20:38Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0033,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91354",
+        "publicado": "2026-10-20T22:20:38Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-96951": {
+    "cve": "CVE-2026-96951",
+    "produto": "Microsoft Windows",
+    "titulo": "Microsoft Windows Command Injection Vulnerability",
+    "cvss": 8.8,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-13",
+      "prazo": "2026-10-16",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-10-13T00:00:00Z",
+    "primeira_noticia": "2026-10-13T14:00:00Z",
+    "publicado_nvd": "2026-10-13T19:22:07Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0151,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-96951",
+        "publicado": "2026-10-13"
+      },
+      {
+        "nome": "Microsoft Security Update Guide",
+        "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96951",
+        "publicado": "2026-10-13T14:00:00Z"
+      },
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96951",
+        "publicado": "2026-10-13T19:22:07Z"
+      }
+    ],
+    "prioridade_max": "P1"
+  }
+}

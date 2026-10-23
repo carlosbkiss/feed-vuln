@@ -1,0 +1,179 @@
+{
+  "CVE-2026-96652": {
+    "cve": "CVE-2026-96652",
+    "produto": "Plex Media Server",
+    "titulo": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+    "cvss": 5.3,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-20",
+      "prazo": "2026-11-03",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-09-23T17:17:23Z",
+    "primeira_noticia": "2026-10-20T12:00:00Z",
+    "publicado_nvd": "2026-09-23T17:17:23Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0046,
+    "poc_qtd": 5,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96652",
+        "publicado": "2026-09-23T17:17:23Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-96652",
+        "publicado": "2026-10-20"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-10-20T12:00:00Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
+        "publicado": "2026-10-21T07:26:49Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-96654": {
+    "cve": "CVE-2026-96654",
+    "produto": "Plex Media Server",
+    "titulo": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+    "cvss": 6.9,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-20",
+      "prazo": "2026-10-23",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-09-23T17:17:23Z",
+    "primeira_noticia": "2026-10-20T12:00:00Z",
+    "publicado_nvd": "2026-09-23T17:17:23Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0046,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96654",
+        "publicado": "2026-09-23T17:17:23Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-96654",
+        "publicado": "2026-10-20"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-10-20T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-96655": {
+    "cve": "CVE-2026-96655",
+    "produto": "Plex Media Server",
+    "titulo": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+    "cvss": 5.3,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-20",
+      "prazo": "2026-11-03",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-09-23T17:17:23Z",
+    "primeira_noticia": "2026-10-20T12:00:00Z",
+    "publicado_nvd": "2026-09-23T17:17:23Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0046,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96655",
+        "publicado": "2026-09-23T17:17:23Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-96655",
+        "publicado": "2026-10-20"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-10-20T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-96656": {
+    "cve": "CVE-2026-96656",
+    "produto": "Plex Media Server",
+    "titulo": "Plex Media Server External Control of File Name or Path Vulnerability",
+    "cvss": 8.6,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-20",
+      "prazo": "2026-10-23",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-09-23T17:17:23Z",
+    "primeira_noticia": "2026-10-20T12:00:00Z",
+    "publicado_nvd": "2026-09-23T17:17:23Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0082,
+    "poc_qtd": 1,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96656",
+        "publicado": "2026-09-23T17:17:23Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-96656",
+        "publicado": "2026-10-20"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-10-20T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  }
+}

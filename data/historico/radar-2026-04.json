@@ -1,0 +1,40 @@
+{
+  "CVE-2025-61624": {
+    "cve": "CVE-2025-61624",
+    "produto": "Fortinet Multiple Products",
+    "titulo": "Fortinet Multiple Products Path Traversal Vulnerability",
+    "cvss": 6.5,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-16",
+      "prazo": "2026-10-19",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-04-14T16:16:31Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-04-14T16:16:31Z",
+    "exibido_em": "2026-10-23T12:14:22Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0108,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624",
+        "publicado": "2026-04-14T16:16:31Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-61624",
+        "publicado": "2026-10-16"
+      }
+    ],
+    "prioridade_max": "P0"
+  }
+}
