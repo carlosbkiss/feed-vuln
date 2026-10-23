@@ -1,7 +1,25 @@
 {
-  "atualizado": "2026-10-23T10:39:54Z",
+  "atualizado": "2026-10-23T14:39:36Z",
   "janela": "17 a 23/out/2026",
   "itens": [
+    {
+      "data": "2026-10-22",
+      "cve": "sem CVE (Fortinet, divulgação em 10/nov)",
+      "produto": "FortiOS, FortiManager, FortiAnalyzer, FortiMail, FortiAuthenticator",
+      "cvss": null,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não confirmada",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "Correções silenciosas de 21-22/out para falhas críticas, com detalhes só em 10/nov. Atualizar já os equipamentos expostos (builds a confirmar no PSIRT; citadas FortiOS 8.0.2, 7.6.8, 7.4.13, 7.2.14), tirar a gestão da internet; vira P0 em 10/nov ou se surgir exploração.",
+      "fontes": [
+        {
+          "nome": "Cybernews",
+          "url": "https://cybernews.com/security/fortinet-critical-flaws-patches-november-disclosure/"
+        }
+      ]
+    },
     {
       "data": "2026-10-22",
       "cve": "CVE-2026-114625",
@@ -12,7 +30,17 @@
       "exploracao": "Ativa",
       "prioridade": "P0",
       "status": "Novo",
-      "tratamento": "SQL injection que dá superusuário com login só-leitura. Subir para 5.2.3.18, 6.1.3.10 ou 6.4.2.12, restringir a interface a redes de gestão e revisar ações de admin recentes."
+      "tratamento": "SQL injection que dá superusuário com login só-leitura. Subir para 5.2.3.18, 6.1.3.10 ou 6.4.2.12, restringir a interface a redes de gestão e revisar ações de admin recentes.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html"
+        },
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/"
+        }
+      ]
     },
     {
       "data": "2026-10-22",
@@ -24,7 +52,35 @@
       "exploracao": "Não",
       "prioridade": "P1",
       "status": "Novo",
-      "tratamento": "Subir para OAG 2026.44.0, que traz estas correções e o PHP sem PHP2Shell. Revisar logins no Admin Console."
+      "tratamento": "Subir para OAG 2026.44.0, que traz estas correções e o PHP sem PHP2Shell. Revisar logins no Admin Console.",
+      "fontes": [
+        {
+          "nome": "Okta (CVE-2026-115547)",
+          "url": "https://trust.okta.com/security-advisories/command-execution-via-admin-console-input-in-okta-access-gateway-cve-2026-115547"
+        },
+        {
+          "nome": "Okta (CVE-2026-115546)",
+          "url": "https://trust.okta.com/security-advisories/authentication-source-verification-issue-in-okta-access-gateway-cve-2026-115546"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-22",
+      "cve": "CVE-2026-83938",
+      "produto": "Azure Kubernetes Configuration Service",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "status": "Novo",
+      "tratamento": "Serviço gerenciado da Microsoft; ação do cliente a confirmar no MSRC. Verificar se há clusters AKS usando a extensão.",
+      "fontes": [
+        {
+          "nome": "MSRC",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938"
+        }
+      ]
     },
     {
       "data": "2026-10-21",
@@ -36,7 +92,21 @@
       "exploracao": "Não",
       "prioridade": "P1",
       "status": "Novo",
-      "tratamento": "Comando como root sem login quando o cluster usa TLS Verify Mode. Versão corrigida a confirmar no advisory da Cisco; Expressway Edge exposto sobe para P0."
+      "tratamento": "Comando como root sem login quando o cluster usa TLS Verify Mode. Versão corrigida a confirmar no advisory da Cisco; Expressway Edge exposto sobe para P0.",
+      "fontes": [
+        {
+          "nome": "Cisco PSIRT",
+          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Expressway%20Series%20Remote%20Code%20Execution%20Vulnerability%26vs_k=1"
+        },
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466"
+        },
+        {
+          "nome": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/"
+        }
+      ]
     },
     {
       "data": "2026-10-21",
@@ -48,7 +118,13 @@
       "exploracao": "Exploit público",
       "prioridade": "P1",
       "status": "Novo",
-      "tratamento": "Atualizar para 26.12.1, 24.22.1 ou 22.23.4 e reconstruir imagens; Node 20 não tem correção. Paliativo: recusar Content-Encoding br na borda ou usar express.json({inflate:false})."
+      "tratamento": "Atualizar para 26.12.1, 24.22.1 ou 22.23.4 e reconstruir imagens; Node 20 não tem correção. Paliativo: recusar Content-Encoding br na borda ou usar express.json({inflate:false}).",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/nodejs-security-release-october-2026/"
+        }
+      ]
     },
     {
       "data": "2026-10-21",
@@ -60,7 +136,21 @@
       "exploracao": "Não",
       "prioridade": "P1",
       "status": "Novo",
-      "tratamento": "Exige conta de baixo privilégio. Subir para 10.4.4, 10.2.8, 10.0.11 ou 9.4.16; não há workaround."
+      "tratamento": "Exige conta de baixo privilégio. Subir para 10.4.4, 10.2.8, 10.0.11 ou 9.4.16; não há workaround.",
+      "fontes": [
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76299"
+        },
+        {
+          "nome": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/"
+        },
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76302"
+        }
+      ]
     },
     {
       "data": "2026-10-21",
@@ -196,7 +286,17 @@
       "exploracao": "Exploit público",
       "prioridade": "P1",
       "status": "Novo",
-      "tratamento": "RCE sem login pela porta 27918 (gRPC). Subir para 7.5.1 ou migrar para 7.6 e bloquear a porta fora da rede de gestão."
+      "tratamento": "RCE sem login pela porta 27918 (gRPC). Subir para 7.5.1 ou migrar para 7.6 e bloquear a porta fora da rede de gestão.",
+      "fontes": [
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106173"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html"
+        }
+      ]
     },
     {
       "data": "2026-10-20",
@@ -421,6 +521,50 @@
         {
           "nome": "Shattered",
           "url": "https://shattered.io/beyondtrust-cve-2026-102764-china-apt-zero-day-2026/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-16",
+      "cve": "CVE-2025-61624",
+      "produto": "FortiOS / FortiProxy / FortiPAM",
+      "cvss": 6.5,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa",
+      "prioridade": "P0",
+      "status": "Pendente",
+      "tratamento": "Exige admin com escrita, então indica conta de gestão comprometida. Confirmar a versão corrigida (advisory de abril, a confirmar), revisar contas admin e restringir a gestão a IPs confiáveis.",
+      "fontes": [
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-61624"
+        },
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-15",
+      "cve": "CVE-2026-21589",
+      "produto": "Atlassian Data Center (Jira, Confluence, Bitbucket, Bamboo, Crowd)",
+      "cvss": 9.3,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (após PoC público)",
+      "prioridade": "P0",
+      "status": "Pendente",
+      "tratamento": "Leitura de arquivos sem login. Subir para as versões do advisory (ex.: Jira 10.3.26/11.3.12, Confluence 9.2.26/10.2.19, Bitbucket 10.5.1); sem patch, aplicar a regra de rewrite/WAF da Atlassian e revisar logs por path traversal.",
+      "fontes": [
+        {
+          "nome": "eSecurity Planet",
+          "url": "https://www.esecurityplanet.com/news/news-atlassian-cve-2026-21589-file-read-flaw/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-21589"
         }
       ]
     },
