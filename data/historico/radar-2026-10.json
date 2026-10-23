@@ -448,6 +448,11 @@
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
         "publicado": "2026-10-23T07:40:45Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/critical-php2shell-exploit-code/",
+        "publicado": "2026-10-23T13:00:37Z"
       }
     ],
     "prioridade_max": "P1"
@@ -506,6 +511,11 @@
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
         "publicado": "2026-10-23T07:40:45Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/critical-php2shell-exploit-code/",
+        "publicado": "2026-10-23T13:00:37Z"
       }
     ],
     "prioridade_max": "P1"
