@@ -25,6 +25,8 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # sempre a versão mais recente (o run pode ter ficado na fila atrás de outro)
 
       - uses: actions/setup-python@v5
         with:
@@ -58,7 +60,8 @@ jobs:
             git add data/vulns.json data/historico
             N=$(python -c "import json;print(len(json.load(open('data/status.json'))['novos_nesta_rodada']))")
             git commit -m "radar: ${N} novo(s)"
-            git pull --rebase origin main
+            # em conflito nos arquivos gerados, vale o dado desta rodada
+            git pull --rebase -X theirs origin main || { git rebase --abort; git pull --no-rebase -X ours origin main; }
             git push origin HEAD:main
           else
             echo "Sem alteração."
