@@ -45,45 +45,39 @@ a{color:var(--blue);text-underline-offset:2px}
 
 /* topo */
 .top{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 100%);color:#eef2fb}
-.top .wrap{padding-top:22px;padding-bottom:22px}
-.brand{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.logo{display:flex;align-items:center;gap:12px;font:700 20px "Space Grotesk",sans-serif;letter-spacing:-.01em}
-.mark{width:34px;height:34px;border-radius:9px;background:var(--orange);display:grid;place-items:center}
-.mark svg{width:20px;height:20px}
-.brand-right{display:flex;gap:8px;align-items:center}
-.btn{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#eef2fb;border-radius:999px;padding:6px 12px;font:500 12px "JetBrains Mono",monospace;cursor:pointer;text-decoration:none}
+.bar-top{display:flex;align-items:center;justify-content:space-between;gap:10px 16px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+.logo{display:flex;align-items:center;gap:10px;font:700 17px/1.15 "Space Grotesk",sans-serif;letter-spacing:-.01em}
+.logo small{display:block;font:500 11.5px "IBM Plex Sans",sans-serif;color:#9fb0d4;letter-spacing:0}
+.mark{width:30px;height:30px;border-radius:8px;background:var(--orange);display:grid;place-items:center;flex:none}
+.mark svg{width:18px;height:18px}
+.chips-st{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.stp{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:4px 10px;font:500 12px "IBM Plex Sans",sans-serif;white-space:nowrap}
+.stp b{font:600 10.5px "JetBrains Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:#9fb0d4}
+.stp i{font-style:normal;color:#9fb0d4}
+.stp.alert{background:var(--orange);border-color:var(--orange);color:#1b0d02}
+.stp.alert b,.stp.alert i{color:#4a2306}
+.btn{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#eef2fb;border-radius:999px;padding:4px 10px;font:500 12px "JetBrains Mono",monospace;cursor:pointer;text-decoration:none}
 .btn:hover{background:rgba(255,255,255,.12)}
-h1{font:700 clamp(28px,5vw,44px)/1.05 "Space Grotesk",sans-serif;letter-spacing:-.025em;margin:22px 0 8px}
-h1 span{color:var(--orange-2)}
-.dek{margin:0;color:#b9c5e0;max-width:760px;font-size:16px}
-.status{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:12px;margin-top:20px}
-.st{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px 16px}
-.st .k{font:500 11px "JetBrains Mono",monospace;letter-spacing:.1em;text-transform:uppercase;color:#9fb0d4}
-.st .v{font:600 20px "Space Grotesk",sans-serif;margin-top:3px}
-.st .s{font-size:12.5px;color:#b9c5e0;margin-top:2px}
-.st.alert{background:var(--orange);border-color:var(--orange);color:#1b0d02}
-.st.alert .k,.st.alert .s{color:#4a2306}
-.pulse{display:inline-block;width:9px;height:9px;border-radius:50%;background:#3ddc84;margin-right:8px;vertical-align:2px;animation:p 2s infinite}
+.pulse{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3ddc84;animation:p 2s infinite}
 .pulse.off{background:#9aa5bd;animation:none}
 .pulse.warn{background:#ffb020;animation:none}
-@keyframes p{0%{box-shadow:0 0 0 0 rgba(61,220,132,.55)}70%{box-shadow:0 0 0 9px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}
+@keyframes p{0%{box-shadow:0 0 0 0 rgba(61,220,132,.55)}70%{box-shadow:0 0 0 7px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}
 @media (prefers-reduced-motion: reduce){.pulse{animation:none}}
 
 /* big numbers */
-.bign{background:var(--navy-2);border-bottom:4px solid var(--orange)}
+.bign{background:var(--navy-2);border-bottom:3px solid var(--orange);border-top:1px solid rgba(255,255,255,.08)}
 :root[data-theme="dark"] .bign{background:#0c1834}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .bign{background:#0c1834}}
-.bign .wrap{display:grid;grid-template-columns:repeat(6,1fr);gap:0;padding-top:4px;padding-bottom:18px}
-.bn{padding:14px 16px 4px;border-left:1px solid rgba(255,255,255,.12);color:#eef2fb}
+.bign .wrap{display:grid;grid-template-columns:repeat(6,1fr);gap:0;padding-top:8px;padding-bottom:10px}
+.bn{padding:2px 14px;border-left:1px solid rgba(255,255,255,.12);color:#eef2fb;min-width:0}
 .bn:first-child{border-left:0;padding-left:0}
-.bn .n{font:700 clamp(30px,3.6vw,42px)/1 "Space Grotesk",sans-serif;letter-spacing:-.03em}
-.bn .n small{font-size:.5em;font-weight:600;margin-left:2px;color:#b9c5e0}
+.bn .n{font:700 clamp(22px,2.4vw,28px)/1.05 "Space Grotesk",sans-serif;letter-spacing:-.02em}
+.bn .n small{font-size:.55em;font-weight:600;margin-left:2px;color:#b9c5e0}
 .bn.hot .n{color:var(--orange-2)}
-.bn .l{font:600 12.5px "IBM Plex Sans",sans-serif;margin-top:6px}
-.bn .s{font-size:12px;color:#9fb0d4;margin-top:2px;line-height:1.35}
-.bign .cap{grid-column:1/-1;font:500 11px "JetBrains Mono",monospace;letter-spacing:.1em;text-transform:uppercase;color:#9fb0d4;padding-top:10px}
+.bn .l{font:600 12px/1.25 "IBM Plex Sans",sans-serif;margin-top:3px}
+.bn .s{font-size:11.5px;color:#9fb0d4;margin-top:1px;line-height:1.3}
 
-/* nav */
+
 .nav{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;gap:4px;overflow-x:auto}
 .nav a{padding:12px 14px;font:600 13.5px "IBM Plex Sans",sans-serif;color:var(--muted);text-decoration:none;border-bottom:3px solid transparent;white-space:nowrap}
@@ -91,7 +85,7 @@ h1 span{color:var(--orange-2)}
 .nav .badge{font:700 11px "JetBrains Mono",monospace;background:var(--orange-soft);color:var(--orange-txt);border-radius:999px;padding:1px 7px;margin-left:6px}
 
 /* seções */
-main{padding:28px 0 8px}
+main{padding:22px 0 8px}
 section{margin:0 0 44px;scroll-margin-top:60px}
 .sh{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
 .eyebrow{font:600 11.5px "JetBrains Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-txt)}
@@ -216,9 +210,10 @@ a.tag:hover{filter:brightness(.95);text-decoration:underline}
 footer{border-top:1px solid var(--line);padding:18px 0 36px;color:var(--muted);font-size:12.5px}
 footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
-@media (max-width:1040px){.bign .wrap{grid-template-columns:repeat(3,1fr)}.bn:nth-child(4){border-left:0;padding-left:0}.cards{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:1040px){.bign .wrap{grid-template-columns:repeat(3,1fr);row-gap:8px}.bn:nth-child(4){border-left:0;padding-left:0}.cards{grid-template-columns:repeat(2,1fr)}.hide-sm{display:none}}
 @media (max-width:760px){
-  .status{grid-template-columns:1fr}
+  .logo small{display:none}
+  .stp i{display:none}
   .bign .wrap{grid-template-columns:repeat(2,1fr)}
   .bn{border-left:0;padding-left:0}
   .kpis{grid-template-columns:repeat(2,1fr)}
@@ -236,42 +231,23 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <body>
 
 <header class="top">
-  <div class="wrap">
-    <div class="brand">
-      <div class="logo">
-        <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0b2350" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/><path d="M12 12 18.5 5.5"/></svg></span>
-        Radar Cyber
-      </div>
-      <div class="brand-right">
-        <a class="btn" href="https://github.com/carlosbkiss/feed-vuln" target="_blank" rel="noopener">repo</a>
-        <button class="btn" id="themeBtn" type="button" aria-label="Alternar tema">◐ tema</button>
-      </div>
+  <div class="wrap bar-top">
+    <div class="logo">
+      <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0b2350" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/><path d="M12 12 18.5 5.5"/></svg></span>
+      <span>Radar Cyber<small>vulnerabilidades críticas e zero-days · setor financeiro</small></span>
     </div>
-    <h1>Vulnerabilidades críticas, <span>em tempo de reação</span></h1>
-    <p class="dek">Notícias, fabricantes, CISA KEV e NVD consolidados por CVE a cada 2h (8h às 20h), com triagem diária, leitura da semana e métricas do piloto.</p>
-    <div class="status" aria-live="polite">
-      <div class="st" id="stAlert">
-        <div class="k">Último alerta</div>
-        <div class="v" id="ultAlerta">—</div>
-        <div class="s" id="ultAlertaS">aguardando primeira coleta</div>
-      </div>
-      <div class="st">
-        <div class="k"><span class="pulse off" id="pulse"></span>Última verificação</div>
-        <div class="v" id="ultVer">—</div>
-        <div class="s" id="ultVerS">a cada 2h das 8h às 20h</div>
-      </div>
-      <div class="st">
-        <div class="k">Fontes</div>
-        <div class="v" id="fontesV">—</div>
-        <div class="s" id="fontesS">notícias · fabricantes · KEV · NVD</div>
-      </div>
+    <div class="chips-st" aria-live="polite">
+      <span class="stp" id="stAlert" title="Último alerta"><b>Alerta</b> <span id="ultAlerta">—</span> <i id="ultAlertaS"></i></span>
+      <span class="stp" title="Última verificação"><span class="pulse off" id="pulse"></span><b>Verificado</b> <span id="ultVer">—</span> <i id="ultVerS"></i></span>
+      <span class="stp" title="Saúde das fontes"><b>Fontes</b> <span id="fontesV">—</span> <i id="fontesS" class="hide-sm"></i></span>
+      <a class="btn" href="https://github.com/carlosbkiss/feed-vuln" target="_blank" rel="noopener">repo</a>
+      <button class="btn" id="themeBtn" type="button" aria-label="Alternar tema">◐</button>
     </div>
   </div>
 </header>
 
 <div class="bign" aria-label="Números da semana">
   <div class="wrap" id="bign">
-    <div class="cap">Radar: últimos 14 dias</div>
   </div>
 </div>
 
@@ -446,21 +422,21 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
   // ---------- topo
   function renderStatus(st){
-    if (!st) { $('ultVerS').textContent = 'o workflow ainda não rodou'; return; }
+    if (!st) { $('ultVerS').textContent = '· ainda não rodou'; return; }
     $('pulse').className = 'pulse' + (atrasado(st.ultima_verificacao) ? ' warn' : '');
     $('ultVer').textContent = fmt(st.ultima_verificacao, true);
-    $('ultVerS').textContent = rel(st.ultima_verificacao) + ' · próxima ' + proxima();
+    $('ultVerS').textContent = '· próxima ' + proxima().replace('por volta das ', '');
     var m = st.metricas || {};
     $('fontesV').textContent = (m.fontes_ok != null ? m.fontes_ok + '/' + m.fontes_total : '—') + ' ok';
     var e = st.estruturadas || {};
-    $('fontesS').textContent = 'KEV ' + ((e.kev || {}).estado || '—') + ' · NVD ' + ((e.nvd || {}).estado || '—') + ' · EPSS ' + ((e.epss || {}).estado || '—') + (st.chave_nvd ? '' : ' · sem chave NVD');
+    $('fontesS').textContent = '· KEV ' + ((e.kev || {}).estado || '—') + ' · NVD ' + ((e.nvd || {}).estado || '—') + ' · EPSS ' + ((e.epss || {}).estado || '—');
     if (st.ultimo_alerta) {
       $('ultAlerta').textContent = fmt(st.ultimo_alerta, true);
       var n = (st.novos_nesta_rodada || []).length;
-      $('ultAlertaS').textContent = rel(st.ultimo_alerta) + (n ? ' · ' + n + ' novo(s) na última rodada' : '');
+      $('ultAlertaS').textContent = '· ' + rel(st.ultimo_alerta) + (n ? ' · ' + n + ' novo(s)' : '');
       if ((Date.now() - new Date(st.ultimo_alerta).getTime()) / 3600000 < 24) $('stAlert').classList.add('alert');
     } else {
-      $('ultAlertaS').textContent = 'nenhum alerta registrado ainda';
+      $('ultAlertaS').textContent = '';
     }
   }
 
@@ -470,17 +446,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     var hrs = function(h){ return h == null ? null : (Math.abs(h) >= 48 ? Math.round(h / 24) + '<small>dias</small>' : Math.round(h) + '<small>h</small>'); };
     var notaTxt = m.antes_da_nota_mediana_h != null ? '+' + hrs(m.antes_da_nota_mediana_h) : (m.aguardando_nota ? esc(m.aguardando_nota) + '<small>aguardando</small>' : '—');
     var tiles = [
-      {n: m.elegiveis, l: 'Vulnerabilidades no radar', s: m.elegiveis != null ? 'P0 ' + m.p0 + ' · P1 ' + m.p1 + ' · P2 ' + m.p2 + (m.novos_7d != null ? ' · ' + m.novos_7d + ' com atividade em 7 dias' : '') : nd},
+      {n: m.elegiveis, l: 'No radar (14 dias)', s: m.elegiveis != null ? 'P0 ' + m.p0 + ' · P1 ' + m.p1 + ' · P2 ' + m.p2 + (m.novos_7d != null ? ' · ' + m.novos_7d + ' com atividade em 7 dias' : '') : nd},
       {n: m.explorados, l: 'Exploradas ativamente', s: m.explorados != null ? 'KEV ou exploração relatada' + (m.com_poc ? ' · ' + m.com_poc + ' com PoC público' : '') : nd},
       {n: m.p0, l: 'P0 em aberto', s: 'explorados em borda, acesso ou CI/CD: corrigir em 24h', hot: true},
       {html: notaTxt, l: 'Vistas antes da nota da NVD', s: m.antes_da_nota_n ? m.antes_da_nota_n + ' CVE(s) · mediana de antecedência' : (m.aguardando_nota ? m.aguardando_nota + ' CVE(s) em fontes aguardando nota da NVD agora' : nd), hot: true},
-      {html: m.kev_cobertura_pct == null ? '—' : Math.round(m.kev_cobertura_pct * 100) + '<small>%</small>', l: 'Cobertura do CISA KEV', s: m.kev_semana != null ? m.kev_com_noticia_antes + ' de ' + m.kev_semana + ' com notícia antes ou no dia' : nd},
+      {html: m.kev_cobertura_pct == null ? '—' : Math.round(m.kev_cobertura_pct * 100) + '<small>%</small>', l: 'Cobertura do KEV (7 dias)', s: m.kev_semana != null ? m.kev_com_noticia_antes + ' de ' + m.kev_semana + ' com notícia antes ou no dia' : nd},
       {n: m.artigos, l: 'Itens de fontes lidos', s: m.fontes_total ? 'de ' + m.fontes_total + ' fontes ativas · ' + (m.artigos_com_cve || 0) + ' citam CVE' : nd}
     ];
     $('bign').innerHTML = tiles.map(function(t){
       var v = t.html != null ? t.html : (t.n == null ? '—' : esc(t.n));
       return '<div class="bn' + (t.hot ? ' hot' : '') + '"><div class="n">' + v + '</div><div class="l">' + esc(t.l) + '</div><div class="s">' + esc(t.s) + '</div></div>';
-    }).join('') + '<div class="cap">Radar: últimos 14 dias · antecedência, cobertura e fontes: últimos 7 dias · atualizado a cada coleta</div>';
+    }).join('');
   }
 
   // ---------- radar
