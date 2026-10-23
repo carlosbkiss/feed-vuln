@@ -617,7 +617,8 @@ def main() -> int:
         a, b = parse_iso(r.get("aguardando_nota_desde")), parse_iso(r.get("nota_chegou_em"))
         if a and b:
             esperas.append((b - a).total_seconds() / 3600)
-    aguardando = [r for r in itens + list(novos_candidatos.values()) if r.get("aguardando_nota_desde") and not r.get("nota_chegou_em")]
+    aguardando = [r for r in itens + list(novos_candidatos.values())
+                  if r.get("aguardando_nota_desde") and not r.get("nota_chegou_em") and r.get("nvd_checado_em") and r.get("cvss") is None]
 
     kev_semana = [r for r in itens if r.get("kev") and r["kev"]["adicionado"] >= j.strftime("%Y-%m-%d")]
     kev_rel = [r for r in kev_semana if r["prioridade"] in ("P0", "P1")]
@@ -652,13 +653,15 @@ def main() -> int:
 
     metricas = {
         "janela_dias": JANELA_METRICAS_DIAS,
-        "elegiveis": len(na_janela),
-        "explorados": sum(1 for r in na_janela if r.get("zero_day")),
-        "p0": sum(1 for r in na_janela if r["prioridade"] == "P0"),
-        "p1": sum(1 for r in na_janela if r["prioridade"] == "P1"),
-        "p2": sum(1 for r in na_janela if r["prioridade"] == "P2"),
-        "com_poc": sum(1 for r in na_janela if (r.get("poc") or {}).get("qtd")),
-        "epss_alto": sum(1 for r in na_janela if (r.get("epss") or {}).get("percentil", 0) >= 0.95),
+        "elegiveis": len(itens),
+        "explorados": sum(1 for r in itens if r.get("zero_day")),
+        "p0": sum(1 for r in itens if r["prioridade"] == "P0"),
+        "p1": sum(1 for r in itens if r["prioridade"] == "P1"),
+        "p2": sum(1 for r in itens if r["prioridade"] == "P2"),
+        "com_poc": sum(1 for r in itens if (r.get("poc") or {}).get("qtd")),
+        "epss_alto": sum(1 for r in itens if (r.get("epss") or {}).get("percentil", 0) >= 0.95),
+        "novos_7d": len(na_janela),
+        "radar_dias": RETENCAO_DIAS,
         "fora_do_escopo": elegiveis_fora,
         "artigos": len(arts),
         "artigos_com_cve": sum(1 for a in arts if a["cves"]),
