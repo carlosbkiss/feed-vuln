@@ -520,6 +520,50 @@
     ],
     "prioridade_max": "P1"
   },
+  "CVE-2026-110447": {
+    "cve": "CVE-2026-110447",
+    "produto": "Collabora Collabora Online – Built-in CODE Server",
+    "titulo": "Collabora Online – Built-in CODE Server OS Command Injection Vulnerability",
+    "cvss": 9.2,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-23",
+      "prazo": "2026-10-26",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-10-14T03:17:20Z",
+    "primeira_noticia": "2026-10-23T12:00:00Z",
+    "publicado_nvd": "2026-10-14T03:17:20Z",
+    "exibido_em": "2026-10-23T20:28:55Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0123,
+    "poc_qtd": 1,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-110447",
+        "publicado": "2026-10-14T03:17:20Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-110447",
+        "publicado": "2026-10-23"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
+        "publicado": "2026-10-23T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
   "CVE-2026-110936": {
     "cve": "CVE-2026-110936",
     "produto": "Siemens Software Center",
