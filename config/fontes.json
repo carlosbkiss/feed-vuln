@@ -1,5 +1,5 @@
 {
-  "_comentario": "Fontes monitoradas. tipo: rss (RSS ou Atom). grupo: noticias | fabricante | governo | produto. ativo=false mantém a fonte listada na página sem coletar (ex.: sem RSS). Fontes estruturadas (CISA KEV e NVD) ficam no código.",
+  "_comentario": "Fontes monitoradas. tipo: rss (RSS ou Atom). grupo: noticias | fabricante | governo | produto. ativo=false mantém a fonte listada na página sem coletar (ex.: sem RSS). Fontes estruturadas (CISA KEV e NVD) ficam no código. escopo_inicial=true marca as fontes da lista inicial do piloto.",
   "fontes": [
     {
       "id": "thn",
@@ -7,7 +7,8 @@
       "site": "https://thehackernews.com/",
       "feed": "https://feeds.feedburner.com/TheHackersNews",
       "grupo": "noticias",
-      "ativo": true
+      "ativo": true,
+      "escopo_inicial": true
     },
     {
       "id": "csn",
@@ -15,7 +16,8 @@
       "site": "https://cybersecuritynews.com/",
       "feed": "https://cybersecuritynews.com/feed/",
       "grupo": "noticias",
-      "ativo": true
+      "ativo": true,
+      "escopo_inicial": true
     },
     {
       "id": "bleeping",
@@ -23,7 +25,8 @@
       "site": "https://www.bleepingcomputer.com/",
       "feed": "https://www.bleepingcomputer.com/feed/",
       "grupo": "noticias",
-      "ativo": true
+      "ativo": true,
+      "escopo_inicial": true
     },
     {
       "id": "darkreading",
@@ -31,7 +34,8 @@
       "site": "https://www.darkreading.com/",
       "feed": "https://www.darkreading.com/rss.xml",
       "grupo": "noticias",
-      "ativo": true
+      "ativo": true,
+      "escopo_inicial": true
     },
     {
       "id": "securityweek",
@@ -39,7 +43,8 @@
       "site": "https://www.securityweek.com/",
       "feed": "https://www.securityweek.com/feed/",
       "grupo": "noticias",
-      "ativo": true
+      "ativo": true,
+      "escopo_inicial": false
     },
     {
       "id": "dailydarkweb",
@@ -47,7 +52,8 @@
       "site": "https://dailydarkweb.net/category/vulnerability/",
       "feed": "https://dailydarkweb.net/feed/",
       "grupo": "noticias",
-      "ativo": true
+      "ativo": true,
+      "escopo_inicial": false
     },
     {
       "id": "cybernews",
@@ -55,7 +61,8 @@
       "site": "https://cybernews.com/security/",
       "feed": "https://cybernews.com/feed/",
       "grupo": "noticias",
-      "ativo": true
+      "ativo": true,
+      "escopo_inicial": true
     },
     {
       "id": "cisa-adv",
@@ -63,7 +70,8 @@
       "site": "https://www.cisa.gov/news-events/cybersecurity-advisories",
       "feed": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
       "grupo": "governo",
-      "ativo": true
+      "ativo": true,
+      "escopo_inicial": true
     },
     {
       "id": "ctir",
@@ -72,7 +80,8 @@
       "feed": "https://www.gov.br/ctir/pt-br/assuntos/alertas-e-recomendacoes/alertas/colecao-alertas/RSS",
       "grupo": "governo",
       "ativo": false,
-      "obs": "portal gov.br não expõe RSS (testado); precisa de leitura da página"
+      "obs": "portal gov.br não expõe RSS (testado); precisa de leitura da página",
+      "escopo_inicial": true
     },
     {
       "id": "msrc",
@@ -80,7 +89,9 @@
       "site": "https://msrc.microsoft.com/update-guide",
       "feed": "https://api.msrc.microsoft.com/update-guide/rss",
       "grupo": "fabricante",
-      "ativo": true
+      "ativo": true,
+      "escopo_inicial": true,
+      "obs": "cobre Patch Tuesday e Microsoft Edge"
     },
     {
       "id": "fortinet",
@@ -88,7 +99,8 @@
       "site": "https://www.fortiguard.com/psirt",
       "feed": "https://filestore.fortinet.com/fortiguard/rss/ir.xml",
       "grupo": "fabricante",
-      "ativo": true
+      "ativo": true,
+      "escopo_inicial": false
     },
     {
       "id": "cisco",
@@ -96,7 +108,8 @@
       "site": "https://sec.cloudapps.cisco.com/security/center/publicationListing.x",
       "feed": "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml",
       "grupo": "fabricante",
-      "ativo": true
+      "ativo": true,
+      "escopo_inicial": false
     },
     {
       "id": "paloalto",
@@ -104,7 +117,8 @@
       "site": "https://security.paloaltonetworks.com/",
       "feed": "https://security.paloaltonetworks.com/rss.xml",
       "grupo": "fabricante",
-      "ativo": true
+      "ativo": true,
+      "escopo_inicial": false
     },
     {
       "id": "chrome",
@@ -112,7 +126,8 @@
       "site": "https://chromereleases.googleblog.com/",
       "feed": "https://chromereleases.googleblog.com/feeds/posts/default",
       "grupo": "produto",
-      "ativo": true
+      "ativo": true,
+      "escopo_inicial": true
     },
     {
       "id": "firefox",
@@ -121,7 +136,8 @@
       "feed": "https://www.mozilla.org/en-US/security/advisories/feed/",
       "grupo": "produto",
       "ativo": false,
-      "obs": "feed oficial retornando vazio"
+      "obs": "feed oficial retornando vazio",
+      "escopo_inicial": true
     }
   ]
 }

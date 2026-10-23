@@ -54,6 +54,11 @@ a{color:var(--blue);text-underline-offset:2px}
 .stp{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:4px 10px;font:500 12px "IBM Plex Sans",sans-serif;white-space:nowrap}
 .stp b{font:600 10.5px "JetBrains Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:#9fb0d4}
 .stp i{font-style:normal;color:#9fb0d4}
+.tip{position:relative;display:inline-flex}
+.tip-b{width:16px;height:16px;border-radius:50%;border:1px solid currentColor;background:transparent;color:inherit;font:700 10px/1 "IBM Plex Serif",Georgia,serif;font-style:italic;cursor:help;padding:0;opacity:.75}
+.tip-b:hover,.tip-b:focus-visible{opacity:1;outline:2px solid var(--orange-2);outline-offset:1px}
+.tip-t{display:none;position:absolute;top:calc(100% + 8px);right:-8px;z-index:20;width:260px;white-space:normal;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:400 12.5px/1.45 "IBM Plex Sans",sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.tip:hover .tip-t,.tip:focus-within .tip-t,.tip.open .tip-t{display:block}
 .stp.alert{background:var(--orange);border-color:var(--orange);color:#1b0d02}
 .stp.alert b,.stp.alert i{color:#4a2306}
 .btn{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#eef2fb;border-radius:999px;padding:4px 10px;font:500 12px "JetBrains Mono",monospace;cursor:pointer;text-decoration:none}
@@ -237,9 +242,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       <span>Radar Cyber<small>vulnerabilidades críticas e zero-days · setor financeiro</small></span>
     </div>
     <div class="chips-st" aria-live="polite">
-      <span class="stp" id="stAlert" title="Último alerta"><b>Alerta</b> <span id="ultAlerta">—</span> <i id="ultAlertaS"></i></span>
-      <span class="stp" title="Última verificação"><span class="pulse off" id="pulse"></span><b>Verificado</b> <span id="ultVer">—</span> <i id="ultVerS"></i></span>
-      <span class="stp" title="Saúde das fontes"><b>Fontes</b> <span id="fontesV">—</span> <i id="fontesS" class="hide-sm"></i></span>
+      <span class="stp" id="stAlert"><b>Alerta</b> <span id="ultAlerta">—</span> <i id="ultAlertaS"></i>
+        <span class="tip"><button type="button" class="tip-b" aria-label="O que é o último alerta" aria-describedby="tipA">i</button><span class="tip-t" role="tooltip" id="tipA">Hora em que entrou a vulnerabilidade mais recente no radar. Fica laranja quando foi nas últimas 24h.</span></span></span>
+      <span class="stp"><span class="pulse off" id="pulse"></span><b>Verificado</b> <span id="ultVer">—</span> <i id="ultVerS"></i>
+        <span class="tip"><button type="button" class="tip-b" aria-label="O que é a verificação" aria-describedby="tipV">i</button><span class="tip-t" role="tooltip" id="tipV">Última coleta automática. Roda a cada 2h, das 8h17 às 20h17. Ponto verde: em dia; amarelo: atrasada.</span></span></span>
+      <span class="stp"><b>Fontes</b> <span id="fontesV">—</span> <i id="fontesS" class="hide-sm"></i>
+        <span class="tip"><button type="button" class="tip-b" aria-label="O que é o indicador de fontes" aria-describedby="tipF">i</button><span class="tip-t" role="tooltip" id="tipF">Feeds RSS ativos que responderam na última coleta, sobre o total de ativos. CISA KEV, NVD e EPSS são consultados à parte, via API. Fontes sem RSS ficam inativas. Detalhes em Escopo do piloto.</span></span></span>
       <a class="btn" href="https://github.com/carlosbkiss/feed-vuln" target="_blank" rel="noopener">repo</a>
       <button class="btn" id="themeBtn" type="button" aria-label="Alternar tema">◐</button>
     </div>
@@ -257,6 +265,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <a href="#triagem">Triagem diária <span class="badge" id="navTr">0</span></a>
     <a href="#semana">A semana</a>
     <a href="#metricas">Métricas do piloto</a>
+    <a href="#escopo">Escopo do piloto</a>
   </div>
 </nav>
 
@@ -351,6 +360,23 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <div class="panel"><div class="tbl"><table>
       <thead><tr><th>Início</th><th>Duração</th><th>Fontes ok</th><th>Artigos novos</th><th>Consultas NVD</th><th>No radar</th><th>Novos</th><th>Falhas</th></tr></thead>
       <tbody id="execBody"></tbody>
+    </table></div></div>
+  </section>
+  <section id="escopo">
+    <div class="sh">
+      <div><div class="eyebrow">Referência</div><h2>Escopo do piloto</h2></div>
+      <div class="meta">O que estava previsto, o que entrou e como</div>
+    </div>
+    <p class="lead">Lista inicial de fontes e regras, comparada com o que roda hoje. "Escopo inicial" marca o que estava previsto no começo do piloto; o resto foi adicionado depois, com o motivo.</p>
+    <h3 class="sub">Fontes</h3>
+    <div class="panel"><div class="tbl"><table>
+      <thead><tr><th>Fonte</th><th>Escopo inicial</th><th>No painel</th><th>Como entra</th><th>Papel (7 dias)</th></tr></thead>
+      <tbody id="escopoFontes"></tbody>
+    </table></div></div>
+    <h3 class="sub">Regras</h3>
+    <div class="panel"><div class="tbl"><table>
+      <thead><tr><th>Tema</th><th>Escopo inicial</th><th>No piloto</th><th>Situação</th></tr></thead>
+      <tbody id="escopoRegras"></tbody>
     </table></div></div>
   </section>
 </main>
@@ -607,6 +633,58 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     }).join('') : '<tr><td colspan="8"><div class="empty"><b>Nenhuma execução registrada ainda</b></div></td></tr>';
   }
 
+  // ---------- escopo
+  var REGRAS = [
+    ['Frequência', 'Coleta 3 vezes ao dia (9h, 13h, 17h)', 'A cada 2h, das 8h17 às 20h17, recuperando o que saiu entre rodadas', 'ampliado'],
+    ['Critério de entrada', 'Zero-day ou CVSS ≥ 9', 'Zero-day ou CVSS ≥ 9 ou está no CISA KEV (explorado mesmo com nota menor)', 'ampliado'],
+    ['Palavras-chave', 'Filtrar notícias por termos como crítico, critical, zero-day, dia-zero, 0-day', 'Usadas para pré-classificar e medir ruído; quem decide é CVE, nota e exploração', 'ajustado'],
+    ['Zero-day', 'Definido por palavra-chave', 'Está no KEV, ou notícia com até 3 CVEs relata exploração ativa', 'ajustado'],
+    ['Duplicidade', 'Não repetir matéria já vista', 'Um registro por CVE, com todas as fontes e o horário de cada uma', 'atendido'],
+    ['Enriquecimento', 'EPSS, PoC e CISA KEV', 'EPSS diário, PoC público catalogado e KEV com prazo e ransomware', 'atendido'],
+    ['CVSS ausente', 'Completar com IA', 'Usa a nota do fabricante (CNA); sem nota, aguarda e mede a espera', 'ajustado'],
+    ['Artigo atualizado', 'Não recuperar atualizações', 'Reavalia cada vulnerabilidade por 14 dias (ex.: sobe para P0 ao entrar no KEV)', 'ajustado'],
+    ['Priorização', 'Não prevista', 'P0, P1 e P2 por exploração e tipo de ativo (borda, acesso, CI/CD)', 'ampliado'],
+    ['Validação humana', 'Antes de ações operacionais', 'Triagem diária revisável; nada vira ação automática', 'atendido'],
+    ['Observabilidade', 'Logs e aviso de indisponibilidade', 'Log de execuções, saúde por fonte e histórico permanente no repositório', 'atendido'],
+    ['Relatórios', 'Técnico e executivo', 'Painel com big numbers, triagem diária e resumo semanal', 'atendido'],
+    ['Integrações internas', 'Chamados, inventário de ativos, scanner', 'Fora do piloto público (dependem de sistemas internos)', 'fora']
+  ];
+  var SIT = {atendido:['✓ atendido','p-amp'], ampliado:['▲ ampliado','p-ant'], ajustado:['◆ ajustado','p-mes'], fora:['– fora do piloto','p-sem']};
+  function renderEscopo(st){
+    var fontes = (st && st.fontes) || [];
+    var extras = [
+      {nome:'Microsoft Edge', site:'https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security', escopo_inicial:true, estado:'via', como:'Via Microsoft Security Update Guide (as CVEs do Edge saem lá)'},
+      {nome:'NIST NVD', site:'https://nvd.nist.gov/', escopo_inicial:true, estado:'api', como:'API: nota CVSS, data de publicação e críticos do dia', papel:'base de comparação'},
+      {nome:'CISA KEV', site:'https://www.cisa.gov/known-exploited-vulnerabilities-catalog', escopo_inicial:false, estado:'api', como:'API: catálogo de exploradas. Adicionado como fonte principal de exploração real', papel:'sinal de exploração'}
+    ];
+    var ADD = {securityweek:'Adicionada para comparar cobertura', dailydarkweb:'Estava na primeira lista de feeds, fora da tabela de 12', cybernews:'Lista inicial', fortinet:'Adicionada: PSIRT de borda', cisco:'Adicionada: PSIRT de borda', paloalto:'Adicionada: PSIRT de borda'};
+    var linhas = fontes.map(function(f){
+      return {nome:f.nome, site:f.site, escopo_inicial:f.escopo_inicial, estado:f.estado, obs:f.obs,
+              como:(f.estado === 'inativa' ? (f.obs || 'inativa') : 'RSS a cada coleta' + (f.obs ? ' · ' + f.obs : '') + (!f.escopo_inicial && ADD[f.id] ? ' · ' + ADD[f.id] : '')),
+              papel:f.estado === 'inativa' ? null : f.papel};
+    }).concat(extras);
+    linhas.sort(function(a, b){ return (b.escopo_inicial - a.escopo_inicial) || ((a.estado === 'inativa') - (b.estado === 'inativa')); });
+    var EST = {ok:'<span class="ok">✓ ativa</span>', erro:'<span class="err">✕ falha</span>', inativa:'<span class="off">– inativa</span>', via:'<span class="ok">✓ coberta</span>', api:'<span class="ok">✓ API</span>'};
+    $('escopoFontes').innerHTML = linhas.map(function(l){
+      return '<tr><td>' + link(l.site, l.nome) + '</td><td>' + (l.escopo_inicial ? 'Sim' : '<span class="small">Não (adicionada)</span>') + '</td><td>' + (EST[l.estado] || esc(l.estado)) + '</td>' +
+        '<td class="wide small">' + esc(l.como) + '</td><td class="small">' + esc(l.papel || '—') + '</td></tr>';
+    }).join('');
+    var ini = linhas.filter(function(l){ return l.escopo_inicial; });
+    var iniOn = ini.filter(function(l){ return l.estado !== 'inativa'; }).length;
+    $('escopoFontes').insertAdjacentHTML('beforeend', '<tr><td colspan="5" class="small"><b>' + iniOn + ' de ' + ini.length + '</b> fontes da lista inicial estão cobertas · <b>' + linhas.filter(function(l){ return !l.escopo_inicial; }).length + '</b> adicionadas</td></tr>');
+    $('escopoRegras').innerHTML = REGRAS.map(function(r){
+      var sx = SIT[r[3]];
+      return '<tr><td><b>' + esc(r[0]) + '</b></td><td class="small">' + esc(r[1]) + '</td><td class="wide">' + esc(r[2]) + '</td><td><span class="papel ' + sx[1] + '">' + esc(sx[0]) + '</span></td></tr>';
+    }).join('');
+  }
+
+  // tooltip no toque (celular)
+  document.addEventListener('click', function(e){
+    var b = e.target.closest('.tip-b');
+    [].forEach.call(document.querySelectorAll('.tip.open'), function(t){ if (!b || t !== b.parentNode) t.classList.remove('open'); });
+    if (b) b.parentNode.classList.toggle('open');
+  });
+
   // ---------- filtros e tema
   $('fRad').addEventListener('click', function(e){
     var b = e.target.closest('.chip'); if (!b) return;
@@ -643,7 +721,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       $('navTr').textContent = TR.filter(function(i){ return i.prioridade === 'P0'; }).length + ' P0';
       if (en) $('trMeta').textContent = en.janela + ' · atualizado ' + fmt(en.atualizado, true);
       renderStatus(st); renderBig(st); renderRadar(); renderSemCve(vu && vu.sem_cve);
-      renderTriagem(); renderSemana(sm); renderMetricas(st, ex);
+      renderTriagem(); renderSemana(sm); renderMetricas(st, ex); renderEscopo(st);
     });
   }
   carregar();

@@ -673,7 +673,8 @@ def main() -> int:
             "id": f["id"], "nome": f["nome"], "site": f["site"], "grupo": f["grupo"],
             "estado": status_fontes.get(f["id"], {}).get("estado", "inativa"),
             "erro": status_fontes.get(f["id"], {}).get("erro") or s.get("erro"),
-            "obs": f.get("obs", ""), "ultimo_ok": s.get("ultimo_ok"), **contrib.get(f["id"], {}),
+            "obs": f.get("obs", ""), "ultimo_ok": s.get("ultimo_ok"), "escopo_inicial": bool(f.get("escopo_inicial")),
+            **contrib.get(f["id"], {}),
         })
     ativas = [f for f in fontes_saida if f["estado"] != "inativa"]
 
