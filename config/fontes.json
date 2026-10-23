@@ -71,8 +71,8 @@
       "site": "https://www.gov.br/ctir/pt-br/assuntos/alertas-e-recomendacoes/alertas/colecao-alertas",
       "feed": "https://www.gov.br/ctir/pt-br/assuntos/alertas-e-recomendacoes/alertas/colecao-alertas/RSS",
       "grupo": "governo",
-      "ativo": true,
-      "obs": "RSS da coleção do portal gov.br (em teste)"
+      "ativo": false,
+      "obs": "portal gov.br não expõe RSS (testado); precisa de leitura da página"
     },
     {
       "id": "msrc",
