@@ -263,7 +263,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <div class="bign" aria-label="Números da semana">
   <div class="wrap" id="bign">
-    <div class="cap">Últimos 7 dias</div>
+    <div class="cap">Radar: últimos 14 dias</div>
   </div>
 </div>
 
@@ -296,8 +296,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     </details>
     <div class="filters" id="fRad" role="group" aria-label="Filtrar radar">
       <button class="chip" type="button" data-w="3" aria-pressed="false">72h</button>
-      <button class="chip" type="button" data-w="7" aria-pressed="true">7 dias</button>
-      <button class="chip" type="button" data-w="14" aria-pressed="false">14 dias</button>
+      <button class="chip" type="button" data-w="7" aria-pressed="false">7 dias</button>
+      <button class="chip" type="button" data-w="14" aria-pressed="true">14 dias</button>
       <span class="sep"></span>
       <button class="chip" type="button" data-p="all" aria-pressed="true">Todas</button>
       <button class="chip" type="button" data-p="P0" aria-pressed="false">P0</button>
@@ -461,9 +461,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     var hrs = function(h){ return h == null ? null : (Math.abs(h) >= 48 ? Math.round(h / 24) + '<small>dias</small>' : Math.round(h) + '<small>h</small>'); };
     var notaTxt = m.antes_da_nota_mediana_h != null ? '+' + hrs(m.antes_da_nota_mediana_h) : (m.aguardando_nota ? esc(m.aguardando_nota) + '<small>aguardando</small>' : '—');
     var tiles = [
-      {n: m.elegiveis, l: 'Vulnerabilidades no radar', s: m.elegiveis != null ? 'P0 ' + m.p0 + ' · P1 ' + m.p1 + ' · P2 ' + m.p2 : nd},
+      {n: m.elegiveis, l: 'Vulnerabilidades no radar', s: m.elegiveis != null ? 'P0 ' + m.p0 + ' · P1 ' + m.p1 + ' · P2 ' + m.p2 + (m.novos_7d != null ? ' · ' + m.novos_7d + ' com atividade em 7 dias' : '') : nd},
       {n: m.explorados, l: 'Exploradas ativamente', s: m.explorados != null ? 'KEV ou exploração relatada' + (m.com_poc ? ' · ' + m.com_poc + ' com PoC público' : '') : nd},
-      {n: m.p0, l: 'P0 para corrigir em 24h', s: 'explorado em borda, acesso ou CI/CD', hot: true},
+      {n: m.p0, l: 'P0 em aberto', s: 'explorados em borda, acesso ou CI/CD: corrigir em 24h', hot: true},
       {html: notaTxt, l: 'Vistas antes da nota da NVD', s: m.antes_da_nota_n ? m.antes_da_nota_n + ' CVE(s) · mediana de antecedência' : (m.aguardando_nota ? m.aguardando_nota + ' CVE(s) em fontes aguardando nota da NVD agora' : nd), hot: true},
       {html: m.kev_cobertura_pct == null ? '—' : Math.round(m.kev_cobertura_pct * 100) + '<small>%</small>', l: 'Cobertura do CISA KEV', s: m.kev_semana != null ? m.kev_com_noticia_antes + ' de ' + m.kev_semana + ' com notícia antes ou no dia' : nd},
       {n: m.artigos, l: 'Itens de fontes lidos', s: m.fontes_total ? 'de ' + m.fontes_total + ' fontes ativas · ' + (m.artigos_com_cve || 0) + ' citam CVE' : nd}
@@ -471,11 +471,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     $('bign').innerHTML = tiles.map(function(t){
       var v = t.html != null ? t.html : (t.n == null ? '—' : esc(t.n));
       return '<div class="bn' + (t.hot ? ' hot' : '') + '"><div class="n">' + v + '</div><div class="l">' + esc(t.l) + '</div><div class="s">' + esc(t.s) + '</div></div>';
-    }).join('') + '<div class="cap">Últimos 7 dias · atualizado a cada coleta</div>';
+    }).join('') + '<div class="cap">Radar: últimos 14 dias · antecedência, cobertura e fontes: últimos 7 dias · atualizado a cada coleta</div>';
   }
 
   // ---------- radar
-  var VULNS = [], fRad = {w:7, p:'all'};
+  var VULNS = [], fRad = {w:14, p:'all'};
   function renderRadar(){
     var lim = Date.now() - fRad.w * 86400000;
     var rows = VULNS.filter(function(r){
