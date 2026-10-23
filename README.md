@@ -47,6 +47,19 @@ As listas ficam em `config/watchlist.json`, com comparação por palavra inteira
 | Ruído da RN-004 | Dos artigos que o filtro por palavra-chave marcaria, % que tinham vulnerabilidade no radar |
 | Primeira a publicar | Por fonte: em quantas vulnerabilidades do radar ela saiu antes das outras |
 
+## Histórico
+
+Nada se perde: `data/historico/` vai para o git e nunca é apagado.
+
+| Arquivo | Conteúdo |
+| --- | --- |
+| `radar-AAAA-MM.json` | Catálogo de toda vulnerabilidade que passou pelo radar, pelo mês da primeira aparição: fontes com links, prioridade máxima, KEV, EPSS máximo, PoC, espera pela nota da NVD |
+| `diario/AAAA-MM-DD.json` | Foto do dia (primeira rodada e a partir das 19h): métricas, papel de cada fonte, P0 em aberto, falhas por fonte |
+| `triagem/AAAA-MM-DD.json` | Última triagem de cada dia |
+| `semanas/AAAA-MM-DD.json` | Cada resumo semanal publicado |
+
+A tela mostra os últimos 14 dias; o histórico guarda tudo, para comparar semanas e medir tendência.
+
 ## Configuração
 
 1. **Settings → Pages → Source: GitHub Actions**

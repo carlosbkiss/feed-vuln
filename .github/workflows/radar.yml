@@ -50,12 +50,12 @@ jobs:
           path: .estado
           key: estado-${{ github.run_id }}
 
-      - name: Gravar vulns.json (só se mudou)
+      - name: Gravar radar e histórico (só se mudou)
         run: |
-          if [ -n "$(git status --porcelain -- data/vulns.json)" ]; then
+          if [ -n "$(git status --porcelain -- data/vulns.json data/historico)" ]; then
             git config user.name "radar-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/vulns.json
+            git add data/vulns.json data/historico
             N=$(python -c "import json;print(len(json.load(open('data/status.json'))['novos_nesta_rodada']))")
             git commit -m "radar: ${N} novo(s)"
             git pull --rebase origin main

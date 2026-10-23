@@ -42,6 +42,8 @@ STATUS = DATA / "status.json"
 EXECUCOES_SITE = DATA / "execucoes.json"
 CFG_FONTES = ROOT / "config" / "fontes.json"
 CFG_WATCH = ROOT / "config" / "watchlist.json"
+HIST = DATA / "historico"
+SP = timezone(timedelta(hours=-3))
 
 KEV_URLS = [
     "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
@@ -732,8 +734,84 @@ def main() -> int:
         "chave_nvd": bool(nvd_headers()),
         "metricas": metricas,
     })
+    arquivar(t0, itens, metricas, fontes_saida, execucoes)
     print(json.dumps(rodada, ensure_ascii=False))
     return 0
+
+
+# ---------------------------------------------------------------- histórico permanente
+
+def arquivar(t0: datetime, itens: list[dict], metricas: dict, fontes: list[dict], execucoes: list[dict]) -> None:
+    """Grava em data/historico/ (vai para o git, nunca é apagado):
+      radar-AAAA-MM.json      catálogo por CVE (estado mais recente), pelo mês da primeira aparição
+      diario/AAAA-MM-DD.json  foto das métricas e do papel das fontes no fim do dia
+      triagem/AAAA-MM-DD.json última triagem de cada dia
+      semanas/AAAA-MM-DD.json cada resumo semanal publicado
+    """
+    agora_sp = t0.astimezone(SP)
+    dia = agora_sp.strftime("%Y-%m-%d")
+
+    # 1) catálogo mensal por CVE
+    por_mes: dict[str, list[dict]] = {}
+    for r in itens:
+        mes = (r.get("primeira_vez") or r.get("detectado") or iso(t0))[:7]
+        por_mes.setdefault(mes, []).append(r)
+    for mes, rs in por_mes.items():
+        caminho = HIST / f"radar-{mes}.json"
+        cat = ler_json(caminho, {})
+        mudou = False
+        for r in rs:
+            novo = {
+                "cve": r["cve"], "produto": r.get("produto") or "", "titulo": r.get("titulo") or "",
+                "cvss": r.get("cvss"), "prioridade": r["prioridade"], "elegivel_por": r.get("elegivel_por"),
+                "zero_day": bool(r.get("zero_day")), "kev": r.get("kev"),
+                "primeira_vez": r.get("primeira_vez"), "primeira_noticia": r.get("primeira_noticia"),
+                "publicado_nvd": r.get("publicado_nvd"), "exibido_em": r.get("exibido_em"),
+                "aguardando_nota_desde": r.get("aguardando_nota_desde"), "nota_chegou_em": r.get("nota_chegou_em"),
+                "epss_max": max(((cat.get(r["cve"]) or {}).get("epss_max") or 0), (r.get("epss") or {}).get("score") or 0) or None,
+                "poc_qtd": (r.get("poc") or {}).get("qtd"),
+                "fontes": [{"nome": f["nome"], "link": f["link"], "publicado": f.get("publicado")} for f in r["fontes"]],
+            }
+            antigo = cat.get(r["cve"])
+            if antigo:
+                novo["prioridade_max"] = min(antigo.get("prioridade_max", antigo["prioridade"]), novo["prioridade"])
+            else:
+                novo["prioridade_max"] = novo["prioridade"]
+            if antigo != novo:
+                cat[r["cve"]] = novo
+                mudou = True
+        if mudou:
+            gravar_json(caminho, dict(sorted(cat.items())))
+
+    # 2) foto diária: grava no primeiro run do dia e a partir das 19h (fecha o dia)
+    caminho = HIST / "diario" / f"{dia}.json"
+    if not caminho.exists() or agora_sp.hour >= 19:
+        do_dia = [e for e in execucoes if (parse_iso(e["inicio"]) or t0).astimezone(SP).strftime("%Y-%m-%d") == dia]
+        falhas: dict[str, int] = {}
+        for e in do_dia:
+            for n in e.get("fontes_erro", []):
+                falhas[n] = falhas.get(n, 0) + 1
+        gravar_json(caminho, {
+            "dia": dia, "foto_em": iso(t0), "metricas": metricas,
+            "fontes": [{k: f.get(k) for k in ("id", "nome", "grupo", "estado", "papel", "artigos", "cves_elegiveis",
+                                                "primeira", "exclusivas", "atraso_mediano_h")} for f in fontes],
+            "rodadas": len(do_dia), "falhas_por_fonte": falhas,
+            "p0": [r["cve"] for r in itens if r["prioridade"] == "P0"],
+        })
+
+    # 3) triagem e semanal: cópia de cada versão publicada
+    tri = ler_json(DATA / "entradas.json", None)
+    if tri and tri.get("atualizado"):
+        d = (parse_iso(tri["atualizado"]) or t0).astimezone(SP).strftime("%Y-%m-%d")
+        alvo = HIST / "triagem" / f"{d}.json"
+        if ler_json(alvo, None) != tri:
+            gravar_json(alvo, tri)
+    sem = ler_json(DATA / "semana.json", None)
+    if sem and sem.get("atualizado"):
+        d = (parse_iso(sem["atualizado"]) or t0).astimezone(SP).strftime("%Y-%m-%d")
+        alvo = HIST / "semanas" / f"{d}.json"
+        if ler_json(alvo, None) != sem:
+            gravar_json(alvo, sem)
 
 
 if __name__ == "__main__":
