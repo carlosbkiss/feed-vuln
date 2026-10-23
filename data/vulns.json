@@ -1,6 +1,84 @@
 {
-  "atualizado": "2026-10-23T13:08:13Z",
+  "atualizado": "2026-10-23T18:39:23Z",
   "itens": [
+    {
+      "cve": "CVE-2026-114625",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-114625",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-114625",
+          "publicado": "2026-10-22T21:17:16Z",
+          "visto_em": "2026-10-23T18:39:23Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Arista VeloCloud Orchestrator SQL Injection Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-114625",
+          "publicado": "2026-10-23",
+          "visto_em": "2026-10-23T18:39:23Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds One Known Exploited Vulnerability to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog",
+          "publicado": "2026-10-23T12:00:00Z",
+          "visto_em": "2026-10-23T18:39:23Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Hackers Actively Exploiting Critical VeloCloud Orchestrator Flaw to Gain Superuser Access",
+          "link": "https://cybersecuritynews.com/hackers-exploiting-velocloud-orchestrator-flaw/",
+          "publicado": "2026-10-23T13:57:11Z",
+          "visto_em": "2026-10-23T15:00:17Z"
+        }
+      ],
+      "detectado": "2026-10-23T15:00:17Z",
+      "aguardando_nota_desde": "2026-10-23T13:57:11Z",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-22T21:17:16Z",
+      "primeira_noticia": "2026-10-23T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-114625",
+      "ultima_atividade": "2026-10-23T13:57:11Z",
+      "kev": {
+        "adicionado": "2026-10-23",
+        "prazo": "2026-10-26",
+        "ransomware": "Unknown"
+      },
+      "produto": "Arista VeloCloud Orchestrator",
+      "titulo": "Arista VeloCloud Orchestrator SQL Injection Vulnerability",
+      "resumo": "Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and…",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-22T21:17:16Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
+      "nota_chegou_em": "2026-10-23T18:39:23Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "exibido_em": "2026-10-23T18:39:23Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0056,
+        "percentil": 0.4559,
+        "data": "2026-10-23"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T18:39:23Z"
+      }
+    },
     {
       "cve": "CVE-2026-102764",
       "fontes": [
@@ -59,8 +137,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0118,
-        "percentil": 0.6743,
-        "data": "2026-10-22"
+        "percentil": 0.6746,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 2,
@@ -127,8 +205,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0157,
-        "percentil": 0.7521,
-        "data": "2026-10-22"
+        "percentil": 0.7523,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 1,
@@ -194,8 +272,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0121,
-        "percentil": 0.6834,
-        "data": "2026-10-22"
+        "percentil": 0.6836,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 1,
@@ -262,7 +340,7 @@
       "epss": {
         "score": 0.2598,
         "percentil": 0.9798,
-        "data": "2026-10-22"
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 4,
@@ -322,7 +400,7 @@
       "epss": {
         "score": 0.1271,
         "percentil": 0.9626,
-        "data": "2026-10-22"
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 12,
@@ -382,7 +460,7 @@
       "epss": {
         "score": 0.3831,
         "percentil": 0.9857,
-        "data": "2026-10-22"
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -440,8 +518,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0108,
-        "percentil": 0.6484,
-        "data": "2026-10-22"
+        "percentil": 0.6487,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -468,7 +546,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-22T19:17:30Z",
       "resumo": "Bytebase 0.12.0 before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to log in as any user. The flaw stems from trusting client-supplied GitLab provider configuration in the POST /api/auth/login/GITLAB_SELF_HOST…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -484,7 +562,12 @@
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
       },
-      "ultima_atividade": "2026-10-22T19:17:30Z"
+      "ultima_atividade": "2026-10-22T19:17:30Z",
+      "epss": {
+        "score": 0.0061,
+        "percentil": 0.4872,
+        "data": "2026-10-23"
+      }
     },
     {
       "cve": "CVE-2026-76531",
@@ -527,9 +610,9 @@
       "regra": "CVSS ≥ 9 em borda/acesso",
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
-        "score": 0.0019,
-        "percentil": 0.0805,
-        "data": "2026-10-22"
+        "score": 0.0038,
+        "percentil": 0.3057,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -578,9 +661,9 @@
       "regra": "CVSS ≥ 9 em borda/acesso",
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
-        "score": 0.0019,
-        "percentil": 0.0805,
-        "data": "2026-10-22"
+        "score": 0.0038,
+        "percentil": 0.3057,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -629,9 +712,9 @@
       "regra": "CVSS ≥ 9 em borda/acesso",
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
-        "score": 0.0014,
-        "percentil": 0.0311,
-        "data": "2026-10-22"
+        "score": 0.0025,
+        "percentil": 0.1586,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -687,8 +770,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0038,
-        "percentil": 0.3091,
-        "data": "2026-10-22"
+        "percentil": 0.3093,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -770,7 +853,7 @@
       "cvss_fonte": "NVD",
       "publicado_nvd": "2026-10-21T14:17:09Z",
       "resumo": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -782,9 +865,9 @@
       "regra": "CVSS ≥ 9 em borda/acesso",
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
-        "score": 0.0531,
-        "percentil": 0.9256,
-        "data": "2026-10-22"
+        "score": 0.1162,
+        "percentil": 0.9605,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 521,
@@ -880,9 +963,9 @@
       "regra": "CVSS ≥ 9 em borda/acesso",
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
-        "score": 0.0576,
-        "percentil": 0.9305,
-        "data": "2026-10-22"
+        "score": 0.0599,
+        "percentil": 0.933,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 16,
@@ -908,7 +991,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:11Z",
       "resumo": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -921,8 +1004,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0043,
-        "percentil": 0.3593,
-        "data": "2026-10-22"
+        "percentil": 0.3595,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -971,8 +1054,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0046,
-        "percentil": 0.3878,
-        "data": "2026-10-22"
+        "percentil": 0.3881,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 3,
@@ -1037,8 +1120,8 @@
       "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
       "epss": {
         "score": 0.0151,
-        "percentil": 0.7427,
-        "data": "2026-10-22"
+        "percentil": 0.7429,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1073,7 +1156,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-22T22:19:18Z",
       "resumo": "Missing authentication for critical function in Azure Kubernetes Configuration Service allows an unauthorized attacker to elevate privileges over a network.",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1089,7 +1172,12 @@
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
       },
-      "ultima_atividade": "2026-10-22T22:19:18Z"
+      "ultima_atividade": "2026-10-22T22:19:18Z",
+      "epss": {
+        "score": 0.0067,
+        "percentil": 0.5134,
+        "data": "2026-10-23"
+      }
     },
     {
       "cve": "CVE-2021-48016",
@@ -1109,7 +1197,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-22T11:17:04Z",
       "resumo": "DedeCMS through 5.8.1-beta contains a PHP code injection vulnerability in ShowMsg() where the HTTP Referer header is written into a DedeTemplate string and included. Unauthenticated attackers can send a crafted Referer to /plus/flink.php?dopost=save with an…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1125,7 +1213,12 @@
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
       },
-      "ultima_atividade": "2026-10-22T11:17:04Z"
+      "ultima_atividade": "2026-10-22T11:17:04Z",
+      "epss": {
+        "score": 0.0044,
+        "percentil": 0.3726,
+        "data": "2026-10-23"
+      }
     },
     {
       "cve": "CVE-2026-114119",
@@ -1145,7 +1238,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-21T01:17:38Z",
       "resumo": "Best Practice Software Bp Premier before 1.14.1.1128 uses a hardcoded Microsoft SQL Server administrative password that is shared across all installations and cannot be changed without breaking the application. Attackers with network access to the database…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1158,8 +1251,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0043,
-        "percentil": 0.3601,
-        "data": "2026-10-22"
+        "percentil": 0.3604,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1186,7 +1279,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:38Z",
       "resumo": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows low privileged attacker with network…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1199,8 +1292,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0033,
-        "percentil": 0.2469,
-        "data": "2026-10-22"
+        "percentil": 0.2473,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1227,7 +1320,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:36Z",
       "resumo": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows unauthenticated attacker with network…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1240,8 +1333,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3724,
-        "data": "2026-10-22"
+        "percentil": 0.3727,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1268,7 +1361,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:26Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1281,8 +1374,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0045,
-        "percentil": 0.3782,
-        "data": "2026-10-22"
+        "percentil": 0.3786,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1309,7 +1402,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:25Z",
       "resumo": "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1322,8 +1415,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0037,
-        "percentil": 0.2918,
-        "data": "2026-10-22"
+        "percentil": 0.2921,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1350,7 +1443,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:25Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1363,8 +1456,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0045,
-        "percentil": 0.3782,
-        "data": "2026-10-22"
+        "percentil": 0.3786,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1391,7 +1484,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:23Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1404,8 +1497,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3724,
-        "data": "2026-10-22"
+        "percentil": 0.3727,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1432,7 +1525,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:23Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1445,8 +1538,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0034,
-        "percentil": 0.2608,
-        "data": "2026-10-22"
+        "percentil": 0.2611,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1473,7 +1566,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:23Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1486,8 +1579,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4344,
-        "data": "2026-10-22"
+        "percentil": 0.4347,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1514,7 +1607,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:23Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1527,8 +1620,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0045,
-        "percentil": 0.3782,
-        "data": "2026-10-22"
+        "percentil": 0.3786,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1555,7 +1648,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:22Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1568,8 +1661,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4344,
-        "data": "2026-10-22"
+        "percentil": 0.4347,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1596,7 +1689,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:22Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1609,8 +1702,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0037,
-        "percentil": 0.2918,
-        "data": "2026-10-22"
+        "percentil": 0.2921,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1637,7 +1730,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:22Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1650,8 +1743,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4344,
-        "data": "2026-10-22"
+        "percentil": 0.4347,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1678,7 +1771,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:22Z",
       "resumo": "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Human Workflow (11g+)).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1691,8 +1784,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0045,
-        "percentil": 0.3783,
-        "data": "2026-10-22"
+        "percentil": 0.3786,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1719,7 +1812,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:22Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1732,8 +1825,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0033,
-        "percentil": 0.2469,
-        "data": "2026-10-22"
+        "percentil": 0.2473,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1760,7 +1853,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:12Z",
       "resumo": "Vulnerability in the Oracle HTTP Server product of Oracle Fusion Middleware (component: OSSL Module).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1773,8 +1866,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0037,
-        "percentil": 0.2922,
-        "data": "2026-10-22"
+        "percentil": 0.2925,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1801,7 +1894,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:18:02Z",
       "resumo": "Vulnerability in the Oracle Enterprise Manager for Oracle Database product of Oracle Enterprise Manager (component: Data Guard Management).  Supported versions that are affected are 13.5 and  24.1. Easily exploitable vulnerability allows low privileged…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1814,8 +1907,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0048,
-        "percentil": 0.4039,
-        "data": "2026-10-22"
+        "percentil": 0.4042,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1842,7 +1935,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:18:02Z",
       "resumo": "Vulnerability in the Oracle Enterprise Manager for Oracle Database product of Oracle Enterprise Manager (component: Data Guard Management).  Supported versions that are affected are 13.5 and  24.1. Easily exploitable vulnerability allows low privileged…",
-      "nvd_checado_em": "2026-10-23T13:08:13Z",
+      "nvd_checado_em": "2026-10-23T18:39:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1855,8 +1948,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0048,
-        "percentil": 0.4039,
-        "data": "2026-10-22"
+        "percentil": 0.4042,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -1938,8 +2031,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0024,
-        "percentil": 0.14,
-        "data": "2026-10-22"
+        "percentil": 0.1402,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 1,
@@ -2005,8 +2098,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0117,
-        "percentil": 0.6715,
-        "data": "2026-10-22"
+        "percentil": 0.6717,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -2064,8 +2157,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0579,
-        "percentil": 0.9309,
-        "data": "2026-10-22"
+        "percentil": 0.931,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 1,
@@ -2139,8 +2232,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0046,
-        "percentil": 0.3853,
-        "data": "2026-10-22"
+        "percentil": 0.3856,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 5,
@@ -2206,8 +2299,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0046,
-        "percentil": 0.3929,
-        "data": "2026-10-22"
+        "percentil": 0.3932,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -2273,8 +2366,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0046,
-        "percentil": 0.3853,
-        "data": "2026-10-22"
+        "percentil": 0.3856,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 0,
@@ -2340,8 +2433,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0082,
-        "percentil": 0.5665,
-        "data": "2026-10-22"
+        "percentil": 0.5668,
+        "data": "2026-10-23"
       },
       "poc": {
         "qtd": 1,

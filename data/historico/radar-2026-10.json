@@ -601,6 +601,55 @@
     ],
     "prioridade_max": "P2"
   },
+  "CVE-2026-114625": {
+    "cve": "CVE-2026-114625",
+    "produto": "Arista VeloCloud Orchestrator",
+    "titulo": "Arista VeloCloud Orchestrator SQL Injection Vulnerability",
+    "cvss": 9.9,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-23",
+      "prazo": "2026-10-26",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-10-22T21:17:16Z",
+    "primeira_noticia": "2026-10-23T12:00:00Z",
+    "publicado_nvd": "2026-10-22T21:17:16Z",
+    "exibido_em": "2026-10-23T18:39:23Z",
+    "aguardando_nota_desde": "2026-10-23T13:57:11Z",
+    "nota_chegou_em": "2026-10-23T18:39:23Z",
+    "epss_max": 0.0056,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-114625",
+        "publicado": "2026-10-22T21:17:16Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-114625",
+        "publicado": "2026-10-23"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog",
+        "publicado": "2026-10-23T12:00:00Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/hackers-exploiting-velocloud-orchestrator-flaw/",
+        "publicado": "2026-10-23T13:57:11Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
   "CVE-2026-21589": {
     "cve": "CVE-2026-21589",
     "produto": "Atlassian Multiple Products",
