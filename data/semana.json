@@ -1,66 +1,167 @@
 {
-  "periodo": "16 a 22 de outubro de 2026",
-  "atualizado": "2026-10-22T22:30:00Z",
+  "periodo": "17 a 23 de outubro de 2026",
+  "atualizado": "2026-10-23T15:00:00Z",
   "kpis": [
-    {"n": "8", "l": "CVEs incluídas no CISA KEV", "destaque": false},
-    {"n": "1", "l": "zero-day relevante para banco", "destaque": true},
-    {"n": "17", "l": "CVEs novas com CVSS ≥ 9.0", "destaque": false},
-    {"n": "4", "l": "frentes P0 para 24h", "destaque": true}
+    {
+      "n": "6",
+      "l": "CVEs incluídas no CISA KEV",
+      "destaque": false
+    },
+    {
+      "n": "2",
+      "l": "zero-days relevantes para banco",
+      "destaque": true
+    },
+    {
+      "n": "26",
+      "l": "CVEs novas com CVSS ≥ 9.0",
+      "destaque": false
+    },
+    {
+      "n": "4",
+      "l": "frentes P0 para 24h",
+      "destaque": true
+    }
   ],
-  "tese": "A semana foi de ataque a ferramentas de acesso privilegiado e à cadeia de desenvolvimento, não aos canais de cliente.",
+  "tese": "O risco desceu para a camada que sustenta o banco (runtimes, middleware e gestão de rede), com exploração começando antes do patch e patch saindo antes do aviso.",
   "historia": [
-    "A semana começou com a herança do Patch Tuesday e de quatro zero-days em equipamentos de borda (Cisco, Ivanti, PAN-OS, Windows Shell), todos com prazo de correção vencendo agora.",
-    "Na quinta, 16/out, a BeyondTrust confirmou que seu Remote Support vinha sendo explorado como zero-day desde 29/08 por um grupo ligado à China. Foram 47 dias de exposição antes do aviso, o que obriga caça retroativa e não só patch.",
-    "Na terça, 20/out, a Oracle soltou o CPU trimestral com 1.209 CVEs, seis delas com CVSS 10 em Access Manager, SOA Suite, E-Business Suite e JD Edwards. Nenhuma explorada ainda, mas o histórico mostra exploração poucos dias após o patch.",
-    "Na quarta, 21/out, vieram as duas maiores: o PHP2Shell, cujo embargo vazou um dia antes e já tinha exploit público, e uma RCE sem login no GitLab que afeta todas as versões self-managed desde 2014.",
-    "Os canais de cliente (app, internet banking, PIX) não tiveram falha direta. O risco chega por tabela: segredo vazado de CI/CD ou acesso privilegiado via suporte remoto."
+    "Na terça, 20/out, a Oracle soltou o CPU trimestral com notas 10 em Access Manager, SOA Suite, E-Business Suite e JD Edwards e anunciou a ida para ciclo mensal; no mesmo dia a CISA pôs seis CVEs no KEV, nenhuma em sistema típico de banco.",
+    "Na quarta, 21/out, o PHP antecipou a correção do PHP2Shell depois do vazamento, com tentativas de ataque registradas até quatro dias antes; no mesmo dia saíram RCE sem login no GitLab (nota 10) e no Cisco Expressway (9.8).",
+    "Na quinta, 22/out, a Arista confirmou zero-day explorado no VeloCloud Orchestrator, que comanda o SD-WAN de agências, e a Fortinet publicou builds de FortiOS, FortiManager e FortiAnalyzer sem revelar as falhas, que só serão detalhadas em 10/nov.",
+    "Na sexta, 23/out, seguiam exploradas as pendências da semana anterior (BeyondTrust, Cisco Secure Email, PAN-OS, Ivanti, Atlassian), e o piloto teve notícia antes da inclusão no KEV em 7 de 8 casos.",
+    "Canais de cliente (app, internet banking, PIX) não tiveram falha direta; o risco chega por tabela, via SD-WAN de agências, SSO Oracle e Okta, sites em PHP e pipelines de CI/CD.",
+    "Fontes da semana: Fortinet PSIRT, Cisco PSIRT e Microsoft saíram antes de todos em 4 vulnerabilidades; CISA Advisories, Cyber Security News e The Hacker News trouxeram 8 exclusivas; BleepingComputer e Palo Alto só repetiram, e Dark Reading, SecurityWeek e Chrome não tiveram nada no radar (amostra curta)."
   ],
   "p0": [
-    {"titulo": "BeyondTrust Remote Support", "cve": "CVE-2026-102764", "cvss": "9.3", "tags": ["Zero-day", "APT", "KEV 16/out"],
-     "onde": "Service desk, suporte remoto a agências, acesso de fornecedores.",
-     "impacto": "Sessão privilegiada em estações e servidores; movimento lateral; base para ransomware.",
-     "acao": "Patch BT26-05 e caça a IOCs retroativos a 29/08."},
-    {"titulo": "GitLab self-managed", "cve": "CVE-2026-110264", "cvss": "10.0", "tags": ["RCE sem login", "Supply chain"],
-     "onde": "Repositórios dos apps e pipelines de CI/CD com segredos de produção.",
-     "impacto": "Código malicioso no app do cliente e roubo de credenciais de produção.",
-     "acao": "Subir para 19.5.1, 19.4.3 ou 19.3.6 e rotacionar segredos."},
-    {"titulo": "PHP2Shell", "cve": "CVE-2026-109618 · -109619", "cvss": "9.8", "tags": ["Exploit público", "RCE sem login"],
-     "onde": "Sites institucionais, WordPress de marketing, portais de parceiros, appliances.",
-     "impacto": "RCE no perímetro, pivô para a rede interna, phishing no domínio do banco.",
-     "acao": "Atualizar ou desligar session.upload_progress.enabled + WAF."},
-    {"titulo": "Oracle OAM, WebLogic e SOA", "cve": "CVE-2026-87337 e mais 5", "cvss": "10.0", "tags": ["Sem auth", "Oracle CPU"],
-     "onde": "SSO corporativo e barramento de integração entre core, cartões e canais.",
-     "impacto": "Bypass do SSO e RCE no middleware por onde passam transações.",
-     "acao": "CPU nos ativos expostos e bloqueio de T3/IIOP."}
+    {
+      "titulo": "Arista VeloCloud Orchestrator",
+      "cve": "CVE-2026-114625",
+      "cvss": "9.9",
+      "tags": [
+        "Zero-day",
+        "SD-WAN"
+      ],
+      "onde": "Orquestrador on-premises do SD-WAN que liga agências e PAs.",
+      "impacto": "Login só-leitura vira superusuário; controle da rede das agências.",
+      "acao": "Subir para 5.2.3.18, 6.1.3.10 ou 6.4.2.12 e bloquear os IPs do advisory."
+    },
+    {
+      "titulo": "PHP2Shell",
+      "cve": "CVE-2026-109618 · -109619",
+      "cvss": "9.8",
+      "tags": [
+        "Exploração inicial",
+        "RCE sem login",
+        "Appliances"
+      ],
+      "onde": "Sites institucionais, portais de parceiros e appliances com PHP embarcado (ex.: Okta Access Gateway).",
+      "impacto": "RCE no perímetro, pivô para a rede interna, phishing no domínio do banco.",
+      "acao": "PHP 8.5.12, 8.4.27, 8.3.36 ou 8.2.35; OAG 2026.44.0; sem patch, desligar upload_progress."
+    },
+    {
+      "titulo": "GitLab self-managed",
+      "cve": "CVE-2026-110264",
+      "cvss": "10.0",
+      "tags": [
+        "RCE sem login",
+        "Supply chain"
+      ],
+      "onde": "Repositórios dos apps e pipelines de CI/CD com segredos de produção.",
+      "impacto": "Código malicioso no app do cliente e roubo de credenciais de produção.",
+      "acao": "Subir para 19.5.1, 19.4.3 ou 19.3.6 e rotacionar tokens de CI/CD."
+    },
+    {
+      "titulo": "Oracle OAM, WebLogic e SOA",
+      "cve": "CVE-2026-87337 e mais 5",
+      "cvss": "10.0",
+      "tags": [
+        "Sem auth",
+        "Oracle CPU"
+      ],
+      "onde": "SSO corporativo e barramento de integração entre core, cartões e canais.",
+      "impacto": "Bypass do SSO e RCE no middleware por onde passam transações.",
+      "acao": "CPU nos ativos expostos e bloqueio de T3/IIOP."
+    }
   ],
   "plano": [
-    {"h": "24h", "t": "Agora", "itens": [
-      "BeyondTrust: patch e caça a IOCs desde 29/08",
-      "GitLab: atualizar e rotacionar segredos de CI/CD",
-      "PHP: atualizar ou mitigar com WAF",
-      "Oracle: CPU em OAM, WebLogic e SOA expostos",
-      "Confirmar Cisco SEG, Ivanti, PAN-OS, Windows Shell"]},
-    {"h": "7 dias", "t": "Esta semana", "itens": [
-      "Fortinet: patch, auditoria de admins, gestão fora da internet",
-      "Oracle CPU no restante: EBS, DB, APEX, JDE",
-      "Cobrar terceiros críticos sobre PHP, GitLab e BeyondTrust",
-      "Pulsar, Laravel, Pillow e Java SE"]},
-    {"h": "30 dias", "t": "Estrutural", "itens": [
-      "Varredura de shadow IT a partir dos achados",
-      "Revisar SLA de patch frente ao prazo de 3 dias do KEV",
-      "Indício de comprometimento: fluxo de incidente relevante (Res. CMN 4.893/2021) e LGPD"]}
+    {
+      "h": "24h",
+      "t": "Agora",
+      "itens": [
+        "Arista VCO: patch, bloqueio de IPs e revisão de admins",
+        "PHP: atualizar sites e appliances, incluindo Okta OAG",
+        "GitLab: atualizar e rotacionar segredos de CI/CD",
+        "Oracle: CPU em OAM, WebLogic e SOA expostos",
+        "Confirmar BeyondTrust, Cisco SEG, PAN-OS, Ivanti e Atlassian"
+      ]
+    },
+    {
+      "h": "7 dias",
+      "t": "Esta semana",
+      "itens": [
+        "Fortinet: aplicar os builds de outubro antes de 10/nov",
+        "Cisco Expressway: corrigir, Edge exposto primeiro",
+        "Splunk e FortiSIEM: atualizar e fechar portas de gestão",
+        "Node.js: atualizar e reconstruir imagens",
+        "Oracle CPU no restante: EBS, DB, APEX, JDE e Java"
+      ]
+    },
+    {
+      "h": "30 dias",
+      "t": "Estrutural",
+      "itens": [
+        "Revisar SLA de patch frente ao KEV e ao ciclo mensal da Oracle",
+        "Inventariar PHP e Node embarcados em appliances e terceiros",
+        "Varrer shadow IT (ex.: Plex) a partir dos achados do KEV",
+        "Fontes: rever Dark Reading, SecurityWeek e Chrome, sem retorno na semana",
+        "Indício de comprometimento: fluxo de incidente relevante (Res. CMN 4.893/2021)"
+      ]
+    }
   ],
   "fontes": [
-    ["CISA: inclusões no KEV, 20/out/2026", "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog"],
-    ["CISA: inclusões no KEV, 14/out/2026", "https://www.cisa.gov/news-events/alerts/2026/10/14/cisa-adds-four-known-exploited-vulnerabilities-catalog"],
-    ["CISA: inclusões no KEV, 13/out/2026", "https://www.cisa.gov/news-events/alerts/2026/10/13/cisa-adds-two-known-exploited-vulnerabilities-catalog"],
-    ["Shattered: BeyondTrust CVE-2026-102764", "https://shattered.io/beyondtrust-cve-2026-102764-china-apt-zero-day-2026/"],
-    ["Ayinedjimi: Fortinet CVE-2025-61624", "https://ayinedjimi-consultants.fr/cve/cve-2025-61624-fortinet-forios-path-traversal-kev"],
-    ["CERT-EU: advisory 2026-018 (PHP)", "https://cert.europa.eu/publications/security-advisories/2026-018/pdf"],
-    ["Rescana: PHP2Shell e CVSS da NVD", "https://www.rescana.com/post/php-rce-flaws-patch-october-2026-prepare-now"],
-    ["Eastern Herald: GitLab CVE-2026-110264", "https://easternherald.com/2026/10/22/gitlab-cve-2026-110264-critical-code-execution-patches/"],
-    ["Oracle: Critical Patch Update outubro/2026", "https://www.oracle.com/security-alerts/cpuoct2026.html"],
-    ["SecurityOnline: análise do Oracle CPU", "https://securityonline.info/oracle-critical-patch-update-october-2026/"],
-    ["BleepingComputer: Patch Tuesday outubro/2026", "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/"]
+    [
+      "Huntress: PHP2Shell, linha do tempo e mitigação",
+      "https://huntress.com/blog/php2shell-leaked-critical-php-vulnerabilities"
+    ],
+    [
+      "SecurityWeek: PHP2Shell e tentativas de exploração",
+      "https://www.securityweek.com/php2shell-mass-exploitation-looms-for-leaked-critical-php-flaws/"
+    ],
+    [
+      "SC World: CISA pede patch do PHP2Shell",
+      "https://www.scworld.com/news/cisa-advises-orgs-to-patch-php2shell-bugs-immediately"
+    ],
+    [
+      "Okta: advisories do Access Gateway",
+      "https://trust.okta.com/security-advisories/"
+    ],
+    [
+      "The Hacker News: zero-day no Arista VeloCloud",
+      "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html"
+    ],
+    [
+      "SC World: Arista VeloCloud explorado",
+      "https://www.scworld.com/brief/arista-networks-patches-actively-exploited-zero-day-vulnerability-in-velocloud-orchestrator"
+    ],
+    [
+      "SecurityOnline: GitLab CVE-2026-110264",
+      "https://securityonline.info/gitlab-critical-patch-release-cve-2026-110264/"
+    ],
+    [
+      "OpenCVE: Cisco Expressway CVE-2026-76466",
+      "https://app.opencve.io/cve/CVE-2026-76466"
+    ],
+    [
+      "SecurityOnline: Node.js, outubro/2026",
+      "https://securityonline.info/nodejs-security-release-october-2026/"
+    ],
+    [
+      "Cybernews: Fortinet corrige agora, detalha em 10/nov",
+      "https://cybernews.com/security/fortinet-critical-flaws-patches-november-disclosure/"
+    ],
+    [
+      "Oracle: blog do CPU de outubro/2026",
+      "https://blogs.oracle.com/security/?p=355"
+    ]
   ]
 }
