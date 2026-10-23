@@ -1,25 +1,7 @@
 {
-  "atualizado": "2026-10-23T14:39:36Z",
+  "atualizado": "2026-10-23T18:39:04Z",
   "janela": "17 a 23/out/2026",
   "itens": [
-    {
-      "data": "2026-10-22",
-      "cve": "sem CVE (Fortinet, divulgação em 10/nov)",
-      "produto": "FortiOS, FortiManager, FortiAnalyzer, FortiMail, FortiAuthenticator",
-      "cvss": null,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não confirmada",
-      "prioridade": "P1",
-      "status": "Novo",
-      "tratamento": "Correções silenciosas de 21-22/out para falhas críticas, com detalhes só em 10/nov. Atualizar já os equipamentos expostos (builds a confirmar no PSIRT; citadas FortiOS 8.0.2, 7.6.8, 7.4.13, 7.2.14), tirar a gestão da internet; vira P0 em 10/nov ou se surgir exploração.",
-      "fontes": [
-        {
-          "nome": "Cybernews",
-          "url": "https://cybernews.com/security/fortinet-critical-flaws-patches-november-disclosure/"
-        }
-      ]
-    },
     {
       "data": "2026-10-22",
       "cve": "CVE-2026-114625",
@@ -39,6 +21,24 @@
         {
           "nome": "BleepingComputer",
           "url": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-22",
+      "cve": "sem CVE (Fortinet, divulgação em 10/nov)",
+      "produto": "FortiOS, FortiManager, FortiAnalyzer, FortiMail, FortiAuthenticator",
+      "cvss": null,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não confirmada",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "Correções silenciosas de 21-22/out para falhas críticas, com detalhes só em 10/nov. Atualizar já os equipamentos expostos (builds a confirmar no PSIRT; citadas FortiOS 8.0.2, 7.6.8, 7.4.13, 7.2.14), tirar a gestão da internet; vira P0 em 10/nov ou se surgir exploração.",
+      "fontes": [
+        {
+          "nome": "Cybernews",
+          "url": "https://cybernews.com/security/fortinet-critical-flaws-patches-november-disclosure/"
         }
       ]
     },
@@ -66,6 +66,24 @@
     },
     {
       "data": "2026-10-22",
+      "cve": "CVE-2022-51026",
+      "produto": "Bytebase (gestão de banco de dados)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "status": "Novo",
+      "tratamento": "Login como qualquer usuário sem senha, falha antiga só agora publicada. Afeta 0.12.0 até antes de 1.0.1; se a ferramenta existir no parque, atualizar e tirar da rede aberta.",
+      "fontes": [
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-51026"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-22",
       "cve": "CVE-2026-83938",
       "produto": "Azure Kubernetes Configuration Service",
       "cvss": 10.0,
@@ -79,76 +97,6 @@
         {
           "nome": "MSRC",
           "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938"
-        }
-      ]
-    },
-    {
-      "data": "2026-10-21",
-      "cve": "CVE-2026-76466",
-      "produto": "Cisco Expressway (Core/Edge)",
-      "cvss": 9.8,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P1",
-      "status": "Novo",
-      "tratamento": "Comando como root sem login quando o cluster usa TLS Verify Mode. Versão corrigida a confirmar no advisory da Cisco; Expressway Edge exposto sobe para P0.",
-      "fontes": [
-        {
-          "nome": "Cisco PSIRT",
-          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Expressway%20Series%20Remote%20Code%20Execution%20Vulnerability%26vs_k=1"
-        },
-        {
-          "nome": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466"
-        },
-        {
-          "nome": "Cyber Security News",
-          "url": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/"
-        }
-      ]
-    },
-    {
-      "data": "2026-10-21",
-      "cve": "CVE-2026-111497",
-      "produto": "Node.js (Node2Shell, Brotli)",
-      "cvss": 9.2,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Exploit público",
-      "prioridade": "P1",
-      "status": "Novo",
-      "tratamento": "Atualizar para 26.12.1, 24.22.1 ou 22.23.4 e reconstruir imagens; Node 20 não tem correção. Paliativo: recusar Content-Encoding br na borda ou usar express.json({inflate:false}).",
-      "fontes": [
-        {
-          "nome": "SecurityOnline",
-          "url": "https://securityonline.info/nodejs-security-release-october-2026/"
-        }
-      ]
-    },
-    {
-      "data": "2026-10-21",
-      "cve": "CVE-2026-76299 / CVE-2026-76302",
-      "produto": "Splunk Enterprise",
-      "cvss": 9.9,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P1",
-      "status": "Novo",
-      "tratamento": "Exige conta de baixo privilégio. Subir para 10.4.4, 10.2.8, 10.0.11 ou 9.4.16; não há workaround.",
-      "fontes": [
-        {
-          "nome": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76299"
-        },
-        {
-          "nome": "Cyber Security News",
-          "url": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/"
-        },
-        {
-          "nome": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76302"
         }
       ]
     },
@@ -197,6 +145,142 @@
         {
           "nome": "Infosecurity",
           "url": "https://www.infosecurity-magazine.com/news/critical-php-vulnerabilities-leaked/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "cve": "CVE-2026-76473 / CVE-2026-76474",
+      "produto": "Cisco Unified CM, Unity Connection, IM&P e Emergency Responder",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "Pacote de hardening da telefonia corporativa, falhas achadas pela própria Cisco. Subir a versão 15 para 15SU5; versão 14 precisa migrar. Sem workaround: restringir as interfaces de gestão à rede de voz.",
+      "fontes": [
+        {
+          "nome": "Cisco PSIRT",
+          "url": "https://www.cisco.com/c/en/us/support/docs/csa/cisco-sa-voice-hardening-twgbH9e3.html"
+        },
+        {
+          "nome": "Penligent (resumo Cisco out/2026)",
+          "url": "https://www.penligent.ai/hackinglabs/cisco-october-2026-security-updates/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "cve": "CVE-2026-20236 / CVE-2026-20043",
+      "produto": "Snort 3 em Cisco Secure Firewall (FTD), UTD no IOS XE, Cyber Vision",
+      "cvss": 9.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "Firewalls de borda com inspeção Snort 3. Subir FTD para 7.2.12, 7.4.8, 7.6.6, 7.7.13 ou 10.0.2 (UTD: 17.12.8, 17.15.6, 17.18.5). Meraki MX online e nuvem já foram corrigidos; checar MX offline.",
+      "fontes": [
+        {
+          "nome": "Cisco PSIRT",
+          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-snort3-ybgmhTQe?emailclick=CNSemail"
+        },
+        {
+          "nome": "Penligent (resumo Cisco out/2026)",
+          "url": "https://www.penligent.ai/hackinglabs/cisco-october-2026-security-updates/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "cve": "CVE-2026-76531",
+      "produto": "Splunk SOAR",
+      "cvss": 9.9,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "Exige conta de baixo privilégio, mas o SOAR guarda credenciais de muitas integrações do SOC. Subir para 8.7.0 (advisory SVD-2026-1011) e revisar contas com acesso.",
+      "fontes": [
+        {
+          "nome": "Strix",
+          "url": "https://www.strix.ai/cve/CVE-2026-76531"
+        },
+        {
+          "nome": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "cve": "CVE-2026-76466",
+      "produto": "Cisco Expressway (Core/Edge)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "Comando como root sem login quando o cluster usa TLS Verify Mode. Subir para X15.5.20 (X14 ou anterior exige migração); sem workaround. Expressway Edge exposto sobe para P0.",
+      "fontes": [
+        {
+          "nome": "Cisco PSIRT",
+          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Expressway%20Series%20Remote%20Code%20Execution%20Vulnerability%26vs_k=1"
+        },
+        {
+          "nome": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/"
+        },
+        {
+          "nome": "Penligent (resumo Cisco out/2026)",
+          "url": "https://www.penligent.ai/hackinglabs/cisco-october-2026-security-updates/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "cve": "CVE-2026-111497",
+      "produto": "Node.js (Node2Shell, Brotli)",
+      "cvss": 9.2,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Exploit público",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "Atualizar para 26.12.1, 24.22.1 ou 22.23.4 e reconstruir imagens; Node 20 não tem correção. Paliativo: recusar Content-Encoding br na borda ou usar express.json({inflate:false}).",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/nodejs-security-release-october-2026/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "cve": "CVE-2026-76299 / CVE-2026-76302",
+      "produto": "Splunk Enterprise",
+      "cvss": 9.9,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "Exige conta de baixo privilégio. Subir para 10.4.4, 10.2.8, 10.0.11 ou 9.4.16; não há workaround.",
+      "fontes": [
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76299"
+        },
+        {
+          "nome": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/"
+        },
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76302"
         }
       ]
     },
@@ -278,28 +362,6 @@
     },
     {
       "data": "2026-10-20",
-      "cve": "CVE-2026-106173",
-      "produto": "FortiSIEM 7.5.0",
-      "cvss": 9.4,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Exploit público",
-      "prioridade": "P1",
-      "status": "Novo",
-      "tratamento": "RCE sem login pela porta 27918 (gRPC). Subir para 7.5.1 ou migrar para 7.6 e bloquear a porta fora da rede de gestão.",
-      "fontes": [
-        {
-          "nome": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106173"
-        },
-        {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html"
-        }
-      ]
-    },
-    {
-      "data": "2026-10-20",
       "cve": "CVE-2026-87337",
       "produto": "Oracle Access Manager",
       "cvss": 10.0,
@@ -361,6 +423,28 @@
         {
           "nome": "SecurityOnline",
           "url": "https://securityonline.info/oracle-critical-patch-update-october-2026/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-20",
+      "cve": "CVE-2026-106173",
+      "produto": "FortiSIEM 7.5.0",
+      "cvss": 9.4,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Exploit público",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "RCE sem login pela porta 27918 (gRPC). Subir para 7.5.1 ou migrar para 7.6 e bloquear a porta fora da rede de gestão.",
+      "fontes": [
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106173"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html"
         }
       ]
     },
