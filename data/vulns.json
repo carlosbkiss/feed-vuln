@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-23T12:14:22Z",
+  "atualizado": "2026-10-23T12:22:11Z",
   "itens": [
     {
       "cve": "CVE-2026-102764",
@@ -66,7 +66,8 @@
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-102764.json",
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-16T12:00:00Z"
     },
     {
       "cve": "CVE-2026-76519",
@@ -133,7 +134,8 @@
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76519.json",
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-14T17:19:10Z"
     },
     {
       "cve": "CVE-2026-0322",
@@ -199,7 +201,8 @@
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-0322.json",
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-15T18:30:00Z"
     },
     {
       "cve": "CVE-2026-104935",
@@ -265,7 +268,8 @@
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-104935.json",
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-14T21:20:13Z"
     },
     {
       "cve": "CVE-2026-21589",
@@ -324,7 +328,8 @@
         "qtd": 12,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-21589.json",
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-15T00:00:00Z"
     },
     {
       "cve": "CVE-2026-105134",
@@ -383,7 +388,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-14T00:00:00Z"
     },
     {
       "cve": "CVE-2025-61624",
@@ -441,7 +447,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-16T00:00:00Z"
     },
     {
       "cve": "CVE-2022-51026",
@@ -461,7 +468,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-22T19:17:30Z",
       "resumo": "Bytebase 0.12.0 before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to log in as any user. The flaw stems from trusting client-supplied GitLab provider configuration in the POST /api/auth/login/GITLAB_SELF_HOST…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -476,6 +483,64 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
+      },
+      "ultima_atividade": "2026-10-22T19:17:30Z"
+    },
+    {
+      "cve": "CVE-2026-76466",
+      "fontes": [
+        {
+          "id": "cisco",
+          "nome": "Cisco PSIRT",
+          "titulo": "Cisco Expressway Series Remote Code Execution Vulnerability",
+          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Expressway%20Series%20Remote%20Code%20Execution%20Vulnerability%26vs_k=1",
+          "publicado": "2026-10-21T16:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-76466",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
+          "publicado": "2026-10-21T17:19:06Z",
+          "visto_em": "2026-10-23T12:22:11Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical Cisco Expressway Vulnerability Enables Remote Code Execution Attacks",
+          "link": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/",
+          "publicado": "2026-10-23T04:47:50Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-21T16:00:00Z",
+      "primeira_noticia": "2026-10-21T16:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-21T17:19:06Z",
+      "resumo": "A vulnerability in the database service feature of Cisco Expressway Series could allow an unauthenticated, remote attacker with network access to a Cisco Expressway device to execute arbitrary operating system commands as&nbsp;root.\r\n\r\nThis vulnerability is…",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "ultima_atividade": "2026-10-23T04:47:50Z",
+      "exibido_em": "2026-10-23T12:22:11Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "epss": {
+        "score": 0.0038,
+        "percentil": 0.3091,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:22:11Z"
       }
     },
     {
@@ -544,7 +609,7 @@
       "cvss_fonte": "NVD",
       "publicado_nvd": "2026-10-21T14:17:09Z",
       "resumo": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -564,6 +629,96 @@
         "qtd": 521,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109618.json",
         "checado": "2026-10-23T12:14:22Z"
+      },
+      "ultima_atividade": "2026-10-23T07:40:45Z"
+    },
+    {
+      "cve": "CVE-2026-109619",
+      "fontes": [
+        {
+          "id": "fortinet",
+          "nome": "Fortinet PSIRT",
+          "titulo": "PHP core RCE vulnerability patches (CVE-2026-109618 and CVE-2026-109619)",
+          "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-186",
+          "publicado": "2026-10-21T07:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "Critical Vulnerabilities in PHP Require Immediate Patching",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching",
+          "publicado": "2026-10-21T12:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "bleeping",
+          "nome": "BleepingComputer",
+          "titulo": "PHP ships emergency patches for critical PHP2Shell flaws",
+          "link": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+          "publicado": "2026-10-21T14:07:05Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-109619",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619",
+          "publicado": "2026-10-21T14:17:09Z",
+          "visto_em": "2026-10-23T12:22:11Z"
+        },
+        {
+          "id": "cisco",
+          "nome": "Cisco PSIRT",
+          "titulo": "Vulnerabilities in PHP Affecting Cisco Products: October 2026",
+          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20PHP%20Affecting%20Cisco%20Products:%20October%202026%26vs_k=1",
+          "publicado": "2026-10-22T23:00:35Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "paloalto",
+          "nome": "Palo Alto Security Advisories",
+          "titulo": "CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products (Severity: HIGH)",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-109618",
+          "publicado": "2026-10-23T03:45:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
+          "link": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
+          "publicado": "2026-10-23T07:40:45Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-21T07:00:00Z",
+      "primeira_noticia": "2026-10-21T07:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619",
+      "cvss": 9.2,
+      "cvss_versao": "4.0",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-21T14:17:09Z",
+      "resumo": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed.…",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "ultima_atividade": "2026-10-23T07:40:45Z",
+      "exibido_em": "2026-10-23T12:22:11Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "epss": {
+        "score": 0.0576,
+        "percentil": 0.9305,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 16,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109619.json",
+        "checado": "2026-10-23T12:22:11Z"
       }
     },
     {
@@ -584,7 +739,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:11Z",
       "resumo": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -604,6 +759,56 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
+      },
+      "ultima_atividade": "2026-10-20T22:20:11Z"
+    },
+    {
+      "cve": "CVE-2026-106173",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-106173",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-106173",
+          "publicado": "2026-10-13T18:17:14Z",
+          "visto_em": "2026-10-23T12:22:11Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution",
+          "link": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
+          "publicado": "2026-10-20T15:38:52Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-13T18:17:14Z",
+      "primeira_noticia": "2026-10-20T15:38:52Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-106173",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-13T18:17:14Z",
+      "resumo": "A improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiSIEM 7.5.0 may allow attacker to execute unauthorized code or commands via specially crafted packets.",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "ultima_atividade": "2026-10-20T15:38:52Z",
+      "exibido_em": "2026-10-23T12:22:11Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "epss": {
+        "score": 0.0046,
+        "percentil": 0.3878,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 3,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-106173.json",
+        "checado": "2026-10-23T12:22:11Z"
       }
     },
     {
@@ -670,7 +875,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-13T19:22:07Z"
     },
     {
       "cve": "CVE-2026-83938",
@@ -698,7 +904,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-22T22:19:18Z",
       "resumo": "Missing authentication for critical function in Azure Kubernetes Configuration Service allows an unauthorized attacker to elevate privileges over a network.",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -713,7 +919,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-22T22:19:18Z"
     },
     {
       "cve": "CVE-2021-48016",
@@ -733,7 +940,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-22T11:17:04Z",
       "resumo": "DedeCMS through 5.8.1-beta contains a PHP code injection vulnerability in ShowMsg() where the HTTP Referer header is written into a DedeTemplate string and included. Unauthenticated attackers can send a crafted Referer to /plus/flink.php?dopost=save with an…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -748,7 +955,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-22T11:17:04Z"
     },
     {
       "cve": "CVE-2026-114119",
@@ -768,7 +976,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-21T01:17:38Z",
       "resumo": "Best Practice Software Bp Premier before 1.14.1.1128 uses a hardcoded Microsoft SQL Server administrative password that is shared across all installations and cannot be changed without breaking the application. Attackers with network access to the database…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -788,7 +996,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-21T01:17:38Z"
     },
     {
       "cve": "CVE-2026-91354",
@@ -808,7 +1017,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:38Z",
       "resumo": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows low privileged attacker with network…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -828,7 +1037,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T22:20:38Z"
     },
     {
       "cve": "CVE-2026-91341",
@@ -848,7 +1058,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:36Z",
       "resumo": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows unauthenticated attacker with network…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -868,7 +1078,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T22:20:36Z"
     },
     {
       "cve": "CVE-2026-91251",
@@ -888,7 +1099,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:26Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -908,7 +1119,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T22:20:26Z"
     },
     {
       "cve": "CVE-2026-91243",
@@ -928,7 +1140,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:25Z",
       "resumo": "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -948,7 +1160,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T22:20:25Z"
     },
     {
       "cve": "CVE-2026-91250",
@@ -968,7 +1181,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:25Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -988,7 +1201,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T22:20:25Z"
     },
     {
       "cve": "CVE-2026-91225",
@@ -1008,7 +1222,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:23Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1028,7 +1242,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T22:20:23Z"
     },
     {
       "cve": "CVE-2026-91230",
@@ -1048,7 +1263,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:23Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1068,7 +1283,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T22:20:23Z"
     },
     {
       "cve": "CVE-2026-91231",
@@ -1088,7 +1304,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:23Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1108,7 +1324,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T22:20:23Z"
     },
     {
       "cve": "CVE-2026-91232",
@@ -1128,7 +1345,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:23Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1148,7 +1365,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T22:20:23Z"
     },
     {
       "cve": "CVE-2026-91216",
@@ -1168,7 +1386,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:22Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1188,7 +1406,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T22:20:22Z"
     },
     {
       "cve": "CVE-2026-91218",
@@ -1208,7 +1427,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:22Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1228,7 +1447,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T22:20:22Z"
     },
     {
       "cve": "CVE-2026-91221",
@@ -1248,7 +1468,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:22Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1268,7 +1488,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T22:20:22Z"
     },
     {
       "cve": "CVE-2026-91222",
@@ -1288,7 +1509,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:22Z",
       "resumo": "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Human Workflow (11g+)).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1308,7 +1529,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T22:20:22Z"
     },
     {
       "cve": "CVE-2026-91224",
@@ -1328,7 +1550,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:22Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1348,7 +1570,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T22:20:22Z"
     },
     {
       "cve": "CVE-2026-87347",
@@ -1368,7 +1591,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:12Z",
       "resumo": "Vulnerability in the Oracle HTTP Server product of Oracle Fusion Middleware (component: OSSL Module).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1388,7 +1611,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T22:20:12Z"
     },
     {
       "cve": "CVE-2026-101528",
@@ -1408,7 +1632,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:18:02Z",
       "resumo": "Vulnerability in the Oracle Enterprise Manager for Oracle Database product of Oracle Enterprise Manager (component: Data Guard Management).  Supported versions that are affected are 13.5 and  24.1. Easily exploitable vulnerability allows low privileged…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1428,7 +1652,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T22:18:02Z"
     },
     {
       "cve": "CVE-2026-101529",
@@ -1448,7 +1673,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:18:02Z",
       "resumo": "Vulnerability in the Oracle Enterprise Manager for Oracle Database product of Oracle Enterprise Manager (component: Data Guard Management).  Supported versions that are affected are 13.5 and  24.1. Easily exploitable vulnerability allows low privileged…",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1468,7 +1693,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T22:18:02Z"
     },
     {
       "cve": "CVE-2026-110936",
@@ -1550,7 +1776,8 @@
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110936.json",
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-22T12:00:00Z"
     },
     {
       "cve": "CVE-2026-106931",
@@ -1616,7 +1843,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T12:00:00Z"
     },
     {
       "cve": "CVE-2026-105133",
@@ -1674,7 +1902,8 @@
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-105133.json",
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-14T00:00:00Z"
     },
     {
       "cve": "CVE-2026-96652",
@@ -1748,7 +1977,8 @@
         "qtd": 5,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-96652.json",
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-21T07:26:49Z"
     },
     {
       "cve": "CVE-2026-96654",
@@ -1814,7 +2044,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T12:00:00Z"
     },
     {
       "cve": "CVE-2026-96655",
@@ -1880,7 +2111,8 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T12:00:00Z"
     },
     {
       "cve": "CVE-2026-96656",
@@ -1946,7 +2178,8 @@
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-96656.json",
         "checado": "2026-10-23T12:14:22Z"
-      }
+      },
+      "ultima_atividade": "2026-10-20T12:00:00Z"
     }
   ],
   "sem_cve": [
