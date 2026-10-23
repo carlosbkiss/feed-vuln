@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-23T12:22:11Z",
+  "atualizado": "2026-10-23T12:27:14Z",
   "itens": [
     {
       "cve": "CVE-2026-102764",
@@ -468,7 +468,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-22T19:17:30Z",
       "resumo": "Bytebase 0.12.0 before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to log in as any user. The flaw stems from trusting client-supplied GitLab provider configuration in the POST /api/auth/login/GITLAB_SELF_HOST…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -485,6 +485,159 @@
         "checado": "2026-10-23T12:14:22Z"
       },
       "ultima_atividade": "2026-10-22T19:17:30Z"
+    },
+    {
+      "cve": "CVE-2026-76531",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-76531",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76531",
+          "publicado": "2026-10-21T23:17:30Z",
+          "visto_em": "2026-10-23T12:27:14Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
+          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
+          "publicado": "2026-10-23T03:41:41Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-21T23:17:30Z",
+      "primeira_noticia": "2026-10-23T03:41:41Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76531",
+      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
+      "ultima_atividade": "2026-10-23T03:41:41Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-21T23:17:30Z",
+      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
+      "nota_chegou_em": "2026-10-23T12:27:14Z",
+      "exibido_em": "2026-10-23T12:27:14Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "epss": {
+        "score": 0.0019,
+        "percentil": 0.0805,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:27:14Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-76302",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-76302",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76302",
+          "publicado": "2026-10-21T23:17:28Z",
+          "visto_em": "2026-10-23T12:27:14Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
+          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
+          "publicado": "2026-10-23T03:41:41Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-21T23:17:28Z",
+      "primeira_noticia": "2026-10-23T03:41:41Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76302",
+      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
+      "ultima_atividade": "2026-10-23T03:41:41Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-21T23:17:28Z",
+      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
+      "nota_chegou_em": "2026-10-23T12:27:14Z",
+      "exibido_em": "2026-10-23T12:27:14Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "epss": {
+        "score": 0.0019,
+        "percentil": 0.0805,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:27:14Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-76299",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-76299",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76299",
+          "publicado": "2026-10-21T23:17:27Z",
+          "visto_em": "2026-10-23T12:27:14Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
+          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
+          "publicado": "2026-10-23T03:41:41Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-21T23:17:27Z",
+      "primeira_noticia": "2026-10-23T03:41:41Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76299",
+      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
+      "ultima_atividade": "2026-10-23T03:41:41Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-21T23:17:27Z",
+      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
+      "nota_chegou_em": "2026-10-23T12:27:14Z",
+      "exibido_em": "2026-10-23T12:27:14Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "epss": {
+        "score": 0.0014,
+        "percentil": 0.0311,
+        "data": "2026-10-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-23T12:27:14Z"
+      }
     },
     {
       "cve": "CVE-2026-76466",
@@ -609,7 +762,7 @@
       "cvss_fonte": "NVD",
       "publicado_nvd": "2026-10-21T14:17:09Z",
       "resumo": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -739,7 +892,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:11Z",
       "resumo": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -904,7 +1057,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-22T22:19:18Z",
       "resumo": "Missing authentication for critical function in Azure Kubernetes Configuration Service allows an unauthorized attacker to elevate privileges over a network.",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -940,7 +1093,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-22T11:17:04Z",
       "resumo": "DedeCMS through 5.8.1-beta contains a PHP code injection vulnerability in ShowMsg() where the HTTP Referer header is written into a DedeTemplate string and included. Unauthenticated attackers can send a crafted Referer to /plus/flink.php?dopost=save with an…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -976,7 +1129,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-21T01:17:38Z",
       "resumo": "Best Practice Software Bp Premier before 1.14.1.1128 uses a hardcoded Microsoft SQL Server administrative password that is shared across all installations and cannot be changed without breaking the application. Attackers with network access to the database…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1017,7 +1170,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:38Z",
       "resumo": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows low privileged attacker with network…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1058,7 +1211,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:36Z",
       "resumo": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows unauthenticated attacker with network…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1099,7 +1252,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:26Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1140,7 +1293,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:25Z",
       "resumo": "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1181,7 +1334,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:25Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1222,7 +1375,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:23Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1263,7 +1416,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:23Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1304,7 +1457,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:23Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1345,7 +1498,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:23Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1386,7 +1539,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:22Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1427,7 +1580,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:22Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1468,7 +1621,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:22Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1509,7 +1662,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:22Z",
       "resumo": "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Human Workflow (11g+)).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1550,7 +1703,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:22Z",
       "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1591,7 +1744,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:20:12Z",
       "resumo": "Vulnerability in the Oracle HTTP Server product of Oracle Fusion Middleware (component: OSSL Module).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1632,7 +1785,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:18:02Z",
       "resumo": "Vulnerability in the Oracle Enterprise Manager for Oracle Database product of Oracle Enterprise Manager (component: Data Guard Management).  Supported versions that are affected are 13.5 and  24.1. Easily exploitable vulnerability allows low privileged…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1673,7 +1826,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-20T22:18:02Z",
       "resumo": "Vulnerability in the Oracle Enterprise Manager for Oracle Database product of Oracle Enterprise Manager (component: Data Guard Management).  Supported versions that are affected are 13.5 and  24.1. Easily exploitable vulnerability allows low privileged…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
