@@ -72,7 +72,17 @@
       "exploracao": "Não confirmada",
       "prioridade": "P0",
       "status": "Novo",
-      "tratamento": "Subir para 19.5.1, 19.4.3 ou 19.3.6; o patch de 12/out não cobre. Se a instância é exposta, rotacionar tokens de CI/CD e deploy keys."
+      "tratamento": "Subir para 19.5.1, 19.4.3 ou 19.3.6; o patch de 12/out não cobre. Se a instância é exposta, rotacionar tokens de CI/CD e deploy keys.",
+      "fontes": [
+        {
+          "nome": "Eastern Herald",
+          "url": "https://easternherald.com/2026/10/22/gitlab-cve-2026-110264-critical-code-execution-patches/"
+        },
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/gitlab-critical-patch-release-cve-2026-110264/"
+        }
+      ]
     },
     {
       "data": "2026-10-21",
@@ -84,7 +94,21 @@
       "exploracao": "Ativa (tentativas em massa)",
       "prioridade": "P0",
       "status": "Novo",
-      "tratamento": "Atualizar para 8.5.12, 8.4.27, 8.3.36 ou 8.2.35; já há varredura em massa. Sem patch: desligar session.upload_progress.enabled e aplicar regra de WAF. Inclui appliances com PHP embarcado (ex.: Okta Access Gateway)."
+      "tratamento": "Atualizar para 8.5.12, 8.4.27, 8.3.36 ou 8.2.35; já há varredura em massa. Sem patch: desligar session.upload_progress.enabled e aplicar regra de WAF. Inclui appliances com PHP embarcado (ex.: Okta Access Gateway).",
+      "fontes": [
+        {
+          "nome": "CERT-EU",
+          "url": "https://cert.europa.eu/publications/security-advisories/2026-018/pdf"
+        },
+        {
+          "nome": "Rescana",
+          "url": "https://www.rescana.com/post/php-rce-flaws-patch-october-2026-prepare-now"
+        },
+        {
+          "nome": "Infosecurity",
+          "url": "https://www.infosecurity-magazine.com/news/critical-php-vulnerabilities-leaked/"
+        }
+      ]
     },
     {
       "data": "2026-10-21",
@@ -96,7 +120,13 @@
       "exploracao": "Não",
       "prioridade": "P2",
       "status": "Novo",
-      "tratamento": "Confirmar uso em mensageria; se existir, corrigir no ciclo de 30 dias e tirar o console da rede aberta."
+      "tratamento": "Confirmar uso em mensageria; se existir, corrigir no ciclo de 30 dias e tirar o console da rede aberta.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/cve-watchtower/cve-2026-105944/"
+        }
+      ]
     },
     {
       "data": "2026-10-21",
@@ -108,7 +138,13 @@
       "exploracao": "Não",
       "prioridade": "P2",
       "status": "Novo",
-      "tratamento": "Atualizar a biblioteca em ambientes de dados e ML que processam imagens enviadas por terceiros."
+      "tratamento": "Atualizar a biblioteca em ambientes de dados e ML que processam imagens enviadas por terceiros.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/cve-watchtower/cve-2026-96639/"
+        }
+      ]
     },
     {
       "data": "2026-10-21",
@@ -120,7 +156,13 @@
       "exploracao": "Exploit público",
       "prioridade": "P2",
       "status": "Novo",
-      "tratamento": "PoC público desde 23/out. Atualizar para 12.68.0 ou 13.29.0 em apps internos e de parceiros."
+      "tratamento": "PoC público desde 23/out. Atualizar para 12.68.0 ou 13.29.0 em apps internos e de parceiros.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/cve-watchtower/cve-2026-114509/"
+        }
+      ]
     },
     {
       "data": "2026-10-21",
@@ -132,7 +174,17 @@
       "exploracao": "Não",
       "prioridade": "P2",
       "status": "Novo",
-      "tratamento": "Entra no pacote do Oracle CPU; seguir janela normal de manutenção."
+      "tratamento": "Entra no pacote do Oracle CPU; seguir janela normal de manutenção.",
+      "fontes": [
+        {
+          "nome": "Oracle CPU out/2026",
+          "url": "https://www.oracle.com/security-alerts/cpuoct2026.html"
+        },
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/oracle-critical-patch-update-october-2026/"
+        }
+      ]
     },
     {
       "data": "2026-10-20",
@@ -156,7 +208,17 @@
       "exploracao": "Não",
       "prioridade": "P0",
       "status": "Novo",
-      "tratamento": "SSO corporativo: aplicar o CPU nas instâncias expostas primeiro. Oracle costuma ser explorado dias após o patch."
+      "tratamento": "SSO corporativo: aplicar o CPU nas instâncias expostas primeiro. Oracle costuma ser explorado dias após o patch.",
+      "fontes": [
+        {
+          "nome": "Oracle CPU out/2026",
+          "url": "https://www.oracle.com/security-alerts/cpuoct2026.html"
+        },
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/oracle-critical-patch-update-october-2026/"
+        }
+      ]
     },
     {
       "data": "2026-10-20",
@@ -168,7 +230,17 @@
       "exploracao": "Não",
       "prioridade": "P0",
       "status": "Novo",
-      "tratamento": "Barramento de integração: aplicar o CPU e bloquear T3/IIOP vindos de redes não confiáveis."
+      "tratamento": "Barramento de integração: aplicar o CPU e bloquear T3/IIOP vindos de redes não confiáveis.",
+      "fontes": [
+        {
+          "nome": "Oracle CPU out/2026",
+          "url": "https://www.oracle.com/security-alerts/cpuoct2026.html"
+        },
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/oracle-critical-patch-update-october-2026/"
+        }
+      ]
     },
     {
       "data": "2026-10-20",
@@ -180,7 +252,17 @@
       "exploracao": "Não",
       "prioridade": "P0",
       "status": "Novo",
-      "tratamento": "Aplicar o CPU em servidores expostos e bloquear T3/IIOP de redes não confiáveis."
+      "tratamento": "Aplicar o CPU em servidores expostos e bloquear T3/IIOP de redes não confiáveis.",
+      "fontes": [
+        {
+          "nome": "Oracle CPU out/2026",
+          "url": "https://www.oracle.com/security-alerts/cpuoct2026.html"
+        },
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/oracle-critical-patch-update-october-2026/"
+        }
+      ]
     },
     {
       "data": "2026-10-20",
@@ -192,7 +274,17 @@
       "exploracao": "Não",
       "prioridade": "P1",
       "status": "Novo",
-      "tratamento": "ERP financeiro: corrigir em até 7 dias; manter o EBS fora da internet."
+      "tratamento": "ERP financeiro: corrigir em até 7 dias; manter o EBS fora da internet.",
+      "fontes": [
+        {
+          "nome": "Oracle CPU out/2026",
+          "url": "https://www.oracle.com/security-alerts/cpuoct2026.html"
+        },
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/oracle-critical-patch-update-october-2026/"
+        }
+      ]
     },
     {
       "data": "2026-10-20",
@@ -204,7 +296,17 @@
       "exploracao": "Não",
       "prioridade": "P1",
       "status": "Novo",
-      "tratamento": "Corrigir em até 7 dias se existir no parque."
+      "tratamento": "Corrigir em até 7 dias se existir no parque.",
+      "fontes": [
+        {
+          "nome": "Oracle CPU out/2026",
+          "url": "https://www.oracle.com/security-alerts/cpuoct2026.html"
+        },
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/oracle-critical-patch-update-october-2026/"
+        }
+      ]
     },
     {
       "data": "2026-10-20",
@@ -216,7 +318,17 @@
       "exploracao": "Não",
       "prioridade": "P1",
       "status": "Novo",
-      "tratamento": "Corrigir em até 7 dias; priorizar bancos acessíveis por redes de terceiros."
+      "tratamento": "Corrigir em até 7 dias; priorizar bancos acessíveis por redes de terceiros.",
+      "fontes": [
+        {
+          "nome": "Oracle CPU out/2026",
+          "url": "https://www.oracle.com/security-alerts/cpuoct2026.html"
+        },
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/oracle-critical-patch-update-october-2026/"
+        }
+      ]
     },
     {
       "data": "2026-10-20",
@@ -228,7 +340,17 @@
       "exploracao": "Não",
       "prioridade": "P1",
       "status": "Novo",
-      "tratamento": "Corrigir em até 7 dias; APEX exposto na internet sobe para P0."
+      "tratamento": "Corrigir em até 7 dias; APEX exposto na internet sobe para P0.",
+      "fontes": [
+        {
+          "nome": "Oracle CPU out/2026",
+          "url": "https://www.oracle.com/security-alerts/cpuoct2026.html"
+        },
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/oracle-critical-patch-update-october-2026/"
+        }
+      ]
     },
     {
       "data": "2026-10-20",
@@ -240,7 +362,13 @@
       "exploracao": "Ativa",
       "prioridade": "P2",
       "status": "Novo",
-      "tratamento": "Sinal de shadow IT: se aparecer no inventário, remover."
+      "tratamento": "Sinal de shadow IT: se aparecer no inventário, remover.",
+      "fontes": [
+        {
+          "nome": "CISA KEV 20/out",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog"
+        }
+      ]
     },
     {
       "data": "2026-10-20",
@@ -252,7 +380,13 @@
       "exploracao": "Ativa",
       "prioridade": "P2",
       "status": "Novo",
-      "tratamento": "Improvável no parque; confirmar no inventário."
+      "tratamento": "Improvável no parque; confirmar no inventário.",
+      "fontes": [
+        {
+          "nome": "CISA KEV 20/out",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog"
+        }
+      ]
     },
     {
       "data": "2026-10-20",
@@ -264,7 +398,13 @@
       "exploracao": "Ativa",
       "prioridade": "P2",
       "status": "Novo",
-      "tratamento": "Improvável no parque; confirmar no inventário."
+      "tratamento": "Improvável no parque; confirmar no inventário.",
+      "fontes": [
+        {
+          "nome": "CISA KEV 20/out",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog"
+        }
+      ]
     },
     {
       "data": "2026-10-16",
@@ -276,7 +416,13 @@
       "exploracao": "Ativa (APT, desde 29/08)",
       "prioridade": "P0",
       "status": "Pendente",
-      "tratamento": "Aplicar o patch do advisory BT26-05 e caçar IOCs retroativos a 29/08: sessões anômalas, contas novas, jump points."
+      "tratamento": "Aplicar o patch do advisory BT26-05 e caçar IOCs retroativos a 29/08: sessões anômalas, contas novas, jump points.",
+      "fontes": [
+        {
+          "nome": "Shattered",
+          "url": "https://shattered.io/beyondtrust-cve-2026-102764-china-apt-zero-day-2026/"
+        }
+      ]
     },
     {
       "data": "2026-10-14",
@@ -288,7 +434,17 @@
       "exploracao": "Ativa",
       "prioridade": "P0",
       "status": "Pendente",
-      "tratamento": "Comando como root sem login e sem workaround: confirmar que o patch foi aplicado."
+      "tratamento": "Comando como root sem login e sem workaround: confirmar que o patch foi aplicado.",
+      "fontes": [
+        {
+          "nome": "CISA KEV 14/out",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/14/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/tag/zero-day/"
+        }
+      ]
     },
     {
       "data": "2026-10-14",
@@ -300,7 +456,13 @@
       "exploracao": "Ativa",
       "prioridade": "P0",
       "status": "Pendente",
-      "tratamento": "Firewall de borda: confirmar a correção e revisar logs de gestão."
+      "tratamento": "Firewall de borda: confirmar a correção e revisar logs de gestão.",
+      "fontes": [
+        {
+          "nome": "CISA KEV 14/out",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/14/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+        }
+      ]
     },
     {
       "data": "2026-10-13",
@@ -312,7 +474,13 @@
       "exploracao": "Ativa",
       "prioridade": "P0",
       "status": "Pendente",
-      "tratamento": "VPN: confirmar a correção e rodar a ferramenta de integridade do fabricante."
+      "tratamento": "VPN: confirmar a correção e rodar a ferramenta de integridade do fabricante.",
+      "fontes": [
+        {
+          "nome": "CISA KEV 13/out",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/13/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+        }
+      ]
     },
     {
       "data": "2026-10-13",
@@ -324,7 +492,17 @@
       "exploracao": "Ativa",
       "prioridade": "P0",
       "status": "Pendente",
-      "tratamento": "Burla o Mark of the Web: confirmar o Patch Tuesday de outubro em estações."
+      "tratamento": "Burla o Mark of the Web: confirmar o Patch Tuesday de outubro em estações.",
+      "fontes": [
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/"
+        },
+        {
+          "nome": "CISA KEV 13/out",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/13/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+        }
+      ]
     }
   ]
 }

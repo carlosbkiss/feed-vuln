@@ -1,0 +1,18 @@
+{
+  "_comentario": "Fontes monitoradas. tipo: rss (RSS ou Atom). grupo: noticias | fabricante | governo | produto. ativo=false mantém a fonte listada na página sem coletar (ex.: sem RSS). Fontes estruturadas (CISA KEV e NVD) ficam no código.",
+  "fontes": [
+    {"id": "thn", "nome": "The Hacker News", "site": "https://thehackernews.com/", "feed": "https://feeds.feedburner.com/TheHackersNews", "grupo": "noticias", "ativo": true},
+    {"id": "csn", "nome": "Cyber Security News", "site": "https://cybersecuritynews.com/", "feed": "https://cybersecuritynews.com/feed/", "grupo": "noticias", "ativo": true},
+    {"id": "bleeping", "nome": "BleepingComputer", "site": "https://www.bleepingcomputer.com/", "feed": "https://www.bleepingcomputer.com/feed/", "grupo": "noticias", "ativo": true},
+    {"id": "darkreading", "nome": "Dark Reading", "site": "https://www.darkreading.com/", "feed": "https://www.darkreading.com/rss.xml", "grupo": "noticias", "ativo": true},
+    {"id": "securityweek", "nome": "SecurityWeek", "site": "https://www.securityweek.com/", "feed": "https://www.securityweek.com/feed/", "grupo": "noticias", "ativo": true},
+    {"id": "cisa-adv", "nome": "CISA Advisories", "site": "https://www.cisa.gov/news-events/cybersecurity-advisories", "feed": "https://www.cisa.gov/cybersecurity-advisories/all.xml", "grupo": "governo", "ativo": true},
+    {"id": "ctir", "nome": "CTIR Gov", "site": "https://www.gov.br/gsi/pt-br/assuntos/ctir/alertas", "feed": "", "grupo": "governo", "ativo": false, "obs": "sem RSS público confirmado"},
+    {"id": "msrc", "nome": "Microsoft Security Update Guide", "site": "https://msrc.microsoft.com/update-guide", "feed": "https://api.msrc.microsoft.com/update-guide/rss", "grupo": "fabricante", "ativo": true},
+    {"id": "fortinet", "nome": "Fortinet PSIRT", "site": "https://www.fortiguard.com/psirt", "feed": "https://filestore.fortinet.com/fortiguard/rss/ir.xml", "grupo": "fabricante", "ativo": true},
+    {"id": "cisco", "nome": "Cisco PSIRT", "site": "https://sec.cloudapps.cisco.com/security/center/publicationListing.x", "feed": "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml", "grupo": "fabricante", "ativo": true},
+    {"id": "paloalto", "nome": "Palo Alto Security Advisories", "site": "https://security.paloaltonetworks.com/", "feed": "https://security.paloaltonetworks.com/rss.xml", "grupo": "fabricante", "ativo": true},
+    {"id": "chrome", "nome": "Chrome Releases", "site": "https://chromereleases.googleblog.com/", "feed": "https://chromereleases.googleblog.com/feeds/posts/default", "grupo": "produto", "ativo": true},
+    {"id": "firefox", "nome": "Mozilla Security Advisories", "site": "https://www.mozilla.org/en-US/security/advisories/", "feed": "https://www.mozilla.org/en-US/security/advisories/feed/", "grupo": "produto", "ativo": true}
+  ]
+}
