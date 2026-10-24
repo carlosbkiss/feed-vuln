@@ -453,6 +453,11 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/critical-php2shell-exploit-code/",
         "publicado": "2026-10-23T13:00:37Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/",
+        "publicado": "2026-10-24T06:41:29Z"
       }
     ],
     "prioridade_max": "P1"
@@ -516,6 +521,11 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/critical-php2shell-exploit-code/",
         "publicado": "2026-10-23T13:00:37Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/",
+        "publicado": "2026-10-24T06:41:29Z"
       }
     ],
     "prioridade_max": "P1"
@@ -560,6 +570,11 @@
         "nome": "CISA Advisories",
         "link": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
         "publicado": "2026-10-23T12:00:00Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
+        "publicado": "2026-10-24T06:25:57Z"
       }
     ],
     "prioridade_max": "P0"
@@ -693,6 +708,34 @@
       }
     ],
     "prioridade_max": "P0"
+  },
+  "CVE-2026-115806": {
+    "cve": "CVE-2026-115806",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.8,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-24T05:17:04Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-24T05:17:04Z",
+    "exibido_em": "2026-10-24T10:35:21Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-115806",
+        "publicado": "2026-10-24T05:17:04Z"
+      }
+    ],
+    "prioridade_max": "P2"
   },
   "CVE-2026-21589": {
     "cve": "CVE-2026-21589",
