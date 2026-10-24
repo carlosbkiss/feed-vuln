@@ -709,6 +709,39 @@
     ],
     "prioridade_max": "P0"
   },
+  "CVE-2026-115547": {
+    "cve": "CVE-2026-115547",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.1,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-23T04:18:16Z",
+    "primeira_noticia": "2026-10-23T15:19:23Z",
+    "publicado_nvd": "2026-10-23T04:18:16Z",
+    "exibido_em": "2026-10-24T18:38:25Z",
+    "aguardando_nota_desde": "2026-10-23T15:19:23Z",
+    "nota_chegou_em": "2026-10-24T18:38:25Z",
+    "epss_max": 0.0044,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-115547",
+        "publicado": "2026-10-23T04:18:16Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/okta-access-gateway-flaw/",
+        "publicado": "2026-10-23T15:19:23Z"
+      }
+    ],
+    "prioridade_max": "P1"
+  },
   "CVE-2026-115806": {
     "cve": "CVE-2026-115806",
     "produto": "",

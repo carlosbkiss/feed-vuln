@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-24T10:35:21Z",
+  "atualizado": "2026-10-24T18:38:25Z",
   "itens": [
     {
       "cve": "CVE-2026-114625",
@@ -69,9 +69,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0056,
-        "percentil": 0.4559,
-        "data": "2026-10-23"
+        "score": 0.0081,
+        "percentil": 0.5661,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
@@ -137,13 +137,13 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0118,
-        "percentil": 0.6746,
-        "data": "2026-10-23"
+        "percentil": 0.6749,
+        "data": "2026-10-24"
       },
       "poc": {
-        "qtd": 2,
+        "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-102764.json",
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-16T12:00:00Z"
     },
@@ -213,9 +213,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0123,
-        "percentil": 0.6862,
-        "data": "2026-10-23"
+        "score": 0.0228,
+        "percentil": 0.8306,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 1,
@@ -281,13 +281,13 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0157,
-        "percentil": 0.7523,
-        "data": "2026-10-23"
+        "percentil": 0.7526,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76519.json",
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-14T17:19:10Z"
     },
@@ -348,13 +348,13 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0121,
-        "percentil": 0.6836,
-        "data": "2026-10-23"
+        "percentil": 0.6839,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-0322.json",
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-15T18:30:00Z"
     },
@@ -415,13 +415,13 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.2598,
-        "percentil": 0.9798,
-        "data": "2026-10-23"
+        "percentil": 0.9799,
+        "data": "2026-10-24"
       },
       "poc": {
-        "qtd": 4,
+        "qtd": 5,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-104935.json",
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-14T21:20:13Z"
     },
@@ -475,13 +475,13 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.1271,
-        "percentil": 0.9626,
-        "data": "2026-10-23"
+        "percentil": 0.9627,
+        "data": "2026-10-24"
       },
       "poc": {
-        "qtd": 12,
+        "qtd": 13,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-21589.json",
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-15T00:00:00Z"
     },
@@ -536,12 +536,12 @@
       "epss": {
         "score": 0.3831,
         "percentil": 0.9857,
-        "data": "2026-10-23"
+        "data": "2026-10-24"
       },
       "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-105134.json",
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-14T00:00:00Z"
     },
@@ -594,15 +594,66 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0108,
-        "percentil": 0.6487,
-        "data": "2026-10-23"
+        "percentil": 0.649,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-16T00:00:00Z"
+    },
+    {
+      "cve": "CVE-2026-115547",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-115547",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-115547",
+          "publicado": "2026-10-23T04:18:16Z",
+          "visto_em": "2026-10-24T18:38:25Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical Okta Access Gateway Flaw Lets Attackers With Admin Access Execute System Commands",
+          "link": "https://cybersecuritynews.com/okta-access-gateway-flaw/",
+          "publicado": "2026-10-23T15:19:23Z",
+          "visto_em": "2026-10-23T15:45:37Z"
+        }
+      ],
+      "detectado": "2026-10-23T15:45:37Z",
+      "aguardando_nota_desde": "2026-10-23T15:19:23Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-23T04:18:16Z",
+      "primeira_noticia": "2026-10-23T15:19:23Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-115547",
+      "ultima_atividade": "2026-10-23T15:19:23Z",
+      "cvss": 9.1,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-23T04:18:16Z",
+      "resumo": "An input validation issue in the Okta Access Gateway (OAG) Admin Console allows the processing of specially formatted configuration values. An authenticated administrator can leverage this to execute system commands within the context of the OAG service…",
+      "nvd_checado_em": "2026-10-24T18:38:25Z",
+      "nota_chegou_em": "2026-10-24T18:38:25Z",
+      "exibido_em": "2026-10-24T18:38:25Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "epss": {
+        "score": 0.0044,
+        "percentil": 0.3768,
+        "data": "2026-10-24"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-24T18:38:25Z"
+      }
     },
     {
       "cve": "CVE-2022-51026",
@@ -622,7 +673,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-22T19:17:30Z",
       "resumo": "Bytebase 0.12.0 before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to log in as any user. The flaw stems from trusting client-supplied GitLab provider configuration in the POST /api/auth/login/GITLAB_SELF_HOST…",
-      "nvd_checado_em": "2026-10-24T10:35:21Z",
+      "nvd_checado_em": "2026-10-24T18:38:25Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -636,13 +687,13 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-22T19:17:30Z",
       "epss": {
         "score": 0.0061,
-        "percentil": 0.4872,
-        "data": "2026-10-23"
+        "percentil": 0.4876,
+        "data": "2026-10-24"
       }
     },
     {
@@ -687,13 +738,13 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0038,
-        "percentil": 0.3057,
-        "data": "2026-10-23"
+        "percentil": 0.3061,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:27:14Z"
+        "checado": "2026-10-24T18:38:25Z"
       }
     },
     {
@@ -738,13 +789,13 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0038,
-        "percentil": 0.3057,
-        "data": "2026-10-23"
+        "percentil": 0.306,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:27:14Z"
+        "checado": "2026-10-24T18:38:25Z"
       }
     },
     {
@@ -789,13 +840,13 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0025,
-        "percentil": 0.1586,
-        "data": "2026-10-23"
+        "percentil": 0.159,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:27:14Z"
+        "checado": "2026-10-24T18:38:25Z"
       }
     },
     {
@@ -846,13 +897,13 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0038,
-        "percentil": 0.3093,
-        "data": "2026-10-23"
+        "percentil": 0.3097,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:22:11Z"
+        "checado": "2026-10-24T18:38:25Z"
       }
     },
     {
@@ -949,14 +1000,14 @@
       "regra": "CVSS ≥ 9 em borda/acesso",
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
-        "score": 0.1162,
-        "percentil": 0.9605,
-        "data": "2026-10-23"
+        "score": 0.1184,
+        "percentil": 0.961,
+        "data": "2026-10-24"
       },
       "poc": {
-        "qtd": 521,
+        "qtd": 608,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109618.json",
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-24T06:41:29Z"
     },
@@ -1055,14 +1106,14 @@
       "regra": "CVSS ≥ 9 em borda/acesso",
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
-        "score": 0.0599,
-        "percentil": 0.933,
-        "data": "2026-10-23"
+        "score": 0.0622,
+        "percentil": 0.9352,
+        "data": "2026-10-24"
       },
       "poc": {
-        "qtd": 16,
+        "qtd": 22,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109619.json",
-        "checado": "2026-10-23T12:22:11Z"
+        "checado": "2026-10-24T18:38:25Z"
       }
     },
     {
@@ -1096,13 +1147,13 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0043,
-        "percentil": 0.3595,
-        "data": "2026-10-23"
+        "percentil": 0.3597,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T22:20:11Z"
     },
@@ -1146,13 +1197,13 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0046,
-        "percentil": 0.3881,
-        "data": "2026-10-23"
+        "percentil": 0.3884,
+        "data": "2026-10-24"
       },
       "poc": {
-        "qtd": 3,
+        "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-106173.json",
-        "checado": "2026-10-23T12:22:11Z"
+        "checado": "2026-10-24T18:38:25Z"
       }
     },
     {
@@ -1212,13 +1263,13 @@
       "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
       "epss": {
         "score": 0.0151,
-        "percentil": 0.7429,
-        "data": "2026-10-23"
+        "percentil": 0.7431,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-13T19:22:07Z"
     },
@@ -1240,7 +1291,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-24T05:17:04Z",
       "resumo": "The Prime Mover – Backup and Migration plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.2.1 via deserialization of untrusted input in the migration search-and-replace routine (recursiveUnserializeReplace()).…",
-      "nvd_checado_em": "2026-10-24T10:35:21Z",
+      "nvd_checado_em": "2026-10-24T18:38:25Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1256,6 +1307,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-24T10:35:21Z"
+      },
+      "epss": {
+        "score": 0.0082,
+        "percentil": 0.5685,
+        "data": "2026-10-24"
       }
     },
     {
@@ -1284,7 +1340,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-22T22:19:18Z",
       "resumo": "Missing authentication for critical function in Azure Kubernetes Configuration Service allows an unauthorized attacker to elevate privileges over a network.",
-      "nvd_checado_em": "2026-10-24T10:35:21Z",
+      "nvd_checado_em": "2026-10-24T18:38:25Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1298,13 +1354,13 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-22T22:19:18Z",
       "epss": {
         "score": 0.0067,
-        "percentil": 0.5134,
-        "data": "2026-10-23"
+        "percentil": 0.5138,
+        "data": "2026-10-24"
       }
     },
     {
@@ -1325,7 +1381,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-22T11:17:04Z",
       "resumo": "DedeCMS through 5.8.1-beta contains a PHP code injection vulnerability in ShowMsg() where the HTTP Referer header is written into a DedeTemplate string and included. Unauthenticated attackers can send a crafted Referer to /plus/flink.php?dopost=save with an…",
-      "nvd_checado_em": "2026-10-24T10:35:21Z",
+      "nvd_checado_em": "2026-10-24T18:38:25Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1339,13 +1395,13 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-22T11:17:04Z",
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3726,
-        "data": "2026-10-23"
+        "percentil": 0.3729,
+        "data": "2026-10-24"
       }
     },
     {
@@ -1379,13 +1435,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0043,
-        "percentil": 0.3604,
-        "data": "2026-10-23"
+        "percentil": 0.3606,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-21T01:17:38Z"
     },
@@ -1420,13 +1476,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0033,
-        "percentil": 0.2473,
-        "data": "2026-10-23"
+        "percentil": 0.2476,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T22:20:38Z"
     },
@@ -1461,13 +1517,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3727,
-        "data": "2026-10-23"
+        "percentil": 0.373,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T22:20:36Z"
     },
@@ -1502,13 +1558,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0045,
-        "percentil": 0.3786,
-        "data": "2026-10-23"
+        "percentil": 0.3789,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T22:20:26Z"
     },
@@ -1543,13 +1599,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0037,
-        "percentil": 0.2921,
-        "data": "2026-10-23"
+        "percentil": 0.2924,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T22:20:25Z"
     },
@@ -1584,13 +1640,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0045,
-        "percentil": 0.3786,
-        "data": "2026-10-23"
+        "percentil": 0.3788,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T22:20:25Z"
     },
@@ -1625,13 +1681,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3727,
-        "data": "2026-10-23"
+        "percentil": 0.373,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -1666,13 +1722,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0034,
-        "percentil": 0.2611,
-        "data": "2026-10-23"
+        "percentil": 0.2615,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -1707,13 +1763,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4347,
-        "data": "2026-10-23"
+        "percentil": 0.435,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -1748,13 +1804,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0045,
-        "percentil": 0.3786,
-        "data": "2026-10-23"
+        "percentil": 0.3789,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -1789,13 +1845,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4347,
-        "data": "2026-10-23"
+        "percentil": 0.435,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -1830,13 +1886,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0037,
-        "percentil": 0.2921,
-        "data": "2026-10-23"
+        "percentil": 0.2924,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -1871,13 +1927,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4347,
-        "data": "2026-10-23"
+        "percentil": 0.435,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -1912,13 +1968,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0045,
-        "percentil": 0.3786,
-        "data": "2026-10-23"
+        "percentil": 0.3789,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -1953,13 +2009,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0033,
-        "percentil": 0.2473,
-        "data": "2026-10-23"
+        "percentil": 0.2476,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -1994,13 +2050,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0037,
-        "percentil": 0.2925,
-        "data": "2026-10-23"
+        "percentil": 0.2928,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T22:20:12Z"
     },
@@ -2035,13 +2091,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0048,
-        "percentil": 0.4042,
-        "data": "2026-10-23"
+        "percentil": 0.4046,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T22:18:02Z"
     },
@@ -2076,13 +2132,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0048,
-        "percentil": 0.4042,
-        "data": "2026-10-23"
+        "percentil": 0.4046,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T22:18:02Z"
     },
@@ -2159,13 +2215,13 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0024,
-        "percentil": 0.1402,
-        "data": "2026-10-23"
+        "percentil": 0.1406,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110936.json",
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-22T12:00:00Z"
     },
@@ -2226,13 +2282,13 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0117,
-        "percentil": 0.6717,
-        "data": "2026-10-23"
+        "percentil": 0.6721,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T12:14:22Z"
+        "checado": "2026-10-24T18:38:25Z"
       },
       "ultima_atividade": "2026-10-20T12:00:00Z"
     },
@@ -2285,8 +2341,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0579,
-        "percentil": 0.931,
-        "data": "2026-10-23"
+        "percentil": 0.9311,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 1,
@@ -2360,8 +2416,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0046,
-        "percentil": 0.3856,
-        "data": "2026-10-23"
+        "percentil": 0.3859,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 5,
@@ -2427,8 +2483,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0046,
-        "percentil": 0.3932,
-        "data": "2026-10-23"
+        "percentil": 0.3936,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
@@ -2494,8 +2550,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0046,
-        "percentil": 0.3856,
-        "data": "2026-10-23"
+        "percentil": 0.3859,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 0,
@@ -2561,8 +2617,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0082,
-        "percentil": 0.5668,
-        "data": "2026-10-23"
+        "percentil": 0.5671,
+        "data": "2026-10-24"
       },
       "poc": {
         "qtd": 1,
