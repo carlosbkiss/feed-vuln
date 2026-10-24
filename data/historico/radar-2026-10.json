@@ -178,7 +178,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0118,
-    "poc_qtd": 2,
+    "poc_qtd": 3,
     "fontes": [
       {
         "nome": "NVD",
@@ -221,7 +221,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.2598,
-    "poc_qtd": 4,
+    "poc_qtd": 5,
     "fontes": [
       {
         "nome": "CISA KEV",
@@ -303,7 +303,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.3831,
-    "poc_qtd": 0,
+    "poc_qtd": 1,
     "fontes": [
       {
         "nome": "NVD",
@@ -336,7 +336,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0046,
-    "poc_qtd": 3,
+    "poc_qtd": 4,
     "fontes": [
       {
         "nome": "NVD",
@@ -411,8 +411,8 @@
     "exibido_em": "2026-10-23T12:14:22Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.1162,
-    "poc_qtd": 521,
+    "epss_max": 0.1184,
+    "poc_qtd": 608,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -479,8 +479,8 @@
     "exibido_em": "2026-10-23T12:22:11Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0599,
-    "poc_qtd": 16,
+    "epss_max": 0.0622,
+    "poc_qtd": 22,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -553,7 +553,7 @@
     "exibido_em": "2026-10-23T20:28:55Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0123,
+    "epss_max": 0.0228,
     "poc_qtd": 1,
     "fontes": [
       {
@@ -683,7 +683,7 @@
     "exibido_em": "2026-10-23T18:39:23Z",
     "aguardando_nota_desde": "2026-10-23T13:57:11Z",
     "nota_chegou_em": "2026-10-23T18:39:23Z",
-    "epss_max": 0.0056,
+    "epss_max": 0.0081,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -726,7 +726,7 @@
     "exibido_em": "2026-10-24T10:35:21Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0082,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -761,7 +761,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.1271,
-    "poc_qtd": 12,
+    "poc_qtd": 13,
     "fontes": [
       {
         "nome": "NVD",
