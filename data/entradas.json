@@ -1,13 +1,35 @@
 {
-  "atualizado": "2026-10-23T18:39:04Z",
-  "janela": "17 a 23/out/2026",
+  "atualizado": "2026-10-24T10:35:02Z",
+  "janela": "18 a 24/out/2026",
   "itens": [
+    {
+      "data": "2026-10-23",
+      "cve": "CVE-2026-110447",
+      "produto": "Collabora Online (CODE embutido no Nextcloud)",
+      "cvss": 9.2,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (webshells desde set/2026)",
+      "prioridade": "P2",
+      "status": "Novo",
+      "tratamento": "Só afeta o app richdocumentscode do Nextcloud; subir para 26.4.303 ou remover o app (desativar não basta). Se existir no parque, procurar webshells PHP.",
+      "fontes": [
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/"
+        },
+        {
+          "nome": "CISA KEV 23/out",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0"
+        }
+      ]
+    },
     {
       "data": "2026-10-22",
       "cve": "CVE-2026-114625",
       "produto": "Arista VeloCloud Orchestrator (on-prem)",
       "cvss": 9.9,
-      "kev": false,
+      "kev": true,
       "zero_day": true,
       "exploracao": "Ativa",
       "prioridade": "P0",
@@ -21,6 +43,10 @@
         {
           "nome": "BleepingComputer",
           "url": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/"
+        },
+        {
+          "nome": "CISA KEV 23/out",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog"
         }
       ]
     },
@@ -384,15 +410,15 @@
     },
     {
       "data": "2026-10-20",
-      "cve": "CVE-2026-91216 / -91221 / -91231",
-      "produto": "Oracle SOA Suite",
+      "cve": "CVE-2026-91216 / -91221 / -91231 / -91224 / -91232 / -91250 / -91251 / -91222",
+      "produto": "Oracle SOA Suite e BPM Suite",
       "cvss": 10.0,
       "kev": false,
       "zero_day": false,
       "exploracao": "Não",
       "prioridade": "P0",
       "status": "Novo",
-      "tratamento": "Barramento de integração: aplicar o CPU e bloquear T3/IIOP vindos de redes não confiáveis.",
+      "tratamento": "Barramento de integração: várias falhas 9.1 a 10.0 nas versões 12.2.1.4.0 e 14.1.2.0.0. Aplicar o CPU e bloquear T3/IIOP vindos de redes não confiáveis.",
       "fontes": [
         {
           "nome": "Oracle CPU out/2026",
@@ -591,6 +617,50 @@
       ]
     },
     {
+      "data": "2026-10-20",
+      "cve": "CVE-2026-101528 / CVE-2026-101529",
+      "produto": "Oracle Enterprise Manager (Data Guard Management)",
+      "cvss": 9.9,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "Console que administra os bancos de dados; exige login de baixo privilégio. Aplicar o CPU nas versões 13.5 e 24.1 e restringir o acesso ao OEM à rede de DBAs.",
+      "fontes": [
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101528"
+        },
+        {
+          "nome": "Oracle CPU out/2026",
+          "url": "https://www.oracle.com/security-alerts/cpuoct2026.html"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-20",
+      "cve": "CVE-2026-87347",
+      "produto": "Oracle HTTP Server (módulo OSSL)",
+      "cvss": 9.6,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "Costuma ficar na frente de WebLogic e OAM. Aplicar o CPU nas versões 12.2.1.4.0 e 14.1.2.0.0, começando pelas instâncias expostas.",
+      "fontes": [
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87347"
+        },
+        {
+          "nome": "Oracle CPU out/2026",
+          "url": "https://www.oracle.com/security-alerts/cpuoct2026.html"
+        }
+      ]
+    },
+    {
       "data": "2026-10-16",
       "cve": "CVE-2026-102764",
       "produto": "BeyondTrust Remote Support (self-hosted)",
@@ -696,17 +766,21 @@
       "data": "2026-10-13",
       "cve": "CVE-2026-104935",
       "produto": "Ivanti Connect Secure",
-      "cvss": null,
+      "cvss": 8.6,
       "kev": true,
       "zero_day": true,
-      "exploracao": "Ativa",
+      "exploracao": "Ativa (UTA0576, desde 01-03/out)",
       "prioridade": "P0",
       "status": "Pendente",
-      "tratamento": "VPN: confirmar a correção e rodar a ferramenta de integridade do fabricante.",
+      "tratamento": "VPN: subir além de 22.8R2.4 / 25.1.x afetadas e caçar requisições com o header X-DSCGI-PATH. O atacante driblou a ferramenta de integridade; se houver indício, reset de fábrica e troca de senhas, certificados e chaves.",
       "fontes": [
         {
           "nome": "CISA KEV 13/out",
           "url": "https://www.cisa.gov/news-events/alerts/2026/10/13/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html"
         }
       ]
     },
