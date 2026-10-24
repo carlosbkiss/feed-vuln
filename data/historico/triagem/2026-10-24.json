@@ -1,7 +1,25 @@
 {
-  "atualizado": "2026-10-24T10:35:02Z",
+  "atualizado": "2026-10-24T14:38:46Z",
   "janela": "18 a 24/out/2026",
   "itens": [
+    {
+      "data": "2026-10-23",
+      "cve": "CVE-2026-109618 / CVE-2026-109619",
+      "produto": "Palo Alto PAN-OS, Panorama e WF-500 (PHP2Shell)",
+      "cvss": 8.7,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Exploit público",
+      "prioridade": "P0",
+      "tratamento": "Falha do PHP alcançável pela interface de gestão (web e XML API). Aplicar hotfix 12.2.4-h1, 12.1.10-h3, 11.2.16-h1, 11.1.16-h4 ou 10.2.18-h13; restringir a gestão a jump host e tirar perfis de gestão de interfaces expostas. Versões de Panorama/WF-500: a confirmar no advisory.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/pan-os-php2shell-cve-2026-109618/"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-10-23",
       "cve": "CVE-2026-110447",
@@ -23,6 +41,28 @@
           "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0"
         }
       ]
+    },
+    {
+      "data": "2026-10-22",
+      "cve": "CVE-2026-79844 / -79845 / -79846 / -79847 / -79848 / -79849 / -79850 / -79851",
+      "produto": "HPE Aruba AOS-8 e AOS-10 (controladoras, gateways, APs)",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Oito RCE/bypass sem login no Wi-Fi corporativo. Subir para AOS 10.8.1.2, 10.7.2.7, 10.4.1.14, 8.13.3.1 ou 8.10.0.24 (versões fora de suporte ficam sem correção); até lá, isolar CLI e web de gestão em VLAN dedicada.",
+      "fontes": [
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/"
+        },
+        {
+          "nome": "pwn.watch",
+          "url": "https://pwn.watch/i/hpe-aruba-aos-critical-rce-oct-2026"
+        }
+      ],
+      "status": "Novo"
     },
     {
       "data": "2026-10-22",
@@ -158,15 +198,15 @@
       "exploracao": "Ativa (tentativas em massa)",
       "prioridade": "P0",
       "status": "Novo",
-      "tratamento": "Atualizar para 8.5.12, 8.4.27, 8.3.36 ou 8.2.35; já há varredura em massa. Sem patch: desligar session.upload_progress.enabled e aplicar regra de WAF. Inclui appliances com PHP embarcado (ex.: Okta Access Gateway).",
+      "tratamento": "Atualizar para 8.5.12, 8.4.27, 8.3.36 ou 8.2.35; já há varredura em massa. Sem patch: desligar session.upload_progress.enabled e aplicar regra de WAF. Em 23/out o PHP avisou de outra falha de sessão (CVE-2026-115560, sem correção ainda) com a mesma mitigação. Inclui appliances com PHP embarcado (Okta Access Gateway, PAN-OS).",
       "fontes": [
         {
           "nome": "CERT-EU",
           "url": "https://cert.europa.eu/publications/security-advisories/2026-018/pdf"
         },
         {
-          "nome": "Rescana",
-          "url": "https://www.rescana.com/post/php-rce-flaws-patch-october-2026-prepare-now"
+          "nome": "SecurityOnline (CVE-2026-115560)",
+          "url": "https://securityonline.info/php-session-vulnerability-cve-2026-115560/"
         },
         {
           "nome": "Infosecurity",
