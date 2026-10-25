@@ -458,6 +458,11 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/",
         "publicado": "2026-10-24T06:41:29Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+        "publicado": "2026-10-25T17:19:46Z"
       }
     ],
     "prioridade_max": "P1"
@@ -526,6 +531,11 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/",
         "publicado": "2026-10-24T06:41:29Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+        "publicado": "2026-10-25T17:19:46Z"
       }
     ],
     "prioridade_max": "P1"
