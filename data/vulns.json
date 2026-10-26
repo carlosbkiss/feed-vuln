@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-24T18:38:25Z",
+  "atualizado": "2026-10-26T10:40:08Z",
   "itens": [
     {
       "cve": "CVE-2026-114625",
@@ -69,841 +69,14 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0081,
-        "percentil": 0.5661,
-        "data": "2026-10-24"
+        "score": 0.0103,
+        "percentil": 0.6332,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-23T18:39:23Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-102764",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-102764",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764",
-          "publicado": "2026-10-15T21:17:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-102764",
-          "publicado": "2026-10-16",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Urges Patching Critical Vulnerability in BeyondTrust Remote Support",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-urges-patching-critical-vulnerability-beyondtrust-remote-support",
-          "publicado": "2026-10-16T12:00:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-16",
-        "prazo": "2026-10-19",
-        "ransomware": "Unknown"
-      },
-      "produto": "BeyondTrust Remote Support",
-      "titulo": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
-      "resumo": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "NVD",
-      "publicado_nvd": "2026-10-15T21:17:00Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "CVSS ≥ 9",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-15T21:17:00Z",
-      "primeira_noticia": "2026-10-16T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.0118,
-        "percentil": 0.6749,
-        "data": "2026-10-24"
-      },
-      "poc": {
-        "qtd": 3,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-102764.json",
-        "checado": "2026-10-24T18:38:25Z"
-      },
-      "ultima_atividade": "2026-10-16T12:00:00Z"
-    },
-    {
-      "cve": "CVE-2026-110447",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-110447",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-110447",
-          "publicado": "2026-10-14T03:17:20Z",
-          "visto_em": "2026-10-23T20:28:55Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Collabora Online – Built-in CODE Server OS Command Injection Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-110447",
-          "publicado": "2026-10-23",
-          "visto_em": "2026-10-23T20:28:55Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds One Known Exploited Vulnerability to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
-          "publicado": "2026-10-23T12:00:00Z",
-          "visto_em": "2026-10-23T20:28:55Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
-          "link": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
-          "publicado": "2026-10-24T06:25:57Z",
-          "visto_em": "2026-10-24T10:35:21Z"
-        }
-      ],
-      "detectado": "2026-10-23T20:28:55Z",
-      "kev": {
-        "adicionado": "2026-10-23",
-        "prazo": "2026-10-26",
-        "ransomware": "Unknown"
-      },
-      "produto": "Collabora Collabora Online – Built-in CODE Server",
-      "titulo": "Collabora Online – Built-in CODE Server OS Command Injection Vulnerability",
-      "resumo": "Collabora Collabora Online – Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn't running.",
-      "cvss": 9.2,
-      "cvss_versao": "4.0",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-14T03:17:20Z",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "CVSS ≥ 9",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-14T03:17:20Z",
-      "primeira_noticia": "2026-10-23T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-110447",
-      "ultima_atividade": "2026-10-24T06:25:57Z",
-      "exibido_em": "2026-10-23T20:28:55Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.0228,
-        "percentil": 0.8306,
-        "data": "2026-10-24"
-      },
-      "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110447.json",
-        "checado": "2026-10-23T20:28:55Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-76519",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-76519",
-          "publicado": "2026-10-14",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "cisco",
-          "nome": "Cisco PSIRT",
-          "titulo": "Cisco Secure Email Gateway Arbitrary File Write Vulnerability",
-          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Email%20Gateway%20Arbitrary%20File%20Write%20Vulnerability%26vs_k=1",
-          "publicado": "2026-10-14T16:00:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-76519",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519",
-          "publicado": "2026-10-14T17:19:10Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-14",
-        "prazo": "2026-10-17",
-        "ransomware": "Unknown"
-      },
-      "produto": "Cisco Secure Email Gateway",
-      "titulo": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
-      "resumo": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-14T17:19:10Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "CVSS ≥ 9",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-14T00:00:00Z",
-      "primeira_noticia": "2026-10-14T16:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.0157,
-        "percentil": 0.7526,
-        "data": "2026-10-24"
-      },
-      "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76519.json",
-        "checado": "2026-10-24T18:38:25Z"
-      },
-      "ultima_atividade": "2026-10-14T17:19:10Z"
-    },
-    {
-      "cve": "CVE-2026-0322",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-0322",
-          "publicado": "2026-10-14",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-0322",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322",
-          "publicado": "2026-10-14T18:17:07Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "paloalto",
-          "nome": "Palo Alto Security Advisories",
-          "titulo": "CVE-2026-0322 PAN-OS: Authenticated Remote Code Execution (RCE) in the Management Interface (Severity: HIGH)",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0322",
-          "publicado": "2026-10-15T18:30:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-14",
-        "prazo": "2026-10-17",
-        "ransomware": "Unknown"
-      },
-      "produto": "Palo Alto Networks PAN-OS",
-      "titulo": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
-      "resumo": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.",
-      "cvss": 8.6,
-      "cvss_versao": "4.0",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-14T18:17:07Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-14T00:00:00Z",
-      "primeira_noticia": "2026-10-15T18:30:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.0121,
-        "percentil": 0.6839,
-        "data": "2026-10-24"
-      },
-      "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-0322.json",
-        "checado": "2026-10-24T18:38:25Z"
-      },
-      "ultima_atividade": "2026-10-15T18:30:00Z"
-    },
-    {
-      "cve": "CVE-2026-104935",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-104935",
-          "publicado": "2026-10-13",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-104935",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935",
-          "publicado": "2026-10-13T16:17:11Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "darkreading",
-          "nome": "Dark Reading",
-          "titulo": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
-          "link": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
-          "publicado": "2026-10-14T21:20:13Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-13",
-        "prazo": "2026-10-16",
-        "ransomware": "Unknown"
-      },
-      "produto": "Ivanti Connect Secure",
-      "titulo": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
-      "resumo": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
-      "cvss": 8.6,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-13T16:17:11Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-13T00:00:00Z",
-      "primeira_noticia": "2026-10-14T21:20:13Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.2598,
-        "percentil": 0.9799,
-        "data": "2026-10-24"
-      },
-      "poc": {
-        "qtd": 5,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-104935.json",
-        "checado": "2026-10-24T18:38:25Z"
-      },
-      "ultima_atividade": "2026-10-14T21:20:13Z"
-    },
-    {
-      "cve": "CVE-2026-21589",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-21589",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589",
-          "publicado": "2026-10-05T22:16:58Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-21589",
-          "publicado": "2026-10-15",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-15",
-        "prazo": "2026-10-18",
-        "ransomware": "Unknown"
-      },
-      "produto": "Atlassian Multiple Products",
-      "titulo": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
-      "resumo": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external…",
-      "cvss": 9.3,
-      "cvss_versao": "4.0",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-05T22:16:58Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "CVSS ≥ 9",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-05T22:16:58Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.1271,
-        "percentil": 0.9627,
-        "data": "2026-10-24"
-      },
-      "poc": {
-        "qtd": 13,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-21589.json",
-        "checado": "2026-10-24T18:38:25Z"
-      },
-      "ultima_atividade": "2026-10-15T00:00:00Z"
-    },
-    {
-      "cve": "CVE-2026-105134",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-105134",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134",
-          "publicado": "2026-10-04T07:16:33Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Ahsay AhsayCBS Command Injection Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-105134",
-          "publicado": "2026-10-14",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-14",
-        "prazo": "2026-10-17",
-        "ransomware": "Unknown"
-      },
-      "produto": "Ahsay AhsayCBS",
-      "titulo": "Ahsay AhsayCBS Command Injection Vulnerability",
-      "resumo": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This…",
-      "cvss": 10.0,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-04T07:16:33Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "CVSS ≥ 9",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-04T07:16:33Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.3831,
-        "percentil": 0.9857,
-        "data": "2026-10-24"
-      },
-      "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-105134.json",
-        "checado": "2026-10-24T18:38:25Z"
-      },
-      "ultima_atividade": "2026-10-14T00:00:00Z"
-    },
-    {
-      "cve": "CVE-2025-61624",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2025-61624",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624",
-          "publicado": "2026-04-14T16:16:31Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Fortinet Multiple Products Path Traversal Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-61624",
-          "publicado": "2026-10-16",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-16",
-        "prazo": "2026-10-19",
-        "ransomware": "Unknown"
-      },
-      "produto": "Fortinet Multiple Products",
-      "titulo": "Fortinet Multiple Products Path Traversal Vulnerability",
-      "resumo": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands.",
-      "cvss": 6.5,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "NVD",
-      "publicado_nvd": "2026-04-14T16:16:31Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-04-14T16:16:31Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.0108,
-        "percentil": 0.649,
-        "data": "2026-10-24"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-10-24T18:38:25Z"
-      },
-      "ultima_atividade": "2026-10-16T00:00:00Z"
-    },
-    {
-      "cve": "CVE-2026-115547",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-115547",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-115547",
-          "publicado": "2026-10-23T04:18:16Z",
-          "visto_em": "2026-10-24T18:38:25Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Critical Okta Access Gateway Flaw Lets Attackers With Admin Access Execute System Commands",
-          "link": "https://cybersecuritynews.com/okta-access-gateway-flaw/",
-          "publicado": "2026-10-23T15:19:23Z",
-          "visto_em": "2026-10-23T15:45:37Z"
-        }
-      ],
-      "detectado": "2026-10-23T15:45:37Z",
-      "aguardando_nota_desde": "2026-10-23T15:19:23Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-23T04:18:16Z",
-      "primeira_noticia": "2026-10-23T15:19:23Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-115547",
-      "ultima_atividade": "2026-10-23T15:19:23Z",
-      "cvss": 9.1,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-23T04:18:16Z",
-      "resumo": "An input validation issue in the Okta Access Gateway (OAG) Admin Console allows the processing of specially formatted configuration values. An authenticated administrator can leverage this to execute system commands within the context of the OAG service…",
-      "nvd_checado_em": "2026-10-24T18:38:25Z",
-      "nota_chegou_em": "2026-10-24T18:38:25Z",
-      "exibido_em": "2026-10-24T18:38:25Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "epss": {
-        "score": 0.0044,
-        "percentil": 0.3768,
-        "data": "2026-10-24"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-10-24T18:38:25Z"
-      }
-    },
-    {
-      "cve": "CVE-2022-51026",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2022-51026",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-51026",
-          "publicado": "2026-10-22T19:17:30Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-22T19:17:30Z",
-      "resumo": "Bytebase 0.12.0 before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to log in as any user. The flaw stems from trusting client-supplied GitLab provider configuration in the POST /api/auth/login/GITLAB_SELF_HOST…",
-      "nvd_checado_em": "2026-10-24T18:38:25Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-22T19:17:30Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2022-51026",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-10-24T18:38:25Z"
-      },
-      "ultima_atividade": "2026-10-22T19:17:30Z",
-      "epss": {
-        "score": 0.0061,
-        "percentil": 0.4876,
-        "data": "2026-10-24"
-      }
-    },
-    {
-      "cve": "CVE-2026-76531",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-76531",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76531",
-          "publicado": "2026-10-21T23:17:30Z",
-          "visto_em": "2026-10-23T12:27:14Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
-          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
-          "publicado": "2026-10-23T03:41:41Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-21T23:17:30Z",
-      "primeira_noticia": "2026-10-23T03:41:41Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76531",
-      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
-      "ultima_atividade": "2026-10-23T03:41:41Z",
-      "cvss": 9.9,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-21T23:17:30Z",
-      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
-      "nvd_checado_em": "2026-10-23T12:27:14Z",
-      "nota_chegou_em": "2026-10-23T12:27:14Z",
-      "exibido_em": "2026-10-23T12:27:14Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "epss": {
-        "score": 0.0038,
-        "percentil": 0.3061,
-        "data": "2026-10-24"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-10-24T18:38:25Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-76302",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-76302",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76302",
-          "publicado": "2026-10-21T23:17:28Z",
-          "visto_em": "2026-10-23T12:27:14Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
-          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
-          "publicado": "2026-10-23T03:41:41Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-21T23:17:28Z",
-      "primeira_noticia": "2026-10-23T03:41:41Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76302",
-      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
-      "ultima_atividade": "2026-10-23T03:41:41Z",
-      "cvss": 9.9,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-21T23:17:28Z",
-      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
-      "nvd_checado_em": "2026-10-23T12:27:14Z",
-      "nota_chegou_em": "2026-10-23T12:27:14Z",
-      "exibido_em": "2026-10-23T12:27:14Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "epss": {
-        "score": 0.0038,
-        "percentil": 0.306,
-        "data": "2026-10-24"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-10-24T18:38:25Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-76299",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-76299",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76299",
-          "publicado": "2026-10-21T23:17:27Z",
-          "visto_em": "2026-10-23T12:27:14Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
-          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
-          "publicado": "2026-10-23T03:41:41Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-21T23:17:27Z",
-      "primeira_noticia": "2026-10-23T03:41:41Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76299",
-      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
-      "ultima_atividade": "2026-10-23T03:41:41Z",
-      "cvss": 9.9,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-21T23:17:27Z",
-      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
-      "nvd_checado_em": "2026-10-23T12:27:14Z",
-      "nota_chegou_em": "2026-10-23T12:27:14Z",
-      "exibido_em": "2026-10-23T12:27:14Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "epss": {
-        "score": 0.0025,
-        "percentil": 0.159,
-        "data": "2026-10-24"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-10-24T18:38:25Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-76466",
-      "fontes": [
-        {
-          "id": "cisco",
-          "nome": "Cisco PSIRT",
-          "titulo": "Cisco Expressway Series Remote Code Execution Vulnerability",
-          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Expressway%20Series%20Remote%20Code%20Execution%20Vulnerability%26vs_k=1",
-          "publicado": "2026-10-21T16:00:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-76466",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
-          "publicado": "2026-10-21T17:19:06Z",
-          "visto_em": "2026-10-23T12:22:11Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Critical Cisco Expressway Vulnerability Enables Remote Code Execution Attacks",
-          "link": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/",
-          "publicado": "2026-10-23T04:47:50Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-21T16:00:00Z",
-      "primeira_noticia": "2026-10-21T16:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-21T17:19:06Z",
-      "resumo": "A vulnerability in the database service feature of Cisco Expressway Series could allow an unauthenticated, remote attacker with network access to a Cisco Expressway device to execute arbitrary operating system commands as&nbsp;root.\r\n\r\nThis vulnerability is…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
-      "ultima_atividade": "2026-10-23T04:47:50Z",
-      "exibido_em": "2026-10-23T12:22:11Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "epss": {
-        "score": 0.0038,
-        "percentil": 0.3097,
-        "data": "2026-10-24"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       }
     },
     {
@@ -980,6 +153,30 @@
           "link": "https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/",
           "publicado": "2026-10-24T06:41:29Z",
           "visto_em": "2026-10-24T10:35:21Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
+          "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+          "publicado": "2026-10-25T17:19:46Z",
+          "visto_em": "2026-10-26T10:40:08Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Hacker Exploits Critical PHP2Shell Flaws to Win $2,000 Bitcoin Challenge, Releases PoC",
+          "link": "https://cybersecuritynews.com/php2shell-flaws-exploited/",
+          "publicado": "2026-10-26T03:41:52Z",
+          "visto_em": "2026-10-26T10:40:08Z"
+        },
+        {
+          "id": "bleeping",
+          "nome": "BleepingComputer",
+          "titulo": "PHP2Shell security flaws now sucessfully exploited in the wild",
+          "link": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
+          "publicado": "2026-10-26T09:19:57Z",
+          "visto_em": "2026-10-26T10:40:08Z"
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
@@ -990,26 +187,30 @@
       "resumo": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The…",
       "nvd_checado_em": "2026-10-24T10:35:21Z",
       "elegivel_por": [
+        "zero-day",
         "CVSS ≥ 9"
       ],
       "primeira_vez": "2026-10-21T07:00:00Z",
       "primeira_noticia": "2026-10-21T07:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
       "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.1184,
-        "percentil": 0.961,
-        "data": "2026-10-24"
+        "score": 0.9998,
+        "percentil": 0.9998,
+        "data": "2026-10-25"
       },
       "poc": {
-        "qtd": 608,
+        "qtd": 669,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109618.json",
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
-      "ultima_atividade": "2026-10-24T06:41:29Z"
+      "ultima_atividade": "2026-10-26T09:19:57Z",
+      "zero_day": true,
+      "zero_day_motivo": "BleepingComputer: exploração ativa relatada",
+      "escalado": true
     },
     {
       "cve": "CVE-2026-109619",
@@ -1085,10 +286,35 @@
           "link": "https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/",
           "publicado": "2026-10-24T06:41:29Z",
           "visto_em": "2026-10-24T10:35:21Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
+          "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+          "publicado": "2026-10-25T17:19:46Z",
+          "visto_em": "2026-10-26T10:40:08Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Hacker Exploits Critical PHP2Shell Flaws to Win $2,000 Bitcoin Challenge, Releases PoC",
+          "link": "https://cybersecuritynews.com/php2shell-flaws-exploited/",
+          "publicado": "2026-10-26T03:41:52Z",
+          "visto_em": "2026-10-26T10:40:08Z"
+        },
+        {
+          "id": "bleeping",
+          "nome": "BleepingComputer",
+          "titulo": "PHP2Shell security flaws now sucessfully exploited in the wild",
+          "link": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
+          "publicado": "2026-10-26T09:19:57Z",
+          "visto_em": "2026-10-26T10:40:08Z"
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
       "elegivel_por": [
+        "zero-day",
         "CVSS ≥ 9"
       ],
       "primeira_vez": "2026-10-21T07:00:00Z",
@@ -1100,20 +326,850 @@
       "publicado_nvd": "2026-10-21T14:17:09Z",
       "resumo": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed.…",
       "nvd_checado_em": "2026-10-23T12:22:11Z",
-      "ultima_atividade": "2026-10-24T06:41:29Z",
+      "ultima_atividade": "2026-10-26T09:19:57Z",
+      "exibido_em": "2026-10-23T12:22:11Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 1.0,
+        "percentil": 0.9999,
+        "data": "2026-10-25"
+      },
+      "poc": {
+        "qtd": 23,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109619.json",
+        "checado": "2026-10-26T10:40:08Z"
+      },
+      "zero_day": true,
+      "zero_day_motivo": "BleepingComputer: exploração ativa relatada",
+      "escalado": true
+    },
+    {
+      "cve": "CVE-2026-102764",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-102764",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764",
+          "publicado": "2026-10-15T21:17:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-102764",
+          "publicado": "2026-10-16",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Urges Patching Critical Vulnerability in BeyondTrust Remote Support",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-urges-patching-critical-vulnerability-beyondtrust-remote-support",
+          "publicado": "2026-10-16T12:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-16",
+        "prazo": "2026-10-19",
+        "ransomware": "Unknown"
+      },
+      "produto": "BeyondTrust Remote Support",
+      "titulo": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+      "resumo": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "NVD",
+      "publicado_nvd": "2026-10-15T21:17:00Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-15T21:17:00Z",
+      "primeira_noticia": "2026-10-16T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.2034,
+        "percentil": 0.9746,
+        "data": "2026-10-25"
+      },
+      "poc": {
+        "qtd": 3,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-102764.json",
+        "checado": "2026-10-26T10:40:08Z"
+      },
+      "ultima_atividade": "2026-10-16T12:00:00Z"
+    },
+    {
+      "cve": "CVE-2026-110447",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-110447",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-110447",
+          "publicado": "2026-10-14T03:17:20Z",
+          "visto_em": "2026-10-23T20:28:55Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Collabora Online – Built-in CODE Server OS Command Injection Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-110447",
+          "publicado": "2026-10-23",
+          "visto_em": "2026-10-23T20:28:55Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds One Known Exploited Vulnerability to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
+          "publicado": "2026-10-23T12:00:00Z",
+          "visto_em": "2026-10-23T20:28:55Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
+          "link": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
+          "publicado": "2026-10-24T06:25:57Z",
+          "visto_em": "2026-10-24T10:35:21Z"
+        }
+      ],
+      "detectado": "2026-10-23T20:28:55Z",
+      "kev": {
+        "adicionado": "2026-10-23",
+        "prazo": "2026-10-26",
+        "ransomware": "Unknown"
+      },
+      "produto": "Collabora Collabora Online – Built-in CODE Server",
+      "titulo": "Collabora Online – Built-in CODE Server OS Command Injection Vulnerability",
+      "resumo": "Collabora Collabora Online – Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn't running.",
+      "cvss": 9.2,
+      "cvss_versao": "4.0",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-14T03:17:20Z",
+      "nvd_checado_em": "2026-10-23T20:28:55Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-14T03:17:20Z",
+      "primeira_noticia": "2026-10-23T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-110447",
+      "ultima_atividade": "2026-10-24T06:25:57Z",
+      "exibido_em": "2026-10-23T20:28:55Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.1233,
+        "percentil": 0.9616,
+        "data": "2026-10-25"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110447.json",
+        "checado": "2026-10-26T10:40:08Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-76519",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-76519",
+          "publicado": "2026-10-14",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "cisco",
+          "nome": "Cisco PSIRT",
+          "titulo": "Cisco Secure Email Gateway Arbitrary File Write Vulnerability",
+          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Email%20Gateway%20Arbitrary%20File%20Write%20Vulnerability%26vs_k=1",
+          "publicado": "2026-10-14T16:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-76519",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519",
+          "publicado": "2026-10-14T17:19:10Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-14",
+        "prazo": "2026-10-17",
+        "ransomware": "Unknown"
+      },
+      "produto": "Cisco Secure Email Gateway",
+      "titulo": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+      "resumo": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-14T17:19:10Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-14T00:00:00Z",
+      "primeira_noticia": "2026-10-14T16:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0215,
+        "percentil": 0.8202,
+        "data": "2026-10-25"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76519.json",
+        "checado": "2026-10-26T10:40:08Z"
+      },
+      "ultima_atividade": "2026-10-14T17:19:10Z"
+    },
+    {
+      "cve": "CVE-2026-0322",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-0322",
+          "publicado": "2026-10-14",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-0322",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322",
+          "publicado": "2026-10-14T18:17:07Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "paloalto",
+          "nome": "Palo Alto Security Advisories",
+          "titulo": "CVE-2026-0322 PAN-OS: Authenticated Remote Code Execution (RCE) in the Management Interface (Severity: HIGH)",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-0322",
+          "publicado": "2026-10-15T18:30:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-14",
+        "prazo": "2026-10-17",
+        "ransomware": "Unknown"
+      },
+      "produto": "Palo Alto Networks PAN-OS",
+      "titulo": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
+      "resumo": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.",
+      "cvss": 8.6,
+      "cvss_versao": "4.0",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-14T18:17:07Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-14T00:00:00Z",
+      "primeira_noticia": "2026-10-15T18:30:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0174,
+        "percentil": 0.7756,
+        "data": "2026-10-25"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-0322.json",
+        "checado": "2026-10-26T10:40:08Z"
+      },
+      "ultima_atividade": "2026-10-15T18:30:00Z"
+    },
+    {
+      "cve": "CVE-2026-104935",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-104935",
+          "publicado": "2026-10-13",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-104935",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935",
+          "publicado": "2026-10-13T16:17:11Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "darkreading",
+          "nome": "Dark Reading",
+          "titulo": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
+          "link": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
+          "publicado": "2026-10-14T21:20:13Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-13",
+        "prazo": "2026-10-16",
+        "ransomware": "Unknown"
+      },
+      "produto": "Ivanti Connect Secure",
+      "titulo": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+      "resumo": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
+      "cvss": 8.6,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-13T16:17:11Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-13T00:00:00Z",
+      "primeira_noticia": "2026-10-14T21:20:13Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.8677,
+        "percentil": 0.9974,
+        "data": "2026-10-25"
+      },
+      "poc": {
+        "qtd": 5,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-104935.json",
+        "checado": "2026-10-26T10:40:08Z"
+      },
+      "ultima_atividade": "2026-10-14T21:20:13Z"
+    },
+    {
+      "cve": "CVE-2026-21589",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-21589",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589",
+          "publicado": "2026-10-05T22:16:58Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-21589",
+          "publicado": "2026-10-15",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-15",
+        "prazo": "2026-10-18",
+        "ransomware": "Unknown"
+      },
+      "produto": "Atlassian Multiple Products",
+      "titulo": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+      "resumo": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external…",
+      "cvss": 9.3,
+      "cvss_versao": "4.0",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-05T22:16:58Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-05T22:16:58Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.9948,
+        "percentil": 0.9994,
+        "data": "2026-10-25"
+      },
+      "poc": {
+        "qtd": 13,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-21589.json",
+        "checado": "2026-10-26T10:40:08Z"
+      },
+      "ultima_atividade": "2026-10-15T00:00:00Z"
+    },
+    {
+      "cve": "CVE-2026-105134",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-105134",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134",
+          "publicado": "2026-10-04T07:16:33Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Ahsay AhsayCBS Command Injection Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-105134",
+          "publicado": "2026-10-14",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-14",
+        "prazo": "2026-10-17",
+        "ransomware": "Unknown"
+      },
+      "produto": "Ahsay AhsayCBS",
+      "titulo": "Ahsay AhsayCBS Command Injection Vulnerability",
+      "resumo": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This…",
+      "cvss": 10.0,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-04T07:16:33Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-04T07:16:33Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.8627,
+        "percentil": 0.9973,
+        "data": "2026-10-25"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-105134.json",
+        "checado": "2026-10-26T10:40:08Z"
+      },
+      "ultima_atividade": "2026-10-14T00:00:00Z"
+    },
+    {
+      "cve": "CVE-2025-61624",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2025-61624",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624",
+          "publicado": "2026-04-14T16:16:31Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Fortinet Multiple Products Path Traversal Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-61624",
+          "publicado": "2026-10-16",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "kev": {
+        "adicionado": "2026-10-16",
+        "prazo": "2026-10-19",
+        "ransomware": "Unknown"
+      },
+      "produto": "Fortinet Multiple Products",
+      "titulo": "Fortinet Multiple Products Path Traversal Vulnerability",
+      "resumo": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands.",
+      "cvss": 6.5,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "NVD",
+      "publicado_nvd": "2026-04-14T16:16:31Z",
+      "nvd_checado_em": "2026-10-23T12:14:22Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-04-14T16:16:31Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0134,
+        "percentil": 0.7116,
+        "data": "2026-10-25"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-26T10:40:08Z"
+      },
+      "ultima_atividade": "2026-10-16T00:00:00Z"
+    },
+    {
+      "cve": "CVE-2026-115547",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-115547",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-115547",
+          "publicado": "2026-10-23T04:18:16Z",
+          "visto_em": "2026-10-24T18:38:25Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical Okta Access Gateway Flaw Lets Attackers With Admin Access Execute System Commands",
+          "link": "https://cybersecuritynews.com/okta-access-gateway-flaw/",
+          "publicado": "2026-10-23T15:19:23Z",
+          "visto_em": "2026-10-23T15:45:37Z"
+        }
+      ],
+      "detectado": "2026-10-23T15:45:37Z",
+      "aguardando_nota_desde": "2026-10-23T15:19:23Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-23T04:18:16Z",
+      "primeira_noticia": "2026-10-23T15:19:23Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-115547",
+      "ultima_atividade": "2026-10-23T15:19:23Z",
+      "cvss": 9.1,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-23T04:18:16Z",
+      "resumo": "An input validation issue in the Okta Access Gateway (OAG) Admin Console allows the processing of specially formatted configuration values. An authenticated administrator can leverage this to execute system commands within the context of the OAG service…",
+      "nvd_checado_em": "2026-10-24T18:38:25Z",
+      "nota_chegou_em": "2026-10-24T18:38:25Z",
+      "exibido_em": "2026-10-24T18:38:25Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "epss": {
+        "score": 0.005,
+        "percentil": 0.4221,
+        "data": "2026-10-25"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-26T10:40:08Z"
+      }
+    },
+    {
+      "cve": "CVE-2022-51026",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2022-51026",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-51026",
+          "publicado": "2026-10-22T19:17:30Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-22T19:17:30Z",
+      "resumo": "Bytebase 0.12.0 before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to log in as any user. The flaw stems from trusting client-supplied GitLab provider configuration in the POST /api/auth/login/GITLAB_SELF_HOST…",
+      "nvd_checado_em": "2026-10-24T18:38:25Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-22T19:17:30Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2022-51026",
+      "exibido_em": "2026-10-23T12:14:22Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-26T10:40:08Z"
+      },
+      "ultima_atividade": "2026-10-22T19:17:30Z",
+      "epss": {
+        "score": 0.0061,
+        "percentil": 0.4905,
+        "data": "2026-10-25"
+      }
+    },
+    {
+      "cve": "CVE-2026-76531",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-76531",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76531",
+          "publicado": "2026-10-21T23:17:30Z",
+          "visto_em": "2026-10-23T12:27:14Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
+          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
+          "publicado": "2026-10-23T03:41:41Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-21T23:17:30Z",
+      "primeira_noticia": "2026-10-23T03:41:41Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76531",
+      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
+      "ultima_atividade": "2026-10-23T03:41:41Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-21T23:17:30Z",
+      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
+      "nota_chegou_em": "2026-10-23T12:27:14Z",
+      "exibido_em": "2026-10-23T12:27:14Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "epss": {
+        "score": 0.0041,
+        "percentil": 0.3474,
+        "data": "2026-10-25"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-26T10:40:08Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-76302",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-76302",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76302",
+          "publicado": "2026-10-21T23:17:28Z",
+          "visto_em": "2026-10-23T12:27:14Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
+          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
+          "publicado": "2026-10-23T03:41:41Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-21T23:17:28Z",
+      "primeira_noticia": "2026-10-23T03:41:41Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76302",
+      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
+      "ultima_atividade": "2026-10-23T03:41:41Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-21T23:17:28Z",
+      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
+      "nota_chegou_em": "2026-10-23T12:27:14Z",
+      "exibido_em": "2026-10-23T12:27:14Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "epss": {
+        "score": 0.004,
+        "percentil": 0.3393,
+        "data": "2026-10-25"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-26T10:40:08Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-76299",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-76299",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76299",
+          "publicado": "2026-10-21T23:17:27Z",
+          "visto_em": "2026-10-23T12:27:14Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
+          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
+          "publicado": "2026-10-23T03:41:41Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-21T23:17:27Z",
+      "primeira_noticia": "2026-10-23T03:41:41Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76299",
+      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
+      "ultima_atividade": "2026-10-23T03:41:41Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-21T23:17:27Z",
+      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
+      "nvd_checado_em": "2026-10-23T12:27:14Z",
+      "nota_chegou_em": "2026-10-23T12:27:14Z",
+      "exibido_em": "2026-10-23T12:27:14Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "epss": {
+        "score": 0.0033,
+        "percentil": 0.258,
+        "data": "2026-10-25"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-26T10:40:08Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-76466",
+      "fontes": [
+        {
+          "id": "cisco",
+          "nome": "Cisco PSIRT",
+          "titulo": "Cisco Expressway Series Remote Code Execution Vulnerability",
+          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Expressway%20Series%20Remote%20Code%20Execution%20Vulnerability%26vs_k=1",
+          "publicado": "2026-10-21T16:00:00Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-76466",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
+          "publicado": "2026-10-21T17:19:06Z",
+          "visto_em": "2026-10-23T12:22:11Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical Cisco Expressway Vulnerability Enables Remote Code Execution Attacks",
+          "link": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/",
+          "publicado": "2026-10-23T04:47:50Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-21T16:00:00Z",
+      "primeira_noticia": "2026-10-21T16:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-21T17:19:06Z",
+      "resumo": "A vulnerability in the database service feature of Cisco Expressway Series could allow an unauthenticated, remote attacker with network access to a Cisco Expressway device to execute arbitrary operating system commands as&nbsp;root.\r\n\r\nThis vulnerability is…",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "ultima_atividade": "2026-10-23T04:47:50Z",
       "exibido_em": "2026-10-23T12:22:11Z",
       "prioridade": "P1",
       "regra": "CVSS ≥ 9 em borda/acesso",
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
-        "score": 0.0622,
-        "percentil": 0.9352,
-        "data": "2026-10-24"
+        "score": 0.0042,
+        "percentil": 0.3566,
+        "data": "2026-10-25"
       },
       "poc": {
-        "qtd": 22,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109619.json",
-        "checado": "2026-10-24T18:38:25Z"
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-26T10:40:08Z"
       }
     },
     {
@@ -1146,14 +1202,14 @@
       "regra": "CVSS ≥ 9 em borda/acesso",
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
-        "score": 0.0043,
-        "percentil": 0.3597,
-        "data": "2026-10-24"
+        "score": 0.0044,
+        "percentil": 0.3788,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-20T22:20:11Z"
     },
@@ -1196,14 +1252,14 @@
       "regra": "CVSS ≥ 9 em borda/acesso",
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
-        "score": 0.0046,
-        "percentil": 0.3884,
-        "data": "2026-10-24"
+        "score": 0.01,
+        "percentil": 0.6249,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-106173.json",
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       }
     },
     {
@@ -1262,14 +1318,14 @@
       "regra": "explorado em plataforma corporativa",
       "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
       "epss": {
-        "score": 0.0151,
-        "percentil": 0.7431,
-        "data": "2026-10-24"
+        "score": 0.0981,
+        "percentil": 0.9552,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-13T19:22:07Z"
     },
@@ -1291,7 +1347,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-24T05:17:04Z",
       "resumo": "The Prime Mover – Backup and Migration plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.2.1 via deserialization of untrusted input in the migration search-and-replace routine (recursiveUnserializeReplace()).…",
-      "nvd_checado_em": "2026-10-24T18:38:25Z",
+      "nvd_checado_em": "2026-10-26T10:40:08Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1306,12 +1362,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T10:35:21Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "epss": {
-        "score": 0.0082,
-        "percentil": 0.5685,
-        "data": "2026-10-24"
+        "score": 0.0055,
+        "percentil": 0.4569,
+        "data": "2026-10-25"
       }
     },
     {
@@ -1354,13 +1410,13 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-22T22:19:18Z",
       "epss": {
-        "score": 0.0067,
-        "percentil": 0.5138,
-        "data": "2026-10-24"
+        "score": 0.0071,
+        "percentil": 0.5312,
+        "data": "2026-10-25"
       }
     },
     {
@@ -1395,13 +1451,13 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-22T11:17:04Z",
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3729,
-        "data": "2026-10-24"
+        "percentil": 0.38,
+        "data": "2026-10-25"
       }
     },
     {
@@ -1435,13 +1491,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0043,
-        "percentil": 0.3606,
-        "data": "2026-10-24"
+        "percentil": 0.368,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-21T01:17:38Z"
     },
@@ -1476,13 +1532,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0033,
-        "percentil": 0.2476,
-        "data": "2026-10-24"
+        "percentil": 0.2572,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-20T22:20:38Z"
     },
@@ -1517,13 +1573,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0044,
-        "percentil": 0.373,
-        "data": "2026-10-24"
+        "percentil": 0.3801,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-20T22:20:36Z"
     },
@@ -1558,13 +1614,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0045,
-        "percentil": 0.3789,
-        "data": "2026-10-24"
+        "percentil": 0.3857,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-20T22:20:26Z"
     },
@@ -1599,13 +1655,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0037,
-        "percentil": 0.2924,
-        "data": "2026-10-24"
+        "percentil": 0.3009,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-20T22:20:25Z"
     },
@@ -1640,13 +1696,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0045,
-        "percentil": 0.3788,
-        "data": "2026-10-24"
+        "percentil": 0.3857,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-20T22:20:25Z"
     },
@@ -1681,13 +1737,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0044,
-        "percentil": 0.373,
-        "data": "2026-10-24"
+        "percentil": 0.3801,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -1722,13 +1778,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0034,
-        "percentil": 0.2615,
-        "data": "2026-10-24"
+        "percentil": 0.2707,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -1763,13 +1819,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0052,
-        "percentil": 0.435,
-        "data": "2026-10-24"
+        "percentil": 0.4401,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -1804,13 +1860,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0045,
-        "percentil": 0.3789,
-        "data": "2026-10-24"
+        "percentil": 0.3857,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -1845,13 +1901,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0052,
-        "percentil": 0.435,
-        "data": "2026-10-24"
+        "percentil": 0.4401,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -1886,13 +1942,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0037,
-        "percentil": 0.2924,
-        "data": "2026-10-24"
+        "percentil": 0.3009,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -1927,13 +1983,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0052,
-        "percentil": 0.435,
-        "data": "2026-10-24"
+        "percentil": 0.4401,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -1968,13 +2024,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0045,
-        "percentil": 0.3789,
-        "data": "2026-10-24"
+        "percentil": 0.3861,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2009,13 +2065,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0033,
-        "percentil": 0.2476,
-        "data": "2026-10-24"
+        "percentil": 0.2572,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2049,14 +2105,14 @@
       "regra": "CVSS ≥ 9 em plataforma corporativa",
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
-        "score": 0.0037,
-        "percentil": 0.2928,
-        "data": "2026-10-24"
+        "score": 0.0038,
+        "percentil": 0.3126,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-20T22:20:12Z"
     },
@@ -2091,13 +2147,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0048,
-        "percentil": 0.4046,
-        "data": "2026-10-24"
+        "percentil": 0.4107,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-24T18:38:25Z"
+        "checado": "2026-10-26T10:40:08Z"
       },
       "ultima_atividade": "2026-10-20T22:18:02Z"
     },
@@ -2132,8 +2188,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0048,
-        "percentil": 0.4046,
-        "data": "2026-10-24"
+        "percentil": 0.4107,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
@@ -2214,9 +2270,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.0024,
-        "percentil": 0.1406,
-        "data": "2026-10-24"
+        "score": 0.0097,
+        "percentil": 0.6149,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 1,
@@ -2281,9 +2337,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.0117,
-        "percentil": 0.6721,
-        "data": "2026-10-24"
+        "score": 0.0253,
+        "percentil": 0.8478,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
@@ -2340,9 +2396,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.0579,
-        "percentil": 0.9311,
-        "data": "2026-10-24"
+        "score": 0.7924,
+        "percentil": 0.996,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 1,
@@ -2415,9 +2471,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.0046,
-        "percentil": 0.3859,
-        "data": "2026-10-24"
+        "score": 0.0182,
+        "percentil": 0.7861,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 5,
@@ -2482,9 +2538,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.0046,
-        "percentil": 0.3936,
-        "data": "2026-10-24"
+        "score": 0.0195,
+        "percentil": 0.8008,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
@@ -2549,9 +2605,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.0046,
-        "percentil": 0.3859,
-        "data": "2026-10-24"
+        "score": 0.0164,
+        "percentil": 0.7616,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 0,
@@ -2616,9 +2672,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.0082,
-        "percentil": 0.5671,
-        "data": "2026-10-24"
+        "score": 0.0179,
+        "percentil": 0.7815,
+        "data": "2026-10-25"
       },
       "poc": {
         "qtd": 1,

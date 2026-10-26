@@ -399,11 +399,12 @@
     "produto": "",
     "titulo": "",
     "cvss": 9.8,
-    "prioridade": "P1",
+    "prioridade": "P0",
     "elegivel_por": [
+      "zero-day",
       "CVSS ≥ 9"
     ],
-    "zero_day": false,
+    "zero_day": true,
     "kev": null,
     "primeira_vez": "2026-10-21T07:00:00Z",
     "primeira_noticia": "2026-10-21T07:00:00Z",
@@ -412,7 +413,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.9998,
-    "poc_qtd": 652,
+    "poc_qtd": 669,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -463,20 +464,31 @@
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
         "publicado": "2026-10-25T17:19:46Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/php2shell-flaws-exploited/",
+        "publicado": "2026-10-26T03:41:52Z"
+      },
+      {
+        "nome": "BleepingComputer",
+        "link": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
+        "publicado": "2026-10-26T09:19:57Z"
       }
     ],
-    "prioridade_max": "P1"
+    "prioridade_max": "P0"
   },
   "CVE-2026-109619": {
     "cve": "CVE-2026-109619",
     "produto": "",
     "titulo": "",
     "cvss": 9.2,
-    "prioridade": "P1",
+    "prioridade": "P0",
     "elegivel_por": [
+      "zero-day",
       "CVSS ≥ 9"
     ],
-    "zero_day": false,
+    "zero_day": true,
     "kev": null,
     "primeira_vez": "2026-10-21T07:00:00Z",
     "primeira_noticia": "2026-10-21T07:00:00Z",
@@ -536,9 +548,19 @@
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
         "publicado": "2026-10-25T17:19:46Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/php2shell-flaws-exploited/",
+        "publicado": "2026-10-26T03:41:52Z"
+      },
+      {
+        "nome": "BleepingComputer",
+        "link": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
+        "publicado": "2026-10-26T09:19:57Z"
       }
     ],
-    "prioridade_max": "P1"
+    "prioridade_max": "P0"
   },
   "CVE-2026-110447": {
     "cve": "CVE-2026-110447",
