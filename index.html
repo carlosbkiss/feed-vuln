@@ -105,6 +105,46 @@ h3.sub{font:700 17px "Space Grotesk",sans-serif;margin:26px 0 10px}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .chip[aria-pressed="true"]{background:var(--orange);border-color:var(--orange);color:#1b0d02}}
 .sep{width:10px}
 
+/* barra de filtros */
+.fbar{align-items:stretch;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:12px;display:flex;flex-direction:column;gap:8px;box-shadow:var(--shadow)}
+.frow{display:flex;gap:6px 14px;flex-wrap:wrap;align-items:center}
+.fg{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+.fl{font:600 10.5px "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:2px}
+.fbar .chip{padding:4px 11px;font-size:12px}
+.chip .ct{font:600 10.5px "JetBrains Mono",monospace;opacity:.7;margin-left:4px}
+.fsearch{flex:1 1 220px;min-width:0;max-width:360px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:6px 10px;font:400 13.5px "IBM Plex Sans",sans-serif}
+.fsearch:focus,.fsel:focus{outline:2px solid var(--orange);outline-offset:0}
+.fsel{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:5px 8px;font:500 12.5px "IBM Plex Sans",sans-serif}
+.fcount{margin-left:auto;font-size:12.5px;color:var(--muted);white-space:nowrap}
+.fcount b{color:var(--ink)}
+.fclear{border:0;background:none;color:var(--blue);font:600 12.5px "IBM Plex Sans",sans-serif;cursor:pointer;padding:0 0 0 8px}
+.fclear[hidden]{display:none}
+
+/* tabelas que cabem na tela (radar e triagem) */
+table.fit{table-layout:fixed}
+table.fit td,table.fit th{overflow-wrap:break-word}
+table.fit th{white-space:normal}
+table.fit td.c{white-space:normal}
+.clamp{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+tr.open .clamp{display:block;-webkit-line-clamp:unset}
+.more-b{border:0;background:none;color:var(--blue);font:600 12px "IBM Plex Sans",sans-serif;cursor:pointer;padding:2px 0 0;display:none}
+tr.can-open .more-b{display:inline-block}
+tr.can-open{cursor:pointer}
+tr.can-open:hover td{background:var(--bg)}
+tr.can-open a,tr.can-open button{cursor:pointer}
+@media (max-width:860px){
+  table.fit,table.fit tbody{display:block}
+  table.fit thead{display:none}
+  table.fit tr{display:grid;grid-template-columns:auto 1fr auto;gap:2px 10px;padding:12px 14px;border-bottom:1px solid var(--line)}
+  table.fit tr:last-child{border-bottom:0}
+  table.fit td{display:block;padding:2px 0;border:0}
+  table.fit td[data-l]::before{content:attr(data-l);display:block;font:600 10px "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+  table.fit td.tc{order:-1;align-self:center;margin-top:0}
+  table.fit td.tc::before{display:none}
+  table.fit td.full{grid-column:1 / -1}
+  table.fit td.empty-cell{grid-column:1 / -1}
+}
+
 .panel{background:var(--paper);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);overflow:hidden}
 .tbl{overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-size:14px}
@@ -235,7 +275,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 </head>
 <body>
 
-<header class="top">
+<header class="tc">
   <div class="wrap bar-top">
     <div class="logo">
       <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0b2350" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/><path d="M12 12 18.5 5.5"/></svg></span>
@@ -287,16 +327,39 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         <div><span class="pill" style="background:var(--line);color:var(--muted)">fora</span><p>Crítico fora das listas não aparece, mas conta nas métricas. Listas em <span class="mono">config/watchlist.json</span>.</p></div>
       </div>
     </details>
-    <div class="filters" id="fRad" role="group" aria-label="Filtrar radar">
-      <button class="chip" type="button" data-w="3" aria-pressed="false">72h</button>
-      <button class="chip" type="button" data-w="7" aria-pressed="false">7 dias</button>
-      <button class="chip" type="button" data-w="14" aria-pressed="true">14 dias</button>
-      <span class="sep"></span>
-      <button class="chip" type="button" data-p="all" aria-pressed="true">Todas</button>
-      <button class="chip" type="button" data-p="P0" aria-pressed="false">P0</button>
-      <button class="chip" type="button" data-p="P1" aria-pressed="false">P1</button>
-      <button class="chip" type="button" data-p="P2" aria-pressed="false">P2</button>
-      <button class="chip" type="button" data-p="exp" aria-pressed="false">Exploradas</button>
+    <div class="fbar filters" id="fRad" role="group" aria-label="Filtrar radar">
+      <div class="frow">
+        <input class="fsearch" type="search" data-q placeholder="Buscar CVE, produto ou fabricante" aria-label="Buscar no radar">
+        <div class="fg"><span class="fl">Período</span>
+          <button class="chip" type="button" data-w="3" aria-pressed="false">72h</button>
+          <button class="chip" type="button" data-w="7" aria-pressed="false">7 dias</button>
+          <button class="chip" type="button" data-w="14" aria-pressed="true">14 dias</button>
+        </div>
+        <label class="fg"><span class="fl">Ordem</span>
+          <select class="fsel" data-o aria-label="Ordenar radar">
+            <option value="prio">Prioridade</option>
+            <option value="rec">Mais recente</option>
+            <option value="cvss">CVSS</option>
+            <option value="epss">EPSS</option>
+            <option value="fontes">Nº de fontes</option>
+          </select>
+        </label>
+      </div>
+      <div class="frow">
+        <div class="fg"><span class="fl">Prioridade</span>
+          <button class="chip" type="button" data-p="P0" aria-pressed="false">P0</button>
+          <button class="chip" type="button" data-p="P1" aria-pressed="false">P1</button>
+          <button class="chip" type="button" data-p="P2" aria-pressed="false">P2</button>
+        </div>
+        <div class="fg"><span class="fl">Sinais</span>
+          <button class="chip" type="button" data-s="kev" aria-pressed="false">No KEV</button>
+          <button class="chip" type="button" data-s="exp" aria-pressed="false">Explorada</button>
+          <button class="chip" type="button" data-s="poc" aria-pressed="false">PoC público</button>
+          <button class="chip" type="button" data-s="epss" aria-pressed="false">EPSS ≥ 10%</button>
+          <button class="chip" type="button" data-s="multi" aria-pressed="false">2+ fontes</button>
+        </div>
+        <span class="fcount"><span data-count></span><button class="fclear" type="button" data-clear hidden>limpar</button></span>
+      </div>
     </div>
     <div class="panel"><div class="tbl" id="radarBox"></div></div>
 
@@ -311,18 +374,38 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       <div class="meta" id="trMeta"></div>
     </div>
     <p class="lead">CVSS ≥ 9 e zero-days analisados com contexto de banco: onde aparece, quão exposto está e o que fazer primeiro.</p>
-    <div class="filters" id="fTr" role="group" aria-label="Filtrar triagem">
-      <button class="chip" type="button" data-p="all" aria-pressed="true">Todas</button>
-      <button class="chip" type="button" data-p="P0" aria-pressed="false">P0</button>
-      <button class="chip" type="button" data-p="P1" aria-pressed="false">P1</button>
-      <button class="chip" type="button" data-p="P2" aria-pressed="false">P2</button>
-      <button class="chip" type="button" data-p="zd" aria-pressed="false">Zero-day</button>
-      <button class="chip" type="button" data-p="pend" aria-pressed="false">Pendentes</button>
+    <div class="fbar filters" id="fTr" role="group" aria-label="Filtrar triagem">
+      <div class="frow">
+        <input class="fsearch" type="search" data-q placeholder="Buscar CVE, produto ou tratamento" aria-label="Buscar na triagem">
+        <div class="fg"><span class="fl">Status</span>
+          <button class="chip" type="button" data-st="Novo" aria-pressed="false">Novo</button>
+          <button class="chip" type="button" data-st="Pendente" aria-pressed="false">Pendente</button>
+        </div>
+        <label class="fg"><span class="fl">Ordem</span>
+          <select class="fsel" data-o aria-label="Ordenar triagem">
+            <option value="prio">Prioridade</option>
+            <option value="rec">Mais recente</option>
+            <option value="cvss">CVSS</option>
+          </select>
+        </label>
+      </div>
+      <div class="frow">
+        <div class="fg"><span class="fl">Prioridade</span>
+          <button class="chip" type="button" data-p="P0" aria-pressed="false">P0</button>
+          <button class="chip" type="button" data-p="P1" aria-pressed="false">P1</button>
+          <button class="chip" type="button" data-p="P2" aria-pressed="false">P2</button>
+        </div>
+        <div class="fg"><span class="fl">Sinais</span>
+          <button class="chip" type="button" data-s="exp" aria-pressed="false">Explorada</button>
+          <button class="chip" type="button" data-s="pub" aria-pressed="false">Exploit público</button>
+          <button class="chip" type="button" data-s="zd" aria-pressed="false">Zero-day</button>
+          <button class="chip" type="button" data-s="kev" aria-pressed="false">No KEV</button>
+          <button class="chip" type="button" data-s="nocve" aria-pressed="false">Sem CVE</button>
+        </div>
+        <span class="fcount"><span data-count></span><button class="fclear" type="button" data-clear hidden>limpar</button></span>
+      </div>
     </div>
-    <div class="panel"><div class="tbl"><table>
-      <thead><tr><th>Prior.</th><th>Data</th><th>CVE</th><th>Produto</th><th>CVSS</th><th>Exploração</th><th>Tratamento</th><th>Fontes</th><th>Status</th></tr></thead>
-      <tbody id="triagemBody"></tbody>
-    </table></div></div>
+    <div class="panel"><div class="tbl" id="triagemBox"></div></div>
   </section>
 
   <section id="semana">
@@ -399,7 +482,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   var cv = function(v, src){
     var n = parseFloat(v);
     if (isNaN(n)) return '<span class="cv na">—</span>';
-    return '<span class="cv ' + (n >= 9 ? 'crit' : 'high') + '">' + n.toFixed(1) + '</span>' + (src === 'CNA' ? '<br><span class="small">fabricante</span>' : '');
+    return '<span class="cv ' + (n >= 9 ? 'crit' : 'high') + '">' + n.toFixed(1) + '</span>' + (src === 'CNA' ? '<br><span class="small" title="nota do fabricante (CNA)">fabr.</span>' : '');
   };
   var pct = function(x){ return x == null ? '—' : Math.round(x * 100) + '%'; };
   var fmt = function(iso, withTime){
@@ -485,21 +568,102 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     }).join('');
   }
 
+  // ---------- filtros (comuns ao radar e à triagem)
+  var ORDEM_P = {P0:0, P1:1, P2:2};
+  function novoFiltro(w){ return {q:'', w:w, p:{}, s:{}, st:{}, o:'prio'}; }
+  function algum(o){ for (var k in o) if (o[k]) return true; return false; }
+  function norm(s){ return String(s == null ? '' : s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
+  function filtroAtivo(f, w0){ return !!(f.q || f.w !== w0 || algum(f.p) || algum(f.s) || algum(f.st) || f.o !== 'prio'); }
+  function pintarFiltro(box, f, w0, base, shown, total){
+    [].forEach.call(box.querySelectorAll('.chip'), function(b){
+      var d = b.dataset, on = false;
+      if (d.w) on = +d.w === f.w;
+      else if (d.p) on = !!f.p[d.p];
+      else if (d.s) on = !!f.s[d.s];
+      else if (d.st) on = !!f.st[d.st];
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      if (d.p) {
+        var n = base.filter(function(r){ return r.prioridade === d.p; }).length;
+        b.innerHTML = esc(d.p) + '<span class="ct">' + n + '</span>';
+      }
+    });
+    box.querySelector('[data-count]').innerHTML = '<b>' + shown + '</b> de ' + total;
+    box.querySelector('[data-clear]').hidden = !filtroAtivo(f, w0);
+  }
+  function ligarFiltro(box, f, w0, render){
+    box.addEventListener('click', function(e){
+      var b = e.target.closest('button'); if (!b) return;
+      var d = b.dataset;
+      if (d.clear != null) {
+        var n = novoFiltro(w0); for (var k in n) f[k] = n[k];
+        box.querySelector('[data-q]').value = ''; box.querySelector('[data-o]').value = 'prio';
+      }
+      else if (d.w) f.w = +d.w;
+      else if (d.p) f.p[d.p] = !f.p[d.p];
+      else if (d.s) f.s[d.s] = !f.s[d.s];
+      else if (d.st) f.st[d.st] = !f.st[d.st];
+      else return;
+      render();
+    });
+    var t;
+    box.querySelector('[data-q]').addEventListener('input', function(e){
+      clearTimeout(t); var v = e.target.value; t = setTimeout(function(){ f.q = v.trim(); render(); }, 120);
+    });
+    box.querySelector('[data-o]').addEventListener('change', function(e){ f.o = e.target.value; render(); });
+  }
+  // linha expansível: texto longo fica em 3 linhas; clique na linha abre/fecha
+  function marcarExpansiveis(tbody){
+    [].forEach.call(tbody.querySelectorAll('tr'), function(tr){
+      var cl = tr.querySelectorAll('.clamp'), pode = false;
+      [].forEach.call(cl, function(c){ if (c.scrollHeight > c.clientHeight + 2) pode = true; });
+      tr.classList.toggle('can-open', pode);
+    });
+  }
+  function ligarExpansao(box){
+    box.addEventListener('click', function(e){
+      if (e.target.closest('a')) return;
+      var tr = e.target.closest('tr.can-open, tr.open'); if (!tr) return;
+      var on = tr.classList.toggle('open');
+      var b = tr.querySelector('.more-b'); if (b) { b.textContent = on ? 'menos ▴' : 'mais ▾'; b.setAttribute('aria-expanded', on); }
+    });
+  }
+  var MAIS = '<button type="button" class="more-b" aria-expanded="false">mais ▾</button>';
+  function vazio(cols, txt){ return '<tr><td class="empty-cell" colspan="' + cols + '"><div class="empty"><b>Nada com esses filtros</b>' + txt + '</div></td></tr>'; }
+
   // ---------- radar
-  var VULNS = [], fRad = {w:14, p:'all'};
+  var VULNS = [], fRad = novoFiltro(14);
+  function fontesTexto(r){ return (r.fontes || []).filter(function(f){ return f.id !== 'nvd' && f.id !== 'kev'; }); }
   function renderRadar(){
-    var lim = Date.now() - fRad.w * 86400000;
-    var rows = VULNS.filter(function(r){
+    var lim = Date.now() - fRad.w * 86400000, q = norm(fRad.q);
+    var base = VULNS.filter(function(r){
       if (new Date(r.ultima_atividade || r.primeira_vez || r.detectado).getTime() < lim) return false;
-      if (fRad.p === 'exp') return r.zero_day;
-      return fRad.p === 'all' || r.prioridade === fRad.p;
+      var s = fRad.s;
+      if (s.kev && !r.kev) return false;
+      if (s.exp && !r.zero_day) return false;
+      if (s.poc && !(r.poc && r.poc.qtd)) return false;
+      if (s.epss && !(r.epss && r.epss.score >= 0.1)) return false;
+      if (s.multi && fontesTexto(r).length < 2) return false;
+      if (q && norm([r.cve, r.produto, r.titulo, r.resumo, r.regra].join(' ')).indexOf(q) < 0) return false;
+      return true;
+    });
+    var rows = algum(fRad.p) ? base.filter(function(r){ return fRad.p[r.prioridade]; }) : base.slice();
+    var t = function(r){ return new Date(r.ultima_atividade || r.primeira_vez || r.detectado).getTime() || 0; };
+    rows.sort(function(a, b){
+      if (fRad.o === 'rec') return t(b) - t(a);
+      if (fRad.o === 'cvss') return (parseFloat(b.cvss) || 0) - (parseFloat(a.cvss) || 0);
+      if (fRad.o === 'epss') return ((b.epss || {}).score || 0) - ((a.epss || {}).score || 0);
+      if (fRad.o === 'fontes') return fontesTexto(b).length - fontesTexto(a).length;
+      return (ORDEM_P[a.prioridade] - ORDEM_P[b.prioridade]) || (!!b.zero_day - !!a.zero_day) || t(b) - t(a);
     });
     $('navRad').textContent = VULNS.filter(function(r){ return r.prioridade === 'P0'; }).length + ' P0';
+    pintarFiltro($('fRad'), fRad, 14, base, rows.length, VULNS.length);
+    var head = '<table class="fit"><colgroup><col style="width:6%"><col style="width:9%"><col style="width:12%"><col style="width:22%"><col style="width:6%"><col style="width:12%"><col style="width:15%"><col style="width:18%"></colgroup>' +
+      '<thead><tr><th>Prior.</th><th>Primeira vez</th><th>CVE</th><th>O que é</th><th>CVSS</th><th>Sinais</th><th>Onde saiu</th><th>Tratamento</th></tr></thead><tbody>';
     if (!rows.length) {
-      $('radarBox').innerHTML = '<div class="empty"><b>Nada nessa janela</b>' + (VULNS.length ? 'Amplie o período ou mude o filtro.' : 'A primeira coleta multi-fonte ainda não rodou.') + '</div>';
+      $('radarBox').innerHTML = head + vazio(8, VULNS.length ? 'Amplie o período ou tire algum filtro.' : 'A primeira coleta multi-fonte ainda não rodou.') + '</tbody></table>';
       return;
     }
-    $('radarBox').innerHTML = '<table><thead><tr><th>Prior.</th><th>Primeira vez</th><th>CVE</th><th>O que é</th><th>CVSS</th><th>Sinais</th><th>Onde saiu</th><th>Tratamento</th></tr></thead><tbody>' +
+    $('radarBox').innerHTML = head +
       rows.map(function(r){
         var sinais = '';
         if (r.kev) sinais += link('https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=' + r.cve, 'KEV ' + fmt(r.kev.adicionado), 'tag kev');
@@ -508,19 +672,21 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         if (r.escalado) sinais += '<span class="tag up">subiu p/ P0</span>';
         if (r.epss) sinais += '<span class="tag epss" title="probabilidade de exploração em 30 dias (EPSS)">EPSS ' + (r.epss.score * 100).toFixed(r.epss.score < 0.1 ? 1 : 0) + '%</span>';
         if (r.poc && r.poc.qtd) sinais += link(r.poc.link, 'PoC (' + r.poc.qtd + ')', 'tag poc');
-        var fontes = (r.fontes || []).filter(function(f){ return f.id !== 'nvd' && f.id !== 'kev'; });
+        if (!sinais) sinais = '<span class="small">—</span>';
+        var fontes = fontesTexto(r);
         var srcHtml = fontes.slice(0, 3).map(function(f){
           return '<span class="src">' + link(f.link, f.nome) + ' <span>' + fmt(f.publicado || f.visto_em, true) + '</span></span>';
         }).join('');
         if (fontes.length > 3) srcHtml += '<span class="more">+' + (fontes.length - 3) + ' fonte(s)</span>';
         if (!fontes.length) srcHtml = '<span class="small">só NVD/KEV</span>';
-        var oque = r.produto ? '<b>' + esc(r.produto) + '</b><br><span class="small">' + esc(r.titulo || r.resumo) + '</span>'
-                             : '<span class="small">' + esc(r.resumo || (fontes[0] || {}).titulo || '') + '</span>';
-        return '<tr><td>' + pill(r.prioridade) + '</td><td class="c">' + fmt(r.primeira_vez, true) + '</td>' +
-          '<td class="c">' + link(r.link_nvd, r.cve) + '</td><td class="wide">' + oque + '</td>' +
-          '<td>' + cv(r.cvss, r.cvss_fonte) + '</td><td class="mid">' + sinais + '</td><td class="mid">' + srcHtml + '</td>' +
-          '<td class="wide">' + esc(r.tratamento) + '<br><span class="small">Regra: ' + esc(r.regra) + (r.kev && r.kev.prazo ? ' · prazo CISA ' + fmt(r.kev.prazo) : '') + '</span></td></tr>';
+        var oque = r.produto ? '<b>' + esc(r.produto) + '</b><div class="clamp small">' + esc(r.titulo || r.resumo) + '</div>'
+                             : '<div class="clamp small">' + esc(r.resumo || (fontes[0] || {}).titulo || '') + '</div>';
+        return '<tr><td class="tc">' + pill(r.prioridade) + '</td><td class="c full" data-l="Primeira vez">' + fmt(r.primeira_vez, true) + '</td>' +
+          '<td class="c tc">' + link(r.link_nvd, r.cve) + '</td><td class="full" data-l="O que é">' + oque + '</td>' +
+          '<td class="tc">' + cv(r.cvss, r.cvss_fonte) + '</td><td class="full" data-l="Sinais">' + sinais + '</td><td class="full" data-l="Onde saiu">' + srcHtml + '</td>' +
+          '<td class="full" data-l="Tratamento"><div class="clamp">' + esc(r.tratamento) + '<br><span class="small">Regra: ' + esc(r.regra) + (r.kev && r.kev.prazo ? ' · prazo CISA ' + fmt(r.kev.prazo) : '') + '</span></div>' + MAIS + '</td></tr>';
       }).join('') + '</tbody></table>';
+    marcarExpansiveis($('radarBox'));
   }
 
   function renderSemCve(list){
@@ -530,29 +696,45 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   }
 
   // ---------- triagem
-  var TR = [], fTr = 'all';
+  var TR = [], fTr = novoFiltro(0);
   function renderTriagem(){
-    var ordem = {P0:0,P1:1,P2:2};
-    var rows = TR.filter(function(i){
-      if (fTr === 'all') return true;
-      if (fTr === 'zd') return i.zero_day;
-      if (fTr === 'pend') return i.status === 'Pendente';
-      return i.prioridade === fTr;
-    }).sort(function(a, b){ return (ordem[a.prioridade] - ordem[b.prioridade]) || (a.data < b.data ? 1 : -1); });
-    $('triagemBody').innerHTML = rows.length ? rows.map(function(i){
+    var q = norm(fTr.q);
+    var base = TR.filter(function(i){
+      var s = fTr.s;
+      if (algum(fTr.st) && !fTr.st[i.status]) return false;
+      if (s.exp && !/^ativa/i.test(i.exploracao)) return false;
+      if (s.pub && !/público/i.test(i.exploracao)) return false;
+      if (s.zd && !i.zero_day) return false;
+      if (s.kev && !i.kev) return false;
+      if (s.nocve && /^CVE-/i.test(i.cve)) return false;
+      if (q && norm([i.cve, i.produto, i.tratamento, i.exploracao].join(' ')).indexOf(q) < 0) return false;
+      return true;
+    });
+    var rows = algum(fTr.p) ? base.filter(function(i){ return fTr.p[i.prioridade]; }) : base.slice();
+    rows.sort(function(a, b){
+      if (fTr.o === 'rec') return a.data < b.data ? 1 : (a.data > b.data ? -1 : ORDEM_P[a.prioridade] - ORDEM_P[b.prioridade]);
+      if (fTr.o === 'cvss') return (parseFloat(b.cvss) || 0) - (parseFloat(a.cvss) || 0);
+      return (ORDEM_P[a.prioridade] - ORDEM_P[b.prioridade]) || (a.data < b.data ? 1 : -1);
+    });
+    pintarFiltro($('fTr'), fTr, 0, base, rows.length, TR.length);
+    var head = '<table class="fit"><colgroup><col style="width:6%"><col style="width:6%"><col style="width:12%"><col style="width:16%"><col style="width:6%"><col style="width:11%"><col style="width:24%"><col style="width:12%"><col style="width:7%"></colgroup>' +
+      '<thead><tr><th>Prior.</th><th>Data</th><th>CVE</th><th>Produto</th><th>CVSS</th><th>Exploração</th><th>Tratamento</th><th>Fontes</th><th>Status</th></tr></thead><tbody>';
+    if (!rows.length) { $('triagemBox').innerHTML = head + vazio(9, 'Tire algum filtro ou limpe a busca.') + '</tbody></table>'; return; }
+    $('triagemBox').innerHTML = head + rows.map(function(i){
       var tags = (i.kev ? '<span class="tag kev">KEV</span>' : '') + (i.zero_day ? '<span class="tag zd">zero-day</span>' : '');
       var ex = /ativa|público/i.test(i.exploracao) ? 'ex-yes' : '';
       var st = i.status === 'Pendente' ? 'st-pend' : (i.status === 'Resolvido' ? 'st-res' : 'st-novo');
       var cves = String(i.cve).split(/\s*\/\s*/);
-      var base = cves[0].replace(/-\d+$/, '-');
-      var cveHtml = cves.map(function(c){ var full = /^CVE-/.test(c) ? c : base + c.replace(/^-/, ''); return link('https://nvd.nist.gov/vuln/detail/' + full, c); }).join(' / ');
+      var base0 = cves[0].replace(/-\d+$/, '-');
+      var cveHtml = /^CVE-/i.test(cves[0]) ? cves.map(function(c){ var full = /^CVE-/.test(c) ? c : base0 + c.replace(/^-/, ''); return link('https://nvd.nist.gov/vuln/detail/' + full, c); }).join(' / ') : esc(i.cve);
       var fontes = (i.fontes || []).map(function(f){ return '<span class="src">' + link(f.url, f.nome) + '</span>'; }).join('');
-      if (!fontes) fontes = '<span class="src">' + link('https://nvd.nist.gov/vuln/detail/' + cves[0], 'NVD') + '</span>';
-      return '<tr><td>' + pill(i.prioridade) + '</td><td class="c">' + fmt(i.data) + '</td><td class="c">' + cveHtml + '</td>' +
-        '<td><b>' + esc(i.produto) + '</b><br>' + tags + '</td><td>' + cv(i.cvss) + '</td>' +
-        '<td class="' + ex + '">' + esc(i.exploracao) + '</td><td class="wide">' + esc(i.tratamento) + '</td>' +
-        '<td class="mid">' + fontes + '</td><td class="' + st + '">' + esc(i.status) + '</td></tr>';
-    }).join('') : '<tr><td colspan="9"><div class="empty"><b>Nenhum item nesse filtro</b></div></td></tr>';
+      if (!fontes && /^CVE-/i.test(cves[0])) fontes = '<span class="src">' + link('https://nvd.nist.gov/vuln/detail/' + cves[0], 'NVD') + '</span>';
+      return '<tr><td class="tc">' + pill(i.prioridade) + '</td><td class="c full" data-l="Data">' + fmt(i.data) + '</td><td class="c tc"><div class="clamp">' + cveHtml + '</div></td>' +
+        '<td class="full" data-l="Produto"><b>' + esc(i.produto) + '</b><br>' + tags + '</td><td class="tc">' + cv(i.cvss) + '</td>' +
+        '<td class="full ' + ex + '" data-l="Exploração">' + esc(i.exploracao) + '</td><td class="full" data-l="Tratamento"><div class="clamp">' + esc(i.tratamento) + '</div>' + MAIS + '</td>' +
+        '<td class="full" data-l="Fontes">' + (fontes || '—') + '</td><td class="full ' + st + '" data-l="Status">' + esc(i.status) + '</td></tr>';
+    }).join('') + '</tbody></table>';
+    marcarExpansiveis($('triagemBox'));
   }
 
   // ---------- semana
@@ -686,16 +868,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   });
 
   // ---------- filtros e tema
-  $('fRad').addEventListener('click', function(e){
-    var b = e.target.closest('.chip'); if (!b) return;
-    if (b.dataset.w) { fRad.w = +b.dataset.w; setPressed(this, 'w', fRad.w); }
-    if (b.dataset.p) { fRad.p = b.dataset.p; setPressed(this, 'p', fRad.p); }
-    renderRadar();
-  });
-  $('fTr').addEventListener('click', function(e){
-    var b = e.target.closest('.chip'); if (!b) return;
-    fTr = b.dataset.p; setPressed(this, 'p', fTr); renderTriagem();
-  });
+  ligarFiltro($('fRad'), fRad, 14, renderRadar);
+  ligarFiltro($('fTr'), fTr, 0, renderTriagem);
+  ligarExpansao($('radarBox')); ligarExpansao($('triagemBox'));
+  var rz; window.addEventListener('resize', function(){ clearTimeout(rz); rz = setTimeout(function(){ marcarExpansiveis($('radarBox')); marcarExpansiveis($('triagemBox')); }, 200); });
   var root = document.documentElement;
   try { var t = localStorage.getItem('radar-theme'); if (t) root.setAttribute('data-theme', t); } catch (e) {}
   $('themeBtn').addEventListener('click', function(){
