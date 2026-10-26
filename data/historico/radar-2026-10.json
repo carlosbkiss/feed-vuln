@@ -504,9 +504,19 @@
         "publicado": "2026-10-26T09:19:57Z"
       },
       {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-10-26T12:00:00Z"
+      },
+      {
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/php-http2shell-vulnerability/",
         "publicado": "2026-10-26T15:53:07Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/public-php2shell-exploit-code/",
+        "publicado": "2026-10-26T20:29:21Z"
       }
     ],
     "prioridade_max": "P0"
@@ -593,9 +603,19 @@
         "publicado": "2026-10-26T09:19:57Z"
       },
       {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-10-26T12:00:00Z"
+      },
+      {
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/php-http2shell-vulnerability/",
         "publicado": "2026-10-26T15:53:07Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/public-php2shell-exploit-code/",
+        "publicado": "2026-10-26T20:29:21Z"
       }
     ],
     "prioridade_max": "P0"
