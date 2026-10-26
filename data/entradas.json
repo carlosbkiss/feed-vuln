@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-10-25T18:32:46Z",
-  "janela": "19 a 25/out/2026",
+  "atualizado": "2026-10-26T10:39:55Z",
+  "janela": "20 a 26/out/2026",
   "itens": [
     {
       "data": "2026-10-23",
@@ -11,11 +11,15 @@
       "zero_day": false,
       "exploracao": "Exploit público",
       "prioridade": "P0",
-      "tratamento": "Falha do PHP alcançável pela interface de gestão (web e XML API). Aplicar hotfix 12.2.4-h1, 12.1.10-h3, 11.2.16-h1, 11.1.16-h4 ou 10.2.18-h13; restringir a gestão a jump host e tirar perfis de gestão de interfaces expostas. Versões de Panorama/WF-500: a confirmar no advisory.",
+      "tratamento": "Falha do PHP alcançável pela interface de gestão (web e XML API); já há sondagens de PHP2Shell contra GlobalProtect. Aplicar hotfix 12.2.4-h1, 12.1.10-h3, 11.2.16-h1, 11.1.16-h4 ou 10.2.18-h13; restringir a gestão a jump host. Versões de Panorama/WF-500: a confirmar no advisory.",
       "fontes": [
         {
           "nome": "SecurityOnline",
           "url": "https://securityonline.info/pan-os-php2shell-cve-2026-109618/"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html"
         }
       ],
       "status": "Novo"
@@ -195,22 +199,22 @@
       "cvss": 9.8,
       "kev": false,
       "zero_day": false,
-      "exploracao": "Ativa (tentativas em massa)",
+      "exploracao": "Ativa (RCE confirmada em 25-26/out)",
       "prioridade": "P0",
       "status": "Novo",
-      "tratamento": "Atualizar para 8.5.12, 8.4.27, 8.3.36 ou 8.2.35; já há varredura em massa. Sem patch: desligar session.upload_progress.enabled e aplicar regra de WAF. Em 23/out o PHP avisou de outra falha de sessão (CVE-2026-115560, sem correção ainda) com a mesma mitigação. Inclui appliances com PHP embarcado (Okta Access Gateway, PAN-OS).",
+      "tratamento": "Exploração com sucesso já confirmada (honeypot com PHP 8.4.26 e intrusão em órgão de governo europeu). Atualizar já para 8.5.12, 8.4.27, 8.3.36 ou 8.2.35; sem patch, desligar session.upload_progress.enabled e aplicar regra de WAF. A mesma mitigação cobre a CVE-2026-115560, ainda sem correção. Inclui appliances com PHP embarcado (Okta Access Gateway, PAN-OS).",
       "fontes": [
         {
           "nome": "CERT-EU",
           "url": "https://cert.europa.eu/publications/security-advisories/2026-018/pdf"
         },
         {
-          "nome": "SecurityOnline (CVE-2026-115560)",
-          "url": "https://securityonline.info/php-session-vulnerability-cve-2026-115560/"
+          "nome": "BleepingComputer",
+          "url": "https://bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild"
         },
         {
-          "nome": "Infosecurity",
-          "url": "https://www.infosecurity-magazine.com/news/critical-php-vulnerabilities-leaked/"
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html"
         }
       ]
     },
