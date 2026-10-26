@@ -394,6 +394,34 @@
     ],
     "prioridade_max": "P2"
   },
+  "CVE-2026-10757": {
+    "cve": "CVE-2026-10757",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.8,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-26T18:17:34Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-26T18:17:34Z",
+    "exibido_em": "2026-10-26T18:38:13Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-10757",
+        "publicado": "2026-10-26T18:17:34Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
   "CVE-2026-109618": {
     "cve": "CVE-2026-109618",
     "produto": "",
@@ -679,7 +707,7 @@
     "produto": "",
     "titulo": "",
     "cvss": 9.2,
-    "prioridade": "P2",
+    "prioridade": "P1",
     "elegivel_por": [
       "CVSS ≥ 9"
     ],
@@ -743,9 +771,19 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/php-http2shell-vulnerability/",
         "publicado": "2026-10-26T15:53:07Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
+        "publicado": "2026-10-26T17:45:57Z"
+      },
+      {
+        "nome": "Palo Alto Security Advisories",
+        "link": "https://security.paloaltonetworks.com/CVE-2026-111497",
+        "publicado": "2026-10-26T18:30:00Z"
       }
     ],
-    "prioridade_max": "P2"
+    "prioridade_max": "P1"
   },
   "CVE-2026-114119": {
     "cve": "CVE-2026-114119",

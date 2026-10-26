@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-26T17:24:30Z",
+  "atualizado": "2026-10-26T18:38:13Z",
   "itens": [
     {
       "cve": "CVE-2026-114625",
@@ -979,6 +979,135 @@
       }
     },
     {
+      "cve": "CVE-2026-111497",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-111497",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497",
+          "publicado": "2026-10-22T14:17:37Z",
+          "visto_em": "2026-10-23T12:22:11Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
+          "link": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
+          "publicado": "2026-10-23T08:40:43Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "New Node2Shell Node.js RCE Exploit Let Attackers Execute Malicious Code Through Brotli-Compressed Data",
+          "link": "https://cybersecuritynews.com/new-node2shell-node-js-rce-exploit/",
+          "publicado": "2026-10-23T14:11:40Z",
+          "visto_em": "2026-10-23T15:00:17Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
+          "link": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
+          "publicado": "2026-10-24T08:45:56Z",
+          "visto_em": "2026-10-24T10:35:21Z"
+        },
+        {
+          "id": "msrc",
+          "nome": "Microsoft Security Update Guide",
+          "titulo": "CVE-2026-111497 Google: CVE-2026-111497 Buffer overflow vulnerability in the Brotli decoder",
+          "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-111497",
+          "publicado": "2026-10-25T14:00:00Z",
+          "visto_em": "2026-10-25T18:25:14Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "HTTP2Shell Vulnerability Extends Beyond HTTP, Affecting .NET, FFmpeg, ClickHouse, and Apache Arrow",
+          "link": "https://cybersecuritynews.com/http2shell-vulnerability/",
+          "publicado": "2026-10-26T06:35:41Z",
+          "visto_em": "2026-10-26T10:40:08Z"
+        },
+        {
+          "id": "fortinet",
+          "nome": "Fortinet PSIRT",
+          "titulo": "Multiple Node.js CVEs",
+          "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-187",
+          "publicado": "2026-10-26T07:00:00Z",
+          "visto_em": "2026-10-26T17:24:30Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Cloudflare Release Emergency WAF Ruleset Update Following Brotli Vulnerability",
+          "link": "https://cybersecuritynews.com/cloudflare-release-brotli-vulnerability-waf-ruleset/",
+          "publicado": "2026-10-26T13:18:59Z",
+          "visto_em": "2026-10-26T14:38:19Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Microsoft Releases Out-of-Band Security Updates for Brotli and .NET tarballs Vulnerability",
+          "link": "https://cybersecuritynews.com/microsoft-security-updates-for-brotli-and-net-tarballs-vulnerability/",
+          "publicado": "2026-10-26T13:22:05Z",
+          "visto_em": "2026-10-26T14:38:19Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "PHP Releases New Windows Build Security Updates to Fix Critical HTTP2Shell Vulnerability",
+          "link": "https://cybersecuritynews.com/php-http2shell-vulnerability/",
+          "publicado": "2026-10-26T15:53:07Z",
+          "visto_em": "2026-10-26T17:24:30Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
+          "link": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
+          "publicado": "2026-10-26T17:45:57Z",
+          "visto_em": "2026-10-26T18:38:13Z"
+        },
+        {
+          "id": "paloalto",
+          "nome": "Palo Alto Security Advisories",
+          "titulo": "CVE-2026-111497 Portfolio Status: Impact of Brotli Vulnerability (CVE-2026-111497) on Palo Alto Networks Products (Severity: CRITICAL)",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-111497",
+          "publicado": "2026-10-26T18:30:00Z",
+          "visto_em": "2026-10-26T18:38:13Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-22T14:17:37Z",
+      "primeira_noticia": "2026-10-23T08:40:43Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497",
+      "cvss": 9.2,
+      "cvss_versao": "4.0",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-22T14:17:37Z",
+      "resumo": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause…",
+      "nvd_checado_em": "2026-10-23T12:22:11Z",
+      "ultima_atividade": "2026-10-26T18:30:00Z",
+      "exibido_em": "2026-10-26T17:24:30Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "epss": {
+        "score": 0.3603,
+        "percentil": 0.9846,
+        "data": "2026-10-26"
+      },
+      "poc": {
+        "qtd": 50,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-111497.json",
+        "checado": "2026-10-26T17:24:30Z"
+      }
+    },
+    {
       "cve": "CVE-2026-76531",
       "fontes": [
         {
@@ -1346,6 +1475,42 @@
       "ultima_atividade": "2026-10-13T19:22:07Z"
     },
     {
+      "cve": "CVE-2026-10757",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-10757",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-10757",
+          "publicado": "2026-10-26T18:17:34Z",
+          "visto_em": "2026-10-26T18:38:13Z"
+        }
+      ],
+      "detectado": "2026-10-26T18:38:13Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-26T18:17:34Z",
+      "resumo": "There is a SQL injection vulnerability in Esri ArcGIS Server versions 12.1 and earlier on Windows and Linux that may allow a remote attacker with privileges to access the service (which could, depending on the service being configured in a non-default access…",
+      "nvd_checado_em": "2026-10-26T18:38:13Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-26T18:17:34Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-10757",
+      "ultima_atividade": "2026-10-26T18:17:34Z",
+      "exibido_em": "2026-10-26T18:38:13Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-26T18:38:13Z"
+      }
+    },
+    {
       "cve": "CVE-2026-115806",
       "fontes": [
         {
@@ -1363,7 +1528,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-24T05:17:04Z",
       "resumo": "The Prime Mover – Backup and Migration plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.2.1 via deserialization of untrusted input in the migration search-and-replace routine (recursiveUnserializeReplace()).…",
-      "nvd_checado_em": "2026-10-26T17:24:30Z",
+      "nvd_checado_em": "2026-10-26T18:38:13Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1384,119 +1549,6 @@
         "score": 0.0055,
         "percentil": 0.457,
         "data": "2026-10-26"
-      }
-    },
-    {
-      "cve": "CVE-2026-111497",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-111497",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497",
-          "publicado": "2026-10-22T14:17:37Z",
-          "visto_em": "2026-10-23T12:22:11Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
-          "link": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
-          "publicado": "2026-10-23T08:40:43Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "New Node2Shell Node.js RCE Exploit Let Attackers Execute Malicious Code Through Brotli-Compressed Data",
-          "link": "https://cybersecuritynews.com/new-node2shell-node-js-rce-exploit/",
-          "publicado": "2026-10-23T14:11:40Z",
-          "visto_em": "2026-10-23T15:00:17Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
-          "link": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
-          "publicado": "2026-10-24T08:45:56Z",
-          "visto_em": "2026-10-24T10:35:21Z"
-        },
-        {
-          "id": "msrc",
-          "nome": "Microsoft Security Update Guide",
-          "titulo": "CVE-2026-111497 Google: CVE-2026-111497 Buffer overflow vulnerability in the Brotli decoder",
-          "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-111497",
-          "publicado": "2026-10-25T14:00:00Z",
-          "visto_em": "2026-10-25T18:25:14Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "HTTP2Shell Vulnerability Extends Beyond HTTP, Affecting .NET, FFmpeg, ClickHouse, and Apache Arrow",
-          "link": "https://cybersecuritynews.com/http2shell-vulnerability/",
-          "publicado": "2026-10-26T06:35:41Z",
-          "visto_em": "2026-10-26T10:40:08Z"
-        },
-        {
-          "id": "fortinet",
-          "nome": "Fortinet PSIRT",
-          "titulo": "Multiple Node.js CVEs",
-          "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-187",
-          "publicado": "2026-10-26T07:00:00Z",
-          "visto_em": "2026-10-26T17:24:30Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Cloudflare Release Emergency WAF Ruleset Update Following Brotli Vulnerability",
-          "link": "https://cybersecuritynews.com/cloudflare-release-brotli-vulnerability-waf-ruleset/",
-          "publicado": "2026-10-26T13:18:59Z",
-          "visto_em": "2026-10-26T14:38:19Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Microsoft Releases Out-of-Band Security Updates for Brotli and .NET tarballs Vulnerability",
-          "link": "https://cybersecuritynews.com/microsoft-security-updates-for-brotli-and-net-tarballs-vulnerability/",
-          "publicado": "2026-10-26T13:22:05Z",
-          "visto_em": "2026-10-26T14:38:19Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "PHP Releases New Windows Build Security Updates to Fix Critical HTTP2Shell Vulnerability",
-          "link": "https://cybersecuritynews.com/php-http2shell-vulnerability/",
-          "publicado": "2026-10-26T15:53:07Z",
-          "visto_em": "2026-10-26T17:24:30Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-22T14:17:37Z",
-      "primeira_noticia": "2026-10-23T08:40:43Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497",
-      "cvss": 9.2,
-      "cvss_versao": "4.0",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-22T14:17:37Z",
-      "resumo": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
-      "ultima_atividade": "2026-10-26T15:53:07Z",
-      "exibido_em": "2026-10-26T17:24:30Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.3603,
-        "percentil": 0.9846,
-        "data": "2026-10-26"
-      },
-      "poc": {
-        "qtd": 50,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-111497.json",
-        "checado": "2026-10-26T17:24:30Z"
       }
     },
     {
