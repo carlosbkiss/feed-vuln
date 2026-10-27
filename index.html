@@ -647,12 +647,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       return true;
     });
     var rows = algum(fRad.p) ? base.filter(function(r){ return fRad.p[r.prioridade]; }) : base.slice();
-    var t = function(r){ return new Date(r.ultima_atividade || r.primeira_vez || r.detectado).getTime() || 0; };
+    // ordena pela mesma data mostrada na coluna "Primeira vez" (antes usava ultima_atividade e a lista parecia fora de ordem)
+    var t = function(r){ return new Date(r.primeira_vez || r.detectado || r.ultima_atividade).getTime() || 0; };
     rows.sort(function(a, b){
-      if (fRad.o === 'rec') return t(b) - t(a);
-      if (fRad.o === 'cvss') return (parseFloat(b.cvss) || 0) - (parseFloat(a.cvss) || 0);
-      if (fRad.o === 'epss') return ((b.epss || {}).score || 0) - ((a.epss || {}).score || 0);
-      if (fRad.o === 'fontes') return fontesTexto(b).length - fontesTexto(a).length;
+      if (fRad.o === 'rec') return t(b) - t(a) || (ORDEM_P[a.prioridade] - ORDEM_P[b.prioridade]);
+      if (fRad.o === 'cvss') return (parseFloat(b.cvss) || 0) - (parseFloat(a.cvss) || 0) || t(b) - t(a);
+      if (fRad.o === 'epss') return ((b.epss || {}).score || 0) - ((a.epss || {}).score || 0) || t(b) - t(a);
+      if (fRad.o === 'fontes') return fontesTexto(b).length - fontesTexto(a).length || t(b) - t(a);
       return (ORDEM_P[a.prioridade] - ORDEM_P[b.prioridade]) || (!!b.zero_day - !!a.zero_day) || t(b) - t(a);
     });
     $('navRad').textContent = VULNS.filter(function(r){ return r.prioridade === 'P0'; }).length + ' P0';
