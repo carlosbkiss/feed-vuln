@@ -749,15 +749,21 @@
   },
   "CVE-2026-111497": {
     "cve": "CVE-2026-111497",
-    "produto": "",
-    "titulo": "",
+    "produto": "Google Brotli",
+    "titulo": "Google Brotli Unchecked Return Value Vulnerability",
     "cvss": 9.2,
-    "prioridade": "P1",
+    "prioridade": "P0",
     "elegivel_por": [
-      "CVSS ≥ 9"
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
     ],
-    "zero_day": false,
-    "kev": null,
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-27",
+      "prazo": "2026-11-10",
+      "ransomware": "Unknown"
+    },
     "primeira_vez": "2026-10-22T14:17:37Z",
     "primeira_noticia": "2026-10-23T08:40:43Z",
     "publicado_nvd": "2026-10-22T14:17:37Z",
@@ -826,9 +832,19 @@
         "nome": "Palo Alto Security Advisories",
         "link": "https://security.paloaltonetworks.com/CVE-2026-111497",
         "publicado": "2026-10-26T18:30:00Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111497",
+        "publicado": "2026-10-27"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-10-27T12:00:00Z"
       }
     ],
-    "prioridade_max": "P1"
+    "prioridade_max": "P0"
   },
   "CVE-2026-114119": {
     "cve": "CVE-2026-114119",

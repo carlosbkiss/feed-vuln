@@ -1,0 +1,51 @@
+{
+  "CVE-2026-48356": {
+    "cve": "CVE-2026-48356",
+    "produto": "Adobe Commerce and Magento",
+    "titulo": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
+    "cvss": 9.3,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-27",
+      "prazo": "2026-11-10",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-07-14T20:17:08Z",
+    "primeira_noticia": "2026-10-27T07:55:48Z",
+    "publicado_nvd": "2026-07-14T20:17:08Z",
+    "exibido_em": "2026-10-27T21:21:36Z",
+    "aguardando_nota_desde": "2026-10-27T07:55:48Z",
+    "nota_chegou_em": "2026-10-27T21:21:36Z",
+    "epss_max": 0.3058,
+    "poc_qtd": 1,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356",
+        "publicado": "2026-07-14T20:17:08Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-48356",
+        "publicado": "2026-10-27"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/hackers-infect-953-online-stores/",
+        "publicado": "2026-10-27T07:55:48Z"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-10-27T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  }
+}
