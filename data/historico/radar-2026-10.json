@@ -263,7 +263,7 @@
     "exibido_em": "2026-10-23T12:14:22Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.7924,
+    "epss_max": 0.7947,
     "poc_qtd": 1,
     "fontes": [
       {
@@ -411,7 +411,7 @@
     "exibido_em": "2026-10-26T18:38:13Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0044,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -445,7 +445,7 @@
     "exibido_em": "2026-10-23T12:14:22Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.9998,
+    "epss_max": 1.0,
     "poc_qtd": 686,
     "fontes": [
       {
@@ -764,7 +764,7 @@
     "exibido_em": "2026-10-26T17:24:30Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.3603,
+    "epss_max": 0.5548,
     "poc_qtd": 50,
     "fontes": [
       {
@@ -924,7 +924,7 @@
     "exibido_em": "2026-10-24T18:38:25Z",
     "aguardando_nota_desde": "2026-10-23T15:19:23Z",
     "nota_chegou_em": "2026-10-24T18:38:25Z",
-    "epss_max": 0.005,
+    "epss_max": 0.0054,
     "poc_qtd": 0,
     "fontes": [
       {

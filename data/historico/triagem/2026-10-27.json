@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-27T10:44:55Z",
+  "atualizado": "2026-10-27T14:53:12Z",
   "janela": "21 a 27/out/2026",
   "itens": [
     {
@@ -286,11 +286,11 @@
       "exploracao": "Não confirmada",
       "prioridade": "P0",
       "status": "Novo",
-      "tratamento": "Subir para 19.5.1, 19.4.3 ou 19.3.6 (o patch de 12/out não cobre); o GitLab traz Ruby próprio, então só atualizar o Ruby do servidor não resolve. Se a instância é exposta, rotacionar tokens de CI/CD e deploy keys.",
+      "tratamento": "Subir para 19.5.1, 19.4.3, 19.3.6, 19.2.9, 19.1.9, 19.0.10 ou 18.11.13 (o patch de 12/out não cobre; 19.4.3 e 19.3.6 param instância de nó único). O GitLab traz Ruby próprio; se a instância é exposta, rotacionar tokens de CI/CD e deploy keys.",
       "fontes": [
         {
-          "nome": "Eastern Herald",
-          "url": "https://easternherald.com/2026/10/22/gitlab-cve-2026-110264-critical-code-execution-patches/"
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html"
         },
         {
           "nome": "SecurityOnline",
@@ -539,6 +539,32 @@
           "url": "https://securityonline.info/oracle-critical-patch-update-october-2026/"
         }
       ]
+    },
+    {
+      "data": "2026-10-20",
+      "cve": "CVE-2026-87337",
+      "produto": "Oracle Access Manager (Fusion Middleware)",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P0",
+      "tratamento": "Bypass de autenticação sem login no motor de autenticação do SSO, com impacto além do OAM. Aplicar o Oracle CPU de out/2026 nas versões 12.2.1.4.0 e 14.1.2.1.0 e, até lá, tirar os endpoints do OAM da internet e revisar logins anômalos.",
+      "fontes": [
+        {
+          "nome": "Oracle CPU out/2026",
+          "url": "https://www.oracle.com/security-alerts/cpuoct2026.html"
+        },
+        {
+          "nome": "TheHackerWire",
+          "url": "https://www.thehackerwire.com/vulnerability/CVE-2026-87337/"
+        },
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87337"
+        }
+      ],
+      "status": "Novo"
     },
     {
       "data": "2026-10-16",
