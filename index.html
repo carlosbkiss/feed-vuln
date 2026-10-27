@@ -330,11 +330,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <div class="fbar filters" id="fRad" role="group" aria-label="Filtrar radar">
       <div class="frow">
         <input class="fsearch" type="search" data-q placeholder="Buscar CVE, produto ou fabricante" aria-label="Buscar no radar">
-        <div class="fg"><span class="fl" title="Conta a última novidade de cada CVE (nota, KEV ou notícia), não só a primeira aparição">Período (última novidade)</span>
+        <div class="fg"><span class="fl">Período</span>
           <button class="chip" type="button" data-w="3" aria-pressed="false">72h</button>
           <button class="chip" type="button" data-w="7" aria-pressed="false">7 dias</button>
           <button class="chip" type="button" data-w="14" aria-pressed="true">14 dias</button>
         </div>
+        <label class="fg"><span class="fl">Contar por</span>
+          <select class="fsel" data-d aria-label="Data usada no período do radar" title="Entrada: quando a CVE apareceu pela primeira vez. Última novidade: nota, KEV ou notícia nova.">
+            <option value="nov">Última novidade</option>
+            <option value="ent">Entrada</option>
+          </select>
+        </label>
         <label class="fg"><span class="fl">Ordem</span>
           <select class="fsel" data-o aria-label="Ordenar radar">
             <option value="prio">Prioridade</option>
@@ -570,10 +576,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
   // ---------- filtros (comuns ao radar e à triagem)
   var ORDEM_P = {P0:0, P1:1, P2:2};
-  function novoFiltro(w){ return {q:'', w:w, p:{}, s:{}, st:{}, o:'prio'}; }
+  function novoFiltro(w){ return {q:'', w:w, p:{}, s:{}, st:{}, o:'prio', d:'nov'}; }
   function algum(o){ for (var k in o) if (o[k]) return true; return false; }
   function norm(s){ return String(s == null ? '' : s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
-  function filtroAtivo(f, w0){ return !!(f.q || f.w !== w0 || algum(f.p) || algum(f.s) || algum(f.st) || f.o !== 'prio'); }
+  function filtroAtivo(f, w0){ return !!(f.q || f.w !== w0 || algum(f.p) || algum(f.s) || algum(f.st) || f.o !== 'prio' || f.d !== 'nov'); }
   function pintarFiltro(box, f, w0, base, shown, total){
     [].forEach.call(box.querySelectorAll('.chip'), function(b){
       var d = b.dataset, on = false;
@@ -597,6 +603,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       if (d.clear != null) {
         var n = novoFiltro(w0); for (var k in n) f[k] = n[k];
         box.querySelector('[data-q]').value = ''; box.querySelector('[data-o]').value = 'prio';
+        var sd = box.querySelector('[data-d]'); if (sd) sd.value = 'nov';
       }
       else if (d.w) f.w = +d.w;
       else if (d.p) f.p[d.p] = !f.p[d.p];
@@ -610,6 +617,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       clearTimeout(t); var v = e.target.value; t = setTimeout(function(){ f.q = v.trim(); render(); }, 120);
     });
     box.querySelector('[data-o]').addEventListener('change', function(e){ f.o = e.target.value; render(); });
+    var sd = box.querySelector('[data-d]');
+    if (sd) sd.addEventListener('change', function(e){ f.d = e.target.value; render(); });
   }
   // linha expansível: texto longo fica em 3 linhas; clique na linha abre/fecha
   function marcarExpansiveis(tbody){
@@ -640,8 +649,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   }
   function renderRadar(){
     var lim = Date.now() - fRad.w * 86400000, q = norm(fRad.q);
+    // "Contar por": entrada = primeira aparição; novidade = última nota, KEV ou notícia
+    var t = fRad.d === 'ent'
+      ? function(r){ return new Date(r.primeira_vez || r.detectado || r.ultima_atividade).getTime() || 0; }
+      : function(r){ return new Date(r.ultima_atividade || r.primeira_vez || r.detectado).getTime() || 0; };
     var base = VULNS.filter(function(r){
-      if (new Date(r.ultima_atividade || r.primeira_vez || r.detectado).getTime() < lim) return false;
+      if (t(r) < lim) return false;
       var s = fRad.s;
       if (s.kev && !r.kev) return false;
       if (s.exp && !r.zero_day) return false;
@@ -652,8 +665,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       return true;
     });
     var rows = algum(fRad.p) ? base.filter(function(r){ return fRad.p[r.prioridade]; }) : base.slice();
-    // período e "Mais recente" usam a última novidade (nota, KEV, notícia); a coluna mostra essa data quando difere da primeira vez
-    var t = function(r){ return new Date(r.ultima_atividade || r.primeira_vez || r.detectado).getTime() || 0; };
     rows.sort(function(a, b){
       if (fRad.o === 'rec') return t(b) - t(a) || (ORDEM_P[a.prioridade] - ORDEM_P[b.prioridade]);
       if (fRad.o === 'cvss') return (parseFloat(b.cvss) || 0) - (parseFloat(a.cvss) || 0) || t(b) - t(a);
@@ -664,7 +675,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     $('navRad').textContent = VULNS.filter(function(r){ return r.prioridade === 'P0'; }).length + ' P0';
     pintarFiltro($('fRad'), fRad, 14, base, rows.length, VULNS.length);
     var head = '<table class="fit"><colgroup><col style="width:6%"><col style="width:9%"><col style="width:12%"><col style="width:22%"><col style="width:6%"><col style="width:12%"><col style="width:15%"><col style="width:18%"></colgroup>' +
-      '<thead><tr><th>Prior.</th><th>Primeira vez / novidade</th><th>CVE</th><th>O que é</th><th>CVSS</th><th>Sinais</th><th>Onde saiu</th><th>Tratamento</th></tr></thead><tbody>';
+      '<thead><tr><th>Prior.</th><th>Entrada / novidade</th><th>CVE</th><th>O que é</th><th>CVSS</th><th>Sinais</th><th>Onde saiu</th><th>Tratamento</th></tr></thead><tbody>';
     if (!rows.length) {
       $('radarBox').innerHTML = head + vazio(8, VULNS.length ? 'Amplie o período ou tire algum filtro.' : 'A primeira coleta multi-fonte ainda não rodou.') + '</tbody></table>';
       return;
@@ -687,7 +698,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         if (!fontes.length) srcHtml = '<span class="small">só NVD/KEV</span>';
         var oque = r.produto ? '<b>' + esc(r.produto) + '</b><div class="clamp small">' + esc(r.titulo || r.resumo) + '</div>'
                              : '<div class="clamp small">' + esc(r.resumo || (fontes[0] || {}).titulo || '') + '</div>';
-        return '<tr><td class="tc">' + pill(r.prioridade) + '</td><td class="c full" data-l="Primeira vez">' + fmt(r.primeira_vez, true) + novidade(r) + '</td>' +
+        return '<tr><td class="tc">' + pill(r.prioridade) + '</td><td class="c full" data-l="Entrada">' + fmt(r.primeira_vez, true) + novidade(r) + '</td>' +
           '<td class="c tc">' + link(r.link_nvd, r.cve) + '</td><td class="full" data-l="O que é">' + oque + '</td>' +
           '<td class="tc">' + cv(r.cvss, r.cvss_fonte) + '</td><td class="full" data-l="Sinais">' + sinais + '</td><td class="full" data-l="Onde saiu">' + srcHtml + '</td>' +
           '<td class="full" data-l="Tratamento"><div class="clamp">' + esc(r.tratamento) + '<br><span class="small">Regra: ' + esc(r.regra) + (r.kev && r.kev.prazo ? ' · prazo CISA ' + fmt(r.kev.prazo) : '') + '</span></div>' + MAIS + '</td></tr>';
