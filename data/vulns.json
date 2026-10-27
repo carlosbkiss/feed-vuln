@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-26T18:38:13Z",
+  "atualizado": "2026-10-27T10:45:16Z",
   "itens": [
     {
       "cve": "CVE-2026-114625",
@@ -76,7 +76,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       }
     },
     {
@@ -163,6 +163,14 @@
           "visto_em": "2026-10-26T10:40:08Z"
         },
         {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "PHP Memory Corruption Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-109618",
+          "publicado": "2026-10-26",
+          "visto_em": "2026-10-27T10:45:16Z"
+        },
+        {
           "id": "csn",
           "nome": "Cyber Security News",
           "titulo": "Hacker Exploits Critical PHP2Shell Flaws to Win $2,000 Bitcoin Challenge, Releases PoC",
@@ -179,12 +187,36 @@
           "visto_em": "2026-10-26T10:40:08Z"
         },
         {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-10-26T12:00:00Z",
+          "visto_em": "2026-10-27T10:45:16Z"
+        },
+        {
           "id": "csn",
           "nome": "Cyber Security News",
           "titulo": "PHP Releases New Windows Build Security Updates to Fix Critical HTTP2Shell Vulnerability",
           "link": "https://cybersecuritynews.com/php-http2shell-vulnerability/",
           "publicado": "2026-10-26T15:53:07Z",
           "visto_em": "2026-10-26T17:24:30Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Hackers Weaponize Public PHP2Shell Exploit Code to Target Universities and Business Websites",
+          "link": "https://cybersecuritynews.com/public-php2shell-exploit-code/",
+          "publicado": "2026-10-26T20:29:21Z",
+          "visto_em": "2026-10-27T10:45:16Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
+          "link": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
+          "publicado": "2026-10-27T04:37:59Z",
+          "visto_em": "2026-10-27T10:45:16Z"
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
@@ -196,7 +228,8 @@
       "nvd_checado_em": "2026-10-24T10:35:21Z",
       "elegivel_por": [
         "zero-day",
-        "CVSS ≥ 9"
+        "CVSS ≥ 9",
+        "KEV"
       ],
       "primeira_vez": "2026-10-21T07:00:00Z",
       "primeira_noticia": "2026-10-21T07:00:00Z",
@@ -211,14 +244,21 @@
         "data": "2026-10-26"
       },
       "poc": {
-        "qtd": 669,
+        "qtd": 686,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109618.json",
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
-      "ultima_atividade": "2026-10-26T15:53:07Z",
+      "ultima_atividade": "2026-10-27T04:37:59Z",
       "zero_day": true,
-      "zero_day_motivo": "BleepingComputer: exploração ativa relatada",
-      "escalado": true
+      "zero_day_motivo": "CISA KEV",
+      "escalado": true,
+      "kev": {
+        "adicionado": "2026-10-26",
+        "prazo": "2026-10-29",
+        "ransomware": "Unknown"
+      },
+      "produto": "PHP Group PHP",
+      "titulo": "PHP Memory Corruption Vulnerability"
     },
     {
       "cve": "CVE-2026-109619",
@@ -304,6 +344,14 @@
           "visto_em": "2026-10-26T10:40:08Z"
         },
         {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "PHP Stale Internal Request-State Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-109619",
+          "publicado": "2026-10-26",
+          "visto_em": "2026-10-27T10:45:16Z"
+        },
+        {
           "id": "csn",
           "nome": "Cyber Security News",
           "titulo": "Hacker Exploits Critical PHP2Shell Flaws to Win $2,000 Bitcoin Challenge, Releases PoC",
@@ -320,18 +368,35 @@
           "visto_em": "2026-10-26T10:40:08Z"
         },
         {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-10-26T12:00:00Z",
+          "visto_em": "2026-10-27T10:45:16Z"
+        },
+        {
           "id": "csn",
           "nome": "Cyber Security News",
           "titulo": "PHP Releases New Windows Build Security Updates to Fix Critical HTTP2Shell Vulnerability",
           "link": "https://cybersecuritynews.com/php-http2shell-vulnerability/",
           "publicado": "2026-10-26T15:53:07Z",
           "visto_em": "2026-10-26T17:24:30Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Hackers Weaponize Public PHP2Shell Exploit Code to Target Universities and Business Websites",
+          "link": "https://cybersecuritynews.com/public-php2shell-exploit-code/",
+          "publicado": "2026-10-26T20:29:21Z",
+          "visto_em": "2026-10-27T10:45:16Z"
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
       "elegivel_por": [
         "zero-day",
-        "CVSS ≥ 9"
+        "CVSS ≥ 9",
+        "KEV"
       ],
       "primeira_vez": "2026-10-21T07:00:00Z",
       "primeira_noticia": "2026-10-21T07:00:00Z",
@@ -342,7 +407,7 @@
       "publicado_nvd": "2026-10-21T14:17:09Z",
       "resumo": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed.…",
       "nvd_checado_em": "2026-10-23T12:22:11Z",
-      "ultima_atividade": "2026-10-26T15:53:07Z",
+      "ultima_atividade": "2026-10-26T20:29:21Z",
       "exibido_em": "2026-10-23T12:22:11Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -353,13 +418,20 @@
         "data": "2026-10-26"
       },
       "poc": {
-        "qtd": 23,
+        "qtd": 24,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109619.json",
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "zero_day": true,
-      "zero_day_motivo": "BleepingComputer: exploração ativa relatada",
-      "escalado": true
+      "zero_day_motivo": "CISA KEV",
+      "escalado": true,
+      "kev": {
+        "adicionado": "2026-10-26",
+        "prazo": "2026-10-29",
+        "ransomware": "Unknown"
+      },
+      "produto": "PHP Group PHP",
+      "titulo": "PHP Stale Internal Request-State Vulnerability"
     },
     {
       "cve": "CVE-2026-102764",
@@ -425,7 +497,7 @@
       "poc": {
         "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-102764.json",
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-16T12:00:00Z"
     },
@@ -502,7 +574,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110447.json",
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       }
     },
     {
@@ -569,7 +641,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76519.json",
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-14T17:19:10Z"
     },
@@ -636,7 +708,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-0322.json",
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-15T18:30:00Z"
     },
@@ -703,7 +775,7 @@
       "poc": {
         "qtd": 5,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-104935.json",
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-14T21:20:13Z"
     },
@@ -763,7 +835,7 @@
       "poc": {
         "qtd": 13,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-21589.json",
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-15T00:00:00Z"
     },
@@ -823,7 +895,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-105134.json",
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-14T00:00:00Z"
     },
@@ -882,7 +954,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-16T00:00:00Z"
     },
@@ -934,7 +1006,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       }
     },
     {
@@ -969,7 +1041,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-22T19:17:30Z",
       "epss": {
@@ -1155,7 +1227,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       }
     },
     {
@@ -1206,7 +1278,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       }
     },
     {
@@ -1257,7 +1329,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       }
     },
     {
@@ -1312,9 +1384,9 @@
         "data": "2026-10-26"
       },
       "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76466.json",
+        "checado": "2026-10-27T10:45:16Z"
       }
     },
     {
@@ -1354,7 +1426,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-20T22:20:11Z"
     },
@@ -1402,9 +1474,9 @@
         "data": "2026-10-26"
       },
       "poc": {
-        "qtd": 4,
+        "qtd": 5,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-106173.json",
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       }
     },
     {
@@ -1470,7 +1542,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-13T19:22:07Z"
     },
@@ -1543,7 +1615,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "epss": {
         "score": 0.0055,
@@ -1591,7 +1663,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-22T22:19:18Z",
       "epss": {
@@ -1632,7 +1704,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-22T11:17:04Z",
       "epss": {
@@ -1678,7 +1750,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-21T01:17:38Z"
     },
@@ -1719,7 +1791,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-20T22:20:38Z"
     },
@@ -1760,7 +1832,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-20T22:20:36Z"
     },
@@ -1801,7 +1873,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-20T22:20:26Z"
     },
@@ -1842,7 +1914,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-20T22:20:25Z"
     },
@@ -1883,7 +1955,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-20T22:20:25Z"
     },
@@ -1924,7 +1996,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -1965,7 +2037,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -2006,7 +2078,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -2047,7 +2119,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -2088,7 +2160,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2129,7 +2201,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2170,7 +2242,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2211,7 +2283,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2252,7 +2324,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2293,7 +2365,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-20T22:20:12Z"
     },
@@ -2334,7 +2406,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-26T10:40:08Z"
+        "checado": "2026-10-27T10:45:16Z"
       },
       "ultima_atividade": "2026-10-20T22:18:02Z"
     },
@@ -2866,6 +2938,24 @@
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "BleepingComputer",
+      "titulo": "Apple backports CoreGraphics zero-day patches to older iPhones",
+      "link": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
+      "publicado": "2026-10-27T10:36:12Z"
+    },
+    {
+      "fonte": "Cyber Security News",
+      "titulo": "OpenAI Unveils GPT-6.1 Terra, a Faster AI Model With Critical Cybersecurity Capabilities",
+      "link": "https://cybersecuritynews.com/openai-unveils-gpt-6-1-terra/",
+      "publicado": "2026-10-27T08:25:49Z"
+    },
+    {
+      "fonte": "BleepingComputer",
+      "titulo": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/",
+      "publicado": "2026-10-27T08:20:54Z"
+    },
     {
       "fonte": "Cybernews",
       "titulo": "Fortinet says patch now, details later, but experts warn of hacks before Nov 10 disclosure",

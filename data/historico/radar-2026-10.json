@@ -336,7 +336,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.01,
-    "poc_qtd": 4,
+    "poc_qtd": 5,
     "fontes": [
       {
         "nome": "NVD",
@@ -446,7 +446,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.9998,
-    "poc_qtd": 669,
+    "poc_qtd": 686,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -527,6 +527,11 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/public-php2shell-exploit-code/",
         "publicado": "2026-10-26T20:29:21Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
+        "publicado": "2026-10-27T04:37:59Z"
       }
     ],
     "prioridade_max": "P0"
@@ -555,7 +560,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 1.0,
-    "poc_qtd": 23,
+    "poc_qtd": 24,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -1086,7 +1091,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0042,
-    "poc_qtd": 0,
+    "poc_qtd": 1,
     "fontes": [
       {
         "nome": "Cisco PSIRT",
