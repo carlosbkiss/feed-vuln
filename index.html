@@ -330,7 +330,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <div class="fbar filters" id="fRad" role="group" aria-label="Filtrar radar">
       <div class="frow">
         <input class="fsearch" type="search" data-q placeholder="Buscar CVE, produto ou fabricante" aria-label="Buscar no radar">
-        <div class="fg"><span class="fl">Período</span>
+        <div class="fg"><span class="fl" title="Conta a última novidade de cada CVE (nota, KEV ou notícia), não só a primeira aparição">Período (última novidade)</span>
           <button class="chip" type="button" data-w="3" aria-pressed="false">72h</button>
           <button class="chip" type="button" data-w="7" aria-pressed="false">7 dias</button>
           <button class="chip" type="button" data-w="14" aria-pressed="true">14 dias</button>
@@ -633,6 +633,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   // ---------- radar
   var VULNS = [], fRad = novoFiltro(14);
   function fontesTexto(r){ return (r.fontes || []).filter(function(f){ return f.id !== 'nvd' && f.id !== 'kev'; }); }
+  function novidade(r){
+    var u = r.ultima_atividade, p = r.primeira_vez;
+    if (!u || !p || String(u).slice(0, 10) === String(p).slice(0, 10)) return '';
+    return '<div class="small nov" title="última novidade: nota, KEV ou notícia nova">novidade ' + fmt(u, true) + '</div>';
+  }
   function renderRadar(){
     var lim = Date.now() - fRad.w * 86400000, q = norm(fRad.q);
     var base = VULNS.filter(function(r){
@@ -647,8 +652,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       return true;
     });
     var rows = algum(fRad.p) ? base.filter(function(r){ return fRad.p[r.prioridade]; }) : base.slice();
-    // ordena pela mesma data mostrada na coluna "Primeira vez" (antes usava ultima_atividade e a lista parecia fora de ordem)
-    var t = function(r){ return new Date(r.primeira_vez || r.detectado || r.ultima_atividade).getTime() || 0; };
+    // período e "Mais recente" usam a última novidade (nota, KEV, notícia); a coluna mostra essa data quando difere da primeira vez
+    var t = function(r){ return new Date(r.ultima_atividade || r.primeira_vez || r.detectado).getTime() || 0; };
     rows.sort(function(a, b){
       if (fRad.o === 'rec') return t(b) - t(a) || (ORDEM_P[a.prioridade] - ORDEM_P[b.prioridade]);
       if (fRad.o === 'cvss') return (parseFloat(b.cvss) || 0) - (parseFloat(a.cvss) || 0) || t(b) - t(a);
@@ -659,7 +664,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     $('navRad').textContent = VULNS.filter(function(r){ return r.prioridade === 'P0'; }).length + ' P0';
     pintarFiltro($('fRad'), fRad, 14, base, rows.length, VULNS.length);
     var head = '<table class="fit"><colgroup><col style="width:6%"><col style="width:9%"><col style="width:12%"><col style="width:22%"><col style="width:6%"><col style="width:12%"><col style="width:15%"><col style="width:18%"></colgroup>' +
-      '<thead><tr><th>Prior.</th><th>Primeira vez</th><th>CVE</th><th>O que é</th><th>CVSS</th><th>Sinais</th><th>Onde saiu</th><th>Tratamento</th></tr></thead><tbody>';
+      '<thead><tr><th>Prior.</th><th>Primeira vez / novidade</th><th>CVE</th><th>O que é</th><th>CVSS</th><th>Sinais</th><th>Onde saiu</th><th>Tratamento</th></tr></thead><tbody>';
     if (!rows.length) {
       $('radarBox').innerHTML = head + vazio(8, VULNS.length ? 'Amplie o período ou tire algum filtro.' : 'A primeira coleta multi-fonte ainda não rodou.') + '</tbody></table>';
       return;
@@ -682,7 +687,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         if (!fontes.length) srcHtml = '<span class="small">só NVD/KEV</span>';
         var oque = r.produto ? '<b>' + esc(r.produto) + '</b><div class="clamp small">' + esc(r.titulo || r.resumo) + '</div>'
                              : '<div class="clamp small">' + esc(r.resumo || (fontes[0] || {}).titulo || '') + '</div>';
-        return '<tr><td class="tc">' + pill(r.prioridade) + '</td><td class="c full" data-l="Primeira vez">' + fmt(r.primeira_vez, true) + '</td>' +
+        return '<tr><td class="tc">' + pill(r.prioridade) + '</td><td class="c full" data-l="Primeira vez">' + fmt(r.primeira_vez, true) + novidade(r) + '</td>' +
           '<td class="c tc">' + link(r.link_nvd, r.cve) + '</td><td class="full" data-l="O que é">' + oque + '</td>' +
           '<td class="tc">' + cv(r.cvss, r.cvss_fonte) + '</td><td class="full" data-l="Sinais">' + sinais + '</td><td class="full" data-l="Onde saiu">' + srcHtml + '</td>' +
           '<td class="full" data-l="Tratamento"><div class="clamp">' + esc(r.tratamento) + '<br><span class="small">Regra: ' + esc(r.regra) + (r.kev && r.kev.prazo ? ' · prazo CISA ' + fmt(r.kev.prazo) : '') + '</span></div>' + MAIS + '</td></tr>';
