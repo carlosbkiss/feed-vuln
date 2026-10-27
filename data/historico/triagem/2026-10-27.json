@@ -286,7 +286,7 @@
       "exploracao": "Não confirmada",
       "prioridade": "P0",
       "status": "Novo",
-      "tratamento": "Subir para 19.5.1, 19.4.3 ou 19.3.6; o patch de 12/out não cobre. Se a instância é exposta, rotacionar tokens de CI/CD e deploy keys. Ruby 4.0.9/3.4.12/3.3.13 corrigem o Onigmo, mas GitLab traz Ruby próprio: vale a versão do GitLab (19.5.1, 19.4.3, 19.3.6 etc.).",
+      "tratamento": "Subir para 19.5.1, 19.4.3 ou 19.3.6 (o patch de 12/out não cobre); o GitLab traz Ruby próprio, então só atualizar o Ruby do servidor não resolve. Se a instância é exposta, rotacionar tokens de CI/CD e deploy keys.",
       "fontes": [
         {
           "nome": "Eastern Herald",
