@@ -1,6 +1,6 @@
 {
   "dia": "2026-10-26",
-  "foto_em": "2026-10-26T23:08:55Z",
+  "foto_em": "2026-10-27T02:06:24Z",
   "metricas": {
     "janela_dias": 7,
     "elegiveis": 50,
@@ -12,8 +12,8 @@
     "epss_alto": 10,
     "novos_7d": 41,
     "radar_dias": 14,
-    "fora_do_escopo": 27,
-    "artigos": 360,
+    "fora_do_escopo": 28,
+    "artigos": 363,
     "artigos_com_cve": 108,
     "keyword_rn004": 79,
     "keyword_rn004_util": 21,
@@ -25,12 +25,12 @@
     "antes_da_nota_n": 5,
     "antes_da_nota_mediana_h": 8.8,
     "aguardando_nota": 9,
-    "kev_semana": 8,
-    "kev_relevantes": 2,
-    "kev_com_noticia_antes": 8,
+    "kev_semana": 10,
+    "kev_relevantes": 4,
+    "kev_com_noticia_antes": 10,
     "kev_cobertura_pct": 1.0,
     "sem_cve_exploracao": 6,
-    "fontes_ok": 13,
+    "fontes_ok": 12,
     "fontes_total": 13
   },
   "fontes": [
@@ -50,7 +50,7 @@
       "id": "csn",
       "nome": "Cyber Security News",
       "grupo": "noticias",
-      "estado": "ok",
+      "estado": "erro",
       "papel": "amplia cobertura",
       "artigos": 43,
       "cves_elegiveis": 9,
@@ -76,7 +76,7 @@
       "grupo": "noticias",
       "estado": "ok",
       "papel": "sem retorno",
-      "artigos": 28,
+      "artigos": 29,
       "cves_elegiveis": 0,
       "primeira": 0,
       "exclusivas": 0,
@@ -88,7 +88,7 @@
       "grupo": "noticias",
       "estado": "ok",
       "papel": "sem retorno",
-      "artigos": 22,
+      "artigos": 23,
       "cves_elegiveis": 0,
       "primeira": 0,
       "exclusivas": 0,
@@ -112,7 +112,7 @@
       "grupo": "noticias",
       "estado": "ok",
       "papel": "sem retorno",
-      "artigos": 71,
+      "artigos": 72,
       "cves_elegiveis": 0,
       "primeira": 0,
       "exclusivas": 0,
@@ -215,9 +215,9 @@
       "atraso_mediano_h": null
     }
   ],
-  "rodadas": 8,
+  "rodadas": 9,
   "falhas_por_fonte": {
-    "Cyber Security News": 2
+    "Cyber Security News": 3
   },
   "p0": [
     "CVE-2026-114625",

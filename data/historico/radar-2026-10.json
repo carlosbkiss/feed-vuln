@@ -424,16 +424,21 @@
   },
   "CVE-2026-109618": {
     "cve": "CVE-2026-109618",
-    "produto": "",
-    "titulo": "",
+    "produto": "PHP Group PHP",
+    "titulo": "PHP Memory Corruption Vulnerability",
     "cvss": 9.8,
     "prioridade": "P0",
     "elegivel_por": [
       "zero-day",
-      "CVSS ≥ 9"
+      "CVSS ≥ 9",
+      "KEV"
     ],
     "zero_day": true,
-    "kev": null,
+    "kev": {
+      "adicionado": "2026-10-26",
+      "prazo": "2026-10-29",
+      "ransomware": "Unknown"
+    },
     "primeira_vez": "2026-10-21T07:00:00Z",
     "primeira_noticia": "2026-10-21T07:00:00Z",
     "publicado_nvd": "2026-10-21T14:17:09Z",
@@ -494,6 +499,11 @@
         "publicado": "2026-10-25T17:19:46Z"
       },
       {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-109618",
+        "publicado": "2026-10-26"
+      },
+      {
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/php2shell-flaws-exploited/",
         "publicado": "2026-10-26T03:41:52Z"
@@ -523,16 +533,21 @@
   },
   "CVE-2026-109619": {
     "cve": "CVE-2026-109619",
-    "produto": "",
-    "titulo": "",
+    "produto": "PHP Group PHP",
+    "titulo": "PHP Stale Internal Request-State Vulnerability",
     "cvss": 9.2,
     "prioridade": "P0",
     "elegivel_por": [
       "zero-day",
-      "CVSS ≥ 9"
+      "CVSS ≥ 9",
+      "KEV"
     ],
     "zero_day": true,
-    "kev": null,
+    "kev": {
+      "adicionado": "2026-10-26",
+      "prazo": "2026-10-29",
+      "ransomware": "Unknown"
+    },
     "primeira_vez": "2026-10-21T07:00:00Z",
     "primeira_noticia": "2026-10-21T07:00:00Z",
     "publicado_nvd": "2026-10-21T14:17:09Z",
@@ -591,6 +606,11 @@
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
         "publicado": "2026-10-25T17:19:46Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-109619",
+        "publicado": "2026-10-26"
       },
       {
         "nome": "Cyber Security News",
