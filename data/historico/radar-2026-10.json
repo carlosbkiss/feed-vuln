@@ -780,7 +780,7 @@
     "exibido_em": "2026-10-26T17:24:30Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.5548,
+    "epss_max": 0.8799,
     "poc_qtd": 59,
     "fontes": [
       {
@@ -1093,7 +1093,7 @@
     "exibido_em": "2026-10-28T10:50:56Z",
     "aguardando_nota_desde": "2026-10-23T03:41:41Z",
     "nota_chegou_em": "2026-10-28T10:50:56Z",
-    "epss_max": 0.0017,
+    "epss_max": 0.0038,
     "poc_qtd": 0,
     "fontes": [
       {
