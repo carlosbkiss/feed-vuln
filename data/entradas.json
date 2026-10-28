@@ -1,7 +1,43 @@
 {
-  "atualizado": "2026-10-28T14:41:45Z",
+  "atualizado": "2026-10-28T18:39:36Z",
   "janela": "22 a 28/out/2026",
   "itens": [
+    {
+      "data": "2026-10-28",
+      "cve": "CVE-2026-111497",
+      "produto": "VMware SDDC Manager (VCF) — VMSA-2026-0008, Brotli",
+      "cvss": 9.8,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (Brotli no KEV em 27/10; sem relato no SDDC Manager)",
+      "prioridade": "P1",
+      "tratamento": "SDDC Manager 9.1.1 crítico (9.8); 9.0.x, 9.1.0 e 5.2.x importantes. Patch ainda pendente: aplicar os workarounds KB460732 (9.1.1) e KB460734 (demais) e limitar o acesso a hosts de administração confiáveis.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/vmware-sddc-manager-vulnerability-cve-2026-111497/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-27",
+      "cve": "CVE-2026-103594 / CVE-2026-93865 / CVE-2026-93866 / CVE-2026-93857 / CVE-2026-112709 / CVE-2026-112710 / CVE-2026-103593",
+      "produto": "WatchGuard Firebox (Fireware OS)",
+      "cvss": 9.5,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Sete falhas críticas, várias pré-autenticação (Access Portal, SIP proxy, FireCluster, autenticação AD). Atualizar para Fireware 2026.4, 12.12.4 ou 12.5.22 (conferir no PSIRT da WatchGuard); até lá, desligar Access Portal e SIP proxy onde não forem usados.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/watchguard-fireware-os-vulnerabilities-2/"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-10-27",
       "cve": "CVE-2026-101767",
