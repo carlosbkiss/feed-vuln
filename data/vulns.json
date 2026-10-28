@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-28T02:18:05Z",
+  "atualizado": "2026-10-28T10:50:56Z",
   "itens": [
     {
       "cve": "CVE-2026-114625",
@@ -76,7 +76,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       }
     },
     {
@@ -201,6 +201,14 @@
           "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20node.js%20Affecting%20Cisco%20Products:%20October%202026%26vs_k=1",
           "publicado": "2026-10-27T21:30:00Z",
           "visto_em": "2026-10-28T02:18:05Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges",
+          "link": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
+          "publicado": "2026-10-28T05:42:26Z",
+          "visto_em": "2026-10-28T10:50:56Z"
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
@@ -218,7 +226,7 @@
       "publicado_nvd": "2026-10-22T14:17:37Z",
       "resumo": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause…",
       "nvd_checado_em": "2026-10-23T12:22:11Z",
-      "ultima_atividade": "2026-10-27T21:30:00Z",
+      "ultima_atividade": "2026-10-28T05:42:26Z",
       "exibido_em": "2026-10-26T17:24:30Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -382,6 +390,14 @@
           "link": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
           "publicado": "2026-10-27T04:37:59Z",
           "visto_em": "2026-10-27T10:45:16Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns of PHP2Shell Vulnerabilities Actively Exploited in Attacks",
+          "link": "https://cybersecuritynews.com/php2shell-vulnerabilities-actively-exploited/",
+          "publicado": "2026-10-28T09:26:13Z",
+          "visto_em": "2026-10-28T10:50:56Z"
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
@@ -409,11 +425,11 @@
         "data": "2026-10-27"
       },
       "poc": {
-        "qtd": 686,
+        "qtd": 701,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109618.json",
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
-      "ultima_atividade": "2026-10-27T04:37:59Z",
+      "ultima_atividade": "2026-10-28T09:26:13Z",
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
       "escalado": true,
@@ -555,6 +571,14 @@
           "link": "https://cybersecuritynews.com/public-php2shell-exploit-code/",
           "publicado": "2026-10-26T20:29:21Z",
           "visto_em": "2026-10-27T10:45:16Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns of PHP2Shell Vulnerabilities Actively Exploited in Attacks",
+          "link": "https://cybersecuritynews.com/php2shell-vulnerabilities-actively-exploited/",
+          "publicado": "2026-10-28T09:26:13Z",
+          "visto_em": "2026-10-28T10:50:56Z"
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
@@ -572,7 +596,7 @@
       "publicado_nvd": "2026-10-21T14:17:09Z",
       "resumo": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed.…",
       "nvd_checado_em": "2026-10-23T12:22:11Z",
-      "ultima_atividade": "2026-10-26T20:29:21Z",
+      "ultima_atividade": "2026-10-28T09:26:13Z",
       "exibido_em": "2026-10-23T12:22:11Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -583,9 +607,9 @@
         "data": "2026-10-27"
       },
       "poc": {
-        "qtd": 24,
+        "qtd": 25,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109619.json",
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
@@ -662,7 +686,7 @@
       "poc": {
         "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-102764.json",
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-16T12:00:00Z"
     },
@@ -739,7 +763,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110447.json",
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       }
     },
     {
@@ -806,7 +830,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76519.json",
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-14T17:19:10Z"
     },
@@ -873,7 +897,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-0322.json",
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-15T18:30:00Z"
     },
@@ -933,7 +957,7 @@
       "poc": {
         "qtd": 13,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-21589.json",
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-15T00:00:00Z"
     },
@@ -993,7 +1017,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-105134.json",
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-14T00:00:00Z"
     },
@@ -1130,7 +1154,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-16T00:00:00Z"
     },
@@ -1182,7 +1206,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       }
     },
     {
@@ -1217,7 +1241,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-22T19:17:30Z",
       "epss": {
@@ -1274,7 +1298,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       }
     },
     {
@@ -1325,7 +1349,58 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-76301",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-76301",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76301",
+          "publicado": "2026-10-21T23:17:28Z",
+          "visto_em": "2026-10-23T12:27:14Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
+          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
+          "publicado": "2026-10-23T03:41:41Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-21T23:17:28Z",
+      "primeira_noticia": "2026-10-23T03:41:41Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76301",
+      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
+      "ultima_atividade": "2026-10-23T03:41:41Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-21T23:17:28Z",
+      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
+      "nvd_checado_em": "2026-10-28T10:50:56Z",
+      "nota_chegou_em": "2026-10-28T10:50:56Z",
+      "exibido_em": "2026-10-28T10:50:56Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "epss": {
+        "score": 0.0017,
+        "percentil": 0.0634,
+        "data": "2026-10-27"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-28T10:50:56Z"
       }
     },
     {
@@ -1376,7 +1451,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       }
     },
     {
@@ -1433,7 +1508,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76466.json",
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       }
     },
     {
@@ -1473,7 +1548,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-20T22:20:11Z"
     },
@@ -1551,7 +1626,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "epss": {
         "score": 0.0055,
@@ -1599,7 +1674,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-22T22:19:18Z",
       "epss": {
@@ -1640,7 +1715,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-22T11:17:04Z",
       "epss": {
@@ -1686,7 +1761,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-21T01:17:38Z"
     },
@@ -1727,7 +1802,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-20T22:20:38Z"
     },
@@ -1768,7 +1843,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-20T22:20:36Z"
     },
@@ -1809,7 +1884,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-20T22:20:26Z"
     },
@@ -1850,7 +1925,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-20T22:20:25Z"
     },
@@ -1891,7 +1966,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-20T22:20:25Z"
     },
@@ -1932,7 +2007,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -1973,7 +2048,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -2014,7 +2089,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -2055,7 +2130,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -2096,7 +2171,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2137,7 +2212,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2178,7 +2253,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2219,7 +2294,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2260,7 +2335,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2301,7 +2376,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-20T22:20:12Z"
     },
@@ -2342,7 +2417,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T10:45:16Z"
+        "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-20T22:18:02Z"
     },

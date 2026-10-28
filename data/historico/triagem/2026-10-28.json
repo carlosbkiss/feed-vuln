@@ -1,0 +1,728 @@
+{
+  "atualizado": "2026-10-28T10:50:38Z",
+  "janela": "22 a 28/out/2026",
+  "itens": [
+    {
+      "data": "2026-10-27",
+      "cve": "CVE-2026-101767",
+      "produto": "Oracle E-Business Suite 12.2.3 a 12.2.15",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Ativa (sondagens em honeypot em 27/10)",
+      "prioridade": "P0",
+      "tratamento": "SQL injection sem login que pode virar execução de comando com acesso a dados financeiros e de RH. Aplicar o Oracle CPU de out/2026; até lá, tirar o servlet /OA_HTML/AppsTCFServer do allowlist do URL firewall e restringir o EBS a redes confiáveis.",
+      "fontes": [
+        {
+          "nome": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/oracle-ebs-rce-exploited"
+        },
+        {
+          "nome": "Rescana",
+          "url": "https://www.rescana.com/post/oracle-e-business-suite-cve-2026-101767-prepare-now"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-27",
+      "cve": "CVE-2026-48356",
+      "produto": "Adobe Commerce e Magento (PolyShell)",
+      "cvss": 9.3,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (centenas de lojas invadidas)",
+      "prioridade": "P2",
+      "tratamento": "Upload de arquivo perigoso explorado em lojas online. Se houver Magento no parque (marketplace, programa de pontos), aplicar o patch da Adobe (versões a confirmar no boletim) e revisar blocos CMS por loaders injetados.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-48356"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-26",
+      "cve": "CVE-2026-111497",
+      "produto": "Palo Alto PAN-OS (Brotli)",
+      "cvss": 9.2,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (Brotli no KEV em 27/10; sem relato no PAN-OS)",
+      "prioridade": "P0",
+      "tratamento": "Brotli entrou no KEV em 27/10. Só expõe com inspeção Brotli e decriptação TLS ligadas. Aplicar hotfix 12.2.4-h1, 12.1.10-h3, 11.2.16-h1 ou equivalente (vários coincidem com os do PHP2Shell); se não der, desligar a inspeção Brotli.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/pan-os-brotli-vulnerability-cve-2026-111497/"
+        },
+        {
+          "nome": "Instait (resumo patches out/2026)",
+          "url": "https://instait.ie/blog/security-patches-october-2026.html"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111497"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-26",
+      "cve": "CVE-2026-110720",
+      "produto": "HashiCorp Consul (consul-k8s)",
+      "cvss": 9.9,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Bypass de autorização entre namespaces nas regras de ACL, a partir de conta com pouco privilégio, pode tomar a service mesh. Subir consul-k8s para 1.8.18, 2.0.4 ou 2.1.0 (afeta a partir da 0.42.0).",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/hashicorp-consul-k8s-vulnerability-cve-2026-110720/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-25",
+      "cve": "CVE-2026-111497 / CVE-2026-114148",
+      "produto": ".NET 8 a 11 e libbrotli embutida (Brotli)",
+      "cvss": null,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (Brotli no KEV em 27/10)",
+      "prioridade": "P1",
+      "tratamento": "Brotli entrou no KEV em 27/10. Subir .NET para 8.0.33, 9.0.22 ou 10.0.14 e reconstruir apps self-contained e imagens; .NET Framework não é afetado. Só expõe quem descomprime Brotli (ASP.NET Core, HttpClient). Revisar também Envoy, Istio e libs Python. CVSS no .NET a confirmar.",
+      "fontes": [
+        {
+          "nome": "Security Magazine",
+          "url": "https://www.securitymagazine.com/articles/102699-microsoft-releases-emergency-net-patches"
+        },
+        {
+          "nome": "lilting.ch (produtos afetados)",
+          "url": "https://lilting.ch/en/articles/brotli-cve-2026-111497-python-curl-git"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-23",
+      "cve": "CVE-2026-109618 / CVE-2026-109619",
+      "produto": "Palo Alto PAN-OS, Panorama e WF-500 (PHP2Shell)",
+      "cvss": 8.7,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (CVE no KEV em 26/10)",
+      "prioridade": "P0",
+      "tratamento": "Falha do PHP alcançável pela interface de gestão (web e XML API); já há sondagens de PHP2Shell contra GlobalProtect. Aplicar hotfix 12.2.4-h1, 12.1.10-h3, 11.2.16-h1, 11.1.16-h4 ou 10.2.18-h13; restringir a gestão a jump host. Versões de Panorama/WF-500: a confirmar no advisory.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/pan-os-php2shell-cve-2026-109618/"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html"
+        },
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-23",
+      "cve": "CVE-2026-110447",
+      "produto": "Collabora Online (CODE embutido no Nextcloud)",
+      "cvss": 9.2,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (webshells desde set/2026)",
+      "prioridade": "P2",
+      "status": "Novo",
+      "tratamento": "Só afeta o app richdocumentscode do Nextcloud; subir para 26.4.303 ou remover o app (desativar não basta). Se existir no parque, procurar webshells PHP.",
+      "fontes": [
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/"
+        },
+        {
+          "nome": "CISA KEV 23/out",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-23",
+      "cve": "CVE-2026-106173",
+      "produto": "FortiSIEM (7.0 a 7.5.0)",
+      "cvss": 9.4,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Ativa (relatada pelo Cyber Centre do Canadá em 23/10)",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "Subir FortiSIEM para 7.5.1 ou 7.6; ramos 7.0 a 7.4 também constam no CVE, verificar caminho de migração. Até lá, liberar a porta TCP 27918 só entre nós do cluster e checar alterações em /opt/charting/redishb.sh e phLicenseTool.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/fortisiem-cve-2026-106173-exploited-poc/"
+        },
+        {
+          "nome": "AICybr",
+          "url": "https://aicybr.com/blog/fortisiem-cve-2026-106173-patch-exposure-incident-response"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-23",
+      "cve": "CVE-2026-109618 / CVE-2026-109619",
+      "produto": "Citrix NetScaler ADC e Gateway (portal de gestão em PHP)",
+      "cvss": null,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (CVE no KEV em 26/10)",
+      "prioridade": "P0",
+      "tratamento": "Todas as versões suportadas usam o PHP afetado no NSIP, SNIP com gestão e Cluster IP; ainda sem build corrigido. Restringir GUI/API de gestão a jump hosts por ACL e acompanhar o boletim da Citrix para o patch.",
+      "fontes": [
+        {
+          "nome": "Kraft Kennedy (resumo do boletim Citrix)",
+          "url": "https://www.kraftkennedy.com/citrix-security-advisory-for-cve-2026-109618-and-cve-2026-109619/"
+        },
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-23",
+      "cve": "CVE-2026-115560",
+      "produto": "PHP (session upload progress)",
+      "cvss": null,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Nova RCE sem patch, só em configuração incomum (serialize_handler trocado em runtime antes do session_start). Os patches de 21/10 não cobrem; manter session.upload_progress.enabled=0. CVSS a confirmar.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html"
+        },
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-22",
+      "cve": "CVE-2026-79844 / -79845 / -79846 / -79847 / -79848 / -79849 / -79850 / -79851",
+      "produto": "HPE Aruba AOS-8 e AOS-10 (controladoras, gateways, APs)",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Oito RCE/bypass sem login no Wi-Fi corporativo. Subir para AOS 10.8.1.2, 10.7.2.7, 10.4.1.14, 8.13.3.1 ou 8.10.0.24 (versões fora de suporte ficam sem correção); até lá, isolar CLI e web de gestão em VLAN dedicada.",
+      "fontes": [
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/"
+        },
+        {
+          "nome": "pwn.watch",
+          "url": "https://pwn.watch/i/hpe-aruba-aos-critical-rce-oct-2026"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-22",
+      "cve": "CVE-2026-114625",
+      "produto": "Arista VeloCloud Orchestrator (on-prem)",
+      "cvss": 9.9,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa",
+      "prioridade": "P0",
+      "status": "Novo",
+      "tratamento": "SQL injection que dá superusuário com login só-leitura. Subir para 5.2.3.18, 6.1.3.10 ou 6.4.2.12, restringir a interface a redes de gestão e revisar ações de admin recentes.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html"
+        },
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/"
+        },
+        {
+          "nome": "CISA KEV 23/out",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-22",
+      "cve": "sem CVE (Fortinet, divulgação em 10/nov)",
+      "produto": "FortiOS, FortiManager, FortiAnalyzer, FortiMail, FortiAuthenticator",
+      "cvss": null,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não confirmada",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "Correções silenciosas de 21-22/out para falhas críticas, com detalhes só em 10/nov. Atualizar já os equipamentos expostos (builds a confirmar no PSIRT; citadas FortiOS 8.0.2, 7.6.8, 7.4.13, 7.2.14), tirar a gestão da internet; vira P0 em 10/nov ou se surgir exploração.",
+      "fontes": [
+        {
+          "nome": "Cybernews",
+          "url": "https://cybernews.com/security/fortinet-critical-flaws-patches-november-disclosure/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-22",
+      "cve": "CVE-2026-115547 / CVE-2026-115546",
+      "produto": "Okta Access Gateway",
+      "cvss": 9.1,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "Subir para OAG 2026.44.0, que traz estas correções e o PHP sem PHP2Shell. Revisar logins no Admin Console.",
+      "fontes": [
+        {
+          "nome": "Okta (CVE-2026-115547)",
+          "url": "https://trust.okta.com/security-advisories/command-execution-via-admin-console-input-in-okta-access-gateway-cve-2026-115547"
+        },
+        {
+          "nome": "Okta (CVE-2026-115546)",
+          "url": "https://trust.okta.com/security-advisories/authentication-source-verification-issue-in-okta-access-gateway-cve-2026-115546"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-22",
+      "cve": "CVE-2022-51026",
+      "produto": "Bytebase (gestão de banco de dados)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "status": "Novo",
+      "tratamento": "Login como qualquer usuário sem senha, falha antiga só agora publicada. Afeta 0.12.0 até antes de 1.0.1; se a ferramenta existir no parque, atualizar e tirar da rede aberta.",
+      "fontes": [
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-51026"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-22",
+      "cve": "CVE-2026-83938",
+      "produto": "Azure Kubernetes Configuration Service",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "status": "Novo",
+      "tratamento": "Serviço gerenciado da Microsoft; ação do cliente a confirmar no MSRC. Verificar se há clusters AKS usando a extensão.",
+      "fontes": [
+        {
+          "nome": "MSRC",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "cve": "CVE-2026-110264",
+      "produto": "GitLab CE/EE self-managed",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não confirmada",
+      "prioridade": "P0",
+      "status": "Novo",
+      "tratamento": "Subir para 19.5.1, 19.4.3, 19.3.6, 19.2.9, 19.1.9, 19.0.10 ou 18.11.13 (o patch de 12/out não cobre; 19.4.3 e 19.3.6 param instância de nó único). O GitLab traz Ruby próprio; se a instância é exposta, rotacionar tokens de CI/CD e deploy keys.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html"
+        },
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/gitlab-critical-patch-release-cve-2026-110264/"
+        },
+        {
+          "nome": "The Hacker News (Ruby)",
+          "url": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "cve": "CVE-2026-109618 / CVE-2026-109619",
+      "produto": "PHP 8.2 a 8.5 (PHP2Shell)",
+      "cvss": 9.8,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 26/10; RCE em honeypot)",
+      "prioridade": "P0",
+      "status": "Novo",
+      "tratamento": "Entrou no KEV em 26/10 com RCE confirmada. Subir para PHP 8.5.12, 8.4.27, 8.3.36 ou 8.2.35 (inclui PHP embutido em appliances e imagens de contêiner); se não der, aplicar a mitigação do PHP e caçar webshells.",
+      "fontes": [
+        {
+          "nome": "CERT-EU",
+          "url": "https://cert.europa.eu/publications/security-advisories/2026-018/pdf"
+        },
+        {
+          "nome": "BleepingComputer",
+          "url": "https://bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "cve": "CVE-2026-76473 / CVE-2026-76474",
+      "produto": "Cisco Unified CM, Unity Connection, IM&P e Emergency Responder",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "Pacote de hardening da telefonia corporativa, falhas achadas pela própria Cisco. Subir a versão 15 para 15SU5; versão 14 precisa migrar. Sem workaround: restringir as interfaces de gestão à rede de voz.",
+      "fontes": [
+        {
+          "nome": "Cisco PSIRT",
+          "url": "https://www.cisco.com/c/en/us/support/docs/csa/cisco-sa-voice-hardening-twgbH9e3.html"
+        },
+        {
+          "nome": "Penligent (resumo Cisco out/2026)",
+          "url": "https://www.penligent.ai/hackinglabs/cisco-october-2026-security-updates/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "cve": "CVE-2026-20236 / CVE-2026-20043",
+      "produto": "Snort 3 em Cisco Secure Firewall (FTD), UTD no IOS XE, Cyber Vision",
+      "cvss": 9.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "Firewalls de borda com inspeção Snort 3. Subir FTD para 7.2.12, 7.4.8, 7.6.6, 7.7.13 ou 10.0.2 (UTD: 17.12.8, 17.15.6, 17.18.5). Meraki MX online e nuvem já foram corrigidos; checar MX offline.",
+      "fontes": [
+        {
+          "nome": "Cisco PSIRT",
+          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-snort3-ybgmhTQe?emailclick=CNSemail"
+        },
+        {
+          "nome": "Penligent (resumo Cisco out/2026)",
+          "url": "https://www.penligent.ai/hackinglabs/cisco-october-2026-security-updates/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "cve": "CVE-2026-76531",
+      "produto": "Splunk SOAR",
+      "cvss": 9.9,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "Exige conta de baixo privilégio, mas o SOAR guarda credenciais de muitas integrações do SOC. Subir para 8.7.0 (advisory SVD-2026-1011) e revisar contas com acesso.",
+      "fontes": [
+        {
+          "nome": "Strix",
+          "url": "https://www.strix.ai/cve/CVE-2026-76531"
+        },
+        {
+          "nome": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "cve": "CVE-2026-76466",
+      "produto": "Cisco Expressway (Core/Edge)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "Comando como root sem login quando o cluster usa TLS Verify Mode. Subir para X15.5.20 (X14 ou anterior exige migração); sem workaround. Expressway Edge exposto sobe para P0.",
+      "fontes": [
+        {
+          "nome": "Cisco PSIRT",
+          "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Expressway%20Series%20Remote%20Code%20Execution%20Vulnerability%26vs_k=1"
+        },
+        {
+          "nome": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/"
+        },
+        {
+          "nome": "Penligent (resumo Cisco out/2026)",
+          "url": "https://www.penligent.ai/hackinglabs/cisco-october-2026-security-updates/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "cve": "CVE-2026-111497",
+      "produto": "Node.js (Node2Shell, Brotli)",
+      "cvss": 9.2,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 27/10; tentativas em honeypot)",
+      "prioridade": "P0",
+      "status": "Novo",
+      "tratamento": "Entrou no KEV em 27/10 e já há tráfego de exploit mirando Node 24. Atualizar para 26.12.1, 24.22.1 ou 22.23.4 e reconstruir imagens; Node 20 não tem correção. Paliativo: recusar Content-Encoding br na borda.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111497"
+        },
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/nodejs-security-release-october-2026/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "cve": "CVE-2026-76299 / CVE-2026-76302",
+      "produto": "Splunk Enterprise",
+      "cvss": 9.9,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "status": "Novo",
+      "tratamento": "Exige conta de baixo privilégio. Subir para 10.4.4, 10.2.8, 10.0.11 ou 9.4.16; não há workaround.",
+      "fontes": [
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76299"
+        },
+        {
+          "nome": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/"
+        },
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76302"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "cve": "CVE-2026-105944",
+      "produto": "Apache Pulsar Manager",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "status": "Novo",
+      "tratamento": "Confirmar uso em mensageria; se existir, corrigir no ciclo de 30 dias e tirar o console da rede aberta.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/cve-watchtower/cve-2026-105944/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "cve": "CVE-2026-96639",
+      "produto": "Pillow (Python)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "status": "Novo",
+      "tratamento": "Atualizar a biblioteca em ambientes de dados e ML que processam imagens enviadas por terceiros.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/cve-watchtower/cve-2026-96639/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "cve": "CVE-2026-114509",
+      "produto": "Laravel (TokenGuard)",
+      "cvss": 9.2,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Exploit público",
+      "prioridade": "P2",
+      "status": "Novo",
+      "tratamento": "PoC público desde 23/out. Atualizar para 12.68.0 ou 13.29.0 em apps internos e de parceiros.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/cve-watchtower/cve-2026-114509/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-21",
+      "cve": "CVE-2026-91403",
+      "produto": "Oracle Java SE / GraalVM",
+      "cvss": 9.1,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "status": "Novo",
+      "tratamento": "Entra no pacote do Oracle CPU; seguir janela normal de manutenção.",
+      "fontes": [
+        {
+          "nome": "Oracle CPU out/2026",
+          "url": "https://www.oracle.com/security-alerts/cpuoct2026.html"
+        },
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/oracle-critical-patch-update-october-2026/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-16",
+      "cve": "CVE-2026-102764",
+      "produto": "BeyondTrust Remote Support (self-hosted)",
+      "cvss": 9.3,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (APT, desde 29/08)",
+      "prioridade": "P0",
+      "status": "Pendente",
+      "tratamento": "Aplicar o patch do advisory BT26-05 e caçar IOCs retroativos a 29/08: sessões anômalas, contas novas, jump points.",
+      "fontes": [
+        {
+          "nome": "Shattered",
+          "url": "https://shattered.io/beyondtrust-cve-2026-102764-china-apt-zero-day-2026/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-16",
+      "cve": "CVE-2025-61624",
+      "produto": "FortiOS / FortiProxy / FortiPAM",
+      "cvss": 6.5,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa",
+      "prioridade": "P0",
+      "status": "Pendente",
+      "tratamento": "Exige admin com escrita, então indica conta de gestão comprometida. Confirmar a versão corrigida (advisory de abril, a confirmar), revisar contas admin e restringir a gestão a IPs confiáveis.",
+      "fontes": [
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-61624"
+        },
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-15",
+      "cve": "CVE-2026-21589",
+      "produto": "Atlassian Data Center (Jira, Confluence, Bitbucket, Bamboo, Crowd)",
+      "cvss": 9.3,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (após PoC público)",
+      "prioridade": "P0",
+      "status": "Pendente",
+      "tratamento": "Leitura de arquivos sem login. Subir para as versões do advisory (ex.: Jira 10.3.26/11.3.12, Confluence 9.2.26/10.2.19, Bitbucket 10.5.1); sem patch, aplicar a regra de rewrite/WAF da Atlassian e revisar logs por path traversal.",
+      "fontes": [
+        {
+          "nome": "eSecurity Planet",
+          "url": "https://www.esecurityplanet.com/news/news-atlassian-cve-2026-21589-file-read-flaw/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-21589"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-14",
+      "cve": "CVE-2026-76519",
+      "produto": "Cisco Secure Email Gateway",
+      "cvss": 9.8,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa",
+      "prioridade": "P0",
+      "status": "Pendente",
+      "tratamento": "Comando como root sem login e sem workaround: confirmar que o patch foi aplicado.",
+      "fontes": [
+        {
+          "nome": "CISA KEV 14/out",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/14/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/tag/zero-day/"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-14",
+      "cve": "CVE-2026-0322",
+      "produto": "Palo Alto PAN-OS",
+      "cvss": null,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa",
+      "prioridade": "P0",
+      "status": "Pendente",
+      "tratamento": "Firewall de borda: confirmar a correção e revisar logs de gestão.",
+      "fontes": [
+        {
+          "nome": "CISA KEV 14/out",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/10/14/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+        }
+      ]
+    }
+  ]
+}

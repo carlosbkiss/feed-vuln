@@ -446,7 +446,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 1.0,
-    "poc_qtd": 686,
+    "poc_qtd": 701,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -532,6 +532,11 @@
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
         "publicado": "2026-10-27T04:37:59Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/php2shell-vulnerabilities-actively-exploited/",
+        "publicado": "2026-10-28T09:26:13Z"
       }
     ],
     "prioridade_max": "P0"
@@ -560,7 +565,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 1.0,
-    "poc_qtd": 24,
+    "poc_qtd": 25,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -641,6 +646,11 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/public-php2shell-exploit-code/",
         "publicado": "2026-10-26T20:29:21Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/php2shell-vulnerabilities-actively-exploited/",
+        "publicado": "2026-10-28T09:26:13Z"
       }
     ],
     "prioridade_max": "P0"
@@ -847,6 +857,11 @@
         "nome": "Cisco PSIRT",
         "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20node.js%20Affecting%20Cisco%20Products:%20October%202026%26vs_k=1",
         "publicado": "2026-10-27T21:30:00Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
+        "publicado": "2026-10-28T05:42:26Z"
       }
     ],
     "prioridade_max": "P0"
@@ -1052,6 +1067,39 @@
         "nome": "NVD",
         "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76299",
         "publicado": "2026-10-21T23:17:27Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
+        "publicado": "2026-10-23T03:41:41Z"
+      }
+    ],
+    "prioridade_max": "P1"
+  },
+  "CVE-2026-76301": {
+    "cve": "CVE-2026-76301",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.8,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-21T23:17:28Z",
+    "primeira_noticia": "2026-10-23T03:41:41Z",
+    "publicado_nvd": "2026-10-21T23:17:28Z",
+    "exibido_em": "2026-10-28T10:50:56Z",
+    "aguardando_nota_desde": "2026-10-23T03:41:41Z",
+    "nota_chegou_em": "2026-10-28T10:50:56Z",
+    "epss_max": 0.0017,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76301",
+        "publicado": "2026-10-21T23:17:28Z"
       },
       {
         "nome": "Cyber Security News",
