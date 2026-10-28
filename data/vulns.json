@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-28T18:39:56Z",
+  "atualizado": "2026-10-28T21:40:38Z",
   "itens": [
     {
       "cve": "CVE-2026-114625",
@@ -209,6 +209,14 @@
           "link": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
           "publicado": "2026-10-28T05:42:26Z",
           "visto_em": "2026-10-28T10:50:56Z"
+        },
+        {
+          "id": "cisco",
+          "nome": "Cisco PSIRT",
+          "titulo": "Vulnerabilities in Node.js Affecting Cisco Products: October 2026",
+          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20Node.js%20Affecting%20Cisco%20Products:%20October%202026%26vs_k=1",
+          "publicado": "2026-10-28T20:36:45Z",
+          "visto_em": "2026-10-28T21:40:38Z"
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
@@ -226,7 +234,7 @@
       "publicado_nvd": "2026-10-22T14:17:37Z",
       "resumo": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause…",
       "nvd_checado_em": "2026-10-23T12:22:11Z",
-      "ultima_atividade": "2026-10-28T05:42:26Z",
+      "ultima_atividade": "2026-10-28T20:36:45Z",
       "exibido_em": "2026-10-26T17:24:30Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -237,9 +245,9 @@
         "data": "2026-10-28"
       },
       "poc": {
-        "qtd": 59,
+        "qtd": 65,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-111497.json",
-        "checado": "2026-10-27T18:40:35Z"
+        "checado": "2026-10-28T21:40:38Z"
       },
       "kev": {
         "adicionado": "2026-10-27",
@@ -1112,7 +1120,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-48356.json",
-        "checado": "2026-10-27T21:21:36Z"
+        "checado": "2026-10-28T21:40:38Z"
       }
     },
     {
@@ -1192,7 +1200,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:27Z",
       "resumo": "A Missing authentication for critical function vulnerability in Juniper Networks Session Smart Router allows an unauthenticated network-based attacker to obtain administrative privileges by passing crafted URL parameters to an insecure endpoint running as…",
-      "nvd_checado_em": "2026-10-28T18:39:56Z",
+      "nvd_checado_em": "2026-10-28T21:40:38Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1228,7 +1236,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:25Z",
       "resumo": "An Improper Neutralization of Special Elements used in an OS Command vulnerability in the AutomatedProvisioner in Juniper Networks Session Smart Conductor allows a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
-      "nvd_checado_em": "2026-10-28T18:39:56Z",
+      "nvd_checado_em": "2026-10-28T21:40:38Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1715,7 +1723,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T18:40:35Z"
+        "checado": "2026-10-28T21:40:38Z"
       },
       "epss": {
         "score": 0.0044,
@@ -2588,7 +2596,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T18:40:35Z"
+        "checado": "2026-10-28T21:40:38Z"
       },
       "ultima_atividade": "2026-10-20T22:18:02Z"
     },
@@ -2671,7 +2679,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110936.json",
-        "checado": "2026-10-27T18:40:35Z"
+        "checado": "2026-10-28T21:40:38Z"
       },
       "ultima_atividade": "2026-10-22T12:00:00Z"
     },
@@ -2738,7 +2746,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T18:40:35Z"
+        "checado": "2026-10-28T21:40:38Z"
       },
       "ultima_atividade": "2026-10-20T12:00:00Z"
     },
@@ -2797,7 +2805,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-105133.json",
-        "checado": "2026-10-27T18:40:35Z"
+        "checado": "2026-10-28T21:40:38Z"
       },
       "ultima_atividade": "2026-10-14T00:00:00Z"
     },
@@ -2872,7 +2880,7 @@
       "poc": {
         "qtd": 7,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-96652.json",
-        "checado": "2026-10-27T18:40:35Z"
+        "checado": "2026-10-28T21:40:38Z"
       },
       "ultima_atividade": "2026-10-21T07:26:49Z"
     },
@@ -2939,7 +2947,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T18:40:35Z"
+        "checado": "2026-10-28T21:40:38Z"
       },
       "ultima_atividade": "2026-10-20T12:00:00Z"
     },
@@ -3006,7 +3014,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-27T18:40:35Z"
+        "checado": "2026-10-28T21:40:38Z"
       },
       "ultima_atividade": "2026-10-20T12:00:00Z"
     },
@@ -3073,12 +3081,152 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-96656.json",
-        "checado": "2026-10-27T18:40:35Z"
+        "checado": "2026-10-28T21:40:38Z"
       },
       "ultima_atividade": "2026-10-20T12:00:00Z"
+    },
+    {
+      "cve": "CVE-2026-41709",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-41709",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709",
+          "publicado": "2026-07-30T14:16:57Z",
+          "visto_em": "2026-10-28T21:40:38Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-41709",
+          "publicado": "2026-10-28",
+          "visto_em": "2026-10-28T21:40:38Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-10-28T12:00:00Z",
+          "visto_em": "2026-10-28T21:40:38Z"
+        }
+      ],
+      "detectado": "2026-10-28T21:40:38Z",
+      "kev": {
+        "adicionado": "2026-10-28",
+        "prazo": "2026-11-11",
+        "ransomware": "Unknown"
+      },
+      "produto": "Broadcom VMware ESX",
+      "titulo": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
+      "resumo": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
+      "cvss": 2.7,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-07-30T14:16:57Z",
+      "nvd_checado_em": "2026-10-28T21:40:38Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-07-30T14:16:57Z",
+      "primeira_noticia": "2026-10-28T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709",
+      "ultima_atividade": "2026-10-28T12:00:00Z",
+      "exibido_em": "2026-10-28T21:40:38Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.003,
+        "percentil": 0.2229,
+        "data": "2026-10-28"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-28T21:40:38Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-46300",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-46300",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300",
+          "publicado": "2026-05-23T12:17:02Z",
+          "visto_em": "2026-10-28T21:40:38Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Linux Kernel Missing Initialization of a Variable Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-46300",
+          "publicado": "2026-10-28",
+          "visto_em": "2026-10-28T21:40:38Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-10-28T12:00:00Z",
+          "visto_em": "2026-10-28T21:40:38Z"
+        }
+      ],
+      "detectado": "2026-10-28T21:40:38Z",
+      "kev": {
+        "adicionado": "2026-10-28",
+        "prazo": "2026-10-31",
+        "ransomware": "Unknown"
+      },
+      "produto": "Linux Kernel",
+      "titulo": "Linux Kernel Missing Initialization of a Variable Vulnerability",
+      "resumo": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing…",
+      "cvss": 7.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-05-23T12:17:02Z",
+      "nvd_checado_em": "2026-10-28T21:40:38Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-05-23T12:17:02Z",
+      "primeira_noticia": "2026-10-28T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300",
+      "ultima_atividade": "2026-10-28T12:00:00Z",
+      "exibido_em": "2026-10-28T21:40:38Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.1019,
+        "percentil": 0.9565,
+        "data": "2026-10-28"
+      },
+      "poc": {
+        "qtd": 15,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-46300.json",
+        "checado": "2026-10-28T21:40:38Z"
+      }
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "The Hacker News",
+      "titulo": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",
+      "link": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html",
+      "publicado": "2026-10-28T18:08:33Z"
+    },
     {
       "fonte": "BleepingComputer",
       "titulo": "Apple backports CoreGraphics zero-day patches to older iPhones",

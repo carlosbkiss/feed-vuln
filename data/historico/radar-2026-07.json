@@ -1,4 +1,47 @@
 {
+  "CVE-2026-41709": {
+    "cve": "CVE-2026-41709",
+    "produto": "Broadcom VMware ESX",
+    "titulo": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
+    "cvss": 2.7,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-28",
+      "prazo": "2026-11-11",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-07-30T14:16:57Z",
+    "primeira_noticia": "2026-10-28T12:00:00Z",
+    "publicado_nvd": "2026-07-30T14:16:57Z",
+    "exibido_em": "2026-10-28T21:40:38Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.003,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709",
+        "publicado": "2026-07-30T14:16:57Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-41709",
+        "publicado": "2026-10-28"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-10-28T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
   "CVE-2026-48356": {
     "cve": "CVE-2026-48356",
     "produto": "Adobe Commerce and Magento",

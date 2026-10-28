@@ -1,0 +1,45 @@
+{
+  "CVE-2026-46300": {
+    "cve": "CVE-2026-46300",
+    "produto": "Linux Kernel",
+    "titulo": "Linux Kernel Missing Initialization of a Variable Vulnerability",
+    "cvss": 7.8,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-28",
+      "prazo": "2026-10-31",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-05-23T12:17:02Z",
+    "primeira_noticia": "2026-10-28T12:00:00Z",
+    "publicado_nvd": "2026-05-23T12:17:02Z",
+    "exibido_em": "2026-10-28T21:40:38Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.1019,
+    "poc_qtd": 15,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300",
+        "publicado": "2026-05-23T12:17:02Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-46300",
+        "publicado": "2026-10-28"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-10-28T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  }
+}

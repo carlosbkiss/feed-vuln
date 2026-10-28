@@ -847,7 +847,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.8799,
-    "poc_qtd": 59,
+    "poc_qtd": 65,
     "fontes": [
       {
         "nome": "NVD",
@@ -928,6 +928,11 @@
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
         "publicado": "2026-10-28T05:42:26Z"
+      },
+      {
+        "nome": "Cisco PSIRT",
+        "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20Node.js%20Affecting%20Cisco%20Products:%20October%202026%26vs_k=1",
+        "publicado": "2026-10-28T20:36:45Z"
       }
     ],
     "prioridade_max": "P0"
