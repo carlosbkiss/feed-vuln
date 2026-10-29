@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-29T10:45:00Z",
+  "atualizado": "2026-10-29T15:05:00Z",
   "janela": "23 a 29/out/2026",
   "itens": [
     {
@@ -27,13 +27,17 @@
       "cvss": 10.0,
       "kev": false,
       "zero_day": true,
-      "exploracao": "Ativa (Talos em 28/10: malware KeyDrift rouba chaves AES do SD-WAN)",
+      "exploracao": "Ativa (Talos em 28/10: malware KeyDrift; ligada à rede Silent Train do Volt Typhoon)",
       "prioridade": "P0",
-      "tratamento": "Falha de fev/2026 voltou ao foco. Conferir se está em 20.9.8.2, 20.12.6.1, 20.15.4.2 ou 20.18.2.1; restringir portas 22 e 830 a IPs conhecidos e caçar KeyDrift, pois o patch não remove implante. Status no KEV a confirmar.",
+      "tratamento": "Falha de fev/2026 voltou ao foco, agora atribuída ao Volt Typhoon. Conferir se está em 20.9.8.2, 20.12.6.1, 20.15.4.2 ou 20.18.2.1; restringir portas 22 e 830 a IPs conhecidos e caçar KeyDrift, pois o patch não remove implante. Status no KEV a confirmar.",
       "fontes": [
         {
           "nome": "The Hacker News",
           "url": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html"
+        },
+        {
+          "nome": "The Hacker News (Silent Train)",
+          "url": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html"
         }
       ],
       "status": "Novo"
