@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-28T21:40:38Z",
+  "atualizado": "2026-10-29T02:28:22Z",
   "itens": [
     {
       "cve": "CVE-2026-114625",
@@ -791,141 +791,6 @@
       }
     },
     {
-      "cve": "CVE-2026-76519",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-76519",
-          "publicado": "2026-10-14",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "cisco",
-          "nome": "Cisco PSIRT",
-          "titulo": "Cisco Secure Email Gateway Arbitrary File Write Vulnerability",
-          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Email%20Gateway%20Arbitrary%20File%20Write%20Vulnerability%26vs_k=1",
-          "publicado": "2026-10-14T16:00:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-76519",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519",
-          "publicado": "2026-10-14T17:19:10Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-14",
-        "prazo": "2026-10-17",
-        "ransomware": "Unknown"
-      },
-      "produto": "Cisco Secure Email Gateway",
-      "titulo": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
-      "resumo": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-14T17:19:10Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "CVSS ≥ 9",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-14T00:00:00Z",
-      "primeira_noticia": "2026-10-14T16:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.0215,
-        "percentil": 0.8208,
-        "data": "2026-10-28"
-      },
-      "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76519.json",
-        "checado": "2026-10-28T10:50:56Z"
-      },
-      "ultima_atividade": "2026-10-14T17:19:10Z"
-    },
-    {
-      "cve": "CVE-2026-0322",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-0322",
-          "publicado": "2026-10-14",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-0322",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322",
-          "publicado": "2026-10-14T18:17:07Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "paloalto",
-          "nome": "Palo Alto Security Advisories",
-          "titulo": "CVE-2026-0322 PAN-OS: Authenticated Remote Code Execution (RCE) in the Management Interface (Severity: HIGH)",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0322",
-          "publicado": "2026-10-15T18:30:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-14",
-        "prazo": "2026-10-17",
-        "ransomware": "Unknown"
-      },
-      "produto": "Palo Alto Networks PAN-OS",
-      "titulo": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
-      "resumo": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.",
-      "cvss": 8.6,
-      "cvss_versao": "4.0",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-14T18:17:07Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-14T00:00:00Z",
-      "primeira_noticia": "2026-10-15T18:30:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.0174,
-        "percentil": 0.7764,
-        "data": "2026-10-28"
-      },
-      "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-0322.json",
-        "checado": "2026-10-28T10:50:56Z"
-      },
-      "ultima_atividade": "2026-10-15T18:30:00Z"
-    },
-    {
       "cve": "CVE-2026-21589",
       "fontes": [
         {
@@ -984,66 +849,6 @@
         "checado": "2026-10-28T10:50:56Z"
       },
       "ultima_atividade": "2026-10-15T00:00:00Z"
-    },
-    {
-      "cve": "CVE-2026-105134",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-105134",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134",
-          "publicado": "2026-10-04T07:16:33Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Ahsay AhsayCBS Command Injection Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-105134",
-          "publicado": "2026-10-14",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-14",
-        "prazo": "2026-10-17",
-        "ransomware": "Unknown"
-      },
-      "produto": "Ahsay AhsayCBS",
-      "titulo": "Ahsay AhsayCBS Command Injection Vulnerability",
-      "resumo": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This…",
-      "cvss": 10.0,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-04T07:16:33Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "CVSS ≥ 9",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-04T07:16:33Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.8176,
-        "percentil": 0.9964,
-        "data": "2026-10-28"
-      },
-      "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-105134.json",
-        "checado": "2026-10-28T10:50:56Z"
-      },
-      "ultima_atividade": "2026-10-14T00:00:00Z"
     },
     {
       "cve": "CVE-2026-48356",
@@ -1200,7 +1005,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:27Z",
       "resumo": "A Missing authentication for critical function vulnerability in Juniper Networks Session Smart Router allows an unauthenticated network-based attacker to obtain administrative privileges by passing crafted URL parameters to an insecure endpoint running as…",
-      "nvd_checado_em": "2026-10-28T21:40:38Z",
+      "nvd_checado_em": "2026-10-29T02:28:22Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1236,7 +1041,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:25Z",
       "resumo": "An Improper Neutralization of Special Elements used in an OS Command vulnerability in the AutomatedProvisioner in Juniper Networks Session Smart Conductor allows a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
-      "nvd_checado_em": "2026-10-28T21:40:38Z",
+      "nvd_checado_em": "2026-10-29T02:28:22Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1275,7 +1080,7 @@
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
-      "nvd_checado_em": "2026-10-28T17:11:10Z",
+      "nvd_checado_em": "2026-10-29T02:28:22Z",
       "elegivel_por": [
         "zero-day"
       ],
@@ -2749,65 +2554,6 @@
         "checado": "2026-10-28T21:40:38Z"
       },
       "ultima_atividade": "2026-10-20T12:00:00Z"
-    },
-    {
-      "cve": "CVE-2026-105133",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-105133",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-105133",
-          "publicado": "2026-10-04T07:16:33Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Ahsay AhsayCBS Improper Authentication Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-105133",
-          "publicado": "2026-10-14",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-14",
-        "prazo": "2026-10-17",
-        "ransomware": "Unknown"
-      },
-      "produto": "Ahsay AhsayCBS",
-      "titulo": "Ahsay AhsayCBS Improper Authentication Vulnerability",
-      "resumo": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vulnerability can be chained with…",
-      "cvss": 7.3,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-04T07:16:33Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-04T07:16:33Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-105133",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.7947,
-        "percentil": 0.996,
-        "data": "2026-10-28"
-      },
-      "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-105133.json",
-        "checado": "2026-10-28T21:40:38Z"
-      },
-      "ultima_atividade": "2026-10-14T00:00:00Z"
     },
     {
       "cve": "CVE-2026-96652",
