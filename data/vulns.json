@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-29T02:28:22Z",
+  "atualizado": "2026-10-29T10:45:21Z",
   "itens": [
     {
       "cve": "CVE-2026-114625",
@@ -851,6 +851,98 @@
       "ultima_atividade": "2026-10-15T00:00:00Z"
     },
     {
+      "cve": "CVE-2026-41709",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-41709",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709",
+          "publicado": "2026-07-30T14:16:57Z",
+          "visto_em": "2026-10-28T21:40:38Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-41709",
+          "publicado": "2026-10-28",
+          "visto_em": "2026-10-28T21:40:38Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-10-28T12:00:00Z",
+          "visto_em": "2026-10-28T21:40:38Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
+          "link": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
+          "publicado": "2026-10-29T06:22:33Z",
+          "visto_em": "2026-10-29T10:45:21Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns of VMWare ESX Logging Vulnerability Exploited in Attacks",
+          "link": "https://cybersecuritynews.com/vmware-esx-logging-vulnerability-exploited/",
+          "publicado": "2026-10-29T06:22:42Z",
+          "visto_em": "2026-10-29T10:45:21Z"
+        },
+        {
+          "id": "securityweek",
+          "nome": "SecurityWeek",
+          "titulo": "Chinese Hackers Quietly Used Low-Severity ESXi Logging Flaw as Zero-Day",
+          "link": "https://www.securityweek.com/chinese-hackers-quietly-used-low-severity-esxi-logging-flaw-as-zero-day/",
+          "publicado": "2026-10-29T08:01:05Z",
+          "visto_em": "2026-10-29T10:45:21Z"
+        }
+      ],
+      "detectado": "2026-10-28T21:40:38Z",
+      "kev": {
+        "adicionado": "2026-10-28",
+        "prazo": "2026-11-11",
+        "ransomware": "Unknown"
+      },
+      "produto": "Broadcom VMware ESX",
+      "titulo": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
+      "resumo": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
+      "cvss": 2.7,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-07-30T14:16:57Z",
+      "nvd_checado_em": "2026-10-28T21:40:38Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-07-30T14:16:57Z",
+      "primeira_noticia": "2026-10-28T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709",
+      "ultima_atividade": "2026-10-29T08:01:05Z",
+      "exibido_em": "2026-10-28T21:40:38Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.003,
+        "percentil": 0.2229,
+        "data": "2026-10-28"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-28T21:40:38Z"
+      },
+      "escalado": true
+    },
+    {
       "cve": "CVE-2026-48356",
       "fontes": [
         {
@@ -1005,7 +1097,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:27Z",
       "resumo": "A Missing authentication for critical function vulnerability in Juniper Networks Session Smart Router allows an unauthenticated network-based attacker to obtain administrative privileges by passing crafted URL parameters to an insecure endpoint running as…",
-      "nvd_checado_em": "2026-10-29T02:28:22Z",
+      "nvd_checado_em": "2026-10-29T10:45:21Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1041,7 +1133,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:25Z",
       "resumo": "An Improper Neutralization of Special Elements used in an OS Command vulnerability in the AutomatedProvisioner in Juniper Networks Session Smart Conductor allows a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
-      "nvd_checado_em": "2026-10-29T02:28:22Z",
+      "nvd_checado_em": "2026-10-29T10:45:21Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1080,7 +1172,7 @@
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
-      "nvd_checado_em": "2026-10-29T02:28:22Z",
+      "nvd_checado_em": "2026-10-29T10:45:21Z",
       "elegivel_por": [
         "zero-day"
       ],
@@ -2832,73 +2924,6 @@
       "ultima_atividade": "2026-10-20T12:00:00Z"
     },
     {
-      "cve": "CVE-2026-41709",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-41709",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709",
-          "publicado": "2026-07-30T14:16:57Z",
-          "visto_em": "2026-10-28T21:40:38Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-41709",
-          "publicado": "2026-10-28",
-          "visto_em": "2026-10-28T21:40:38Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-10-28T12:00:00Z",
-          "visto_em": "2026-10-28T21:40:38Z"
-        }
-      ],
-      "detectado": "2026-10-28T21:40:38Z",
-      "kev": {
-        "adicionado": "2026-10-28",
-        "prazo": "2026-11-11",
-        "ransomware": "Unknown"
-      },
-      "produto": "Broadcom VMware ESX",
-      "titulo": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
-      "resumo": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
-      "cvss": 2.7,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-07-30T14:16:57Z",
-      "nvd_checado_em": "2026-10-28T21:40:38Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-07-30T14:16:57Z",
-      "primeira_noticia": "2026-10-28T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709",
-      "ultima_atividade": "2026-10-28T12:00:00Z",
-      "exibido_em": "2026-10-28T21:40:38Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.003,
-        "percentil": 0.2229,
-        "data": "2026-10-28"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-10-28T21:40:38Z"
-      }
-    },
-    {
       "cve": "CVE-2026-46300",
       "fontes": [
         {
@@ -2967,6 +2992,18 @@
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "SecurityWeek",
+      "titulo": "Cisco SD-WAN Zero-Day Exploitation Tied to Volt Typhoon’s ‘Silent Train’ Network",
+      "link": "https://www.securityweek.com/cisco-sd-wan-zero-day-exploitation-tied-to-volt-typhoons-silent-train-network/",
+      "publicado": "2026-10-29T10:29:25Z"
+    },
+    {
+      "fonte": "SecurityWeek",
+      "titulo": "Attackers Exploit Second Cisco Firewall VPN Zero-Day Since August",
+      "link": "https://www.securityweek.com/attackers-exploit-second-cisco-firewall-vpn-zero-day-since-august/",
+      "publicado": "2026-10-29T09:47:10Z"
+    },
     {
       "fonte": "The Hacker News",
       "titulo": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",

@@ -4,7 +4,7 @@
     "produto": "Broadcom VMware ESX",
     "titulo": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
     "cvss": 2.7,
-    "prioridade": "P2",
+    "prioridade": "P0",
     "elegivel_por": [
       "zero-day",
       "KEV"
@@ -38,9 +38,24 @@
         "nome": "CISA Advisories",
         "link": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
         "publicado": "2026-10-28T12:00:00Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
+        "publicado": "2026-10-29T06:22:33Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/vmware-esx-logging-vulnerability-exploited/",
+        "publicado": "2026-10-29T06:22:42Z"
+      },
+      {
+        "nome": "SecurityWeek",
+        "link": "https://www.securityweek.com/chinese-hackers-quietly-used-low-severity-esxi-logging-flaw-as-zero-day/",
+        "publicado": "2026-10-29T08:01:05Z"
       }
     ],
-    "prioridade_max": "P2"
+    "prioridade_max": "P0"
   },
   "CVE-2026-48356": {
     "cve": "CVE-2026-48356",
