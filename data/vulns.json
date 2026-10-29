@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-29T15:02:43Z",
+  "atualizado": "2026-10-29T23:18:51Z",
   "itens": [
     {
       "cve": "CVE-2026-76418",
@@ -21,25 +21,42 @@
           "visto_em": "2026-10-29T15:02:43Z"
         },
         {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-76418",
+          "publicado": "2026-10-29",
+          "visto_em": "2026-10-29T23:18:51Z"
+        },
+        {
           "id": "thn",
           "nome": "The Hacker News",
           "titulo": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
           "link": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
           "publicado": "2026-10-29T10:44:46Z",
           "visto_em": "2026-10-29T15:02:43Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-10-29T12:00:00Z",
+          "visto_em": "2026-10-29T23:18:51Z"
         }
       ],
       "detectado": "2026-10-28T21:40:38Z",
       "aguardando_nota_desde": "2026-10-28T19:15:00Z",
       "elegivel_por": [
-        "zero-day"
+        "zero-day",
+        "KEV"
       ],
       "primeira_vez": "2026-10-28T19:15:00Z",
       "primeira_noticia": "2026-10-28T19:15:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418",
-      "ultima_atividade": "2026-10-29T10:44:46Z",
+      "ultima_atividade": "2026-10-29T12:00:00Z",
       "zero_day": true,
-      "zero_day_motivo": "The Hacker News: exploração ativa relatada",
+      "zero_day_motivo": "CISA KEV",
       "cvss": 8.6,
       "cvss_versao": "3.1",
       "cvss_fonte": "CNA",
@@ -60,7 +77,14 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-29T15:02:43Z"
-      }
+      },
+      "kev": {
+        "adicionado": "2026-10-29",
+        "prazo": "2026-11-01",
+        "ransomware": "Unknown"
+      },
+      "produto": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software",
+      "titulo": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability"
     },
     {
       "cve": "CVE-2026-114625",
@@ -306,9 +330,9 @@
         "data": "2026-10-29"
       },
       "poc": {
-        "qtd": 65,
+        "qtd": 73,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-111497.json",
-        "checado": "2026-10-28T21:40:38Z"
+        "checado": "2026-10-29T23:18:51Z"
       },
       "kev": {
         "adicionado": "2026-10-27",
@@ -852,6 +876,84 @@
       }
     },
     {
+      "cve": "CVE-2026-97229",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-97229",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229",
+          "publicado": "2026-10-13T02:17:00Z",
+          "visto_em": "2026-10-29T23:18:51Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-97229",
+          "publicado": "2026-10-29",
+          "visto_em": "2026-10-29T23:18:51Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
+          "link": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
+          "publicado": "2026-10-29T09:05:39Z",
+          "visto_em": "2026-10-29T15:02:43Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-10-29T12:00:00Z",
+          "visto_em": "2026-10-29T23:18:51Z"
+        }
+      ],
+      "detectado": "2026-10-29T15:02:43Z",
+      "aguardando_nota_desde": "2026-10-29T09:05:39Z",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-13T02:17:00Z",
+      "primeira_noticia": "2026-10-29T09:05:39Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229",
+      "ultima_atividade": "2026-10-29T12:00:00Z",
+      "kev": {
+        "adicionado": "2026-10-29",
+        "prazo": "2026-11-01",
+        "ransomware": "Unknown"
+      },
+      "produto": "GitLab Community Edition and Enterprise Edition",
+      "titulo": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
+      "resumo": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD…",
+      "cvss": 10.0,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-13T02:17:00Z",
+      "nvd_checado_em": "2026-10-29T23:18:51Z",
+      "nota_chegou_em": "2026-10-29T23:18:51Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "exibido_em": "2026-10-29T23:18:51Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.1843,
+        "percentil": 0.9723,
+        "data": "2026-10-29"
+      },
+      "poc": {
+        "qtd": 5,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-97229.json",
+        "checado": "2026-10-29T23:18:51Z"
+      }
+    },
+    {
       "cve": "CVE-2026-21589",
       "fontes": [
         {
@@ -999,7 +1101,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-28T21:40:38Z"
+        "checado": "2026-10-29T23:18:51Z"
       },
       "escalado": true
     },
@@ -1078,7 +1180,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-48356.json",
-        "checado": "2026-10-28T21:40:38Z"
+        "checado": "2026-10-29T23:18:51Z"
       }
     },
     {
@@ -1158,7 +1260,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:27Z",
       "resumo": "A Missing authentication for critical function vulnerability in Juniper Networks Session Smart Router allows an unauthenticated network-based attacker to obtain administrative privileges by passing crafted URL parameters to an insecure endpoint running as…",
-      "nvd_checado_em": "2026-10-29T15:02:43Z",
+      "nvd_checado_em": "2026-10-29T23:18:51Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1173,7 +1275,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-28T18:39:56Z"
+        "checado": "2026-10-29T23:18:51Z"
       },
       "epss": {
         "score": 0.0035,
@@ -1199,7 +1301,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:25Z",
       "resumo": "An Improper Neutralization of Special Elements used in an OS Command vulnerability in the AutomatedProvisioner in Juniper Networks Session Smart Conductor allows a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
-      "nvd_checado_em": "2026-10-29T15:02:43Z",
+      "nvd_checado_em": "2026-10-29T23:18:51Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1214,7 +1316,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-28T18:39:56Z"
+        "checado": "2026-10-29T23:18:51Z"
       },
       "epss": {
         "score": 0.0052,
@@ -1243,7 +1345,7 @@
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
-      "nvd_checado_em": "2026-10-29T10:45:21Z",
+      "nvd_checado_em": "2026-10-29T23:18:51Z",
       "elegivel_por": [
         "zero-day"
       ],
@@ -1261,7 +1363,7 @@
       "poc": {
         "qtd": 11,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-115560.json",
-        "checado": "2026-10-28T18:39:56Z"
+        "checado": "2026-10-29T23:18:51Z"
       }
     },
     {
@@ -1691,7 +1793,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-28T21:40:38Z"
+        "checado": "2026-10-29T23:18:51Z"
       },
       "epss": {
         "score": 0.0044,
@@ -2564,7 +2666,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-28T21:40:38Z"
+        "checado": "2026-10-29T23:18:51Z"
       },
       "ultima_atividade": "2026-10-20T22:18:02Z"
     },
@@ -2647,7 +2749,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110936.json",
-        "checado": "2026-10-28T21:40:38Z"
+        "checado": "2026-10-29T23:18:51Z"
       },
       "ultima_atividade": "2026-10-22T12:00:00Z"
     },
@@ -2714,7 +2816,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-28T21:40:38Z"
+        "checado": "2026-10-29T23:18:51Z"
       },
       "ultima_atividade": "2026-10-20T12:00:00Z"
     },
@@ -2789,7 +2891,7 @@
       "poc": {
         "qtd": 7,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-96652.json",
-        "checado": "2026-10-28T21:40:38Z"
+        "checado": "2026-10-29T23:18:51Z"
       },
       "ultima_atividade": "2026-10-21T07:26:49Z"
     },
@@ -2856,7 +2958,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-28T21:40:38Z"
+        "checado": "2026-10-29T23:18:51Z"
       },
       "ultima_atividade": "2026-10-20T12:00:00Z"
     },
@@ -2923,7 +3025,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-28T21:40:38Z"
+        "checado": "2026-10-29T23:18:51Z"
       },
       "ultima_atividade": "2026-10-20T12:00:00Z"
     },
@@ -2990,7 +3092,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-96656.json",
-        "checado": "2026-10-28T21:40:38Z"
+        "checado": "2026-10-29T23:18:51Z"
       },
       "ultima_atividade": "2026-10-20T12:00:00Z"
     },
@@ -3058,7 +3160,7 @@
       "poc": {
         "qtd": 15,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-46300.json",
-        "checado": "2026-10-28T21:40:38Z"
+        "checado": "2026-10-29T23:18:51Z"
       }
     }
   ],
