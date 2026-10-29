@@ -215,7 +215,7 @@
     "exibido_em": "2026-10-28T18:39:56Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0052,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -243,7 +243,7 @@
     "exibido_em": "2026-10-28T18:39:56Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0035,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -502,7 +502,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 1.0,
-    "poc_qtd": 701,
+    "poc_qtd": 716,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -626,7 +626,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 1.0,
-    "poc_qtd": 25,
+    "poc_qtd": 23,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -744,7 +744,7 @@
     "exibido_em": "2026-10-23T20:28:55Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.1233,
+    "epss_max": 0.7331,
     "poc_qtd": 1,
     "fontes": [
       {
@@ -989,7 +989,7 @@
     "aguardando_nota_desde": "2026-10-23T13:57:11Z",
     "nota_chegou_em": "2026-10-23T18:39:23Z",
     "epss_max": 0.0103,
-    "poc_qtd": 0,
+    "poc_qtd": 1,
     "fontes": [
       {
         "nome": "NVD",
@@ -1246,6 +1246,44 @@
     ],
     "prioridade_max": "P1"
   },
+  "CVE-2026-76418": {
+    "cve": "CVE-2026-76418",
+    "produto": "",
+    "titulo": "",
+    "cvss": 8.6,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day"
+    ],
+    "zero_day": true,
+    "kev": null,
+    "primeira_vez": "2026-10-28T19:15:00Z",
+    "primeira_noticia": "2026-10-28T19:15:00Z",
+    "publicado_nvd": "2026-10-28T20:18:47Z",
+    "exibido_em": "2026-10-29T15:02:43Z",
+    "aguardando_nota_desde": "2026-10-28T19:15:00Z",
+    "nota_chegou_em": "2026-10-29T15:02:43Z",
+    "epss_max": 0.0057,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "Cisco PSIRT",
+        "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-tunnel-dos-s6mgkb75?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20Remote%20Access%20SSL%20VPN%20Tunnel%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
+        "publicado": "2026-10-28T19:15:00Z"
+      },
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418",
+        "publicado": "2026-10-28T20:18:47Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
+        "publicado": "2026-10-29T10:44:46Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
   "CVE-2026-76466": {
     "cve": "CVE-2026-76466",
     "produto": "",
@@ -1379,7 +1417,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0071,
-    "poc_qtd": 0,
+    "poc_qtd": 1,
     "fontes": [
       {
         "nome": "Microsoft Security Update Guide",
