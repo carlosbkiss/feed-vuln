@@ -1,0 +1,186 @@
+{
+  "periodo": "24 a 30 de outubro de 2026",
+  "atualizado": "2026-10-30T15:47:25Z",
+  "kpis": [
+    {
+      "n": "8",
+      "l": "CVEs incluídas no CISA KEV",
+      "destaque": false
+    },
+    {
+      "n": "3",
+      "l": "zero-days relevantes para banco",
+      "destaque": true
+    },
+    {
+      "n": "12",
+      "l": "CVEs novas com CVSS ≥ 9.0 relevantes",
+      "destaque": false
+    },
+    {
+      "n": "5",
+      "l": "frentes P0 para 24h",
+      "destaque": true
+    }
+  ],
+  "tese": "O ataque migrou do runtime para o acesso remoto: VPN, SD-WAN e CI/CD foram explorados com o patch já aplicado ou recém-saído, e corrigir deixou de bastar sem caçar intrusão.",
+  "historia": [
+    "No fim de semana e na segunda, 26/out, a Microsoft soltou patches de emergência do .NET para o Brotli e a CISA pôs o PHP2Shell no KEV com prazo em 29/out, prazo que já venceu para quem ainda roda PHP antigo em portais e appliances.",
+    "Na terça, 27/out, Brotli e Magento PolyShell entraram no KEV, a Citrix publicou os builds do NetScaler e honeypots registraram sondagens contra a falha nota 9.8 do Oracle E-Business Suite, que guarda dados financeiros e de RH.",
+    "Na quarta, 28/out, a Cisco confirmou zero-day que derruba a VPN SSL do ASA e do FTD, a Talos ligou a falha nota 10 do Catalyst SD-WAN ao Volt Typhoon e ESXi e kernel Linux entraram no KEV, o que expõe a rede das agências e a virtualização do datacenter.",
+    "Na quinta, 29/out, a CISA incluiu no KEV a RCE nota 10 do GitLab e o zero-day do ASA, com prazo em 1º/nov, e a Ivanti soltou nova correção para a cadeia que dá root no Connect Secure mesmo em versões já atualizadas.",
+    "Canais de cliente (app, internet banking, PIX) não tiveram falha direta; o risco chega por tabela, via VPN de funcionários e terceiros, SD-WAN de agências e pipelines que publicam o app, e o radar teve notícia antes da inclusão no KEV em 100% dos casos da semana.",
+    "Fontes da semana: Fortinet PSIRT, Cisco PSIRT e Microsoft saíram antes de todos em 5 vulnerabilidades; Cyber Security News e CISA Advisories trouxeram 4 exclusivas; BleepingComputer, Palo Alto e SecurityWeek só repetiram, e Dark Reading, Cybernews e Chrome não tiveram nada no radar."
+  ],
+  "p0": [
+    {
+      "titulo": "Ivanti Connect Secure",
+      "cve": "CVE-2026-104935 · -118527",
+      "cvss": "8.6",
+      "tags": [
+        "Zero-day",
+        "Root sem login",
+        "Patch não bastou"
+      ],
+      "onde": "VPN de funcionários, terceiros e acesso administrativo remoto.",
+      "impacto": "Root no concentrador, roubo de credenciais e acesso ao AD sem deixar webshell.",
+      "acao": "Aplicar a correção de 29/out e, se houver suspeita, perícia de memória e rede: o Integrity Checker não detecta."
+    },
+    {
+      "titulo": "GitLab self-managed",
+      "cve": "CVE-2026-97229",
+      "cvss": "10.0",
+      "tags": [
+        "KEV 29/out",
+        "RCE sem login",
+        "Prazo 1º/nov"
+      ],
+      "onde": "Repositórios dos apps e pipelines de CI/CD com segredos de produção.",
+      "impacto": "Código malicioso no app do cliente e roubo de tokens de deploy.",
+      "acao": "Subir para 19.5.1, 19.4.3 ou 19.3.6 e rotacionar segredos de CI/CD."
+    },
+    {
+      "titulo": "Cisco ASA e FTD (VPN SSL)",
+      "cve": "CVE-2026-76418",
+      "cvss": "8.6",
+      "tags": [
+        "Zero-day",
+        "KEV 29/out",
+        "DoS na VPN"
+      ],
+      "onde": "Firewalls de perímetro com VPN SSL e autenticação secundária.",
+      "impacto": "Queda do acesso remoto de agências e funcionários; sem RCE.",
+      "acao": "Atualizar (ex.: ASA 9.20.4.50, FTD 7.4.9); até lá, desligar autenticação secundária nos tunnel groups."
+    },
+    {
+      "titulo": "Cisco Catalyst SD-WAN",
+      "cve": "CVE-2026-20127",
+      "cvss": "10.0",
+      "tags": [
+        "Volt Typhoon",
+        "SD-WAN",
+        "Implante persiste"
+      ],
+      "onde": "Controller, Manager e Validator que orquestram a rede das agências.",
+      "impacto": "Controle da WAN e implante que sobrevive ao patch.",
+      "acao": "Confirmar versão corrigida, restringir portas 22 e 830 e caçar o KeyDrift."
+    }
+  ],
+  "plano": [
+    {
+      "h": "24h",
+      "t": "Agora",
+      "itens": [
+        "Ivanti: correção de 29/out e caça a intrusão por memória e rede",
+        "GitLab: atualizar e rotacionar tokens antes de 1º/nov",
+        "ASA/FTD: patch ou desligar autenticação secundária",
+        "SD-WAN Cisco: versão, ACL nas portas 22/830 e caça ao KeyDrift",
+        "Oracle EBS: CPU de outubro ou tirar AppsTCFServer do allowlist"
+      ]
+    },
+    {
+      "h": "7 dias",
+      "t": "Esta semana",
+      "itens": [
+        "PHP2Shell e Brotli: fechar o que ficou de fora do prazo do KEV",
+        "NetScaler: aplicar os builds de 27/out",
+        "Veeam 13.x e WatchGuard: corrigir antes que virem alvo de ransomware",
+        "ESXi (VMSA-2026-0006) e kernel Linux: patch nos hosts de contêiner",
+        "Juniper SSR e consul-k8s: atualizar e isolar a gestão"
+      ]
+    },
+    {
+      "h": "30 dias",
+      "t": "Estrutural",
+      "itens": [
+        "SLA de patch com caça a IOC obrigatória para VPN e SD-WAN",
+        "Inventário de VPN, SD-WAN e servidores de CI/CD expostos, com dono",
+        "Shadow IT: mapear Tailscale, Magento e Drupal fora do parque oficial",
+        "Fontes: rever Dark Reading, Cybernews e Chrome, sem retorno a semana toda",
+        "Intrusão confirmada na VPN: fluxo de incidente relevante (Res. CMN 4.893/2021)"
+      ]
+    }
+  ],
+  "fontes": [
+    [
+      "CISA: catálogo KEV (dados oficiais)",
+      "https://raw.githubusercontent.com/cisagov/kev-data/main/known_exploited_vulnerabilities.json"
+    ],
+    [
+      "The Hacker News: cadeia de zero-days no Ivanti",
+      "https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html"
+    ],
+    [
+      "Cyber Security News: Ivanti com root sem login",
+      "https://cybersecuritynews.com/ivanti-connect-secure-zero-days-exploited/"
+    ],
+    [
+      "CSA Singapura: alerta Ivanti Connect Secure",
+      "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-147/"
+    ],
+    [
+      "Cryptika: GitLab entra no KEV",
+      "https://www.cryptika.com/cisa-warns-of-gitlab-integer-overflow-vulnerability-exploited-in-attacks/"
+    ],
+    [
+      "IT-Connect: GitLab CVE-2026-110264",
+      "https://www.it-connect.fr/gitlab-cve-2026-110264-faille-critique-regex-onigmo/"
+    ],
+    [
+      "SecurityOnline: zero-day no ASA e FTD",
+      "https://securityonline.info/cisco-secure-firewall-vulnerability-exploited-ssl-vpn/"
+    ],
+    [
+      "The Hacker News: SD-WAN Cisco e Volt Typhoon",
+      "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html"
+    ],
+    [
+      "SecurityWeek: rede Silent Train",
+      "https://www.securityweek.com/cisco-sd-wan-zero-day-exploitation-tied-to-volt-typhoons-silent-train-network/"
+    ],
+    [
+      "The Hacker News: sondagens no Oracle EBS",
+      "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html"
+    ],
+    [
+      "Citrix CTX697263: builds do NetScaler",
+      "https://support.citrix.com/external/article/CTX697263/citrix-security-advisory-for-cve20261096.html"
+    ],
+    [
+      "Socura: VMSA-2026-0006 (ESXi)",
+      "https://socura.co.uk/threat-alerts/vmsa-2026-0006-multiple-vmware-esx-vcenter-workstation-and-fusion-vulnerabilities"
+    ],
+    [
+      "Brandefense: Veeam CVE-2026-108142",
+      "https://brandefense.io/security-news/veeam-backup-replication-cve-2026-108142-patch/"
+    ],
+    [
+      "SecurityOnline: falhas no WatchGuard Firebox",
+      "https://securityonline.info/watchguard-fireware-os-vulnerabilities-2/"
+    ],
+    [
+      "Security Magazine: patches de emergência do .NET",
+      "https://www.securitymagazine.com/articles/102699-microsoft-releases-emergency-net-patches"
+    ]
+  ]
+}
