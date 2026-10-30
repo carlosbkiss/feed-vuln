@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-30T18:39:46Z",
+  "atualizado": "2026-10-30T21:31:54Z",
   "itens": [
     {
       "cve": "CVE-2026-118527",
@@ -1410,7 +1410,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:27Z",
       "resumo": "A Missing authentication for critical function vulnerability in Juniper Networks Session Smart Router allows an unauthenticated network-based attacker to obtain administrative privileges by passing crafted URL parameters to an insecure endpoint running as…",
-      "nvd_checado_em": "2026-10-30T18:39:46Z",
+      "nvd_checado_em": "2026-10-30T21:31:54Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1451,7 +1451,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:25Z",
       "resumo": "An Improper Neutralization of Special Elements used in an OS Command vulnerability in the AutomatedProvisioner in Juniper Networks Session Smart Conductor allows a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
-      "nvd_checado_em": "2026-10-30T18:39:46Z",
+      "nvd_checado_em": "2026-10-30T21:31:54Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -3496,12 +3496,6 @@
       "titulo": "Siemens software, used by Nvidia and Amazon, under active exploitation: Is your PC safe?",
       "link": "https://cybernews.com/security/siemens-software-malware-campaign-vulnerability/",
       "publicado": "2026-10-21T08:21:00Z"
-    },
-    {
-      "fonte": "Dark Reading",
-      "titulo": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
-      "link": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
-      "publicado": "2026-10-16T20:34:37Z"
     }
   ]
 }
