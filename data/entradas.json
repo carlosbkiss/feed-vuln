@@ -1,21 +1,73 @@
 {
-  "atualizado": "2026-10-29T18:43:54Z",
-  "janela": "23 a 29/out/2026",
+  "atualizado": "2026-10-30T10:39:00Z",
+  "janela": "24 a 30/out/2026",
   "itens": [
+    {
+      "data": "2026-10-29",
+      "cve": "CVE-2026-97229",
+      "produto": "GitLab CE/EE self-managed (CI/CD, regex)",
+      "cvss": 10.0,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 29/10; PoC público desde 13/10)",
+      "prioridade": "P0",
+      "tratamento": "RCE sem login via regex malicioso no .gitlab-ci.yml (estouro no motor Onigmo do Ruby). Subir para 19.4.2, 19.3.5 ou 19.2.8; até lá, tirar da internet, bloquear criação de projetos públicos e caçar processos anômalos do usuário git.",
+      "fontes": [
+        {
+          "nome": "Daily Security Review",
+          "url": "https://dailysecurityreview.com/?p=44542"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-97229"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-28",
+      "cve": "CVE-2026-118539",
+      "produto": "Drupal Commerce Core",
+      "cvss": null,
+      "kev": false,
+      "zero_day": true,
+      "exploracao": "Ativa (bypass de acesso sem login)",
+      "prioridade": "P2",
+      "tratamento": "Só importa se houver loja ou portal em Drupal Commerce. Subir para 3.3.13 ou 8.x-2.41 (SA-contrib-2026-254) e auditar pedidos recentes por inconsistências. CVSS a confirmar.",
+      "fontes": [
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-10-28",
       "cve": "CVE-2026-76418",
       "produto": "Cisco ASA e FTD (SSL VPN com autenticação secundária)",
       "cvss": 8.6,
-      "kev": false,
+      "kev": true,
       "zero_day": true,
-      "exploracao": "Ativa (queda de VPN por DoS, sem RCE)",
+      "exploracao": "Ativa (KEV em 29/10; queda de VPN por DoS, sem RCE)",
       "prioridade": "P0",
-      "tratamento": "Atualizar ASA (ex.: 9.18.4.96, 9.20.4.50, 9.22.3.200) ou FTD (ex.: 7.2.13, 7.4.9, 7.6.7). Sem workaround: listar tunnel groups com secondary-authentication-server-group, incluindo DefaultWEBVPNGroup, e priorizar esses appliances.",
+      "tratamento": "Atualizar ASA (ex.: 9.18.4.96, 9.20.4.50, 9.22.3.200, 9.24.1.27) ou FTD (ex.: 7.2.13, 7.4.9, 7.6.7, 10.1.1). Até lá, desligar a autenticação secundária nos tunnel groups afetados, incluindo DefaultWEBVPNGroup.",
       "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/cisco-secure-firewall-vulnerability-exploited-ssl-vpn/"
+        },
         {
           "nome": "Cyber Security News",
           "url": "https://cybersecuritynews.com/cisco-secure-firewall-0-day-vulnerability-exploited"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-76418"
         }
       ],
       "status": "Novo"
@@ -300,28 +352,6 @@
     },
     {
       "data": "2026-10-23",
-      "cve": "CVE-2026-110879",
-      "produto": "FasterXML jackson-databind (Java)",
-      "cvss": 9.8,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P1",
-      "tratamento": "Correção incompleta da CVE-2026-54512; só afeta apps com tipagem polimórfica por nome de classe. Subir para 2.18.12, 2.21.8, 2.22.4, 3.1.8 ou 3.2.4 e varrer SBOM atrás de activateDefaultTyping; linhas 2.13 a 2.15 não têm correção pública.",
-      "fontes": [
-        {
-          "nome": "HeroDevs",
-          "url": "https://www.herodevs.com/vulnerability-directory/cve-2026-110879"
-        },
-        {
-          "nome": "CVE Brief 28/10",
-          "url": "https://cvebrief.com/archive/2026/10/28/"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-23",
       "cve": "CVE-2026-109618 / CVE-2026-109619",
       "produto": "Palo Alto PAN-OS, Panorama e WF-500 (PHP2Shell)",
       "cvss": 8.7,
@@ -344,51 +374,7 @@
           "url": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/"
         }
       ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-23",
-      "cve": "CVE-2026-110447",
-      "produto": "Collabora Online (CODE embutido no Nextcloud)",
-      "cvss": 9.2,
-      "kev": true,
-      "zero_day": true,
-      "exploracao": "Ativa (webshells desde set/2026)",
-      "prioridade": "P2",
-      "status": "Novo",
-      "tratamento": "Só afeta o app richdocumentscode do Nextcloud; subir para 26.4.303 ou remover o app (desativar não basta). Se existir no parque, procurar webshells PHP.",
-      "fontes": [
-        {
-          "nome": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/"
-        },
-        {
-          "nome": "CISA KEV 23/out",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0"
-        }
-      ]
-    },
-    {
-      "data": "2026-10-23",
-      "cve": "CVE-2026-106173",
-      "produto": "FortiSIEM (7.0 a 7.5.0)",
-      "cvss": 9.4,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Ativa (relatada pelo Cyber Centre do Canadá em 23/10)",
-      "prioridade": "P1",
-      "status": "Novo",
-      "tratamento": "Subir FortiSIEM para 7.5.1 ou 7.6; ramos 7.0 a 7.4 também constam no CVE, verificar caminho de migração. Até lá, liberar a porta TCP 27918 só entre nós do cluster e checar alterações em /opt/charting/redishb.sh e phLicenseTool.",
-      "fontes": [
-        {
-          "nome": "SecurityOnline",
-          "url": "https://securityonline.info/fortisiem-cve-2026-106173-exploited-poc/"
-        },
-        {
-          "nome": "AICybr",
-          "url": "https://aicybr.com/blog/fortisiem-cve-2026-106173-patch-exposure-incident-response"
-        }
-      ]
+      "status": "Pendente"
     },
     {
       "data": "2026-10-23",
@@ -414,69 +400,7 @@
           "url": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/"
         }
       ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-23",
-      "cve": "CVE-2026-115560",
-      "produto": "PHP (session upload progress)",
-      "cvss": null,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P1",
-      "tratamento": "Nova RCE sem patch, só em configuração incomum (serialize_handler trocado em runtime antes do session_start). Os patches de 21/10 não cobrem; manter session.upload_progress.enabled=0. CVSS a confirmar.",
-      "fontes": [
-        {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html"
-        },
-        {
-          "nome": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-23",
-      "cve": "CVE-2026-0768 / CVE-2026-0769 / CVE-2026-10134 / CVE-2026-93680",
-      "produto": "Langflow 1.0.0 a 1.11.4",
-      "cvss": null,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Exploit público",
-      "prioridade": "P2",
-      "tratamento": "Módulos do Metasploit publicados para RCE e bypass de autenticação sem login. Se times de dados ou IA usam Langflow, tirar da rede aberta e atualizar além da 1.11.4 (versão corrigida a confirmar). CVSS a confirmar.",
-      "fontes": [
-        {
-          "nome": "xloggs (exploits da semana)",
-          "url": "https://www.xloggs.com/2026/10/27/weekly-exploit-roundup-2026-10-27/"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-22",
-      "cve": "sem CVE (Fortinet FortiOS, FortiManager, FortiAnalyzer, FortiMail, FortiAuthenticator)",
-      "produto": "Fortinet: lote de correções críticas sem advisory (detalhes em 10/11)",
-      "cvss": null,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não confirmada",
-      "prioridade": "P1",
-      "tratamento": "Fortinet liberou correções críticas e altas sem CVE, com detalhes só em 10/11; o risco é exploração por análise de patch antes disso. Subir FortiOS para 8.0.2, 7.6.8, 7.4.13 ou 7.2.14, FortiManager/FortiAnalyzer para 8.0.2, 7.6.8, 7.4.12 ou 7.2.13, FortiMail para 8.0.2, 7.6.7 ou 7.4.9 e FortiAuthenticator para 8.0.4 ou 6.6.11.",
-      "fontes": [
-        {
-          "nome": "Rescana",
-          "url": "https://www.rescana.com/post/fortinet-security-hardening-release-fortios-fortimanager-october-2026"
-        },
-        {
-          "nome": "IT-Connect",
-          "url": "https://www.it-connect.tech/fortigate-fortimanager-fortinet-urges-immediate-patching-without-saying-why/"
-        }
-      ],
-      "status": "Novo"
+      "status": "Pendente"
     },
     {
       "data": "2026-10-22",
@@ -593,28 +517,6 @@
         {
           "nome": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624"
-        }
-      ]
-    },
-    {
-      "data": "2026-10-15",
-      "cve": "CVE-2026-21589",
-      "produto": "Atlassian Data Center (Jira, Confluence, Bitbucket, Bamboo, Crowd)",
-      "cvss": 9.3,
-      "kev": true,
-      "zero_day": false,
-      "exploracao": "Ativa (após PoC público)",
-      "prioridade": "P0",
-      "status": "Pendente",
-      "tratamento": "Leitura de arquivos sem login. Subir para as versões do advisory (ex.: Jira 10.3.26/11.3.12, Confluence 9.2.26/10.2.19, Bitbucket 10.5.1); sem patch, aplicar a regra de rewrite/WAF da Atlassian e revisar logs por path traversal.",
-      "fontes": [
-        {
-          "nome": "eSecurity Planet",
-          "url": "https://www.esecurityplanet.com/news/news-atlassian-cve-2026-21589-file-read-flaw/"
-        },
-        {
-          "nome": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-21589"
         }
       ]
     }
