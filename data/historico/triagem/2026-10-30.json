@@ -1,7 +1,29 @@
 {
-  "atualizado": "2026-10-30T10:39:00Z",
-  "janela": "24 a 30/out/2026",
+  "atualizado": "2026-10-30T15:33:27Z",
+  "janela": "23 a 30/out/2026",
   "itens": [
+    {
+      "data": "2026-10-29",
+      "cve": "CVE-2026-104935 / CVE-2026-111357 / CVE-2026-118527",
+      "produto": "Ivanti Connect Secure (VPN)",
+      "cvss": 8.8,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (cadeia até root sem login; appliance em 22.8R2.4 já corrigido foi invadido)",
+      "prioridade": "P0",
+      "tratamento": "Ivanti soltou novas correções em 29/10: subir para 25.1.1.3 ou 22.8R2.6, pois as versões de outubro não bastam. O Integrity Checker não pega a intrusão (alterações só em memória e logs apagados): em caso de suspeita, fazer análise de memória, disco e rede e revisar tráfego para welcome.cgi e arquivos em /tmp.",
+      "fontes": [
+        {
+          "nome": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/ivanti-connect-secure-zero-days-exploited/"
+        },
+        {
+          "nome": "ITdaily (CVE-2026-104935)",
+          "url": "https://itdaily.com/news/business/ivanti-bug-ics-2026/"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-10-29",
       "cve": "CVE-2026-97229",
@@ -11,15 +33,15 @@
       "zero_day": false,
       "exploracao": "Ativa (KEV em 29/10; PoC público desde 13/10)",
       "prioridade": "P0",
-      "tratamento": "RCE sem login via regex malicioso no .gitlab-ci.yml (estouro no motor Onigmo do Ruby). Subir para 19.4.2, 19.3.5 ou 19.2.8; até lá, tirar da internet, bloquear criação de projetos públicos e caçar processos anômalos do usuário git.",
+      "tratamento": "RCE sem login via regex malicioso no .gitlab-ci.yml (estouro no motor Onigmo do Ruby), explorada segundo a CISA. Ir direto para 19.5.1, 19.4.3, 19.3.6, 19.2.9 ou 18.11.13, que fecham também a CVE-2026-110264 (CVSS 10, sem exploração confirmada) que as versões de 12/10 deixam aberta; até lá, tirar da internet e caçar processos anômalos do usuário git.",
       "fontes": [
         {
-          "nome": "Daily Security Review",
-          "url": "https://dailysecurityreview.com/?p=44542"
+          "nome": "Cryptika (alerta KEV)",
+          "url": "https://www.cryptika.com/cisa-warns-of-gitlab-integer-overflow-vulnerability-exploited-in-attacks/"
         },
         {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html"
+          "nome": "IT-Connect (CVE-2026-110264)",
+          "url": "https://www.it-connect.fr/gitlab-cve-2026-110264-faille-critique-regex-onigmo/"
         },
         {
           "nome": "CISA KEV",
@@ -401,6 +423,28 @@
         }
       ],
       "status": "Pendente"
+    },
+    {
+      "data": "2026-10-23",
+      "cve": "CVE-2026-115560",
+      "produto": "PHP (sessões com upload progress)",
+      "cvss": null,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "RCE só com configuração rara (troca do session.serialize_handler em tempo de execução com upload progress ligado); sem patch, não coberta pelas versões do PHP2Shell. Desligar session.upload_progress.enabled e reiniciar os workers; CVSS a confirmar.",
+      "fontes": [
+        {
+          "nome": "BleepingComputer",
+          "url": "https://bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability"
+        },
+        {
+          "nome": "Field Effect",
+          "url": "https://fieldeffect.com/blog/another-php-issue-identified-report-affected-products"
+        }
+      ],
+      "status": "Novo"
     },
     {
       "data": "2026-10-22",

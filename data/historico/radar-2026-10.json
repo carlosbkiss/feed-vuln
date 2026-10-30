@@ -215,7 +215,7 @@
     "exibido_em": "2026-10-30T10:39:18Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0051,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -530,7 +530,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 1.0,
-    "poc_qtd": 716,
+    "poc_qtd": 725,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -654,7 +654,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 1.0,
-    "poc_qtd": 23,
+    "poc_qtd": 24,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -807,7 +807,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.7331,
-    "poc_qtd": 1,
+    "poc_qtd": 2,
     "fontes": [
       {
         "nome": "NVD",
@@ -1051,7 +1051,7 @@
     "aguardando_nota_desde": "2026-10-23T13:57:11Z",
     "nota_chegou_em": "2026-10-23T18:39:23Z",
     "epss_max": 0.0103,
-    "poc_qtd": 1,
+    "poc_qtd": 2,
     "fontes": [
       {
         "nome": "NVD",
@@ -1358,7 +1358,7 @@
     "exibido_em": "2026-10-29T15:02:43Z",
     "aguardando_nota_desde": "2026-10-28T19:15:00Z",
     "nota_chegou_em": "2026-10-29T15:02:43Z",
-    "epss_max": 0.0057,
+    "epss_max": 0.0091,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -1470,6 +1470,39 @@
       }
     ],
     "prioridade_max": "P0"
+  },
+  "CVE-2026-76527": {
+    "cve": "CVE-2026-76527",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.8,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-21T23:17:29Z",
+    "primeira_noticia": "2026-10-23T03:41:41Z",
+    "publicado_nvd": "2026-10-21T23:17:29Z",
+    "exibido_em": "2026-10-30T15:33:44Z",
+    "aguardando_nota_desde": "2026-10-23T03:41:41Z",
+    "nota_chegou_em": "2026-10-30T15:33:44Z",
+    "epss_max": 0.0043,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76527",
+        "publicado": "2026-10-21T23:17:29Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
+        "publicado": "2026-10-23T03:41:41Z"
+      }
+    ],
+    "prioridade_max": "P1"
   },
   "CVE-2026-76531": {
     "cve": "CVE-2026-76531",
@@ -2051,7 +2084,7 @@
     "exibido_em": "2026-10-29T23:18:51Z",
     "aguardando_nota_desde": "2026-10-29T09:05:39Z",
     "nota_chegou_em": "2026-10-29T23:18:51Z",
-    "epss_max": 0.1843,
+    "epss_max": 0.2657,
     "poc_qtd": 5,
     "fontes": [
       {
