@@ -1,9 +1,17 @@
 {
-  "atualizado": "2026-10-30T15:33:44Z",
+  "atualizado": "2026-10-30T18:39:46Z",
   "itens": [
     {
       "cve": "CVE-2026-118527",
       "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-118527",
+          "publicado": "2026-10-30",
+          "visto_em": "2026-10-30T18:39:46Z"
+        },
         {
           "id": "csn",
           "nome": "Cyber Security News",
@@ -11,20 +19,29 @@
           "link": "https://cybersecuritynews.com/ivanti-connect-secure-zero-days-exploited/",
           "publicado": "2026-10-30T08:26:39Z",
           "visto_em": "2026-10-30T10:39:18Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-10-30T12:00:00Z",
+          "visto_em": "2026-10-30T18:39:46Z"
         }
       ],
       "detectado": "2026-10-30T10:39:18Z",
       "zero_day": true,
-      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
-      "nvd_checado_em": "2026-10-30T10:39:18Z",
+      "zero_day_motivo": "CISA KEV",
+      "nvd_checado_em": "2026-10-30T18:39:46Z",
       "aguardando_nota_desde": "2026-10-30T08:26:39Z",
       "elegivel_por": [
-        "zero-day"
+        "zero-day",
+        "KEV"
       ],
-      "primeira_vez": "2026-10-30T08:26:39Z",
+      "primeira_vez": "2026-10-30T00:00:00Z",
       "primeira_noticia": "2026-10-30T08:26:39Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527",
-      "ultima_atividade": "2026-10-30T08:26:39Z",
+      "ultima_atividade": "2026-10-30T12:00:00Z",
       "exibido_em": "2026-10-30T10:39:18Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -33,7 +50,15 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-30T10:39:18Z"
-      }
+      },
+      "kev": {
+        "adicionado": "2026-10-30",
+        "prazo": "2026-11-13",
+        "ransomware": "Unknown"
+      },
+      "produto": "Ivanti Connect Secure",
+      "titulo": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
+      "resumo": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. This vulnerability can be chained with…"
     },
     {
       "cve": "CVE-2026-76418",
@@ -818,6 +843,81 @@
       "titulo": "PHP Stale Internal Request-State Vulnerability"
     },
     {
+      "cve": "CVE-2026-111357",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-111357",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
+          "publicado": "2026-10-15T21:17:13Z",
+          "visto_em": "2026-10-30T18:39:46Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111357",
+          "publicado": "2026-10-30",
+          "visto_em": "2026-10-30T18:39:46Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Ivanti Connect Secure 0-Days Exploited in the Wild to Gain Unauthenticated Root Access",
+          "link": "https://cybersecuritynews.com/ivanti-connect-secure-zero-days-exploited/",
+          "publicado": "2026-10-30T08:26:39Z",
+          "visto_em": "2026-10-30T18:39:46Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-10-30T12:00:00Z",
+          "visto_em": "2026-10-30T18:39:46Z"
+        }
+      ],
+      "detectado": "2026-10-30T18:39:46Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "kev": {
+        "adicionado": "2026-10-30",
+        "prazo": "2026-11-02",
+        "ransomware": "Unknown"
+      },
+      "produto": "Ivanti Connect Secure",
+      "titulo": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
+      "resumo": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
+      "cvss": 7.0,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-15T21:17:13Z",
+      "nvd_checado_em": "2026-10-30T18:39:46Z",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-15T21:17:13Z",
+      "primeira_noticia": "2026-10-30T08:26:39Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
+      "ultima_atividade": "2026-10-30T12:00:00Z",
+      "exibido_em": "2026-10-30T18:39:46Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0032,
+        "percentil": 0.2457,
+        "data": "2026-10-30"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-30T18:39:46Z"
+      }
+    },
+    {
       "cve": "CVE-2026-102764",
       "fontes": [
         {
@@ -1310,7 +1410,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:27Z",
       "resumo": "A Missing authentication for critical function vulnerability in Juniper Networks Session Smart Router allows an unauthenticated network-based attacker to obtain administrative privileges by passing crafted URL parameters to an insecure endpoint running as…",
-      "nvd_checado_em": "2026-10-30T15:33:44Z",
+      "nvd_checado_em": "2026-10-30T18:39:46Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1351,7 +1451,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:25Z",
       "resumo": "An Improper Neutralization of Special Elements used in an OS Command vulnerability in the AutomatedProvisioner in Juniper Networks Session Smart Conductor allows a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
-      "nvd_checado_em": "2026-10-30T15:33:44Z",
+      "nvd_checado_em": "2026-10-30T18:39:46Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1395,7 +1495,7 @@
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
-      "nvd_checado_em": "2026-10-30T10:39:18Z",
+      "nvd_checado_em": "2026-10-30T18:39:46Z",
       "elegivel_por": [
         "zero-day"
       ],

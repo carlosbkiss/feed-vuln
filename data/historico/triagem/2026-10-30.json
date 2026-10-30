@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-30T15:33:27Z",
+  "atualizado": "2026-10-30T18:39:18Z",
   "janela": "23 a 30/out/2026",
   "itens": [
     {
@@ -99,11 +99,11 @@
       "cve": "CVE-2026-20127",
       "produto": "Cisco Catalyst SD-WAN (Controller, Manager, Validator)",
       "cvss": 10.0,
-      "kev": false,
+      "kev": true,
       "zero_day": true,
-      "exploracao": "Ativa (Talos em 28/10: malware KeyDrift; ligada à rede Silent Train do Volt Typhoon)",
+      "exploracao": "Ativa (KEV desde 25/02; Talos em 28/10: malware KeyDrift ligado à rede Silent Train do Volt Typhoon)",
       "prioridade": "P0",
-      "tratamento": "Falha de fev/2026 voltou ao foco, agora atribuída ao Volt Typhoon. Conferir se está em 20.9.8.2, 20.12.6.1, 20.15.4.2 ou 20.18.2.1; restringir portas 22 e 830 a IPs conhecidos e caçar KeyDrift, pois o patch não remove implante. Status no KEV a confirmar.",
+      "tratamento": "Falha de fev/2026 (no KEV desde 25/02) voltou ao foco, agora atribuída ao Volt Typhoon. Conferir se está em 20.9.8.2, 20.12.6.1, 20.15.4.2 ou 20.18.2.1; restringir portas 22 e 830 a IPs conhecidos e caçar KeyDrift, pois o patch não remove implante.",
       "fontes": [
         {
           "nome": "The Hacker News",
@@ -112,6 +112,10 @@
         {
           "nome": "The Hacker News (Silent Train)",
           "url": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html"
+        },
+        {
+          "nome": "Senserva (KEV)",
+          "url": "https://senserva.com/cve/CVE-2026-20127.html"
         }
       ],
       "status": "Novo"

@@ -885,6 +885,54 @@
     ],
     "prioridade_max": "P2"
   },
+  "CVE-2026-111357": {
+    "cve": "CVE-2026-111357",
+    "produto": "Ivanti Connect Secure",
+    "titulo": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
+    "cvss": 7.0,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-10-30",
+      "prazo": "2026-11-02",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-10-15T21:17:13Z",
+    "primeira_noticia": "2026-10-30T08:26:39Z",
+    "publicado_nvd": "2026-10-15T21:17:13Z",
+    "exibido_em": "2026-10-30T18:39:46Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0032,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
+        "publicado": "2026-10-15T21:17:13Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111357",
+        "publicado": "2026-10-30"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/ivanti-connect-secure-zero-days-exploited/",
+        "publicado": "2026-10-30T08:26:39Z"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-10-30T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
   "CVE-2026-111497": {
     "cve": "CVE-2026-111497",
     "produto": "Google Brotli",
@@ -1172,16 +1220,21 @@
   },
   "CVE-2026-118527": {
     "cve": "CVE-2026-118527",
-    "produto": "",
-    "titulo": "",
+    "produto": "Ivanti Connect Secure",
+    "titulo": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
     "cvss": null,
     "prioridade": "P0",
     "elegivel_por": [
-      "zero-day"
+      "zero-day",
+      "KEV"
     ],
     "zero_day": true,
-    "kev": null,
-    "primeira_vez": "2026-10-30T08:26:39Z",
+    "kev": {
+      "adicionado": "2026-10-30",
+      "prazo": "2026-11-13",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-10-30T00:00:00Z",
     "primeira_noticia": "2026-10-30T08:26:39Z",
     "publicado_nvd": null,
     "exibido_em": "2026-10-30T10:39:18Z",
@@ -1191,9 +1244,19 @@
     "poc_qtd": 0,
     "fontes": [
       {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-118527",
+        "publicado": "2026-10-30"
+      },
+      {
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/ivanti-connect-secure-zero-days-exploited/",
         "publicado": "2026-10-30T08:26:39Z"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-10-30T12:00:00Z"
       }
     ],
     "prioridade_max": "P0"
