@@ -1,88 +1,89 @@
 {
-  "periodo": "21 a 27 de outubro de 2026 (prévia de meio de semana)",
-  "atualizado": "2026-10-27T12:35:28Z",
+  "periodo": "24 a 30 de outubro de 2026",
+  "atualizado": "2026-10-30T15:47:25Z",
   "kpis": [
     {
-      "n": "4",
+      "n": "8",
       "l": "CVEs incluídas no CISA KEV",
       "destaque": false
     },
     {
-      "n": "2",
+      "n": "3",
       "l": "zero-days relevantes para banco",
       "destaque": true
     },
     {
-      "n": "24",
+      "n": "12",
       "l": "CVEs novas com CVSS ≥ 9.0 relevantes",
       "destaque": false
     },
     {
-      "n": "3",
+      "n": "5",
       "l": "frentes P0 para 24h",
       "destaque": true
     }
   ],
-  "tese": "Uma falha de runtime saiu do vazamento para o KEV em cinco dias e chegou à gestão de firewalls e ADCs, onde o banco depende do fabricante para ter patch.",
+  "tese": "O ataque migrou do runtime para o acesso remoto: VPN, SD-WAN e CI/CD foram explorados com o patch já aplicado ou recém-saído, e corrigir deixou de bastar sem caçar intrusão.",
   "historia": [
-    "Na quarta, 21/out, o PHP antecipou a correção do PHP2Shell após o vazamento, e no mesmo dia saíram RCE sem login no GitLab (nota 10) e falhas críticas em Cisco Expressway e Splunk.",
-    "Na quinta, 22/out, a Arista confirmou zero-day explorado no VeloCloud Orchestrator, que comanda o SD-WAN de agências, e a Fortinet liberou builds sem detalhar as falhas, previstas para 10/nov.",
-    "Na sexta, 23/out, Arista e Collabora entraram no KEV; Palo Alto e Citrix confirmaram o PHP2Shell na gestão do PAN-OS e do NetScaler (este ainda sem build), o PHP avisou de outra RCE sem patch e o Canadá relatou exploração do FortiSIEM.",
-    "Na segunda, 26/out, honeypots registraram RCE real via PHP2Shell e a CISA o pôs no KEV com prazo em 29/out; no mesmo dia a Palo Alto confirmou a falha do Brotli no PAN-OS e a HashiCorp corrigiu um bypass nota 9.9 no consul-k8s.",
-    "Canais de cliente (app, internet banking, PIX) não tiveram falha direta; o risco chega por tabela, via portais em PHP, gestão de firewall e ADC, SD-WAN de agências e pipelines de CI/CD.",
-    "Fontes da semana: Fortinet PSIRT, Cisco PSIRT e Microsoft saíram antes de todos em 4 vulnerabilidades; CISA Advisories, Cyber Security News e The Hacker News trouxeram 9 exclusivas; BleepingComputer e Palo Alto só repetiram, e Dark Reading, SecurityWeek, Cybernews e Chrome não tiveram nada no radar."
+    "No fim de semana e na segunda, 26/out, a Microsoft soltou patches de emergência do .NET para o Brotli e a CISA pôs o PHP2Shell no KEV com prazo em 29/out, prazo que já venceu para quem ainda roda PHP antigo em portais e appliances.",
+    "Na terça, 27/out, Brotli e Magento PolyShell entraram no KEV, a Citrix publicou os builds do NetScaler e honeypots registraram sondagens contra a falha nota 9.8 do Oracle E-Business Suite, que guarda dados financeiros e de RH.",
+    "Na quarta, 28/out, a Cisco confirmou zero-day que derruba a VPN SSL do ASA e do FTD, a Talos ligou a falha nota 10 do Catalyst SD-WAN ao Volt Typhoon e ESXi e kernel Linux entraram no KEV, o que expõe a rede das agências e a virtualização do datacenter.",
+    "Na quinta, 29/out, a CISA incluiu no KEV a RCE nota 10 do GitLab e o zero-day do ASA, com prazo em 1º/nov, e a Ivanti soltou nova correção para a cadeia que dá root no Connect Secure mesmo em versões já atualizadas.",
+    "Canais de cliente (app, internet banking, PIX) não tiveram falha direta; o risco chega por tabela, via VPN de funcionários e terceiros, SD-WAN de agências e pipelines que publicam o app, e o radar teve notícia antes da inclusão no KEV em 100% dos casos da semana.",
+    "Fontes da semana: Fortinet PSIRT, Cisco PSIRT e Microsoft saíram antes de todos em 5 vulnerabilidades; Cyber Security News e CISA Advisories trouxeram 4 exclusivas; BleepingComputer, Palo Alto e SecurityWeek só repetiram, e Dark Reading, Cybernews e Chrome não tiveram nada no radar."
   ],
   "p0": [
     {
-      "titulo": "PHP2Shell",
-      "cve": "CVE-2026-109618 · -109619",
-      "cvss": "9.8",
-      "tags": [
-        "KEV 26/out",
-        "RCE sem login",
-        "Prazo 29/out"
-      ],
-      "onde": "Sites, portais e APIs em PHP, imagens de contêiner e appliances com PHP embarcado.",
-      "impacto": "RCE no perímetro, webshell e pivô para a rede interna.",
-      "acao": "PHP 8.5.12, 8.4.27, 8.3.36 ou 8.2.35 e caça a webshells nos expostos."
-    },
-    {
-      "titulo": "Gestão de NetScaler e PAN-OS",
-      "cve": "CVE-2026-109618 · -109619",
-      "cvss": "9.8",
-      "tags": [
-        "Sem build Citrix",
-        "Borda",
-        "Mesma falha"
-      ],
-      "onde": "Interfaces de gestão de ADC/gateway de acesso remoto e de firewalls de perímetro.",
-      "impacto": "Controle do equipamento que publica e protege os canais.",
-      "acao": "Gestão só via jump host; hotfix do PAN-OS já cobre o Brotli; NetScaler aguarda build."
-    },
-    {
-      "titulo": "Arista VeloCloud Orchestrator",
-      "cve": "CVE-2026-114625",
-      "cvss": "9.9",
+      "titulo": "Ivanti Connect Secure",
+      "cve": "CVE-2026-104935 · -118527",
+      "cvss": "8.6",
       "tags": [
         "Zero-day",
-        "KEV 23/out",
-        "SD-WAN"
+        "Root sem login",
+        "Patch não bastou"
       ],
-      "onde": "Orquestrador on-premises do SD-WAN que liga agências e PAs.",
-      "impacto": "Login só-leitura vira superusuário; controle da rede das agências.",
-      "acao": "Prazo do KEV venceu em 26/out: confirmar 5.2.3.18, 6.1.3.10 ou 6.4.2.12 e revisar admins."
+      "onde": "VPN de funcionários, terceiros e acesso administrativo remoto.",
+      "impacto": "Root no concentrador, roubo de credenciais e acesso ao AD sem deixar webshell.",
+      "acao": "Aplicar a correção de 29/out e, se houver suspeita, perícia de memória e rede: o Integrity Checker não detecta."
     },
     {
       "titulo": "GitLab self-managed",
-      "cve": "CVE-2026-110264",
+      "cve": "CVE-2026-97229",
       "cvss": "10.0",
       "tags": [
+        "KEV 29/out",
         "RCE sem login",
-        "Supply chain"
+        "Prazo 1º/nov"
       ],
       "onde": "Repositórios dos apps e pipelines de CI/CD com segredos de produção.",
-      "impacto": "Código malicioso no app do cliente e roubo de credenciais.",
-      "acao": "Subir para 19.5.1, 19.4.3 ou 19.3.6 e rotacionar tokens de CI/CD."
+      "impacto": "Código malicioso no app do cliente e roubo de tokens de deploy.",
+      "acao": "Subir para 19.5.1, 19.4.3 ou 19.3.6 e rotacionar segredos de CI/CD."
+    },
+    {
+      "titulo": "Cisco ASA e FTD (VPN SSL)",
+      "cve": "CVE-2026-76418",
+      "cvss": "8.6",
+      "tags": [
+        "Zero-day",
+        "KEV 29/out",
+        "DoS na VPN"
+      ],
+      "onde": "Firewalls de perímetro com VPN SSL e autenticação secundária.",
+      "impacto": "Queda do acesso remoto de agências e funcionários; sem RCE.",
+      "acao": "Atualizar (ex.: ASA 9.20.4.50, FTD 7.4.9); até lá, desligar autenticação secundária nos tunnel groups."
+    },
+    {
+      "titulo": "Cisco Catalyst SD-WAN",
+      "cve": "CVE-2026-20127",
+      "cvss": "10.0",
+      "tags": [
+        "Volt Typhoon",
+        "SD-WAN",
+        "Implante persiste"
+      ],
+      "onde": "Controller, Manager e Validator que orquestram a rede das agências.",
+      "impacto": "Controle da WAN e implante que sobrevive ao patch.",
+      "acao": "Confirmar versão corrigida, restringir portas 22 e 830 e caçar o KeyDrift."
     }
   ],
   "plano": [
@@ -90,83 +91,96 @@
       "h": "24h",
       "t": "Agora",
       "itens": [
-        "PHP: atualizar servidores e imagens até 29/out",
-        "NetScaler: ACL na gestão (NSIP, SNIP, Cluster IP) até sair build",
-        "PAN-OS: hotfix que cobre PHP2Shell e Brotli",
-        "Arista VCO: confirmar versão corrigida e revisar admins",
-        "GitLab: atualizar e rotacionar segredos de CI/CD"
+        "Ivanti: correção de 29/out e caça a intrusão por memória e rede",
+        "GitLab: atualizar e rotacionar tokens antes de 1º/nov",
+        "ASA/FTD: patch ou desligar autenticação secundária",
+        "SD-WAN Cisco: versão, ACL nas portas 22/830 e caça ao KeyDrift",
+        "Oracle EBS: CPU de outubro ou tirar AppsTCFServer do allowlist"
       ]
     },
     {
       "h": "7 dias",
       "t": "Esta semana",
       "itens": [
-        "Fortinet: aplicar os builds de outubro antes de 10/nov",
-        "FortiSIEM: 7.5.1 e porta 27918 só entre nós do cluster",
-        "Aruba AOS, Okta OAG, Cisco Expressway e Splunk: corrigir pelo mais exposto",
-        "consul-k8s e Node.js: atualizar nas plataformas de contêiner",
-        "PHP: manter session.upload_progress desligado (CVE-2026-115560)"
+        "PHP2Shell e Brotli: fechar o que ficou de fora do prazo do KEV",
+        "NetScaler: aplicar os builds de 27/out",
+        "Veeam 13.x e WatchGuard: corrigir antes que virem alvo de ransomware",
+        "ESXi (VMSA-2026-0006) e kernel Linux: patch nos hosts de contêiner",
+        "Juniper SSR e consul-k8s: atualizar e isolar a gestão"
       ]
     },
     {
       "h": "30 dias",
       "t": "Estrutural",
       "itens": [
-        "SLA de patch para appliances com componente de terceiros (PHP, Brotli)",
-        "Pedir SBOM aos fabricantes de borda e inventariar runtime embarcado",
-        "Fontes: rever Dark Reading, SecurityWeek, Cybernews e Chrome, sem retorno",
-        "Webshell ou RCE confirmada: fluxo de incidente relevante (Res. CMN 4.893/2021)"
+        "SLA de patch com caça a IOC obrigatória para VPN e SD-WAN",
+        "Inventário de VPN, SD-WAN e servidores de CI/CD expostos, com dono",
+        "Shadow IT: mapear Tailscale, Magento e Drupal fora do parque oficial",
+        "Fontes: rever Dark Reading, Cybernews e Chrome, sem retorno a semana toda",
+        "Intrusão confirmada na VPN: fluxo de incidente relevante (Res. CMN 4.893/2021)"
       ]
     }
   ],
   "fontes": [
     [
-      "BleepingComputer: PHP2Shell entra no KEV",
-      "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/"
-    ],
-    [
       "CISA: catálogo KEV (dados oficiais)",
       "https://raw.githubusercontent.com/cisagov/kev-data/main/known_exploited_vulnerabilities.json"
     ],
     [
-      "The Hacker News: nova RCE no PHP sem patch",
-      "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html"
+      "The Hacker News: cadeia de zero-days no Ivanti",
+      "https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html"
     ],
     [
-      "Kraft Kennedy: boletim Citrix sobre PHP2Shell",
-      "https://www.kraftkennedy.com/citrix-security-advisory-for-cve-2026-109618-and-cve-2026-109619/"
+      "Cyber Security News: Ivanti com root sem login",
+      "https://cybersecuritynews.com/ivanti-connect-secure-zero-days-exploited/"
     ],
     [
-      "SecurityOnline: PHP2Shell no PAN-OS",
-      "https://securityonline.info/pan-os-php2shell-cve-2026-109618/"
+      "CSA Singapura: alerta Ivanti Connect Secure",
+      "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-147/"
     ],
     [
-      "SecurityOnline: Brotli no PAN-OS",
-      "https://securityonline.info/pan-os-brotli-vulnerability-cve-2026-111497/"
+      "Cryptika: GitLab entra no KEV",
+      "https://www.cryptika.com/cisa-warns-of-gitlab-integer-overflow-vulnerability-exploited-in-attacks/"
     ],
     [
-      "The Hacker News: zero-day no Arista VeloCloud",
-      "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html"
+      "IT-Connect: GitLab CVE-2026-110264",
+      "https://www.it-connect.fr/gitlab-cve-2026-110264-faille-critique-regex-onigmo/"
     ],
     [
-      "SecurityOnline: GitLab CVE-2026-110264",
-      "https://securityonline.info/gitlab-critical-patch-release-cve-2026-110264/"
+      "SecurityOnline: zero-day no ASA e FTD",
+      "https://securityonline.info/cisco-secure-firewall-vulnerability-exploited-ssl-vpn/"
     ],
     [
-      "The Hacker News: Ruby corrige Onigmo do GitLab",
-      "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html"
+      "The Hacker News: SD-WAN Cisco e Volt Typhoon",
+      "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html"
     ],
     [
-      "SecurityOnline: FortiSIEM explorado",
-      "https://securityonline.info/fortisiem-cve-2026-106173-exploited-poc/"
+      "SecurityWeek: rede Silent Train",
+      "https://www.securityweek.com/cisco-sd-wan-zero-day-exploitation-tied-to-volt-typhoons-silent-train-network/"
     ],
     [
-      "SecurityOnline: HashiCorp consul-k8s",
-      "https://securityonline.info/hashicorp-consul-k8s-vulnerability-cve-2026-110720/"
+      "The Hacker News: sondagens no Oracle EBS",
+      "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html"
     ],
     [
-      "Cybernews: Fortinet corrige agora, detalha em 10/nov",
-      "https://cybernews.com/security/fortinet-critical-flaws-patches-november-disclosure/"
+      "Citrix CTX697263: builds do NetScaler",
+      "https://support.citrix.com/external/article/CTX697263/citrix-security-advisory-for-cve20261096.html"
+    ],
+    [
+      "Socura: VMSA-2026-0006 (ESXi)",
+      "https://socura.co.uk/threat-alerts/vmsa-2026-0006-multiple-vmware-esx-vcenter-workstation-and-fusion-vulnerabilities"
+    ],
+    [
+      "Brandefense: Veeam CVE-2026-108142",
+      "https://brandefense.io/security-news/veeam-backup-replication-cve-2026-108142-patch/"
+    ],
+    [
+      "SecurityOnline: falhas no WatchGuard Firebox",
+      "https://securityonline.info/watchguard-fireware-os-vulnerabilities-2/"
+    ],
+    [
+      "Security Magazine: patches de emergência do .NET",
+      "https://www.securitymagazine.com/articles/102699-microsoft-releases-emergency-net-patches"
     ]
   ]
 }
