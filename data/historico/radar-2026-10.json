@@ -198,6 +198,34 @@
     ],
     "prioridade_max": "P0"
   },
+  "CVE-2026-103039": {
+    "cve": "CVE-2026-103039",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.8,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-30T07:16:30Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-30T07:16:30Z",
+    "exibido_em": "2026-10-30T10:39:18Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-103039",
+        "publicado": "2026-10-30T07:16:30Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
   "CVE-2026-103406": {
     "cve": "CVE-2026-103406",
     "produto": "",
@@ -721,6 +749,40 @@
     ],
     "prioridade_max": "P0"
   },
+  "CVE-2026-110264": {
+    "cve": "CVE-2026-110264",
+    "produto": "",
+    "titulo": "",
+    "cvss": 10.0,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "CVSS ≥ 9"
+    ],
+    "zero_day": true,
+    "kev": null,
+    "primeira_vez": "2026-10-22T01:16:57Z",
+    "primeira_noticia": "2026-10-30T08:28:50Z",
+    "publicado_nvd": "2026-10-22T01:16:57Z",
+    "exibido_em": "2026-10-30T10:39:18Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0131,
+    "poc_qtd": 12,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-110264",
+        "publicado": "2026-10-22T01:16:57Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/gitlab-integer-overflow-vulnerability-exploited/",
+        "publicado": "2026-10-30T08:28:50Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
   "CVE-2026-110447": {
     "cve": "CVE-2026-110447",
     "produto": "Collabora Collabora Online – Built-in CODE Server",
@@ -1107,6 +1169,34 @@
       }
     ],
     "prioridade_max": "P2"
+  },
+  "CVE-2026-118527": {
+    "cve": "CVE-2026-118527",
+    "produto": "",
+    "titulo": "",
+    "cvss": null,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day"
+    ],
+    "zero_day": true,
+    "kev": null,
+    "primeira_vez": "2026-10-30T08:26:39Z",
+    "primeira_noticia": "2026-10-30T08:26:39Z",
+    "publicado_nvd": null,
+    "exibido_em": "2026-10-30T10:39:18Z",
+    "aguardando_nota_desde": "2026-10-30T08:26:39Z",
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/ivanti-connect-secure-zero-days-exploited/",
+        "publicado": "2026-10-30T08:26:39Z"
+      }
+    ],
+    "prioridade_max": "P0"
   },
   "CVE-2026-21589": {
     "cve": "CVE-2026-21589",
@@ -1983,6 +2073,21 @@
         "nome": "CISA Advisories",
         "link": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
         "publicado": "2026-10-29T12:00:00Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+        "publicado": "2026-10-30T07:27:05Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/gitlab-integer-overflow-vulnerability-exploited/",
+        "publicado": "2026-10-30T08:28:50Z"
+      },
+      {
+        "nome": "SecurityWeek",
+        "link": "https://www.securityweek.com/max-severity-gitlab-vulnerability-exploited-against-alpine-linux/",
+        "publicado": "2026-10-30T09:32:27Z"
       }
     ],
     "prioridade_max": "P0"

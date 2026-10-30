@@ -1,6 +1,40 @@
 {
-  "atualizado": "2026-10-29T23:18:51Z",
+  "atualizado": "2026-10-30T10:39:18Z",
   "itens": [
+    {
+      "cve": "CVE-2026-118527",
+      "fontes": [
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Ivanti Connect Secure 0-Days Exploited in the Wild to Gain Unauthenticated Root Access",
+          "link": "https://cybersecuritynews.com/ivanti-connect-secure-zero-days-exploited/",
+          "publicado": "2026-10-30T08:26:39Z",
+          "visto_em": "2026-10-30T10:39:18Z"
+        }
+      ],
+      "detectado": "2026-10-30T10:39:18Z",
+      "zero_day": true,
+      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
+      "nvd_checado_em": "2026-10-30T10:39:18Z",
+      "aguardando_nota_desde": "2026-10-30T08:26:39Z",
+      "elegivel_por": [
+        "zero-day"
+      ],
+      "primeira_vez": "2026-10-30T08:26:39Z",
+      "primeira_noticia": "2026-10-30T08:26:39Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527",
+      "ultima_atividade": "2026-10-30T08:26:39Z",
+      "exibido_em": "2026-10-30T10:39:18Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-30T10:39:18Z"
+      }
+    },
     {
       "cve": "CVE-2026-76418",
       "fontes": [
@@ -344,6 +378,58 @@
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
       "escalado": true
+    },
+    {
+      "cve": "CVE-2026-110264",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-110264",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-110264",
+          "publicado": "2026-10-22T01:16:57Z",
+          "visto_em": "2026-10-30T10:39:18Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns of GitLab Integer Overflow Vulnerability Exploited in Attacks",
+          "link": "https://cybersecuritynews.com/gitlab-integer-overflow-vulnerability-exploited/",
+          "publicado": "2026-10-30T08:28:50Z",
+          "visto_em": "2026-10-30T10:39:18Z"
+        }
+      ],
+      "detectado": "2026-10-30T10:39:18Z",
+      "zero_day": true,
+      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
+      "cvss": 10.0,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-22T01:16:57Z",
+      "resumo": "An issue has been discovered in GitLab CE/EE affecting all versions from 7.0 before 18.11.13, 19.0 before 19.0.10, 19.1 before 19.1.9, 19.2 before 19.2.9, 19.3 before 19.3.6, 19.4 before 19.4.3, and 19.5 before 19.5.1 that, under certain conditions, could…",
+      "nvd_checado_em": "2026-10-30T10:39:18Z",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-22T01:16:57Z",
+      "primeira_noticia": "2026-10-30T08:28:50Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-110264",
+      "ultima_atividade": "2026-10-30T08:28:50Z",
+      "exibido_em": "2026-10-30T10:39:18Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0131,
+        "percentil": 0.7047,
+        "data": "2026-10-29"
+      },
+      "poc": {
+        "qtd": 12,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110264.json",
+        "checado": "2026-10-30T10:39:18Z"
+      }
     },
     {
       "cve": "CVE-2026-109618",
@@ -909,6 +995,30 @@
           "link": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
           "publicado": "2026-10-29T12:00:00Z",
           "visto_em": "2026-10-29T23:18:51Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+          "link": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+          "publicado": "2026-10-30T07:27:05Z",
+          "visto_em": "2026-10-30T10:39:18Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns of GitLab Integer Overflow Vulnerability Exploited in Attacks",
+          "link": "https://cybersecuritynews.com/gitlab-integer-overflow-vulnerability-exploited/",
+          "publicado": "2026-10-30T08:28:50Z",
+          "visto_em": "2026-10-30T10:39:18Z"
+        },
+        {
+          "id": "securityweek",
+          "nome": "SecurityWeek",
+          "titulo": "Max-Severity GitLab Vulnerability Exploited Against Alpine Linux",
+          "link": "https://www.securityweek.com/max-severity-gitlab-vulnerability-exploited-against-alpine-linux/",
+          "publicado": "2026-10-30T09:32:27Z",
+          "visto_em": "2026-10-30T10:39:18Z"
         }
       ],
       "detectado": "2026-10-29T15:02:43Z",
@@ -921,7 +1031,7 @@
       "primeira_vez": "2026-10-13T02:17:00Z",
       "primeira_noticia": "2026-10-29T09:05:39Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229",
-      "ultima_atividade": "2026-10-29T12:00:00Z",
+      "ultima_atividade": "2026-10-30T09:32:27Z",
       "kev": {
         "adicionado": "2026-10-29",
         "prazo": "2026-11-01",
@@ -952,66 +1062,6 @@
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-97229.json",
         "checado": "2026-10-29T23:18:51Z"
       }
-    },
-    {
-      "cve": "CVE-2026-21589",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-21589",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589",
-          "publicado": "2026-10-05T22:16:58Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-21589",
-          "publicado": "2026-10-15",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-15",
-        "prazo": "2026-10-18",
-        "ransomware": "Unknown"
-      },
-      "produto": "Atlassian Multiple Products",
-      "titulo": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
-      "resumo": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external…",
-      "cvss": 9.3,
-      "cvss_versao": "4.0",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-05T22:16:58Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "CVSS ≥ 9",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-05T22:16:58Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.9948,
-        "percentil": 0.9994,
-        "data": "2026-10-29"
-      },
-      "poc": {
-        "qtd": 13,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-21589.json",
-        "checado": "2026-10-29T15:02:43Z"
-      },
-      "ultima_atividade": "2026-10-15T00:00:00Z"
     },
     {
       "cve": "CVE-2026-41709",
@@ -1260,7 +1310,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:27Z",
       "resumo": "A Missing authentication for critical function vulnerability in Juniper Networks Session Smart Router allows an unauthenticated network-based attacker to obtain administrative privileges by passing crafted URL parameters to an insecure endpoint running as…",
-      "nvd_checado_em": "2026-10-29T23:18:51Z",
+      "nvd_checado_em": "2026-10-30T10:39:18Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1301,7 +1351,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:25Z",
       "resumo": "An Improper Neutralization of Special Elements used in an OS Command vulnerability in the AutomatedProvisioner in Juniper Networks Session Smart Conductor allows a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
-      "nvd_checado_em": "2026-10-29T23:18:51Z",
+      "nvd_checado_em": "2026-10-30T10:39:18Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1345,7 +1395,7 @@
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
-      "nvd_checado_em": "2026-10-29T23:18:51Z",
+      "nvd_checado_em": "2026-10-30T10:39:18Z",
       "elegivel_por": [
         "zero-day"
       ],
@@ -1759,6 +1809,42 @@
         "checado": "2026-10-29T15:02:43Z"
       },
       "ultima_atividade": "2026-10-20T22:20:11Z"
+    },
+    {
+      "cve": "CVE-2026-103039",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-103039",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-103039",
+          "publicado": "2026-10-30T07:16:30Z",
+          "visto_em": "2026-10-30T10:39:18Z"
+        }
+      ],
+      "detectado": "2026-10-30T10:39:18Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-30T07:16:30Z",
+      "resumo": "The Gravity Forms plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.1.2 via a Post Custom Field whose input type is List. This is due to GFFormsModel::create_post() passing the submitted value to WordPress'…",
+      "nvd_checado_em": "2026-10-30T10:39:18Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-30T07:16:30Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-103039",
+      "ultima_atividade": "2026-10-30T07:16:30Z",
+      "exibido_em": "2026-10-30T10:39:18Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-30T10:39:18Z"
+      }
     },
     {
       "cve": "CVE-2026-10757",
@@ -3165,6 +3251,12 @@
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "BleepingComputer",
+      "titulo": "Drupal warns of critical Commerce Core flaw exploited in attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/",
+      "publicado": "2026-10-30T10:16:07Z"
+    },
     {
       "fonte": "BleepingComputer",
       "titulo": "New Cisco firewall zero-day exploited to crash SSL VPN devices",
