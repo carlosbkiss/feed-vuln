@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-31T14:44:51Z",
+  "atualizado": "2026-10-31T16:07:26Z",
   "itens": [
     {
       "cve": "CVE-2026-118527",
@@ -135,7 +135,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "kev": {
         "adicionado": "2026-10-29",
@@ -218,9 +218,9 @@
         "data": "2026-10-31"
       },
       "poc": {
-        "qtd": 2,
+        "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-114625.json",
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       }
     },
     {
@@ -637,9 +637,9 @@
         "data": "2026-10-31"
       },
       "poc": {
-        "qtd": 725,
+        "qtd": 733,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109618.json",
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-28T17:54:27Z",
       "zero_day": true,
@@ -829,7 +829,7 @@
       "poc": {
         "qtd": 24,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109619.json",
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
@@ -996,9 +996,9 @@
         "data": "2026-10-31"
       },
       "poc": {
-        "qtd": 2,
+        "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110447.json",
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       }
     },
     {
@@ -1291,7 +1291,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:27Z",
       "resumo": "A Missing authentication for critical function vulnerability in Juniper Networks Session Smart Router allows an unauthenticated network-based attacker to obtain administrative privileges by passing crafted URL parameters to an insecure endpoint running as…",
-      "nvd_checado_em": "2026-10-31T14:44:51Z",
+      "nvd_checado_em": "2026-10-31T16:07:26Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1332,7 +1332,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:25Z",
       "resumo": "An Improper Neutralization of Special Elements used in an OS Command vulnerability in the AutomatedProvisioner in Juniper Networks Session Smart Conductor allows a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
-      "nvd_checado_em": "2026-10-31T14:44:51Z",
+      "nvd_checado_em": "2026-10-31T16:07:26Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1445,7 +1445,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       }
     },
     {
@@ -1480,7 +1480,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-22T19:17:30Z",
       "epss": {
@@ -1537,7 +1537,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       }
     },
     {
@@ -1588,7 +1588,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       }
     },
     {
@@ -1741,7 +1741,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       }
     },
     {
@@ -1792,7 +1792,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       }
     },
     {
@@ -1843,7 +1843,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       }
     },
     {
@@ -1898,9 +1898,9 @@
         "data": "2026-10-31"
       },
       "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76466.json",
-        "checado": "2026-10-30T15:33:44Z"
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-31T16:07:26Z"
       }
     },
     {
@@ -1940,7 +1940,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-20T22:20:11Z"
     },
@@ -1962,7 +1962,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-31T07:16:34Z",
       "resumo": "The PDF Invoice for WooCommerce + Drag and Drop Template Builder plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 7.1.1 via the 'customer_note' parameter parameter. This is due to insufficient sanitization of…",
-      "nvd_checado_em": "2026-10-31T14:44:51Z",
+      "nvd_checado_em": "2026-10-31T16:07:26Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2024,6 +2024,57 @@
         "score": 0.0051,
         "percentil": 0.4342,
         "data": "2026-10-31"
+      }
+    },
+    {
+      "cve": "CVE-2026-110720",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-110720",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-110720",
+          "publicado": "2026-10-26T19:16:29Z",
+          "visto_em": "2026-10-31T16:07:26Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical HashiCorp Consul Kubernetes Flaw Allows Attackers to Gain Elevated Privileges",
+          "link": "https://cybersecuritynews.com/hashicorp-consul-kubernetes-vulnerability/",
+          "publicado": "2026-10-27T11:37:34Z",
+          "visto_em": "2026-10-27T12:44:02Z"
+        }
+      ],
+      "detectado": "2026-10-27T12:44:02Z",
+      "aguardando_nota_desde": "2026-10-27T11:37:34Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-26T19:16:29Z",
+      "primeira_noticia": "2026-10-27T11:37:34Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-110720",
+      "ultima_atividade": "2026-10-27T11:37:34Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-26T19:16:29Z",
+      "resumo": "Consul-k8s versions 0.42.0 and later are vulnerable to a cross-namespace authorization bypass in component ACL binding rules that may allow an attacker to obtain elevated Consul privileges. This vulnerability (CVE-2026-110720) is fixed in consul-k8s 2.1.0…",
+      "nvd_checado_em": "2026-10-31T16:07:26Z",
+      "nota_chegou_em": "2026-10-31T16:07:26Z",
+      "exibido_em": "2026-10-31T16:07:26Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0037,
+        "percentil": 0.3032,
+        "data": "2026-10-31"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110720.json",
+        "checado": "2026-10-31T16:07:26Z"
       }
     },
     {
@@ -2100,7 +2151,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "epss": {
         "score": 0.0055,
@@ -2146,9 +2197,9 @@
       "regra": "CVSS ≥ 9 em plataforma corporativa",
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-83938.json",
-        "checado": "2026-10-30T15:33:44Z"
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-22T22:19:18Z",
       "epss": {
@@ -2189,7 +2240,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-22T11:17:04Z",
       "epss": {
@@ -2235,7 +2286,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-21T01:17:38Z"
     },
@@ -2276,7 +2327,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-20T22:20:38Z"
     },
@@ -2317,7 +2368,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-20T22:20:36Z"
     },
@@ -2358,7 +2409,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-20T22:20:26Z"
     },
@@ -2399,7 +2450,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-20T22:20:25Z"
     },
@@ -2440,7 +2491,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-20T22:20:25Z"
     },
@@ -2481,7 +2532,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -2522,7 +2573,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -2563,7 +2614,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -2604,7 +2655,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -2645,7 +2696,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2686,7 +2737,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2727,7 +2778,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2768,7 +2819,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2809,7 +2860,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2850,7 +2901,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-20T22:20:12Z"
     },
@@ -2891,7 +2942,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T15:33:44Z"
+        "checado": "2026-10-31T16:07:26Z"
       },
       "ultima_atividade": "2026-10-20T22:18:02Z"
     },
