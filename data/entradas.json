@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-31T10:49:47Z",
+  "atualizado": "2026-10-31T14:44:38Z",
   "janela": "24 a 31/out/2026",
   "itens": [
     {
@@ -218,6 +218,28 @@
         {
           "nome": "SecurityOnline",
           "url": "https://securityonline.info/vmware-sddc-manager-vulnerability-cve-2026-111497/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-27",
+      "cve": "CVE-2026-98432",
+      "produto": "Linux kernel (pilha TCP/IPv4, RCE remota)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Use-after-free no tratamento de SYN/SYNACK que pode dar root remoto sem login (nota 9.8 da CNA; Red Hat dá 8.1); demonstração de exploit sem código público. Aplicar kernel 6.1.190, 6.6.159, 6.12.113, 6.18.56 ou equivalente da distribuição (Ubuntu e RHEL ainda sem correção em 30/10); até lá, manter net.ipv4.tcp_migrate_req=0, que reduz mas não elimina o risco.",
+      "fontes": [
+        {
+          "nome": "AIID (análise CVE-2026-98432)",
+          "url": "https://aiidelist.com/blog/claude-linux-kernel-race-condition-remote-root-execution"
+        },
+        {
+          "nome": "Wiz (versões corrigidas)",
+          "url": "https://www.wiz.io/vulnerability-database/cve/cve-2026-98432"
         }
       ],
       "status": "Novo"
