@@ -523,7 +523,7 @@
     "exibido_em": "2026-10-31T10:50:05Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0052,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -795,7 +795,7 @@
     "exibido_em": "2026-10-30T10:39:18Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0131,
+    "epss_max": 0.0135,
     "poc_qtd": 12,
     "fontes": [
       {
@@ -935,7 +935,7 @@
     "exibido_em": "2026-10-30T18:39:46Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0032,
+    "epss_max": 0.0053,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -1449,7 +1449,7 @@
     "exibido_em": "2026-10-31T02:25:09Z",
     "aguardando_nota_desde": "2026-10-23T03:41:41Z",
     "nota_chegou_em": "2026-10-31T02:25:09Z",
-    "epss_max": 0.0017,
+    "epss_max": 0.0039,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -1623,6 +1623,39 @@
       {
         "nome": "NVD",
         "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76527",
+        "publicado": "2026-10-21T23:17:29Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
+        "publicado": "2026-10-23T03:41:41Z"
+      }
+    ],
+    "prioridade_max": "P1"
+  },
+  "CVE-2026-76529": {
+    "cve": "CVE-2026-76529",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.8,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-21T23:17:29Z",
+    "primeira_noticia": "2026-10-23T03:41:41Z",
+    "publicado_nvd": "2026-10-21T23:17:29Z",
+    "exibido_em": "2026-10-31T14:44:51Z",
+    "aguardando_nota_desde": "2026-10-23T03:41:41Z",
+    "nota_chegou_em": "2026-10-31T14:44:51Z",
+    "epss_max": 0.0039,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76529",
         "publicado": "2026-10-21T23:17:29Z"
       },
       {
@@ -2213,7 +2246,7 @@
     "exibido_em": "2026-10-29T23:18:51Z",
     "aguardando_nota_desde": "2026-10-29T09:05:39Z",
     "nota_chegou_em": "2026-10-29T23:18:51Z",
-    "epss_max": 0.2657,
+    "epss_max": 0.273,
     "poc_qtd": 6,
     "fontes": [
       {

@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-31T10:50:05Z",
+  "atualizado": "2026-10-31T14:44:51Z",
   "itens": [
     {
       "cve": "CVE-2026-118527",
@@ -128,9 +128,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0091,
-        "percentil": 0.5995,
-        "data": "2026-10-30"
+        "score": 0.0082,
+        "percentil": 0.5731,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -214,8 +214,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0103,
-        "percentil": 0.6354,
-        "data": "2026-10-30"
+        "percentil": 0.6358,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 2,
@@ -386,7 +386,7 @@
       "epss": {
         "score": 0.8264,
         "percentil": 0.9967,
-        "data": "2026-10-30"
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 78,
@@ -446,9 +446,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0131,
-        "percentil": 0.7051,
-        "data": "2026-10-30"
+        "score": 0.0135,
+        "percentil": 0.7149,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 12,
@@ -634,7 +634,7 @@
       "epss": {
         "score": 1.0,
         "percentil": 1.0,
-        "data": "2026-10-30"
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 725,
@@ -824,7 +824,7 @@
       "epss": {
         "score": 1.0,
         "percentil": 1.0,
-        "data": "2026-10-30"
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 24,
@@ -915,9 +915,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0032,
-        "percentil": 0.2457,
-        "data": "2026-10-30"
+        "score": 0.0053,
+        "percentil": 0.4503,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -993,7 +993,7 @@
       "epss": {
         "score": 0.7331,
         "percentil": 0.9946,
-        "data": "2026-10-30"
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 2,
@@ -1093,9 +1093,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.2657,
-        "percentil": 0.9801,
-        "data": "2026-10-30"
+        "score": 0.273,
+        "percentil": 0.9806,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 6,
@@ -1185,8 +1185,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0069,
-        "percentil": 0.5272,
-        "data": "2026-10-30"
+        "percentil": 0.5276,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -1265,7 +1265,7 @@
       "epss": {
         "score": 0.4458,
         "percentil": 0.9877,
-        "data": "2026-10-30"
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 1,
@@ -1291,7 +1291,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:27Z",
       "resumo": "A Missing authentication for critical function vulnerability in Juniper Networks Session Smart Router allows an unauthenticated network-based attacker to obtain administrative privileges by passing crafted URL parameters to an insecure endpoint running as…",
-      "nvd_checado_em": "2026-10-31T10:50:05Z",
+      "nvd_checado_em": "2026-10-31T14:44:51Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1310,8 +1310,8 @@
       },
       "epss": {
         "score": 0.0035,
-        "percentil": 0.2834,
-        "data": "2026-10-30"
+        "percentil": 0.2836,
+        "data": "2026-10-31"
       }
     },
     {
@@ -1332,7 +1332,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:25Z",
       "resumo": "An Improper Neutralization of Special Elements used in an OS Command vulnerability in the AutomatedProvisioner in Juniper Networks Session Smart Conductor allows a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
-      "nvd_checado_em": "2026-10-31T10:50:05Z",
+      "nvd_checado_em": "2026-10-31T14:44:51Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1351,8 +1351,8 @@
       },
       "epss": {
         "score": 0.0052,
-        "percentil": 0.439,
-        "data": "2026-10-30"
+        "percentil": 0.4393,
+        "data": "2026-10-31"
       }
     },
     {
@@ -1439,8 +1439,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0054,
-        "percentil": 0.4516,
-        "data": "2026-10-30"
+        "percentil": 0.4519,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -1485,8 +1485,8 @@
       "ultima_atividade": "2026-10-22T19:17:30Z",
       "epss": {
         "score": 0.0061,
-        "percentil": 0.4932,
-        "data": "2026-10-30"
+        "percentil": 0.4936,
+        "data": "2026-10-31"
       }
     },
     {
@@ -1531,8 +1531,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0041,
-        "percentil": 0.3502,
-        "data": "2026-10-30"
+        "percentil": 0.3505,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -1582,8 +1582,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0043,
-        "percentil": 0.3741,
-        "data": "2026-10-30"
+        "percentil": 0.3742,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -1632,14 +1632,65 @@
       "regra": "CVSS ≥ 9 em borda/acesso",
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
-        "score": 0.0017,
-        "percentil": 0.064,
-        "data": "2026-10-30"
+        "score": 0.0039,
+        "percentil": 0.3316,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
         "link": null,
         "checado": "2026-10-31T02:25:09Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-76529",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-76529",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76529",
+          "publicado": "2026-10-21T23:17:29Z",
+          "visto_em": "2026-10-23T12:27:14Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
+          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
+          "publicado": "2026-10-23T03:41:41Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-21T23:17:29Z",
+      "primeira_noticia": "2026-10-23T03:41:41Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76529",
+      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
+      "ultima_atividade": "2026-10-23T03:41:41Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-21T23:17:29Z",
+      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
+      "nvd_checado_em": "2026-10-31T14:44:51Z",
+      "nota_chegou_em": "2026-10-31T14:44:51Z",
+      "exibido_em": "2026-10-31T14:44:51Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "epss": {
+        "score": 0.0039,
+        "percentil": 0.3316,
+        "data": "2026-10-31"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-31T14:44:51Z"
       }
     },
     {
@@ -1684,8 +1735,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.004,
-        "percentil": 0.342,
-        "data": "2026-10-30"
+        "percentil": 0.3423,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -1735,8 +1786,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0038,
-        "percentil": 0.3229,
-        "data": "2026-10-30"
+        "percentil": 0.3231,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -1786,8 +1837,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0033,
-        "percentil": 0.2606,
-        "data": "2026-10-30"
+        "percentil": 0.2607,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -1843,8 +1894,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0042,
-        "percentil": 0.3596,
-        "data": "2026-10-30"
+        "percentil": 0.3598,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 1,
@@ -1883,8 +1934,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3817,
-        "data": "2026-10-30"
+        "percentil": 0.3818,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -1911,7 +1962,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-31T07:16:34Z",
       "resumo": "The PDF Invoice for WooCommerce + Drag and Drop Template Builder plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 7.1.1 via the 'customer_note' parameter parameter. This is due to insufficient sanitization of…",
-      "nvd_checado_em": "2026-10-31T10:50:05Z",
+      "nvd_checado_em": "2026-10-31T14:44:51Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1927,6 +1978,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-31T10:50:05Z"
+      },
+      "epss": {
+        "score": 0.0052,
+        "percentil": 0.4421,
+        "data": "2026-10-31"
       }
     },
     {
@@ -1966,8 +2022,8 @@
       },
       "epss": {
         "score": 0.0051,
-        "percentil": 0.4339,
-        "data": "2026-10-30"
+        "percentil": 0.4342,
+        "data": "2026-10-31"
       }
     },
     {
@@ -2008,7 +2064,7 @@
       "epss": {
         "score": 0.0044,
         "percentil": 0.387,
-        "data": "2026-10-30"
+        "data": "2026-10-31"
       }
     },
     {
@@ -2048,8 +2104,8 @@
       },
       "epss": {
         "score": 0.0055,
-        "percentil": 0.4595,
-        "data": "2026-10-30"
+        "percentil": 0.4598,
+        "data": "2026-10-31"
       }
     },
     {
@@ -2097,8 +2153,8 @@
       "ultima_atividade": "2026-10-22T22:19:18Z",
       "epss": {
         "score": 0.0071,
-        "percentil": 0.5338,
-        "data": "2026-10-30"
+        "percentil": 0.5342,
+        "data": "2026-10-31"
       }
     },
     {
@@ -2138,8 +2194,8 @@
       "ultima_atividade": "2026-10-22T11:17:04Z",
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3829,
-        "data": "2026-10-30"
+        "percentil": 0.383,
+        "data": "2026-10-31"
       }
     },
     {
@@ -2174,7 +2230,7 @@
       "epss": {
         "score": 0.0043,
         "percentil": 0.3709,
-        "data": "2026-10-30"
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -2214,8 +2270,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0029,
-        "percentil": 0.2115,
-        "data": "2026-10-30"
+        "percentil": 0.2116,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -2255,8 +2311,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0041,
-        "percentil": 0.3502,
-        "data": "2026-10-30"
+        "percentil": 0.3504,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -2296,8 +2352,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0039,
-        "percentil": 0.33,
-        "data": "2026-10-30"
+        "percentil": 0.3303,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -2337,8 +2393,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0033,
-        "percentil": 0.257,
-        "data": "2026-10-30"
+        "percentil": 0.2571,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -2378,8 +2434,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0039,
-        "percentil": 0.33,
-        "data": "2026-10-30"
+        "percentil": 0.3303,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -2418,9 +2474,9 @@
       "regra": "CVSS ≥ 9 em plataforma corporativa",
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
-        "score": 0.0041,
-        "percentil": 0.3502,
-        "data": "2026-10-30"
+        "score": 0.0042,
+        "percentil": 0.3597,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -2459,9 +2515,9 @@
       "regra": "CVSS ≥ 9 em plataforma corporativa",
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
-        "score": 0.0032,
-        "percentil": 0.2513,
-        "data": "2026-10-30"
+        "score": 0.0034,
+        "percentil": 0.2722,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -2501,8 +2557,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0048,
-        "percentil": 0.416,
-        "data": "2026-10-30"
+        "percentil": 0.4162,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -2542,8 +2598,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0039,
-        "percentil": 0.33,
-        "data": "2026-10-30"
+        "percentil": 0.3303,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -2582,9 +2638,9 @@
       "regra": "CVSS ≥ 9 em plataforma corporativa",
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
-        "score": 0.0048,
-        "percentil": 0.416,
-        "data": "2026-10-30"
+        "score": 0.0051,
+        "percentil": 0.4332,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -2623,9 +2679,9 @@
       "regra": "CVSS ≥ 9 em plataforma corporativa",
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
-        "score": 0.0033,
-        "percentil": 0.257,
-        "data": "2026-10-30"
+        "score": 0.0034,
+        "percentil": 0.2717,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -2665,8 +2721,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0048,
-        "percentil": 0.416,
-        "data": "2026-10-30"
+        "percentil": 0.4162,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -2706,8 +2762,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0039,
-        "percentil": 0.3305,
-        "data": "2026-10-30"
+        "percentil": 0.3308,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -2747,8 +2803,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0029,
-        "percentil": 0.2115,
-        "data": "2026-10-30"
+        "percentil": 0.2116,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -2788,8 +2844,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0038,
-        "percentil": 0.3155,
-        "data": "2026-10-30"
+        "percentil": 0.3157,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -2829,8 +2885,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0048,
-        "percentil": 0.4136,
-        "data": "2026-10-30"
+        "percentil": 0.4138,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -2870,8 +2926,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0048,
-        "percentil": 0.4136,
-        "data": "2026-10-30"
+        "percentil": 0.4139,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -2953,8 +3009,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0097,
-        "percentil": 0.6171,
-        "data": "2026-10-30"
+        "percentil": 0.6175,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 1,
@@ -3020,8 +3076,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0253,
-        "percentil": 0.8488,
-        "data": "2026-10-30"
+        "percentil": 0.849,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -3095,8 +3151,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0182,
-        "percentil": 0.7873,
-        "data": "2026-10-30"
+        "percentil": 0.7876,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 7,
@@ -3162,8 +3218,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0195,
-        "percentil": 0.802,
-        "data": "2026-10-30"
+        "percentil": 0.8022,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -3229,8 +3285,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0164,
-        "percentil": 0.7631,
-        "data": "2026-10-30"
+        "percentil": 0.7634,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 0,
@@ -3296,8 +3352,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0179,
-        "percentil": 0.7828,
-        "data": "2026-10-30"
+        "percentil": 0.7831,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 1,
@@ -3364,8 +3420,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.1613,
-        "percentil": 0.9692,
-        "data": "2026-10-30"
+        "percentil": 0.9693,
+        "data": "2026-10-31"
       },
       "poc": {
         "qtd": 15,
