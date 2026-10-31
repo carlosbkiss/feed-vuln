@@ -1,7 +1,29 @@
 {
-  "atualizado": "2026-10-31T14:44:38Z",
+  "atualizado": "2026-10-31T18:49:38Z",
   "janela": "24 a 31/out/2026",
   "itens": [
+    {
+      "data": "2026-10-30",
+      "cve": "CVE-2026-118697 / CVE-2026-118696",
+      "produto": "JetBrains IDEs, Toolbox e Gateway (CAs eMudhra comprometidas)",
+      "cvss": 9.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Daemon jetbrainsd e navegador embutido ainda confiavam nas intermediárias eMudhra vazadas, abrindo MITM no tráfego de dev. Atualizar Toolbox para 3.9.1/3.8.2 e IDEs para 2026.2.4, 2026.1.5.1 ou 2025.3.6.2; aproveitar para conferir se JDKs de build e CI já têm o alerta Java CVE-2026-91403.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/jetbrains-ide-vulnerabilities-emudhra-certificates-patched/"
+        },
+        {
+          "nome": "BestHub (alerta Java CVE-2026-91403)",
+          "url": "https://www.besthub.dev/articles/java-cve-2026-91403-emudhra-ca-private-key-leak-breaks-https-trust-upgrade-mitigation-guide-3977da20e9ba"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-10-29",
       "cve": "CVE-2026-104935 / CVE-2026-111357 / CVE-2026-118527",
@@ -64,6 +86,24 @@
         {
           "nome": "SecurityOnline",
           "url": "https://securityonline.info/ws-ftp-server-vulnerabilities-cve-2026-84295/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-28",
+      "cve": "sem CVE (WordPress Core)",
+      "produto": "WordPress Core 4.7 a 7.1.3 (RCE via pasta de upgrade)",
+      "cvss": 8.1,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Ativa (~63 mil tentativas em 24h segundo a Wordfence)",
+      "prioridade": "P1",
+      "tratamento": "RCE sem login durante atualização completa do core, por corrida em arquivos temporários de wp-content/upgrade. Subir para 7.1.4 nos sites institucionais e de campanha (inclusive os de agências), bloquear acesso web a wp-content/upgrade e procurar admins, plugins ou PHP desconhecidos.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html"
         }
       ],
       "status": "Novo"
