@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-30T21:31:54Z",
+  "atualizado": "2026-10-31T02:25:09Z",
   "itens": [
     {
       "cve": "CVE-2026-118527",
@@ -32,7 +32,7 @@
       "detectado": "2026-10-30T10:39:18Z",
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
-      "nvd_checado_em": "2026-10-30T18:39:46Z",
+      "nvd_checado_em": "2026-10-31T02:25:09Z",
       "aguardando_nota_desde": "2026-10-30T08:26:39Z",
       "elegivel_por": [
         "zero-day",
@@ -389,9 +389,9 @@
         "data": "2026-10-30"
       },
       "poc": {
-        "qtd": 73,
+        "qtd": 78,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-111497.json",
-        "checado": "2026-10-29T23:18:51Z"
+        "checado": "2026-10-31T02:25:09Z"
       },
       "kev": {
         "adicionado": "2026-10-27",
@@ -918,74 +918,6 @@
       }
     },
     {
-      "cve": "CVE-2026-102764",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-102764",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764",
-          "publicado": "2026-10-15T21:17:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-102764",
-          "publicado": "2026-10-16",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Urges Patching Critical Vulnerability in BeyondTrust Remote Support",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-urges-patching-critical-vulnerability-beyondtrust-remote-support",
-          "publicado": "2026-10-16T12:00:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-16",
-        "prazo": "2026-10-19",
-        "ransomware": "Unknown"
-      },
-      "produto": "BeyondTrust Remote Support",
-      "titulo": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
-      "resumo": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "NVD",
-      "publicado_nvd": "2026-10-15T21:17:00Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "CVSS ≥ 9",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-15T21:17:00Z",
-      "primeira_noticia": "2026-10-16T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.1895,
-        "percentil": 0.973,
-        "data": "2026-10-30"
-      },
-      "poc": {
-        "qtd": 3,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-102764.json",
-        "checado": "2026-10-30T15:33:44Z"
-      },
-      "ultima_atividade": "2026-10-16T12:00:00Z"
-    },
-    {
       "cve": "CVE-2026-110447",
       "fontes": [
         {
@@ -1158,9 +1090,9 @@
         "data": "2026-10-30"
       },
       "poc": {
-        "qtd": 5,
+        "qtd": 6,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-97229.json",
-        "checado": "2026-10-29T23:18:51Z"
+        "checado": "2026-10-31T02:25:09Z"
       }
     },
     {
@@ -1251,7 +1183,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-29T23:18:51Z"
+        "checado": "2026-10-31T02:25:09Z"
       },
       "escalado": true
     },
@@ -1330,67 +1262,8 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-48356.json",
-        "checado": "2026-10-29T23:18:51Z"
+        "checado": "2026-10-31T02:25:09Z"
       }
-    },
-    {
-      "cve": "CVE-2025-61624",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2025-61624",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624",
-          "publicado": "2026-04-14T16:16:31Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Fortinet Multiple Products Path Traversal Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-61624",
-          "publicado": "2026-10-16",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-16",
-        "prazo": "2026-10-19",
-        "ransomware": "Unknown"
-      },
-      "produto": "Fortinet Multiple Products",
-      "titulo": "Fortinet Multiple Products Path Traversal Vulnerability",
-      "resumo": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands.",
-      "cvss": 6.5,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "NVD",
-      "publicado_nvd": "2026-04-14T16:16:31Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-04-14T16:16:31Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.0134,
-        "percentil": 0.7133,
-        "data": "2026-10-30"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-10-30T15:33:44Z"
-      },
-      "ultima_atividade": "2026-10-16T00:00:00Z"
     },
     {
       "cve": "CVE-2026-103409",
@@ -1410,7 +1283,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:27Z",
       "resumo": "A Missing authentication for critical function vulnerability in Juniper Networks Session Smart Router allows an unauthenticated network-based attacker to obtain administrative privileges by passing crafted URL parameters to an insecure endpoint running as…",
-      "nvd_checado_em": "2026-10-30T21:31:54Z",
+      "nvd_checado_em": "2026-10-31T02:25:09Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1423,9 +1296,9 @@
       "regra": "CVSS ≥ 9 em borda/acesso",
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-10-29T23:18:51Z"
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-103409.json",
+        "checado": "2026-10-31T02:25:09Z"
       },
       "epss": {
         "score": 0.0035,
@@ -1451,7 +1324,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:25Z",
       "resumo": "An Improper Neutralization of Special Elements used in an OS Command vulnerability in the AutomatedProvisioner in Juniper Networks Session Smart Conductor allows a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
-      "nvd_checado_em": "2026-10-30T21:31:54Z",
+      "nvd_checado_em": "2026-10-31T02:25:09Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1466,7 +1339,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-29T23:18:51Z"
+        "checado": "2026-10-31T02:25:09Z"
       },
       "epss": {
         "score": 0.0052,
@@ -1495,7 +1368,7 @@
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
-      "nvd_checado_em": "2026-10-30T18:39:46Z",
+      "nvd_checado_em": "2026-10-31T02:25:09Z",
       "elegivel_por": [
         "zero-day"
       ],
@@ -1513,7 +1386,7 @@
       "poc": {
         "qtd": 11,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-115560.json",
-        "checado": "2026-10-29T23:18:51Z"
+        "checado": "2026-10-31T02:25:09Z"
       }
     },
     {
@@ -1708,6 +1581,57 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-10-30T15:33:44Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-76408",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-76408",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76408",
+          "publicado": "2026-10-21T23:17:29Z",
+          "visto_em": "2026-10-23T12:27:14Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
+          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
+          "publicado": "2026-10-23T03:41:41Z",
+          "visto_em": "2026-10-23T12:14:22Z"
+        }
+      ],
+      "detectado": "2026-10-23T12:14:22Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-21T23:17:29Z",
+      "primeira_noticia": "2026-10-23T03:41:41Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76408",
+      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
+      "ultima_atividade": "2026-10-23T03:41:41Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-21T23:17:29Z",
+      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
+      "nvd_checado_em": "2026-10-31T02:25:09Z",
+      "nota_chegou_em": "2026-10-31T02:25:09Z",
+      "exibido_em": "2026-10-31T02:25:09Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "epss": {
+        "score": 0.0017,
+        "percentil": 0.064,
+        "data": "2026-10-30"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-31T02:25:09Z"
       }
     },
     {
@@ -2035,7 +1959,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-29T23:18:51Z"
+        "checado": "2026-10-31T02:25:09Z"
       },
       "epss": {
         "score": 0.0044,
@@ -2908,7 +2832,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-29T23:18:51Z"
+        "checado": "2026-10-31T02:25:09Z"
       },
       "ultima_atividade": "2026-10-20T22:18:02Z"
     },
@@ -2991,7 +2915,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110936.json",
-        "checado": "2026-10-29T23:18:51Z"
+        "checado": "2026-10-31T02:25:09Z"
       },
       "ultima_atividade": "2026-10-22T12:00:00Z"
     },
@@ -3058,7 +2982,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-29T23:18:51Z"
+        "checado": "2026-10-31T02:25:09Z"
       },
       "ultima_atividade": "2026-10-20T12:00:00Z"
     },
@@ -3133,7 +3057,7 @@
       "poc": {
         "qtd": 7,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-96652.json",
-        "checado": "2026-10-29T23:18:51Z"
+        "checado": "2026-10-31T02:25:09Z"
       },
       "ultima_atividade": "2026-10-21T07:26:49Z"
     },
@@ -3200,7 +3124,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-29T23:18:51Z"
+        "checado": "2026-10-31T02:25:09Z"
       },
       "ultima_atividade": "2026-10-20T12:00:00Z"
     },
@@ -3267,7 +3191,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-29T23:18:51Z"
+        "checado": "2026-10-31T02:25:09Z"
       },
       "ultima_atividade": "2026-10-20T12:00:00Z"
     },
@@ -3334,7 +3258,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-96656.json",
-        "checado": "2026-10-29T23:18:51Z"
+        "checado": "2026-10-31T02:25:09Z"
       },
       "ultima_atividade": "2026-10-20T12:00:00Z"
     },
@@ -3402,7 +3326,7 @@
       "poc": {
         "qtd": 15,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-46300.json",
-        "checado": "2026-10-29T23:18:51Z"
+        "checado": "2026-10-31T02:25:09Z"
       }
     }
   ],
