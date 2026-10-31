@@ -506,6 +506,34 @@
     ],
     "prioridade_max": "P2"
   },
+  "CVE-2026-109220": {
+    "cve": "CVE-2026-109220",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.8,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-31T07:16:34Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-10-31T07:16:34Z",
+    "exibido_em": "2026-10-31T10:50:05Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-109220",
+        "publicado": "2026-10-31T07:16:34Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
   "CVE-2026-109618": {
     "cve": "CVE-2026-109618",
     "produto": "PHP Group PHP",
@@ -929,6 +957,11 @@
         "nome": "CISA Advisories",
         "link": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
         "publicado": "2026-10-30T12:00:00Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+        "publicado": "2026-10-31T08:27:43Z"
       }
     ],
     "prioridade_max": "P0"

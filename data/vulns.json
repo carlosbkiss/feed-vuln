@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-31T02:25:09Z",
+  "atualizado": "2026-10-31T10:50:05Z",
   "itens": [
     {
       "cve": "CVE-2026-118527",
@@ -32,7 +32,7 @@
       "detectado": "2026-10-30T10:39:18Z",
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
-      "nvd_checado_em": "2026-10-31T02:25:09Z",
+      "nvd_checado_em": "2026-10-31T10:50:05Z",
       "aguardando_nota_desde": "2026-10-30T08:26:39Z",
       "elegivel_por": [
         "zero-day",
@@ -49,7 +49,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T10:39:18Z"
+        "checado": "2026-10-31T10:50:05Z"
       },
       "kev": {
         "adicionado": "2026-10-30",
@@ -453,7 +453,7 @@
       "poc": {
         "qtd": 12,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110264.json",
-        "checado": "2026-10-30T10:39:18Z"
+        "checado": "2026-10-31T10:50:05Z"
       }
     },
     {
@@ -876,6 +876,14 @@
           "link": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
           "publicado": "2026-10-30T12:00:00Z",
           "visto_em": "2026-10-30T18:39:46Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+          "link": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+          "publicado": "2026-10-31T08:27:43Z",
+          "visto_em": "2026-10-31T10:50:05Z"
         }
       ],
       "detectado": "2026-10-30T18:39:46Z",
@@ -901,7 +909,7 @@
       "primeira_vez": "2026-10-15T21:17:13Z",
       "primeira_noticia": "2026-10-30T08:26:39Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
-      "ultima_atividade": "2026-10-30T12:00:00Z",
+      "ultima_atividade": "2026-10-31T08:27:43Z",
       "exibido_em": "2026-10-30T18:39:46Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -1283,7 +1291,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:27Z",
       "resumo": "A Missing authentication for critical function vulnerability in Juniper Networks Session Smart Router allows an unauthenticated network-based attacker to obtain administrative privileges by passing crafted URL parameters to an insecure endpoint running as…",
-      "nvd_checado_em": "2026-10-31T02:25:09Z",
+      "nvd_checado_em": "2026-10-31T10:50:05Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1324,7 +1332,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-28T17:17:25Z",
       "resumo": "An Improper Neutralization of Special Elements used in an OS Command vulnerability in the AutomatedProvisioner in Juniper Networks Session Smart Conductor allows a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
-      "nvd_checado_em": "2026-10-31T02:25:09Z",
+      "nvd_checado_em": "2026-10-31T10:50:05Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1368,7 +1376,7 @@
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
-      "nvd_checado_em": "2026-10-31T02:25:09Z",
+      "nvd_checado_em": "2026-10-31T10:50:05Z",
       "elegivel_por": [
         "zero-day"
       ],
@@ -1886,6 +1894,42 @@
       "ultima_atividade": "2026-10-20T22:20:11Z"
     },
     {
+      "cve": "CVE-2026-109220",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-109220",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-109220",
+          "publicado": "2026-10-31T07:16:34Z",
+          "visto_em": "2026-10-31T10:50:05Z"
+        }
+      ],
+      "detectado": "2026-10-31T10:50:05Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-31T07:16:34Z",
+      "resumo": "The PDF Invoice for WooCommerce + Drag and Drop Template Builder plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 7.1.1 via the 'customer_note' parameter parameter. This is due to insufficient sanitization of…",
+      "nvd_checado_em": "2026-10-31T10:50:05Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-31T07:16:34Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-109220",
+      "ultima_atividade": "2026-10-31T07:16:34Z",
+      "exibido_em": "2026-10-31T10:50:05Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-10-31T10:50:05Z"
+      }
+    },
+    {
       "cve": "CVE-2026-103039",
       "fontes": [
         {
@@ -1918,7 +1962,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-30T10:39:18Z"
+        "checado": "2026-10-31T10:50:05Z"
       },
       "epss": {
         "score": 0.0051,
