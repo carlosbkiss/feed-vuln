@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-10-30T18:39:18Z",
-  "janela": "23 a 30/out/2026",
+  "atualizado": "2026-10-31T10:49:47Z",
+  "janela": "24 a 31/out/2026",
   "itens": [
     {
       "data": "2026-10-29",
@@ -9,7 +9,7 @@
       "cvss": 8.8,
       "kev": true,
       "zero_day": true,
-      "exploracao": "Ativa (cadeia até root sem login; appliance em 22.8R2.4 já corrigido foi invadido)",
+      "exploracao": "Ativa (CVE-2026-111357 e CVE-2026-118527 no KEV em 30/10; cadeia até root sem login)",
       "prioridade": "P0",
       "tratamento": "Ivanti soltou novas correções em 29/10: subir para 25.1.1.3 ou 22.8R2.6, pois as versões de outubro não bastam. O Integrity Checker não pega a intrusão (alterações só em memória e logs apagados): em caso de suspeita, fazer análise de memória, disco e rede e revisar tráfego para welcome.cgi e arquivos em /tmp.",
       "fontes": [
@@ -46,6 +46,24 @@
         {
           "nome": "CISA KEV",
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-97229"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-29",
+      "cve": "CVE-2026-84295 / CVE-2026-90868 / CVE-2026-90865",
+      "produto": "Progress WS_FTP Server (transferência de arquivos)",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Falha de autenticação sem login (10.0) que expõe credenciais de admin, mais injeções de comando (9.9 e 9.0). Subir para 2024.0.7 ou 2025.0.4, que cobrem os 15 CVEs; até lá, restringir o console web de administração à rede interna. Produto da mesma família do MOVEit, alvo histórico de ransomware.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/ws-ftp-server-vulnerabilities-cve-2026-84295/"
         }
       ],
       "status": "Novo"
@@ -429,28 +447,6 @@
       "status": "Pendente"
     },
     {
-      "data": "2026-10-23",
-      "cve": "CVE-2026-115560",
-      "produto": "PHP (sessões com upload progress)",
-      "cvss": null,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P2",
-      "tratamento": "RCE só com configuração rara (troca do session.serialize_handler em tempo de execução com upload progress ligado); sem patch, não coberta pelas versões do PHP2Shell. Desligar session.upload_progress.enabled e reiniciar os workers; CVSS a confirmar.",
-      "fontes": [
-        {
-          "nome": "BleepingComputer",
-          "url": "https://bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability"
-        },
-        {
-          "nome": "Field Effect",
-          "url": "https://fieldeffect.com/blog/another-php-issue-identified-report-affected-products"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
       "data": "2026-10-22",
       "cve": "CVE-2026-114625",
       "produto": "Arista VeloCloud Orchestrator (on-prem)",
@@ -525,46 +521,6 @@
         {
           "nome": "SecurityOnline",
           "url": "https://securityonline.info/nodejs-security-release-october-2026/"
-        }
-      ]
-    },
-    {
-      "data": "2026-10-16",
-      "cve": "CVE-2026-102764",
-      "produto": "BeyondTrust Remote Support (self-hosted)",
-      "cvss": 9.3,
-      "kev": true,
-      "zero_day": true,
-      "exploracao": "Ativa (APT, desde 29/08)",
-      "prioridade": "P0",
-      "status": "Pendente",
-      "tratamento": "Aplicar o patch do advisory BT26-05 e caçar IOCs retroativos a 29/08: sessões anômalas, contas novas, jump points.",
-      "fontes": [
-        {
-          "nome": "Shattered",
-          "url": "https://shattered.io/beyondtrust-cve-2026-102764-china-apt-zero-day-2026/"
-        }
-      ]
-    },
-    {
-      "data": "2026-10-16",
-      "cve": "CVE-2025-61624",
-      "produto": "FortiOS / FortiProxy / FortiPAM",
-      "cvss": 6.5,
-      "kev": true,
-      "zero_day": false,
-      "exploracao": "Ativa",
-      "prioridade": "P0",
-      "status": "Pendente",
-      "tratamento": "Exige admin com escrita, então indica conta de gestão comprometida. Confirmar a versão corrigida (advisory de abril, a confirmar), revisar contas admin e restringir a gestão a IPs confiáveis.",
-      "fontes": [
-        {
-          "nome": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-61624"
-        },
-        {
-          "nome": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624"
         }
       ]
     }
