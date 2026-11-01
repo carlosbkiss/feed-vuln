@@ -216,7 +216,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0051,
-    "poc_qtd": 0,
+    "poc_qtd": 1,
     "fontes": [
       {
         "nome": "NVD",
@@ -654,6 +654,11 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/offsec-launches-free-php2shell-lab-following-critical-vulnerability-discovery/",
         "publicado": "2026-10-28T17:54:27Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/hacktober-cyberattack-wave/",
+        "publicado": "2026-11-01T05:24:22Z"
       }
     ],
     "prioridade_max": "P0"
@@ -773,6 +778,11 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/offsec-launches-free-php2shell-lab-following-critical-vulnerability-discovery/",
         "publicado": "2026-10-28T17:54:27Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/hacktober-cyberattack-wave/",
+        "publicado": "2026-11-01T05:24:22Z"
       }
     ],
     "prioridade_max": "P0"
@@ -796,7 +806,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0135,
-    "poc_qtd": 12,
+    "poc_qtd": 11,
     "fontes": [
       {
         "nome": "NVD",
@@ -1023,7 +1033,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.8799,
-    "poc_qtd": 78,
+    "poc_qtd": 80,
     "fontes": [
       {
         "nome": "NVD",
