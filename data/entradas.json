@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-11-01T18:37:55Z",
-  "janela": "25/out a 01/nov/2026",
+  "atualizado": "2026-11-02T10:51:36Z",
+  "janela": "26/out a 02/nov/2026",
   "itens": [
     {
       "data": "2026-10-30",
@@ -49,7 +49,7 @@
       "cvss": 8.8,
       "kev": true,
       "zero_day": true,
-      "exploracao": "Ativa (CVE-2026-111357 e CVE-2026-118527 no KEV em 30/10; cadeia até root sem login; prazo CISA 02/11)",
+      "exploracao": "Ativa (CVE-2026-111357 e CVE-2026-118527 no KEV em 30/10; cadeia até root sem login; prazos CISA 02/11 e 13/11)",
       "prioridade": "P0",
       "tratamento": "Subir para 25.1.1.3 ou 22.8R2.6: a CISA passou a listar a 22.8R2.5 como afetada, então quem corrigiu em outubro segue exposto. Integrity Checker limpo não prova nada; em caso de suspeita, seguir a recuperação da CISA (reset de fábrica, troca de senhas, certificados e chaves de API) e caçar requisições anômalas a welcome.cgi e arquivos em /data/.icscap/.",
       "fontes": [
@@ -70,18 +70,18 @@
     },
     {
       "data": "2026-10-29",
-      "cve": "CVE-2026-97229",
+      "cve": "CVE-2026-97229 / CVE-2026-110264",
       "produto": "GitLab CE/EE self-managed (CI/CD, regex)",
       "cvss": 10.0,
       "kev": true,
       "zero_day": false,
-      "exploracao": "Ativa (KEV em 29/10; PoC público desde 13/10)",
+      "exploracao": "Ativa (KEV em 29/10; ataque ao GitLab da Alpine Linux em 20 e 21/10; PoC público desde 13/10)",
       "prioridade": "P0",
-      "tratamento": "RCE sem login via regex malicioso no .gitlab-ci.yml (estouro no motor Onigmo do Ruby), explorada segundo a CISA. Ir direto para 19.5.1, 19.4.3, 19.3.6, 19.2.9 ou 18.11.13, que fecham também a CVE-2026-110264 (CVSS 10, sem exploração confirmada) que as versões de 12/10 deixam aberta; até lá, tirar da internet e caçar processos anômalos do usuário git.",
+      "tratamento": "RCE sem login via regex malicioso no .gitlab-ci.yml (estouro no motor Onigmo do Ruby). Ir direto para 19.5.1, 19.4.3, 19.3.6, 19.2.9 ou 18.11.13, que fecham também a CVE-2026-110264 (CVSS 10). Instalação própria ou imagem com Ruby próprio precisa de Ruby 3.3.13, 3.4.12 ou 4.0.9: só subir o GitLab não resolve. Caçar quedas de worker, contas novas enviando CI e processos anômalos do usuário git.",
       "fontes": [
         {
-          "nome": "Cryptika (alerta KEV)",
-          "url": "https://www.cryptika.com/cisa-warns-of-gitlab-integer-overflow-vulnerability-exploited-in-attacks/"
+          "nome": "The Hacker News (caso Alpine)",
+          "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html"
         },
         {
           "nome": "IT-Connect (CVE-2026-110264)",
@@ -108,6 +108,28 @@
         {
           "nome": "SecurityOnline",
           "url": "https://securityonline.info/ws-ftp-server-vulnerabilities-cve-2026-84295/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-29",
+      "cve": "CVE-2026-42589",
+      "produto": "Gotenberg (conversão de documentos para PDF)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Ativa (1.358 eventos de 128 IPs em 30 dias, com shell reverso em Go)",
+      "prioridade": "P2",
+      "tratamento": "RCE sem login via injeção de metadados no ExifTool. Procurar Gotenberg em esteiras internas de geração de PDF, atualizar e não expor a API. Versão corrigida a confirmar: há relato de patch em maio, mas o registro Go não lista versão.",
+      "fontes": [
+        {
+          "nome": "The Hacker News (ThreatsDay)",
+          "url": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html"
+        },
+        {
+          "nome": "Go Vulnerability Database",
+          "url": "https://pkg.go.dev/vuln/GO-2026-5636"
         }
       ],
       "status": "Novo"
@@ -285,19 +307,63 @@
       "status": "Novo"
     },
     {
+      "data": "2026-10-28",
+      "cve": "CVE-2026-112816",
+      "produto": "Canonical LXD e MicroCloud (API HTTPS)",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Exploit público",
+      "prioridade": "P2",
+      "tratamento": "Quem alcança a API e tem o certificado público de um cliente confiável entra como ele, sem chave privada, e controla cluster e VMs. Subir para LXD 6.10.1, 5.21.9, 5.0.11 ou 4.0.15 e MicroCloud 3.4.1 ou 2.1.5; Incus 7.6.0. Até lá, restringir a porta da API. API fica desligada por padrão; PoC de laboratório de 01/11, qualidade a confirmar.",
+      "fontes": [
+        {
+          "nome": "Rescana",
+          "url": "https://www.rescana.com/post/canonical-lxd-microcloud-cve-2026-112816-certificate-validation"
+        },
+        {
+          "nome": "lilting.ch",
+          "url": "https://lilting.ch/en/articles/lxd-cve-2026-112816-client-certificate-chain"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-28",
+      "cve": "CVE-2026-97631",
+      "produto": "TianoCore EDK II (firmware UEFI, boot de rede)",
+      "cvss": 9.5,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Falha de 16 anos que roda código antes do Secure Boot em servidores com boot de rede (advisory de 22/10). Sem release estável corrigido: correção só na branch principal e no Project Mu; RHEL 8 a 10 lista edk2 como afetado. Mapear hosts com boot de rede e isolar essa VLAN até sair firmware do fabricante.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
       "data": "2026-10-27",
       "cve": "CVE-2026-98432",
-      "produto": "Linux kernel (pilha TCP/IPv4, RCE remota)",
+      "produto": "Linux kernel (TCP/IPv4, RCE remota; RHSB-2026-016)",
       "cvss": 9.8,
       "kev": false,
       "zero_day": false,
       "exploracao": "Não",
-      "prioridade": "P1",
-      "tratamento": "Use-after-free no tratamento de SYN/SYNACK que pode dar root remoto sem login (nota 9.8 da CNA; Red Hat dá 8.1); demonstração de exploit sem código público. Aplicar kernel 6.1.190, 6.6.159, 6.12.113, 6.18.56 ou equivalente da distribuição (Ubuntu e RHEL ainda sem correção em 30/10); até lá, manter net.ipv4.tcp_migrate_req=0, que reduz mas não elimina o risco.",
+      "prioridade": "P0",
+      "tratamento": "Root remoto sem login (9.8 da CNA; Red Hat dá 8.1), com exploit demonstrado sem código público; o caminho conhecido exige listener MPTCP, ligado por padrão em programas Go 1.24+. RHEL e Ubuntu seguem sem kernel corrigido em 02/11; Debian, Oracle UEK, Amazon Linux e parte do SLES já têm. Até lá, net.mptcp.enabled=0, GODEBUG=multipathtcp=0 e regra nftables contra TCP IPv4 com IP options, que reduzem o risco mas não fecham a falha.",
       "fontes": [
         {
-          "nome": "AIID (análise CVE-2026-98432)",
-          "url": "https://aiidelist.com/blog/claude-linux-kernel-race-condition-remote-root-execution"
+          "nome": "ma.ttias.be (status por distro)",
+          "url": "https://ma.ttias.be/linux-cve-2026-98432-vulnerable-kernels/"
+        },
+        {
+          "nome": "Webhosting Today (Go e MPTCP)",
+          "url": "https://webhosting.today/2026/10/30/claude-built-a-remote-root-exploit-for-a-linux-tcp-bug-rhel-almalinux-and-ubuntu-have-no-fixed-kernel-yet/"
         },
         {
           "nome": "Wiz (versões corrigidas)",
@@ -479,23 +545,19 @@
       "status": "Novo"
     },
     {
-      "data": "2026-10-25",
-      "cve": "CVE-2026-111497 / CVE-2026-114148",
-      "produto": ".NET 8 a 11 e libbrotli embutida (Brotli)",
-      "cvss": null,
-      "kev": true,
-      "zero_day": false,
-      "exploracao": "Ativa (Brotli no KEV em 27/10)",
-      "prioridade": "P1",
-      "tratamento": "Brotli entrou no KEV em 27/10. Subir .NET para 8.0.33, 9.0.22 ou 10.0.14 e reconstruir apps self-contained e imagens; .NET Framework não é afetado. Só expõe quem descomprime Brotli (ASP.NET Core, HttpClient). Revisar também Envoy, Istio e libs Python. CVSS no .NET a confirmar.",
+      "data": "2026-10-26",
+      "cve": "CVE-2026-86950",
+      "produto": "Apple iOS e iPadOS antigos (CoreGraphics)",
+      "cvss": 8.8,
+      "kev": false,
+      "zero_day": true,
+      "exploracao": "Ativa (ataques direcionados, segundo a Apple)",
+      "prioridade": "P2",
+      "tratamento": "Exigir iOS e iPadOS 18.7.11 via MDM em iPhone XS, XR e iPad 7, que não rodam a versão 26; aparelhos mais novos receberam a correção em setembro. Status no KEV a confirmar.",
       "fontes": [
         {
-          "nome": "Security Magazine",
-          "url": "https://www.securitymagazine.com/articles/102699-microsoft-releases-emergency-net-patches"
-        },
-        {
-          "nome": "lilting.ch (produtos afetados)",
-          "url": "https://lilting.ch/en/articles/brotli-cve-2026-111497-python-curl-git"
+          "nome": "Bitdefender",
+          "url": "https://www.bitdefender.com/en-au/blog/hotforsecurity/apple-patches-older-iphones-exploited-coregraphics-zero-day"
         }
       ],
       "status": "Novo"
