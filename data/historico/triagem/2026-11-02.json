@@ -1,7 +1,65 @@
 {
-  "atualizado": "2026-11-02T10:51:36Z",
+  "atualizado": "2026-11-02T15:36:40Z",
   "janela": "26/out a 02/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-02",
+      "cve": "CVE-2026-116443",
+      "produto": "Dell PowerStore (SDNAS, DSA-2026-479)",
+      "cvss": null,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não confirmada",
+      "prioridade": "P1",
+      "tratamento": "Dell corrigiu 44 falhas, sete delas críticas no SDNAS. Conferir o DSA-2026-479, priorizar arrays com NAS ativo e isolar a rede de gestão; CVSS, versões corrigidas e demais CVEs a confirmar, pois a matéria não abriu.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline (lista de alertas)",
+          "url": "https://securityonline.info/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-01",
+      "cve": "CVE-2026-119261 / CVE-2026-119263",
+      "produto": "Google Chrome (Skia e GarbageCollection)",
+      "cvss": 9.6,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Falhas de navegador com possível escape de sandbox via página maliciosa. Garantir Chrome e Edge gerenciados em 156.0.8078.79 ou superior, com reinício forçado; data do advisory e versão da CVE-2026-119263 a confirmar.",
+      "fontes": [
+        {
+          "nome": "CVE Brief (01/11)",
+          "url": "https://cvebrief.com/archive/2026/11/01/"
+        },
+        {
+          "nome": "Debian Security Tracker",
+          "url": "https://security-tracker.debian.org/tracker/CVE-2026-119261"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-31",
+      "cve": "CVE-2026-118636",
+      "produto": "Apache MINA 3.0.0 a 3.0.0-M2",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Desserialização sem login no JavaNativeMessageDecoder, em ramo inativo que não terá patch. Procurar a dependência em apps Java e migrar para o ramo 2.2.x.",
+      "fontes": [
+        {
+          "nome": "CVE Brief",
+          "url": "https://cvebrief.com/cve/cve-2026-118636/"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-10-30",
       "cve": "CVE-2026-118697 / CVE-2026-118696",
@@ -38,6 +96,28 @@
         {
           "nome": "Brandefense",
           "url": "https://brandefense.io/knowledge-hub/vulnerabilities/cve-2026-116366/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-30",
+      "cve": "CVE-2026-102764",
+      "produto": "BeyondTrust Remote Support (self-hosted)",
+      "cvss": 9.3,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (KEV em 16/10; zero-day desde ago/2026; módulo Metasploit e análise da Rapid7 em 30/10)",
+      "prioridade": "P0",
+      "tratamento": "Upload sem login até RCE, agora com exploit público: a janela para ataques em massa abriu. Aplicar BT26-05-RS (24.3.1 a 26.2.3; abaixo disso, atualizar) e revisar logs de POST /api/start_session seguido de caminhos sem extensão, além de PHP inesperado no diretório público.",
+      "fontes": [
+        {
+          "nome": "Rapid7",
+          "url": "https://www.rapid7.com/blog/post/ra-rapid7-analysis-unauthenticated-file-upload-to-rce-in-beyondtrust-remote-support-cve-2026-102764/"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html"
         }
       ],
       "status": "Novo"
@@ -135,19 +215,45 @@
       "status": "Novo"
     },
     {
+      "data": "2026-10-29",
+      "cve": "CVE-2026-116238 a CVE-2026-116252",
+      "produto": "pgAdmin 4 (modo servidor)",
+      "cvss": null,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "15 falhas, entre elas injeção de comandos (CVE-2026-116241) e login como outro usuário via LDAP ou Kerberos (CVE-2026-116239). Subir para 9.19, definindo SERVER_PASSEXEC_COMMANDS antes do primeiro início, e tirar o console da rede aberta; CVSS a confirmar.",
+      "fontes": [
+        {
+          "nome": "Linux Compatible",
+          "url": "https://www.linuxcompatible.org/story/pgadmin-4-v919-released-15-security-fixes-and-136-changes-for-postgresql-admin/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
       "data": "2026-10-28",
-      "cve": "sem CVE (WordPress Core)",
+      "cve": "CVE-2026-119977",
       "produto": "WordPress Core 4.7 a 7.1.3 (RCE via pasta de upgrade)",
       "cvss": 8.1,
       "kev": false,
       "zero_day": false,
       "exploracao": "Ativa (~63 mil tentativas em 24h segundo a Wordfence)",
       "prioridade": "P1",
-      "tratamento": "RCE sem login durante atualização completa do core, por corrida em arquivos temporários de wp-content/upgrade. Subir para 7.1.4 nos sites institucionais e de campanha (inclusive os de agências), bloquear acesso web a wp-content/upgrade e procurar admins, plugins ou PHP desconhecidos.",
+      "tratamento": "RCE sem login por corrida em wp-content/upgrade durante atualização do core; CVE publicada em 01/11. Subir para 7.1.4 ou backport do ramo (6.9.11, 6.8.12, 4.7.39 etc.), inclusive em sites de agências, e bloquear acesso web a wp-content/upgrade. A Patchstack vê exploração pouco prática, mas a Wordfence registra tentativas em volume: procurar admins, plugins ou PHP desconhecidos.",
       "fontes": [
         {
           "nome": "The Hacker News",
           "url": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html"
+        },
+        {
+          "nome": "WebHosting.today",
+          "url": "https://webhosting.today/2026/10/29/wordpress-7-1-4-fixes-22-flaws-one-in-the-core-update-process/"
+        },
+        {
+          "nome": "CVE Brief",
+          "url": "https://cvebrief.com/cve/cve-2026-119977/"
         }
       ],
       "status": "Novo"
@@ -269,21 +375,25 @@
     {
       "data": "2026-10-28",
       "cve": "CVE-2026-46300",
-      "produto": "Linux kernel (Fragnesia, LPE)",
+      "produto": "Linux kernel (Fragnesia, LPE; cadeia com PHP2Shell)",
       "cvss": 7.8,
       "kev": true,
       "zero_day": false,
-      "exploracao": "Ativa (KEV em 28/10; exploit público desde mai/2026)",
-      "prioridade": "P1",
-      "tratamento": "Escalada local a root via page cache. Aplicar o kernel corrigido da distribuição (patch de 13/05/2026); onde não der, bloquear os módulos esp4, esp6 e rxrpc, com atenção a servidores multiusuário e hosts de contêiner.",
+      "exploracao": "Ativa (KEV em 28/10; encadeada com PHP2Shell para virar root em firewalls, segundo a Dream Security)",
+      "prioridade": "P0",
+      "tratamento": "Em cadeia com PHP2Shell, deu root em firewalls em menos de 15 minutos e levou a pivô para o AD via LDAP. Aplicar o kernel corrigido (patch de 13/05/2026, à parte do Dirty Frag); sem isso, descarregar esp4 e esp6 se não houver IPsec, capturar memória antes de reiniciar host suspeito e alertar binds LDAP de origem incomum.",
       "fontes": [
         {
           "nome": "Qualys ThreatPROTECT",
           "url": "https://threatprotect.qualys.com/2026/05/15/linux-kernel-local-privilege-escalation-vulnerability-exploited-in-attacks-fragnesia-cve-2026-46300/"
         },
         {
-          "nome": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-46300"
+          "nome": "CSO Online",
+          "url": "https://www.csoonline.com/article/4242454/php2shell-plus-fragnesia-a-dangerous-new-route-from-web-server-to-root.html"
+        },
+        {
+          "nome": "IT-Connect",
+          "url": "https://www.it-connect.tech/php2shell-and-fragnesia-the-attack-chain-that-gained-root-on-24-firewalls/"
         }
       ],
       "status": "Novo"
@@ -342,6 +452,28 @@
         {
           "nome": "The Hacker News",
           "url": "https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-28",
+      "cve": "CVE-2026-110879",
+      "produto": "jackson-databind 2.10+ e 3.x (Java)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Correção incompleta da CVE-2026-54512: tipos genéricos burlam a validação e podem levar a RCE com Spring no classpath e JSON ou XML do atacante. Inventariar pelo SBOM apps com default typing ou @JsonTypeInfo(Id.CLASS), desligar ou usar allow-list; versões corrigidas a confirmar (PRs citam a 2.18.12).",
+      "fontes": [
+        {
+          "nome": "Debian Security Tracker",
+          "url": "https://security-tracker.debian.org/tracker/CVE-2026-110879"
+        },
+        {
+          "nome": "TheHackerWire",
+          "url": "https://www.thehackerwire.com/cve-2026-110879-jackson-databind-deserialization-bypass-leads-to-remote-code-execution-cve-2026-110879/"
         }
       ],
       "status": "Novo"
@@ -569,9 +701,9 @@
       "cvss": 8.7,
       "kev": true,
       "zero_day": false,
-      "exploracao": "Ativa (CVE no KEV em 26/10)",
+      "exploracao": "Ativa (KEV em 26/10; Palo Alto relata ataque à interface de gestão exposta; 24 firewalls com root na cadeia com Fragnesia)",
       "prioridade": "P0",
-      "tratamento": "Falha do PHP alcançável pela interface de gestão (web e XML API); já há sondagens de PHP2Shell contra GlobalProtect. Aplicar hotfix 12.2.4-h1, 12.1.10-h3, 11.2.16-h1, 11.1.16-h4 ou 10.2.18-h13; restringir a gestão a jump host. Versões de Panorama/WF-500: a confirmar no advisory.",
+      "tratamento": "Falha do PHP alcançável pela interface de gestão (web e XML API); já há sondagens de PHP2Shell contra GlobalProtect. Aplicar hotfix 12.2.4-h1, 12.1.10-h3, 11.2.16-h1, 11.1.16-h4 ou 10.2.18-h13; restringir a gestão a jump host. Versões de Panorama/WF-500: a confirmar no advisory. Caçar webshell PHP e túnel SSH reverso; a ligação da campanha da Dream Security com PAN-OS vem do CSO Online e o IT-Connect a trata como hipótese.",
       "fontes": [
         {
           "nome": "SecurityOnline",
@@ -582,8 +714,8 @@
           "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html"
         },
         {
-          "nome": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/"
+          "nome": "CSO Online",
+          "url": "https://www.csoonline.com/article/4242454/php2shell-plus-fragnesia-a-dangerous-new-route-from-web-server-to-root.html"
         }
       ],
       "status": "Pendente"
