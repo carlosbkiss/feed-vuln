@@ -558,7 +558,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 1.0,
-    "poc_qtd": 741,
+    "poc_qtd": 744,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -1005,6 +1005,11 @@
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
         "publicado": "2026-10-31T08:27:43Z"
+      },
+      {
+        "nome": "SecurityWeek",
+        "link": "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/",
+        "publicado": "2026-11-02T07:57:49Z"
       }
     ],
     "prioridade_max": "P0"
@@ -1033,7 +1038,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.8799,
-    "poc_qtd": 80,
+    "poc_qtd": 81,
     "fontes": [
       {
         "nome": "NVD",
@@ -1333,6 +1338,11 @@
         "nome": "CISA Advisories",
         "link": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
         "publicado": "2026-10-30T12:00:00Z"
+      },
+      {
+        "nome": "SecurityWeek",
+        "link": "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/",
+        "publicado": "2026-11-02T07:57:49Z"
       }
     ],
     "prioridade_max": "P0"
