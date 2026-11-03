@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-03T11:09:07Z",
+  "atualizado": "2026-11-03T18:42:23Z",
   "janela": "27/out a 03/nov/2026",
   "itens": [
     {
@@ -85,8 +85,12 @@
       "cvss": 9.1,
       "exploracao": "Não",
       "prioridade": "P1",
-      "tratamento": "Sem login, falta de filtro no meta proxy pode vazar credenciais do Rancher para provedores de nuvem. Afeta 2.13.0 a 2.13.11, 2.14.0 a 2.14.7 e 2.15.0 a 2.15.3; versão corrigida a confirmar no GHSA-x82x-2qj6-5rm2. Revisar credenciais de nuvem depois de corrigir.",
+      "tratamento": "Sem login, falta de filtro no meta proxy pode vazar credenciais do Rancher para provedores de nuvem. Subir para 2.15.3, 2.14.7, 2.13.11, 2.12.15 ou 2.11.19, conforme o ramo, e revisar as credenciais de nuvem depois de corrigir.",
       "fontes": [
+        {
+          "nome": "Registro CVE (CNA SUSE)",
+          "url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/88xxx/CVE-2026-88811.json"
+        },
         {
           "nome": "TheHackerWire",
           "url": "https://www.thehackerwire.com/vulnerability/CVE-2026-88811/"
@@ -344,6 +348,32 @@
         {
           "nome": "Go Vulnerability Database",
           "url": "https://pkg.go.dev/vuln/GO-2026-5636"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-29",
+      "cve": "CVE-2024-10441 / CVE-2026-13639 / CVE-2026-13684",
+      "produto": "Synology DSM (NAS, ransomware C3RB3R)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Ativa (ransomware C3RB3R; Synology cita falha corrigida em 2024, a 360 aponta as duas de 2026)",
+      "prioridade": "P2",
+      "tratamento": "Só importa se houver NAS Synology em agência, área ou shadow IT. Subir o DSM para 7.4-90075, 7.3.2-86009-4, 7.2.2-72806-9 ou 7.2.1-69057-12, tirar o DSM da internet e guardar snapshot protegido ou backup offline. A entrada segue em disputa, e a nota 9.8 vale para as CVEs de 2026.",
+      "fontes": [
+        {
+          "nome": "Synology",
+          "url": "https://synology.com/en-global/company/news/article/C3RB3R"
+        },
+        {
+          "nome": "IT-Connect",
+          "url": "https://www.it-connect.tech/c3rb3r-ransomware-is-hitting-synology-nas-devices-how-to-protect-yours/"
+        },
+        {
+          "nome": "Gridinsoft",
+          "url": "https://blog.gridinsoft.com/synology-c3rb3r-ransomware-nas-backups/"
         }
       ],
       "status": "Novo"
@@ -639,7 +669,7 @@
       "zero_day": false,
       "exploracao": "Não",
       "prioridade": "P0",
-      "tratamento": "Root remoto sem login (9.8 da CNA e da Red Hat; SUSE dá 8.1), com exploit demonstrado sem código público; o caminho conhecido exige listener MPTCP, ligado por padrão em programas Go 1.24+. Desde 01/11 há kernel corrigido para RHEL 8, 9 e 10 e AlmaLinux 8, além de Debian, Oracle UEK, Amazon Linux e parte do SLES; Ubuntu tem kernel só em -proposed (22.04, 24.04 e 26.04, ainda em teste), 26.10 corrigido e 16.04 a 20.04 pendentes; AlmaLinux 9 e 10 estão em teste. Priorizar RHEL com reboot ou live patch; onde não houver kernel, net.mptcp.enabled=0, GODEBUG=multipathtcp=0 e regra nftables contra TCP IPv4 com IP options, que só reduzem o risco: a Canonical avisa que a falha não se limita ao MPTCP.",
+      "tratamento": "Root remoto sem login (9.8 da CNA e da Red Hat; SUSE dá 8.1), com exploit demonstrado sem código público; o caminho conhecido exige listener MPTCP, ligado por padrão em programas Go 1.24+. Há kernel corrigido para RHEL 8, 9 e 10 e AlmaLinux 8, 9.8 e 10.2 (x86_64, em produção desde 02/11), além de Debian, Oracle UEK, Amazon Linux e parte do SLES. Em 03/11 Ubuntu 22.04, 24.04 e 26.04 seguiam sem kernel publicado (só -proposed), 26.10 corrigido e 20.04 ou anterior só via Ubuntu Pro, sem previsão. Priorizar RHEL com reboot ou live patch; onde não houver kernel, net.mptcp.enabled=0, GODEBUG=multipathtcp=0 e regra nftables contra TCP IPv4 com IP options, que só reduzem o risco: a Canonical avisa que a falha não se limita ao MPTCP.",
       "fontes": [
         {
           "nome": "ma.ttias.be (status por distro)",
