@@ -1,23 +1,117 @@
 {
-  "atualizado": "2026-11-02T18:50:06Z",
-  "janela": "26/out a 02/nov/2026",
+  "atualizado": "2026-11-03T11:09:07Z",
+  "janela": "27/out a 03/nov/2026",
   "itens": [
     {
-      "data": "2026-11-02",
-      "cve": "CVE-2026-116443",
-      "produto": "Dell PowerStore (SDNAS, DSA-2026-479)",
-      "cvss": null,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não confirmada",
+      "data": "2026-11-03",
+      "cve": "CVE-2026-111497 / CVE-2026-98432",
+      "produto": "Arista VeloCloud Orchestrator, NDR e Wi-Fi em OpenConfig",
+      "cvss": 9.8,
+      "kev": true,
+      "exploracao": "Ativa (Brotli no KEV em 27/10; Arista não relata ataque a clientes)",
       "prioridade": "P1",
-      "tratamento": "Dell corrigiu 44 falhas, sete delas críticas no SDNAS. Conferir o DSA-2026-479, priorizar arrays com NAS ativo e isolar a rede de gestão; CVSS, versões corrigidas e demais CVEs a confirmar, pois a matéria não abriu.",
+      "tratamento": "Correções saíram em 02/11. VeloCloud Orchestrator: 6.4.2.14, 6.1.3.12 ou 5.2.3.20, a conferir no advisory, pois a matéria traz números divergentes. NDR 5.4.11 ou anterior: versão a confirmar; desligar MPTCP até lá. Nos APs, restringir portas abertas.",
       "fontes": [
         {
-          "nome": "SecurityOnline (lista de alertas)",
-          "url": "https://securityonline.info/"
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/arista-security-vulnerabilities-rce-flaws/"
         }
       ],
+      "zero_day": false,
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-03",
+      "cve": "CVE-2026-58115",
+      "produto": "Siemens SIMATIC IoT2050 Advanced (Node-RED)",
+      "cvss": 10.0,
+      "exploracao": "Ativa (honeypots da VulnCheck desde 30/10; bot Linux e backdoor /cmd)",
+      "prioridade": "P2",
+      "tratamento": "Node-RED sem autenticação permite rodar código com privilégio máximo. Só importa se houver esse gateway em predial ou OT: subir para V4.3.4.1 (SSA-834709) ou remover o Node-RED, e tirar a porta da rede aberta. Fora do radar automático por ser de agosto.",
+      "fontes": [
+        {
+          "nome": "SQ Magazine",
+          "url": "https://sqmagazine.co.uk/siemens-iot2050-flaw-exploited-node-red-backdoors"
+        },
+        {
+          "nome": "CVE Watchtower",
+          "url": "https://securityonline.info/cve-watchtower/cve-2026-58115/"
+        }
+      ],
+      "kev": false,
+      "zero_day": false,
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-02",
+      "cve": "CVE-2026-116443 / CVE-2026-116441 / CVE-2026-111509",
+      "produto": "Dell PowerStore (SDNAS, DSA-2026-479)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Sete falhas 9.8 no SDNAS (como estouro de pilha no TFTP) e outras até root; a Dell não relata exploração. Subir PowerStoreT OS 5.1.x para 5.1.0.0-2798105 ou superior; até lá, limitar TFTP e NFS e deixar a gestão só em rede de administração.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline (DSA-2026-479)",
+          "url": "https://securityonline.info/dell-powerstore-vulnerabilities-dsa-2026-479/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-02",
+      "cve": "CVE-2026-116606 / CVE-2026-111560",
+      "produto": "Barracuda Email Security Gateway, WAF, Load Balancer ADC e outros",
+      "cvss": 9.3,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Duas falhas encadeáveis até root em appliances de borda. Subir o Email Security Gateway para 9.4.0.030; para os demais produtos, versão a confirmar no advisory da Barracuda. Sem exploração nem PoC público até agora.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/barracuda-vulnerabilities-root-access-patch/"
+        }
+      ],
+      "kev": false,
+      "zero_day": false,
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-02",
+      "cve": "CVE-2026-88811",
+      "produto": "SUSE Rancher Manager (meta proxy)",
+      "cvss": 9.1,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Sem login, falta de filtro no meta proxy pode vazar credenciais do Rancher para provedores de nuvem. Afeta 2.13.0 a 2.13.11, 2.14.0 a 2.14.7 e 2.15.0 a 2.15.3; versão corrigida a confirmar no GHSA-x82x-2qj6-5rm2. Revisar credenciais de nuvem depois de corrigir.",
+      "fontes": [
+        {
+          "nome": "TheHackerWire",
+          "url": "https://www.thehackerwire.com/vulnerability/CVE-2026-88811/"
+        }
+      ],
+      "kev": false,
+      "zero_day": false,
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-02",
+      "cve": "CVE-2026-64618 / CVE-2026-114364 / CVE-2026-113687",
+      "produto": "Apache Fineract e Apache Syncope",
+      "cvss": 9.8,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "SQL injection 9.8 no Fineract (core bancário aberto) e SQL injection e escape de sandbox no Syncope (identidade). Se houver em fintech ou projeto paralelo, subir para Fineract 1.16.1 e Syncope 4.0.9 ou 4.1.4; ramo 3.0.x do Syncope a confirmar.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/apache-security-vulnerabilities-syncope-fineract/"
+        }
+      ],
+      "kev": false,
+      "zero_day": false,
       "status": "Novo"
     },
     {
@@ -40,6 +134,24 @@
           "url": "https://security-tracker.debian.org/tracker/CVE-2026-119261"
         }
       ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-01",
+      "cve": "CVE-2026-99154 / CVE-2026-99153",
+      "produto": "Linux kernel (libiscsi, iniciador iSCSI)",
+      "cvss": 9.8,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Exige controlar ou se passar pelo alvo iSCSI, então o risco fica na rede de storage. Entra nos kernels estáveis 5.10.273, 5.15.224, 6.1.191, 6.6.161, 6.12.115, 6.18.59 e 7.2.13; conferir o backport da distro e manter o iSCSI em rede isolada.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/linux-kernel-vulnerabilities-oct-26-nov-1-2026/"
+        }
+      ],
+      "kev": false,
+      "zero_day": false,
       "status": "Novo"
     },
     {
@@ -153,19 +265,19 @@
       "zero_day": true,
       "exploracao": "Ativa (CVE-2026-111357 e CVE-2026-118527 no KEV em 30/10; cadeia até root sem login; prazos CISA 02/11 e 13/11)",
       "prioridade": "P0",
-      "tratamento": "Subir para 25.1.1.3 ou 22.8R2.6: a CISA passou a listar a 22.8R2.5 como afetada, então quem corrigiu em outubro segue exposto. Integrity Checker limpo não prova nada; em caso de suspeita, seguir a recuperação da CISA (reset de fábrica, troca de senhas, certificados e chaves de API) e caçar requisições anômalas a welcome.cgi e arquivos em /data/.icscap/.",
+      "tratamento": "Subir para 25.1.1.3 (ou 25.1.3.1 no ramo 25.1.3); a 22.8R2.6 só se a migração não puder ser imediata, pois a CISA lista até a 22.8R2.5, 25.1.1.2 e 25.1.2.2 como afetadas. Integrity Checker limpo não prova nada: guardar memória e logs antes de reiniciar, caçar X-DSCGI-PATH em welcome.cgi e arquivos em /data/.icscap/ e /home/runtime/tmp/, e trocar conta LDAP, senhas LAPS e chaves BitLocker se houver suspeita.",
       "fontes": [
+        {
+          "nome": "Tech Insider (cadeia e caça)",
+          "url": "https://tech-insider.org/ivanti-connect-secure-cve-2026-111357-118527-kev-deadline-nov-13-2026/"
+        },
+        {
+          "nome": "Centro Canadense de Cibersegurança (AV26-1035)",
+          "url": "https://cyber.gc.ca/en/alerts-advisories/ivanti-security-advisory-av26-1035"
+        },
         {
           "nome": "Cyber Security News",
           "url": "https://cybersecuritynews.com/ivanti-connect-secure-zero-days-exploited/"
-        },
-        {
-          "nome": "ITdaily (CVE-2026-104935)",
-          "url": "https://itdaily.com/news/business/ivanti-bug-ics-2026/"
-        },
-        {
-          "nome": "Secure.com (revisão do KEV)",
-          "url": "https://www.secure.com/blog/cybersecurity/ivanti-connect-secure-kev-22-8r2-5-affected"
         }
       ],
       "status": "Novo"
@@ -527,7 +639,7 @@
       "zero_day": false,
       "exploracao": "Não",
       "prioridade": "P0",
-      "tratamento": "Root remoto sem login (9.8 da CNA e da Red Hat; SUSE dá 8.1), com exploit demonstrado sem código público; o caminho conhecido exige listener MPTCP, ligado por padrão em programas Go 1.24+. Desde 01/11 há kernel corrigido para RHEL 8, 9 e 10 e AlmaLinux 8, além de Debian, Oracle UEK, Amazon Linux e parte do SLES; Ubuntu segue sem correção e AlmaLinux 9 e 10 estão em teste. Priorizar RHEL com reboot ou live patch; onde não houver kernel, net.mptcp.enabled=0, GODEBUG=multipathtcp=0 e regra nftables contra TCP IPv4 com IP options, que só reduzem o risco.",
+      "tratamento": "Root remoto sem login (9.8 da CNA e da Red Hat; SUSE dá 8.1), com exploit demonstrado sem código público; o caminho conhecido exige listener MPTCP, ligado por padrão em programas Go 1.24+. Desde 01/11 há kernel corrigido para RHEL 8, 9 e 10 e AlmaLinux 8, além de Debian, Oracle UEK, Amazon Linux e parte do SLES; Ubuntu tem kernel só em -proposed (22.04, 24.04 e 26.04, ainda em teste), 26.10 corrigido e 16.04 a 20.04 pendentes; AlmaLinux 9 e 10 estão em teste. Priorizar RHEL com reboot ou live patch; onde não houver kernel, net.mptcp.enabled=0, GODEBUG=multipathtcp=0 e regra nftables contra TCP IPv4 com IP options, que só reduzem o risco: a Canonical avisa que a falha não se limita ao MPTCP.",
       "fontes": [
         {
           "nome": "ma.ttias.be (status por distro)",
@@ -538,8 +650,8 @@
           "url": "https://webhosting.today/2026/10/30/claude-built-a-remote-root-exploit-for-a-linux-tcp-bug-rhel-almalinux-and-ubuntu-have-no-fixed-kernel-yet/"
         },
         {
-          "nome": "Wiz (versões corrigidas)",
-          "url": "https://www.wiz.io/vulnerability-database/cve/cve-2026-98432"
+          "nome": "SecurityOnline (Ubuntu)",
+          "url": "https://securityonline.info/cve-2026-98432-ubuntu-proposed-fix/"
         }
       ],
       "status": "Novo"
@@ -569,21 +681,21 @@
       "cvss": 9.8,
       "kev": false,
       "zero_day": false,
-      "exploracao": "Ativa (sondagens em honeypot em 27/10)",
+      "exploracao": "Ativa (tentativas em honeypot desde 27/10; sem vítima confirmada e fora do KEV)",
       "prioridade": "P0",
-      "tratamento": "SQL injection sem login que pode virar execução de comando com acesso a dados financeiros e de RH. Aplicar o Oracle CPU de out/2026; até lá, tirar o servlet /OA_HTML/AppsTCFServer do allowlist do URL firewall e restringir o EBS a redes confiáveis.",
+      "tratamento": "SQL injection sem login que pode virar execução de comando com acesso a dados financeiros e de RH. Aplicar o Oracle CPU de out/2026; até lá, tirar o servlet /OA_HTML/AppsTCFServer do allowlist do URL firewall e restringir o EBS a redes confiáveis. Checar os indicadores da Horizon3.ai: estar fora do KEV não significa risco baixo.",
       "fontes": [
         {
           "nome": "The Hacker News",
           "url": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html"
         },
         {
-          "nome": "Cyber Security News",
-          "url": "https://cybersecuritynews.com/oracle-ebs-rce-exploited"
+          "nome": "Help Net Security",
+          "url": "https://www.helpnetsecurity.com/?p=389641"
         },
         {
-          "nome": "Rescana",
-          "url": "https://www.rescana.com/post/oracle-e-business-suite-cve-2026-101767-prepare-now"
+          "nome": "Cyber Daily",
+          "url": "https://cyberdaily.au/security/14379-patch-now-hackers-targeting-ten-day-old-oracle-e-business-suite-vulnerability"
         }
       ],
       "status": "Novo"
@@ -674,65 +786,7 @@
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111497"
         }
       ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-26",
-      "cve": "CVE-2026-110720",
-      "produto": "HashiCorp Consul (consul-k8s)",
-      "cvss": 9.9,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P1",
-      "tratamento": "Bypass de autorização entre namespaces nas regras de ACL, a partir de conta com pouco privilégio, pode tomar a service mesh. Subir consul-k8s para 1.8.18, 2.0.4 ou 2.1.0 (afeta a partir da 0.42.0).",
-      "fontes": [
-        {
-          "nome": "SecurityOnline",
-          "url": "https://securityonline.info/hashicorp-consul-k8s-vulnerability-cve-2026-110720/"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-26",
-      "cve": "sem CVE (Fortinet)",
-      "produto": "Fortinet FortiOS, FortiManager, FortiAnalyzer, FortiMail e FortiAuthenticator",
-      "cvss": null,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não confirmada (detalhes só em ~10/11; watchTowr espera exploração rápida por diff de patch)",
-      "prioridade": "P1",
-      "tratamento": "Fortinet soltou correções críticas em 21-22/10 sem CVE nem advisory, e o ACSC emitiu alerta crítico. Subir FortiOS para 8.0.2, 7.6.8, 7.4.13 ou 7.2.14 e FortiManager/FortiAnalyzer para 8.0.2, 7.6.8, 7.4.12 ou 7.2.13 antes de 10/11; FortiMail e FortiAuthenticator com versões a confirmar no PSIRT.",
-      "fontes": [
-        {
-          "nome": "Cyber Daily (alerta ACSC)",
-          "url": "https://www.cyberdaily.au/security/14348-act-now-acsc-warns-of-critical-vulnerabilities-in-fortios-fortimanager-fortianalyzer-and-fortimail"
-        },
-        {
-          "nome": "Cybernews",
-          "url": "https://cybernews.com/security/fortinet-critical-flaws-patches-november-disclosure/"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-26",
-      "cve": "CVE-2026-86950",
-      "produto": "Apple iOS e iPadOS antigos (CoreGraphics)",
-      "cvss": 8.8,
-      "kev": false,
-      "zero_day": true,
-      "exploracao": "Ativa (ataques direcionados, segundo a Apple)",
-      "prioridade": "P2",
-      "tratamento": "Exigir iOS e iPadOS 18.7.11 via MDM em iPhone XS, XR e iPad 7, que não rodam a versão 26; aparelhos mais novos receberam a correção em setembro. Status no KEV a confirmar.",
-      "fontes": [
-        {
-          "nome": "Bitdefender",
-          "url": "https://www.bitdefender.com/en-au/blog/hotforsecurity/apple-patches-older-iphones-exploited-coregraphics-zero-day"
-        }
-      ],
-      "status": "Novo"
+      "status": "Pendente"
     },
     {
       "data": "2026-10-23",
