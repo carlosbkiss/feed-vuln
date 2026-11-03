@@ -272,7 +272,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0035,
-    "poc_qtd": 1,
+    "poc_qtd": 0,
     "fontes": [
       {
         "nome": "NVD",
@@ -558,7 +558,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 1.0,
-    "poc_qtd": 744,
+    "poc_qtd": 747,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -687,7 +687,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 1.0,
-    "poc_qtd": 24,
+    "poc_qtd": 25,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -1303,7 +1303,7 @@
     "cve": "CVE-2026-118527",
     "produto": "Ivanti Connect Secure",
     "titulo": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
-    "cvss": null,
+    "cvss": 4.3,
     "prioridade": "P0",
     "elegivel_por": [
       "zero-day",
@@ -1317,10 +1317,10 @@
     },
     "primeira_vez": "2026-10-30T00:00:00Z",
     "primeira_noticia": "2026-10-30T08:26:39Z",
-    "publicado_nvd": null,
+    "publicado_nvd": "2026-11-03T15:17:24Z",
     "exibido_em": "2026-10-30T10:39:18Z",
     "aguardando_nota_desde": "2026-10-30T08:26:39Z",
-    "nota_chegou_em": null,
+    "nota_chegou_em": "2026-11-03T18:28:03Z",
     "epss_max": null,
     "poc_qtd": 0,
     "fontes": [
@@ -1343,6 +1343,11 @@
         "nome": "SecurityWeek",
         "link": "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/",
         "publicado": "2026-11-02T07:57:49Z"
+      },
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527",
+        "publicado": "2026-11-03T15:17:24Z"
       }
     ],
     "prioridade_max": "P0"
@@ -1476,6 +1481,39 @@
         "nome": "NVD",
         "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76302",
         "publicado": "2026-10-21T23:17:28Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
+        "publicado": "2026-10-23T03:41:41Z"
+      }
+    ],
+    "prioridade_max": "P1"
+  },
+  "CVE-2026-76407": {
+    "cve": "CVE-2026-76407",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.8,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-21T23:17:29Z",
+    "primeira_noticia": "2026-10-23T03:41:41Z",
+    "publicado_nvd": "2026-10-21T23:17:29Z",
+    "exibido_em": "2026-11-03T18:28:03Z",
+    "aguardando_nota_desde": "2026-10-23T03:41:41Z",
+    "nota_chegou_em": "2026-11-03T18:28:03Z",
+    "epss_max": 0.0043,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76407",
+        "publicado": "2026-10-21T23:17:29Z"
       },
       {
         "nome": "Cyber Security News",
@@ -1676,6 +1714,39 @@
       {
         "nome": "NVD",
         "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76527",
+        "publicado": "2026-10-21T23:17:29Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
+        "publicado": "2026-10-23T03:41:41Z"
+      }
+    ],
+    "prioridade_max": "P1"
+  },
+  "CVE-2026-76528": {
+    "cve": "CVE-2026-76528",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.8,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-21T23:17:29Z",
+    "primeira_noticia": "2026-10-23T03:41:41Z",
+    "publicado_nvd": "2026-10-21T23:17:29Z",
+    "exibido_em": "2026-11-03T18:28:03Z",
+    "aguardando_nota_desde": "2026-10-23T03:41:41Z",
+    "nota_chegou_em": "2026-11-03T18:28:03Z",
+    "epss_max": 0.0036,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76528",
         "publicado": "2026-10-21T23:17:29Z"
       },
       {
@@ -2299,7 +2370,7 @@
     "exibido_em": "2026-10-29T23:18:51Z",
     "aguardando_nota_desde": "2026-10-29T09:05:39Z",
     "nota_chegou_em": "2026-10-29T23:18:51Z",
-    "epss_max": 0.273,
+    "epss_max": 0.2769,
     "poc_qtd": 6,
     "fontes": [
       {
