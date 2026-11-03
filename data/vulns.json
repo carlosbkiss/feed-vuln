@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-02T15:36:56Z",
+  "atualizado": "2026-11-03T02:55:51Z",
   "itens": [
     {
       "cve": "CVE-2026-118527",
@@ -40,7 +40,7 @@
       "detectado": "2026-10-30T10:39:18Z",
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
-      "nvd_checado_em": "2026-11-02T15:36:56Z",
+      "nvd_checado_em": "2026-11-03T02:55:51Z",
       "aguardando_nota_desde": "2026-10-30T08:26:39Z",
       "elegivel_por": [
         "zero-day",
@@ -1408,7 +1408,7 @@
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
-      "nvd_checado_em": "2026-11-02T15:36:56Z",
+      "nvd_checado_em": "2026-11-03T02:55:51Z",
       "elegivel_por": [
         "zero-day"
       ],
@@ -1977,6 +1977,42 @@
       "ultima_atividade": "2026-10-20T22:20:11Z"
     },
     {
+      "cve": "CVE-2026-86596",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-86596",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-86596",
+          "publicado": "2026-11-02T22:17:23Z",
+          "visto_em": "2026-11-03T02:55:51Z"
+        }
+      ],
+      "detectado": "2026-11-03T02:55:51Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-02T22:17:23Z",
+      "resumo": "The s2Member plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, <= 260927 via the 'item_name' parameter parameter. This is due to insufficient sanitization in strip_php_tags_deep(), which only strips literal…",
+      "nvd_checado_em": "2026-11-03T02:55:51Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-02T22:17:23Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-86596",
+      "ultima_atividade": "2026-11-02T22:17:23Z",
+      "exibido_em": "2026-11-03T02:55:51Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-86596.json",
+        "checado": "2026-11-03T02:55:51Z"
+      }
+    },
+    {
       "cve": "CVE-2026-73695",
       "fontes": [
         {
@@ -2005,7 +2041,12 @@
       "exibido_em": "2026-11-02T15:36:56Z",
       "prioridade": "P2",
       "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal."
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-03T02:55:51Z"
+      }
     },
     {
       "cve": "CVE-2026-109220",
@@ -2025,7 +2066,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-10-31T07:16:34Z",
       "resumo": "The PDF Invoice for WooCommerce + Drag and Drop Template Builder plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 7.1.1 via the 'customer_note' parameter parameter. This is due to insufficient sanitization of…",
-      "nvd_checado_em": "2026-11-02T15:36:56Z",
+      "nvd_checado_em": "2026-11-03T02:55:51Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2636,7 +2677,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-31T16:07:26Z"
+        "checado": "2026-11-03T02:55:51Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -2677,7 +2718,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-31T16:07:26Z"
+        "checado": "2026-11-03T02:55:51Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -2718,7 +2759,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-31T16:07:26Z"
+        "checado": "2026-11-03T02:55:51Z"
       },
       "ultima_atividade": "2026-10-20T22:20:23Z"
     },
@@ -2759,7 +2800,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-31T16:07:26Z"
+        "checado": "2026-11-03T02:55:51Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2800,7 +2841,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-31T16:07:26Z"
+        "checado": "2026-11-03T02:55:51Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2841,7 +2882,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-31T16:07:26Z"
+        "checado": "2026-11-03T02:55:51Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2882,7 +2923,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-31T16:07:26Z"
+        "checado": "2026-11-03T02:55:51Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2923,7 +2964,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-31T16:07:26Z"
+        "checado": "2026-11-03T02:55:51Z"
       },
       "ultima_atividade": "2026-10-20T22:20:22Z"
     },
@@ -2964,7 +3005,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-31T16:07:26Z"
+        "checado": "2026-11-03T02:55:51Z"
       },
       "ultima_atividade": "2026-10-20T22:20:12Z"
     },
@@ -3005,7 +3046,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-31T16:07:26Z"
+        "checado": "2026-11-03T02:55:51Z"
       },
       "ultima_atividade": "2026-10-20T22:18:02Z"
     },
@@ -3046,7 +3087,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-31T02:25:09Z"
+        "checado": "2026-11-03T02:55:51Z"
       },
       "ultima_atividade": "2026-10-20T22:18:02Z"
     },
@@ -3129,7 +3170,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110936.json",
-        "checado": "2026-10-31T02:25:09Z"
+        "checado": "2026-11-03T02:55:51Z"
       },
       "ultima_atividade": "2026-10-22T12:00:00Z"
     },
@@ -3196,7 +3237,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-31T02:25:09Z"
+        "checado": "2026-11-03T02:55:51Z"
       },
       "ultima_atividade": "2026-10-20T12:00:00Z"
     },
@@ -3271,7 +3312,7 @@
       "poc": {
         "qtd": 7,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-96652.json",
-        "checado": "2026-10-31T02:25:09Z"
+        "checado": "2026-11-03T02:55:51Z"
       },
       "ultima_atividade": "2026-10-21T07:26:49Z"
     },
@@ -3338,7 +3379,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-31T02:25:09Z"
+        "checado": "2026-11-03T02:55:51Z"
       },
       "ultima_atividade": "2026-10-20T12:00:00Z"
     },
@@ -3405,7 +3446,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-10-31T02:25:09Z"
+        "checado": "2026-11-03T02:55:51Z"
       },
       "ultima_atividade": "2026-10-20T12:00:00Z"
     },
@@ -3472,7 +3513,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-96656.json",
-        "checado": "2026-10-31T02:25:09Z"
+        "checado": "2026-11-03T02:55:51Z"
       },
       "ultima_atividade": "2026-10-20T12:00:00Z"
     },
@@ -3538,9 +3579,9 @@
         "data": "2026-11-02"
       },
       "poc": {
-        "qtd": 15,
+        "qtd": 16,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-46300.json",
-        "checado": "2026-10-31T02:25:09Z"
+        "checado": "2026-11-03T02:55:51Z"
       }
     }
   ],
