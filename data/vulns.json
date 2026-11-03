@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-03T02:55:51Z",
+  "atualizado": "2026-11-03T11:09:21Z",
   "itens": [
     {
       "cve": "CVE-2026-118527",
@@ -40,7 +40,7 @@
       "detectado": "2026-10-30T10:39:18Z",
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
-      "nvd_checado_em": "2026-11-03T02:55:51Z",
+      "nvd_checado_em": "2026-11-03T11:09:21Z",
       "aguardando_nota_desde": "2026-10-30T08:26:39Z",
       "elegivel_por": [
         "zero-day",
@@ -1408,7 +1408,7 @@
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
-      "nvd_checado_em": "2026-11-03T02:55:51Z",
+      "nvd_checado_em": "2026-11-03T11:09:21Z",
       "elegivel_por": [
         "zero-day"
       ],
@@ -1977,6 +1977,44 @@
       "ultima_atividade": "2026-10-20T22:20:11Z"
     },
     {
+      "cve": "CVE-2026-58115",
+      "fontes": [
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
+          "link": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
+          "publicado": "2026-11-03T05:34:41Z",
+          "visto_em": "2026-11-03T11:09:21Z"
+        }
+      ],
+      "detectado": "2026-11-03T11:09:21Z",
+      "zero_day": true,
+      "zero_day_motivo": "The Hacker News: exploração ativa relatada",
+      "aguardando_nota_desde": "2026-11-03T05:34:41Z",
+      "elegivel_por": [
+        "zero-day"
+      ],
+      "primeira_vez": "2026-11-03T05:34:41Z",
+      "primeira_noticia": "2026-11-03T05:34:41Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-58115",
+      "ultima_atividade": "2026-11-03T05:34:41Z",
+      "exibido_em": "2026-11-03T11:09:21Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0095,
+        "percentil": 0.6134,
+        "data": "2026-11-02"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-58115.json",
+        "checado": "2026-11-03T11:09:21Z"
+      }
+    },
+    {
       "cve": "CVE-2026-86596",
       "fontes": [
         {
@@ -1994,7 +2032,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-02T22:17:23Z",
       "resumo": "The s2Member plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, <= 260927 via the 'item_name' parameter parameter. This is due to insufficient sanitization in strip_php_tags_deep(), which only strips literal…",
-      "nvd_checado_em": "2026-11-03T02:55:51Z",
+      "nvd_checado_em": "2026-11-03T11:09:21Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],

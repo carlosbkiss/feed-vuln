@@ -1,4 +1,32 @@
 {
+  "CVE-2026-58115": {
+    "cve": "CVE-2026-58115",
+    "produto": "",
+    "titulo": "",
+    "cvss": null,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day"
+    ],
+    "zero_day": true,
+    "kev": null,
+    "primeira_vez": "2026-11-03T05:34:41Z",
+    "primeira_noticia": "2026-11-03T05:34:41Z",
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-03T11:09:21Z",
+    "aguardando_nota_desde": "2026-11-03T05:34:41Z",
+    "nota_chegou_em": null,
+    "epss_max": 0.0095,
+    "poc_qtd": 1,
+    "fontes": [
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
+        "publicado": "2026-11-03T05:34:41Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
   "CVE-2026-73695": {
     "cve": "CVE-2026-73695",
     "produto": "",
