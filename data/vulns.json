@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-03T23:59:40Z",
+  "atualizado": "2026-11-04T14:50:45Z",
   "itens": [
     {
       "cve": "CVE-2026-118527",
@@ -79,7 +79,12 @@
       "cvss_versao": "3.1",
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-03T15:17:24Z",
-      "nota_chegou_em": "2026-11-03T18:28:03Z"
+      "nota_chegou_em": "2026-11-03T18:28:03Z",
+      "epss": {
+        "score": 0.0082,
+        "percentil": 0.5743,
+        "data": "2026-11-04"
+      }
     },
     {
       "cve": "CVE-2026-76418",
@@ -150,8 +155,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0082,
-        "percentil": 0.5734,
-        "data": "2026-11-03"
+        "percentil": 0.5741,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 0,
@@ -235,8 +240,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0103,
-        "percentil": 0.6361,
-        "data": "2026-11-03"
+        "percentil": 0.6367,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 1,
@@ -407,7 +412,7 @@
       "epss": {
         "score": 0.8264,
         "percentil": 0.9967,
-        "data": "2026-11-03"
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 83,
@@ -468,8 +473,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0135,
-        "percentil": 0.7152,
-        "data": "2026-11-03"
+        "percentil": 0.7156,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 11,
@@ -663,7 +668,7 @@
       "epss": {
         "score": 1.0,
         "percentil": 1.0,
-        "data": "2026-11-03"
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 747,
@@ -861,7 +866,7 @@
       "epss": {
         "score": 1.0,
         "percentil": 1.0,
-        "data": "2026-11-03"
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 25,
@@ -961,8 +966,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0053,
-        "percentil": 0.4506,
-        "data": "2026-11-03"
+        "percentil": 0.4514,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 0,
@@ -1038,7 +1043,7 @@
       "epss": {
         "score": 0.7331,
         "percentil": 0.9946,
-        "data": "2026-11-03"
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 4,
@@ -1138,9 +1143,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.2769,
-        "percentil": 0.9809,
-        "data": "2026-11-03"
+        "score": 0.6522,
+        "percentil": 0.9926,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 6,
@@ -1230,8 +1235,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0069,
-        "percentil": 0.5278,
-        "data": "2026-11-03"
+        "percentil": 0.5285,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 0,
@@ -1308,9 +1313,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.4458,
-        "percentil": 0.9877,
-        "data": "2026-11-03"
+        "score": 0.4747,
+        "percentil": 0.9885,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 1,
@@ -1355,8 +1360,8 @@
       },
       "epss": {
         "score": 0.0035,
-        "percentil": 0.2839,
-        "data": "2026-11-03"
+        "percentil": 0.2848,
+        "data": "2026-11-04"
       }
     },
     {
@@ -1396,8 +1401,8 @@
       },
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4396,
-        "data": "2026-11-03"
+        "percentil": 0.4404,
+        "data": "2026-11-04"
       }
     },
     {
@@ -1421,7 +1426,7 @@
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
-      "nvd_checado_em": "2026-11-03T18:28:03Z",
+      "nvd_checado_em": "2026-11-04T14:50:45Z",
       "elegivel_por": [
         "zero-day"
       ],
@@ -1484,8 +1489,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0054,
-        "percentil": 0.4522,
-        "data": "2026-11-03"
+        "percentil": 0.453,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 0,
@@ -1530,8 +1535,8 @@
       "ultima_atividade": "2026-10-22T19:17:30Z",
       "epss": {
         "score": 0.0061,
-        "percentil": 0.494,
-        "data": "2026-11-03"
+        "percentil": 0.4947,
+        "data": "2026-11-04"
       }
     },
     {
@@ -1576,8 +1581,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0041,
-        "percentil": 0.3508,
-        "data": "2026-11-03"
+        "percentil": 0.3519,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 0,
@@ -1627,8 +1632,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0043,
-        "percentil": 0.3744,
-        "data": "2026-11-03"
+        "percentil": 0.3753,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 0,
@@ -1678,8 +1683,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0039,
-        "percentil": 0.3319,
-        "data": "2026-11-03"
+        "percentil": 0.3331,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 0,
@@ -1729,8 +1734,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0039,
-        "percentil": 0.3319,
-        "data": "2026-11-03"
+        "percentil": 0.3331,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 0,
@@ -1780,8 +1785,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0043,
-        "percentil": 0.3721,
-        "data": "2026-11-03"
+        "percentil": 0.373,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 0,
@@ -1831,8 +1836,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0036,
-        "percentil": 0.3004,
-        "data": "2026-11-03"
+        "percentil": 0.3014,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 0,
@@ -1882,8 +1887,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.004,
-        "percentil": 0.3426,
-        "data": "2026-11-03"
+        "percentil": 0.3437,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 0,
@@ -1933,8 +1938,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0038,
-        "percentil": 0.3235,
-        "data": "2026-11-03"
+        "percentil": 0.3246,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 0,
@@ -1984,8 +1989,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0033,
-        "percentil": 0.261,
-        "data": "2026-11-03"
+        "percentil": 0.2618,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 0,
@@ -2041,8 +2046,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0042,
-        "percentil": 0.3601,
-        "data": "2026-11-03"
+        "percentil": 0.3613,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 0,
@@ -2068,7 +2073,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-02T22:17:23Z",
       "resumo": "The s2Member plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, <= 260927 via the 'item_name' parameter parameter. This is due to insufficient sanitization in strip_php_tags_deep(), which only strips literal…",
-      "nvd_checado_em": "2026-11-03T23:59:40Z",
+      "nvd_checado_em": "2026-11-04T14:50:45Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2081,14 +2086,14 @@
       "regra": "CVSS ≥ 9 em plataforma corporativa",
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "poc": {
-        "qtd": 1,
+        "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-86596.json",
-        "checado": "2026-11-03T02:55:51Z"
+        "checado": "2026-11-04T14:50:45Z"
       },
       "epss": {
         "score": 0.0149,
-        "percentil": 0.7408,
-        "data": "2026-11-03"
+        "percentil": 0.7412,
+        "data": "2026-11-04"
       }
     },
     {
@@ -2124,12 +2129,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T02:55:51Z"
+        "checado": "2026-11-04T14:50:45Z"
       },
       "epss": {
-        "score": 0.0066,
-        "percentil": 0.5168,
-        "data": "2026-11-03"
+        "score": 0.0095,
+        "percentil": 0.6142,
+        "data": "2026-11-04"
       }
     },
     {
@@ -2169,8 +2174,8 @@
       },
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4424,
-        "data": "2026-11-03"
+        "percentil": 0.4432,
+        "data": "2026-11-04"
       }
     },
     {
@@ -2199,6 +2204,14 @@
           "link": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
           "publicado": "2026-11-03T12:00:00Z",
           "visto_em": "2026-11-03T23:59:40Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
+          "link": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
+          "publicado": "2026-11-04T05:43:11Z",
+          "visto_em": "2026-11-04T14:50:45Z"
         }
       ],
       "detectado": "2026-11-03T23:59:40Z",
@@ -2224,15 +2237,15 @@
       "primeira_vez": "2026-10-31T06:16:34Z",
       "primeira_noticia": "2026-11-03T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-119977",
-      "ultima_atividade": "2026-11-03T12:00:00Z",
+      "ultima_atividade": "2026-11-04T05:43:11Z",
       "exibido_em": "2026-11-03T23:59:40Z",
       "prioridade": "P2",
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.006,
-        "percentil": 0.4875,
-        "data": "2026-11-03"
+        "score": 0.0102,
+        "percentil": 0.6351,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 0,
@@ -2277,8 +2290,8 @@
       },
       "epss": {
         "score": 0.0051,
-        "percentil": 0.4346,
-        "data": "2026-11-03"
+        "percentil": 0.4354,
+        "data": "2026-11-04"
       }
     },
     {
@@ -2323,8 +2336,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0037,
-        "percentil": 0.3036,
-        "data": "2026-11-03"
+        "percentil": 0.3047,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 1,
@@ -2369,8 +2382,8 @@
       },
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3873,
-        "data": "2026-11-03"
+        "percentil": 0.3881,
+        "data": "2026-11-04"
       }
     },
     {
@@ -2410,8 +2423,8 @@
       },
       "epss": {
         "score": 0.0055,
-        "percentil": 0.4601,
-        "data": "2026-11-03"
+        "percentil": 0.4609,
+        "data": "2026-11-04"
       }
     },
     {
@@ -2459,8 +2472,8 @@
       "ultima_atividade": "2026-10-22T22:19:18Z",
       "epss": {
         "score": 0.0071,
-        "percentil": 0.5345,
-        "data": "2026-11-03"
+        "percentil": 0.5352,
+        "data": "2026-11-04"
       }
     },
     {
@@ -2500,476 +2513,9 @@
       "ultima_atividade": "2026-10-22T11:17:04Z",
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3833,
-        "data": "2026-11-03"
+        "percentil": 0.3842,
+        "data": "2026-11-04"
       }
-    },
-    {
-      "cve": "CVE-2026-114119",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-114119",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-114119",
-          "publicado": "2026-10-21T01:17:38Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-21T01:17:38Z",
-      "resumo": "Best Practice Software Bp Premier before 1.14.1.1128 uses a hardcoded Microsoft SQL Server administrative password that is shared across all installations and cannot be changed without breaking the application. Attackers with network access to the database…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-21T01:17:38Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-114119",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.0043,
-        "percentil": 0.3711,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T18:28:03Z"
-      },
-      "ultima_atividade": "2026-10-21T01:17:38Z"
-    },
-    {
-      "cve": "CVE-2026-110936",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-110936",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-110936",
-          "publicado": "2026-10-15T15:17:30Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-110936",
-          "publicado": "2026-10-20",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
-          "link": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
-          "publicado": "2026-10-20T07:11:45Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-10-20T12:00:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "Siemens Software Center",
-          "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-03",
-          "publicado": "2026-10-22T12:00:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-20",
-        "prazo": "2026-11-03",
-        "ransomware": "Unknown"
-      },
-      "produto": "Siemens Software Center",
-      "titulo": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
-      "resumo": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the…",
-      "cvss": 8.4,
-      "cvss_versao": "4.0",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-15T15:17:30Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-15T15:17:30Z",
-      "primeira_noticia": "2026-10-20T07:11:45Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-110936",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.0097,
-        "percentil": 0.6179,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110936.json",
-        "checado": "2026-11-03T02:55:51Z"
-      },
-      "ultima_atividade": "2026-10-22T12:00:00Z"
-    },
-    {
-      "cve": "CVE-2026-106931",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-106931",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-106931",
-          "publicado": "2026-10-14T05:16:42Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-106931",
-          "publicado": "2026-10-20",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-10-20T12:00:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-20",
-        "prazo": "2026-10-23",
-        "ransomware": "Unknown"
-      },
-      "produto": "EG Secure Solutions SiteGuard Server Edition",
-      "titulo": "EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
-      "resumo": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product.",
-      "cvss": 8.5,
-      "cvss_versao": "4.0",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-14T05:16:42Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-14T05:16:42Z",
-      "primeira_noticia": "2026-10-20T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-106931",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.0253,
-        "percentil": 0.8492,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T02:55:51Z"
-      },
-      "ultima_atividade": "2026-10-20T12:00:00Z"
-    },
-    {
-      "cve": "CVE-2026-96652",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-96652",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96652",
-          "publicado": "2026-09-23T17:17:23Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-96652",
-          "publicado": "2026-10-20",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-10-20T12:00:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
-          "link": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
-          "publicado": "2026-10-21T07:26:49Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-20",
-        "prazo": "2026-11-03",
-        "ransomware": "Unknown"
-      },
-      "produto": "Plex Media Server",
-      "titulo": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-      "resumo": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination.…",
-      "cvss": 5.3,
-      "cvss_versao": "4.0",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-09-23T17:17:23Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-09-23T17:17:23Z",
-      "primeira_noticia": "2026-10-20T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-96652",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.1189,
-        "percentil": 0.9611,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 7,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-96652.json",
-        "checado": "2026-11-03T02:55:51Z"
-      },
-      "ultima_atividade": "2026-10-21T07:26:49Z"
-    },
-    {
-      "cve": "CVE-2026-96654",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-96654",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96654",
-          "publicado": "2026-09-23T17:17:23Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-96654",
-          "publicado": "2026-10-20",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-10-20T12:00:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-20",
-        "prazo": "2026-10-23",
-        "ransomware": "Unknown"
-      },
-      "produto": "Plex Media Server",
-      "titulo": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
-      "resumo": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652,…",
-      "cvss": 6.9,
-      "cvss_versao": "4.0",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-09-23T17:17:23Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-09-23T17:17:23Z",
-      "primeira_noticia": "2026-10-20T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-96654",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.0195,
-        "percentil": 0.8024,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T02:55:51Z"
-      },
-      "ultima_atividade": "2026-10-20T12:00:00Z"
-    },
-    {
-      "cve": "CVE-2026-96655",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-96655",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96655",
-          "publicado": "2026-09-23T17:17:23Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-96655",
-          "publicado": "2026-10-20",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-10-20T12:00:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-20",
-        "prazo": "2026-11-03",
-        "ransomware": "Unknown"
-      },
-      "produto": "Plex Media Server",
-      "titulo": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-      "resumo": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained…",
-      "cvss": 5.3,
-      "cvss_versao": "4.0",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-09-23T17:17:23Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-09-23T17:17:23Z",
-      "primeira_noticia": "2026-10-20T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-96655",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.0164,
-        "percentil": 0.7637,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T02:55:51Z"
-      },
-      "ultima_atividade": "2026-10-20T12:00:00Z"
-    },
-    {
-      "cve": "CVE-2026-96656",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-96656",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96656",
-          "publicado": "2026-09-23T17:17:23Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Plex Media Server External Control of File Name or Path Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-96656",
-          "publicado": "2026-10-20",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-10-20T12:00:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "kev": {
-        "adicionado": "2026-10-20",
-        "prazo": "2026-10-23",
-        "ransomware": "Unknown"
-      },
-      "produto": "Plex Media Server",
-      "titulo": "Plex Media Server External Control of File Name or Path Vulnerability",
-      "resumo": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
-      "cvss": 8.6,
-      "cvss_versao": "4.0",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-09-23T17:17:23Z",
-      "nvd_checado_em": "2026-10-23T12:14:22Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-09-23T17:17:23Z",
-      "primeira_noticia": "2026-10-20T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-96656",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.0179,
-        "percentil": 0.7833,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-96656.json",
-        "checado": "2026-11-03T02:55:51Z"
-      },
-      "ultima_atividade": "2026-10-20T12:00:00Z"
     },
     {
       "cve": "CVE-2026-46300",
@@ -3029,17 +2575,23 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.1613,
-        "percentil": 0.9693,
-        "data": "2026-11-03"
+        "percentil": 0.9694,
+        "data": "2026-11-04"
       },
       "poc": {
         "qtd": 16,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-46300.json",
-        "checado": "2026-11-03T02:55:51Z"
+        "checado": "2026-11-04T14:50:45Z"
       }
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "BleepingComputer",
+      "titulo": "CISA flags WordPress RCE flaw as actively exploited in attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/",
+      "publicado": "2026-11-04T12:11:05Z"
+    },
     {
       "fonte": "SecurityWeek",
       "titulo": "Critical Node-RED Flaw Exploited in Attacks",
@@ -3135,12 +2687,6 @@
       "titulo": "Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed",
       "link": "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html",
       "publicado": "2026-10-22T06:34:10Z"
-    },
-    {
-      "fonte": "Cybernews",
-      "titulo": "Siemens software, used by Nvidia and Amazon, under active exploitation: Is your PC safe?",
-      "link": "https://cybernews.com/security/siemens-software-malware-campaign-vulnerability/",
-      "publicado": "2026-10-21T08:21:00Z"
     }
   ]
 }
