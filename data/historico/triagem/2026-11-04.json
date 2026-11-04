@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-04T14:50:22Z",
+  "atualizado": "2026-11-04T18:43:27Z",
   "janela": "28/out a 04/nov/2026",
   "itens": [
     {
@@ -16,6 +16,64 @@
         {
           "nome": "The420",
           "url": "https://the420.in/android-remote-code-execution-google-patch/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-04",
+      "cve": "CVE-2026-102255 / CVE-2026-109593 / CVE-2026-109594",
+      "produto": "SonicWall SMA1000 e GMS",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Ativa (SMA1000: 2.541 tentativas desde 09/10 e até 30 em 03/11, pela Previdian; SonicWall não confirmava em 12/10)",
+      "prioridade": "P0",
+      "tratamento": "SMA1000 (6210, 7210, 8200v): SSRF sem login, nota 10. Aplicar o hotfix do MySonicWall em quem está em 12.4.3-03526, 12.5.0-02952 ou anterior; não há workaround e o build corrigido fica a confirmar. GMS até 9.5.2 tem leitura de arquivos sem login (9.1) e SQL injection com login (6.8), sem patch por fim de vida: migrar para NSM e isolar o console. Entrada no KEV a confirmar.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html"
+        },
+        {
+          "nome": "Security Affairs",
+          "url": "https://securityaffairs.com/200816/hacking/sonicwall-patches-cvss-10-0-ssrf-flaw-as-attacks-be"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-04",
+      "cve": "CVE-2026-95731 / CVE-2026-95732 / CVE-2026-95733",
+      "produto": "HPE Networking Fabric Composer (AFC)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Credencial fixa na CLI dá admin sem login (9.8); duas outras críticas (9.6) exigem rede adjacente. São 46 CVEs no HPESBNW05172. Subir para 7.4.1 ou 7.3.5; até lá, deixar CLI e web em VLAN de gestão e ligar o log de usuários.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/critical-hpe-fabric-composer-vulnerabilities/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-04",
+      "cve": "CVE-2026-107441",
+      "produto": "Zyxel GS1900 (switches)",
+      "cvss": 8.8,
+      "kev": false,
+      "zero_day": true,
+      "exploracao": "Ativa (Binarly achou o exploit em servidor de atacante; contorna o patch da CVE-2026-7273)",
+      "prioridade": "P2",
+      "tratamento": "Execução de comando sem login a partir da rede adjacente, em switch de pequeno porte. Se houver em agência ou área, instalar o firmware de 22/10, restringir a interface web à VLAN de gestão, trocar senha padrão e tratar switch exposto como possivelmente invadido.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/zyxel-gs1900-zero-day-cve-2026-107441/"
         }
       ],
       "status": "Novo"
@@ -61,6 +119,86 @@
       "status": "Novo"
     },
     {
+      "data": "2026-11-03",
+      "cve": "CVE-2026-121156 / CVE-2026-121035 / CVE-2026-119261 / CVE-2026-119263",
+      "produto": "Google Chrome 157 (Dawn, Prerender, Skia e outros)",
+      "cvss": 9.6,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Chrome 157 fecha 213 falhas, seis com nota 9.6, sem exploração relatada. Forçar 157.0.8103.38 ou .39 (Extended Stable 156.0.8078.88) com reinício, que também cobre as falhas de 01/11. Versão do Edge a confirmar.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline (Chrome 157)",
+          "url": "https://securityonline.info/chrome-157-security-update/"
+        },
+        {
+          "nome": "CVE Brief (01/11)",
+          "url": "https://cvebrief.com/archive/2026/11/01/"
+        },
+        {
+          "nome": "Debian Security Tracker",
+          "url": "https://security-tracker.debian.org/tracker/CVE-2026-119261"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-03",
+      "cve": "CVE-2026-115731 / CVE-2026-115732",
+      "produto": "Puppet Enterprise e OpenVox (gestão de configuração)",
+      "cvss": 9.4,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Exploit público",
+      "prioridade": "P1",
+      "tratamento": "Desserialização de relatório roda comando no servidor com certificado de agente assinado; com autosign ligado, a cadeia fica sem login. Subir Puppet Enterprise para 2023.8.13, 2025.12.1 ou 2026.0.1; OpenVox Server para 8.18.0 ou 9.2.0. Desligar ou apertar o autosign e restringir o acesso ao servidor. Puppet open source não terá correção.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/puppet-server-rce-cve-2026-115731-poc/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-03",
+      "cve": "CVE-2026-28336 / CVE-2026-28335",
+      "produto": "SolarWinds Dameware (suporte remoto)",
+      "cvss": 9.9,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Injeção de comando com login (9.9) que compromete o host controlado, mais estouro de buffer (8.4). Subir para 2026.3.1 e limitar o uso a contas de admin confiáveis.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/dameware-command-injection-cve-2026-28336/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-03",
+      "cve": "CVE-2025-30023 / CVE-2025-30026 / CVE-2026-63286",
+      "produto": "AXIS Camera Station Pro e ACS 5 (CFTV)",
+      "cvss": 9.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Exploit público",
+      "prioridade": "P2",
+      "tratamento": "Exploit no GitHub burla o login, roda comando como SYSTEM e decifra senhas das câmeras. Relevante para CFTV de agências e prédios. Subir o Pro para 6.20 ou superior; ACS 5 não terá correção da CVE-2026-63286, então migrar. Isolar em VLAN e bloquear a porta 55752.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/axis-camera-station-rce-poc-disclosed/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
       "data": "2026-11-02",
       "cve": "CVE-2026-116443 / CVE-2026-116441 / CVE-2026-111509",
       "produto": "Dell PowerStore (SDNAS, DSA-2026-479)",
@@ -98,12 +236,12 @@
     },
     {
       "data": "2026-11-02",
-      "cve": "CVE-2026-88811",
-      "produto": "SUSE Rancher Manager (meta proxy)",
+      "cve": "CVE-2026-88811 / CVE-2026-94290 / CVE-2026-104615",
+      "produto": "SUSE Rancher Manager e Fleet",
       "cvss": 9.1,
       "exploracao": "Não",
       "prioridade": "P1",
-      "tratamento": "Sem login, falta de filtro no meta proxy pode vazar credenciais do Rancher para provedores de nuvem. Subir para 2.15.3, 2.14.7, 2.13.11, 2.12.15 ou 2.11.19, conforme o ramo, e revisar as credenciais de nuvem depois de corrigir.",
+      "tratamento": "Sem login, o meta proxy pode vazar credenciais de nuvem. No Fleet, usuário comum chega a cluster-admin (9.1) e token de workspace assume identidade de cluster (7.9). Subir Rancher para 2.15.3, 2.14.7, 2.13.11 ou 2.12.15 (2.11.19 no ramo 2.11, sem correção do Fleet confirmada) e revisar credenciais de nuvem e role bindings.",
       "fontes": [
         {
           "nome": "Registro CVE (CNA SUSE)",
@@ -112,6 +250,10 @@
         {
           "nome": "TheHackerWire",
           "url": "https://www.thehackerwire.com/vulnerability/CVE-2026-88811/"
+        },
+        {
+          "nome": "SecurityOnline (Fleet)",
+          "url": "https://securityonline.info/rancher-fleet-vulnerabilities-cve-2026-94290/"
         }
       ],
       "kev": false,
@@ -138,28 +280,6 @@
     },
     {
       "data": "2026-11-01",
-      "cve": "CVE-2026-119261 / CVE-2026-119263",
-      "produto": "Google Chrome (Skia e GarbageCollection)",
-      "cvss": 9.6,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P2",
-      "tratamento": "Falhas de navegador com possível escape de sandbox via página maliciosa. Garantir Chrome e Edge gerenciados em 156.0.8078.79 ou superior, com reinício forçado; data do advisory e versão da CVE-2026-119263 a confirmar.",
-      "fontes": [
-        {
-          "nome": "CVE Brief (01/11)",
-          "url": "https://cvebrief.com/archive/2026/11/01/"
-        },
-        {
-          "nome": "Debian Security Tracker",
-          "url": "https://security-tracker.debian.org/tracker/CVE-2026-119261"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-01",
       "cve": "CVE-2026-99154 / CVE-2026-99153",
       "produto": "Linux kernel (libiscsi, iniciador iSCSI)",
       "cvss": 9.8,
@@ -174,6 +294,28 @@
       ],
       "kev": false,
       "zero_day": false,
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-01",
+      "cve": "CVE-2026-98432",
+      "produto": "Linux kernel (pilha TCP/IPv4, RCE remota)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não confirmada",
+      "prioridade": "P0",
+      "tratamento": "Use-after-free alcançável sem login em porta TCP IPv4. Notas variam de 7.0 a 9.8, e há relato não confirmado de sondagem MPTCP na porta 443. RHEL 8 a 10 têm kernel desde 01/11; kernel-rt do RHEL 9 e CoreOS do OpenShift seguiam afetados em 03/11; Ubuntu LTS ainda em -proposed. Corrigir e reiniciar; desligar MPTCP não resolve. Paliativo: descartar pacotes IPv4 com IP options.",
+      "fontes": [
+        {
+          "nome": "Aikido",
+          "url": "https://www.aikido.dev/blog/linux-kernel-tcp-rce-vulnerability-cve-2026-98432"
+        },
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/cve-2026-98432-ubuntu-proposed-fix/"
+        }
+      ],
       "status": "Novo"
     },
     {
@@ -274,6 +416,24 @@
         {
           "nome": "CVE Brief 31/10",
           "url": "https://cvebrief.com/archive/2026/10/31/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-30",
+      "cve": "CVE-2025-49602",
+      "produto": "Keyfactor EJBCA 9 (PKI)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Admin removido do papel segue com acesso enquanto a sessão TLS válida mantiver a autenticação em cache além do limite. Depende de ex-admin com sessão ativa, então a nota 9.8 pesa mais que o risco real. Versão corrigida a confirmar no advisory da Keyfactor; até lá, derrubar sessões ao revogar admin.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/cve-watchtower/cve-2025-49602/"
         }
       ],
       "status": "Novo"
