@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-04T14:50:45Z",
+  "atualizado": "2026-11-04T18:39:45Z",
   "itens": [
     {
       "cve": "CVE-2026-118527",
@@ -65,7 +65,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       },
       "kev": {
         "adicionado": "2026-10-30",
@@ -161,7 +161,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       },
       "kev": {
         "adicionado": "2026-10-29",
@@ -246,7 +246,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-114625.json",
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       }
     },
     {
@@ -387,6 +387,14 @@
           "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20Node.js%20Affecting%20Cisco%20Products:%20October%202026%26vs_k=1",
           "publicado": "2026-10-28T20:36:45Z",
           "visto_em": "2026-10-28T21:40:38Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Node.js Schedules High-Severity Security Fixes for 22.x, 24.x, and 26.x Release Lines",
+          "link": "https://cybersecuritynews.com/node-js-schedules-patch/",
+          "publicado": "2026-11-04T12:59:05Z",
+          "visto_em": "2026-11-04T18:39:45Z"
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
@@ -404,7 +412,7 @@
       "publicado_nvd": "2026-10-22T14:17:37Z",
       "resumo": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause…",
       "nvd_checado_em": "2026-10-23T12:22:11Z",
-      "ultima_atividade": "2026-10-28T20:36:45Z",
+      "ultima_atividade": "2026-11-04T12:59:05Z",
       "exibido_em": "2026-10-26T17:24:30Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -415,9 +423,9 @@
         "data": "2026-11-04"
       },
       "poc": {
-        "qtd": 83,
+        "qtd": 84,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-111497.json",
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       },
       "kev": {
         "adicionado": "2026-10-27",
@@ -479,7 +487,7 @@
       "poc": {
         "qtd": 11,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110264.json",
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       }
     },
     {
@@ -671,9 +679,9 @@
         "data": "2026-11-04"
       },
       "poc": {
-        "qtd": 747,
+        "qtd": 752,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109618.json",
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       },
       "ultima_atividade": "2026-11-01T05:24:22Z",
       "zero_day": true,
@@ -871,7 +879,7 @@
       "poc": {
         "qtd": 25,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109619.json",
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       },
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
@@ -972,7 +980,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       }
     },
     {
@@ -1048,7 +1056,7 @@
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110447.json",
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       }
     },
     {
@@ -1148,9 +1156,9 @@
         "data": "2026-11-04"
       },
       "poc": {
-        "qtd": 6,
+        "qtd": 7,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-97229.json",
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       }
     },
     {
@@ -1241,7 +1249,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       },
       "escalado": true
     },
@@ -1320,7 +1328,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-48356.json",
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       }
     },
     {
@@ -1356,7 +1364,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       },
       "epss": {
         "score": 0.0035,
@@ -1397,7 +1405,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       },
       "epss": {
         "score": 0.0052,
@@ -1444,7 +1452,7 @@
       "poc": {
         "qtd": 11,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-115560.json",
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       }
     },
     {
@@ -1495,7 +1503,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       }
     },
     {
@@ -1530,7 +1538,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       },
       "ultima_atividade": "2026-10-22T19:17:30Z",
       "epss": {
@@ -1587,7 +1595,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       }
     },
     {
@@ -1638,7 +1646,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       }
     },
     {
@@ -1689,7 +1697,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       }
     },
     {
@@ -1740,7 +1748,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       }
     },
     {
@@ -1791,7 +1799,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       }
     },
     {
@@ -1842,7 +1850,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       }
     },
     {
@@ -1893,7 +1901,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       }
     },
     {
@@ -1944,7 +1952,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       }
     },
     {
@@ -1995,64 +2003,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-76466",
-      "fontes": [
-        {
-          "id": "cisco",
-          "nome": "Cisco PSIRT",
-          "titulo": "Cisco Expressway Series Remote Code Execution Vulnerability",
-          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Expressway%20Series%20Remote%20Code%20Execution%20Vulnerability%26vs_k=1",
-          "publicado": "2026-10-21T16:00:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-76466",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
-          "publicado": "2026-10-21T17:19:06Z",
-          "visto_em": "2026-10-23T12:22:11Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Critical Cisco Expressway Vulnerability Enables Remote Code Execution Attacks",
-          "link": "https://cybersecuritynews.com/critical-cisco-expressway-vulnerability/",
-          "publicado": "2026-10-23T04:47:50Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-21T16:00:00Z",
-      "primeira_noticia": "2026-10-21T16:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-21T17:19:06Z",
-      "resumo": "A vulnerability in the database service feature of Cisco Expressway Series could allow an unauthenticated, remote attacker with network access to a Cisco Expressway device to execute arbitrary operating system commands as&nbsp;root.\r\n\r\nThis vulnerability is…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
-      "ultima_atividade": "2026-10-23T04:47:50Z",
-      "exibido_em": "2026-10-23T12:22:11Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "epss": {
-        "score": 0.0042,
-        "percentil": 0.3613,
-        "data": "2026-11-04"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       }
     },
     {
@@ -2073,7 +2024,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-02T22:17:23Z",
       "resumo": "The s2Member plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, <= 260927 via the 'item_name' parameter parameter. This is due to insufficient sanitization in strip_php_tags_deep(), which only strips literal…",
-      "nvd_checado_em": "2026-11-04T14:50:45Z",
+      "nvd_checado_em": "2026-11-04T18:39:45Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2170,7 +2121,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       },
       "epss": {
         "score": 0.0052,
@@ -2286,7 +2237,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-103039.json",
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       },
       "epss": {
         "score": 0.0051,
@@ -2342,7 +2293,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110720.json",
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       }
     },
     {
@@ -2378,7 +2329,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       },
       "epss": {
         "score": 0.0044,
@@ -2419,7 +2370,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       },
       "epss": {
         "score": 0.0055,
@@ -2467,7 +2418,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       },
       "ultima_atividade": "2026-10-22T22:19:18Z",
       "epss": {
@@ -2508,7 +2459,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-03T18:28:03Z"
+        "checado": "2026-11-04T18:39:45Z"
       },
       "ultima_atividade": "2026-10-22T11:17:04Z",
       "epss": {

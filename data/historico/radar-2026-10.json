@@ -558,7 +558,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 1.0,
-    "poc_qtd": 747,
+    "poc_qtd": 752,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -1038,7 +1038,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.8799,
-    "poc_qtd": 83,
+    "poc_qtd": 84,
     "fontes": [
       {
         "nome": "NVD",
@@ -1124,6 +1124,11 @@
         "nome": "Cisco PSIRT",
         "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20Node.js%20Affecting%20Cisco%20Products:%20October%202026%26vs_k=1",
         "publicado": "2026-10-28T20:36:45Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/node-js-schedules-patch/",
+        "publicado": "2026-11-04T12:59:05Z"
       }
     ],
     "prioridade_max": "P0"
@@ -2419,7 +2424,7 @@
     "aguardando_nota_desde": "2026-10-29T09:05:39Z",
     "nota_chegou_em": "2026-10-29T23:18:51Z",
     "epss_max": 0.6522,
-    "poc_qtd": 6,
+    "poc_qtd": 7,
     "fontes": [
       {
         "nome": "NVD",
