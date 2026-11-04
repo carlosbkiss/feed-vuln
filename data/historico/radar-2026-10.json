@@ -1352,6 +1352,49 @@
     ],
     "prioridade_max": "P0"
   },
+  "CVE-2026-119977": {
+    "cve": "CVE-2026-119977",
+    "produto": "WordPress WordPress Core",
+    "titulo": "WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability",
+    "cvss": 8.1,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-03",
+      "prazo": "2026-11-06",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-10-31T06:16:34Z",
+    "primeira_noticia": "2026-11-03T12:00:00Z",
+    "publicado_nvd": "2026-10-31T06:16:34Z",
+    "exibido_em": "2026-11-03T23:59:40Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.006,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-119977",
+        "publicado": "2026-10-31T06:16:34Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-119977",
+        "publicado": "2026-11-03"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
+        "publicado": "2026-11-03T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
   "CVE-2026-21589": {
     "cve": "CVE-2026-21589",
     "produto": "Atlassian Multiple Products",

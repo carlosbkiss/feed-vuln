@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-03T18:28:03Z",
+  "atualizado": "2026-11-03T23:59:40Z",
   "itens": [
     {
       "cve": "CVE-2026-118527",
@@ -2051,47 +2051,6 @@
       }
     },
     {
-      "cve": "CVE-2026-87337",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-87337",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-87337",
-          "publicado": "2026-10-20T22:20:11Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 10.0,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-20T22:20:11Z",
-      "resumo": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-20T22:20:11Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-87337",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "epss": {
-        "score": 0.0044,
-        "percentil": 0.3821,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T18:28:03Z"
-      },
-      "ultima_atividade": "2026-10-20T22:20:11Z"
-    },
-    {
       "cve": "CVE-2026-86596",
       "fontes": [
         {
@@ -2109,7 +2068,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-02T22:17:23Z",
       "resumo": "The s2Member plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, <= 260927 via the 'item_name' parameter parameter. This is due to insufficient sanitization in strip_php_tags_deep(), which only strips literal…",
-      "nvd_checado_em": "2026-11-03T18:28:03Z",
+      "nvd_checado_em": "2026-11-03T23:59:40Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2212,6 +2171,73 @@
         "score": 0.0052,
         "percentil": 0.4424,
         "data": "2026-11-03"
+      }
+    },
+    {
+      "cve": "CVE-2026-119977",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-119977",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-119977",
+          "publicado": "2026-10-31T06:16:34Z",
+          "visto_em": "2026-11-03T23:59:40Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-119977",
+          "publicado": "2026-11-03",
+          "visto_em": "2026-11-03T23:59:40Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds One Known Exploited Vulnerability to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
+          "publicado": "2026-11-03T12:00:00Z",
+          "visto_em": "2026-11-03T23:59:40Z"
+        }
+      ],
+      "detectado": "2026-11-03T23:59:40Z",
+      "kev": {
+        "adicionado": "2026-11-03",
+        "prazo": "2026-11-06",
+        "ransomware": "Unknown"
+      },
+      "produto": "WordPress WordPress Core",
+      "titulo": "WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability",
+      "resumo": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to predictable, web-accessible staging paths…",
+      "cvss": 8.1,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-31T06:16:34Z",
+      "nvd_checado_em": "2026-11-03T23:59:40Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-31T06:16:34Z",
+      "primeira_noticia": "2026-11-03T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-119977",
+      "ultima_atividade": "2026-11-03T12:00:00Z",
+      "exibido_em": "2026-11-03T23:59:40Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.006,
+        "percentil": 0.4875,
+        "data": "2026-11-03"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-03T23:59:40Z"
       }
     },
     {
@@ -2518,703 +2544,6 @@
         "checado": "2026-11-03T18:28:03Z"
       },
       "ultima_atividade": "2026-10-21T01:17:38Z"
-    },
-    {
-      "cve": "CVE-2026-91354",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-91354",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91354",
-          "publicado": "2026-10-20T22:20:38Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.9,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-20T22:20:38Z",
-      "resumo": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows low privileged attacker with network…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-20T22:20:38Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91354",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.0029,
-        "percentil": 0.2119,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T18:28:03Z"
-      },
-      "ultima_atividade": "2026-10-20T22:20:38Z"
-    },
-    {
-      "cve": "CVE-2026-91341",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-91341",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91341",
-          "publicado": "2026-10-20T22:20:36Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.1,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-20T22:20:36Z",
-      "resumo": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows unauthenticated attacker with network…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-20T22:20:36Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91341",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.0041,
-        "percentil": 0.3508,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T18:28:03Z"
-      },
-      "ultima_atividade": "2026-10-20T22:20:36Z"
-    },
-    {
-      "cve": "CVE-2026-91251",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-91251",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91251",
-          "publicado": "2026-10-20T22:20:26Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.9,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-20T22:20:26Z",
-      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-20T22:20:26Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91251",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.0039,
-        "percentil": 0.3306,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T18:28:03Z"
-      },
-      "ultima_atividade": "2026-10-20T22:20:26Z"
-    },
-    {
-      "cve": "CVE-2026-91243",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-91243",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91243",
-          "publicado": "2026-10-20T22:20:25Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.6,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-20T22:20:25Z",
-      "resumo": "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-20T22:20:25Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91243",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.0033,
-        "percentil": 0.2575,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T18:28:03Z"
-      },
-      "ultima_atividade": "2026-10-20T22:20:25Z"
-    },
-    {
-      "cve": "CVE-2026-91250",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-91250",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91250",
-          "publicado": "2026-10-20T22:20:25Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.9,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-20T22:20:25Z",
-      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-20T22:20:25Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91250",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.0039,
-        "percentil": 0.3306,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-02T15:36:56Z"
-      },
-      "ultima_atividade": "2026-10-20T22:20:25Z"
-    },
-    {
-      "cve": "CVE-2026-91225",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-91225",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91225",
-          "publicado": "2026-10-20T22:20:23Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.1,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-20T22:20:23Z",
-      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-20T22:20:23Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91225",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.0042,
-        "percentil": 0.3599,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-02T15:36:56Z"
-      },
-      "ultima_atividade": "2026-10-20T22:20:23Z"
-    },
-    {
-      "cve": "CVE-2026-91230",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-91230",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91230",
-          "publicado": "2026-10-20T22:20:23Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.3,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-20T22:20:23Z",
-      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-20T22:20:23Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91230",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.0034,
-        "percentil": 0.2725,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T02:55:51Z"
-      },
-      "ultima_atividade": "2026-10-20T22:20:23Z"
-    },
-    {
-      "cve": "CVE-2026-91231",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-91231",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91231",
-          "publicado": "2026-10-20T22:20:23Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 10.0,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-20T22:20:23Z",
-      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Adapters).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-20T22:20:23Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91231",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.0048,
-        "percentil": 0.4165,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T02:55:51Z"
-      },
-      "ultima_atividade": "2026-10-20T22:20:23Z"
-    },
-    {
-      "cve": "CVE-2026-91232",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-91232",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91232",
-          "publicado": "2026-10-20T22:20:23Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.9,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-20T22:20:23Z",
-      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-20T22:20:23Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91232",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.0039,
-        "percentil": 0.3306,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T02:55:51Z"
-      },
-      "ultima_atividade": "2026-10-20T22:20:23Z"
-    },
-    {
-      "cve": "CVE-2026-91216",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-91216",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91216",
-          "publicado": "2026-10-20T22:20:22Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 10.0,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-20T22:20:22Z",
-      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-20T22:20:22Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91216",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.0051,
-        "percentil": 0.4336,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T02:55:51Z"
-      },
-      "ultima_atividade": "2026-10-20T22:20:22Z"
-    },
-    {
-      "cve": "CVE-2026-91218",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-91218",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91218",
-          "publicado": "2026-10-20T22:20:22Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.6,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-20T22:20:22Z",
-      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-20T22:20:22Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91218",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.0034,
-        "percentil": 0.2721,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T02:55:51Z"
-      },
-      "ultima_atividade": "2026-10-20T22:20:22Z"
-    },
-    {
-      "cve": "CVE-2026-91221",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-91221",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91221",
-          "publicado": "2026-10-20T22:20:22Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 10.0,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-20T22:20:22Z",
-      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-20T22:20:22Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91221",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.0048,
-        "percentil": 0.4165,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T02:55:51Z"
-      },
-      "ultima_atividade": "2026-10-20T22:20:22Z"
-    },
-    {
-      "cve": "CVE-2026-91222",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-91222",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91222",
-          "publicado": "2026-10-20T22:20:22Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.9,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-20T22:20:22Z",
-      "resumo": "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Human Workflow (11g+)).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-20T22:20:22Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91222",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.0039,
-        "percentil": 0.3311,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T02:55:51Z"
-      },
-      "ultima_atividade": "2026-10-20T22:20:22Z"
-    },
-    {
-      "cve": "CVE-2026-91224",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-91224",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-91224",
-          "publicado": "2026-10-20T22:20:22Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.9,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-20T22:20:22Z",
-      "resumo": "Vulnerability in the Oracle SOA Suite product of Oracle Fusion Middleware (component: Fabric Layer).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-20T22:20:22Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-91224",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.0029,
-        "percentil": 0.2119,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T02:55:51Z"
-      },
-      "ultima_atividade": "2026-10-20T22:20:22Z"
-    },
-    {
-      "cve": "CVE-2026-87347",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-87347",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-87347",
-          "publicado": "2026-10-20T22:20:12Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.6,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-20T22:20:12Z",
-      "resumo": "Vulnerability in the Oracle HTTP Server product of Oracle Fusion Middleware (component: OSSL Module).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-20T22:20:12Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-87347",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.0038,
-        "percentil": 0.316,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T02:55:51Z"
-      },
-      "ultima_atividade": "2026-10-20T22:20:12Z"
-    },
-    {
-      "cve": "CVE-2026-101528",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-101528",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-101528",
-          "publicado": "2026-10-20T22:18:02Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.9,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-20T22:18:02Z",
-      "resumo": "Vulnerability in the Oracle Enterprise Manager for Oracle Database product of Oracle Enterprise Manager (component: Data Guard Management).  Supported versions that are affected are 13.5 and  24.1. Easily exploitable vulnerability allows low privileged…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-20T22:18:02Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-101528",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.0048,
-        "percentil": 0.4141,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T02:55:51Z"
-      },
-      "ultima_atividade": "2026-10-20T22:18:02Z"
-    },
-    {
-      "cve": "CVE-2026-101529",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-101529",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-101529",
-          "publicado": "2026-10-20T22:18:02Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.9,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-20T22:18:02Z",
-      "resumo": "Vulnerability in the Oracle Enterprise Manager for Oracle Database product of Oracle Enterprise Manager (component: Data Guard Management).  Supported versions that are affected are 13.5 and  24.1. Easily exploitable vulnerability allows low privileged…",
-      "nvd_checado_em": "2026-10-23T20:28:55Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-20T22:18:02Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-101529",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "epss": {
-        "score": 0.0048,
-        "percentil": 0.4142,
-        "data": "2026-11-03"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T02:55:51Z"
-      },
-      "ultima_atividade": "2026-10-20T22:18:02Z"
     },
     {
       "cve": "CVE-2026-110936",
