@@ -1,7 +1,25 @@
 {
-  "atualizado": "2026-11-03T18:42:23Z",
-  "janela": "27/out a 03/nov/2026",
+  "atualizado": "2026-11-04T14:50:22Z",
+  "janela": "28/out a 04/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-04",
+      "cve": "CVE-2026-58868",
+      "produto": "Android 14 a 17 (FrameDecoder, boletim de nov/2026)",
+      "cvss": null,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Estouro de heap no FrameDecoder, crítico para o Google, com risco de execução remota de código; nota CVSS a confirmar. Exigir nível de patch 2026-11-01 na frota corporativa via MDM: atualização do Google Play não traz a correção.",
+      "fontes": [
+        {
+          "nome": "The420",
+          "url": "https://the420.in/android-remote-code-execution-google-patch/"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-11-03",
       "cve": "CVE-2026-111497 / CVE-2026-98432",
@@ -401,23 +419,23 @@
       "cve": "CVE-2026-119977",
       "produto": "WordPress Core 4.7 a 7.1.3 (RCE via pasta de upgrade)",
       "cvss": 8.1,
-      "kev": false,
+      "kev": true,
       "zero_day": false,
-      "exploracao": "Ativa (~63 mil tentativas em 24h segundo a Wordfence)",
+      "exploracao": "Ativa (KEV em 03/11, prazo CISA 06/11; Wordfence bloqueou 13.095 ataques em 24h)",
       "prioridade": "P1",
-      "tratamento": "RCE sem login por corrida em wp-content/upgrade durante atualização do core; CVE publicada em 01/11. Subir para 7.1.4 ou backport do ramo (6.9.11, 6.8.12, 4.7.39 etc.), inclusive em sites de agências, e bloquear acesso web a wp-content/upgrade. A Patchstack vê exploração pouco prática, mas a Wordfence registra tentativas em volume: procurar admins, plugins ou PHP desconhecidos.",
+      "tratamento": "RCE sem login por corrida em wp-content/upgrade durante atualização do core; ataque complexo, mas agora confirmado pela CISA. Subir para 7.1.4 ou backport do ramo (6.9.11, 6.8.12, 4.7.39 etc.), inclusive em sites de agências, e bloquear acesso web a wp-content/upgrade. Procurar admins, plugins ou PHP desconhecidos; sem vítima pública confirmada até aqui.",
       "fontes": [
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/"
+        },
         {
           "nome": "The Hacker News",
           "url": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html"
         },
         {
-          "nome": "WebHosting.today",
-          "url": "https://webhosting.today/2026/10/29/wordpress-7-1-4-fixes-22-flaws-one-in-the-core-update-process/"
-        },
-        {
-          "nome": "CVE Brief",
-          "url": "https://cvebrief.com/cve/cve-2026-119977/"
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-119977"
         }
       ],
       "status": "Novo"
@@ -662,50 +680,6 @@
     },
     {
       "data": "2026-10-27",
-      "cve": "CVE-2026-98432",
-      "produto": "Linux kernel (TCP/IPv4, RCE remota; RHSB-2026-016)",
-      "cvss": 9.8,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P0",
-      "tratamento": "Root remoto sem login (9.8 da CNA e da Red Hat; SUSE dá 8.1), com exploit demonstrado sem código público; o caminho conhecido exige listener MPTCP, ligado por padrão em programas Go 1.24+. Há kernel corrigido para RHEL 8, 9 e 10 e AlmaLinux 8, 9.8 e 10.2 (x86_64, em produção desde 02/11), além de Debian, Oracle UEK, Amazon Linux e parte do SLES. Em 03/11 Ubuntu 22.04, 24.04 e 26.04 seguiam sem kernel publicado (só -proposed), 26.10 corrigido e 20.04 ou anterior só via Ubuntu Pro, sem previsão. Priorizar RHEL com reboot ou live patch; onde não houver kernel, net.mptcp.enabled=0, GODEBUG=multipathtcp=0 e regra nftables contra TCP IPv4 com IP options, que só reduzem o risco: a Canonical avisa que a falha não se limita ao MPTCP.",
-      "fontes": [
-        {
-          "nome": "ma.ttias.be (status por distro)",
-          "url": "https://ma.ttias.be/linux-cve-2026-98432-vulnerable-kernels/"
-        },
-        {
-          "nome": "Webhosting Today (Go e MPTCP)",
-          "url": "https://webhosting.today/2026/10/30/claude-built-a-remote-root-exploit-for-a-linux-tcp-bug-rhel-almalinux-and-ubuntu-have-no-fixed-kernel-yet/"
-        },
-        {
-          "nome": "SecurityOnline (Ubuntu)",
-          "url": "https://securityonline.info/cve-2026-98432-ubuntu-proposed-fix/"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-27",
-      "cve": "CVE-2026-103594 / CVE-2026-93865 / CVE-2026-93866 / CVE-2026-93857 / CVE-2026-112709 / CVE-2026-112710 / CVE-2026-103593",
-      "produto": "WatchGuard Firebox (Fireware OS)",
-      "cvss": 9.5,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P1",
-      "tratamento": "Sete falhas críticas, várias pré-autenticação (Access Portal, SIP proxy, FireCluster, autenticação AD). Atualizar para Fireware 2026.4, 12.12.4 ou 12.5.22 (conferir no PSIRT da WatchGuard); até lá, desligar Access Portal e SIP proxy onde não forem usados.",
-      "fontes": [
-        {
-          "nome": "SecurityOnline",
-          "url": "https://securityonline.info/watchguard-fireware-os-vulnerabilities-2/"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-27",
       "cve": "CVE-2026-101767",
       "produto": "Oracle E-Business Suite 12.2.3 a 12.2.15",
       "cvss": 9.8,
@@ -728,69 +702,7 @@
           "url": "https://cyberdaily.au/security/14379-patch-now-hackers-targeting-ten-day-old-oracle-e-business-suite-vulnerability"
         }
       ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-27",
-      "cve": "CVE-2026-48356",
-      "produto": "Adobe Commerce e Magento (PolyShell)",
-      "cvss": 9.3,
-      "kev": true,
-      "zero_day": false,
-      "exploracao": "Ativa (centenas de lojas invadidas)",
-      "prioridade": "P2",
-      "tratamento": "Upload de arquivo perigoso explorado em lojas online. Se houver Magento no parque (marketplace, programa de pontos), aplicar o patch da Adobe (versões a confirmar no boletim) e revisar blocos CMS por loaders injetados.",
-      "fontes": [
-        {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html"
-        },
-        {
-          "nome": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-48356"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-27",
-      "cve": "CVE-2026-108142",
-      "produto": "Veeam Backup & Replication 13.x (CDP Coordinator)",
-      "cvss": 9.1,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P1",
-      "tratamento": "RCE sem login no servidor de backup, alvo clássico de ransomware. Subir para 13.1.2.57 ou 13.0.3.63 (12.x não é afetada) e limitar as portas TCP 33034/33035 às origens previstas; conferir imutabilidade dos repositórios.",
-      "fontes": [
-        {
-          "nome": "Brandefense",
-          "url": "https://brandefense.io/security-news/veeam-backup-replication-cve-2026-108142-patch/"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-27",
-      "cve": "sem CVE (Tailscale SSH)",
-      "produto": "Tailscale e Headscale (Tailscale SSH)",
-      "cvss": null,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P2",
-      "tratamento": "Escalada de privilégio e movimento lateral via Tailscale SSH com port forwarding, a partir de um dispositivo já comprometido; patch anunciado para ~28/10, versões a confirmar. Se houver Tailscale no parque (shadow IT), desligar forwarding SSH e restringir regras de acesso a pares origem-destino.",
-      "fontes": [
-        {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html"
-        },
-        {
-          "nome": "Cyber Hub Podcast",
-          "url": "https://www.cyberhubpodcast.com/p/the-window-is-closing-php2shell-exploited"
-        }
-      ],
-      "status": "Novo"
+      "status": "Pendente"
     },
     {
       "data": "2026-10-26",
