@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-05T10:41:26Z",
+  "atualizado": "2026-11-05T15:02:59Z",
   "itens": [
     {
       "cve": "CVE-2026-118527",
@@ -82,8 +82,8 @@
       "nota_chegou_em": "2026-11-03T18:28:03Z",
       "epss": {
         "score": 0.0082,
-        "percentil": 0.5743,
-        "data": "2026-11-04"
+        "percentil": 0.5746,
+        "data": "2026-11-05"
       }
     },
     {
@@ -155,8 +155,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0082,
-        "percentil": 0.5741,
-        "data": "2026-11-04"
+        "percentil": 0.5743,
+        "data": "2026-11-05"
       },
       "poc": {
         "qtd": 0,
@@ -240,8 +240,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0103,
-        "percentil": 0.6367,
-        "data": "2026-11-04"
+        "percentil": 0.637,
+        "data": "2026-11-05"
       },
       "poc": {
         "qtd": 1,
@@ -428,7 +428,7 @@
       "epss": {
         "score": 0.8264,
         "percentil": 0.9967,
-        "data": "2026-11-04"
+        "data": "2026-11-05"
       },
       "poc": {
         "qtd": 84,
@@ -602,6 +602,14 @@
           "visto_em": "2026-10-28T18:39:56Z"
         },
         {
+          "id": "cisco",
+          "nome": "Cisco PSIRT",
+          "titulo": "Vulnerabilities in PHP Affecting Cisco Products: October 2026",
+          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20PHP%20Affecting%20Cisco%20Products:%20%20October%202026%26vs_k=1",
+          "publicado": "2026-10-30T19:24:31Z",
+          "visto_em": "2026-11-05T15:02:59Z"
+        },
+        {
           "id": "csn",
           "nome": "Cyber Security News",
           "titulo": "Hacktober – Cyberattack Wave Hits PHP, Node.js, Binance, LiteLLM, Pentagon, and a Few More",
@@ -632,7 +640,7 @@
       "epss": {
         "score": 1.0,
         "percentil": 1.0,
-        "data": "2026-11-04"
+        "data": "2026-11-05"
       },
       "poc": {
         "qtd": 752,
@@ -799,6 +807,14 @@
           "visto_em": "2026-10-28T18:39:56Z"
         },
         {
+          "id": "cisco",
+          "nome": "Cisco PSIRT",
+          "titulo": "Vulnerabilities in PHP Affecting Cisco Products: October 2026",
+          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20PHP%20Affecting%20Cisco%20Products:%20%20October%202026%26vs_k=1",
+          "publicado": "2026-10-30T19:24:31Z",
+          "visto_em": "2026-11-05T15:02:59Z"
+        },
+        {
           "id": "csn",
           "nome": "Cyber Security News",
           "titulo": "Hacktober – Cyberattack Wave Hits PHP, Node.js, Binance, LiteLLM, Pentagon, and a Few More",
@@ -830,7 +846,7 @@
       "epss": {
         "score": 1.0,
         "percentil": 1.0,
-        "data": "2026-11-04"
+        "data": "2026-11-05"
       },
       "poc": {
         "qtd": 25,
@@ -930,8 +946,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0053,
-        "percentil": 0.4514,
-        "data": "2026-11-04"
+        "percentil": 0.4516,
+        "data": "2026-11-05"
       },
       "poc": {
         "qtd": 0,
@@ -1007,7 +1023,7 @@
       "epss": {
         "score": 0.7331,
         "percentil": 0.9946,
-        "data": "2026-11-04"
+        "data": "2026-11-05"
       },
       "poc": {
         "qtd": 4,
@@ -1109,7 +1125,7 @@
       "epss": {
         "score": 0.6522,
         "percentil": 0.9926,
-        "data": "2026-11-04"
+        "data": "2026-11-05"
       },
       "poc": {
         "qtd": 7,
@@ -1199,8 +1215,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0069,
-        "percentil": 0.5285,
-        "data": "2026-11-04"
+        "percentil": 0.5288,
+        "data": "2026-11-05"
       },
       "poc": {
         "qtd": 0,
@@ -1279,7 +1295,7 @@
       "epss": {
         "score": 0.4747,
         "percentil": 0.9885,
-        "data": "2026-11-04"
+        "data": "2026-11-05"
       },
       "poc": {
         "qtd": 1,
@@ -1325,7 +1341,7 @@
       "epss": {
         "score": 0.0035,
         "percentil": 0.2848,
-        "data": "2026-11-04"
+        "data": "2026-11-05"
       }
     },
     {
@@ -1365,8 +1381,8 @@
       },
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4404,
-        "data": "2026-11-04"
+        "percentil": 0.4407,
+        "data": "2026-11-05"
       }
     },
     {
@@ -1453,8 +1469,8 @@
       "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
       "epss": {
         "score": 0.0054,
-        "percentil": 0.453,
-        "data": "2026-11-04"
+        "percentil": 0.4532,
+        "data": "2026-11-05"
       },
       "poc": {
         "qtd": 0,
@@ -1499,8 +1515,8 @@
       "ultima_atividade": "2026-10-22T19:17:30Z",
       "epss": {
         "score": 0.0061,
-        "percentil": 0.4947,
-        "data": "2026-11-04"
+        "percentil": 0.495,
+        "data": "2026-11-05"
       }
     },
     {
@@ -1521,7 +1537,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-05T03:17:23Z",
       "resumo": "Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath after cleaning it but executes the raw path, whose fragment or query the Kubernetes client discards. A namespace-scoped user who can create a Policy can hide ../ segments behind #…",
-      "nvd_checado_em": "2026-11-05T10:41:26Z",
+      "nvd_checado_em": "2026-11-05T15:02:59Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1537,6 +1553,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-05T10:41:26Z"
+      },
+      "epss": {
+        "score": 0.0036,
+        "percentil": 0.2957,
+        "data": "2026-11-05"
       }
     },
     {
@@ -1557,7 +1578,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-04T21:17:40Z",
       "resumo": "vtenext 25.02 before 25.02.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to change any account password via hub/rpwd.php without token verification. Attackers knowing a valid user_name can send action=change_password…",
-      "nvd_checado_em": "2026-11-05T10:41:26Z",
+      "nvd_checado_em": "2026-11-05T15:02:59Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1573,6 +1594,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-05T00:23:25Z"
+      },
+      "epss": {
+        "score": 0.0044,
+        "percentil": 0.3864,
+        "data": "2026-11-05"
       }
     },
     {
@@ -1593,7 +1619,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-02T22:17:23Z",
       "resumo": "The s2Member plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, <= 260927 via the 'item_name' parameter parameter. This is due to insufficient sanitization in strip_php_tags_deep(), which only strips literal…",
-      "nvd_checado_em": "2026-11-05T10:41:26Z",
+      "nvd_checado_em": "2026-11-05T15:02:59Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1608,12 +1634,12 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-86596.json",
-        "checado": "2026-11-04T14:50:45Z"
+        "checado": "2026-11-05T15:02:59Z"
       },
       "epss": {
         "score": 0.0149,
-        "percentil": 0.7412,
-        "data": "2026-11-04"
+        "percentil": 0.7414,
+        "data": "2026-11-05"
       }
     },
     {
@@ -1649,12 +1675,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-04T14:50:45Z"
+        "checado": "2026-11-05T15:02:59Z"
       },
       "epss": {
         "score": 0.0095,
-        "percentil": 0.6142,
-        "data": "2026-11-04"
+        "percentil": 0.6144,
+        "data": "2026-11-05"
       }
     },
     {
@@ -1694,8 +1720,8 @@
       },
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4432,
-        "data": "2026-11-04"
+        "percentil": 0.4434,
+        "data": "2026-11-05"
       }
     },
     {
@@ -1763,9 +1789,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.0102,
-        "percentil": 0.6351,
-        "data": "2026-11-04"
+        "score": 0.0116,
+        "percentil": 0.6718,
+        "data": "2026-11-05"
       },
       "poc": {
         "qtd": 3,
@@ -1810,8 +1836,8 @@
       },
       "epss": {
         "score": 0.0051,
-        "percentil": 0.4354,
-        "data": "2026-11-04"
+        "percentil": 0.4356,
+        "data": "2026-11-05"
       }
     },
     {
@@ -1857,7 +1883,7 @@
       "epss": {
         "score": 0.0037,
         "percentil": 0.3047,
-        "data": "2026-11-04"
+        "data": "2026-11-05"
       },
       "poc": {
         "qtd": 1,
@@ -1902,8 +1928,8 @@
       },
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3881,
-        "data": "2026-11-04"
+        "percentil": 0.3883,
+        "data": "2026-11-05"
       }
     },
     {
@@ -1943,98 +1969,8 @@
       },
       "epss": {
         "score": 0.0055,
-        "percentil": 0.4609,
-        "data": "2026-11-04"
-      }
-    },
-    {
-      "cve": "CVE-2026-83938",
-      "fontes": [
-        {
-          "id": "msrc",
-          "nome": "Microsoft Security Update Guide",
-          "titulo": "CVE-2026-83938 Azure Kubernetes Configuration Service Elevation of Privilege Vulnerability",
-          "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938",
-          "publicado": "2026-10-22T14:00:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-83938",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-83938",
-          "publicado": "2026-10-22T22:19:18Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 10.0,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-22T22:19:18Z",
-      "resumo": "Missing authentication for critical function in Azure Kubernetes Configuration Service allows an unauthorized attacker to elevate privileges over a network.",
-      "nvd_checado_em": "2026-10-24T18:38:25Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-22T14:00:00Z",
-      "primeira_noticia": "2026-10-22T14:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-83938",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-04T18:39:45Z"
-      },
-      "ultima_atividade": "2026-10-22T22:19:18Z",
-      "epss": {
-        "score": 0.0071,
-        "percentil": 0.5352,
-        "data": "2026-11-04"
-      }
-    },
-    {
-      "cve": "CVE-2021-48016",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2021-48016",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-48016",
-          "publicado": "2026-10-22T11:17:04Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-22T11:17:04Z",
-      "resumo": "DedeCMS through 5.8.1-beta contains a PHP code injection vulnerability in ShowMsg() where the HTTP Referer header is written into a DedeTemplate string and included. Unauthenticated attackers can send a crafted Referer to /plus/flink.php?dopost=save with an…",
-      "nvd_checado_em": "2026-10-24T18:38:25Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-22T11:17:04Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2021-48016",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-04T18:39:45Z"
-      },
-      "ultima_atividade": "2026-10-22T11:17:04Z",
-      "epss": {
-        "score": 0.0044,
-        "percentil": 0.3842,
-        "data": "2026-11-04"
+        "percentil": 0.4611,
+        "data": "2026-11-05"
       }
     },
     {
@@ -2096,12 +2032,12 @@
       "epss": {
         "score": 0.1613,
         "percentil": 0.9694,
-        "data": "2026-11-04"
+        "data": "2026-11-05"
       },
       "poc": {
         "qtd": 16,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-46300.json",
-        "checado": "2026-11-04T14:50:45Z"
+        "checado": "2026-11-05T15:02:59Z"
       }
     },
     {
@@ -2161,9 +2097,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.006,
-        "percentil": 0.4875,
-        "data": "2026-11-04"
+        "score": 0.0141,
+        "percentil": 0.7283,
+        "data": "2026-11-05"
       },
       "poc": {
         "qtd": 0,
