@@ -1,7 +1,61 @@
 {
-  "atualizado": "2026-11-05T10:41:09Z",
+  "atualizado": "2026-11-05T15:02:43Z",
   "janela": "29/out a 05/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-05",
+      "cve": "CVE-2026-102895 / CVE-2026-102894",
+      "produto": "GPUStack (gestão de clusters de GPU para IA)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Ativa (CVE-2026-102895, shell reverso em instância 2.1.1; CVE-2026-102894 sem ataque confirmado)",
+      "prioridade": "P2",
+      "tratamento": "Bypass de login por loopback dá admin remoto, e o callback SAML aceita XML sem verificar assinatura (9.1). Se houver em times de IA, subir para 2.2.2; até lá, ligar force_auth_localhost, remover o cabeçalho X-GPUStack-Real-IP no proxy e bloquear /auth/saml/callback de fora.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/gpustack-authentication-bypass-cve-2026-102895-exploited/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-05",
+      "cve": "CVE-2026-122310",
+      "produto": "Kyverno 1.19.1 (políticas de Kubernetes)",
+      "cvss": 9.9,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Usuário restrito a um namespace que pode criar Policy esconde ../ no urlPath do apiCall e escapa da validação. Subir para 1.19.2 e, até lá, revisar quem pode criar Policy. Impacto exato a confirmar no advisory do projeto.",
+      "fontes": [
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122310"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-04",
+      "cve": "CVE-2026-97631 / CVE-2026-102703 / CVE-2026-98432",
+      "produto": "Citrix XenServer 8.4 e 9, Workload Balancing, Conversion Manager e Scout",
+      "cvss": 9.5,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não (XenServer sem ataque relatado; Brotli no Scout segue a CVE-2026-111497, já no KEV)",
+      "prioridade": "P1",
+      "tratamento": "RCE pré-boot no driver PXE (9.5), fuga de VM para o host (nota a confirmar) e a falha TCP do kernel (9.8). Atualizar hosts pelo canal Early Access ou Normal, Workload Balancing para 2026.1.1 e Conversion Manager para 2026.2.0. Scout: Hotfix 2609.1 ou 2508 CU2 LTSR; Cloud Gateway 2605.1-3.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/citrix-security-vulnerabilities-xenserver-scout/"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-11-04",
       "cve": "CVE-2026-58868",
@@ -29,7 +83,7 @@
       "zero_day": false,
       "exploracao": "Ativa (SMA1000: 2.541 tentativas desde 09/10 e até 30 em 03/11, pela Previdian; SonicWall não confirmava em 12/10)",
       "prioridade": "P0",
-      "tratamento": "SMA1000 (6210, 7210, 8200v): SSRF sem login, nota 10. Aplicar o hotfix do MySonicWall: o boletim canadense lista como afetados até 12.4.3-03670 e 12.5.0-03082 (platform-hotfix); não há workaround e o build corrigido fica a confirmar no SNWLID-2026-0017. GMS até 9.5.2 tem leitura de arquivos sem login (9.1) e SQL injection com login (6.8), sem patch por fim de vida: migrar para NSM e isolar o console. Entrada no KEV a confirmar.",
+      "tratamento": "SMA1000 (6210, 7210, 8200v): SSRF sem login, nota 10. Subir para 12.4.3-03670 ou 12.5.0-03082 ou superior: não há workaround, e alertas de governo divergem nos números, então conferir no SNWLID-2026-0017 pelo MySonicWall. GMS até 9.5.2 tem leitura de arquivos sem login (9.1) e SQL injection com login (6.8), sem patch por fim de vida: migrar para NSM e isolar o console. Fora do KEV até a última lista consultada; entrada a confirmar.",
       "fontes": [
         {
           "nome": "The Hacker News",
@@ -40,8 +94,8 @@
           "url": "https://securityaffairs.com/200816/hacking/sonicwall-patches-cvss-10-0-ssrf-flaw-as-attacks-be"
         },
         {
-          "nome": "Cyber Centre (AV26-1017)",
-          "url": "https://cyber.gc.ca/en/alerts-advisories/sonicwall-security-advisory-av26-1017"
+          "nome": "eSecurityPlanet",
+          "url": "https://www.esecurityplanet.com/threats/news-sonicwall-sma1000-cve-2026-102255-exploitation/"
         }
       ],
       "status": "Novo"
@@ -71,9 +125,9 @@
       "cvss": 8.8,
       "kev": false,
       "zero_day": true,
-      "exploracao": "Ativa (cerca de 1.000 switches invadidos, com roubo de configuração e credenciais; Binarly achou o exploit em servidor de atacante; contorna o patch da CVE-2026-7273)",
+      "exploracao": "Ativa (cerca de 1.000 switches invadidos; a Binarly mostrou que o ataque usa esta falha, não a CVE-2026-7273 antes apontada, e que o patch de junho não barra o exploit)",
       "prioridade": "P2",
-      "tratamento": "Execução de comando sem login a partir da rede adjacente, em switch de pequeno porte. Se houver em agência ou área, instalar o firmware de 22/10, restringir a interface web à VLAN de gestão, trocar senha padrão e tratar switch exposto como possivelmente invadido.",
+      "tratamento": "Execução de comando sem login a partir da rede adjacente, em switch de pequeno porte. Quem aplicou só o patch de junho segue exposto: subir para 2.90 Patch 3, restringir a interface web à VLAN de gestão, trocar senha padrão e tratar switch exposto como possivelmente invadido. Reteste do Patch 3 pela Binarly a confirmar.",
       "fontes": [
         {
           "nome": "SecurityOnline",
@@ -82,6 +136,10 @@
         {
           "nome": "BleepingComputer",
           "url": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/"
+        },
+        {
+          "nome": "Help Net Security",
+          "url": "https://www.helpnetsecurity.com/2026/11/05/zyxel-cve-2026-107441-exploit/"
         }
       ],
       "status": "Novo"
