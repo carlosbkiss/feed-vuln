@@ -1129,6 +1129,11 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/node-js-schedules-patch/",
         "publicado": "2026-11-04T12:59:05Z"
+      },
+      {
+        "nome": "Cisco PSIRT",
+        "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20Node.js%20and%20Brotli%20Affecting%20Cisco%20Products:%20October%202026%26vs_k=1",
+        "publicado": "2026-11-04T18:52:10Z"
       }
     ],
     "prioridade_max": "P0"
@@ -1380,7 +1385,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0102,
-    "poc_qtd": 0,
+    "poc_qtd": 3,
     "fontes": [
       {
         "nome": "NVD",

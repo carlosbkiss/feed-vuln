@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-04T18:39:45Z",
+  "atualizado": "2026-11-05T00:23:25Z",
   "itens": [
     {
       "cve": "CVE-2026-118527",
@@ -395,6 +395,14 @@
           "link": "https://cybersecuritynews.com/node-js-schedules-patch/",
           "publicado": "2026-11-04T12:59:05Z",
           "visto_em": "2026-11-04T18:39:45Z"
+        },
+        {
+          "id": "cisco",
+          "nome": "Cisco PSIRT",
+          "titulo": "Vulnerabilities in Node.js and Brotli Affecting Cisco Products: October 2026",
+          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20Node.js%20and%20Brotli%20Affecting%20Cisco%20Products:%20October%202026%26vs_k=1",
+          "publicado": "2026-11-04T18:52:10Z",
+          "visto_em": "2026-11-05T00:23:25Z"
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
@@ -412,7 +420,7 @@
       "publicado_nvd": "2026-10-22T14:17:37Z",
       "resumo": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause…",
       "nvd_checado_em": "2026-10-23T12:22:11Z",
-      "ultima_atividade": "2026-11-04T12:59:05Z",
+      "ultima_atividade": "2026-11-04T18:52:10Z",
       "exibido_em": "2026-10-26T17:24:30Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -1434,7 +1442,7 @@
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
-      "nvd_checado_em": "2026-11-04T14:50:45Z",
+      "nvd_checado_em": "2026-11-05T00:23:25Z",
       "elegivel_por": [
         "zero-day"
       ],
@@ -1548,462 +1556,39 @@
       }
     },
     {
-      "cve": "CVE-2026-76531",
+      "cve": "CVE-2025-71457",
       "fontes": [
         {
           "id": "nvd",
           "nome": "NVD",
-          "titulo": "CVE-2026-76531",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76531",
-          "publicado": "2026-10-21T23:17:30Z",
-          "visto_em": "2026-10-23T12:27:14Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
-          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
-          "publicado": "2026-10-23T03:41:41Z",
-          "visto_em": "2026-10-23T12:14:22Z"
+          "titulo": "CVE-2025-71457",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-71457",
+          "publicado": "2026-11-04T21:17:40Z",
+          "visto_em": "2026-11-05T00:23:25Z"
         }
       ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-21T23:17:30Z",
-      "primeira_noticia": "2026-10-23T03:41:41Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76531",
-      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
-      "ultima_atividade": "2026-10-23T03:41:41Z",
-      "cvss": 9.9,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-21T23:17:30Z",
-      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
-      "nvd_checado_em": "2026-10-23T12:27:14Z",
-      "nota_chegou_em": "2026-10-23T12:27:14Z",
-      "exibido_em": "2026-10-23T12:27:14Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "epss": {
-        "score": 0.0041,
-        "percentil": 0.3519,
-        "data": "2026-11-04"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-04T18:39:45Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-76527",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-76527",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76527",
-          "publicado": "2026-10-21T23:17:29Z",
-          "visto_em": "2026-10-23T12:27:14Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
-          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
-          "publicado": "2026-10-23T03:41:41Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-21T23:17:29Z",
-      "primeira_noticia": "2026-10-23T03:41:41Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76527",
-      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
-      "ultima_atividade": "2026-10-23T03:41:41Z",
+      "detectado": "2026-11-05T00:23:25Z",
       "cvss": 9.8,
       "cvss_versao": "3.1",
       "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-21T23:17:29Z",
-      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
-      "nvd_checado_em": "2026-10-30T15:33:44Z",
-      "nota_chegou_em": "2026-10-30T15:33:44Z",
-      "exibido_em": "2026-10-30T15:33:44Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "epss": {
-        "score": 0.0043,
-        "percentil": 0.3753,
-        "data": "2026-11-04"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-04T18:39:45Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-76408",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-76408",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76408",
-          "publicado": "2026-10-21T23:17:29Z",
-          "visto_em": "2026-10-23T12:27:14Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
-          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
-          "publicado": "2026-10-23T03:41:41Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
+      "publicado_nvd": "2026-11-04T21:17:40Z",
+      "resumo": "vtenext 25.02 before 25.02.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to change any account password via hub/rpwd.php without token verification. Attackers knowing a valid user_name can send action=change_password…",
+      "nvd_checado_em": "2026-11-05T00:23:25Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
-      "primeira_vez": "2026-10-21T23:17:29Z",
-      "primeira_noticia": "2026-10-23T03:41:41Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76408",
-      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
-      "ultima_atividade": "2026-10-23T03:41:41Z",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-21T23:17:29Z",
-      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
-      "nvd_checado_em": "2026-10-31T02:25:09Z",
-      "nota_chegou_em": "2026-10-31T02:25:09Z",
-      "exibido_em": "2026-10-31T02:25:09Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "epss": {
-        "score": 0.0039,
-        "percentil": 0.3331,
-        "data": "2026-11-04"
-      },
+      "primeira_vez": "2026-11-04T21:17:40Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2025-71457",
+      "ultima_atividade": "2026-11-04T21:17:40Z",
+      "exibido_em": "2026-11-05T00:23:25Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-04T18:39:45Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-76529",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-76529",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76529",
-          "publicado": "2026-10-21T23:17:29Z",
-          "visto_em": "2026-10-23T12:27:14Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
-          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
-          "publicado": "2026-10-23T03:41:41Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-21T23:17:29Z",
-      "primeira_noticia": "2026-10-23T03:41:41Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76529",
-      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
-      "ultima_atividade": "2026-10-23T03:41:41Z",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-21T23:17:29Z",
-      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
-      "nvd_checado_em": "2026-10-31T14:44:51Z",
-      "nota_chegou_em": "2026-10-31T14:44:51Z",
-      "exibido_em": "2026-10-31T14:44:51Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "epss": {
-        "score": 0.0039,
-        "percentil": 0.3331,
-        "data": "2026-11-04"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-04T18:39:45Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-76407",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-76407",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76407",
-          "publicado": "2026-10-21T23:17:29Z",
-          "visto_em": "2026-10-23T12:27:14Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
-          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
-          "publicado": "2026-10-23T03:41:41Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-21T23:17:29Z",
-      "primeira_noticia": "2026-10-23T03:41:41Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76407",
-      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
-      "ultima_atividade": "2026-10-23T03:41:41Z",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-21T23:17:29Z",
-      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
-      "nvd_checado_em": "2026-11-03T18:28:03Z",
-      "nota_chegou_em": "2026-11-03T18:28:03Z",
-      "exibido_em": "2026-11-03T18:28:03Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "epss": {
-        "score": 0.0043,
-        "percentil": 0.373,
-        "data": "2026-11-04"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-04T18:39:45Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-76528",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-76528",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76528",
-          "publicado": "2026-10-21T23:17:29Z",
-          "visto_em": "2026-10-23T12:27:14Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
-          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
-          "publicado": "2026-10-23T03:41:41Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-21T23:17:29Z",
-      "primeira_noticia": "2026-10-23T03:41:41Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76528",
-      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
-      "ultima_atividade": "2026-10-23T03:41:41Z",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-21T23:17:29Z",
-      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
-      "nvd_checado_em": "2026-11-03T18:28:03Z",
-      "nota_chegou_em": "2026-11-03T18:28:03Z",
-      "exibido_em": "2026-11-03T18:28:03Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "epss": {
-        "score": 0.0036,
-        "percentil": 0.3014,
-        "data": "2026-11-04"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-04T18:39:45Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-76302",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-76302",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76302",
-          "publicado": "2026-10-21T23:17:28Z",
-          "visto_em": "2026-10-23T12:27:14Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
-          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
-          "publicado": "2026-10-23T03:41:41Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-21T23:17:28Z",
-      "primeira_noticia": "2026-10-23T03:41:41Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76302",
-      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
-      "ultima_atividade": "2026-10-23T03:41:41Z",
-      "cvss": 9.9,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-21T23:17:28Z",
-      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
-      "nvd_checado_em": "2026-10-23T12:27:14Z",
-      "nota_chegou_em": "2026-10-23T12:27:14Z",
-      "exibido_em": "2026-10-23T12:27:14Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "epss": {
-        "score": 0.004,
-        "percentil": 0.3437,
-        "data": "2026-11-04"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-04T18:39:45Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-76301",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-76301",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76301",
-          "publicado": "2026-10-21T23:17:28Z",
-          "visto_em": "2026-10-23T12:27:14Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
-          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
-          "publicado": "2026-10-23T03:41:41Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-21T23:17:28Z",
-      "primeira_noticia": "2026-10-23T03:41:41Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76301",
-      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
-      "ultima_atividade": "2026-10-23T03:41:41Z",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-21T23:17:28Z",
-      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
-      "nvd_checado_em": "2026-10-28T10:50:56Z",
-      "nota_chegou_em": "2026-10-28T10:50:56Z",
-      "exibido_em": "2026-10-28T10:50:56Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "epss": {
-        "score": 0.0038,
-        "percentil": 0.3246,
-        "data": "2026-11-04"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-04T18:39:45Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-76299",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-76299",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76299",
-          "publicado": "2026-10-21T23:17:27Z",
-          "visto_em": "2026-10-23T12:27:14Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Splunk Fixes 24 Security Flaws, Including Four Critical Vulnerabilities in Enterprise and SOAR",
-          "link": "https://cybersecuritynews.com/splunk-fixes-24-security-flaws/",
-          "publicado": "2026-10-23T03:41:41Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-21T23:17:27Z",
-      "primeira_noticia": "2026-10-23T03:41:41Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76299",
-      "aguardando_nota_desde": "2026-10-23T03:41:41Z",
-      "ultima_atividade": "2026-10-23T03:41:41Z",
-      "cvss": 9.9,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-21T23:17:27Z",
-      "resumo": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.…",
-      "nvd_checado_em": "2026-10-23T12:27:14Z",
-      "nota_chegou_em": "2026-10-23T12:27:14Z",
-      "exibido_em": "2026-10-23T12:27:14Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "epss": {
-        "score": 0.0033,
-        "percentil": 0.2618,
-        "data": "2026-11-04"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T00:23:25Z"
       }
     },
     {
@@ -2024,7 +1609,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-02T22:17:23Z",
       "resumo": "The s2Member plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, <= 260927 via the 'item_name' parameter parameter. This is due to insufficient sanitization in strip_php_tags_deep(), which only strips literal…",
-      "nvd_checado_em": "2026-11-04T18:39:45Z",
+      "nvd_checado_em": "2026-11-05T00:23:25Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2199,9 +1784,9 @@
         "data": "2026-11-04"
       },
       "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-03T23:59:40Z"
+        "qtd": 3,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-119977.json",
+        "checado": "2026-11-05T00:23:25Z"
       }
     },
     {
@@ -2534,9 +2119,74 @@
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-46300.json",
         "checado": "2026-11-04T14:50:45Z"
       }
+    },
+    {
+      "cve": "CVE-2024-27834",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2024-27834",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-27834",
+          "publicado": "2024-05-14T15:13:06Z",
+          "visto_em": "2026-11-05T00:23:25Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Apple Multiple Products Improper Authentication Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2024-27834",
+          "publicado": "2026-11-04",
+          "visto_em": "2026-11-05T00:23:25Z"
+        }
+      ],
+      "detectado": "2026-11-05T00:23:25Z",
+      "kev": {
+        "adicionado": "2026-11-04",
+        "prazo": "2026-11-18",
+        "ransomware": "Unknown"
+      },
+      "produto": "Apple Multiple Products",
+      "titulo": "Apple Multiple Products Improper Authentication Vulnerability",
+      "resumo": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication.",
+      "cvss": 5.5,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "NVD",
+      "publicado_nvd": "2024-05-14T15:13:06Z",
+      "nvd_checado_em": "2026-11-05T00:23:25Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2024-05-14T15:13:06Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2024-27834",
+      "ultima_atividade": "2026-11-04T00:00:00Z",
+      "exibido_em": "2026-11-05T00:23:25Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.006,
+        "percentil": 0.4875,
+        "data": "2026-11-04"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-05T00:23:25Z"
+      }
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "BleepingComputer",
+      "titulo": "Zyxel fixes zero-day exploited to hack nearly 1,000 network switches",
+      "link": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
+      "publicado": "2026-11-04T20:58:19Z"
+    },
     {
       "fonte": "BleepingComputer",
       "titulo": "CISA flags WordPress RCE flaw as actively exploited in attacks",

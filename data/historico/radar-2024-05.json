@@ -1,0 +1,40 @@
+{
+  "CVE-2024-27834": {
+    "cve": "CVE-2024-27834",
+    "produto": "Apple Multiple Products",
+    "titulo": "Apple Multiple Products Improper Authentication Vulnerability",
+    "cvss": 5.5,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-04",
+      "prazo": "2026-11-18",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2024-05-14T15:13:06Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2024-05-14T15:13:06Z",
+    "exibido_em": "2026-11-05T00:23:25Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.006,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-27834",
+        "publicado": "2024-05-14T15:13:06Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2024-27834",
+        "publicado": "2026-11-04"
+      }
+    ],
+    "prioridade_max": "P2"
+  }
+}
