@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-05T15:02:59Z",
+  "atualizado": "2026-11-05T18:41:26Z",
   "itens": [
     {
       "cve": "CVE-2026-118527",
@@ -65,7 +65,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       },
       "kev": {
         "adicionado": "2026-10-30",
@@ -161,7 +161,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       },
       "kev": {
         "adicionado": "2026-10-29",
@@ -246,7 +246,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-114625.json",
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       }
     },
     {
@@ -431,9 +431,9 @@
         "data": "2026-11-05"
       },
       "poc": {
-        "qtd": 84,
+        "qtd": 87,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-111497.json",
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       },
       "kev": {
         "adicionado": "2026-10-27",
@@ -643,9 +643,9 @@
         "data": "2026-11-05"
       },
       "poc": {
-        "qtd": 752,
+        "qtd": 760,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109618.json",
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       },
       "ultima_atividade": "2026-11-01T05:24:22Z",
       "zero_day": true,
@@ -849,9 +849,9 @@
         "data": "2026-11-05"
       },
       "poc": {
-        "qtd": 25,
+        "qtd": 26,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109619.json",
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       },
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
@@ -952,7 +952,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       }
     },
     {
@@ -1028,7 +1028,7 @@
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110447.json",
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       }
     },
     {
@@ -1128,9 +1128,9 @@
         "data": "2026-11-05"
       },
       "poc": {
-        "qtd": 7,
+        "qtd": 8,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-97229.json",
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       }
     },
     {
@@ -1221,7 +1221,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       },
       "escalado": true
     },
@@ -1300,7 +1300,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-48356.json",
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       }
     },
     {
@@ -1336,7 +1336,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       },
       "epss": {
         "score": 0.0035,
@@ -1377,7 +1377,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       },
       "epss": {
         "score": 0.0052,
@@ -1406,7 +1406,7 @@
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
-      "nvd_checado_em": "2026-11-05T10:41:26Z",
+      "nvd_checado_em": "2026-11-05T18:41:26Z",
       "elegivel_por": [
         "zero-day"
       ],
@@ -1424,7 +1424,7 @@
       "poc": {
         "qtd": 11,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-115560.json",
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       }
     },
     {
@@ -1475,7 +1475,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       }
     },
     {
@@ -1510,7 +1510,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       },
       "ultima_atividade": "2026-10-22T19:17:30Z",
       "epss": {
@@ -1537,7 +1537,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-05T03:17:23Z",
       "resumo": "Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath after cleaning it but executes the raw path, whose fragment or query the Kubernetes client discards. A namespace-scoped user who can create a Policy can hide ../ segments behind #…",
-      "nvd_checado_em": "2026-11-05T15:02:59Z",
+      "nvd_checado_em": "2026-11-05T18:41:26Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1578,7 +1578,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-04T21:17:40Z",
       "resumo": "vtenext 25.02 before 25.02.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to change any account password via hub/rpwd.php without token verification. Attackers knowing a valid user_name can send action=change_password…",
-      "nvd_checado_em": "2026-11-05T15:02:59Z",
+      "nvd_checado_em": "2026-11-05T18:41:26Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1619,7 +1619,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-02T22:17:23Z",
       "resumo": "The s2Member plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, <= 260927 via the 'item_name' parameter parameter. This is due to insufficient sanitization in strip_php_tags_deep(), which only strips literal…",
-      "nvd_checado_em": "2026-11-05T15:02:59Z",
+      "nvd_checado_em": "2026-11-05T18:41:26Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1716,7 +1716,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       },
       "epss": {
         "score": 0.0052,
@@ -1832,7 +1832,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-103039.json",
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       },
       "epss": {
         "score": 0.0051,
@@ -1888,7 +1888,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110720.json",
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       }
     },
     {
@@ -1924,7 +1924,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       },
       "epss": {
         "score": 0.0044,
@@ -1965,7 +1965,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-04T18:39:45Z"
+        "checado": "2026-11-05T18:41:26Z"
       },
       "epss": {
         "score": 0.0055,
@@ -2210,12 +2210,6 @@
       "titulo": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
       "link": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
       "publicado": "2026-10-22T19:05:17Z"
-    },
-    {
-      "fonte": "BleepingComputer",
-      "titulo": "Arista patches new VeloCloud Orchestrator zero-day exploited in attacks",
-      "link": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/",
-      "publicado": "2026-10-22T17:18:22Z"
     }
   ]
 }

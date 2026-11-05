@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-05T15:02:43Z",
+  "atualizado": "2026-11-05T18:41:06Z",
   "janela": "29/out a 05/nov/2026",
   "itens": [
     {
@@ -482,6 +482,32 @@
     },
     {
       "data": "2026-10-30",
+      "cve": "CVE-2026-114820 / CVE-2026-91403",
+      "produto": "Java SE, OpenJDK, GraalVM e Oracle Database (CAs eMudhra comprometidas)",
+      "cvss": 9.1,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Chaves de CAs da eMudhra vazaram e o Java ainda confia nelas, o que abre MITM em TLS; o Oracle ampliou o alerta em 30/10 para Oracle Database 19, 21 e 23, OPatch e AHF. O patch de 21/10 só bloqueia intermediárias: aplicar também o de 24/10, que remove as raízes (OpenJDK 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3 e 27.0.1.0.3; Oracle via CPU427 e CPU359), incluindo cacerts de imagens, appliances e mTLS. Builds de 8 e 11 a confirmar.",
+      "fontes": [
+        {
+          "nome": "Oracle Security Alert",
+          "url": "https://www.oracle.com/security-alerts/alert-cve-2026-114820.html"
+        },
+        {
+          "nome": "Debian Security Tracker",
+          "url": "https://security-tracker.debian.org/tracker/CVE-2026-114820"
+        },
+        {
+          "nome": "CSO Online",
+          "url": "https://www.csoonline.com/article/4239634/emudhra-quits-global-tls-certificate-market-after-compromise-of-ca-signing-keys-2.html"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-10-30",
       "cve": "CVE-2026-118697 / CVE-2026-118696",
       "produto": "JetBrains IDEs, Toolbox e Gateway (CAs eMudhra comprometidas)",
       "cvss": 9.0,
@@ -591,7 +617,7 @@
       "zero_day": true,
       "exploracao": "Ativa (CVE-2026-111357 e CVE-2026-118527 no KEV em 30/10; cadeia até root sem login; prazos CISA 02/11 e 13/11)",
       "prioridade": "P0",
-      "tratamento": "Subir para 25.1.1.3 (ou 25.1.3.1 no ramo 25.1.3); a 22.8R2.6 só se a migração não puder ser imediata, pois a CISA lista até a 22.8R2.5, 25.1.1.2 e 25.1.2.2 como afetadas. Integrity Checker limpo não prova nada: guardar memória e logs antes de reiniciar, caçar X-DSCGI-PATH em welcome.cgi e arquivos em /data/.icscap/ e /home/runtime/tmp/, e trocar conta LDAP, senhas LAPS e chaves BitLocker se houver suspeita.",
+      "tratamento": "Subir para 25.1.1.3 (ou 25.1.3.1 no ramo 25.1.3); a 22.8R2.6 só se a migração não puder ser imediata, pois os patches de 13/10 (25.1.1.2 e 22.8R2.5) não cobrem a CVE-2026-111357 nem a CVE-2026-118527. Em ISA4500, 6500 e 8500 há fonte com 25.1.3.0 ou superior como não afetada: conferir no advisory. Integrity Checker limpo não prova nada: guardar memória e logs antes de reiniciar, caçar X-DSCGI-PATH em welcome.cgi e arquivos em /data/.icscap/ e /home/runtime/tmp/, e trocar conta LDAP, senhas LAPS e chaves BitLocker se houver suspeita.",
       "fontes": [
         {
           "nome": "Tech Insider (cadeia e caça)",
@@ -602,8 +628,8 @@
           "url": "https://cyber.gc.ca/en/alerts-advisories/ivanti-security-advisory-av26-1035"
         },
         {
-          "nome": "Cyber Security News",
-          "url": "https://cybersecuritynews.com/ivanti-connect-secure-zero-days-exploited/"
+          "nome": "Cyber Daily",
+          "url": "https://www.cyberdaily.au/security/14390-patch-now-ivanti-updates-security-advisory-for-trio-of-exploited-vulnerabilities-in-connect-secure"
         }
       ],
       "status": "Novo"

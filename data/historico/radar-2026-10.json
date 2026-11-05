@@ -558,7 +558,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 1.0,
-    "poc_qtd": 752,
+    "poc_qtd": 760,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -692,7 +692,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 1.0,
-    "poc_qtd": 25,
+    "poc_qtd": 26,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -1048,7 +1048,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.8799,
-    "poc_qtd": 84,
+    "poc_qtd": 87,
     "fontes": [
       {
         "nome": "NVD",
@@ -2439,7 +2439,7 @@
     "aguardando_nota_desde": "2026-10-29T09:05:39Z",
     "nota_chegou_em": "2026-10-29T23:18:51Z",
     "epss_max": 0.6522,
-    "poc_qtd": 7,
+    "poc_qtd": 8,
     "fontes": [
       {
         "nome": "NVD",
