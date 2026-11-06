@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-11-05T18:41:06Z",
-  "janela": "29/out a 05/nov/2026",
+  "atualizado": "2026-11-06T10:50:15Z",
+  "janela": "30/out a 06/nov/2026",
   "itens": [
     {
       "data": "2026-11-05",
@@ -34,6 +34,68 @@
         {
           "nome": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122310"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-05",
+      "cve": "CVE-2026-123158",
+      "produto": "OpenSSH em Alpine Linux (sshd sem PAM)",
+      "cvss": 8.1,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Exploit público (SSVC da CISA marca PoC; sem ataques relatados)",
+      "prioridade": "P2",
+      "tratamento": "Senha de 257 a 1.024 bytes entra em conta só com chave, se houver outra conta com senha e PasswordAuthentication ativo. Só musl sem PAM: procurar imagens Alpine com sshd. Subir para 10.6p2 ou pacote corrigido do Alpine e reiniciar o sshd; paliativo: PasswordAuthentication no. Revisar \"Accepted password\" em contas sem senha.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html"
+        },
+        {
+          "nome": "Safeguard",
+          "url": "https://safeguard.sh/resources/blog/alpine-openssh-password-authentication-bypass-musl-without-pam-find-affected-images-and-patch"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-05",
+      "cve": "CVE-2026-111497",
+      "produto": "Cisco (19 produtos) e Splunk (Brotli)",
+      "cvss": 9.2,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (Brotli no KEV em 27/10; sem relato específico em produtos Cisco)",
+      "prioridade": "P1",
+      "tratamento": "Cisco confirmou 19 produtos afetados e segue investigando outros; Splunk também. Lista e versões a confirmar nos advisories: cruzar com o inventário e priorizar o que descomprime tráfego vindo da internet.",
+      "fontes": [
+        {
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/cisco-watchguard-release-patches-sonicwall-wont-fix-gms-flaws/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111497"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-05",
+      "cve": "CVE-2026-121639 / CVE-2026-121638 / CVE-2026-121640",
+      "produto": "WatchGuard AuthPoint Authentication Gateway (MFA)",
+      "cvss": null,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Três falhas críticas de autenticação no gateway de MFA, já corrigidas; nota e versões a confirmar no advisory da WatchGuard. Se houver no parque, atualizar e restringir o acesso à interface.",
+      "fontes": [
+        {
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/cisco-watchguard-release-patches-sonicwall-wont-fix-gms-flaws/"
         }
       ],
       "status": "Novo"
@@ -166,6 +228,42 @@
         {
           "nome": "CVEfeed",
           "url": "https://cvefeed.io/vuln/detail/CVE-2024-27834"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-04",
+      "cve": "sem CVE (Rails Active Storage, GHSA-f3w6-w445-fwh9)",
+      "produto": "Ruby on Rails Active Storage com ImageMagick",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não confirmada",
+      "prioridade": "P1",
+      "tratamento": "Upload sem login grava arquivos no servidor; com Disk service também lê segredos como secret_key_base, o que abre RCE. Vale para quem usa mini_magick, aceita upload não confiável e não bloqueia os coders. Subir para 8.1.4.1 ou 8.0.5.2 com mini_magick 5.1+. Séries anteriores à 8.0 não têm correção: bloquear MSL, Ghostscript e gs no policy.xml.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-04",
+      "cve": "CVE-2026-109518",
+      "produto": "APT (Debian, Ubuntu e derivadas)",
+      "cvss": 7.7,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Espelho ou proxy malicioso troca pacote verificado e roda código como root, via novas tentativas de download (padrão desde Debian 12 e Ubuntu 22.04). Atualizar: Ubuntu 22.04 2.4.15ubuntu0.1, 24.04 2.8.4ubuntu0.1, 26.04 3.2.1ubuntu0.1. Priorizar imagens base e hosts que usam repositório por HTTP; cobertura de HTTPS a confirmar.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html"
         }
       ],
       "status": "Novo"
@@ -343,6 +441,24 @@
       "status": "Novo"
     },
     {
+      "data": "2026-11-03",
+      "cve": "sem CVE (BTCPay Server)",
+      "produto": "BTCPay Server (pagamentos em criptomoedas)",
+      "cvss": null,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Ativa (682 varreduras de hot wallets desde 30/10, cerca de US$ 1,62 milhão, pela Bitquery)",
+      "prioridade": "P2",
+      "tratamento": "Versões 2.4.1 e anteriores foram drenadas; falha exata a confirmar. Só relevante como shadow IT ou em fornecedor: subir para 2.4.7 ou superior antes de religar, tratar host e segredos como comprometidos e migrar fundos para nova seed.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
       "data": "2026-11-02",
       "cve": "CVE-2026-116443 / CVE-2026-116441 / CVE-2026-111509",
       "produto": "Dell PowerStore (SDNAS, DSA-2026-479)",
@@ -367,8 +483,12 @@
       "cvss": 9.3,
       "exploracao": "Não",
       "prioridade": "P1",
-      "tratamento": "Duas falhas encadeáveis até root em appliances de borda. Subir o Email Security Gateway para 9.4.0.030; para os demais produtos, versão a confirmar no advisory da Barracuda. Sem exploração nem PoC público até agora.",
+      "tratamento": "Duas falhas encadeáveis até root em appliances de borda. Barracuda diz que exigem admin; a Mandiant diz que a do ESG (9.3) dispensa login: tratar como sem login. Subir o ESG para 9.4.0.030 (conferir no advisory); nos demais produtos, versão a confirmar. Reativar patch automático e restringir a interface de admin à rede interna.",
       "fontes": [
+        {
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/"
+        },
         {
           "nome": "SecurityOnline",
           "url": "https://securityonline.info/barracuda-vulnerabilities-root-access-patch/"
@@ -447,17 +567,39 @@
       "cvss": 9.8,
       "kev": false,
       "zero_day": false,
-      "exploracao": "Não confirmada",
+      "exploracao": "Não confirmada (PoC público só dispara a corrida, sem RCE; sem ataques relatados)",
       "prioridade": "P0",
-      "tratamento": "Use-after-free alcançável sem login em porta TCP IPv4. Notas variam de 7.0 a 9.8, e há relato não confirmado de sondagem MPTCP na porta 443. RHEL 8 a 10 têm kernel desde 01/11; kernel-rt do RHEL 9 e CoreOS do OpenShift seguiam afetados em 03/11; Ubuntu LTS ainda em -proposed. Corrigir e reiniciar; desligar MPTCP não resolve. Paliativo: descartar pacotes IPv4 com IP options.",
+      "tratamento": "Use-after-free sem login: SYN IPv4 com IP options a qualquer porta TCP. Notas variam de 5.9 a 9.8. Upstream: 5.10.272, 5.15.223, 6.1.190, 6.6.159, 6.12.113, 6.18.56, 7.2.10. RHEL 8.10, 9.8 e 10.2 têm kernel desde 01/11; Ubuntu LTS seguia em -proposed e 16.04 a 20.04 dependem de ESM. Corrigir e reiniciar. Desligar MPTCP não resolve; regra nftables contra IP options é só paliativo e não cobre tráfego entre contêineres.",
       "fontes": [
+        {
+          "nome": "Akamai",
+          "url": "https://www.akamai.com/blog/security-research/cve-2026-98432-remote-uaf-linux-kernels-tcp-stack"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html"
+        },
         {
           "nome": "Aikido",
           "url": "https://www.aikido.dev/blog/linux-kernel-tcp-rce-vulnerability-cve-2026-98432"
-        },
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-01",
+      "cve": "CVE-2026-112816",
+      "produto": "Canonical LXD e MicroCloud",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Falha na cadeia de certificados: com o certificado público de um cliente confiável, o atacante se passa por ele na API HTTPS, podendo chegar a root no host. Subir via snap para LXD 6.10.1, 5.21.9, 5.0.11 ou 4.0.15 e MicroCloud 3.4.1 ou 2.1.5, conferindo a versão instalada. Sem workaround: restringir a API. Incus: 7.6.0.",
+      "fontes": [
         {
-          "nome": "SecurityOnline",
-          "url": "https://securityonline.info/cve-2026-98432-ubuntu-proposed-fix/"
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html"
         }
       ],
       "status": "Novo"
@@ -632,7 +774,7 @@
           "url": "https://www.cyberdaily.au/security/14390-patch-now-ivanti-updates-security-advisory-for-trio-of-exploited-vulnerabilities-in-connect-secure"
         }
       ],
-      "status": "Novo"
+      "status": "Pendente"
     },
     {
       "data": "2026-10-29",
@@ -658,91 +800,7 @@
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-97229"
         }
       ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-29",
-      "cve": "CVE-2026-84295 / CVE-2026-90868 / CVE-2026-90865",
-      "produto": "Progress WS_FTP Server (transferência de arquivos)",
-      "cvss": 10.0,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P1",
-      "tratamento": "Falha de autenticação sem login (10.0) que expõe credenciais de admin, mais injeções de comando (9.9 e 9.0). Subir para 2024.0.7 ou 2025.0.4, que cobrem os 15 CVEs; até lá, restringir o console web de administração à rede interna. Produto da mesma família do MOVEit, alvo histórico de ransomware.",
-      "fontes": [
-        {
-          "nome": "SecurityOnline",
-          "url": "https://securityonline.info/ws-ftp-server-vulnerabilities-cve-2026-84295/"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-29",
-      "cve": "CVE-2026-42589",
-      "produto": "Gotenberg (conversão de documentos para PDF)",
-      "cvss": 9.8,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Ativa (1.358 eventos de 128 IPs em 30 dias, com shell reverso em Go)",
-      "prioridade": "P2",
-      "tratamento": "RCE sem login via injeção de metadados no ExifTool. Procurar Gotenberg em esteiras internas de geração de PDF, atualizar e não expor a API. Versão corrigida a confirmar: há relato de patch em maio, mas o registro Go não lista versão.",
-      "fontes": [
-        {
-          "nome": "The Hacker News (ThreatsDay)",
-          "url": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html"
-        },
-        {
-          "nome": "Go Vulnerability Database",
-          "url": "https://pkg.go.dev/vuln/GO-2026-5636"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-29",
-      "cve": "CVE-2024-10441 / CVE-2026-13639 / CVE-2026-13684",
-      "produto": "Synology DSM (NAS, ransomware C3RB3R)",
-      "cvss": 9.8,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Ativa (ransomware C3RB3R; Synology cita falha corrigida em 2024, a 360 aponta as duas de 2026)",
-      "prioridade": "P2",
-      "tratamento": "Só importa se houver NAS Synology em agência, área ou shadow IT. Subir o DSM para 7.4-90075, 7.3.2-86009-4, 7.2.2-72806-9 ou 7.2.1-69057-12, tirar o DSM da internet e guardar snapshot protegido ou backup offline. A entrada segue em disputa, e a nota 9.8 vale para as CVEs de 2026.",
-      "fontes": [
-        {
-          "nome": "Synology",
-          "url": "https://synology.com/en-global/company/news/article/C3RB3R"
-        },
-        {
-          "nome": "IT-Connect",
-          "url": "https://www.it-connect.tech/c3rb3r-ransomware-is-hitting-synology-nas-devices-how-to-protect-yours/"
-        },
-        {
-          "nome": "Gridinsoft",
-          "url": "https://blog.gridinsoft.com/synology-c3rb3r-ransomware-nas-backups/"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-29",
-      "cve": "CVE-2026-116238 a CVE-2026-116252",
-      "produto": "pgAdmin 4 (modo servidor)",
-      "cvss": null,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P2",
-      "tratamento": "15 falhas, entre elas injeção de comandos (CVE-2026-116241) e login como outro usuário via LDAP ou Kerberos (CVE-2026-116239). Subir para 9.19, definindo SERVER_PASSEXEC_COMMANDS antes do primeiro início, e tirar o console da rede aberta; CVSS a confirmar.",
-      "fontes": [
-        {
-          "nome": "Linux Compatible",
-          "url": "https://www.linuxcompatible.org/story/pgadmin-4-v919-released-15-security-fixes-and-136-changes-for-postgresql-admin/"
-        }
-      ],
-      "status": "Novo"
+      "status": "Pendente"
     },
     {
       "data": "2026-10-28",
@@ -925,32 +983,6 @@
         }
       ],
       "status": "Pendente"
-    },
-    {
-      "data": "2026-10-22",
-      "cve": "CVE-2026-114625",
-      "produto": "Arista VeloCloud Orchestrator (on-prem)",
-      "cvss": 9.9,
-      "kev": true,
-      "zero_day": true,
-      "exploracao": "Ativa",
-      "prioridade": "P0",
-      "status": "Pendente",
-      "tratamento": "SQL injection que dá superusuário com login só-leitura. Subir para 5.2.3.18, 6.1.3.10 ou 6.4.2.12, restringir a interface a redes de gestão e revisar ações de admin recentes.",
-      "fontes": [
-        {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html"
-        },
-        {
-          "nome": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/"
-        },
-        {
-          "nome": "CISA KEV 23/out",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog"
-        }
-      ]
     }
   ]
 }
