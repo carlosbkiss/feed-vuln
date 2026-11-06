@@ -1,6 +1,68 @@
 {
-  "atualizado": "2026-11-06T17:59:50Z",
+  "atualizado": "2026-11-06T23:44:07Z",
   "itens": [
+    {
+      "cve": "CVE-2026-19868",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-19868",
+          "publicado": "2026-11-06",
+          "visto_em": "2026-11-06T23:44:07Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds One Known Exploited Vulnerability to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
+          "publicado": "2026-11-06T12:00:00Z",
+          "visto_em": "2026-11-06T23:44:07Z"
+        },
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-19868",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-19868",
+          "publicado": "2026-11-06T19:17:48Z",
+          "visto_em": "2026-11-06T23:44:07Z"
+        }
+      ],
+      "detectado": "2026-11-06T23:44:07Z",
+      "kev": {
+        "adicionado": "2026-11-06",
+        "prazo": "2026-11-20",
+        "ransomware": "Unknown"
+      },
+      "produto": "SonicWall SonicOS SSLVPN",
+      "titulo": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+      "resumo": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass…",
+      "cvss": 7.5,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-06T19:17:48Z",
+      "nvd_checado_em": "2026-11-06T23:44:07Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-06T00:00:00Z",
+      "primeira_noticia": "2026-11-06T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-19868",
+      "ultima_atividade": "2026-11-06T19:17:48Z",
+      "exibido_em": "2026-11-06T23:44:07Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-06T23:44:07Z"
+      }
+    },
     {
       "cve": "CVE-2026-118527",
       "fontes": [
@@ -65,7 +127,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-05T18:41:26Z"
+        "checado": "2026-11-06T23:44:07Z"
       },
       "kev": {
         "adicionado": "2026-10-30",
@@ -161,7 +223,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-05T18:41:26Z"
+        "checado": "2026-11-06T23:44:07Z"
       },
       "kev": {
         "adicionado": "2026-10-29",
@@ -246,7 +308,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-114625.json",
-        "checado": "2026-11-05T18:41:26Z"
+        "checado": "2026-11-06T23:44:07Z"
       }
     },
     {
@@ -431,9 +493,9 @@
         "data": "2026-11-06"
       },
       "poc": {
-        "qtd": 87,
+        "qtd": 88,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-111497.json",
-        "checado": "2026-11-05T18:41:26Z"
+        "checado": "2026-11-06T23:44:07Z"
       },
       "kev": {
         "adicionado": "2026-10-27",
@@ -643,9 +705,9 @@
         "data": "2026-11-06"
       },
       "poc": {
-        "qtd": 760,
+        "qtd": 764,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109618.json",
-        "checado": "2026-11-05T18:41:26Z"
+        "checado": "2026-11-06T23:44:07Z"
       },
       "ultima_atividade": "2026-11-01T05:24:22Z",
       "zero_day": true,
@@ -851,7 +913,7 @@
       "poc": {
         "qtd": 26,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109619.json",
-        "checado": "2026-11-05T18:41:26Z"
+        "checado": "2026-11-06T23:44:07Z"
       },
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
@@ -952,7 +1014,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-05T18:41:26Z"
+        "checado": "2026-11-06T23:44:07Z"
       }
     },
     {
@@ -1028,7 +1090,7 @@
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110447.json",
-        "checado": "2026-11-05T18:41:26Z"
+        "checado": "2026-11-06T23:44:07Z"
       }
     },
     {
@@ -1128,9 +1190,9 @@
         "data": "2026-11-06"
       },
       "poc": {
-        "qtd": 8,
+        "qtd": 9,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-97229.json",
-        "checado": "2026-11-05T18:41:26Z"
+        "checado": "2026-11-06T23:44:07Z"
       }
     },
     {
@@ -1221,7 +1283,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-05T18:41:26Z"
+        "checado": "2026-11-06T23:44:07Z"
       },
       "escalado": true
     },
@@ -1298,9 +1360,9 @@
         "data": "2026-11-06"
       },
       "poc": {
-        "qtd": 1,
+        "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-48356.json",
-        "checado": "2026-11-05T18:41:26Z"
+        "checado": "2026-11-06T23:44:07Z"
       }
     },
     {
@@ -1336,7 +1398,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-05T18:41:26Z"
+        "checado": "2026-11-06T23:44:07Z"
       },
       "epss": {
         "score": 0.0035,
@@ -1377,7 +1439,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-05T18:41:26Z"
+        "checado": "2026-11-06T23:44:07Z"
       },
       "epss": {
         "score": 0.0052,
@@ -1403,7 +1465,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-05T03:17:23Z",
       "resumo": "Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath after cleaning it but executes the raw path, whose fragment or query the Kubernetes client discards. A namespace-scoped user who can create a Policy can hide ../ segments behind #…",
-      "nvd_checado_em": "2026-11-06T17:59:50Z",
+      "nvd_checado_em": "2026-11-06T23:44:07Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1582,7 +1644,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-05T18:41:26Z"
+        "checado": "2026-11-06T23:44:07Z"
       },
       "epss": {
         "score": 0.0052,
@@ -1706,7 +1768,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-103039.json",
-        "checado": "2026-11-05T18:41:26Z"
+        "checado": "2026-11-06T23:44:07Z"
       },
       "epss": {
         "score": 0.0051,
@@ -1796,7 +1858,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110720.json",
-        "checado": "2026-11-05T18:41:26Z"
+        "checado": "2026-11-06T23:44:07Z"
       }
     },
     {
@@ -1832,7 +1894,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-05T18:41:26Z"
+        "checado": "2026-11-06T23:44:07Z"
       },
       "epss": {
         "score": 0.0044,
@@ -1873,7 +1935,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-05T18:41:26Z"
+        "checado": "2026-11-06T23:44:07Z"
       },
       "epss": {
         "score": 0.0055,

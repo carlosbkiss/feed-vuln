@@ -55,6 +55,49 @@
     ],
     "prioridade_max": "P2"
   },
+  "CVE-2026-19868": {
+    "cve": "CVE-2026-19868",
+    "produto": "SonicWall SonicOS SSLVPN",
+    "titulo": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+    "cvss": 7.5,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-06",
+      "prazo": "2026-11-20",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-06T00:00:00Z",
+    "primeira_noticia": "2026-11-06T12:00:00Z",
+    "publicado_nvd": "2026-11-06T19:17:48Z",
+    "exibido_em": "2026-11-06T23:44:07Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-19868",
+        "publicado": "2026-11-06"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
+        "publicado": "2026-11-06T12:00:00Z"
+      },
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-19868",
+        "publicado": "2026-11-06T19:17:48Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
   "CVE-2026-58115": {
     "cve": "CVE-2026-58115",
     "produto": "",

@@ -558,7 +558,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 1.0,
-    "poc_qtd": 763,
+    "poc_qtd": 764,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -2439,7 +2439,7 @@
     "aguardando_nota_desde": "2026-10-29T09:05:39Z",
     "nota_chegou_em": "2026-10-29T23:18:51Z",
     "epss_max": 0.6522,
-    "poc_qtd": 8,
+    "poc_qtd": 9,
     "fontes": [
       {
         "nome": "NVD",
