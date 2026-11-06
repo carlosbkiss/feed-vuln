@@ -16,7 +16,7 @@
       "ransomware": "Unknown"
     },
     "primeira_vez": "2024-05-14T15:13:06Z",
-    "primeira_noticia": "2026-11-05T05:17:04Z",
+    "primeira_noticia": "2026-11-04T12:00:00Z",
     "publicado_nvd": "2024-05-14T15:13:06Z",
     "exibido_em": "2026-11-05T00:23:25Z",
     "aguardando_nota_desde": null,
@@ -33,6 +33,11 @@
         "nome": "CISA KEV",
         "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2024-27834",
         "publicado": "2026-11-04"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog",
+        "publicado": "2026-11-04T12:00:00Z"
       },
       {
         "nome": "The Hacker News",

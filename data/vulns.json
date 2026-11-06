@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-05T18:41:26Z",
+  "atualizado": "2026-11-06T00:18:37Z",
   "itens": [
     {
       "cve": "CVE-2026-118527",
@@ -1479,47 +1479,6 @@
       }
     },
     {
-      "cve": "CVE-2022-51026",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2022-51026",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-51026",
-          "publicado": "2026-10-22T19:17:30Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-22T19:17:30Z",
-      "resumo": "Bytebase 0.12.0 before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to log in as any user. The flaw stems from trusting client-supplied GitLab provider configuration in the POST /api/auth/login/GITLAB_SELF_HOST…",
-      "nvd_checado_em": "2026-10-24T18:38:25Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-22T19:17:30Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2022-51026",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-05T18:41:26Z"
-      },
-      "ultima_atividade": "2026-10-22T19:17:30Z",
-      "epss": {
-        "score": 0.0061,
-        "percentil": 0.495,
-        "data": "2026-11-05"
-      }
-    },
-    {
       "cve": "CVE-2026-122310",
       "fontes": [
         {
@@ -1537,7 +1496,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-05T03:17:23Z",
       "resumo": "Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath after cleaning it but executes the raw path, whose fragment or query the Kubernetes client discards. A namespace-scoped user who can create a Policy can hide ../ segments behind #…",
-      "nvd_checado_em": "2026-11-05T18:41:26Z",
+      "nvd_checado_em": "2026-11-06T00:18:37Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2060,6 +2019,14 @@
           "visto_em": "2026-11-05T00:23:25Z"
         },
         {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds One Known Exploited Vulnerability to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog",
+          "publicado": "2026-11-04T12:00:00Z",
+          "visto_em": "2026-11-06T00:18:37Z"
+        },
+        {
           "id": "thn",
           "nome": "The Hacker News",
           "titulo": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
@@ -2089,7 +2056,7 @@
         "KEV"
       ],
       "primeira_vez": "2024-05-14T15:13:06Z",
-      "primeira_noticia": "2026-11-05T05:17:04Z",
+      "primeira_noticia": "2026-11-04T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2024-27834",
       "ultima_atividade": "2026-11-05T05:17:04Z",
       "exibido_em": "2026-11-05T00:23:25Z",
@@ -2204,12 +2171,6 @@
       "titulo": "Fortinet says patch now, details later, but experts warn of hacks before Nov 10 disclosure",
       "link": "https://cybernews.com/security/fortinet-critical-flaws-patches-november-disclosure/",
       "publicado": "2026-10-23T00:33:00Z"
-    },
-    {
-      "fonte": "The Hacker News",
-      "titulo": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
-      "link": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
-      "publicado": "2026-10-22T19:05:17Z"
     }
   ]
 }
