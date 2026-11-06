@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-06T18:38:59Z",
+  "atualizado": "2026-11-06T18:45:22Z",
   "janela": "30/out a 06/nov/2026",
   "itens": [
     {
@@ -102,18 +102,22 @@
     },
     {
       "data": "2026-11-04",
-      "cve": "CVE-2026-97631 / CVE-2026-102703 / CVE-2026-98432",
+      "cve": "CVE-2026-97631 / CVE-2026-102703 / CVE-2026-98432 / CVE-2026-45447",
       "produto": "Citrix XenServer 8.4 e 9, Workload Balancing, Conversion Manager e Scout",
-      "cvss": 9.5,
+      "cvss": 9.8,
       "kev": false,
       "zero_day": false,
       "exploracao": "Não (XenServer sem ataque relatado; Brotli no Scout segue a CVE-2026-111497, já no KEV)",
       "prioridade": "P1",
-      "tratamento": "RCE pré-boot no driver PXE (9.5), fuga de VM para o host (nota a confirmar) e a falha TCP do kernel (9.8). Atualizar hosts pelo canal Early Access ou Normal, Workload Balancing para 2026.1.1 e Conversion Manager para 2026.2.0. Scout: Hotfix 2609.1 ou 2508 CU2 LTSR; Cloud Gateway 2605.1-3.",
+      "tratamento": "RCE pré-boot no driver PXE (9.5), fuga de VM para o host (nota a confirmar), falha TCP do kernel (9.8) e bypass de secure boot ligado ao OpenSSL (9.8). Atualizar hosts pelo canal Early Access ou Normal, Workload Balancing para 2026.1.1 e Conversion Manager para 2026.2.0. Scout: Hotfix 2609.1 ou 2508 CU2 LTSR; Cloud Gateway 2605.1-3.",
       "fontes": [
         {
           "nome": "SecurityOnline",
           "url": "https://securityonline.info/citrix-security-vulnerabilities-xenserver-scout/"
+        },
+        {
+          "nome": "HawkEye (digest semana 45)",
+          "url": "https://hawk-eye.io/2026/11/weekly-threat-landscape-digest-week-45-2/"
         }
       ],
       "status": "Novo"
@@ -187,13 +191,13 @@
       "cvss": 8.8,
       "kev": false,
       "zero_day": true,
-      "exploracao": "Ativa (cerca de 1.000 switches invadidos; a Binarly mostrou que o ataque usa esta falha, não a CVE-2026-7273 antes apontada, e que o patch de junho não barra o exploit)",
+      "exploracao": "Ativa (cerca de 1.000 switches invadidos; o exploit achado pela Binarly passa pelo patch de junho; uso específico desta CVE ainda não confirmado, fora do KEV)",
       "prioridade": "P2",
-      "tratamento": "Execução de comando sem login a partir da rede adjacente, em switch de pequeno porte. Quem aplicou só o patch de junho segue exposto: subir para 2.90 Patch 3, restringir a interface web à VLAN de gestão, trocar senha padrão e tratar switch exposto como possivelmente invadido. Reteste do Patch 3 pela Binarly a confirmar.",
+      "tratamento": "Execução de comando sem login a partir da rede adjacente, em switch de pequeno porte. Quem aplicou só o patch de junho segue exposto: subir para 2.90 Patch 3, que não tem workaround. Restringir a interface web à VLAN de gestão, trocar senha padrão e tratar switch exposto como possivelmente invadido. Binarly dá nota 9.8 e promete PoC em breve; Zyxel não diz se o patch remove acesso já obtido.",
       "fontes": [
         {
-          "nome": "SecurityOnline",
-          "url": "https://securityonline.info/zyxel-gs1900-zero-day-cve-2026-107441/"
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html"
         },
         {
           "nome": "BleepingComputer",
@@ -454,6 +458,46 @@
         {
           "nome": "The Hacker News",
           "url": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-03",
+      "cve": "CVE-2026-114549",
+      "produto": "NoMachine (acesso remoto, serviço nxwebrunner)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não confirmada",
+      "prioridade": "P2",
+      "tratamento": "Heap overflow sem login no serviço web, porta TCP 4443 por padrão. Só pesa se houver NoMachine em estações ou shadow IT: procurar a porta no inventário, subir para 10.1.7, 9.9.6 ou 8.27.1 e bloquear o acesso externo. Registro cita só a 9.7.3; demais versões afetadas a confirmar.",
+      "fontes": [
+        {
+          "nome": "CVE Record (ZDI-26-786)",
+          "url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/114xxx/CVE-2026-114549.json"
+        },
+        {
+          "nome": "Brandefense",
+          "url": "https://brandefense.io/security-news/patches-4-november-2026-ranked-by-risk/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-03",
+      "cve": "CVE-2026-81648",
+      "produto": "CryptoPayment Gateway (plugin WordPress)",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Ativa (tentativas vistas pela Defused Cyber; sem patch)",
+      "prioridade": "P2",
+      "tratamento": "Falta de autorização em endpoint AJAX expõe credenciais de carteiras sem login. Sem correção e fora do diretório de plugins desde 28/08: se aparecer em site de terceiro ou de marketing, remover, rotacionar as chaves das carteiras e auditar alterações.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/attackers-target-unpatched.html"
         }
       ],
       "status": "Novo"
