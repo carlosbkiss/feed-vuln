@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-06T15:02:55Z",
+  "atualizado": "2026-11-06T17:59:50Z",
   "itens": [
     {
       "cve": "CVE-2026-118527",
@@ -1403,7 +1403,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-05T03:17:23Z",
       "resumo": "Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath after cleaning it but executes the raw path, whose fragment or query the Kubernetes client discards. A namespace-scoped user who can create a Policy can hide ../ segments behind #…",
-      "nvd_checado_em": "2026-11-06T15:02:55Z",
+      "nvd_checado_em": "2026-11-06T17:59:50Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1500,7 +1500,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-86596.json",
-        "checado": "2026-11-05T15:02:59Z"
+        "checado": "2026-11-06T17:59:50Z"
       },
       "epss": {
         "score": 0.0149,
@@ -1541,7 +1541,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-05T15:02:59Z"
+        "checado": "2026-11-06T17:59:50Z"
       },
       "epss": {
         "score": 0.0095,
@@ -1712,6 +1712,40 @@
         "score": 0.0051,
         "percentil": 0.436,
         "data": "2026-11-06"
+      }
+    },
+    {
+      "cve": "CVE-2026-115560",
+      "fontes": [
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "OffSec Launches Free PHP2Shell Lab Following Critical Vulnerability Discovery",
+          "link": "https://cybersecuritynews.com/offsec-launches-free-php2shell-lab-following-critical-vulnerability-discovery/",
+          "publicado": "2026-10-28T17:54:27Z",
+          "visto_em": "2026-11-06T17:59:50Z"
+        }
+      ],
+      "detectado": "2026-11-06T17:59:50Z",
+      "zero_day": true,
+      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
+      "nvd_checado_em": "2026-11-06T17:59:50Z",
+      "aguardando_nota_desde": "2026-10-28T17:54:27Z",
+      "elegivel_por": [
+        "zero-day"
+      ],
+      "primeira_vez": "2026-10-28T17:54:27Z",
+      "primeira_noticia": "2026-10-28T17:54:27Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-115560",
+      "ultima_atividade": "2026-10-28T17:54:27Z",
+      "exibido_em": "2026-11-06T17:59:50Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "poc": {
+        "qtd": 11,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-115560.json",
+        "checado": "2026-11-06T17:59:50Z"
       }
     },
     {
@@ -1911,7 +1945,7 @@
       "poc": {
         "qtd": 16,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-46300.json",
-        "checado": "2026-11-05T15:02:59Z"
+        "checado": "2026-11-06T17:59:50Z"
       }
     },
     {
@@ -1991,6 +2025,12 @@
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "The Hacker News",
+      "titulo": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
+      "link": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
+      "publicado": "2026-11-06T16:08:38Z"
+    },
     {
       "fonte": "The Hacker News",
       "titulo": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",

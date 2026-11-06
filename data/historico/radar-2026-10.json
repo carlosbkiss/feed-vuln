@@ -1263,26 +1263,21 @@
     "produto": "",
     "titulo": "",
     "cvss": null,
-    "prioridade": "P1",
+    "prioridade": "P2",
     "elegivel_por": [
       "zero-day"
     ],
     "zero_day": true,
     "kev": null,
-    "primeira_vez": "2026-10-23T11:25:43Z",
-    "primeira_noticia": "2026-10-23T11:25:43Z",
+    "primeira_vez": "2026-10-28T17:54:27Z",
+    "primeira_noticia": "2026-10-28T17:54:27Z",
     "publicado_nvd": null,
-    "exibido_em": "2026-10-28T18:39:56Z",
-    "aguardando_nota_desde": "2026-10-23T11:25:43Z",
+    "exibido_em": "2026-11-06T17:59:50Z",
+    "aguardando_nota_desde": "2026-10-28T17:54:27Z",
     "nota_chegou_em": null,
     "epss_max": null,
     "poc_qtd": 11,
     "fontes": [
-      {
-        "nome": "The Hacker News",
-        "link": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
-        "publicado": "2026-10-23T11:25:43Z"
-      },
       {
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/offsec-launches-free-php2shell-lab-following-critical-vulnerability-discovery/",
