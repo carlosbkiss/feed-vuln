@@ -1416,6 +1416,11 @@
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
         "publicado": "2026-11-04T05:43:11Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/240000-wordpress-exploit-attempts/",
+        "publicado": "2026-11-06T14:15:17Z"
       }
     ],
     "prioridade_max": "P2"

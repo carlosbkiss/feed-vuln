@@ -1,0 +1,186 @@
+{
+  "periodo": "31 de outubro a 06 de novembro de 2026",
+  "atualizado": "2026-11-06T15:02:28Z",
+  "kpis": [
+    {
+      "n": "2",
+      "l": "CVEs incluídas no CISA KEV",
+      "destaque": false
+    },
+    {
+      "n": "1",
+      "l": "zero-day relevante para banco",
+      "destaque": true
+    },
+    {
+      "n": "20",
+      "l": "CVEs novas com CVSS ≥ 9.0 relevantes",
+      "destaque": false
+    },
+    {
+      "n": "5",
+      "l": "frentes P0 para 24h",
+      "destaque": true
+    }
+  ],
+  "tese": "Com só 2 entradas no KEV, o perigo da semana não foi falha nova: foi correção incompleta ou parada em VPN, CI/CD e acesso remoto, onde o patch já existia e o ataque continuou.",
+  "historia": [
+    "No fim de semana, 31/out e 1º/nov, a Shadowserver contou mais de mil GitLab sem a correção da falha nota 10 já no KEV, e o módulo Metasploit da BeyondTrust, público desde 30/out, encurtou a janela no suporte remoto usado por TI e terceiros.",
+    "Na segunda, 02/nov, a Barracuda corrigiu cadeia até root no gateway de e-mail, que a Mandiant diz dispensar login, a Akamai detalhou a falha 9.8 na pilha TCP do Linux e venceu o prazo da CISA para a CVE-2026-111357 da Ivanti, que entrou no KEV em 30/out, depois do fechamento do resumo anterior.",
+    "Na terça, 03/nov, o WordPress entrou no KEV com prazo de três dias e mais de 13 mil ataques bloqueados em 24h pela Wordfence, e veio a público que honeypots viam ataques desde 30/out à falha do Node-RED divulgada em agosto, prova de que correção antiga segue como alvo.",
+    "Na quarta, 04/nov, a SonicWall deixou o GMS sem patch por fim de vida, o SMA1000 nota 10 somou 2.541 tentativas desde 09/out, fora do KEV, a Zyxel corrigiu zero-day em switches cujo patch de junho não barrava o exploit e uma falha Apple de 2024 entrou no KEV ligada a campanha do APT29.",
+    "Canais de cliente (app, internet banking, PIX) não tiveram falha direta; o risco chega por tabela, via VPN e gateways de terceiros, pipelines que publicam o app e celulares corporativos, e o radar teve notícia antes da nota em 6 CVEs, com mediana de 17h, e antes do KEV em 100% dos casos dos últimos 7 dias.",
+    "Fontes da semana: Fortinet PSIRT, Cisco PSIRT e The Hacker News saíram antes de todos em 4 vulnerabilidades (2, 1 e 1); Cyber Security News e CISA Advisories trouxeram 2 exclusivas cada; SecurityWeek só repetiu, BleepingComputer, Microsoft e Palo Alto repetiram até 1º/nov e sumiram do radar, e Dark Reading, Cybernews e Chrome não tiveram nada no radar."
+  ],
+  "p0": [
+    {
+      "titulo": "SonicWall SMA1000",
+      "cve": "CVE-2026-102255",
+      "cvss": "10.0",
+      "tags": [
+        "SSRF sem login",
+        "Fora do KEV",
+        "Sem workaround"
+      ],
+      "onde": "Gateway de acesso remoto de funcionários e terceiros.",
+      "impacto": "Porta de entrada na borda sem credencial; falhas anteriores da linha já serviram a ransomware.",
+      "acao": "Subir para 12.4.3-03670 ou 12.5.0-03082 ou superior, conferindo no SNWLID-2026-0017; migrar o GMS, que não terá patch."
+    },
+    {
+      "titulo": "Ivanti Connect Secure",
+      "cve": "CVE-2026-104935 · -111357 · -118527",
+      "cvss": "8.6",
+      "tags": [
+        "Zero-day",
+        "KEV 30/out",
+        "Prazo 13/nov"
+      ],
+      "onde": "VPN de funcionários, terceiros e acesso administrativo remoto.",
+      "impacto": "Root sem login e roubo de senhas LAPS e chaves BitLocker via AD; o Integrity Checker não detecta.",
+      "acao": "Subir para 25.1.1.3 (ou 25.1.3.1), guardar memória e logs antes de reiniciar e trocar credenciais se houver suspeita."
+    },
+    {
+      "titulo": "GitLab self-managed",
+      "cve": "CVE-2026-97229 · -110264",
+      "cvss": "10.0",
+      "tags": [
+        "KEV 29/out",
+        "RCE",
+        "Patch parcial"
+      ],
+      "onde": "Repositórios dos apps e pipelines de CI/CD com segredos de produção.",
+      "impacto": "Código malicioso no app do cliente e roubo de tokens de deploy; a CVE-2026-110264 tem mais de 11 mil expostos.",
+      "acao": "Ir para 19.5.1, 19.4.3 ou 19.3.6: 19.4.2, 19.3.5 e 19.2.8 deixam a -110264 aberta. Rotacionar segredos de CI/CD."
+    },
+    {
+      "titulo": "BeyondTrust Remote Support",
+      "cve": "CVE-2026-102764",
+      "cvss": "9.3",
+      "tags": [
+        "KEV 16/out",
+        "Exploit público",
+        "Acesso privilegiado"
+      ],
+      "onde": "Suporte remoto self-hosted usado por TI e terceiros em estações e servidores.",
+      "impacto": "Upload sem login até RCE na ferramenta que já alcança máquinas internas; explorada desde agosto.",
+      "acao": "Aplicar BT26-05-RS (24.3.1 a 26.2.3) e revisar POST /api/start_session e PHP inesperado no diretório público."
+    }
+  ],
+  "plano": [
+    {
+      "h": "24h",
+      "t": "Agora",
+      "itens": [
+        "SonicWall SMA1000: subir de build e caçar acesso anômalo",
+        "Ivanti: 25.1.1.3 e caça por memória e rede",
+        "GitLab: ir à versão que fecha as duas CVEs e rotacionar tokens",
+        "BeyondTrust: BT26-05-RS e revisão de logs de sessão",
+        "Kernel Linux TCP (CVE-2026-98432): corrigir e reiniciar hosts expostos"
+      ]
+    },
+    {
+      "h": "7 dias",
+      "t": "Esta semana",
+      "itens": [
+        "Pendências ainda exploradas: ASA/FTD, SD-WAN Cisco, PHP2Shell, Fragnesia e Oracle EBS",
+        "Barracuda ESG, Puppet, Foglight, Dell PowerStore e HPE AFC: corrigir e isolar a gestão",
+        "WordPress 7.1.4, com prazo CISA em 06/nov, e Zyxel 2.90 Patch 3",
+        "Apple e Android: versão mínima via MDM, com prazo CISA em 18/nov para a Apple",
+        "Brotli: cruzar os 19 produtos Cisco e o Splunk com o inventário"
+      ]
+    },
+    {
+      "h": "30 dias",
+      "t": "Estrutural",
+      "itens": [
+        "SLA de patch que exija teste de eficácia: instalar não prova que fechou",
+        "Inventário de gateways, ferramentas de suporte remoto e produtos em fim de vida, com dono",
+        "Shadow IT: mapear Node-RED, GPUStack, BTCPay e switches de pequeno porte",
+        "Fontes: rever Dark Reading, Cybernews e Chrome, sem retorno a semana toda, e por que SonicWall e Zyxel só vieram pela triagem",
+        "Se a caça achar intrusão em VPN ou CI/CD: fluxo de incidente relevante (Res. CMN 4.893/2021)"
+      ]
+    }
+  ],
+  "fontes": [
+    [
+      "CISA: catálogo KEV (dados oficiais)",
+      "https://raw.githubusercontent.com/cisagov/kev-data/main/known_exploited_vulnerabilities.json"
+    ],
+    [
+      "Rescana: SMA1000 CVE-2026-102255",
+      "https://www.rescana.com/post/sonicwall-sma1000-cve-2026-102255-preauth-ssrf"
+    ],
+    [
+      "Security Affairs: ataques ao SMA1000",
+      "https://securityaffairs.com/200816/hacking/sonicwall-patches-cvss-10-0-ssrf-flaw-as-attacks-begin.html"
+    ],
+    [
+      "The Hacker News: GMS sem patch",
+      "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html"
+    ],
+    [
+      "OpenCVE: GMS CVE-2026-109593",
+      "https://app.opencve.io/cve/CVE-2026-109593"
+    ],
+    [
+      "Help Net Security: Ivanti e prazos da CISA",
+      "https://www.helpnetsecurity.com/?p=390015"
+    ],
+    [
+      "BleepingComputer: novos zero-days Ivanti",
+      "https://bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks"
+    ],
+    [
+      "Techzine: GitLab sem correção (Shadowserver)",
+      "https://techzine.eu/news/security/145456/thousands-of-gitlab-servers-still-unpatched-against-critical-vulnerabilities"
+    ],
+    [
+      "SecurityOnline: Metasploit para BeyondTrust",
+      "https://securityonline.info/beyondtrust-remote-support-cve-2026-102764-metasploit/"
+    ],
+    [
+      "Akamai: falha na pilha TCP do Linux",
+      "https://www.akamai.com/blog/security-research/cve-2026-98432-remote-uaf-linux-kernels-tcp-stack"
+    ],
+    [
+      "Rescana: Barracuda ESG até root",
+      "https://www.rescana.com/post/barracuda-esg-cve-2026-116606-111560-root-prepare-now"
+    ],
+    [
+      "BleepingComputer: WordPress no KEV",
+      "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/"
+    ],
+    [
+      "Help Net Security: Node-RED sob ataque",
+      "https://www.helpnetsecurity.com/?p=390123"
+    ],
+    [
+      "Feedly: Zyxel CVE-2026-107441",
+      "https://feedly.com/cve/CVE-2026-107441"
+    ],
+    [
+      "BleepingComputer: zero-day Zyxel",
+      "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/"
+    ]
+  ]
+}
