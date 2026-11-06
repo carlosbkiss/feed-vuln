@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-06T00:18:37Z",
+  "atualizado": "2026-11-06T10:50:33Z",
   "itens": [
     {
       "cve": "CVE-2026-118527",
@@ -1406,7 +1406,7 @@
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
-      "nvd_checado_em": "2026-11-05T18:41:26Z",
+      "nvd_checado_em": "2026-11-06T10:50:33Z",
       "elegivel_por": [
         "zero-day"
       ],
@@ -1428,57 +1428,6 @@
       }
     },
     {
-      "cve": "CVE-2026-115547",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-115547",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-115547",
-          "publicado": "2026-10-23T04:18:16Z",
-          "visto_em": "2026-10-24T18:38:25Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Critical Okta Access Gateway Flaw Lets Attackers With Admin Access Execute System Commands",
-          "link": "https://cybersecuritynews.com/okta-access-gateway-flaw/",
-          "publicado": "2026-10-23T15:19:23Z",
-          "visto_em": "2026-10-23T15:45:37Z"
-        }
-      ],
-      "detectado": "2026-10-23T15:45:37Z",
-      "aguardando_nota_desde": "2026-10-23T15:19:23Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-23T04:18:16Z",
-      "primeira_noticia": "2026-10-23T15:19:23Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-115547",
-      "ultima_atividade": "2026-10-23T15:19:23Z",
-      "cvss": 9.1,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-23T04:18:16Z",
-      "resumo": "An input validation issue in the Okta Access Gateway (OAG) Admin Console allows the processing of specially formatted configuration values. An authenticated administrator can leverage this to execute system commands within the context of the OAG service…",
-      "nvd_checado_em": "2026-10-24T18:38:25Z",
-      "nota_chegou_em": "2026-10-24T18:38:25Z",
-      "exibido_em": "2026-10-24T18:38:25Z",
-      "prioridade": "P1",
-      "regra": "CVSS ≥ 9 em borda/acesso",
-      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
-      "epss": {
-        "score": 0.0054,
-        "percentil": 0.4532,
-        "data": "2026-11-05"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-05T18:41:26Z"
-      }
-    },
-    {
       "cve": "CVE-2026-122310",
       "fontes": [
         {
@@ -1496,7 +1445,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-05T03:17:23Z",
       "resumo": "Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath after cleaning it but executes the raw path, whose fragment or query the Kubernetes client discards. A namespace-scoped user who can create a Policy can hide ../ segments behind #…",
-      "nvd_checado_em": "2026-11-06T00:18:37Z",
+      "nvd_checado_em": "2026-11-06T10:50:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1511,7 +1460,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-05T10:41:26Z"
+        "checado": "2026-11-06T10:50:33Z"
       },
       "epss": {
         "score": 0.0036,
@@ -1552,7 +1501,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-05T00:23:25Z"
+        "checado": "2026-11-06T10:50:33Z"
       },
       "epss": {
         "score": 0.0044,
@@ -1753,9 +1702,9 @@
         "data": "2026-11-05"
       },
       "poc": {
-        "qtd": 3,
+        "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-119977.json",
-        "checado": "2026-11-05T00:23:25Z"
+        "checado": "2026-11-06T10:50:33Z"
       }
     },
     {
@@ -2071,7 +2020,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-05T00:23:25Z"
+        "checado": "2026-11-06T10:50:33Z"
       }
     }
   ],
@@ -2165,12 +2114,6 @@
       "titulo": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks",
       "link": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/",
       "publicado": "2026-10-27T08:20:54Z"
-    },
-    {
-      "fonte": "Cybernews",
-      "titulo": "Fortinet says patch now, details later, but experts warn of hacks before Nov 10 disclosure",
-      "link": "https://cybernews.com/security/fortinet-critical-flaws-patches-november-disclosure/",
-      "publicado": "2026-10-23T00:33:00Z"
     }
   ]
 }
