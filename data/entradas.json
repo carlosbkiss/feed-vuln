@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-07T10:38:25Z",
+  "atualizado": "2026-11-07T14:59:12Z",
   "janela": "31/out a 07/nov/2026",
   "itens": [
     {
@@ -24,6 +24,24 @@
         {
           "nome": "CISA KEV",
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-19868"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-06",
+      "cve": "CVE-2026-96652 / CVE-2026-96654 / CVE-2026-96655 / CVE-2026-96656",
+      "produto": "Plex Media Server em NAS QNAP (cadeia Plex2Shell)",
+      "cvss": null,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV desde 20/10; QNAP confirma NAS invadidos em 06/11)",
+      "prioridade": "P2",
+      "tratamento": "Uso típico de shadow IT. Procurar NAS com Plex exposto na porta 32400 e atualizar para 1.43.3.10861 ou superior; se esteve exposto, tratar como comprometido, reinstalar o sistema e trocar senhas. Nota CVSS a confirmar.",
+      "fontes": [
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/"
         }
       ],
       "status": "Novo"
