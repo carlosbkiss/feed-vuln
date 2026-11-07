@@ -77,7 +77,7 @@
     "exibido_em": "2026-11-06T23:44:07Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0062,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -99,6 +99,11 @@
         "nome": "SecurityWeek",
         "link": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/",
         "publicado": "2026-11-07T10:16:23Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/sonicos-sslvpn-vulnerability-exploited/",
+        "publicado": "2026-11-07T12:59:02Z"
       }
     ],
     "prioridade_max": "P0"
