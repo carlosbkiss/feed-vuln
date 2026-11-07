@@ -1329,6 +1329,49 @@
     ],
     "prioridade_max": "P2"
   },
+  "CVE-2026-118310": {
+    "cve": "CVE-2026-118310",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.6,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-10-27T20:29:34Z",
+    "primeira_noticia": "2026-10-27T20:29:34Z",
+    "publicado_nvd": "2026-10-27T23:16:59Z",
+    "exibido_em": "2026-11-07T20:54:35Z",
+    "aguardando_nota_desde": "2026-10-27T20:29:34Z",
+    "nota_chegou_em": "2026-11-07T20:54:35Z",
+    "epss_max": 0.0031,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "Chrome Releases",
+        "link": "http://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_0562499947.html",
+        "publicado": "2026-10-27T20:29:34Z"
+      },
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-118310",
+        "publicado": "2026-10-27T23:16:59Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/google-fixes-52-chrome-security-flaws/",
+        "publicado": "2026-10-28T13:46:52Z"
+      },
+      {
+        "nome": "Microsoft Security Update Guide",
+        "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118310",
+        "publicado": "2026-10-31T14:00:00Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
   "CVE-2026-118527": {
     "cve": "CVE-2026-118527",
     "produto": "Ivanti Connect Secure",

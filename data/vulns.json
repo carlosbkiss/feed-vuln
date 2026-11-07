@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-07T10:38:44Z",
+  "atualizado": "2026-11-07T20:54:35Z",
   "itens": [
     {
       "cve": "CVE-2026-19868",
@@ -35,6 +35,14 @@
           "link": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/",
           "publicado": "2026-11-07T10:16:23Z",
           "visto_em": "2026-11-07T10:38:44Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "SonicWall Warns of Potential In-the-Wild Exploitation of SSLVPN Flaw That Bypasses MFA",
+          "link": "https://cybersecuritynews.com/sonicos-sslvpn-vulnerability-exploited/",
+          "publicado": "2026-11-07T12:59:02Z",
+          "visto_em": "2026-11-07T20:54:35Z"
         }
       ],
       "detectado": "2026-11-06T23:44:07Z",
@@ -60,7 +68,7 @@
       "primeira_vez": "2026-11-06T00:00:00Z",
       "primeira_noticia": "2026-11-06T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-19868",
-      "ultima_atividade": "2026-11-07T10:16:23Z",
+      "ultima_atividade": "2026-11-07T12:59:02Z",
       "exibido_em": "2026-11-06T23:44:07Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -69,6 +77,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-06T23:44:07Z"
+      },
+      "epss": {
+        "score": 0.0062,
+        "percentil": 0.5003,
+        "data": "2026-11-07"
       }
     },
     {
@@ -152,8 +165,8 @@
       "nota_chegou_em": "2026-11-03T18:28:03Z",
       "epss": {
         "score": 0.0082,
-        "percentil": 0.5749,
-        "data": "2026-11-06"
+        "percentil": 0.5755,
+        "data": "2026-11-07"
       }
     },
     {
@@ -225,8 +238,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0082,
-        "percentil": 0.5746,
-        "data": "2026-11-06"
+        "percentil": 0.5752,
+        "data": "2026-11-07"
       },
       "poc": {
         "qtd": 0,
@@ -428,7 +441,7 @@
       "epss": {
         "score": 0.8264,
         "percentil": 0.9967,
-        "data": "2026-11-06"
+        "data": "2026-11-07"
       },
       "poc": {
         "qtd": 88,
@@ -648,7 +661,7 @@
       "epss": {
         "score": 1.0,
         "percentil": 1.0,
-        "data": "2026-11-06"
+        "data": "2026-11-07"
       },
       "poc": {
         "qtd": 764,
@@ -862,7 +875,7 @@
       "epss": {
         "score": 1.0,
         "percentil": 1.0,
-        "data": "2026-11-06"
+        "data": "2026-11-07"
       },
       "poc": {
         "qtd": 26,
@@ -962,8 +975,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0053,
-        "percentil": 0.4519,
-        "data": "2026-11-06"
+        "percentil": 0.4525,
+        "data": "2026-11-07"
       },
       "poc": {
         "qtd": 0,
@@ -1065,7 +1078,7 @@
       "epss": {
         "score": 0.6522,
         "percentil": 0.9926,
-        "data": "2026-11-06"
+        "data": "2026-11-07"
       },
       "poc": {
         "qtd": 9,
@@ -1155,8 +1168,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0069,
-        "percentil": 0.5291,
-        "data": "2026-11-06"
+        "percentil": 0.5298,
+        "data": "2026-11-07"
       },
       "poc": {
         "qtd": 0,
@@ -1235,7 +1248,7 @@
       "epss": {
         "score": 0.4747,
         "percentil": 0.9885,
-        "data": "2026-11-06"
+        "data": "2026-11-07"
       },
       "poc": {
         "qtd": 3,
@@ -1280,8 +1293,8 @@
       },
       "epss": {
         "score": 0.0035,
-        "percentil": 0.2847,
-        "data": "2026-11-06"
+        "percentil": 0.2851,
+        "data": "2026-11-07"
       }
     },
     {
@@ -1321,8 +1334,8 @@
       },
       "epss": {
         "score": 0.0052,
-        "percentil": 0.441,
-        "data": "2026-11-06"
+        "percentil": 0.4415,
+        "data": "2026-11-07"
       }
     },
     {
@@ -1343,7 +1356,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-05T03:17:23Z",
       "resumo": "Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath after cleaning it but executes the raw path, whose fragment or query the Kubernetes client discards. A namespace-scoped user who can create a Policy can hide ../ segments behind #…",
-      "nvd_checado_em": "2026-11-07T10:38:44Z",
+      "nvd_checado_em": "2026-11-07T20:54:35Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1358,12 +1371,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-06T10:50:33Z"
+        "checado": "2026-11-07T20:54:35Z"
       },
       "epss": {
         "score": 0.0036,
-        "percentil": 0.2957,
-        "data": "2026-11-06"
+        "percentil": 0.2961,
+        "data": "2026-11-07"
       }
     },
     {
@@ -1399,12 +1412,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-06T10:50:33Z"
+        "checado": "2026-11-07T20:54:35Z"
       },
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3866,
-        "data": "2026-11-06"
+        "percentil": 0.3872,
+        "data": "2026-11-07"
       }
     },
     {
@@ -1440,12 +1453,12 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-86596.json",
-        "checado": "2026-11-06T17:59:50Z"
+        "checado": "2026-11-07T20:54:35Z"
       },
       "epss": {
         "score": 0.0149,
-        "percentil": 0.7416,
-        "data": "2026-11-06"
+        "percentil": 0.742,
+        "data": "2026-11-07"
       }
     },
     {
@@ -1481,12 +1494,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-06T17:59:50Z"
+        "checado": "2026-11-07T20:54:35Z"
       },
       "epss": {
         "score": 0.0095,
-        "percentil": 0.6147,
-        "data": "2026-11-06"
+        "percentil": 0.6153,
+        "data": "2026-11-07"
       }
     },
     {
@@ -1526,8 +1539,8 @@
       },
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4437,
-        "data": "2026-11-06"
+        "percentil": 0.4443,
+        "data": "2026-11-07"
       }
     },
     {
@@ -1604,13 +1617,13 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0116,
-        "percentil": 0.6721,
-        "data": "2026-11-06"
+        "percentil": 0.6726,
+        "data": "2026-11-07"
       },
       "poc": {
-        "qtd": 4,
+        "qtd": 6,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-119977.json",
-        "checado": "2026-11-06T10:50:33Z"
+        "checado": "2026-11-07T20:54:35Z"
       }
     },
     {
@@ -1650,8 +1663,8 @@
       },
       "epss": {
         "score": 0.0051,
-        "percentil": 0.436,
-        "data": "2026-11-06"
+        "percentil": 0.4365,
+        "data": "2026-11-07"
       }
     },
     {
@@ -1669,7 +1682,7 @@
       "detectado": "2026-11-06T17:59:50Z",
       "zero_day": true,
       "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
-      "nvd_checado_em": "2026-11-07T10:38:44Z",
+      "nvd_checado_em": "2026-11-07T20:54:35Z",
       "aguardando_nota_desde": "2026-10-28T17:54:27Z",
       "elegivel_por": [
         "zero-day"
@@ -1685,7 +1698,74 @@
       "poc": {
         "qtd": 11,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-115560.json",
-        "checado": "2026-11-06T17:59:50Z"
+        "checado": "2026-11-07T20:54:35Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-118310",
+      "fontes": [
+        {
+          "id": "chrome",
+          "nome": "Chrome Releases",
+          "titulo": "Stable Channel Update for Desktop",
+          "link": "http://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_0562499947.html",
+          "publicado": "2026-10-27T20:29:34Z",
+          "visto_em": "2026-10-28T02:18:05Z"
+        },
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-118310",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-118310",
+          "publicado": "2026-10-27T23:16:59Z",
+          "visto_em": "2026-11-07T20:54:35Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Google Fixes 52 Chrome Security Flaws, Including Four Critical Vulnerabilities",
+          "link": "https://cybersecuritynews.com/google-fixes-52-chrome-security-flaws/",
+          "publicado": "2026-10-28T13:46:52Z",
+          "visto_em": "2026-10-28T17:11:10Z"
+        },
+        {
+          "id": "msrc",
+          "nome": "Microsoft Security Update Guide",
+          "titulo": "Chromium: CVE-2026-118310 Improper input validation in Views",
+          "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118310",
+          "publicado": "2026-10-31T14:00:00Z",
+          "visto_em": "2026-10-31T18:49:57Z"
+        }
+      ],
+      "detectado": "2026-10-28T02:18:05Z",
+      "aguardando_nota_desde": "2026-10-27T20:29:34Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-10-27T20:29:34Z",
+      "primeira_noticia": "2026-10-27T20:29:34Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-118310",
+      "ultima_atividade": "2026-10-31T14:00:00Z",
+      "cvss": 9.6,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-27T23:16:59Z",
+      "resumo": "Use after free in Views in Google Chrome on on Windows prior to 156.0.8078.73 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "nvd_checado_em": "2026-11-07T20:54:35Z",
+      "nota_chegou_em": "2026-11-07T20:54:35Z",
+      "exibido_em": "2026-11-07T20:54:35Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "epss": {
+        "score": 0.0031,
+        "percentil": 0.2369,
+        "data": "2026-11-07"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-07T20:54:35Z"
       }
     },
     {
@@ -1730,8 +1810,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0037,
-        "percentil": 0.3045,
-        "data": "2026-11-06"
+        "percentil": 0.3049,
+        "data": "2026-11-07"
       },
       "poc": {
         "qtd": 1,
@@ -1776,8 +1856,8 @@
       },
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3885,
-        "data": "2026-11-06"
+        "percentil": 0.3891,
+        "data": "2026-11-07"
       }
     },
     {
@@ -1838,13 +1918,13 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.1613,
-        "percentil": 0.9694,
-        "data": "2026-11-06"
+        "percentil": 0.9695,
+        "data": "2026-11-07"
       },
       "poc": {
         "qtd": 16,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-46300.json",
-        "checado": "2026-11-06T17:59:50Z"
+        "checado": "2026-11-07T20:54:35Z"
       }
     },
     {
@@ -1913,13 +1993,13 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.015,
-        "percentil": 0.7441,
-        "data": "2026-11-06"
+        "percentil": 0.7446,
+        "data": "2026-11-07"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-06T10:50:33Z"
+        "checado": "2026-11-07T20:54:35Z"
       }
     }
   ],
