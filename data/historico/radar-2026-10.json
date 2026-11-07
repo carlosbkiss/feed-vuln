@@ -664,6 +664,11 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/hacktober-cyberattack-wave/",
         "publicado": "2026-11-01T05:24:22Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/insignary-releases-free-insignary-chk-tool-to-detect-php2shell-and-node2shell-exposure/",
+        "publicado": "2026-11-07T02:06:17Z"
       }
     ],
     "prioridade_max": "P0"
@@ -793,6 +798,11 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/hacktober-cyberattack-wave/",
         "publicado": "2026-11-01T05:24:22Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/insignary-releases-free-insignary-chk-tool-to-detect-php2shell-and-node2shell-exposure/",
+        "publicado": "2026-11-07T02:06:17Z"
       }
     ],
     "prioridade_max": "P0"
@@ -1144,6 +1154,11 @@
         "nome": "Cisco PSIRT",
         "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20Node.js%20and%20Brotli%20Affecting%20Cisco%20Products:%20October%202026%26vs_k=1",
         "publicado": "2026-11-04T18:52:10Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/insignary-releases-free-insignary-chk-tool-to-detect-php2shell-and-node2shell-exposure/",
+        "publicado": "2026-11-07T02:06:17Z"
       }
     ],
     "prioridade_max": "P0"
