@@ -1,7 +1,33 @@
 {
-  "atualizado": "2026-11-06T18:45:22Z",
-  "janela": "30/out a 06/nov/2026",
+  "atualizado": "2026-11-07T10:38:25Z",
+  "janela": "31/out a 07/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-06",
+      "cve": "CVE-2026-19868",
+      "produto": "SonicWall SonicOS SSLVPN Gen7 e Gen8 (login SAML)",
+      "cvss": 7.5,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (KEV em 06/11, prazo CISA 20/11; SonicWall apura relato de exploração)",
+      "prioridade": "P0",
+      "tratamento": "Conta com outro método de login entra na VPN sem passar pelo SAML e pelo MFA. Subir Gen7 para 7.3.4-7013 e Gen8 para 8.2.3-8015; até lá, desativar contas SSLVPN com login fora do SAML, restringir origem e revisar logins não-SAML nos logs.",
+      "fontes": [
+        {
+          "nome": "Ostorlab",
+          "url": "https://blog.ostorlab.co/sonicwall-sslvpn-saml-bypass-cve-2026-19868.html"
+        },
+        {
+          "nome": "Security Affairs",
+          "url": "https://securityaffairs.com/202581/security/u-s-cisa-adds-sonicwall-sonicos-sslvpn-flaw-to-its-known-exploited-vulnerabilities-catalog.html"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-19868"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-11-05",
       "cve": "CVE-2026-102895 / CVE-2026-102894",
@@ -399,9 +425,9 @@
       "cvss": 8.1,
       "kev": true,
       "zero_day": false,
-      "exploracao": "Ativa (KEV em 03/11, prazo CISA 06/11; Wordfence bloqueou 13.095 ataques em 24h)",
+      "exploracao": "Ativa (KEV em 03/11; milhares de tentativas por dia contra a janela de atualização, sem invasão confirmada)",
       "prioridade": "P1",
-      "tratamento": "RCE sem login por corrida em wp-content/upgrade durante atualização do core; ataque complexo, mas agora confirmado pela CISA. Subir para 7.1.4 ou backport do ramo (6.9.11, 6.8.12, 4.7.39 etc.), inclusive em sites de agências, e bloquear acesso web a wp-content/upgrade. Procurar admins, plugins ou PHP desconhecidos; sem vítima pública confirmada até aqui.",
+      "tratamento": "Subir para 7.1.4 ou a versão corrigida do ramo (até 4.7.39). Antes de atualizar, bloquear no servidor web o acesso a wp-content/upgrade/, porque a própria atualização ainda roda o código antigo; depois, procurar PHP estranho nessa pasta e admins novos.",
       "fontes": [
         {
           "nome": "BleepingComputer",
@@ -412,8 +438,8 @@
           "url": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html"
         },
         {
-          "nome": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-119977"
+          "nome": "Rescana",
+          "url": "https://www.rescana.com/post/wordpress-core-7-1-4-upgrade-staging-race-rce"
         }
       ],
       "status": "Novo"
@@ -668,72 +694,6 @@
     },
     {
       "data": "2026-10-30",
-      "cve": "CVE-2026-114820 / CVE-2026-91403",
-      "produto": "Java SE, OpenJDK, GraalVM e Oracle Database (CAs eMudhra comprometidas)",
-      "cvss": 9.1,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P1",
-      "tratamento": "Chaves de CAs da eMudhra vazaram e o Java ainda confia nelas, o que abre MITM em TLS; o Oracle ampliou o alerta em 30/10 para Oracle Database 19, 21 e 23, OPatch e AHF. O patch de 21/10 só bloqueia intermediárias: aplicar também o de 24/10, que remove as raízes (OpenJDK 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3 e 27.0.1.0.3; Oracle via CPU427 e CPU359), incluindo cacerts de imagens, appliances e mTLS. Builds de 8 e 11 a confirmar.",
-      "fontes": [
-        {
-          "nome": "Oracle Security Alert",
-          "url": "https://www.oracle.com/security-alerts/alert-cve-2026-114820.html"
-        },
-        {
-          "nome": "Debian Security Tracker",
-          "url": "https://security-tracker.debian.org/tracker/CVE-2026-114820"
-        },
-        {
-          "nome": "CSO Online",
-          "url": "https://www.csoonline.com/article/4239634/emudhra-quits-global-tls-certificate-market-after-compromise-of-ca-signing-keys-2.html"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-30",
-      "cve": "CVE-2026-118697 / CVE-2026-118696",
-      "produto": "JetBrains IDEs, Toolbox e Gateway (CAs eMudhra comprometidas)",
-      "cvss": 9.0,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P2",
-      "tratamento": "Daemon jetbrainsd e navegador embutido ainda confiavam nas intermediárias eMudhra vazadas, abrindo MITM no tráfego de dev. Atualizar Toolbox para 3.9.1/3.8.2 e IDEs para 2026.2.4, 2026.1.5.1 ou 2025.3.6.2; aproveitar para conferir se JDKs de build e CI já têm o alerta Java CVE-2026-91403.",
-      "fontes": [
-        {
-          "nome": "SecurityOnline",
-          "url": "https://securityonline.info/jetbrains-ide-vulnerabilities-emudhra-certificates-patched/"
-        },
-        {
-          "nome": "BestHub (alerta Java CVE-2026-91403)",
-          "url": "https://www.besthub.dev/articles/java-cve-2026-91403-emudhra-ca-private-key-leak-breaks-https-trust-upgrade-mitigation-guide-3977da20e9ba"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-30",
-      "cve": "CVE-2026-116366",
-      "produto": "ClickHouse Server (self-managed)",
-      "cvss": 9.5,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P2",
-      "tratamento": "RCE sem login em condições não detalhadas pelo fabricante (complexidade alta). Se houver ClickHouse em times de dados, subir para 26.10.3.7, 26.9.27.3, 26.8.36.3 ou 26.3.62.3 e não expor a porta do servidor fora da rede de analytics; branches sem suporte não têm correção.",
-      "fontes": [
-        {
-          "nome": "Brandefense",
-          "url": "https://brandefense.io/knowledge-hub/vulnerabilities/cve-2026-116366/"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-30",
       "cve": "CVE-2026-102764",
       "produto": "BeyondTrust Remote Support (self-hosted)",
       "cvss": 9.3,
@@ -752,47 +712,7 @@
           "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html"
         }
       ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-30",
-      "cve": "CVE-2026-78403",
-      "produto": "Thales Sentinel Keys Server (Windows, licenças)",
-      "cvss": 9.8,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P2",
-      "tratamento": "RCE como SYSTEM sem login via requisição HTTP com campo longo. Subir para 1.3.8.0 ou superior (KB0031216 da Thales) e restringir o acesso de rede ao servidor; inventariar onde ele existe.",
-      "fontes": [
-        {
-          "nome": "Registro CVE",
-          "url": "https://raw.githubusercontent.com/CVEProject/cvelistV5/main/cves/2026/78xxx/CVE-2026-78403.json"
-        },
-        {
-          "nome": "CVE Brief 31/10",
-          "url": "https://cvebrief.com/archive/2026/10/31/"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-10-30",
-      "cve": "CVE-2025-49602",
-      "produto": "Keyfactor EJBCA 9 (PKI)",
-      "cvss": 9.8,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P2",
-      "tratamento": "Admin removido do papel segue com acesso enquanto a sessão TLS válida mantiver a autenticação em cache além do limite. Depende de ex-admin com sessão ativa, então a nota 9.8 pesa mais que o risco real. Versão corrigida a confirmar no advisory da Keyfactor; até lá, derrubar sessões ao revogar admin.",
-      "fontes": [
-        {
-          "nome": "SecurityOnline",
-          "url": "https://securityonline.info/cve-watchtower/cve-2025-49602/"
-        }
-      ],
-      "status": "Novo"
+      "status": "Pendente"
     },
     {
       "data": "2026-10-29",
@@ -972,58 +892,6 @@
         {
           "nome": "CISA KEV",
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111497"
-        }
-      ],
-      "status": "Pendente"
-    },
-    {
-      "data": "2026-10-23",
-      "cve": "CVE-2026-109618 / CVE-2026-109619",
-      "produto": "Palo Alto PAN-OS, Panorama e WF-500 (PHP2Shell)",
-      "cvss": 8.7,
-      "kev": true,
-      "zero_day": false,
-      "exploracao": "Ativa (KEV em 26/10; Palo Alto relata ataque à interface de gestão exposta; 24 firewalls com root na cadeia com Fragnesia)",
-      "prioridade": "P0",
-      "tratamento": "Falha do PHP alcançável pela interface de gestão (web e XML API); já há sondagens de PHP2Shell contra GlobalProtect. Aplicar hotfix 12.2.4-h1, 12.1.10-h3, 11.2.16-h1, 11.1.16-h4 ou 10.2.18-h13; restringir a gestão a jump host. Versões de Panorama/WF-500: a confirmar no advisory. Caçar webshell PHP e túnel SSH reverso; a ligação da campanha da Dream Security com PAN-OS vem do CSO Online e o IT-Connect a trata como hipótese.",
-      "fontes": [
-        {
-          "nome": "SecurityOnline",
-          "url": "https://securityonline.info/pan-os-php2shell-cve-2026-109618/"
-        },
-        {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html"
-        },
-        {
-          "nome": "CSO Online",
-          "url": "https://www.csoonline.com/article/4242454/php2shell-plus-fragnesia-a-dangerous-new-route-from-web-server-to-root.html"
-        }
-      ],
-      "status": "Pendente"
-    },
-    {
-      "data": "2026-10-23",
-      "cve": "CVE-2026-109618 / CVE-2026-109619",
-      "produto": "Citrix NetScaler ADC e Gateway (portal de gestão em PHP)",
-      "cvss": null,
-      "kev": true,
-      "zero_day": false,
-      "exploracao": "Ativa (CVE no KEV em 26/10)",
-      "prioridade": "P0",
-      "tratamento": "Citrix publicou builds corrigidos em 27/10: subir para 14.1-73.49, 13.1-64.32 ou 13.1-FIPS/NDcPP 13.1.37.286. Até aplicar, restringir GUI/API de gestão (NSIP, SNIP com gestão, Cluster IP) a jump hosts por ACL.",
-      "fontes": [
-        {
-          "nome": "Citrix CTX697263",
-          "url": "https://support.citrix.com/external/article/CTX697263/citrix-security-advisory-for-cve20261096.html"
-        },
-        {
-          "nome": "Kraft Kennedy (resumo do boletim Citrix)",
-          "url": "https://www.kraftkennedy.com/citrix-security-advisory-for-cve-2026-109618-and-cve-2026-109619/"
-        },
-        {
-          "nome": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/"
         }
       ],
       "status": "Pendente"
