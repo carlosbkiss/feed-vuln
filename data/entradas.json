@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-11-07T18:38:27Z",
-  "janela": "31/out a 07/nov/2026",
+  "atualizado": "2026-11-08T10:38:04Z",
+  "janela": "01 a 08/nov/2026",
   "itens": [
     {
       "data": "2026-11-06",
@@ -312,6 +312,24 @@
         {
           "nome": "The Hacker News",
           "url": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-04",
+      "cve": "CVE-2026-113373",
+      "produto": "Sonatype Nexus Repository 3 Pro (login SSO SAML/OIDC)",
+      "cvss": 9.1,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Conta desativada ou bloqueada no Nexus volta a entrar pelo SSO e recupera os papéis, o que pesa em repositório de artefatos do CI/CD. Subir para 3.98.0; até lá, desativar o usuário também no provedor de identidade e revisar logins SSO de contas bloqueadas.",
+      "fontes": [
+        {
+          "nome": "OpenCVE",
+          "url": "https://app.opencve.io/cve/CVE-2026-113373"
         }
       ],
       "status": "Novo"
@@ -693,24 +711,6 @@
       "status": "Novo"
     },
     {
-      "data": "2026-10-31",
-      "cve": "CVE-2026-118636",
-      "produto": "Apache MINA 3.0.0 a 3.0.0-M2",
-      "cvss": 9.8,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P2",
-      "tratamento": "Desserialização sem login no JavaNativeMessageDecoder, em ramo inativo que não terá patch. Procurar a dependência em apps Java e migrar para o ramo 2.2.x.",
-      "fontes": [
-        {
-          "nome": "CVE Brief",
-          "url": "https://cvebrief.com/cve/cve-2026-118636/"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
       "data": "2026-10-30",
       "cve": "CVE-2026-102764",
       "produto": "BeyondTrust Remote Support (self-hosted)",
@@ -910,6 +910,32 @@
         {
           "nome": "CISA KEV",
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111497"
+        }
+      ],
+      "status": "Pendente"
+    },
+    {
+      "data": "2026-10-26",
+      "cve": "CVE-2026-109618 / CVE-2026-109619",
+      "produto": "PHP 8.2 a 8.5 (PHP2Shell)",
+      "cvss": 9.8,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (KEV em 26/10; ataques vistos já em 21/10, antes do patch; RCE sem login demonstrada em WordPress, Drupal e Joomla)",
+      "prioridade": "P0",
+      "tratamento": "Falha no núcleo do PHP, então código bem escrito também fica exposto. Subir para 8.2.35, 8.3.36, 8.4.27 ou 8.5.12, inclusive PHP embutido em appliances e contêineres; ramos antigos não têm correção. Sem patch, tirar da internet ou pôr WAF, e caçar falhas de processo PHP e comandos estranhos desde 20/10.",
+      "fontes": [
+        {
+          "nome": "Recorded Future",
+          "url": "https://www.recordedfuture.com/blog/php2shell-vulnerability-exploitation"
+        },
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-109618"
         }
       ],
       "status": "Pendente"
