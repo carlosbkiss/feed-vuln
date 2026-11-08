@@ -1448,7 +1448,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0116,
-    "poc_qtd": 6,
+    "poc_qtd": 8,
     "fontes": [
       {
         "nome": "NVD",
