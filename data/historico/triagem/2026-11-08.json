@@ -1,7 +1,29 @@
 {
-  "atualizado": "2026-11-08T14:37:59Z",
+  "atualizado": "2026-11-08T18:35:33Z",
   "janela": "01 a 08/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-08",
+      "cve": "CVE-2026-101117",
+      "produto": "IBM WebSphere eXtreme Scale 8.6.1.0 a 8.6.2.2 (implantação Liberty)",
+      "cvss": 9.1,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não confirmada",
+      "prioridade": "P2",
+      "tratamento": "Política CSP mal configurada permite contornar restrições (risco de XSS) no console/app Liberty. Ir para o fix pack 8.6.2.2 e aplicar o iFix PH73641; sem mitigação oficial, então restringir o acesso à interface web à rede de administração.",
+      "fontes": [
+        {
+          "nome": "IBM Security Bulletin",
+          "url": "https://www.ibm.com/support/pages/node/7293764"
+        },
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101117"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-11-06",
       "cve": "CVE-2026-19868",
