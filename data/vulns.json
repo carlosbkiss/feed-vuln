@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-08T14:38:16Z",
+  "atualizado": "2026-11-08T17:05:27Z",
   "itens": [
     {
       "cve": "CVE-2026-19868",
@@ -1339,6 +1339,42 @@
       }
     },
     {
+      "cve": "CVE-2026-101117",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-101117",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-101117",
+          "publicado": "2026-11-08T16:16:36Z",
+          "visto_em": "2026-11-08T17:05:27Z"
+        }
+      ],
+      "detectado": "2026-11-08T17:05:27Z",
+      "cvss": 9.1,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-08T16:16:36Z",
+      "resumo": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.2.2 could allow a remote attacker to bypass security restrictions due to improper Content Security Policy configuration.",
+      "nvd_checado_em": "2026-11-08T17:05:27Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-08T16:16:36Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-101117",
+      "ultima_atividade": "2026-11-08T16:16:36Z",
+      "exibido_em": "2026-11-08T17:05:27Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-08T17:05:27Z"
+      }
+    },
+    {
       "cve": "CVE-2026-124450",
       "fontes": [
         {
@@ -1356,7 +1392,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-08T14:18:12Z",
       "resumo": "OpenEMR before 8.3.0 contains a broken access control and path traversal vulnerability in the fax/sms module disposeDocument action via an unvalidated file_path parameter. Authenticated low-privilege users can read sqlconf.php to recover database credentials…",
-      "nvd_checado_em": "2026-11-08T14:38:16Z",
+      "nvd_checado_em": "2026-11-08T17:05:27Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1392,7 +1428,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-08T14:18:11Z",
       "resumo": "OpenEMR from 7.0.1 before 8.4.0 contains a flaw in src/Common/Auth/OneTimeAuth.php that ignores the enforce_onetime_use and max_access_count flags, never revokes consumed service_auth tokens, and checks login_pin without rate limiting or strict comparison.…",
-      "nvd_checado_em": "2026-11-08T14:38:16Z",
+      "nvd_checado_em": "2026-11-08T17:05:27Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],

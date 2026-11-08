@@ -27,6 +27,34 @@
     ],
     "prioridade_max": "P2"
   },
+  "CVE-2026-101117": {
+    "cve": "CVE-2026-101117",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.1,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-11-08T16:16:36Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-11-08T16:16:36Z",
+    "exibido_em": "2026-11-08T17:05:27Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-101117",
+        "publicado": "2026-11-08T16:16:36Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
   "CVE-2026-122310": {
     "cve": "CVE-2026-122310",
     "produto": "",
