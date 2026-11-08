@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-07T20:54:35Z",
+  "atualizado": "2026-11-08T14:38:16Z",
   "itens": [
     {
       "cve": "CVE-2026-19868",
@@ -74,14 +74,14 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-06T23:44:07Z"
+        "qtd": 2,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-19868.json",
+        "checado": "2026-11-08T14:38:16Z"
       },
       "epss": {
         "score": 0.0062,
-        "percentil": 0.5003,
-        "data": "2026-11-07"
+        "percentil": 0.5005,
+        "data": "2026-11-08"
       }
     },
     {
@@ -148,7 +148,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-06T23:44:07Z"
+        "checado": "2026-11-08T14:38:16Z"
       },
       "kev": {
         "adicionado": "2026-10-30",
@@ -165,8 +165,8 @@
       "nota_chegou_em": "2026-11-03T18:28:03Z",
       "epss": {
         "score": 0.0082,
-        "percentil": 0.5755,
-        "data": "2026-11-07"
+        "percentil": 0.5756,
+        "data": "2026-11-08"
       }
     },
     {
@@ -238,13 +238,13 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0082,
-        "percentil": 0.5752,
-        "data": "2026-11-07"
+        "percentil": 0.5754,
+        "data": "2026-11-08"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-06T23:44:07Z"
+        "checado": "2026-11-08T14:38:16Z"
       },
       "kev": {
         "adicionado": "2026-10-29",
@@ -441,12 +441,12 @@
       "epss": {
         "score": 0.8264,
         "percentil": 0.9967,
-        "data": "2026-11-07"
+        "data": "2026-11-08"
       },
       "poc": {
         "qtd": 88,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-111497.json",
-        "checado": "2026-11-06T23:44:07Z"
+        "checado": "2026-11-08T14:38:16Z"
       },
       "kev": {
         "adicionado": "2026-10-27",
@@ -661,12 +661,12 @@
       "epss": {
         "score": 1.0,
         "percentil": 1.0,
-        "data": "2026-11-07"
+        "data": "2026-11-08"
       },
       "poc": {
-        "qtd": 764,
+        "qtd": 766,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109618.json",
-        "checado": "2026-11-06T23:44:07Z"
+        "checado": "2026-11-08T14:38:16Z"
       },
       "ultima_atividade": "2026-11-07T02:06:17Z",
       "zero_day": true,
@@ -875,12 +875,12 @@
       "epss": {
         "score": 1.0,
         "percentil": 1.0,
-        "data": "2026-11-07"
+        "data": "2026-11-08"
       },
       "poc": {
         "qtd": 26,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109619.json",
-        "checado": "2026-11-06T23:44:07Z"
+        "checado": "2026-11-08T14:38:16Z"
       },
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
@@ -975,13 +975,13 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0053,
-        "percentil": 0.4525,
-        "data": "2026-11-07"
+        "percentil": 0.4527,
+        "data": "2026-11-08"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-06T23:44:07Z"
+        "checado": "2026-11-08T14:38:16Z"
       }
     },
     {
@@ -1078,12 +1078,12 @@
       "epss": {
         "score": 0.6522,
         "percentil": 0.9926,
-        "data": "2026-11-07"
+        "data": "2026-11-08"
       },
       "poc": {
         "qtd": 9,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-97229.json",
-        "checado": "2026-11-06T23:44:07Z"
+        "checado": "2026-11-08T14:38:16Z"
       }
     },
     {
@@ -1168,13 +1168,13 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0069,
-        "percentil": 0.5298,
-        "data": "2026-11-07"
+        "percentil": 0.5299,
+        "data": "2026-11-08"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-06T23:44:07Z"
+        "checado": "2026-11-08T14:38:16Z"
       },
       "escalado": true
     },
@@ -1248,12 +1248,12 @@
       "epss": {
         "score": 0.4747,
         "percentil": 0.9885,
-        "data": "2026-11-07"
+        "data": "2026-11-08"
       },
       "poc": {
         "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-48356.json",
-        "checado": "2026-11-06T23:44:07Z"
+        "checado": "2026-11-08T14:38:16Z"
       }
     },
     {
@@ -1289,12 +1289,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-06T23:44:07Z"
+        "checado": "2026-11-08T14:38:16Z"
       },
       "epss": {
         "score": 0.0035,
-        "percentil": 0.2851,
-        "data": "2026-11-07"
+        "percentil": 0.2853,
+        "data": "2026-11-08"
       }
     },
     {
@@ -1330,12 +1330,84 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-06T23:44:07Z"
+        "checado": "2026-11-08T14:38:16Z"
       },
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4415,
-        "data": "2026-11-07"
+        "percentil": 0.4417,
+        "data": "2026-11-08"
+      }
+    },
+    {
+      "cve": "CVE-2026-124450",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-124450",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-124450",
+          "publicado": "2026-11-08T14:18:12Z",
+          "visto_em": "2026-11-08T14:38:16Z"
+        }
+      ],
+      "detectado": "2026-11-08T14:38:16Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-08T14:18:12Z",
+      "resumo": "OpenEMR before 8.3.0 contains a broken access control and path traversal vulnerability in the fax/sms module disposeDocument action via an unvalidated file_path parameter. Authenticated low-privilege users can read sqlconf.php to recover database credentials…",
+      "nvd_checado_em": "2026-11-08T14:38:16Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-08T14:18:12Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-124450",
+      "ultima_atividade": "2026-11-08T14:18:12Z",
+      "exibido_em": "2026-11-08T14:38:16Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-08T14:38:16Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-124445",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-124445",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-124445",
+          "publicado": "2026-11-08T14:18:11Z",
+          "visto_em": "2026-11-08T14:38:16Z"
+        }
+      ],
+      "detectado": "2026-11-08T14:38:16Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-08T14:18:11Z",
+      "resumo": "OpenEMR from 7.0.1 before 8.4.0 contains a flaw in src/Common/Auth/OneTimeAuth.php that ignores the enforce_onetime_use and max_access_count flags, never revokes consumed service_auth tokens, and checks login_pin without rate limiting or strict comparison.…",
+      "nvd_checado_em": "2026-11-08T14:38:16Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-08T14:18:11Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-124445",
+      "ultima_atividade": "2026-11-08T14:18:11Z",
+      "exibido_em": "2026-11-08T14:38:16Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-08T14:38:16Z"
       }
     },
     {
@@ -1375,8 +1447,8 @@
       },
       "epss": {
         "score": 0.0036,
-        "percentil": 0.2961,
-        "data": "2026-11-07"
+        "percentil": 0.2964,
+        "data": "2026-11-08"
       }
     },
     {
@@ -1416,8 +1488,8 @@
       },
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3872,
-        "data": "2026-11-07"
+        "percentil": 0.3874,
+        "data": "2026-11-08"
       }
     },
     {
@@ -1457,8 +1529,8 @@
       },
       "epss": {
         "score": 0.0149,
-        "percentil": 0.742,
-        "data": "2026-11-07"
+        "percentil": 0.7422,
+        "data": "2026-11-08"
       }
     },
     {
@@ -1498,8 +1570,8 @@
       },
       "epss": {
         "score": 0.0095,
-        "percentil": 0.6153,
-        "data": "2026-11-07"
+        "percentil": 0.6154,
+        "data": "2026-11-08"
       }
     },
     {
@@ -1535,12 +1607,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-06T23:44:07Z"
+        "checado": "2026-11-08T14:38:16Z"
       },
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4443,
-        "data": "2026-11-07"
+        "percentil": 0.4445,
+        "data": "2026-11-08"
       }
     },
     {
@@ -1617,8 +1689,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0116,
-        "percentil": 0.6726,
-        "data": "2026-11-07"
+        "percentil": 0.6728,
+        "data": "2026-11-08"
       },
       "poc": {
         "qtd": 6,
@@ -1659,12 +1731,12 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-103039.json",
-        "checado": "2026-11-06T23:44:07Z"
+        "checado": "2026-11-08T14:38:16Z"
       },
       "epss": {
         "score": 0.0051,
-        "percentil": 0.4365,
-        "data": "2026-11-07"
+        "percentil": 0.4368,
+        "data": "2026-11-08"
       }
     },
     {
@@ -1682,7 +1754,7 @@
       "detectado": "2026-11-06T17:59:50Z",
       "zero_day": true,
       "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
-      "nvd_checado_em": "2026-11-07T20:54:35Z",
+      "nvd_checado_em": "2026-11-08T14:38:16Z",
       "aguardando_nota_desde": "2026-10-28T17:54:27Z",
       "elegivel_por": [
         "zero-day"
@@ -1759,8 +1831,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0031,
-        "percentil": 0.2369,
-        "data": "2026-11-07"
+        "percentil": 0.237,
+        "data": "2026-11-08"
       },
       "poc": {
         "qtd": 0,
@@ -1810,13 +1882,13 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0037,
-        "percentil": 0.3049,
-        "data": "2026-11-07"
+        "percentil": 0.3051,
+        "data": "2026-11-08"
       },
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110720.json",
-        "checado": "2026-11-06T23:44:07Z"
+        "checado": "2026-11-08T14:38:16Z"
       }
     },
     {
@@ -1852,12 +1924,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-06T23:44:07Z"
+        "checado": "2026-11-08T14:38:16Z"
       },
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3891,
-        "data": "2026-11-07"
+        "percentil": 0.3893,
+        "data": "2026-11-08"
       }
     },
     {
@@ -1919,7 +1991,7 @@
       "epss": {
         "score": 0.1613,
         "percentil": 0.9695,
-        "data": "2026-11-07"
+        "data": "2026-11-08"
       },
       "poc": {
         "qtd": 16,
@@ -1993,8 +2065,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.015,
-        "percentil": 0.7446,
-        "data": "2026-11-07"
+        "percentil": 0.7448,
+        "data": "2026-11-08"
       },
       "poc": {
         "qtd": 0,

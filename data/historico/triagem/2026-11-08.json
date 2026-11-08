@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-08T10:38:04Z",
+  "atualizado": "2026-11-08T14:37:59Z",
   "janela": "01 a 08/nov/2026",
   "itens": [
     {
@@ -42,6 +42,28 @@
         {
           "nome": "BleepingComputer",
           "url": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-05",
+      "cve": "CVE-2026-17408 / CVE-2026-17313 / CVE-2026-17360 / CVE-2026-17402",
+      "produto": "IBM API Connect (gateway e gestão de APIs, ~100 CVEs)",
+      "cvss": 9.9,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P0",
+      "tratamento": "Há RCE e bypass de autenticação sem login (9.8) e senhas fixas no código: subir para 12.1.1.3; para a linha 10.0.8 a versão corrigida está a confirmar no boletim da IBM. Até corrigir, tirar portais e gerência da internet, restringir origem e revisar contas e tokens recentes.",
+      "fontes": [
+        {
+          "nome": "IBM Security Bulletin",
+          "url": "https://www.ibm.com/support/pages/node/7295635"
+        },
+        {
+          "nome": "OffSeq Radar",
+          "url": "https://radar.offseq.com/threat/ibm-api-connect-10080-through-100812-and-12100-through-12112-could-allow-a-remote-authenticated-300801eb7f34f2f3"
         }
       ],
       "status": "Novo"

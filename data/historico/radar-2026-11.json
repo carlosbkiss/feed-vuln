@@ -55,6 +55,62 @@
     ],
     "prioridade_max": "P2"
   },
+  "CVE-2026-124445": {
+    "cve": "CVE-2026-124445",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.8,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-11-08T14:18:11Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-11-08T14:18:11Z",
+    "exibido_em": "2026-11-08T14:38:16Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-124445",
+        "publicado": "2026-11-08T14:18:11Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-124450": {
+    "cve": "CVE-2026-124450",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.9,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-11-08T14:18:12Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-11-08T14:18:12Z",
+    "exibido_em": "2026-11-08T14:38:16Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-124450",
+        "publicado": "2026-11-08T14:18:12Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
   "CVE-2026-19868": {
     "cve": "CVE-2026-19868",
     "produto": "SonicWall SonicOS SSLVPN",
