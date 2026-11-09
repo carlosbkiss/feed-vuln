@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-09T10:35:46Z",
+  "atualizado": "2026-11-09T14:36:43Z",
   "janela": "02 a 09/nov/2026",
   "itens": [
     {
@@ -129,14 +129,18 @@
     {
       "data": "2026-11-05",
       "cve": "CVE-2026-123158",
-      "produto": "OpenSSH em Alpine Linux (sshd sem PAM)",
+      "produto": "OpenSSH em Linux com musl sem PAM (Alpine, Buildroot, OpenWrt, Yocto)",
       "cvss": 8.1,
       "kev": false,
       "zero_day": false,
-      "exploracao": "Ativa (Previdian: root em honeypot Alpine menos de 9h após a divulgação; 20 tentativas de 13 IPs até 08/11)",
+      "exploracao": "Ativa (Previdian: root em honeypot Alpine menos de 9h após a divulgação; watchTowr em 09/11: botnets e mineradores já usam; 20 tentativas de 13 IPs até 08/11)",
       "prioridade": "P1",
-      "tratamento": "Já há ataques reais contra sshd em Alpine sem PAM. Subir para OpenSSH 10.6p2 ou pacote corrigido do Alpine e reiniciar o sshd; paliativo: PasswordAuthentication no. Revisar \"Accepted password\" em contas sem senha, authorized_keys e usuários novos; se não der para descartar login, tratar como comprometido.",
+      "tratamento": "Ataques reais por botnets contra sshd em musl sem PAM. Subir para OpenSSH 10.6p2 ou pacote corrigido da distro e reiniciar o sshd; paliativo: PasswordAuthentication no. Inventariar appliances e imagens Buildroot/OpenWrt/Yocto e containers Alpine com sshd; revisar logins por senha em contas sem senha e authorized_keys.",
       "fontes": [
+        {
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/hackers-exploiting-sshole-authentication-bypass-in-openssh/"
+        },
         {
           "nome": "The Hacker News (exploração)",
           "url": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html"
@@ -144,10 +148,6 @@
         {
           "nome": "The Hacker News",
           "url": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html"
-        },
-        {
-          "nome": "Safeguard",
-          "url": "https://safeguard.sh/resources/blog/alpine-openssh-password-authentication-bypass-musl-without-pam-find-affected-images-and-patch"
         }
       ],
       "status": "Novo"
@@ -378,6 +378,24 @@
         {
           "nome": "OpenCVE",
           "url": "https://app.opencve.io/cve/CVE-2026-113373"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-03",
+      "cve": "CVE-2024-10441 / CVE-2026-13684 / CVE-2026-13639",
+      "produto": "Synology DSM (NAS)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Ativa (ransomware C3RB3R em DSM desatualizado; Synology não informa qual falha foi usada)",
+      "prioridade": "P2",
+      "tratamento": "Nicho/shadow IT em banco. Procurar NAS Synology na rede e atualizar o DSM (7.2.2-72806-1 ou superior, e boletim de set/2026); tirar a interface de gestão da internet e checar arquivos .L0CK3D.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html"
         }
       ],
       "status": "Novo"
