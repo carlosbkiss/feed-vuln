@@ -188,6 +188,11 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/sonicos-sslvpn-vulnerability-exploited/",
         "publicado": "2026-11-07T12:59:02Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
+        "publicado": "2026-11-09T06:05:24Z"
       }
     ],
     "prioridade_max": "P0"
@@ -206,11 +211,11 @@
     "primeira_vez": "2026-11-03T05:34:41Z",
     "primeira_noticia": "2026-11-03T05:34:41Z",
     "publicado_nvd": null,
-    "exibido_em": "2026-11-03T11:09:21Z",
+    "exibido_em": "2026-11-09T10:36:01Z",
     "aguardando_nota_desde": "2026-11-03T05:34:41Z",
     "nota_chegou_em": null,
     "epss_max": 0.0095,
-    "poc_qtd": 1,
+    "poc_qtd": 2,
     "fontes": [
       {
         "nome": "The Hacker News",

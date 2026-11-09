@@ -811,28 +811,22 @@
     "cve": "CVE-2026-110264",
     "produto": "",
     "titulo": "",
-    "cvss": 10.0,
+    "cvss": null,
     "prioridade": "P0",
     "elegivel_por": [
-      "zero-day",
-      "CVSS ≥ 9"
+      "zero-day"
     ],
     "zero_day": true,
     "kev": null,
-    "primeira_vez": "2026-10-22T01:16:57Z",
+    "primeira_vez": "2026-10-30T08:28:50Z",
     "primeira_noticia": "2026-10-30T08:28:50Z",
-    "publicado_nvd": "2026-10-22T01:16:57Z",
-    "exibido_em": "2026-10-30T10:39:18Z",
-    "aguardando_nota_desde": null,
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-09T10:36:01Z",
+    "aguardando_nota_desde": "2026-10-30T08:28:50Z",
     "nota_chegou_em": null,
     "epss_max": 0.0135,
     "poc_qtd": 11,
     "fontes": [
-      {
-        "nome": "NVD",
-        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-110264",
-        "publicado": "2026-10-22T01:16:57Z"
-      },
       {
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/gitlab-integer-overflow-vulnerability-exploited/",
