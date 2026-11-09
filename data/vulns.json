@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-09T10:36:01Z",
+  "atualizado": "2026-11-09T14:37:01Z",
   "itens": [
     {
       "cve": "CVE-2026-19868",
@@ -51,6 +51,14 @@
           "link": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
           "publicado": "2026-11-09T06:05:24Z",
           "visto_em": "2026-11-09T10:36:01Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns of SonicWall SonicOS SSLVPN Vulnerability Exploited in Attacks",
+          "link": "https://cybersecuritynews.com/sonicwall-sonicos-sslvpn-vulnerability-exploited/",
+          "publicado": "2026-11-09T11:40:18Z",
+          "visto_em": "2026-11-09T14:37:01Z"
         }
       ],
       "detectado": "2026-11-06T23:44:07Z",
@@ -76,7 +84,7 @@
       "primeira_vez": "2026-11-06T00:00:00Z",
       "primeira_noticia": "2026-11-06T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-19868",
-      "ultima_atividade": "2026-11-09T06:05:24Z",
+      "ultima_atividade": "2026-11-09T11:40:18Z",
       "exibido_em": "2026-11-06T23:44:07Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -88,46 +96,8 @@
       },
       "epss": {
         "score": 0.0062,
-        "percentil": 0.5005,
-        "data": "2026-11-08"
-      }
-    },
-    {
-      "cve": "CVE-2026-110264",
-      "fontes": [
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "CISA Warns of GitLab Integer Overflow Vulnerability Exploited in Attacks",
-          "link": "https://cybersecuritynews.com/gitlab-integer-overflow-vulnerability-exploited/",
-          "publicado": "2026-10-30T08:28:50Z",
-          "visto_em": "2026-11-09T10:36:01Z"
-        }
-      ],
-      "detectado": "2026-11-09T10:36:01Z",
-      "zero_day": true,
-      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
-      "aguardando_nota_desde": "2026-10-30T08:28:50Z",
-      "elegivel_por": [
-        "zero-day"
-      ],
-      "primeira_vez": "2026-10-30T08:28:50Z",
-      "primeira_noticia": "2026-10-30T08:28:50Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-110264",
-      "ultima_atividade": "2026-10-30T08:28:50Z",
-      "exibido_em": "2026-11-09T10:36:01Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.0135,
-        "percentil": 0.7167,
-        "data": "2026-11-08"
-      },
-      "poc": {
-        "qtd": 11,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110264.json",
-        "checado": "2026-11-09T10:36:01Z"
+        "percentil": 0.5006,
+        "data": "2026-11-09"
       }
     },
     {
@@ -211,8 +181,8 @@
       "nota_chegou_em": "2026-11-03T18:28:03Z",
       "epss": {
         "score": 0.0082,
-        "percentil": 0.5756,
-        "data": "2026-11-08"
+        "percentil": 0.5758,
+        "data": "2026-11-09"
       }
     },
     {
@@ -284,8 +254,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0082,
-        "percentil": 0.5754,
-        "data": "2026-11-08"
+        "percentil": 0.5756,
+        "data": "2026-11-09"
       },
       "poc": {
         "qtd": 0,
@@ -487,7 +457,7 @@
       "epss": {
         "score": 0.8264,
         "percentil": 0.9967,
-        "data": "2026-11-08"
+        "data": "2026-11-09"
       },
       "poc": {
         "qtd": 88,
@@ -707,7 +677,7 @@
       "epss": {
         "score": 1.0,
         "percentil": 1.0,
-        "data": "2026-11-08"
+        "data": "2026-11-09"
       },
       "poc": {
         "qtd": 766,
@@ -921,7 +891,7 @@
       "epss": {
         "score": 1.0,
         "percentil": 1.0,
-        "data": "2026-11-08"
+        "data": "2026-11-09"
       },
       "poc": {
         "qtd": 26,
@@ -1021,8 +991,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0053,
-        "percentil": 0.4527,
-        "data": "2026-11-08"
+        "percentil": 0.4529,
+        "data": "2026-11-09"
       },
       "poc": {
         "qtd": 0,
@@ -1124,7 +1094,7 @@
       "epss": {
         "score": 0.6522,
         "percentil": 0.9926,
-        "data": "2026-11-08"
+        "data": "2026-11-09"
       },
       "poc": {
         "qtd": 9,
@@ -1214,8 +1184,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0069,
-        "percentil": 0.5299,
-        "data": "2026-11-08"
+        "percentil": 0.5301,
+        "data": "2026-11-09"
       },
       "poc": {
         "qtd": 0,
@@ -1294,7 +1264,7 @@
       "epss": {
         "score": 0.4747,
         "percentil": 0.9885,
-        "data": "2026-11-08"
+        "data": "2026-11-09"
       },
       "poc": {
         "qtd": 3,
@@ -1339,8 +1309,8 @@
       },
       "epss": {
         "score": 0.0035,
-        "percentil": 0.2853,
-        "data": "2026-11-08"
+        "percentil": 0.2855,
+        "data": "2026-11-09"
       }
     },
     {
@@ -1380,8 +1350,8 @@
       },
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4417,
-        "data": "2026-11-08"
+        "percentil": 0.4419,
+        "data": "2026-11-09"
       }
     },
     {
@@ -1402,7 +1372,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-08T16:16:36Z",
       "resumo": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.2.2 could allow a remote attacker to bypass security restrictions due to improper Content Security Policy configuration.",
-      "nvd_checado_em": "2026-11-09T10:36:01Z",
+      "nvd_checado_em": "2026-11-09T14:37:01Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1418,6 +1388,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-08T17:05:27Z"
+      },
+      "epss": {
+        "score": 0.004,
+        "percentil": 0.3446,
+        "data": "2026-11-09"
       }
     },
     {
@@ -1438,7 +1413,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-08T14:18:12Z",
       "resumo": "OpenEMR before 8.3.0 contains a broken access control and path traversal vulnerability in the fax/sms module disposeDocument action via an unvalidated file_path parameter. Authenticated low-privilege users can read sqlconf.php to recover database credentials…",
-      "nvd_checado_em": "2026-11-09T10:36:01Z",
+      "nvd_checado_em": "2026-11-09T14:37:01Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1454,6 +1429,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-08T14:38:16Z"
+      },
+      "epss": {
+        "score": 0.0049,
+        "percentil": 0.4231,
+        "data": "2026-11-09"
       }
     },
     {
@@ -1474,7 +1454,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-08T14:18:11Z",
       "resumo": "OpenEMR from 7.0.1 before 8.4.0 contains a flaw in src/Common/Auth/OneTimeAuth.php that ignores the enforce_onetime_use and max_access_count flags, never revokes consumed service_auth tokens, and checks login_pin without rate limiting or strict comparison.…",
-      "nvd_checado_em": "2026-11-09T10:36:01Z",
+      "nvd_checado_em": "2026-11-09T14:37:01Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1490,6 +1470,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-08T14:38:16Z"
+      },
+      "epss": {
+        "score": 0.0035,
+        "percentil": 0.2894,
+        "data": "2026-11-09"
       }
     },
     {
@@ -1529,8 +1514,8 @@
       },
       "epss": {
         "score": 0.0036,
-        "percentil": 0.2964,
-        "data": "2026-11-08"
+        "percentil": 0.2965,
+        "data": "2026-11-09"
       }
     },
     {
@@ -1570,8 +1555,8 @@
       },
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3874,
-        "data": "2026-11-08"
+        "percentil": 0.3875,
+        "data": "2026-11-09"
       }
     },
     {
@@ -1603,8 +1588,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0089,
-        "percentil": 0.596,
-        "data": "2026-11-08"
+        "percentil": 0.5962,
+        "data": "2026-11-09"
       },
       "poc": {
         "qtd": 2,
@@ -1649,8 +1634,8 @@
       },
       "epss": {
         "score": 0.0149,
-        "percentil": 0.7422,
-        "data": "2026-11-08"
+        "percentil": 0.7423,
+        "data": "2026-11-09"
       }
     },
     {
@@ -1690,8 +1675,8 @@
       },
       "epss": {
         "score": 0.0095,
-        "percentil": 0.6154,
-        "data": "2026-11-08"
+        "percentil": 0.6156,
+        "data": "2026-11-09"
       }
     },
     {
@@ -1731,8 +1716,8 @@
       },
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4445,
-        "data": "2026-11-08"
+        "percentil": 0.4447,
+        "data": "2026-11-09"
       }
     },
     {
@@ -1808,9 +1793,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.0116,
-        "percentil": 0.6728,
-        "data": "2026-11-08"
+        "score": 0.012,
+        "percentil": 0.6838,
+        "data": "2026-11-09"
       },
       "poc": {
         "qtd": 8,
@@ -1855,8 +1840,8 @@
       },
       "epss": {
         "score": 0.0051,
-        "percentil": 0.4368,
-        "data": "2026-11-08"
+        "percentil": 0.4369,
+        "data": "2026-11-09"
       }
     },
     {
@@ -1951,8 +1936,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0031,
-        "percentil": 0.237,
-        "data": "2026-11-08"
+        "percentil": 0.2372,
+        "data": "2026-11-09"
       },
       "poc": {
         "qtd": 0,
@@ -2002,8 +1987,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0037,
-        "percentil": 0.3051,
-        "data": "2026-11-08"
+        "percentil": 0.3053,
+        "data": "2026-11-09"
       },
       "poc": {
         "qtd": 1,
@@ -2048,8 +2033,8 @@
       },
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3893,
-        "data": "2026-11-08"
+        "percentil": 0.3894,
+        "data": "2026-11-09"
       }
     },
     {
@@ -2111,7 +2096,7 @@
       "epss": {
         "score": 0.1613,
         "percentil": 0.9695,
-        "data": "2026-11-08"
+        "data": "2026-11-09"
       },
       "poc": {
         "qtd": 16,
@@ -2185,8 +2170,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.015,
-        "percentil": 0.7448,
-        "data": "2026-11-08"
+        "percentil": 0.7449,
+        "data": "2026-11-09"
       },
       "poc": {
         "qtd": 0,

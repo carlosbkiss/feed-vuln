@@ -44,7 +44,7 @@
     "exibido_em": "2026-11-08T17:05:27Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.004,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -100,7 +100,7 @@
     "exibido_em": "2026-11-08T14:38:16Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0035,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -128,7 +128,7 @@
     "exibido_em": "2026-11-08T14:38:16Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0049,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -193,6 +193,11 @@
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
         "publicado": "2026-11-09T06:05:24Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/sonicwall-sonicos-sslvpn-vulnerability-exploited/",
+        "publicado": "2026-11-09T11:40:18Z"
       }
     ],
     "prioridade_max": "P0"
