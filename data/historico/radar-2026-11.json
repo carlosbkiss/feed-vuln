@@ -55,6 +55,82 @@
     ],
     "prioridade_max": "P2"
   },
+  "CVE-2026-102895": {
+    "cve": "CVE-2026-102895",
+    "produto": "GPUStack GPUStack",
+    "titulo": "GPUStack Improper Authentication Vulnerability",
+    "cvss": null,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-09",
+      "prazo": "2026-11-12",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-09T00:00:00Z",
+    "primeira_noticia": "2026-11-09T12:00:00Z",
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-09T21:27:15Z",
+    "aguardando_nota_desde": "2026-11-09T12:00:00Z",
+    "nota_chegou_em": null,
+    "epss_max": 0.0033,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-102895",
+        "publicado": "2026-11-09"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-09T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-116779": {
+    "cve": "CVE-2026-116779",
+    "produto": "SignalWire FreeSwitch",
+    "titulo": "SignalWire FreeSwitch Code Injection Vulnerability",
+    "cvss": null,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-09",
+      "prazo": "2026-11-12",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-09T00:00:00Z",
+    "primeira_noticia": "2026-11-09T12:00:00Z",
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-09T21:27:15Z",
+    "aguardando_nota_desde": "2026-11-09T12:00:00Z",
+    "nota_chegou_em": null,
+    "epss_max": 0.013,
+    "poc_qtd": 2,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-116779",
+        "publicado": "2026-11-09"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-09T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
   "CVE-2026-122310": {
     "cve": "CVE-2026-122310",
     "produto": "",
@@ -82,6 +158,103 @@
       }
     ],
     "prioridade_max": "P2"
+  },
+  "CVE-2026-123158": {
+    "cve": "CVE-2026-123158",
+    "produto": "OpenBSD OpenSSH",
+    "titulo": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
+    "cvss": 8.1,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-09",
+      "prazo": "2026-11-12",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-05T16:17:47Z",
+    "primeira_noticia": "2026-11-06T15:21:49Z",
+    "publicado_nvd": "2026-11-05T16:17:47Z",
+    "exibido_em": "2026-11-09T21:27:15Z",
+    "aguardando_nota_desde": "2026-11-06T15:21:49Z",
+    "nota_chegou_em": "2026-11-09T21:27:15Z",
+    "epss_max": 0.0101,
+    "poc_qtd": 27,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158",
+        "publicado": "2026-11-05T16:17:47Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
+        "publicado": "2026-11-06T15:21:49Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-123158",
+        "publicado": "2026-11-09"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-09T12:00:00Z"
+      },
+      {
+        "nome": "BleepingComputer",
+        "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/",
+        "publicado": "2026-11-09T16:04:57Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
+  "CVE-2026-123218": {
+    "cve": "CVE-2026-123218",
+    "produto": "IBM Aspera Faspex",
+    "titulo": "IBM Aspera Faspex Incorrect Authorization Vulnerability",
+    "cvss": 9.8,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-09",
+      "prazo": "2026-11-12",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-07T04:17:28Z",
+    "primeira_noticia": "2026-11-09T12:00:00Z",
+    "publicado_nvd": "2026-11-07T04:17:28Z",
+    "exibido_em": "2026-11-09T21:27:15Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.004,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218",
+        "publicado": "2026-11-07T04:17:28Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-123218",
+        "publicado": "2026-11-09"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-09T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P0"
   },
   "CVE-2026-124445": {
     "cve": "CVE-2026-124445",
@@ -129,7 +302,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0049,
-    "poc_qtd": 0,
+    "poc_qtd": 1,
     "fontes": [
       {
         "nome": "NVD",

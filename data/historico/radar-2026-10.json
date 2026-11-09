@@ -558,7 +558,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 1.0,
-    "poc_qtd": 766,
+    "poc_qtd": 768,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -697,7 +697,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 1.0,
-    "poc_qtd": 26,
+    "poc_qtd": 27,
     "fontes": [
       {
         "nome": "Fortinet PSIRT",
@@ -821,7 +821,7 @@
     "primeira_vez": "2026-10-30T08:28:50Z",
     "primeira_noticia": "2026-10-30T08:28:50Z",
     "publicado_nvd": null,
-    "exibido_em": "2026-11-09T10:36:01Z",
+    "exibido_em": "2026-11-09T21:27:15Z",
     "aguardando_nota_desde": "2026-10-30T08:28:50Z",
     "nota_chegou_em": null,
     "epss_max": 0.0135,
