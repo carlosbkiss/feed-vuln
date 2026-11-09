@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-11-08T18:35:33Z",
-  "janela": "01 a 08/nov/2026",
+  "atualizado": "2026-11-09T10:35:46Z",
+  "janela": "02 a 09/nov/2026",
   "itens": [
     {
       "data": "2026-11-08",
@@ -133,10 +133,14 @@
       "cvss": 8.1,
       "kev": false,
       "zero_day": false,
-      "exploracao": "Exploit público (SSVC da CISA marca PoC; sem ataques relatados)",
-      "prioridade": "P2",
-      "tratamento": "Senha de 257 a 1.024 bytes entra em conta só com chave, se houver outra conta com senha e PasswordAuthentication ativo. Só musl sem PAM: procurar imagens Alpine com sshd. Subir para 10.6p2 ou pacote corrigido do Alpine e reiniciar o sshd; paliativo: PasswordAuthentication no. Revisar \"Accepted password\" em contas sem senha.",
+      "exploracao": "Ativa (Previdian: root em honeypot Alpine menos de 9h após a divulgação; 20 tentativas de 13 IPs até 08/11)",
+      "prioridade": "P1",
+      "tratamento": "Já há ataques reais contra sshd em Alpine sem PAM. Subir para OpenSSH 10.6p2 ou pacote corrigido do Alpine e reiniciar o sshd; paliativo: PasswordAuthentication no. Revisar \"Accepted password\" em contas sem senha, authorized_keys e usuários novos; se não der para descartar login, tratar como comprometido.",
       "fontes": [
+        {
+          "nome": "The Hacker News (exploração)",
+          "url": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html"
+        },
         {
           "nome": "The Hacker News",
           "url": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html"
@@ -693,63 +697,19 @@
       "status": "Novo"
     },
     {
-      "data": "2026-11-01",
-      "cve": "CVE-2026-99154 / CVE-2026-99153",
-      "produto": "Linux kernel (libiscsi, iniciador iSCSI)",
-      "cvss": 9.8,
-      "exploracao": "Não",
-      "prioridade": "P2",
-      "tratamento": "Exige controlar ou se passar pelo alvo iSCSI, então o risco fica na rede de storage. Entra nos kernels estáveis 5.10.273, 5.15.224, 6.1.191, 6.6.161, 6.12.115, 6.18.59 e 7.2.13; conferir o backport da distro e manter o iSCSI em rede isolada.",
-      "fontes": [
-        {
-          "nome": "SecurityOnline",
-          "url": "https://securityonline.info/linux-kernel-vulnerabilities-oct-26-nov-1-2026/"
-        }
-      ],
-      "kev": false,
-      "zero_day": false,
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-01",
-      "cve": "CVE-2026-98432",
-      "produto": "Linux kernel (pilha TCP/IPv4, RCE remota)",
+      "data": "2026-11-02",
+      "cve": "CVE-2026-93680 / CVE-2026-110186 / CVE-2026-110193",
+      "produto": "Langflow (orquestração de agentes de IA, IBM)",
       "cvss": 9.8,
       "kev": false,
       "zero_day": false,
-      "exploracao": "Não confirmada (PoC público só dispara a corrida, sem RCE; sem ataques relatados)",
-      "prioridade": "P0",
-      "tratamento": "Use-after-free sem login: SYN IPv4 com IP options a qualquer porta TCP. Notas variam de 5.9 a 9.8. Upstream: 5.10.272, 5.15.223, 6.1.190, 6.6.159, 6.12.113, 6.18.56, 7.2.10. RHEL 8.10, 9.8 e 10.2 têm kernel desde 01/11; Ubuntu LTS seguia em -proposed e 16.04 a 20.04 dependem de ESM. Corrigir e reiniciar. Desligar MPTCP não resolve; regra nftables contra IP options é só paliativo e não cobre tráfego entre contêineres.",
-      "fontes": [
-        {
-          "nome": "Akamai",
-          "url": "https://www.akamai.com/blog/security-research/cve-2026-98432-remote-uaf-linux-kernels-tcp-stack"
-        },
-        {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html"
-        },
-        {
-          "nome": "Aikido",
-          "url": "https://www.aikido.dev/blog/linux-kernel-tcp-rce-vulnerability-cve-2026-98432"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-01",
-      "cve": "CVE-2026-112816",
-      "produto": "Canonical LXD e MicroCloud",
-      "cvss": 10.0,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
+      "exploracao": "Não (módulo Metasploit público para CVE-2026-93680 só enumera ferramentas MCP, sem execução de código)",
       "prioridade": "P2",
-      "tratamento": "Falha na cadeia de certificados: com o certificado público de um cliente confiável, o atacante se passa por ele na API HTTPS, podendo chegar a root no host. Subir via snap para LXD 6.10.1, 5.21.9, 5.0.11 ou 4.0.15 e MicroCloud 3.4.1 ou 2.1.5, conferindo a versão instalada. Sem workaround: restringir a API. Incus: 7.6.0.",
+      "tratamento": "Bypass de autenticação e execução de código sem login nas versões 1.0.0 a 1.12.8. Subir para 1.13.0 (não há workaround); procurar instâncias de times de dados/IA fora do inventário e tirá-las da internet.",
       "fontes": [
         {
           "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html"
+          "url": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html"
         }
       ],
       "status": "Novo"
