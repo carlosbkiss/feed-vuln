@@ -1,23 +1,23 @@
 {
   "dia": "2026-11-08",
-  "foto_em": "2026-11-08T10:38:24Z",
+  "foto_em": "2026-11-09T00:56:26Z",
   "metricas": {
     "janela_dias": 7,
-    "elegiveis": 25,
+    "elegiveis": 28,
     "explorados": 14,
     "p0": 10,
     "p1": 2,
-    "p2": 13,
+    "p2": 16,
     "com_poc": 12,
     "epss_alto": 6,
-    "novos_7d": 12,
+    "novos_7d": 15,
     "radar_dias": 14,
-    "fora_do_escopo": 76,
-    "artigos": 394,
+    "fora_do_escopo": 82,
+    "artigos": 392,
     "artigos_com_cve": 72,
-    "keyword_rn004": 61,
+    "keyword_rn004": 60,
     "keyword_rn004_util": 4,
-    "keyword_precisao": 0.066,
+    "keyword_precisao": 0.067,
     "antecipacao_nvd_mediana_h": -18.4,
     "antes_da_nvd_pct": 0.4,
     "antecipacao_nvd_n": 15,
@@ -64,7 +64,7 @@
       "grupo": "noticias",
       "estado": "ok",
       "papel": "sem retorno",
-      "artigos": 55,
+      "artigos": 53,
       "cves_elegiveis": 0,
       "primeira": 0,
       "exclusivas": 0,
@@ -215,8 +215,10 @@
       "atraso_mediano_h": null
     }
   ],
-  "rodadas": 1,
-  "falhas_por_fonte": {},
+  "rodadas": 6,
+  "falhas_por_fonte": {
+    "Cyber Security News": 1
+  },
   "p0": [
     "CVE-2026-19868",
     "CVE-2026-118527",
