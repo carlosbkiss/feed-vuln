@@ -78,7 +78,7 @@
     "exibido_em": "2026-11-09T21:27:15Z",
     "aguardando_nota_desde": "2026-11-09T12:00:00Z",
     "nota_chegou_em": "2026-11-10T04:38:14Z",
-    "epss_max": 0.0033,
+    "epss_max": 0.0056,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -116,7 +116,7 @@
     "exibido_em": "2026-11-10T04:38:14Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0041,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -144,7 +144,7 @@
     "exibido_em": "2026-11-10T04:38:14Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0028,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -172,7 +172,7 @@
     "exibido_em": "2026-11-10T04:38:14Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0041,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -206,7 +206,7 @@
     "exibido_em": "2026-11-09T21:27:15Z",
     "aguardando_nota_desde": "2026-11-09T12:00:00Z",
     "nota_chegou_em": "2026-11-10T04:38:14Z",
-    "epss_max": 0.013,
+    "epss_max": 0.0218,
     "poc_qtd": 2,
     "fontes": [
       {
@@ -249,7 +249,7 @@
     "exibido_em": "2026-11-10T04:38:14Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0026,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -310,7 +310,7 @@
     "exibido_em": "2026-11-09T21:27:15Z",
     "aguardando_nota_desde": "2026-11-06T15:21:49Z",
     "nota_chegou_em": "2026-11-09T21:27:15Z",
-    "epss_max": 0.0101,
+    "epss_max": 0.165,
     "poc_qtd": 27,
     "fontes": [
       {
@@ -337,6 +337,11 @@
         "nome": "BleepingComputer",
         "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/",
         "publicado": "2026-11-09T16:04:57Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/hackers-exploiting-sshole-the-openssh-bug/",
+        "publicado": "2026-11-10T13:53:36Z"
       }
     ],
     "prioridade_max": "P0"
@@ -364,7 +369,7 @@
     "exibido_em": "2026-11-09T21:27:15Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.004,
+    "epss_max": 0.007,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -391,6 +396,11 @@
         "nome": "SecurityWeek",
         "link": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/",
         "publicado": "2026-11-10T09:42:27Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/hackers-exploit-ibm-aspera-faspex-vulnerability/",
+        "publicado": "2026-11-10T13:49:07Z"
       }
     ],
     "prioridade_max": "P0"
@@ -620,7 +630,7 @@
     "exibido_em": "2026-11-10T04:38:14Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0043,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -648,7 +658,7 @@
     "exibido_em": "2026-11-10T04:38:14Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0031,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -704,7 +714,7 @@
     "exibido_em": "2026-11-10T04:38:14Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0032,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -732,7 +742,7 @@
     "exibido_em": "2026-11-10T04:38:14Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0015,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -760,7 +770,7 @@
     "exibido_em": "2026-11-10T04:38:14Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0043,
     "poc_qtd": 0,
     "fontes": [
       {

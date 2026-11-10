@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-10T10:44:14Z",
+  "atualizado": "2026-11-10T14:40:02Z",
   "janela": "03 a 10/nov/2026",
   "itens": [
     {
@@ -41,6 +41,24 @@
         }
       ],
       "status": "Novo"
+    },
+    {
+      "data": "2026-11-10",
+      "cve": "CVE-2026-109469",
+      "produto": "Microsoft Entra ID (Device Registration, nuvem)",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Falha de autorização no registro de dispositivos do Entra, já corrigida pela Microsoft no serviço; não há patch nem configuração a aplicar. Como higiene, revisar nos logs de auditoria do Entra registros de dispositivo fora do padrão.",
+      "fontes": [
+        {
+          "nome": "SOCRadar (via Malware News)",
+          "url": "https://malware.news/t/cve-2026-109469-cvss-10-entra-device-registration-flaw/127146"
+        }
+      ],
+      "status": "Resolvido"
     },
     {
       "data": "2026-11-09",
