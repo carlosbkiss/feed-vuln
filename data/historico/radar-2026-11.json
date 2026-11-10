@@ -223,6 +223,11 @@
         "nome": "CISA Advisories",
         "link": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
         "publicado": "2026-11-09T12:00:00Z"
+      },
+      {
+        "nome": "SecurityWeek",
+        "link": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/",
+        "publicado": "2026-11-10T09:42:27Z"
       }
     ],
     "prioridade_max": "P0"
@@ -376,6 +381,16 @@
         "nome": "CISA Advisories",
         "link": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
         "publicado": "2026-11-09T12:00:00Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
+        "publicado": "2026-11-10T06:31:42Z"
+      },
+      {
+        "nome": "SecurityWeek",
+        "link": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/",
+        "publicado": "2026-11-10T09:42:27Z"
       }
     ],
     "prioridade_max": "P0"
@@ -432,6 +447,39 @@
         "nome": "NVD",
         "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-124450",
         "publicado": "2026-11-08T14:18:12Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-125350": {
+    "cve": "CVE-2026-125350",
+    "produto": "",
+    "titulo": "",
+    "cvss": null,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day"
+    ],
+    "zero_day": true,
+    "kev": null,
+    "primeira_vez": "2026-11-10T04:21:10Z",
+    "primeira_noticia": "2026-11-10T04:21:10Z",
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-10T10:44:29Z",
+    "aguardando_nota_desde": "2026-11-10T04:21:10Z",
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/google-chrome-0-day-exploited/",
+        "publicado": "2026-11-10T04:21:10Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
+        "publicado": "2026-11-10T06:52:54Z"
       }
     ],
     "prioridade_max": "P2"

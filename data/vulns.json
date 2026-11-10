@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-10T04:38:14Z",
+  "atualizado": "2026-11-10T10:44:29Z",
   "itens": [
     {
       "cve": "CVE-2026-123218",
@@ -27,6 +27,22 @@
           "link": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
           "publicado": "2026-11-09T12:00:00Z",
           "visto_em": "2026-11-09T21:27:15Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws",
+          "link": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
+          "publicado": "2026-11-10T06:31:42Z",
+          "visto_em": "2026-11-10T10:44:29Z"
+        },
+        {
+          "id": "securityweek",
+          "nome": "SecurityWeek",
+          "titulo": "IBM Aspera Faspex, SignalWire FreeSwitch Vulnerabilities Exploited in Attacks",
+          "link": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/",
+          "publicado": "2026-11-10T09:42:27Z",
+          "visto_em": "2026-11-10T10:44:29Z"
         }
       ],
       "detectado": "2026-11-09T21:27:15Z",
@@ -53,7 +69,7 @@
       "primeira_vez": "2026-11-07T04:17:28Z",
       "primeira_noticia": "2026-11-09T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218",
-      "ultima_atividade": "2026-11-09T12:00:00Z",
+      "ultima_atividade": "2026-11-10T09:42:27Z",
       "exibido_em": "2026-11-09T21:27:15Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -194,6 +210,14 @@
           "link": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
           "publicado": "2026-11-09T12:00:00Z",
           "visto_em": "2026-11-09T21:27:15Z"
+        },
+        {
+          "id": "securityweek",
+          "nome": "SecurityWeek",
+          "titulo": "IBM Aspera Faspex, SignalWire FreeSwitch Vulnerabilities Exploited in Attacks",
+          "link": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/",
+          "publicado": "2026-11-10T09:42:27Z",
+          "visto_em": "2026-11-10T10:44:29Z"
         }
       ],
       "detectado": "2026-11-09T21:27:15Z",
@@ -216,7 +240,7 @@
       "primeira_vez": "2026-11-05T20:17:44Z",
       "primeira_noticia": "2026-11-09T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779",
-      "ultima_atividade": "2026-11-09T12:00:00Z",
+      "ultima_atividade": "2026-11-10T09:42:27Z",
       "exibido_em": "2026-11-09T21:27:15Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -765,6 +789,14 @@
           "link": "https://cybersecuritynews.com/insignary-releases-free-insignary-chk-tool-to-detect-php2shell-and-node2shell-exposure/",
           "publicado": "2026-11-07T02:06:17Z",
           "visto_em": "2026-11-07T10:38:44Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Apple Fixes 9 Security Vulnerabilities in iOS 27.2.1, Including Bluetooth Pairing and iMessage Flaws",
+          "link": "https://cybersecuritynews.com/apple-fixes-security-vulnerabilities/",
+          "publicado": "2026-11-10T08:38:15Z",
+          "visto_em": "2026-11-10T10:44:29Z"
         }
       ],
       "detectado": "2026-10-23T12:14:22Z",
@@ -782,7 +814,7 @@
       "publicado_nvd": "2026-10-22T14:17:37Z",
       "resumo": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause…",
       "nvd_checado_em": "2026-10-23T12:22:11Z",
-      "ultima_atividade": "2026-11-07T02:06:17Z",
+      "ultima_atividade": "2026-11-10T08:38:15Z",
       "exibido_em": "2026-10-26T17:24:30Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -1254,6 +1286,47 @@
       }
     },
     {
+      "cve": "CVE-2026-125350",
+      "fontes": [
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Google Chrome 0-Day Vulnerability in the Wild to Execute Malicious Code Remotely",
+          "link": "https://cybersecuritynews.com/google-chrome-0-day-exploited/",
+          "publicado": "2026-11-10T04:21:10Z",
+          "visto_em": "2026-11-10T04:38:14Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
+          "link": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
+          "publicado": "2026-11-10T06:52:54Z",
+          "visto_em": "2026-11-10T10:44:29Z"
+        }
+      ],
+      "detectado": "2026-11-10T04:38:14Z",
+      "aguardando_nota_desde": "2026-11-10T04:21:10Z",
+      "elegivel_por": [
+        "zero-day"
+      ],
+      "primeira_vez": "2026-11-10T04:21:10Z",
+      "primeira_noticia": "2026-11-10T04:21:10Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-125350",
+      "ultima_atividade": "2026-11-10T06:52:54Z",
+      "zero_day": true,
+      "zero_day_motivo": "The Hacker News: exploração ativa relatada",
+      "exibido_em": "2026-11-10T10:44:29Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-10T10:44:29Z"
+      }
+    },
+    {
       "cve": "CVE-2026-89119",
       "fontes": [
         {
@@ -1271,7 +1344,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T01:17:22Z",
       "resumo": "SAP Web Dispatcher and SAP NetWeaver Application Server ABAP (Internet Communication Manager) do not perform sufficient request validation in certain administrative functionality. In the context of Application Server ABAP and SAP Web Dispatcher, an…",
-      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "nvd_checado_em": "2026-11-10T10:44:29Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1307,7 +1380,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T01:17:22Z",
       "resumo": "SAP Web Dispatcher does not sufficiently validate certain network input processed by an internal component. An unauthenticated attacker could send specially crafted network traffic to trigger a memory corruption condition in the affected functionality.…",
-      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "nvd_checado_em": "2026-11-10T10:44:29Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1343,7 +1416,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T01:17:21Z",
       "resumo": "SAP Gateway activates the default Access Control List with high privileges allowing categorization of external attacker as internal application server. As a result an unauthenticated attacker with network access to the SAP Gateway could exploit this weakness…",
-      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "nvd_checado_em": "2026-11-10T10:44:29Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1379,7 +1452,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T01:17:20Z",
       "resumo": "SAP NetWeaver Application Server ABAP does not sufficiently validate certain network input processed by an internal component. An unauthenticated attacker could send specially crafted network traffic to trigger a memory corruption condition in the affected…",
-      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "nvd_checado_em": "2026-11-10T10:44:29Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1415,7 +1488,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T01:17:20Z",
       "resumo": "SAP NetWeaver Application Server ABAP and ABAP Platform does not perform necessary authorization checks for certain internal functionality. An attacker with low privileges could invoke affected functionality to execute arbitrary operating system commands on…",
-      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "nvd_checado_em": "2026-11-10T10:44:29Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1451,7 +1524,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T01:17:16Z",
       "resumo": "SAP NetWeaver AS ABAP and ABAP Platform does not perform sufficient verification of incoming authentication assertions under certain configurations. An unauthenticated attacker could submit specially crafted data to bypass authentication and impersonate…",
-      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "nvd_checado_em": "2026-11-10T10:44:29Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1487,7 +1560,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T01:17:14Z",
       "resumo": "SAP NetWeaver Knowledge Management (XML Forms) does not sufficiently restrict the selection of XSL transformations processed by the affected functionality. Under certain conditions, an authenticated user with access to the affected functionality could cause…",
-      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "nvd_checado_em": "2026-11-10T10:44:29Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1523,7 +1596,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T01:17:13Z",
       "resumo": "SAP NetWeaver does not perform necessary authorization checks and lacks sufficient input validation in certain remote-enabled functionality. An attacker with low privileges could send specially crafted input through a remote interface to inject and execute…",
-      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "nvd_checado_em": "2026-11-10T10:44:29Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1559,7 +1632,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T01:17:13Z",
       "resumo": "SAP BusinessObjects Business Intelligence Platform (Web Intelligence) does not properly restrict external entity resolution when processing OLAP connection requests. An authenticated attacker could exploit this vulnerability to access restricted resources,…",
-      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "nvd_checado_em": "2026-11-10T10:44:29Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1636,7 +1709,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-08T14:18:12Z",
       "resumo": "OpenEMR before 8.3.0 contains a broken access control and path traversal vulnerability in the fax/sms module disposeDocument action via an unvalidated file_path parameter. Authenticated low-privilege users can read sqlconf.php to recover database credentials…",
-      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "nvd_checado_em": "2026-11-10T10:44:29Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1677,7 +1750,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-08T14:18:11Z",
       "resumo": "OpenEMR from 7.0.1 before 8.4.0 contains a flaw in src/Common/Auth/OneTimeAuth.php that ignores the enforce_onetime_use and max_access_count flags, never revokes consumed service_auth tokens, and checks login_pin without rate limiting or strict comparison.…",
-      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "nvd_checado_em": "2026-11-10T10:44:29Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1733,7 +1806,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-09T10:36:01Z"
+        "checado": "2026-11-10T10:44:29Z"
       },
       "epss": {
         "score": 0.0036,
@@ -1774,7 +1847,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-09T10:36:01Z"
+        "checado": "2026-11-10T10:44:29Z"
       },
       "epss": {
         "score": 0.0044,
@@ -1817,7 +1890,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-58115.json",
-        "checado": "2026-11-09T10:36:01Z"
+        "checado": "2026-11-10T10:44:29Z"
       }
     },
     {
@@ -1853,7 +1926,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-86596.json",
-        "checado": "2026-11-09T10:36:01Z"
+        "checado": "2026-11-10T10:44:29Z"
       },
       "epss": {
         "score": 0.0149,
@@ -1894,7 +1967,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-09T10:36:01Z"
+        "checado": "2026-11-10T10:44:29Z"
       },
       "epss": {
         "score": 0.0095,
@@ -2023,7 +2096,7 @@
       "poc": {
         "qtd": 8,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-119977.json",
-        "checado": "2026-11-09T10:36:01Z"
+        "checado": "2026-11-10T10:44:29Z"
       }
     },
     {
@@ -2098,7 +2171,7 @@
       "poc": {
         "qtd": 11,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-115560.json",
-        "checado": "2026-11-09T10:36:01Z"
+        "checado": "2026-11-10T10:44:29Z"
       }
     },
     {
@@ -2165,7 +2238,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-09T10:36:01Z"
+        "checado": "2026-11-10T10:44:29Z"
       }
     },
     {
@@ -2232,7 +2305,7 @@
       "poc": {
         "qtd": 16,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-46300.json",
-        "checado": "2026-11-09T10:36:01Z"
+        "checado": "2026-11-10T10:44:29Z"
       }
     },
     {
@@ -2307,11 +2380,23 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-09T10:36:01Z"
+        "checado": "2026-11-10T10:44:29Z"
       }
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "BleepingComputer",
+      "titulo": "Google patches eighth Chrome zero-day exploited in attacks this year",
+      "link": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/",
+      "publicado": "2026-11-10T08:51:25Z"
+    },
+    {
+      "fonte": "SecurityWeek",
+      "titulo": "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
+      "link": "https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/",
+      "publicado": "2026-11-10T06:12:24Z"
+    },
     {
       "fonte": "BleepingComputer",
       "titulo": "N-able takes cloud platform offline after 30+ \"zero-days\" published",
@@ -2401,24 +2486,6 @@
       "titulo": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",
       "link": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html",
       "publicado": "2026-10-28T18:08:33Z"
-    },
-    {
-      "fonte": "BleepingComputer",
-      "titulo": "Apple backports CoreGraphics zero-day patches to older iPhones",
-      "link": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
-      "publicado": "2026-10-27T10:36:12Z"
-    },
-    {
-      "fonte": "Cyber Security News",
-      "titulo": "OpenAI Unveils GPT-6.1 Terra, a Faster AI Model With Critical Cybersecurity Capabilities",
-      "link": "https://cybersecuritynews.com/openai-unveils-gpt-6-1-terra/",
-      "publicado": "2026-10-27T08:25:49Z"
-    },
-    {
-      "fonte": "BleepingComputer",
-      "titulo": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks",
-      "link": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/",
-      "publicado": "2026-10-27T08:20:54Z"
     }
   ]
 }

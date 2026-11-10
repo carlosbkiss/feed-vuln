@@ -1153,6 +1153,11 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/insignary-releases-free-insignary-chk-tool-to-detect-php2shell-and-node2shell-exposure/",
         "publicado": "2026-11-07T02:06:17Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/apple-fixes-security-vulnerabilities/",
+        "publicado": "2026-11-10T08:38:15Z"
       }
     ],
     "prioridade_max": "P0"
