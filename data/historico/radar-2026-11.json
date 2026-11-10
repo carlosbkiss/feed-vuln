@@ -625,7 +625,7 @@
     "zero_day": false,
     "kev": null,
     "primeira_vez": "2026-11-10T01:17:20Z",
-    "primeira_noticia": null,
+    "primeira_noticia": "2026-11-10T17:32:01Z",
     "publicado_nvd": "2026-11-10T01:17:20Z",
     "exibido_em": "2026-11-10T04:38:14Z",
     "aguardando_nota_desde": null,
@@ -637,6 +637,11 @@
         "nome": "NVD",
         "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76964",
         "publicado": "2026-11-10T01:17:20Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/sap-proxygate-and-icm2shell-flaws/",
+        "publicado": "2026-11-10T17:32:01Z"
       }
     ],
     "prioridade_max": "P2"
@@ -709,7 +714,7 @@
     "zero_day": false,
     "kev": null,
     "primeira_vez": "2026-11-10T01:17:21Z",
-    "primeira_noticia": null,
+    "primeira_noticia": "2026-11-10T17:32:01Z",
     "publicado_nvd": "2026-11-10T01:17:21Z",
     "exibido_em": "2026-11-10T04:38:14Z",
     "aguardando_nota_desde": null,
@@ -721,6 +726,11 @@
         "nome": "NVD",
         "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-89103",
         "publicado": "2026-11-10T01:17:21Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/sap-proxygate-and-icm2shell-flaws/",
+        "publicado": "2026-11-10T17:32:01Z"
       }
     ],
     "prioridade_max": "P2"
@@ -765,7 +775,7 @@
     "zero_day": false,
     "kev": null,
     "primeira_vez": "2026-11-10T01:17:22Z",
-    "primeira_noticia": null,
+    "primeira_noticia": "2026-11-10T17:32:01Z",
     "publicado_nvd": "2026-11-10T01:17:22Z",
     "exibido_em": "2026-11-10T04:38:14Z",
     "aguardando_nota_desde": null,
@@ -777,6 +787,11 @@
         "nome": "NVD",
         "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-89126",
         "publicado": "2026-11-10T01:17:22Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/sap-proxygate-and-icm2shell-flaws/",
+        "publicado": "2026-11-10T17:32:01Z"
       }
     ],
     "prioridade_max": "P2"

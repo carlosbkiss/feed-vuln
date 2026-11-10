@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-10T10:44:29Z",
+  "atualizado": "2026-11-10T18:38:17Z",
   "itens": [
     {
       "cve": "CVE-2026-123218",
@@ -43,6 +43,14 @@
           "link": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/",
           "publicado": "2026-11-10T09:42:27Z",
           "visto_em": "2026-11-10T10:44:29Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Hackers Exploit IBM Aspera Faspex Vulnerability, Granting Admin Access to Any User",
+          "link": "https://cybersecuritynews.com/hackers-exploit-ibm-aspera-faspex-vulnerability/",
+          "publicado": "2026-11-10T13:49:07Z",
+          "visto_em": "2026-11-10T18:38:17Z"
         }
       ],
       "detectado": "2026-11-09T21:27:15Z",
@@ -69,15 +77,15 @@
       "primeira_vez": "2026-11-07T04:17:28Z",
       "primeira_noticia": "2026-11-09T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218",
-      "ultima_atividade": "2026-11-10T09:42:27Z",
+      "ultima_atividade": "2026-11-10T13:49:07Z",
       "exibido_em": "2026-11-09T21:27:15Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.004,
-        "percentil": 0.3412,
-        "data": "2026-11-09"
+        "score": 0.007,
+        "percentil": 0.5367,
+        "data": "2026-11-10"
       },
       "poc": {
         "qtd": 0,
@@ -179,9 +187,9 @@
         "checado": "2026-11-09T21:27:15Z"
       },
       "epss": {
-        "score": 0.0062,
-        "percentil": 0.5006,
-        "data": "2026-11-09"
+        "score": 0.0053,
+        "percentil": 0.453,
+        "data": "2026-11-10"
       }
     },
     {
@@ -246,9 +254,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.013,
-        "percentil": 0.7063,
-        "data": "2026-11-09"
+        "score": 0.0218,
+        "percentil": 0.8248,
+        "data": "2026-11-10"
       },
       "poc": {
         "qtd": 2,
@@ -305,6 +313,14 @@
           "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/",
           "publicado": "2026-11-09T16:04:57Z",
           "visto_em": "2026-11-09T21:27:15Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Confirms Hackers are Exploiting SSHole, the OpenSSH Vulnerability",
+          "link": "https://cybersecuritynews.com/hackers-exploiting-sshole-the-openssh-bug/",
+          "publicado": "2026-11-10T13:53:36Z",
+          "visto_em": "2026-11-10T18:38:17Z"
         }
       ],
       "detectado": "2026-11-06T17:59:50Z",
@@ -316,7 +332,7 @@
       "primeira_vez": "2026-11-05T16:17:47Z",
       "primeira_noticia": "2026-11-06T15:21:49Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158",
-      "ultima_atividade": "2026-11-09T16:04:57Z",
+      "ultima_atividade": "2026-11-10T13:53:36Z",
       "kev": {
         "adicionado": "2026-11-09",
         "prazo": "2026-11-12",
@@ -338,9 +354,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0101,
-        "percentil": 0.6348,
-        "data": "2026-11-09"
+        "score": 0.165,
+        "percentil": 0.9702,
+        "data": "2026-11-10"
       },
       "poc": {
         "qtd": 27,
@@ -402,9 +418,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0033,
-        "percentil": 0.2646,
-        "data": "2026-11-09"
+        "score": 0.0056,
+        "percentil": 0.4666,
+        "data": "2026-11-10"
       },
       "poc": {
         "qtd": 0,
@@ -448,8 +464,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0135,
-        "percentil": 0.7169,
-        "data": "2026-11-09"
+        "percentil": 0.7172,
+        "data": "2026-11-10"
       },
       "poc": {
         "qtd": 11,
@@ -538,8 +554,8 @@
       "nota_chegou_em": "2026-11-03T18:28:03Z",
       "epss": {
         "score": 0.0082,
-        "percentil": 0.5758,
-        "data": "2026-11-09"
+        "percentil": 0.5763,
+        "data": "2026-11-10"
       }
     },
     {
@@ -611,8 +627,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0082,
-        "percentil": 0.5756,
-        "data": "2026-11-09"
+        "percentil": 0.576,
+        "data": "2026-11-10"
       },
       "poc": {
         "qtd": 0,
@@ -822,7 +838,7 @@
       "epss": {
         "score": 0.8264,
         "percentil": 0.9967,
-        "data": "2026-11-09"
+        "data": "2026-11-10"
       },
       "poc": {
         "qtd": 88,
@@ -922,8 +938,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0053,
-        "percentil": 0.4529,
-        "data": "2026-11-09"
+        "percentil": 0.4534,
+        "data": "2026-11-10"
       },
       "poc": {
         "qtd": 0,
@@ -1025,7 +1041,7 @@
       "epss": {
         "score": 0.6522,
         "percentil": 0.9926,
-        "data": "2026-11-09"
+        "data": "2026-11-10"
       },
       "poc": {
         "qtd": 9,
@@ -1115,8 +1131,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0069,
-        "percentil": 0.5301,
-        "data": "2026-11-09"
+        "percentil": 0.5306,
+        "data": "2026-11-10"
       },
       "poc": {
         "qtd": 0,
@@ -1195,7 +1211,7 @@
       "epss": {
         "score": 0.4747,
         "percentil": 0.9885,
-        "data": "2026-11-09"
+        "data": "2026-11-10"
       },
       "poc": {
         "qtd": 3,
@@ -1240,8 +1256,8 @@
       },
       "epss": {
         "score": 0.0035,
-        "percentil": 0.2855,
-        "data": "2026-11-09"
+        "percentil": 0.286,
+        "data": "2026-11-10"
       }
     },
     {
@@ -1281,8 +1297,8 @@
       },
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4419,
-        "data": "2026-11-09"
+        "percentil": 0.4424,
+        "data": "2026-11-10"
       }
     },
     {
@@ -1344,7 +1360,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T01:17:22Z",
       "resumo": "SAP Web Dispatcher and SAP NetWeaver Application Server ABAP (Internet Communication Manager) do not perform sufficient request validation in certain administrative functionality. In the context of Application Server ABAP and SAP Web Dispatcher, an…",
-      "nvd_checado_em": "2026-11-10T10:44:29Z",
+      "nvd_checado_em": "2026-11-10T18:38:17Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1360,6 +1376,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-10T04:38:14Z"
+      },
+      "epss": {
+        "score": 0.0015,
+        "percentil": 0.0417,
+        "data": "2026-11-10"
       }
     },
     {
@@ -1372,6 +1393,14 @@
           "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-89126",
           "publicado": "2026-11-10T01:17:22Z",
           "visto_em": "2026-11-10T04:38:14Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Hackers Can Exploit SAP PROXYGATE and ICM2SHELL Flaws for Unauthorized Full System Access",
+          "link": "https://cybersecuritynews.com/sap-proxygate-and-icm2shell-flaws/",
+          "publicado": "2026-11-10T17:32:01Z",
+          "visto_em": "2026-11-10T18:38:17Z"
         }
       ],
       "detectado": "2026-11-10T04:38:14Z",
@@ -1380,14 +1409,14 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T01:17:22Z",
       "resumo": "SAP Web Dispatcher does not sufficiently validate certain network input processed by an internal component. An unauthenticated attacker could send specially crafted network traffic to trigger a memory corruption condition in the affected functionality.…",
-      "nvd_checado_em": "2026-11-10T10:44:29Z",
+      "nvd_checado_em": "2026-11-10T18:38:17Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
       "primeira_vez": "2026-11-10T01:17:22Z",
-      "primeira_noticia": null,
+      "primeira_noticia": "2026-11-10T17:32:01Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-89126",
-      "ultima_atividade": "2026-11-10T01:17:22Z",
+      "ultima_atividade": "2026-11-10T17:32:01Z",
       "exibido_em": "2026-11-10T04:38:14Z",
       "prioridade": "P2",
       "regra": "CVSS ≥ 9 em plataforma corporativa",
@@ -1396,6 +1425,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-10T04:38:14Z"
+      },
+      "epss": {
+        "score": 0.0043,
+        "percentil": 0.3764,
+        "data": "2026-11-10"
       }
     },
     {
@@ -1408,6 +1442,14 @@
           "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-89103",
           "publicado": "2026-11-10T01:17:21Z",
           "visto_em": "2026-11-10T04:38:14Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Hackers Can Exploit SAP PROXYGATE and ICM2SHELL Flaws for Unauthorized Full System Access",
+          "link": "https://cybersecuritynews.com/sap-proxygate-and-icm2shell-flaws/",
+          "publicado": "2026-11-10T17:32:01Z",
+          "visto_em": "2026-11-10T18:38:17Z"
         }
       ],
       "detectado": "2026-11-10T04:38:14Z",
@@ -1416,14 +1458,14 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T01:17:21Z",
       "resumo": "SAP Gateway activates the default Access Control List with high privileges allowing categorization of external attacker as internal application server. As a result an unauthenticated attacker with network access to the SAP Gateway could exploit this weakness…",
-      "nvd_checado_em": "2026-11-10T10:44:29Z",
+      "nvd_checado_em": "2026-11-10T18:38:17Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
       "primeira_vez": "2026-11-10T01:17:21Z",
-      "primeira_noticia": null,
+      "primeira_noticia": "2026-11-10T17:32:01Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-89103",
-      "ultima_atividade": "2026-11-10T01:17:21Z",
+      "ultima_atividade": "2026-11-10T17:32:01Z",
       "exibido_em": "2026-11-10T04:38:14Z",
       "prioridade": "P2",
       "regra": "CVSS ≥ 9 em plataforma corporativa",
@@ -1432,6 +1474,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-10T04:38:14Z"
+      },
+      "epss": {
+        "score": 0.0032,
+        "percentil": 0.2574,
+        "data": "2026-11-10"
       }
     },
     {
@@ -1444,6 +1491,14 @@
           "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76964",
           "publicado": "2026-11-10T01:17:20Z",
           "visto_em": "2026-11-10T04:38:14Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Hackers Can Exploit SAP PROXYGATE and ICM2SHELL Flaws for Unauthorized Full System Access",
+          "link": "https://cybersecuritynews.com/sap-proxygate-and-icm2shell-flaws/",
+          "publicado": "2026-11-10T17:32:01Z",
+          "visto_em": "2026-11-10T18:38:17Z"
         }
       ],
       "detectado": "2026-11-10T04:38:14Z",
@@ -1452,14 +1507,14 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T01:17:20Z",
       "resumo": "SAP NetWeaver Application Server ABAP does not sufficiently validate certain network input processed by an internal component. An unauthenticated attacker could send specially crafted network traffic to trigger a memory corruption condition in the affected…",
-      "nvd_checado_em": "2026-11-10T10:44:29Z",
+      "nvd_checado_em": "2026-11-10T18:38:17Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
       "primeira_vez": "2026-11-10T01:17:20Z",
-      "primeira_noticia": null,
+      "primeira_noticia": "2026-11-10T17:32:01Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76964",
-      "ultima_atividade": "2026-11-10T01:17:20Z",
+      "ultima_atividade": "2026-11-10T17:32:01Z",
       "exibido_em": "2026-11-10T04:38:14Z",
       "prioridade": "P2",
       "regra": "CVSS ≥ 9 em plataforma corporativa",
@@ -1468,6 +1523,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-10T04:38:14Z"
+      },
+      "epss": {
+        "score": 0.0043,
+        "percentil": 0.3764,
+        "data": "2026-11-10"
       }
     },
     {
@@ -1488,7 +1548,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T01:17:20Z",
       "resumo": "SAP NetWeaver Application Server ABAP and ABAP Platform does not perform necessary authorization checks for certain internal functionality. An attacker with low privileges could invoke affected functionality to execute arbitrary operating system commands on…",
-      "nvd_checado_em": "2026-11-10T10:44:29Z",
+      "nvd_checado_em": "2026-11-10T18:38:17Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1504,6 +1564,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-10T04:38:14Z"
+      },
+      "epss": {
+        "score": 0.0031,
+        "percentil": 0.2432,
+        "data": "2026-11-10"
       }
     },
     {
@@ -1524,7 +1589,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T01:17:16Z",
       "resumo": "SAP NetWeaver AS ABAP and ABAP Platform does not perform sufficient verification of incoming authentication assertions under certain configurations. An unauthenticated attacker could submit specially crafted data to bypass authentication and impersonate…",
-      "nvd_checado_em": "2026-11-10T10:44:29Z",
+      "nvd_checado_em": "2026-11-10T18:38:17Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1540,6 +1605,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-10T04:38:14Z"
+      },
+      "epss": {
+        "score": 0.0026,
+        "percentil": 0.1769,
+        "data": "2026-11-10"
       }
     },
     {
@@ -1560,7 +1630,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T01:17:14Z",
       "resumo": "SAP NetWeaver Knowledge Management (XML Forms) does not sufficiently restrict the selection of XSL transformations processed by the affected functionality. Under certain conditions, an authenticated user with access to the affected functionality could cause…",
-      "nvd_checado_em": "2026-11-10T10:44:29Z",
+      "nvd_checado_em": "2026-11-10T18:38:17Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1576,6 +1646,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-10T04:38:14Z"
+      },
+      "epss": {
+        "score": 0.0041,
+        "percentil": 0.3552,
+        "data": "2026-11-10"
       }
     },
     {
@@ -1596,7 +1671,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T01:17:13Z",
       "resumo": "SAP NetWeaver does not perform necessary authorization checks and lacks sufficient input validation in certain remote-enabled functionality. An attacker with low privileges could send specially crafted input through a remote interface to inject and execute…",
-      "nvd_checado_em": "2026-11-10T10:44:29Z",
+      "nvd_checado_em": "2026-11-10T18:38:17Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1612,6 +1687,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-10T04:38:14Z"
+      },
+      "epss": {
+        "score": 0.0041,
+        "percentil": 0.3552,
+        "data": "2026-11-10"
       }
     },
     {
@@ -1632,7 +1712,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T01:17:13Z",
       "resumo": "SAP BusinessObjects Business Intelligence Platform (Web Intelligence) does not properly restrict external entity resolution when processing OLAP connection requests. An authenticated attacker could exploit this vulnerability to access restricted resources,…",
-      "nvd_checado_em": "2026-11-10T10:44:29Z",
+      "nvd_checado_em": "2026-11-10T18:38:17Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1648,6 +1728,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-10T04:38:14Z"
+      },
+      "epss": {
+        "score": 0.0028,
+        "percentil": 0.2102,
+        "data": "2026-11-10"
       }
     },
     {
@@ -1687,8 +1772,8 @@
       },
       "epss": {
         "score": 0.004,
-        "percentil": 0.3446,
-        "data": "2026-11-09"
+        "percentil": 0.3451,
+        "data": "2026-11-10"
       }
     },
     {
@@ -1709,7 +1794,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-08T14:18:12Z",
       "resumo": "OpenEMR before 8.3.0 contains a broken access control and path traversal vulnerability in the fax/sms module disposeDocument action via an unvalidated file_path parameter. Authenticated low-privilege users can read sqlconf.php to recover database credentials…",
-      "nvd_checado_em": "2026-11-10T10:44:29Z",
+      "nvd_checado_em": "2026-11-10T18:38:17Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1728,8 +1813,8 @@
       },
       "epss": {
         "score": 0.0049,
-        "percentil": 0.4231,
-        "data": "2026-11-09"
+        "percentil": 0.4236,
+        "data": "2026-11-10"
       }
     },
     {
@@ -1750,7 +1835,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-08T14:18:11Z",
       "resumo": "OpenEMR from 7.0.1 before 8.4.0 contains a flaw in src/Common/Auth/OneTimeAuth.php that ignores the enforce_onetime_use and max_access_count flags, never revokes consumed service_auth tokens, and checks login_pin without rate limiting or strict comparison.…",
-      "nvd_checado_em": "2026-11-10T10:44:29Z",
+      "nvd_checado_em": "2026-11-10T18:38:17Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1769,8 +1854,8 @@
       },
       "epss": {
         "score": 0.0035,
-        "percentil": 0.2894,
-        "data": "2026-11-09"
+        "percentil": 0.29,
+        "data": "2026-11-10"
       }
     },
     {
@@ -1810,8 +1895,8 @@
       },
       "epss": {
         "score": 0.0036,
-        "percentil": 0.2965,
-        "data": "2026-11-09"
+        "percentil": 0.297,
+        "data": "2026-11-10"
       }
     },
     {
@@ -1851,8 +1936,8 @@
       },
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3875,
-        "data": "2026-11-09"
+        "percentil": 0.388,
+        "data": "2026-11-10"
       }
     },
     {
@@ -1884,8 +1969,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0089,
-        "percentil": 0.5962,
-        "data": "2026-11-09"
+        "percentil": 0.5967,
+        "data": "2026-11-10"
       },
       "poc": {
         "qtd": 2,
@@ -1930,8 +2015,8 @@
       },
       "epss": {
         "score": 0.0149,
-        "percentil": 0.7423,
-        "data": "2026-11-09"
+        "percentil": 0.7426,
+        "data": "2026-11-10"
       }
     },
     {
@@ -1971,8 +2056,8 @@
       },
       "epss": {
         "score": 0.0095,
-        "percentil": 0.6156,
-        "data": "2026-11-09"
+        "percentil": 0.6161,
+        "data": "2026-11-10"
       }
     },
     {
@@ -2012,8 +2097,8 @@
       },
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4447,
-        "data": "2026-11-09"
+        "percentil": 0.4452,
+        "data": "2026-11-10"
       }
     },
     {
@@ -2090,8 +2175,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.012,
-        "percentil": 0.6838,
-        "data": "2026-11-09"
+        "percentil": 0.6842,
+        "data": "2026-11-10"
       },
       "poc": {
         "qtd": 8,
@@ -2136,8 +2221,8 @@
       },
       "epss": {
         "score": 0.0051,
-        "percentil": 0.4369,
-        "data": "2026-11-09"
+        "percentil": 0.4375,
+        "data": "2026-11-10"
       }
     },
     {
@@ -2232,8 +2317,8 @@
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "epss": {
         "score": 0.0031,
-        "percentil": 0.2372,
-        "data": "2026-11-09"
+        "percentil": 0.2377,
+        "data": "2026-11-10"
       },
       "poc": {
         "qtd": 0,
@@ -2300,7 +2385,7 @@
       "epss": {
         "score": 0.1613,
         "percentil": 0.9695,
-        "data": "2026-11-09"
+        "data": "2026-11-10"
       },
       "poc": {
         "qtd": 16,
@@ -2374,8 +2459,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.015,
-        "percentil": 0.7449,
-        "data": "2026-11-09"
+        "percentil": 0.7452,
+        "data": "2026-11-10"
       },
       "poc": {
         "qtd": 0,
@@ -2385,6 +2470,12 @@
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "BleepingComputer",
+      "titulo": "Critical Xen Orchestra auth bypass flaw exploited to hijack VM servers",
+      "link": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/",
+      "publicado": "2026-11-10T16:17:16Z"
+    },
     {
       "fonte": "BleepingComputer",
       "titulo": "Google patches eighth Chrome zero-day exploited in attacks this year",
