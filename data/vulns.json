@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-09T21:27:15Z",
+  "atualizado": "2026-11-10T04:38:14Z",
   "itens": [
     {
       "cve": "CVE-2026-123218",
@@ -169,6 +169,77 @@
       }
     },
     {
+      "cve": "CVE-2026-116779",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-116779",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779",
+          "publicado": "2026-11-05T20:17:44Z",
+          "visto_em": "2026-11-10T04:38:14Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "SignalWire FreeSwitch Code Injection Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-116779",
+          "publicado": "2026-11-09",
+          "visto_em": "2026-11-09T21:27:15Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-09T12:00:00Z",
+          "visto_em": "2026-11-09T21:27:15Z"
+        }
+      ],
+      "detectado": "2026-11-09T21:27:15Z",
+      "kev": {
+        "adicionado": "2026-11-09",
+        "prazo": "2026-11-12",
+        "ransomware": "Unknown"
+      },
+      "produto": "SignalWire FreeSwitch",
+      "titulo": "SignalWire FreeSwitch Code Injection Vulnerability",
+      "resumo": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.",
+      "aguardando_nota_desde": "2026-11-09T12:00:00Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-05T20:17:44Z",
+      "primeira_noticia": "2026-11-09T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779",
+      "ultima_atividade": "2026-11-09T12:00:00Z",
+      "exibido_em": "2026-11-09T21:27:15Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.013,
+        "percentil": 0.7063,
+        "data": "2026-11-09"
+      },
+      "poc": {
+        "qtd": 2,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-116779.json",
+        "checado": "2026-11-09T21:27:15Z"
+      },
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-05T20:17:44Z",
+      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "nota_chegou_em": "2026-11-10T04:38:14Z",
+      "escalado": true
+    },
+    {
       "cve": "CVE-2026-123158",
       "fontes": [
         {
@@ -252,6 +323,77 @@
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123158.json",
         "checado": "2026-11-09T21:27:15Z"
       }
+    },
+    {
+      "cve": "CVE-2026-102895",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-102895",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895",
+          "publicado": "2026-11-04T22:17:44Z",
+          "visto_em": "2026-11-10T04:38:14Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "GPUStack Improper Authentication Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-102895",
+          "publicado": "2026-11-09",
+          "visto_em": "2026-11-09T21:27:15Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-09T12:00:00Z",
+          "visto_em": "2026-11-09T21:27:15Z"
+        }
+      ],
+      "detectado": "2026-11-09T21:27:15Z",
+      "kev": {
+        "adicionado": "2026-11-09",
+        "prazo": "2026-11-12",
+        "ransomware": "Unknown"
+      },
+      "produto": "GPUStack GPUStack",
+      "titulo": "GPUStack Improper Authentication Vulnerability",
+      "resumo": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cloud-provider secrets, and code…",
+      "aguardando_nota_desde": "2026-11-09T12:00:00Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-04T22:17:44Z",
+      "primeira_noticia": "2026-11-09T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895",
+      "ultima_atividade": "2026-11-09T12:00:00Z",
+      "exibido_em": "2026-11-09T21:27:15Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0033,
+        "percentil": 0.2646,
+        "data": "2026-11-09"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-09T21:27:15Z"
+      },
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-04T22:17:44Z",
+      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "nota_chegou_em": "2026-11-10T04:38:14Z",
+      "escalado": true
     },
     {
       "cve": "CVE-2026-110264",
@@ -665,440 +807,6 @@
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
       "escalado": true
-    },
-    {
-      "cve": "CVE-2026-109618",
-      "fontes": [
-        {
-          "id": "fortinet",
-          "nome": "Fortinet PSIRT",
-          "titulo": "PHP core RCE vulnerability patches (CVE-2026-109618 and CVE-2026-109619)",
-          "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-186",
-          "publicado": "2026-10-21T07:00:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "Critical Vulnerabilities in PHP Require Immediate Patching",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching",
-          "publicado": "2026-10-21T12:00:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "bleeping",
-          "nome": "BleepingComputer",
-          "titulo": "PHP ships emergency patches for critical PHP2Shell flaws",
-          "link": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
-          "publicado": "2026-10-21T14:07:05Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-109618",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
-          "publicado": "2026-10-21T14:17:09Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "cisco",
-          "nome": "Cisco PSIRT",
-          "titulo": "Vulnerabilities in PHP Affecting Cisco Products: October 2026",
-          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20PHP%20Affecting%20Cisco%20Products:%20October%202026%26vs_k=1",
-          "publicado": "2026-10-22T23:00:35Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "paloalto",
-          "nome": "Palo Alto Security Advisories",
-          "titulo": "CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products (Severity: HIGH)",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-109618",
-          "publicado": "2026-10-23T03:45:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
-          "link": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
-          "publicado": "2026-10-23T07:40:45Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Critical PHP2Shell Exploit Code Goes Public as Hackers Attempt to Deploy Botnet Malware",
-          "link": "https://cybersecuritynews.com/critical-php2shell-exploit-code/",
-          "publicado": "2026-10-23T13:00:37Z",
-          "visto_em": "2026-10-23T13:08:13Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Palo Alto Confirms PHP RCE Vulnerabilities Impact PAN-OS and Multiple Network Products",
-          "link": "https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/",
-          "publicado": "2026-10-24T06:41:29Z",
-          "visto_em": "2026-10-24T10:35:21Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
-          "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
-          "publicado": "2026-10-25T17:19:46Z",
-          "visto_em": "2026-10-26T10:40:08Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "PHP Memory Corruption Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-109618",
-          "publicado": "2026-10-26",
-          "visto_em": "2026-10-27T10:45:16Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Hacker Exploits Critical PHP2Shell Flaws to Win $2,000 Bitcoin Challenge, Releases PoC",
-          "link": "https://cybersecuritynews.com/php2shell-flaws-exploited/",
-          "publicado": "2026-10-26T03:41:52Z",
-          "visto_em": "2026-10-26T10:40:08Z"
-        },
-        {
-          "id": "bleeping",
-          "nome": "BleepingComputer",
-          "titulo": "PHP2Shell security flaws now sucessfully exploited in the wild",
-          "link": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
-          "publicado": "2026-10-26T09:19:57Z",
-          "visto_em": "2026-10-26T10:40:08Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-10-26T12:00:00Z",
-          "visto_em": "2026-10-27T10:45:16Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "PHP Releases New Windows Build Security Updates to Fix Critical HTTP2Shell Vulnerability",
-          "link": "https://cybersecuritynews.com/php-http2shell-vulnerability/",
-          "publicado": "2026-10-26T15:53:07Z",
-          "visto_em": "2026-10-26T17:24:30Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Hackers Weaponize Public PHP2Shell Exploit Code to Target Universities and Business Websites",
-          "link": "https://cybersecuritynews.com/public-php2shell-exploit-code/",
-          "publicado": "2026-10-26T20:29:21Z",
-          "visto_em": "2026-10-27T10:45:16Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
-          "link": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
-          "publicado": "2026-10-27T04:37:59Z",
-          "visto_em": "2026-10-27T10:45:16Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "CISA Warns of PHP2Shell Vulnerabilities Actively Exploited in Attacks",
-          "link": "https://cybersecuritynews.com/php2shell-vulnerabilities-actively-exploited/",
-          "publicado": "2026-10-28T09:26:13Z",
-          "visto_em": "2026-10-28T10:50:56Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "OffSec Launches Free PHP2Shell Lab Following Critical Vulnerability Discovery",
-          "link": "https://cybersecuritynews.com/offsec-launches-free-php2shell-lab-following-critical-vulnerability-discovery/",
-          "publicado": "2026-10-28T17:54:27Z",
-          "visto_em": "2026-10-28T18:39:56Z"
-        },
-        {
-          "id": "cisco",
-          "nome": "Cisco PSIRT",
-          "titulo": "Vulnerabilities in PHP Affecting Cisco Products: October 2026",
-          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20PHP%20Affecting%20Cisco%20Products:%20%20October%202026%26vs_k=1",
-          "publicado": "2026-10-30T19:24:31Z",
-          "visto_em": "2026-11-05T15:02:59Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Hacktober – Cyberattack Wave Hits PHP, Node.js, Binance, LiteLLM, Pentagon, and a Few More",
-          "link": "https://cybersecuritynews.com/hacktober-cyberattack-wave/",
-          "publicado": "2026-11-01T05:24:22Z",
-          "visto_em": "2026-11-02T15:36:56Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Insignary Releases Free Insignary-Chk Tool to Detect PHP2Shell and Node2Shell Exposure",
-          "link": "https://cybersecuritynews.com/insignary-releases-free-insignary-chk-tool-to-detect-php2shell-and-node2shell-exposure/",
-          "publicado": "2026-11-07T02:06:17Z",
-          "visto_em": "2026-11-07T10:38:44Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "NVD",
-      "publicado_nvd": "2026-10-21T14:17:09Z",
-      "resumo": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The…",
-      "nvd_checado_em": "2026-10-24T10:35:21Z",
-      "elegivel_por": [
-        "zero-day",
-        "CVSS ≥ 9",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-21T07:00:00Z",
-      "primeira_noticia": "2026-10-21T07:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
-      "exibido_em": "2026-10-23T12:14:22Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 1.0,
-        "percentil": 1.0,
-        "data": "2026-11-09"
-      },
-      "poc": {
-        "qtd": 768,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109618.json",
-        "checado": "2026-11-09T21:27:15Z"
-      },
-      "ultima_atividade": "2026-11-07T02:06:17Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "escalado": true,
-      "kev": {
-        "adicionado": "2026-10-26",
-        "prazo": "2026-10-29",
-        "ransomware": "Unknown"
-      },
-      "produto": "PHP Group PHP",
-      "titulo": "PHP Memory Corruption Vulnerability"
-    },
-    {
-      "cve": "CVE-2026-109619",
-      "fontes": [
-        {
-          "id": "fortinet",
-          "nome": "Fortinet PSIRT",
-          "titulo": "PHP core RCE vulnerability patches (CVE-2026-109618 and CVE-2026-109619)",
-          "link": "https://fortiguard.fortinet.com/psirt/FG-IR-26-186",
-          "publicado": "2026-10-21T07:00:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "Critical Vulnerabilities in PHP Require Immediate Patching",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching",
-          "publicado": "2026-10-21T12:00:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "bleeping",
-          "nome": "BleepingComputer",
-          "titulo": "PHP ships emergency patches for critical PHP2Shell flaws",
-          "link": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
-          "publicado": "2026-10-21T14:07:05Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-109619",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619",
-          "publicado": "2026-10-21T14:17:09Z",
-          "visto_em": "2026-10-23T12:22:11Z"
-        },
-        {
-          "id": "cisco",
-          "nome": "Cisco PSIRT",
-          "titulo": "Vulnerabilities in PHP Affecting Cisco Products: October 2026",
-          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20PHP%20Affecting%20Cisco%20Products:%20October%202026%26vs_k=1",
-          "publicado": "2026-10-22T23:00:35Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "paloalto",
-          "nome": "Palo Alto Security Advisories",
-          "titulo": "CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products (Severity: HIGH)",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-109618",
-          "publicado": "2026-10-23T03:45:00Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
-          "link": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
-          "publicado": "2026-10-23T07:40:45Z",
-          "visto_em": "2026-10-23T12:14:22Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Critical PHP2Shell Exploit Code Goes Public as Hackers Attempt to Deploy Botnet Malware",
-          "link": "https://cybersecuritynews.com/critical-php2shell-exploit-code/",
-          "publicado": "2026-10-23T13:00:37Z",
-          "visto_em": "2026-10-23T13:08:13Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Palo Alto Confirms PHP RCE Vulnerabilities Impact PAN-OS and Multiple Network Products",
-          "link": "https://cybersecuritynews.com/palo-alto-confirms-php-rce-vulnerabilities/",
-          "publicado": "2026-10-24T06:41:29Z",
-          "visto_em": "2026-10-24T10:35:21Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
-          "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
-          "publicado": "2026-10-25T17:19:46Z",
-          "visto_em": "2026-10-26T10:40:08Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "PHP Stale Internal Request-State Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-109619",
-          "publicado": "2026-10-26",
-          "visto_em": "2026-10-27T10:45:16Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Hacker Exploits Critical PHP2Shell Flaws to Win $2,000 Bitcoin Challenge, Releases PoC",
-          "link": "https://cybersecuritynews.com/php2shell-flaws-exploited/",
-          "publicado": "2026-10-26T03:41:52Z",
-          "visto_em": "2026-10-26T10:40:08Z"
-        },
-        {
-          "id": "bleeping",
-          "nome": "BleepingComputer",
-          "titulo": "PHP2Shell security flaws now sucessfully exploited in the wild",
-          "link": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
-          "publicado": "2026-10-26T09:19:57Z",
-          "visto_em": "2026-10-26T10:40:08Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-10-26T12:00:00Z",
-          "visto_em": "2026-10-27T10:45:16Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "PHP Releases New Windows Build Security Updates to Fix Critical HTTP2Shell Vulnerability",
-          "link": "https://cybersecuritynews.com/php-http2shell-vulnerability/",
-          "publicado": "2026-10-26T15:53:07Z",
-          "visto_em": "2026-10-26T17:24:30Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Hackers Weaponize Public PHP2Shell Exploit Code to Target Universities and Business Websites",
-          "link": "https://cybersecuritynews.com/public-php2shell-exploit-code/",
-          "publicado": "2026-10-26T20:29:21Z",
-          "visto_em": "2026-10-27T10:45:16Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "CISA Warns of PHP2Shell Vulnerabilities Actively Exploited in Attacks",
-          "link": "https://cybersecuritynews.com/php2shell-vulnerabilities-actively-exploited/",
-          "publicado": "2026-10-28T09:26:13Z",
-          "visto_em": "2026-10-28T10:50:56Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "OffSec Launches Free PHP2Shell Lab Following Critical Vulnerability Discovery",
-          "link": "https://cybersecuritynews.com/offsec-launches-free-php2shell-lab-following-critical-vulnerability-discovery/",
-          "publicado": "2026-10-28T17:54:27Z",
-          "visto_em": "2026-10-28T18:39:56Z"
-        },
-        {
-          "id": "cisco",
-          "nome": "Cisco PSIRT",
-          "titulo": "Vulnerabilities in PHP Affecting Cisco Products: October 2026",
-          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-php-october26-Jj384Daq?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Vulnerabilities%20in%20PHP%20Affecting%20Cisco%20Products:%20%20October%202026%26vs_k=1",
-          "publicado": "2026-10-30T19:24:31Z",
-          "visto_em": "2026-11-05T15:02:59Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Hacktober – Cyberattack Wave Hits PHP, Node.js, Binance, LiteLLM, Pentagon, and a Few More",
-          "link": "https://cybersecuritynews.com/hacktober-cyberattack-wave/",
-          "publicado": "2026-11-01T05:24:22Z",
-          "visto_em": "2026-11-02T15:36:56Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Insignary Releases Free Insignary-Chk Tool to Detect PHP2Shell and Node2Shell Exposure",
-          "link": "https://cybersecuritynews.com/insignary-releases-free-insignary-chk-tool-to-detect-php2shell-and-node2shell-exposure/",
-          "publicado": "2026-11-07T02:06:17Z",
-          "visto_em": "2026-11-07T10:38:44Z"
-        }
-      ],
-      "detectado": "2026-10-23T12:14:22Z",
-      "elegivel_por": [
-        "zero-day",
-        "CVSS ≥ 9",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-21T07:00:00Z",
-      "primeira_noticia": "2026-10-21T07:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619",
-      "cvss": 9.2,
-      "cvss_versao": "4.0",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-21T14:17:09Z",
-      "resumo": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed.…",
-      "nvd_checado_em": "2026-10-23T12:22:11Z",
-      "ultima_atividade": "2026-11-07T02:06:17Z",
-      "exibido_em": "2026-10-23T12:22:11Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 1.0,
-        "percentil": 1.0,
-        "data": "2026-11-09"
-      },
-      "poc": {
-        "qtd": 27,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-109619.json",
-        "checado": "2026-11-09T21:27:15Z"
-      },
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "escalado": true,
-      "kev": {
-        "adicionado": "2026-10-26",
-        "prazo": "2026-10-29",
-        "ransomware": "Unknown"
-      },
-      "produto": "PHP Group PHP",
-      "titulo": "PHP Stale Internal Request-State Vulnerability"
     },
     {
       "cve": "CVE-2026-111357",
@@ -1546,113 +1254,327 @@
       }
     },
     {
-      "cve": "CVE-2026-102895",
+      "cve": "CVE-2026-89119",
       "fontes": [
         {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "GPUStack Improper Authentication Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-102895",
-          "publicado": "2026-11-09",
-          "visto_em": "2026-11-09T21:27:15Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-11-09T12:00:00Z",
-          "visto_em": "2026-11-09T21:27:15Z"
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-89119",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-89119",
+          "publicado": "2026-11-10T01:17:22Z",
+          "visto_em": "2026-11-10T04:38:14Z"
         }
       ],
-      "detectado": "2026-11-09T21:27:15Z",
-      "kev": {
-        "adicionado": "2026-11-09",
-        "prazo": "2026-11-12",
-        "ransomware": "Unknown"
-      },
-      "produto": "GPUStack GPUStack",
-      "titulo": "GPUStack Improper Authentication Vulnerability",
-      "resumo": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cloud-provider secrets, and code…",
-      "aguardando_nota_desde": "2026-11-09T12:00:00Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
+      "detectado": "2026-11-10T04:38:14Z",
+      "cvss": 9.6,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-10T01:17:22Z",
+      "resumo": "SAP Web Dispatcher and SAP NetWeaver Application Server ABAP (Internet Communication Manager) do not perform sufficient request validation in certain administrative functionality. In the context of Application Server ABAP and SAP Web Dispatcher, an…",
+      "nvd_checado_em": "2026-11-10T04:38:14Z",
       "elegivel_por": [
-        "zero-day",
-        "KEV"
+        "CVSS ≥ 9"
       ],
-      "primeira_vez": "2026-11-09T00:00:00Z",
-      "primeira_noticia": "2026-11-09T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895",
-      "ultima_atividade": "2026-11-09T12:00:00Z",
-      "exibido_em": "2026-11-09T21:27:15Z",
+      "primeira_vez": "2026-11-10T01:17:22Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-89119",
+      "ultima_atividade": "2026-11-10T01:17:22Z",
+      "exibido_em": "2026-11-10T04:38:14Z",
       "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.0033,
-        "percentil": 0.2646,
-        "data": "2026-11-09"
-      },
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-09T21:27:15Z"
+        "checado": "2026-11-10T04:38:14Z"
       }
     },
     {
-      "cve": "CVE-2026-116779",
+      "cve": "CVE-2026-89126",
       "fontes": [
         {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "SignalWire FreeSwitch Code Injection Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-116779",
-          "publicado": "2026-11-09",
-          "visto_em": "2026-11-09T21:27:15Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-11-09T12:00:00Z",
-          "visto_em": "2026-11-09T21:27:15Z"
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-89126",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-89126",
+          "publicado": "2026-11-10T01:17:22Z",
+          "visto_em": "2026-11-10T04:38:14Z"
         }
       ],
-      "detectado": "2026-11-09T21:27:15Z",
-      "kev": {
-        "adicionado": "2026-11-09",
-        "prazo": "2026-11-12",
-        "ransomware": "Unknown"
-      },
-      "produto": "SignalWire FreeSwitch",
-      "titulo": "SignalWire FreeSwitch Code Injection Vulnerability",
-      "resumo": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.",
-      "aguardando_nota_desde": "2026-11-09T12:00:00Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
+      "detectado": "2026-11-10T04:38:14Z",
+      "cvss": 10.0,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-10T01:17:22Z",
+      "resumo": "SAP Web Dispatcher does not sufficiently validate certain network input processed by an internal component. An unauthenticated attacker could send specially crafted network traffic to trigger a memory corruption condition in the affected functionality.…",
+      "nvd_checado_em": "2026-11-10T04:38:14Z",
       "elegivel_por": [
-        "zero-day",
-        "KEV"
+        "CVSS ≥ 9"
       ],
-      "primeira_vez": "2026-11-09T00:00:00Z",
-      "primeira_noticia": "2026-11-09T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779",
-      "ultima_atividade": "2026-11-09T12:00:00Z",
-      "exibido_em": "2026-11-09T21:27:15Z",
+      "primeira_vez": "2026-11-10T01:17:22Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-89126",
+      "ultima_atividade": "2026-11-10T01:17:22Z",
+      "exibido_em": "2026-11-10T04:38:14Z",
       "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.013,
-        "percentil": 0.7063,
-        "data": "2026-11-09"
-      },
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "poc": {
-        "qtd": 2,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-116779.json",
-        "checado": "2026-11-09T21:27:15Z"
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-10T04:38:14Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-89103",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-89103",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-89103",
+          "publicado": "2026-11-10T01:17:21Z",
+          "visto_em": "2026-11-10T04:38:14Z"
+        }
+      ],
+      "detectado": "2026-11-10T04:38:14Z",
+      "cvss": 10.0,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-10T01:17:21Z",
+      "resumo": "SAP Gateway activates the default Access Control List with high privileges allowing categorization of external attacker as internal application server. As a result an unauthenticated attacker with network access to the SAP Gateway could exploit this weakness…",
+      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-10T01:17:21Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-89103",
+      "ultima_atividade": "2026-11-10T01:17:21Z",
+      "exibido_em": "2026-11-10T04:38:14Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-10T04:38:14Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-76964",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-76964",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76964",
+          "publicado": "2026-11-10T01:17:20Z",
+          "visto_em": "2026-11-10T04:38:14Z"
+        }
+      ],
+      "detectado": "2026-11-10T04:38:14Z",
+      "cvss": 10.0,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-10T01:17:20Z",
+      "resumo": "SAP NetWeaver Application Server ABAP does not sufficiently validate certain network input processed by an internal component. An unauthenticated attacker could send specially crafted network traffic to trigger a memory corruption condition in the affected…",
+      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-10T01:17:20Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76964",
+      "ultima_atividade": "2026-11-10T01:17:20Z",
+      "exibido_em": "2026-11-10T04:38:14Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-10T04:38:14Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-76965",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-76965",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76965",
+          "publicado": "2026-11-10T01:17:20Z",
+          "visto_em": "2026-11-10T04:38:14Z"
+        }
+      ],
+      "detectado": "2026-11-10T04:38:14Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-10T01:17:20Z",
+      "resumo": "SAP NetWeaver Application Server ABAP and ABAP Platform does not perform necessary authorization checks for certain internal functionality. An attacker with low privileges could invoke affected functionality to execute arbitrary operating system commands on…",
+      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-10T01:17:20Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76965",
+      "ultima_atividade": "2026-11-10T01:17:20Z",
+      "exibido_em": "2026-11-10T04:38:14Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-10T04:38:14Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-120017",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-120017",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-120017",
+          "publicado": "2026-11-10T01:17:16Z",
+          "visto_em": "2026-11-10T04:38:14Z"
+        }
+      ],
+      "detectado": "2026-11-10T04:38:14Z",
+      "cvss": 10.0,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-10T01:17:16Z",
+      "resumo": "SAP NetWeaver AS ABAP and ABAP Platform does not perform sufficient verification of incoming authentication assertions under certain configurations. An unauthenticated attacker could submit specially crafted data to bypass authentication and impersonate…",
+      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-10T01:17:16Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-120017",
+      "ultima_atividade": "2026-11-10T01:17:16Z",
+      "exibido_em": "2026-11-10T04:38:14Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-10T04:38:14Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-109803",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-109803",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-109803",
+          "publicado": "2026-11-10T01:17:14Z",
+          "visto_em": "2026-11-10T04:38:14Z"
+        }
+      ],
+      "detectado": "2026-11-10T04:38:14Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-10T01:17:14Z",
+      "resumo": "SAP NetWeaver Knowledge Management (XML Forms) does not sufficiently restrict the selection of XSL transformations processed by the affected functionality. Under certain conditions, an authenticated user with access to the affected functionality could cause…",
+      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-10T01:17:14Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-109803",
+      "ultima_atividade": "2026-11-10T01:17:14Z",
+      "exibido_em": "2026-11-10T04:38:14Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-10T04:38:14Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-109795",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-109795",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-109795",
+          "publicado": "2026-11-10T01:17:13Z",
+          "visto_em": "2026-11-10T04:38:14Z"
+        }
+      ],
+      "detectado": "2026-11-10T04:38:14Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-10T01:17:13Z",
+      "resumo": "SAP NetWeaver does not perform necessary authorization checks and lacks sufficient input validation in certain remote-enabled functionality. An attacker with low privileges could send specially crafted input through a remote interface to inject and execute…",
+      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-10T01:17:13Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-109795",
+      "ultima_atividade": "2026-11-10T01:17:13Z",
+      "exibido_em": "2026-11-10T04:38:14Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-10T04:38:14Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-109798",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-109798",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-109798",
+          "publicado": "2026-11-10T01:17:13Z",
+          "visto_em": "2026-11-10T04:38:14Z"
+        }
+      ],
+      "detectado": "2026-11-10T04:38:14Z",
+      "cvss": 9.1,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-10T01:17:13Z",
+      "resumo": "SAP BusinessObjects Business Intelligence Platform (Web Intelligence) does not properly restrict external entity resolution when processing OLAP connection requests. An authenticated attacker could exploit this vulnerability to access restricted resources,…",
+      "nvd_checado_em": "2026-11-10T04:38:14Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-10T01:17:13Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-109798",
+      "ultima_atividade": "2026-11-10T01:17:13Z",
+      "exibido_em": "2026-11-10T04:38:14Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-10T04:38:14Z"
       }
     },
     {
@@ -1714,7 +1636,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-08T14:18:12Z",
       "resumo": "OpenEMR before 8.3.0 contains a broken access control and path traversal vulnerability in the fax/sms module disposeDocument action via an unvalidated file_path parameter. Authenticated low-privilege users can read sqlconf.php to recover database credentials…",
-      "nvd_checado_em": "2026-11-09T21:27:15Z",
+      "nvd_checado_em": "2026-11-10T04:38:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1755,7 +1677,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-08T14:18:11Z",
       "resumo": "OpenEMR from 7.0.1 before 8.4.0 contains a flaw in src/Common/Auth/OneTimeAuth.php that ignores the enforce_onetime_use and max_access_count flags, never revokes consumed service_auth tokens, and checks login_pin without rate limiting or strict comparison.…",
-      "nvd_checado_em": "2026-11-09T21:27:15Z",
+      "nvd_checado_em": "2026-11-10T04:38:14Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
