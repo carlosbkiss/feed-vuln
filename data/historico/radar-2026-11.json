@@ -753,7 +753,7 @@
     "aguardando_nota_desde": "2026-11-10T04:21:10Z",
     "nota_chegou_em": "2026-11-11T00:04:15Z",
     "epss_max": null,
-    "poc_qtd": 0,
+    "poc_qtd": 3,
     "fontes": [
       {
         "nome": "CISA KEV",
