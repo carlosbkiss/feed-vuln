@@ -1162,6 +1162,54 @@
     ],
     "prioridade_max": "P0"
   },
+  "CVE-2026-111793": {
+    "cve": "CVE-2026-111793",
+    "produto": "Openwave Messaging Limited Webtop Media Transcoder",
+    "titulo": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
+    "cvss": 4.3,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-10",
+      "prazo": "2026-11-24",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-10-16T19:17:05Z",
+    "primeira_noticia": "2026-11-10T12:00:00Z",
+    "publicado_nvd": "2026-10-16T19:17:05Z",
+    "exibido_em": "2026-11-11T00:04:15Z",
+    "aguardando_nota_desde": "2026-11-10T12:00:00Z",
+    "nota_chegou_em": "2026-11-11T10:40:48Z",
+    "epss_max": 0.0027,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793",
+        "publicado": "2026-10-16T19:17:05Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111793",
+        "publicado": "2026-11-10"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-10T12:00:00Z"
+      },
+      {
+        "nome": "SecurityWeek",
+        "link": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
+        "publicado": "2026-11-11T09:01:07Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
   "CVE-2026-114119": {
     "cve": "CVE-2026-114119",
     "produto": "",

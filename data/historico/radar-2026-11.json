@@ -448,6 +448,34 @@
     ],
     "prioridade_max": "P2"
   },
+  "CVE-2026-121529": {
+    "cve": "CVE-2026-121529",
+    "produto": "",
+    "titulo": "",
+    "cvss": null,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day"
+    ],
+    "zero_day": true,
+    "kev": null,
+    "primeira_vez": "2026-11-11T07:05:55Z",
+    "primeira_noticia": "2026-11-11T07:05:55Z",
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-11T10:40:48Z",
+    "aguardando_nota_desde": "2026-11-11T07:05:55Z",
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/fortinet2shell-vulnerability/",
+        "publicado": "2026-11-11T07:05:55Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
   "CVE-2026-122310": {
     "cve": "CVE-2026-122310",
     "produto": "",
@@ -930,7 +958,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0043,
-    "poc_qtd": 0,
+    "poc_qtd": 1,
     "fontes": [
       {
         "nome": "NVD",

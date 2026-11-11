@@ -1,59 +1,37 @@
 {
-  "atualizado": "2026-11-11T00:04:15Z",
+  "atualizado": "2026-11-11T10:40:48Z",
   "itens": [
     {
-      "cve": "CVE-2026-20320",
+      "cve": "CVE-2026-121529",
       "fontes": [
         {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-20320",
-          "publicado": "2026-11-10",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-11-10T12:00:00Z",
-          "visto_em": "2026-11-11T00:04:15Z"
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical Fortinet2Shell Vulnerability Enables RCE Attacks in FortiClient with FortiPAM Enabled",
+          "link": "https://cybersecuritynews.com/fortinet2shell-vulnerability/",
+          "publicado": "2026-11-11T07:05:55Z",
+          "visto_em": "2026-11-11T10:40:48Z"
         }
       ],
-      "detectado": "2026-11-11T00:04:15Z",
-      "kev": {
-        "adicionado": "2026-11-10",
-        "prazo": "2026-11-24",
-        "ransomware": "Unknown"
-      },
-      "produto": "Cisco BroadWorks",
-      "titulo": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
-      "resumo": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.",
-      "aguardando_nota_desde": "2026-11-10T12:00:00Z",
+      "detectado": "2026-11-11T10:40:48Z",
       "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
+      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
+      "aguardando_nota_desde": "2026-11-11T07:05:55Z",
       "elegivel_por": [
-        "zero-day",
-        "KEV"
+        "zero-day"
       ],
-      "primeira_vez": "2026-11-10T00:00:00Z",
-      "primeira_noticia": "2026-11-10T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-20320",
-      "ultima_atividade": "2026-11-10T12:00:00Z",
-      "exibido_em": "2026-11-11T00:04:15Z",
+      "primeira_vez": "2026-11-11T07:05:55Z",
+      "primeira_noticia": "2026-11-11T07:05:55Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-121529",
+      "ultima_atividade": "2026-11-11T07:05:55Z",
+      "exibido_em": "2026-11-11T10:40:48Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.0039,
-        "percentil": 0.3292,
-        "data": "2026-11-10"
-      },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-11T00:04:15Z"
+        "checado": "2026-11-11T10:40:48Z"
       }
     },
     {
@@ -801,6 +779,84 @@
       "titulo": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability"
     },
     {
+      "cve": "CVE-2026-111793",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-111793",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793",
+          "publicado": "2026-10-16T19:17:05Z",
+          "visto_em": "2026-11-11T10:40:48Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111793",
+          "publicado": "2026-11-10",
+          "visto_em": "2026-11-11T00:04:15Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-10T12:00:00Z",
+          "visto_em": "2026-11-11T00:04:15Z"
+        },
+        {
+          "id": "securityweek",
+          "nome": "SecurityWeek",
+          "titulo": "Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities",
+          "link": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
+          "publicado": "2026-11-11T09:01:07Z",
+          "visto_em": "2026-11-11T10:40:48Z"
+        }
+      ],
+      "detectado": "2026-11-11T00:04:15Z",
+      "kev": {
+        "adicionado": "2026-11-10",
+        "prazo": "2026-11-24",
+        "ransomware": "Unknown"
+      },
+      "produto": "Openwave Messaging Limited Webtop Media Transcoder",
+      "titulo": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
+      "resumo": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing the Webmail experience.",
+      "aguardando_nota_desde": "2026-11-10T12:00:00Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-16T19:17:05Z",
+      "primeira_noticia": "2026-11-10T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793",
+      "ultima_atividade": "2026-11-11T09:01:07Z",
+      "exibido_em": "2026-11-11T00:04:15Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0027,
+        "percentil": 0.1997,
+        "data": "2026-11-10"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-11T00:04:15Z"
+      },
+      "cvss": 4.3,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-16T19:17:05Z",
+      "nvd_checado_em": "2026-11-11T10:40:48Z",
+      "nota_chegou_em": "2026-11-11T10:40:48Z",
+      "escalado": true
+    },
+    {
       "cve": "CVE-2026-111357",
       "fontes": [
         {
@@ -992,6 +1048,91 @@
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-97229.json",
         "checado": "2026-11-11T00:04:15Z"
       }
+    },
+    {
+      "cve": "CVE-2026-20320",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-20320",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-20320",
+          "publicado": "2026-08-19T17:18:40Z",
+          "visto_em": "2026-11-11T10:40:48Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-20320",
+          "publicado": "2026-11-10",
+          "visto_em": "2026-11-11T00:04:15Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-10T12:00:00Z",
+          "visto_em": "2026-11-11T00:04:15Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
+          "link": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+          "publicado": "2026-11-11T06:04:02Z",
+          "visto_em": "2026-11-11T10:40:48Z"
+        },
+        {
+          "id": "securityweek",
+          "nome": "SecurityWeek",
+          "titulo": "Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities",
+          "link": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
+          "publicado": "2026-11-11T09:01:07Z",
+          "visto_em": "2026-11-11T10:40:48Z"
+        }
+      ],
+      "detectado": "2026-11-11T00:04:15Z",
+      "kev": {
+        "adicionado": "2026-11-10",
+        "prazo": "2026-11-24",
+        "ransomware": "Unknown"
+      },
+      "produto": "Cisco BroadWorks",
+      "titulo": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
+      "resumo": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.",
+      "aguardando_nota_desde": "2026-11-10T12:00:00Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-08-19T17:18:40Z",
+      "primeira_noticia": "2026-11-10T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-20320",
+      "ultima_atividade": "2026-11-11T09:01:07Z",
+      "exibido_em": "2026-11-11T00:04:15Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0039,
+        "percentil": 0.3292,
+        "data": "2026-11-10"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-11T00:04:15Z"
+      },
+      "cvss": 7.5,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-08-19T17:18:40Z",
+      "nvd_checado_em": "2026-11-11T10:40:48Z",
+      "nota_chegou_em": "2026-11-11T10:40:48Z"
     },
     {
       "cve": "CVE-2026-41709",
@@ -1281,7 +1422,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T19:21:22Z",
       "resumo": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network.",
-      "nvd_checado_em": "2026-11-11T00:04:15Z",
+      "nvd_checado_em": "2026-11-11T10:40:48Z",
       "nota_chegou_em": "2026-11-11T00:04:15Z",
       "exibido_em": "2026-11-11T00:04:15Z",
       "prioridade": "P2",
@@ -1327,7 +1468,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T19:20:26Z",
       "resumo": "Incorrect authorization in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network.",
-      "nvd_checado_em": "2026-11-11T00:04:15Z",
+      "nvd_checado_em": "2026-11-11T10:40:48Z",
       "nota_chegou_em": "2026-11-11T00:04:15Z",
       "exibido_em": "2026-11-11T00:04:15Z",
       "prioridade": "P2",
@@ -1372,7 +1513,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-10T04:38:14Z"
+        "checado": "2026-11-11T10:40:48Z"
       },
       "epss": {
         "score": 0.0015,
@@ -1421,7 +1562,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-10T04:38:14Z"
+        "checado": "2026-11-11T10:40:48Z"
       },
       "epss": {
         "score": 0.0043,
@@ -1470,7 +1611,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-10T04:38:14Z"
+        "checado": "2026-11-11T10:40:48Z"
       },
       "epss": {
         "score": 0.0032,
@@ -1517,9 +1658,9 @@
       "regra": "CVSS ≥ 9 em plataforma corporativa",
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-10T04:38:14Z"
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76964.json",
+        "checado": "2026-11-11T10:40:48Z"
       },
       "epss": {
         "score": 0.0043,
@@ -1560,7 +1701,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-10T04:38:14Z"
+        "checado": "2026-11-11T10:40:48Z"
       },
       "epss": {
         "score": 0.0031,
@@ -1601,7 +1742,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-10T04:38:14Z"
+        "checado": "2026-11-11T10:40:48Z"
       },
       "epss": {
         "score": 0.0026,
@@ -1642,7 +1783,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-10T04:38:14Z"
+        "checado": "2026-11-11T10:40:48Z"
       },
       "epss": {
         "score": 0.0041,
@@ -1683,7 +1824,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-10T04:38:14Z"
+        "checado": "2026-11-11T10:40:48Z"
       },
       "epss": {
         "score": 0.0041,
@@ -1724,7 +1865,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-10T04:38:14Z"
+        "checado": "2026-11-11T10:40:48Z"
       },
       "epss": {
         "score": 0.0028,
@@ -1813,61 +1954,6 @@
       "nota_chegou_em": "2026-11-11T00:04:15Z"
     },
     {
-      "cve": "CVE-2026-111793",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111793",
-          "publicado": "2026-11-10",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-11-10T12:00:00Z",
-          "visto_em": "2026-11-11T00:04:15Z"
-        }
-      ],
-      "detectado": "2026-11-11T00:04:15Z",
-      "kev": {
-        "adicionado": "2026-11-10",
-        "prazo": "2026-11-24",
-        "ransomware": "Unknown"
-      },
-      "produto": "Openwave Messaging Limited Webtop Media Transcoder",
-      "titulo": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
-      "resumo": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing the Webmail experience.",
-      "aguardando_nota_desde": "2026-11-10T12:00:00Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-10T00:00:00Z",
-      "primeira_noticia": "2026-11-10T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793",
-      "ultima_atividade": "2026-11-10T12:00:00Z",
-      "exibido_em": "2026-11-11T00:04:15Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.0027,
-        "percentil": 0.1997,
-        "data": "2026-11-10"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-11T00:04:15Z"
-      }
-    },
-    {
       "cve": "CVE-2026-101117",
       "fontes": [
         {
@@ -1926,7 +2012,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-08T14:18:12Z",
       "resumo": "OpenEMR before 8.3.0 contains a broken access control and path traversal vulnerability in the fax/sms module disposeDocument action via an unvalidated file_path parameter. Authenticated low-privilege users can read sqlconf.php to recover database credentials…",
-      "nvd_checado_em": "2026-11-11T00:04:15Z",
+      "nvd_checado_em": "2026-11-11T10:40:48Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1967,7 +2053,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-08T14:18:11Z",
       "resumo": "OpenEMR from 7.0.1 before 8.4.0 contains a flaw in src/Common/Auth/OneTimeAuth.php that ignores the enforce_onetime_use and max_access_count flags, never revokes consumed service_auth tokens, and checks login_pin without rate limiting or strict comparison.…",
-      "nvd_checado_em": "2026-11-11T00:04:15Z",
+      "nvd_checado_em": "2026-11-11T10:40:48Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2620,6 +2706,18 @@
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "BleepingComputer",
+      "titulo": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/",
+      "publicado": "2026-11-11T10:12:08Z"
+    },
+    {
+      "fonte": "SecurityWeek",
+      "titulo": "Recently Patched Barracuda Vulnerabilities Exploited in Attacks",
+      "link": "https://www.securityweek.com/recently-patched-barracuda-vulnerabilities-exploited-in-attacks/",
+      "publicado": "2026-11-11T07:53:51Z"
+    },
     {
       "fonte": "Dark Reading",
       "titulo": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
