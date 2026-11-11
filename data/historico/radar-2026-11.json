@@ -183,6 +183,161 @@
     ],
     "prioridade_max": "P2"
   },
+  "CVE-2026-111560": {
+    "cve": "CVE-2026-111560",
+    "produto": "Barracuda Networks Multiple Products",
+    "titulo": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
+    "cvss": 8.6,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-10",
+      "prazo": "2026-11-13",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-02T13:17:35Z",
+    "primeira_noticia": "2026-11-04T13:07:41Z",
+    "publicado_nvd": "2026-11-02T13:17:35Z",
+    "exibido_em": "2026-11-11T00:04:15Z",
+    "aguardando_nota_desde": "2026-11-04T13:07:41Z",
+    "nota_chegou_em": "2026-11-11T00:04:15Z",
+    "epss_max": 0.0106,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-111560",
+        "publicado": "2026-11-02T13:17:35Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/critical-barracuda-security-flaws/",
+        "publicado": "2026-11-04T13:07:41Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111560",
+        "publicado": "2026-11-10"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-10T12:00:00Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/barracuda-email-gateway-flaws/",
+        "publicado": "2026-11-10T16:05:32Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-111793": {
+    "cve": "CVE-2026-111793",
+    "produto": "Openwave Messaging Limited Webtop Media Transcoder",
+    "titulo": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
+    "cvss": null,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-10",
+      "prazo": "2026-11-24",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-10T00:00:00Z",
+    "primeira_noticia": "2026-11-10T12:00:00Z",
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-11T00:04:15Z",
+    "aguardando_nota_desde": "2026-11-10T12:00:00Z",
+    "nota_chegou_em": null,
+    "epss_max": 0.0027,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111793",
+        "publicado": "2026-11-10"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-10T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-116606": {
+    "cve": "CVE-2026-116606",
+    "produto": "Barracuda Networks Barracuda Email Security Gateway (ESG)",
+    "titulo": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+    "cvss": 9.3,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-10",
+      "prazo": "2026-11-13",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-02T13:17:37Z",
+    "primeira_noticia": "2026-11-03T15:59:19Z",
+    "publicado_nvd": "2026-11-02T13:17:37Z",
+    "exibido_em": "2026-11-11T00:04:15Z",
+    "aguardando_nota_desde": "2026-11-03T15:59:19Z",
+    "nota_chegou_em": "2026-11-11T00:04:15Z",
+    "epss_max": 0.016,
+    "poc_qtd": 1,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606",
+        "publicado": "2026-11-02T13:17:37Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
+        "publicado": "2026-11-03T15:59:19Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/critical-barracuda-security-flaws/",
+        "publicado": "2026-11-04T13:07:41Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html",
+        "publicado": "2026-11-06T05:39:10Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-116606",
+        "publicado": "2026-11-10"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-10T12:00:00Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/barracuda-email-gateway-flaws/",
+        "publicado": "2026-11-10T16:05:32Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
   "CVE-2026-116779": {
     "cve": "CVE-2026-116779",
     "produto": "SignalWire FreeSwitch",
@@ -231,6 +386,39 @@
       }
     ],
     "prioridade_max": "P0"
+  },
+  "CVE-2026-120002": {
+    "cve": "CVE-2026-120002",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.9,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-11-10T16:00:00Z",
+    "primeira_noticia": "2026-11-10T16:00:00Z",
+    "publicado_nvd": "2026-11-10T19:20:26Z",
+    "exibido_em": "2026-11-11T00:04:15Z",
+    "aguardando_nota_desde": "2026-11-10T16:00:00Z",
+    "nota_chegou_em": "2026-11-11T00:04:15Z",
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "Microsoft Security Update Guide",
+        "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120002",
+        "publicado": "2026-11-10T16:00:00Z"
+      },
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-120002",
+        "publicado": "2026-11-10T19:20:26Z"
+      }
+    ],
+    "prioridade_max": "P2"
   },
   "CVE-2026-120017": {
     "cve": "CVE-2026-120017",
@@ -311,7 +499,7 @@
     "aguardando_nota_desde": "2026-11-06T15:21:49Z",
     "nota_chegou_em": "2026-11-09T21:27:15Z",
     "epss_max": 0.165,
-    "poc_qtd": 27,
+    "poc_qtd": 30,
     "fontes": [
       {
         "nome": "NVD",
@@ -370,7 +558,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.007,
-    "poc_qtd": 0,
+    "poc_qtd": 1,
     "fontes": [
       {
         "nome": "NVD",
@@ -404,6 +592,59 @@
       }
     ],
     "prioridade_max": "P0"
+  },
+  "CVE-2026-124194": {
+    "cve": "CVE-2026-124194",
+    "produto": "Microsoft Office",
+    "titulo": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
+    "cvss": 6.5,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-10",
+      "prazo": "2026-11-24",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-10T00:00:00Z",
+    "primeira_noticia": "2026-11-10T12:00:00Z",
+    "publicado_nvd": "2026-11-10T19:20:48Z",
+    "exibido_em": "2026-11-11T00:04:15Z",
+    "aguardando_nota_desde": "2026-11-10T16:00:00Z",
+    "nota_chegou_em": "2026-11-11T00:04:15Z",
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-124194",
+        "publicado": "2026-11-10"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-10T12:00:00Z"
+      },
+      {
+        "nome": "Microsoft Security Update Guide",
+        "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124194",
+        "publicado": "2026-11-10T16:00:00Z"
+      },
+      {
+        "nome": "SecurityWeek",
+        "link": "https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/",
+        "publicado": "2026-11-10T19:19:46Z"
+      },
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194",
+        "publicado": "2026-11-10T19:20:48Z"
+      }
+    ],
+    "prioridade_max": "P1"
   },
   "CVE-2026-124445": {
     "cve": "CVE-2026-124445",
@@ -463,24 +704,34 @@
   },
   "CVE-2026-125350": {
     "cve": "CVE-2026-125350",
-    "produto": "",
-    "titulo": "",
-    "cvss": null,
+    "produto": "Google Chromium",
+    "titulo": "Google Chromium Use-After-Free Vulnerability",
+    "cvss": 8.8,
     "prioridade": "P2",
     "elegivel_por": [
-      "zero-day"
+      "zero-day",
+      "KEV"
     ],
     "zero_day": true,
-    "kev": null,
-    "primeira_vez": "2026-11-10T04:21:10Z",
+    "kev": {
+      "adicionado": "2026-11-10",
+      "prazo": "2026-11-24",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-10T00:00:00Z",
     "primeira_noticia": "2026-11-10T04:21:10Z",
-    "publicado_nvd": null,
+    "publicado_nvd": "2026-11-10T18:17:35Z",
     "exibido_em": "2026-11-10T10:44:29Z",
     "aguardando_nota_desde": "2026-11-10T04:21:10Z",
-    "nota_chegou_em": null,
+    "nota_chegou_em": "2026-11-11T00:04:15Z",
     "epss_max": null,
     "poc_qtd": 0,
     "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-125350",
+        "publicado": "2026-11-10"
+      },
       {
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/google-chrome-0-day-exploited/",
@@ -490,6 +741,16 @@
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
         "publicado": "2026-11-10T06:52:54Z"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-10T12:00:00Z"
+      },
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-125350",
+        "publicado": "2026-11-10T18:17:35Z"
       }
     ],
     "prioridade_max": "P2"
@@ -553,6 +814,44 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/sonicwall-sonicos-sslvpn-vulnerability-exploited/",
         "publicado": "2026-11-09T11:40:18Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
+  "CVE-2026-20320": {
+    "cve": "CVE-2026-20320",
+    "produto": "Cisco BroadWorks",
+    "titulo": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
+    "cvss": null,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-10",
+      "prazo": "2026-11-24",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-10T00:00:00Z",
+    "primeira_noticia": "2026-11-10T12:00:00Z",
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-11T00:04:15Z",
+    "aguardando_nota_desde": "2026-11-10T12:00:00Z",
+    "nota_chegou_em": null,
+    "epss_max": 0.0039,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-20320",
+        "publicado": "2026-11-10"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-10T12:00:00Z"
       }
     ],
     "prioridade_max": "P0"
@@ -670,6 +969,39 @@
         "nome": "NVD",
         "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76965",
         "publicado": "2026-11-10T01:17:20Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-80095": {
+    "cve": "CVE-2026-80095",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.0,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-11-10T16:00:00Z",
+    "primeira_noticia": "2026-11-10T16:00:00Z",
+    "publicado_nvd": "2026-11-10T19:21:22Z",
+    "exibido_em": "2026-11-11T00:04:15Z",
+    "aguardando_nota_desde": "2026-11-10T16:00:00Z",
+    "nota_chegou_em": "2026-11-11T00:04:15Z",
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "Microsoft Security Update Guide",
+        "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-80095",
+        "publicado": "2026-11-10T16:00:00Z"
+      },
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-80095",
+        "publicado": "2026-11-10T19:21:22Z"
       }
     ],
     "prioridade_max": "P2"
