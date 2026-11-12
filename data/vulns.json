@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-12T18:39:50Z",
+  "atualizado": "2026-11-12T18:57:37Z",
   "itens": [
     {
       "cve": "CVE-2026-121529",
@@ -1342,7 +1342,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-11T21:16:45Z",
       "resumo": "blueprintUE Self-Hosted Edition before 4.3.7 contains an insecure default configuration in its Docker Compose examples that sets MYSQL_ALLOW_EMPTY_PASSWORD=yes in database.env and publishes MariaDB on port 3306. Unauthenticated attackers reaching the Docker…",
-      "nvd_checado_em": "2026-11-12T18:39:50Z",
+      "nvd_checado_em": "2026-11-12T18:57:37Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1499,7 +1499,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T19:20:26Z",
       "resumo": "Incorrect authorization in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network.",
-      "nvd_checado_em": "2026-11-12T18:39:50Z",
+      "nvd_checado_em": "2026-11-12T18:57:37Z",
       "nota_chegou_em": "2026-11-11T00:04:15Z",
       "exibido_em": "2026-11-11T00:04:15Z",
       "prioridade": "P2",
@@ -2659,6 +2659,12 @@
       "titulo": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
       "link": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
       "publicado": "2026-11-12T17:50:27Z"
+    },
+    {
+      "fonte": "Cyber Security News",
+      "titulo": "New N-able N-central Zero-Day Exploits Target Patched Servers, Claiming Unauthenticated Root Access",
+      "link": "https://cybersecuritynews.com/n-able-n-central-zero-day-exploits/",
+      "publicado": "2026-11-12T16:53:00Z"
     },
     {
       "fonte": "BleepingComputer",
