@@ -1,0 +1,688 @@
+{
+  "atualizado": "2026-11-12T10:41:52Z",
+  "janela": "05 a 12/nov/2026",
+  "itens": [
+    {
+      "data": "2026-11-11",
+      "cve": "sem CVE (ConnectWise ScreenConnect, campanha SCKit)",
+      "produto": "ConnectWise ScreenConnect (painéis em nuvem de MSPs, extensões de terceiros)",
+      "cvss": null,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Ativa (worm SCKit: 288 máquinas em 48 organizações via painéis de MSPs)",
+      "prioridade": "P1",
+      "tratamento": "Sem CVE: acesso por credencial ou sessão sequestrada, possivelmente via extensões Labtech Plus e RMM+. Mapear fornecedores que usam ScreenConnect no banco, desativar essas extensões, revisar o histórico de Run Command, procurar segundo cliente ScreenConnect e a tarefa TrapWatch, e trocar credenciais a partir de máquina limpa.",
+      "fontes": [
+        {
+          "nome": "Huntress",
+          "url": "https://www.huntress.com/blog/sckit-worm-rogue-screenconnect"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-11",
+      "cve": "CVE-2026-123710",
+      "produto": "Red Hat Quay (registry de contêineres)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Sem login, um atacante obtém token anônimo e instala chave de assinatura própria sem validade, podendo forjar acesso ao registry e envenenar imagens. Versão corrigida a confirmar no advisory da Red Hat; até lá restringir o acesso de rede ao Quay e auditar as chaves de serviço aprovadas.",
+      "fontes": [
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123710"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-10",
+      "cve": "CVE-2026-121529",
+      "produto": "Fortinet FortiClient Windows/Mac 7.2 e 7.4 (Fortinet2Shell, crítico com FortiPAM)",
+      "cvss": 9.1,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não confirmada (Fortinet diz que não há ataques; pesquisador publicou a técnica)",
+      "prioridade": "P1",
+      "tratamento": "Basta o usuário abrir um site malicioso para a API local do FortiClient executar código, sobretudo com FortiPAM ativo. Atualizar para 7.4.8 ou 7.2.15 (ou 8.0) via EMS, priorizando estações com FortiPAM e de administradores; não há patch virtual (FG-IR-26-194).",
+      "fontes": [
+        {
+          "nome": "GBHackers",
+          "url": "https://gbhackers.com/fortinet2shell-vulnerability/"
+        },
+        {
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/fortinet-patches-nearly-100-vulnerabilities/"
+        },
+        {
+          "nome": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/fortinet2shell-vulnerability/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-10",
+      "cve": "CVE-2026-121653 / CVE-2026-121683",
+      "produto": "Ivanti Endpoint Manager (EPM) e Cloud Services Appliance (CSA)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "SQL injection sem login dá RCE no EPM Core (corrigido no 2024 SU8); o CSA 5.0.8 deixa incluir ou apagar certificados confiáveis do EPM sem autenticação (corrigido no 5.0.8.1). Corrigir o CSA primeiro se estiver exposto, manter o modelo de duas interfaces e restringir acesso ao EPM Core; EPM já foi alvo de exploração no passado.",
+      "fontes": [
+        {
+          "nome": "GBHackers",
+          "url": "https://gbhackers.com/ivanti-patches-critical-sql-injection-flaw/"
+        },
+        {
+          "nome": "OffSeq Radar",
+          "url": "https://radar.offseq.com/threat/citrix-ivanti-patch-critical-and-high-severity-vulnerabilities-7faf8187ee8f9a38"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-10",
+      "cve": "CVE-2026-116606 / CVE-2026-111560",
+      "produto": "Barracuda Email Security Gateway (e WAF, WSG, ADC, Archiver na injeção de comando)",
+      "cvss": 9.3,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 10/11, prazo CISA 13/11)",
+      "prioridade": "P0",
+      "tratamento": "Cadeia de bypass de autenticação e injeção de comando leva a root no gateway de e-mail. Confirmar que os patches BNSF-40425/40430 (ESG) e os dos demais produtos estão aplicados, religar o patch automático, tirar a interface de admin da internet e procurar alterações de configuração ou backups importados.",
+      "fontes": [
+        {
+          "nome": "BleepingComputer",
+          "url": "https://bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices"
+        },
+        {
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-116606"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-10",
+      "cve": "CVE-2026-126170 / CVE-2026-126262 / CVE-2026-126254 / CVE-2026-126253 / CVE-2026-126259",
+      "produto": "Fortinet FortiManager, FortiAnalyzer e FortiOS (8 advisories críticos de 10/11)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P0",
+      "tratamento": "RCE sem login na API JSON do FortiManager/FortiAnalyzer, SQLi via OFTP e falhas em OSPF, BGP e HA do FortiOS; patches saíram em out/2026, antes dos detalhes, então o diff já está nas mãos de atacantes. Atualizar FortiOS para 7.2.14, 7.4.13, 7.6.8 ou 8.0.2 e FortiManager/FortiAnalyzer para 7.2.13, 7.4.12, 7.6.8 ou 8.0.2; até lá, 'set rpc-permit none' nos perfis de admin e portas OFTP/FGFM fora da internet.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/fortinet-critical-vulnerabilities-november-2026/"
+        },
+        {
+          "nome": "Cybernews",
+          "url": "https://cybernews.com/security/fortinet-critical-flaws-patches-november-disclosure/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-10",
+      "cve": "CVE-2026-124194",
+      "produto": "Microsoft Outlook (Microsoft 365 Apps, Office LTSC 2021 e 2024)",
+      "cvss": 6.5,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (KEV em 10/11, prazo CISA 24/11; Microsoft não detalha a campanha)",
+      "prioridade": "P1",
+      "tratamento": "Único zero-day do Patch Tuesday de novembro: Outlook executa ação insegura sem avisar o usuário, com impacto alto em confidencialidade. Garantir que o canal do Microsoft 365 Apps entregou a correção (LTSC 2021 16.0.14334.21048, LTSC 2024 16.0.17932.21140) em todas as estações e reforçar o alerta a usuários sobre prompts inesperados.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/outlook-zero-day-cve-2026-124194/"
+        },
+        {
+          "nome": "Microsoft MSRC",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124194"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-10",
+      "cve": "CVE-2026-120002 / CVE-2026-80095",
+      "produto": "Microsoft SharePoint Server (Patch Tuesday nov/2026)",
+      "cvss": 9.9,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Elevação de privilégio pela rede para usuário autenticado (autorização incorreta e XSS). Aplicar o update de novembro nos farms on-premises, priorizando os publicados para fora; versões exatas a confirmar no MSRC.",
+      "fontes": [
+        {
+          "nome": "Microsoft MSRC",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120002"
+        },
+        {
+          "nome": "Microsoft MSRC",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-80095"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-10",
+      "cve": "sem CVE (Xen Orchestra, VSA-2026-062)",
+      "produto": "Xen Orchestra e XOA (gestão de XCP-ng)",
+      "cvss": null,
+      "kev": false,
+      "zero_day": true,
+      "exploracao": "Ativa (Vates confirma; cookie forjado dá admin e root nos hosts XCP-ng)",
+      "prioridade": "P2",
+      "tratamento": "Bypass de autenticação com cookie vazio dá admin sem senha. Se houver XCP-ng, atualizar para Xen Orchestra 6.9.1 ou 6.10.0, restringir a interface à rede de gestão, caçar VM 'pivot2', serial 'file' e arquivos zz-ustar em /etc/cron.d, e trocar segredos se houver indício.",
+      "fontes": [
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-10",
+      "cve": "CVE-2026-20320",
+      "produto": "Cisco BroadWorks (plataforma de voz de operadoras)",
+      "cvss": 7.5,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 10/11, prazo CISA 24/11)",
+      "prioridade": "P2",
+      "tratamento": "XXE sem login no parser OCI lê configurações sensíveis; corrigido na release RI.2026.07 desde agosto, sem workaround. Raro em banco: só checar se há BroadWorks próprio ou de operadora contratada, e restringir OCI-P a redes de administração.",
+      "fontes": [
+        {
+          "nome": "Cyberpress",
+          "url": "https://cyberpress.org/cisco-broadworks-xxe-flaw/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-20320"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-10",
+      "cve": "CVE-2026-111793",
+      "produto": "Openwave Webtop Media Transcoder (webmail de operadoras)",
+      "cvss": null,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 10/11, prazo CISA 24/11)",
+      "prioridade": "P2",
+      "tratamento": "Usuário autenticado converte tipos de documento indevidos contornando o webmail. Produto de nicho; versão corrigida a confirmar com o fabricante, verificar só se houver uso.",
+      "fontes": [
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111793"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-10",
+      "cve": "CVE-2026-120017 / CVE-2026-89126 / CVE-2026-76964 / CVE-2026-89103",
+      "produto": "SAP NetWeaver AS ABAP, Web Dispatcher, ICM e Gateway (Patch Day nov/2026)",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P0",
+      "tratamento": "Quatro falhas nota 10 sem login: SAML2 sem verificação de asserção no ABAP, corrupção de memória no Web Dispatcher e no ICM, e ACL padrão permissiva no Gateway; há mais 5 críticas (9.1 a 9.9). Aplicar as SAP Notes de 10/11 começando pelo que está exposto à internet; até lá, restringir portas de Gateway, Web Dispatcher e ICM e revisar a configuração SAML2.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/sap-security-patch-day-november-2026/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-10",
+      "cve": "CVE-2026-125882 / CVE-2026-125878 / CVE-2026-125883 / CVE-2026-125879",
+      "produto": "N-able N-central (RMM, hospedado e on-premises)",
+      "cvss": null,
+      "kev": false,
+      "zero_day": true,
+      "exploracao": "Exploit público (sondagem de servidores N-central relatada, sem ataque confirmado pelo fabricante)",
+      "prioridade": "P1",
+      "tratamento": "Atualizar o N-central on-premises para 2026.4 HF2, que corrige parte das falhas publicadas (RCE por upload, OGNL, XXE, LPE); até lá manter o servidor fora da internet. Revisar sessões de agente anônimas e acessos ao endpoint de controle remoto; se um fornecedor de TI usa N-central no ambiente do banco, cobrar evidência do patch.",
+      "fontes": [
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html"
+        },
+        {
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-10",
+      "cve": "CVE-2026-109469",
+      "produto": "Microsoft Entra ID (Device Registration, nuvem)",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Falha de autorização no registro de dispositivos do Entra, já corrigida pela Microsoft no serviço; não há patch nem configuração a aplicar. Como higiene, revisar nos logs de auditoria do Entra registros de dispositivo fora do padrão.",
+      "fontes": [
+        {
+          "nome": "SOCRadar (via Malware News)",
+          "url": "https://malware.news/t/cve-2026-109469-cvss-10-entra-device-registration-flaw/127146"
+        }
+      ],
+      "status": "Resolvido"
+    },
+    {
+      "data": "2026-11-09",
+      "cve": "CVE-2026-125350",
+      "produto": "Google Chrome (XML, use-after-free)",
+      "cvss": null,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (KEV em 10/11, prazo CISA 24/11; Google confirma exploit em uso)",
+      "prioridade": "P1",
+      "tratamento": "Oitavo zero-day do Chrome em 2026. Forçar a atualização para 157.0.8103.50/.51 via gestão central e acompanhar Edge e outros navegadores Chromium até saírem as correções; nota a confirmar.",
+      "fontes": [
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-09",
+      "cve": "CVE-2026-123218",
+      "produto": "IBM Aspera Faspex 5.0.0 a 5.0.19 (troca de arquivos)",
+      "cvss": 9.8,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (KEV em 09/11, prazo CISA 12/11; sem detalhes públicos)",
+      "prioridade": "P1",
+      "tratamento": "Usuário logado forja mensagem e vira administrador. Subir para 5.0.19 PL1 e conferir a imagem faspex-core; não há mitigação oficial, então restringir o acesso externo e revisar contas admin criadas recentemente.",
+      "fontes": [
+        {
+          "nome": "IBM Security Bulletin",
+          "url": "https://www.ibm.com/support/pages/node/7295921"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-09",
+      "cve": "CVE-2026-116779",
+      "produto": "SignalWire FreeSWITCH 1.11.2 e anteriores (VoIP, SIP)",
+      "cvss": 9.8,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 09/11, prazo CISA 12/11)",
+      "prioridade": "P1",
+      "tratamento": "SIP MESSAGE forjada executa comandos no servidor. Checar se URA, call center ou PABX usam FreeSWITCH e subir para 1.11.3; até lá, enable-chat=false nos perfis, manter enable-chat-api-proto desligado e remover usuários sem senha.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/freeswitch-vulnerability-cve-2026-116779-exploited/"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-08",
+      "cve": "CVE-2026-101117",
+      "produto": "IBM WebSphere eXtreme Scale 8.6.1.0 a 8.6.2.2 (implantação Liberty)",
+      "cvss": 9.1,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não confirmada",
+      "prioridade": "P2",
+      "tratamento": "Política CSP mal configurada permite contornar restrições (risco de XSS) no console/app Liberty. Ir para o fix pack 8.6.2.2 e aplicar o iFix PH73641; sem mitigação oficial, então restringir o acesso à interface web à rede de administração.",
+      "fontes": [
+        {
+          "nome": "IBM Security Bulletin",
+          "url": "https://www.ibm.com/support/pages/node/7293764"
+        },
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101117"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-06",
+      "cve": "CVE-2026-19868",
+      "produto": "SonicWall SonicOS SSLVPN Gen7 e Gen8 (login SAML)",
+      "cvss": 7.5,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (KEV em 06/11, prazo CISA 20/11; SonicWall apura relato de exploração)",
+      "prioridade": "P0",
+      "tratamento": "Conta com outro método de login entra na VPN sem passar pelo SAML e pelo MFA. Subir Gen7 para 7.3.4-7013 e Gen8 para 8.2.3-8015; até lá, desativar contas SSLVPN com login fora do SAML, restringir origem e revisar logins não-SAML nos logs.",
+      "fontes": [
+        {
+          "nome": "Ostorlab",
+          "url": "https://blog.ostorlab.co/sonicwall-sslvpn-saml-bypass-cve-2026-19868.html"
+        },
+        {
+          "nome": "Security Affairs",
+          "url": "https://securityaffairs.com/202581/security/u-s-cisa-adds-sonicwall-sonicos-sslvpn-flaw-to-its-known-exploited-vulnerabilities-catalog.html"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-19868"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-06",
+      "cve": "CVE-2026-96652 / CVE-2026-96654 / CVE-2026-96655 / CVE-2026-96656",
+      "produto": "Plex Media Server em NAS QNAP (cadeia Plex2Shell)",
+      "cvss": null,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV desde 20/10; QNAP confirma NAS invadidos em 06/11)",
+      "prioridade": "P2",
+      "tratamento": "Uso típico de shadow IT. Procurar NAS com Plex exposto na porta 32400 e atualizar para 1.43.3.10861 ou superior; se esteve exposto, tratar como comprometido, reinstalar o sistema e trocar senhas. Nota CVSS a confirmar.",
+      "fontes": [
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-05",
+      "cve": "CVE-2026-17408 / CVE-2026-17313 / CVE-2026-17360 / CVE-2026-17402",
+      "produto": "IBM API Connect (gateway e gestão de APIs, ~100 CVEs)",
+      "cvss": 9.9,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P0",
+      "tratamento": "Há RCE e bypass de autenticação sem login (9.8) e senhas fixas no código: subir para 12.1.1.3; para a linha 10.0.8 a versão corrigida está a confirmar no boletim da IBM. Até corrigir, tirar portais e gerência da internet, restringir origem e revisar contas e tokens recentes.",
+      "fontes": [
+        {
+          "nome": "IBM Security Bulletin",
+          "url": "https://www.ibm.com/support/pages/node/7295635"
+        },
+        {
+          "nome": "OffSeq Radar",
+          "url": "https://radar.offseq.com/threat/ibm-api-connect-10080-through-100812-and-12100-through-12112-could-allow-a-remote-authenticated-300801eb7f34f2f3"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-05",
+      "cve": "CVE-2026-102895 / CVE-2026-102894",
+      "produto": "GPUStack (gestão de clusters de GPU para IA)",
+      "cvss": 9.8,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (CVE-2026-102895 no KEV em 09/11, prazo CISA 12/11; CVE-2026-102894 sem ataque confirmado)",
+      "prioridade": "P2",
+      "tratamento": "Bypass de login por loopback dá admin remoto, e o callback SAML aceita XML sem verificar assinatura (9.1). Se houver em times de IA, subir para 2.2.2; até lá, ligar force_auth_localhost, remover o cabeçalho X-GPUStack-Real-IP no proxy e bloquear /auth/saml/callback de fora.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/gpustack-authentication-bypass-cve-2026-102895-exploited/"
+        },
+        {
+          "nome": "The Hacker News (KEV)",
+          "url": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-05",
+      "cve": "CVE-2026-122310",
+      "produto": "Kyverno 1.19.1 (políticas de Kubernetes)",
+      "cvss": 9.9,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Usuário restrito a um namespace que pode criar Policy esconde ../ no urlPath do apiCall e escapa da validação. Subir para 1.19.2 e, até lá, revisar quem pode criar Policy. Impacto exato a confirmar no advisory do projeto.",
+      "fontes": [
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122310"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-05",
+      "cve": "CVE-2026-123158",
+      "produto": "OpenSSH em Linux com musl sem PAM (Alpine, Buildroot, OpenWrt, Yocto)",
+      "cvss": 8.1,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 09/11, prazo CISA 12/11; GreyNoise vê pós-exploração com persistência em authorized_keys e agente C2; watchTowr: botnets e mineradores)",
+      "prioridade": "P1",
+      "tratamento": "Ataques reais por botnets contra sshd em musl sem PAM. Subir para OpenSSH 10.6p2 ou pacote corrigido da distro e reiniciar o sshd; paliativo: PasswordAuthentication no. Inventariar appliances e imagens Buildroot/OpenWrt/Yocto e containers Alpine com sshd; revisar logins por senha em contas sem senha e authorized_keys.",
+      "fontes": [
+        {
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/hackers-exploiting-sshole-authentication-bypass-in-openssh/"
+        },
+        {
+          "nome": "The Hacker News (KEV)",
+          "url": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-05",
+      "cve": "CVE-2026-111497",
+      "produto": "Cisco (19 produtos) e Splunk (Brotli)",
+      "cvss": 9.2,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (Brotli no KEV em 27/10; sem relato específico em produtos Cisco)",
+      "prioridade": "P1",
+      "tratamento": "Cisco confirmou 19 produtos afetados e segue investigando outros; Splunk também. Lista e versões a confirmar nos advisories: cruzar com o inventário e priorizar o que descomprime tráfego vindo da internet.",
+      "fontes": [
+        {
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/cisco-watchguard-release-patches-sonicwall-wont-fix-gms-flaws/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111497"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-05",
+      "cve": "CVE-2026-121639 / CVE-2026-121638 / CVE-2026-121640",
+      "produto": "WatchGuard AuthPoint Authentication Gateway (MFA)",
+      "cvss": null,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Três falhas críticas de autenticação no gateway de MFA, já corrigidas; nota e versões a confirmar no advisory da WatchGuard. Se houver no parque, atualizar e restringir o acesso à interface.",
+      "fontes": [
+        {
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/cisco-watchguard-release-patches-sonicwall-wont-fix-gms-flaws/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-04",
+      "cve": "CVE-2026-102255 / CVE-2026-109593 / CVE-2026-109594",
+      "produto": "SonicWall SMA1000 e GMS",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Ativa (SMA1000: 2.541 tentativas desde 09/10 e até 30 em 03/11, pela Previdian; SonicWall não confirmava em 12/10)",
+      "prioridade": "P0",
+      "tratamento": "SMA1000 (6210, 7210, 8200v): SSRF sem login, nota 10. Subir para 12.4.3-03670 ou 12.5.0-03082 ou superior: não há workaround, e alertas de governo divergem nos números, então conferir no SNWLID-2026-0017 pelo MySonicWall. GMS até 9.5.2 tem leitura de arquivos sem login (9.1) e SQL injection com login (6.8), sem patch por fim de vida: migrar para NSM e isolar o console. Fora do KEV até a última lista consultada; entrada a confirmar.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html"
+        },
+        {
+          "nome": "Security Affairs",
+          "url": "https://securityaffairs.com/200816/hacking/sonicwall-patches-cvss-10-0-ssrf-flaw-as-attacks-be"
+        },
+        {
+          "nome": "eSecurityPlanet",
+          "url": "https://www.esecurityplanet.com/threats/news-sonicwall-sma1000-cve-2026-102255-exploitation/"
+        }
+      ],
+      "status": "Pendente"
+    },
+    {
+      "data": "2026-11-03",
+      "cve": "CVE-2026-109618 / CVE-2026-109619",
+      "produto": "PHP2Shell em appliances de borda (PAN-OS e Panorama, NetScaler, BIG-IP APM, Cisco Expressway e Duo Access Gateway, FortiSOAR)",
+      "cvss": 9.8,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (contra interfaces de gestão do PAN-OS expostas, com escalada a root via Fragnesia)",
+      "prioridade": "P0",
+      "tratamento": "O PHP vulnerável vem embutido em firewalls, ADCs e gateways. Conferir os advisories de cada fabricante e aplicar as versões corrigidas; tirar interfaces de gestão da internet e investigar sinais de root, persistência e binds LDAP estranhos nesses equipamentos. Para PHP próprio, subir para 8.2.35, 8.3.36, 8.4.27 ou 8.5.12.",
+      "fontes": [
+        {
+          "nome": "CSA Singapura (AL-2026-157)",
+          "url": "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-157/"
+        },
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/"
+        }
+      ],
+      "status": "Pendente"
+    },
+    {
+      "data": "2026-10-30",
+      "cve": "CVE-2026-102764",
+      "produto": "BeyondTrust Remote Support (self-hosted)",
+      "cvss": 9.3,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (KEV em 16/10; zero-day desde ago/2026; módulo Metasploit e análise da Rapid7 em 30/10)",
+      "prioridade": "P0",
+      "tratamento": "Upload sem login até RCE, agora com exploit público: a janela para ataques em massa abriu. Aplicar BT26-05-RS (24.3.1 a 26.2.3; abaixo disso, atualizar) e revisar logs de POST /api/start_session seguido de caminhos sem extensão, além de PHP inesperado no diretório público.",
+      "fontes": [
+        {
+          "nome": "Rapid7",
+          "url": "https://www.rapid7.com/blog/post/ra-rapid7-analysis-unauthenticated-file-upload-to-rce-in-beyondtrust-remote-support-cve-2026-102764/"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html"
+        }
+      ],
+      "status": "Pendente"
+    },
+    {
+      "data": "2026-10-29",
+      "cve": "CVE-2026-104935 / CVE-2026-111357 / CVE-2026-118527",
+      "produto": "Ivanti Connect Secure (VPN)",
+      "cvss": 8.8,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (CVE-2026-111357 e CVE-2026-118527 no KEV em 30/10; cadeia até root sem login; prazos CISA 02/11 e 13/11)",
+      "prioridade": "P0",
+      "tratamento": "Subir para 25.1.1.3 (ou 25.1.3.1 no ramo 25.1.3); a 22.8R2.6 só se a migração não puder ser imediata, pois os patches de 13/10 (25.1.1.2 e 22.8R2.5) não cobrem a CVE-2026-111357 nem a CVE-2026-118527. Em ISA4500, 6500 e 8500 há fonte com 25.1.3.0 ou superior como não afetada: conferir no advisory. Integrity Checker limpo não prova nada: guardar memória e logs antes de reiniciar, caçar X-DSCGI-PATH em welcome.cgi e arquivos em /data/.icscap/ e /home/runtime/tmp/, e trocar conta LDAP, senhas LAPS e chaves BitLocker se houver suspeita.",
+      "fontes": [
+        {
+          "nome": "Tech Insider (cadeia e caça)",
+          "url": "https://tech-insider.org/ivanti-connect-secure-cve-2026-111357-118527-kev-deadline-nov-13-2026/"
+        },
+        {
+          "nome": "Centro Canadense de Cibersegurança (AV26-1035)",
+          "url": "https://cyber.gc.ca/en/alerts-advisories/ivanti-security-advisory-av26-1035"
+        },
+        {
+          "nome": "Cyber Daily",
+          "url": "https://www.cyberdaily.au/security/14390-patch-now-ivanti-updates-security-advisory-for-trio-of-exploited-vulnerabilities-in-connect-secure"
+        }
+      ],
+      "status": "Pendente"
+    },
+    {
+      "data": "2026-10-29",
+      "cve": "CVE-2026-97229 / CVE-2026-110264",
+      "produto": "GitLab CE/EE self-managed (CI/CD, regex)",
+      "cvss": 10.0,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 29/10; ataque ao GitLab da Alpine Linux em 20 e 21/10; PoC público desde 13/10; Shadowserver em 01/11: mais de 1.000 servidores sem a correção da CVE-2026-97229)",
+      "prioridade": "P0",
+      "tratamento": "RCE sem login via regex malicioso no .gitlab-ci.yml (estouro no motor Onigmo do Ruby). Ir direto para 19.5.1, 19.4.3, 19.3.6, 19.2.9, 19.1.9, 19.0.10 ou 18.11.13: 19.4.2, 19.3.5 e 19.2.8 não fecham a CVE-2026-110264 (CVSS 10, mais de 11.300 expostos, sem exploração confirmada). Instalação própria ou imagem com Ruby próprio precisa de Ruby 3.3.13, 3.4.12 ou 4.0.9. Caçar quedas de worker, contas novas enviando CI e processos anômalos do usuário git.",
+      "fontes": [
+        {
+          "nome": "The Hacker News (caso Alpine)",
+          "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html"
+        },
+        {
+          "nome": "Techzine (Shadowserver)",
+          "url": "https://www.techzine.eu/news/security/145456/thousands-of-gitlab-servers-still-unpatched-against-critical-vulnerabilities/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-97229"
+        }
+      ],
+      "status": "Pendente"
+    }
+  ]
+}

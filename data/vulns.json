@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-12T01:33:20Z",
+  "atualizado": "2026-11-12T10:42:11Z",
   "itens": [
     {
       "cve": "CVE-2026-121529",
@@ -29,9 +29,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-11T10:40:48Z"
+        "qtd": 4,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-121529.json",
+        "checado": "2026-11-12T10:42:11Z"
       }
     },
     {
@@ -1232,7 +1232,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-11T21:16:45Z",
       "resumo": "blueprintUE Self-Hosted Edition before 4.3.7 contains an insecure default configuration in its Docker Compose examples that sets MYSQL_ALLOW_EMPTY_PASSWORD=yes in database.env and publishes MariaDB on port 3306. Unauthenticated attackers reaching the Docker…",
-      "nvd_checado_em": "2026-11-12T01:33:20Z",
+      "nvd_checado_em": "2026-11-12T10:42:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1268,7 +1268,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-11T15:17:18Z",
       "resumo": "A flaw was found in Red Hat Quay. An unauthenticated client can obtain an anonymous registry token with an audience it controls, present that token to the service key rotation endpoint, and install its own approved signing key with no expiry. Registry tokens…",
-      "nvd_checado_em": "2026-11-12T01:33:20Z",
+      "nvd_checado_em": "2026-11-12T10:42:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1366,7 +1366,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T19:20:26Z",
       "resumo": "Incorrect authorization in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network.",
-      "nvd_checado_em": "2026-11-12T01:33:20Z",
+      "nvd_checado_em": "2026-11-12T10:42:11Z",
       "nota_chegou_em": "2026-11-11T00:04:15Z",
       "exibido_em": "2026-11-11T00:04:15Z",
       "prioridade": "P2",
@@ -1411,7 +1411,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-11T10:40:48Z"
+        "checado": "2026-11-12T10:42:11Z"
       },
       "epss": {
         "score": 0.0015,
@@ -1460,7 +1460,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-11T10:40:48Z"
+        "checado": "2026-11-12T10:42:11Z"
       },
       "epss": {
         "score": 0.0043,
@@ -1509,7 +1509,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-11T10:40:48Z"
+        "checado": "2026-11-12T10:42:11Z"
       },
       "epss": {
         "score": 0.0032,
@@ -1558,7 +1558,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76964.json",
-        "checado": "2026-11-11T10:40:48Z"
+        "checado": "2026-11-12T10:42:11Z"
       },
       "epss": {
         "score": 0.0043,
@@ -1599,7 +1599,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-11T10:40:48Z"
+        "checado": "2026-11-12T10:42:11Z"
       },
       "epss": {
         "score": 0.0031,
@@ -1640,7 +1640,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-11T10:40:48Z"
+        "checado": "2026-11-12T10:42:11Z"
       },
       "epss": {
         "score": 0.0026,
@@ -1681,7 +1681,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-11T10:40:48Z"
+        "checado": "2026-11-12T10:42:11Z"
       },
       "epss": {
         "score": 0.0041,
@@ -1722,7 +1722,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-11T10:40:48Z"
+        "checado": "2026-11-12T10:42:11Z"
       },
       "epss": {
         "score": 0.0041,
@@ -1763,7 +1763,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-11T10:40:48Z"
+        "checado": "2026-11-12T10:42:11Z"
       },
       "epss": {
         "score": 0.0028,
@@ -2628,18 +2628,6 @@
       "titulo": "New Cisco firewall zero-day exploited to crash SSL VPN devices",
       "link": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/",
       "publicado": "2026-10-29T11:10:13Z"
-    },
-    {
-      "fonte": "SecurityWeek",
-      "titulo": "Cisco SD-WAN Zero-Day Exploitation Tied to Volt Typhoon’s ‘Silent Train’ Network",
-      "link": "https://www.securityweek.com/cisco-sd-wan-zero-day-exploitation-tied-to-volt-typhoons-silent-train-network/",
-      "publicado": "2026-10-29T10:29:25Z"
-    },
-    {
-      "fonte": "SecurityWeek",
-      "titulo": "Attackers Exploit Second Cisco Firewall VPN Zero-Day Since August",
-      "link": "https://www.securityweek.com/attackers-exploit-second-cisco-firewall-vpn-zero-day-since-august/",
-      "publicado": "2026-10-29T09:47:10Z"
     }
   ]
 }
