@@ -21,7 +21,7 @@
     "exibido_em": "2026-11-11T00:04:15Z",
     "aguardando_nota_desde": "2026-11-10T12:00:00Z",
     "nota_chegou_em": "2026-11-11T10:40:48Z",
-    "epss_max": 0.0039,
+    "epss_max": 0.0082,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -48,6 +48,11 @@
         "nome": "SecurityWeek",
         "link": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
         "publicado": "2026-11-11T09:01:07Z"
+      },
+      {
+        "nome": "Cisco PSIRT",
+        "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-bworks-xxe-uwUd7CEt?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20BroadWorks%20Out-of-Band%20Blind%20XML%20External%20Entity%20Injection%20Vulnerability%26vs_k=1",
+        "publicado": "2026-11-12T17:25:12Z"
       }
     ],
     "prioridade_max": "P0"

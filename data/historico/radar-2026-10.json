@@ -1184,7 +1184,7 @@
     "exibido_em": "2026-11-11T00:04:15Z",
     "aguardando_nota_desde": "2026-11-10T12:00:00Z",
     "nota_chegou_em": "2026-11-11T10:40:48Z",
-    "epss_max": 0.0027,
+    "epss_max": 0.0064,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -2543,7 +2543,7 @@
     "exibido_em": "2026-10-29T23:18:51Z",
     "aguardando_nota_desde": "2026-10-29T09:05:39Z",
     "nota_chegou_em": "2026-10-29T23:18:51Z",
-    "epss_max": 0.6522,
+    "epss_max": 0.6929,
     "poc_qtd": 9,
     "fontes": [
       {
