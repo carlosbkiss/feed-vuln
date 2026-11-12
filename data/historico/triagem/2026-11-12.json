@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-12T10:41:52Z",
+  "atualizado": "2026-11-12T14:38:44Z",
   "janela": "05 a 12/nov/2026",
   "itens": [
     {
@@ -558,6 +558,28 @@
         {
           "nome": "SecurityWeek",
           "url": "https://www.securityweek.com/cisco-watchguard-release-patches-sonicwall-wont-fix-gms-flaws/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-04",
+      "cve": "CVE-2024-27834",
+      "produto": "Apple iOS, iPadOS, macOS e Safari (bypass de PAC)",
+      "cvss": 5.5,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (APT29 encadeia com falha do WebKit para roubar dados; KEV em 04/11, prazo CISA 18/11)",
+      "prioridade": "P1",
+      "tratamento": "Corrigido desde maio/2024 (iOS/iPadOS 17.5, macOS Sonoma 14.5, Safari 17.5). Usar o MDM para achar iPhones, iPads e Macs corporativos abaixo dessas versões e bloquear o acesso deles a e-mail e VPN até atualizar.",
+      "fontes": [
+        {
+          "nome": "F5 Labs",
+          "url": "https://www.f5.com/labs/articles/weekly-threat-bulletin-november-11th-2026"
+        },
+        {
+          "nome": "CISA (boletim KEV)",
+          "url": "https://content.govdelivery.com/accounts/USDHSCISA/bulletins/431ad4e"
         }
       ],
       "status": "Novo"

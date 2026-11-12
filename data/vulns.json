@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-12T10:42:11Z",
+  "atualizado": "2026-11-12T14:38:58Z",
   "itens": [
     {
       "cve": "CVE-2026-121529",
@@ -1176,6 +1176,14 @@
           "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194",
           "publicado": "2026-11-10T19:20:48Z",
           "visto_em": "2026-11-11T00:04:15Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Confirms Active Exploitation of Outlook User Interaction 0-Day Vulnerability",
+          "link": "https://cybersecuritynews.com/active-exploitation-of-outlook-0-day-vulnerability/",
+          "publicado": "2026-11-12T14:11:54Z",
+          "visto_em": "2026-11-12T14:38:58Z"
         }
       ],
       "detectado": "2026-11-10T18:38:17Z",
@@ -1187,7 +1195,7 @@
       "primeira_vez": "2026-11-10T00:00:00Z",
       "primeira_noticia": "2026-11-10T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194",
-      "ultima_atividade": "2026-11-10T19:20:48Z",
+      "ultima_atividade": "2026-11-12T14:11:54Z",
       "kev": {
         "adicionado": "2026-11-10",
         "prazo": "2026-11-24",
@@ -1215,6 +1223,85 @@
       }
     },
     {
+      "cve": "CVE-2026-25611",
+      "fontes": [
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical MongoDB Flaw Lets Attackers Crash Database Servers With Just Two Ping Requests",
+          "link": "https://cybersecuritynews.com/mongodb-database-crash-vulnerability/",
+          "publicado": "2026-11-12T12:22:28Z",
+          "visto_em": "2026-11-12T14:38:58Z"
+        }
+      ],
+      "detectado": "2026-11-12T14:38:58Z",
+      "zero_day": true,
+      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
+      "aguardando_nota_desde": "2026-11-12T12:22:28Z",
+      "elegivel_por": [
+        "zero-day"
+      ],
+      "primeira_vez": "2026-11-12T12:22:28Z",
+      "primeira_noticia": "2026-11-12T12:22:28Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-25611",
+      "ultima_atividade": "2026-11-12T12:22:28Z",
+      "exibido_em": "2026-11-12T14:38:58Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0086,
+        "percentil": 0.5884,
+        "data": "2026-11-10"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-12T14:38:58Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-118383",
+      "fontes": [
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
+          "link": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
+          "publicado": "2026-11-12T09:25:00Z",
+          "visto_em": "2026-11-12T10:42:11Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical MongoDB Flaw Lets Attackers Crash Database Servers With Just Two Ping Requests",
+          "link": "https://cybersecuritynews.com/mongodb-database-crash-vulnerability/",
+          "publicado": "2026-11-12T12:22:28Z",
+          "visto_em": "2026-11-12T14:38:58Z"
+        }
+      ],
+      "detectado": "2026-11-12T10:42:11Z",
+      "aguardando_nota_desde": "2026-11-12T09:25:00Z",
+      "elegivel_por": [
+        "zero-day"
+      ],
+      "primeira_vez": "2026-11-12T09:25:00Z",
+      "primeira_noticia": "2026-11-12T09:25:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-118383",
+      "ultima_atividade": "2026-11-12T12:22:28Z",
+      "zero_day": true,
+      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
+      "exibido_em": "2026-11-12T14:38:58Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-118383.json",
+        "checado": "2026-11-12T14:38:58Z"
+      }
+    },
+    {
       "cve": "CVE-2026-126812",
       "fontes": [
         {
@@ -1232,7 +1319,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-11T21:16:45Z",
       "resumo": "blueprintUE Self-Hosted Edition before 4.3.7 contains an insecure default configuration in its Docker Compose examples that sets MYSQL_ALLOW_EMPTY_PASSWORD=yes in database.env and publishes MariaDB on port 3306. Unauthenticated attackers reaching the Docker…",
-      "nvd_checado_em": "2026-11-12T10:42:11Z",
+      "nvd_checado_em": "2026-11-12T14:38:58Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1260,6 +1347,14 @@
           "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-123710",
           "publicado": "2026-11-11T15:17:18Z",
           "visto_em": "2026-11-11T18:39:31Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical Red Hat Quay Vulnerability Allows Unauthenticated Attackers to Hijack Container Registries",
+          "link": "https://cybersecuritynews.com/red-hat-quay-vulnerability/",
+          "publicado": "2026-11-12T13:57:37Z",
+          "visto_em": "2026-11-12T14:38:58Z"
         }
       ],
       "detectado": "2026-11-11T18:39:31Z",
@@ -1273,9 +1368,9 @@
         "CVSS ≥ 9"
       ],
       "primeira_vez": "2026-11-11T15:17:18Z",
-      "primeira_noticia": null,
+      "primeira_noticia": "2026-11-12T13:57:37Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-123710",
-      "ultima_atividade": "2026-11-11T15:17:18Z",
+      "ultima_atividade": "2026-11-12T13:57:37Z",
       "exibido_em": "2026-11-11T18:39:31Z",
       "prioridade": "P2",
       "regra": "CVSS ≥ 9 em plataforma corporativa",
@@ -1366,7 +1461,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T19:20:26Z",
       "resumo": "Incorrect authorization in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network.",
-      "nvd_checado_em": "2026-11-12T10:42:11Z",
+      "nvd_checado_em": "2026-11-12T14:38:58Z",
       "nota_chegou_em": "2026-11-11T00:04:15Z",
       "exibido_em": "2026-11-11T00:04:15Z",
       "prioridade": "P2",
@@ -1813,6 +1908,14 @@
           "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-125350",
           "publicado": "2026-11-10T18:17:35Z",
           "visto_em": "2026-11-11T00:04:15Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns of Google Chromium 0-Day Vulnerability Actively Exploited in Attacks",
+          "link": "https://cybersecuritynews.com/google-chromium-0-day-vulnerability-exploited/",
+          "publicado": "2026-11-12T13:28:29Z",
+          "visto_em": "2026-11-12T14:38:58Z"
         }
       ],
       "detectado": "2026-11-10T04:38:14Z",
@@ -1824,7 +1927,7 @@
       "primeira_vez": "2026-11-10T00:00:00Z",
       "primeira_noticia": "2026-11-10T04:21:10Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-125350",
-      "ultima_atividade": "2026-11-10T18:17:35Z",
+      "ultima_atividade": "2026-11-12T13:28:29Z",
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
       "exibido_em": "2026-11-10T10:44:29Z",
@@ -2622,12 +2725,6 @@
       "titulo": "Drupal warns of critical Commerce Core flaw exploited in attacks",
       "link": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/",
       "publicado": "2026-10-30T10:16:07Z"
-    },
-    {
-      "fonte": "BleepingComputer",
-      "titulo": "New Cisco firewall zero-day exploited to crash SSL VPN devices",
-      "link": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/",
-      "publicado": "2026-10-29T11:10:13Z"
     }
   ]
 }

@@ -387,6 +387,39 @@
     ],
     "prioridade_max": "P0"
   },
+  "CVE-2026-118383": {
+    "cve": "CVE-2026-118383",
+    "produto": "",
+    "titulo": "",
+    "cvss": null,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day"
+    ],
+    "zero_day": true,
+    "kev": null,
+    "primeira_vez": "2026-11-12T09:25:00Z",
+    "primeira_noticia": "2026-11-12T09:25:00Z",
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-12T14:38:58Z",
+    "aguardando_nota_desde": "2026-11-12T09:25:00Z",
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 1,
+    "fontes": [
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
+        "publicado": "2026-11-12T09:25:00Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/mongodb-database-crash-vulnerability/",
+        "publicado": "2026-11-12T12:22:28Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
   "CVE-2026-120002": {
     "cve": "CVE-2026-120002",
     "produto": "",
@@ -633,7 +666,7 @@
     "zero_day": false,
     "kev": null,
     "primeira_vez": "2026-11-11T15:17:18Z",
-    "primeira_noticia": null,
+    "primeira_noticia": "2026-11-12T13:57:37Z",
     "publicado_nvd": "2026-11-11T15:17:18Z",
     "exibido_em": "2026-11-11T18:39:31Z",
     "aguardando_nota_desde": null,
@@ -645,6 +678,11 @@
         "nome": "NVD",
         "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-123710",
         "publicado": "2026-11-11T15:17:18Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/red-hat-quay-vulnerability/",
+        "publicado": "2026-11-12T13:57:37Z"
       }
     ],
     "prioridade_max": "P2"
@@ -698,6 +736,11 @@
         "nome": "NVD",
         "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194",
         "publicado": "2026-11-10T19:20:48Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/active-exploitation-of-outlook-0-day-vulnerability/",
+        "publicado": "2026-11-12T14:11:54Z"
       }
     ],
     "prioridade_max": "P1"
@@ -807,6 +850,11 @@
         "nome": "NVD",
         "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-125350",
         "publicado": "2026-11-10T18:17:35Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/google-chromium-0-day-vulnerability-exploited/",
+        "publicado": "2026-11-12T13:28:29Z"
       }
     ],
     "prioridade_max": "P2"
@@ -939,6 +987,34 @@
       }
     ],
     "prioridade_max": "P0"
+  },
+  "CVE-2026-25611": {
+    "cve": "CVE-2026-25611",
+    "produto": "",
+    "titulo": "",
+    "cvss": null,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day"
+    ],
+    "zero_day": true,
+    "kev": null,
+    "primeira_vez": "2026-11-12T12:22:28Z",
+    "primeira_noticia": "2026-11-12T12:22:28Z",
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-12T14:38:58Z",
+    "aguardando_nota_desde": "2026-11-12T12:22:28Z",
+    "nota_chegou_em": null,
+    "epss_max": 0.0086,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/mongodb-database-crash-vulnerability/",
+        "publicado": "2026-11-12T12:22:28Z"
+      }
+    ],
+    "prioridade_max": "P2"
   },
   "CVE-2026-58115": {
     "cve": "CVE-2026-58115",
