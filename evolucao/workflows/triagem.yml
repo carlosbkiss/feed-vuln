@@ -1,0 +1,81 @@
+# Triagem diária com Claude Code no GitHub Actions.
+#
+# INERTE ENQUANTO ESTIVER AQUI: o GitHub só executa workflows em .github/workflows/.
+# Para ativar, veja evolucao/README.md ("Como ativar").
+#
+# Fluxo: preparo em Python -> Claude pesquisa e edita o rascunho -> Python valida e grava -> abre PR.
+# Nada vai direto para main: um analista revisa e faz o merge (o merge dispara o radar.yml, que republica o Pages).
+
+name: triagem
+
+on:
+  schedule:
+    - cron: "31 14 * * *"     # 11h31 em São Paulo (UTC-3)
+  workflow_dispatch:           # rodar à mão pela aba Actions
+
+permissions:
+  contents: write              # criar a branch da triagem
+  pull-requests: write         # abrir o PR
+  id-token: write              # autenticação do claude-code-action (GitHub App ou OIDC)
+
+concurrency:
+  group: triagem
+  cancel-in-progress: false
+
+jobs:
+  triar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Testes das regras fixas
+        run: python -m unittest discover -s evolucao/tests
+
+      - name: Preparar pendências (validade, KEV, cruzamento com o radar)
+        run: python evolucao/scripts/triagem_prep.py
+
+      - name: Claude faz a triagem
+        uses: anthropics/claude-code-action@v1
+        with:
+          # Opção 1, mais simples: chave da API guardada como secret do repositório
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Opção 2, sem chave fixa (preferível em banco): troque a linha acima por
+          #   anthropic_federation_rule_id / anthropic_organization_id (OIDC com a Claude Console)
+          # ou use_bedrock / use_vertex / use_foundry para rodar na nuvem da empresa.
+          prompt: "/triagem"
+          claude_args: |
+            --max-turns 60
+          # As ferramentas permitidas vêm do allowed-tools da skill (.claude/skills/triagem/SKILL.md).
+          # Para restringir o WebFetch a domínios conhecidos, use o input "settings" com permissions.allow,
+          # ex.: "WebFetch(domain:fortiguard.com)". Ver evolucao/README.md.
+
+      - name: Validar e gravar data/entradas.json
+        id: pub
+        run: python evolucao/scripts/triagem_publish.py
+
+      - name: Abrir PR com a triagem
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain -- data/entradas.json data/triagem_descartes.json)" ]; then
+            echo "Sem alteração."; exit 0
+          fi
+          RAMO="triagem/$(TZ=America/Sao_Paulo date +%Y-%m-%d)-${{ github.run_number }}"
+          git config user.name "triagem-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$RAMO"
+          git add data/entradas.json data/triagem_descartes.json
+          git commit -m "${{ steps.pub.outputs.mensagem }}"
+          git push origin "$RAMO"
+          [ -s .triagem/resumo.md ] || echo "Triagem sem resumo (o Claude não gravou .triagem/resumo.md)." > .triagem/resumo.md
+          gh pr create --base main --head "$RAMO" \
+            --title "${{ steps.pub.outputs.mensagem }}" \
+            --body-file .triagem/resumo.md
