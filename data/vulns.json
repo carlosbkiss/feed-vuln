@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-13T18:32:35Z",
+  "atualizado": "2026-11-13T18:38:57Z",
   "itens": [
     {
       "cve": "CVE-2026-123039",
@@ -107,6 +107,69 @@
         "percentil": 0.1238,
         "data": "2026-11-13"
       }
+    },
+    {
+      "cve": "CVE-2026-118383",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-118383",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-118383",
+          "publicado": "2026-11-10T21:18:58Z",
+          "visto_em": "2026-11-13T18:38:57Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
+          "link": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
+          "publicado": "2026-11-12T09:25:00Z",
+          "visto_em": "2026-11-12T10:42:11Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical MongoDB Flaw Lets Attackers Crash Database Servers With Just Two Ping Requests",
+          "link": "https://cybersecuritynews.com/mongodb-database-crash-vulnerability/",
+          "publicado": "2026-11-12T12:22:28Z",
+          "visto_em": "2026-11-12T14:38:58Z"
+        }
+      ],
+      "detectado": "2026-11-12T10:42:11Z",
+      "aguardando_nota_desde": "2026-11-12T09:25:00Z",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-10T21:18:58Z",
+      "primeira_noticia": "2026-11-12T09:25:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-118383",
+      "ultima_atividade": "2026-11-12T12:22:28Z",
+      "zero_day": true,
+      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
+      "exibido_em": "2026-11-12T14:38:58Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-118383.json",
+        "checado": "2026-11-13T15:01:54Z"
+      },
+      "epss": {
+        "score": 0.0071,
+        "percentil": 0.5422,
+        "data": "2026-11-13"
+      },
+      "cvss": 10.0,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "NVD",
+      "publicado_nvd": "2026-11-10T21:18:58Z",
+      "resumo": "A use-after-free in the replication component of MongoDB Server can occur when a newly elected replica set primary completes catch-up. The condition can be caused by requests that do not require authentication, and may result in the server terminating…",
+      "nvd_checado_em": "2026-11-13T18:38:57Z",
+      "nota_chegou_em": "2026-11-13T18:38:57Z",
+      "escalado": true
     },
     {
       "cve": "CVE-2026-123218",
@@ -1102,7 +1165,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-13T10:18:08Z",
       "resumo": "FrankenPHP Docker images before 1.1.11 were rebuilt only when new base image tags were created, so security fixes that Alpine, PHP, and Go applied under existing tags were not propagated. Remote attackers could exploit known flaws in the stale system…",
-      "nvd_checado_em": "2026-11-13T15:01:54Z",
+      "nvd_checado_em": "2026-11-13T18:38:57Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1143,7 +1206,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-13T10:18:04Z",
       "resumo": "OpsTree BuildPiper before 2.7.0 contains an improper authorization vulnerability that allows authenticated deploy users to define arbitrary Kubernetes hostPath volumes without allow-list or policy checks. Attackers can set the host path to / in the Define…",
-      "nvd_checado_em": "2026-11-13T15:01:54Z",
+      "nvd_checado_em": "2026-11-13T18:38:57Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1184,7 +1247,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-13T10:18:03Z",
       "resumo": "OpsTree BuildPiper before 2.7.0 contains a privilege escalation vulnerability that allows project users to gain Kubernetes cluster-admin rights by submitting unrestricted manifests through the Additional Manifest feature. Attackers can deploy a…",
-      "nvd_checado_em": "2026-11-13T15:01:54Z",
+      "nvd_checado_em": "2026-11-13T18:38:57Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1225,7 +1288,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-13T10:17:40Z",
       "resumo": "Vvveb through 1.0.8.6 contains a file upload vulnerability in the theme installer validFile() function that uses strpos() instead of strict path matching. Attackers with admin credentials can upload a ZIP containing a PHP file whose path includes /theme.php…",
-      "nvd_checado_em": "2026-11-13T15:01:54Z",
+      "nvd_checado_em": "2026-11-13T18:38:57Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1266,7 +1329,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-13T10:17:40Z",
       "resumo": "Vvveb before 1.0.9.0 contains a denylist bypass in system/traits/media.php where '.phar' is misconfigured with a leading dot, allowing authenticated administrators to upload .phar PHP files. Attackers can upload a GIF magic-byte polyglot webshell bypassing…",
-      "nvd_checado_em": "2026-11-13T15:01:54Z",
+      "nvd_checado_em": "2026-11-13T18:38:57Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1307,7 +1370,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-13T10:17:26Z",
       "resumo": "The ELEX WordPress HelpDesk & Customer Ticketing System plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.3.9 via the 'form (specifically the attacker-controlled ticket_label field inside the url-encoded form…",
-      "nvd_checado_em": "2026-11-13T15:01:54Z",
+      "nvd_checado_em": "2026-11-13T18:38:57Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1328,52 +1391,6 @@
         "score": 0.0134,
         "percentil": 0.7171,
         "data": "2026-11-13"
-      }
-    },
-    {
-      "cve": "CVE-2026-114713",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-114713",
-          "publicado": "2026-11-13",
-          "visto_em": "2026-11-13T18:32:35Z"
-        }
-      ],
-      "detectado": "2026-11-13T18:32:35Z",
-      "kev": {
-        "adicionado": "2026-11-13",
-        "prazo": "2026-11-16",
-        "ransomware": "Unknown"
-      },
-      "produto": "UnrealIRCd UnrealIRCd",
-      "titulo": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
-      "resumo": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-13T00:00:00Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
-      "ultima_atividade": "2026-11-13T00:00:00Z",
-      "exibido_em": "2026-11-13T18:32:35Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.003,
-        "percentil": 0.233,
-        "data": "2026-11-13"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-13T18:32:35Z"
       }
     },
     {
@@ -1412,52 +1429,6 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-13T15:01:54Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-118383",
-      "fontes": [
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
-          "link": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
-          "publicado": "2026-11-12T09:25:00Z",
-          "visto_em": "2026-11-12T10:42:11Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Critical MongoDB Flaw Lets Attackers Crash Database Servers With Just Two Ping Requests",
-          "link": "https://cybersecuritynews.com/mongodb-database-crash-vulnerability/",
-          "publicado": "2026-11-12T12:22:28Z",
-          "visto_em": "2026-11-12T14:38:58Z"
-        }
-      ],
-      "detectado": "2026-11-12T10:42:11Z",
-      "aguardando_nota_desde": "2026-11-12T09:25:00Z",
-      "elegivel_por": [
-        "zero-day"
-      ],
-      "primeira_vez": "2026-11-12T09:25:00Z",
-      "primeira_noticia": "2026-11-12T09:25:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-118383",
-      "ultima_atividade": "2026-11-12T12:22:28Z",
-      "zero_day": true,
-      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
-      "exibido_em": "2026-11-12T14:38:58Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-118383.json",
-        "checado": "2026-11-13T15:01:54Z"
-      },
-      "epss": {
-        "score": 0.0071,
-        "percentil": 0.5422,
-        "data": "2026-11-13"
       }
     },
     {
@@ -1635,7 +1606,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T19:20:26Z",
       "resumo": "Incorrect authorization in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network.",
-      "nvd_checado_em": "2026-11-13T15:01:54Z",
+      "nvd_checado_em": "2026-11-13T18:38:57Z",
       "nota_chegou_em": "2026-11-11T00:04:15Z",
       "exibido_em": "2026-11-11T00:04:15Z",
       "prioridade": "P2",
@@ -2260,6 +2231,65 @@
         "percentil": 0.2915,
         "data": "2026-11-13"
       }
+    },
+    {
+      "cve": "CVE-2026-114713",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-114713",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
+          "publicado": "2026-11-08T03:16:33Z",
+          "visto_em": "2026-11-13T18:38:57Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-114713",
+          "publicado": "2026-11-13",
+          "visto_em": "2026-11-13T18:32:35Z"
+        }
+      ],
+      "detectado": "2026-11-13T18:32:35Z",
+      "kev": {
+        "adicionado": "2026-11-13",
+        "prazo": "2026-11-16",
+        "ransomware": "Unknown"
+      },
+      "produto": "UnrealIRCd UnrealIRCd",
+      "titulo": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
+      "resumo": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-08T03:16:33Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
+      "ultima_atividade": "2026-11-13T00:00:00Z",
+      "exibido_em": "2026-11-13T18:32:35Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.003,
+        "percentil": 0.233,
+        "data": "2026-11-13"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-13T18:32:35Z"
+      },
+      "cvss": 8.6,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-08T03:16:33Z",
+      "nvd_checado_em": "2026-11-13T18:38:57Z"
     },
     {
       "cve": "CVE-2026-122310",

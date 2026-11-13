@@ -1,7 +1,29 @@
 {
-  "atualizado": "2026-11-13T15:05:00Z",
+  "atualizado": "2026-11-13T18:38:09Z",
   "janela": "06 a 13/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-12",
+      "cve": "CVE-2026-123039",
+      "produto": "Check Point Gaia OS (Security Gateway, Management, Multi-Domain, Log Server; R81.20 a R82.20)",
+      "cvss": 7.8,
+      "kev": false,
+      "zero_day": true,
+      "exploracao": "Ativa (cerca de duas dezenas de clientes desde fim de out/2026; encadeada com PHP2Shell no Mobile Access para virar root, com backdoor e wiper em ESXi)",
+      "prioridade": "P0",
+      "tratamento": "Aplicar o Jumbo Hotfix corrigido do seu ramo (R82 Take 132; demais ramos conferir no advisory), que também fecha o PHP2Shell. Sem hotfix, parar o dynamic_server conforme sk1000362 e caçar comprometimento: webshells, comandos fora do wrapper Clish e acesso do gateway a hosts ESXi.",
+      "fontes": [
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/"
+        },
+        {
+          "nome": "WindowsForum",
+          "url": "https://windowsforum.com/news/check-point-gaia-zero-day-cve-2026-123039-patch-firewall-exploit-chain-and-hunt-for-compromise.452160/"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-11-12",
       "cve": "sem CVE (Windows CLFS, SignDrop)",
@@ -587,13 +609,13 @@
     {
       "data": "2026-11-03",
       "cve": "CVE-2026-109618 / CVE-2026-109619",
-      "produto": "PHP2Shell em appliances de borda (PAN-OS e Panorama, NetScaler, BIG-IP APM, Cisco Expressway e Duo Access Gateway, FortiSOAR)",
+      "produto": "PHP2Shell em appliances de borda (PAN-OS e Panorama, NetScaler, BIG-IP APM, Cisco Expressway e Duo Access Gateway, FortiSOAR, Check Point Gaia)",
       "cvss": 9.8,
       "kev": true,
       "zero_day": true,
-      "exploracao": "Ativa (contra interfaces de gestão do PAN-OS expostas, com escalada a root via Fragnesia)",
+      "exploracao": "Ativa (contra gestão do PAN-OS exposta, com root via Fragnesia; e contra Mobile Access da Check Point, com root via CVE-2026-123039)",
       "prioridade": "P0",
-      "tratamento": "O PHP vulnerável vem embutido em firewalls, ADCs e gateways. Conferir os advisories de cada fabricante e aplicar as versões corrigidas; tirar interfaces de gestão da internet e investigar sinais de root, persistência e binds LDAP estranhos nesses equipamentos. Para PHP próprio, subir para 8.2.35, 8.3.36, 8.4.27 ou 8.5.12.",
+      "tratamento": "O PHP vulnerável vem embutido em firewalls, ADCs e gateways. Conferir os advisories de cada fabricante e aplicar as versões corrigidas; tirar interfaces de gestão da internet e investigar sinais de root, persistência e binds LDAP estranhos nesses equipamentos. Check Point: R82 Jumbo Hotfix Take 132 ou equivalente do ramo. Para PHP próprio, subir para 8.2.35, 8.3.36, 8.4.27 ou 8.5.12.",
       "fontes": [
         {
           "nome": "CSA Singapura (AL-2026-157)",
@@ -602,6 +624,10 @@
         {
           "nome": "BleepingComputer",
           "url": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/"
+        },
+        {
+          "nome": "WindowsForum (Check Point)",
+          "url": "https://windowsforum.com/news/check-point-gaia-zero-day-cve-2026-123039-patch-firewall-exploit-chain-and-hunt-for-compromise.452160/"
         }
       ],
       "status": "Pendente"

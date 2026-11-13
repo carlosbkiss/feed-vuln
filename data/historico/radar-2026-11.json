@@ -278,7 +278,7 @@
     "cve": "CVE-2026-114713",
     "produto": "UnrealIRCd UnrealIRCd",
     "titulo": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
-    "cvss": null,
+    "cvss": 8.6,
     "prioridade": "P2",
     "elegivel_por": [
       "zero-day",
@@ -290,15 +290,20 @@
       "prazo": "2026-11-16",
       "ransomware": "Unknown"
     },
-    "primeira_vez": "2026-11-13T00:00:00Z",
+    "primeira_vez": "2026-11-08T03:16:33Z",
     "primeira_noticia": null,
-    "publicado_nvd": null,
+    "publicado_nvd": "2026-11-08T03:16:33Z",
     "exibido_em": "2026-11-13T18:32:35Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.003,
     "poc_qtd": 0,
     "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
+        "publicado": "2026-11-08T03:16:33Z"
+      },
       {
         "nome": "CISA KEV",
         "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-114713",
@@ -424,22 +429,28 @@
     "cve": "CVE-2026-118383",
     "produto": "",
     "titulo": "",
-    "cvss": null,
-    "prioridade": "P2",
+    "cvss": 10.0,
+    "prioridade": "P0",
     "elegivel_por": [
-      "zero-day"
+      "zero-day",
+      "CVSS ≥ 9"
     ],
     "zero_day": true,
     "kev": null,
-    "primeira_vez": "2026-11-12T09:25:00Z",
+    "primeira_vez": "2026-11-10T21:18:58Z",
     "primeira_noticia": "2026-11-12T09:25:00Z",
-    "publicado_nvd": null,
+    "publicado_nvd": "2026-11-10T21:18:58Z",
     "exibido_em": "2026-11-12T14:38:58Z",
     "aguardando_nota_desde": "2026-11-12T09:25:00Z",
-    "nota_chegou_em": null,
+    "nota_chegou_em": "2026-11-13T18:38:57Z",
     "epss_max": 0.0071,
     "poc_qtd": 1,
     "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-118383",
+        "publicado": "2026-11-10T21:18:58Z"
+      },
       {
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
@@ -451,7 +462,7 @@
         "publicado": "2026-11-12T12:22:28Z"
       }
     ],
-    "prioridade_max": "P2"
+    "prioridade_max": "P0"
   },
   "CVE-2026-119077": {
     "cve": "CVE-2026-119077",
