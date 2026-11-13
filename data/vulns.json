@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-13T10:39:19Z",
+  "atualizado": "2026-11-13T15:01:54Z",
   "itens": [
     {
       "cve": "CVE-2026-121529",
@@ -31,12 +31,12 @@
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-121529.json",
-        "checado": "2026-11-12T10:42:11Z"
+        "checado": "2026-11-13T15:01:54Z"
       },
       "epss": {
         "score": 0.0022,
-        "percentil": 0.1239,
-        "data": "2026-11-12"
+        "percentil": 0.1238,
+        "data": "2026-11-13"
       }
     },
     {
@@ -122,8 +122,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0053,
-        "percentil": 0.4562,
-        "data": "2026-11-12"
+        "percentil": 0.4568,
+        "data": "2026-11-13"
       },
       "poc": {
         "qtd": 1,
@@ -226,8 +226,8 @@
       },
       "epss": {
         "score": 0.0053,
-        "percentil": 0.4546,
-        "data": "2026-11-12"
+        "percentil": 0.4551,
+        "data": "2026-11-13"
       }
     },
     {
@@ -293,8 +293,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0247,
-        "percentil": 0.8476,
-        "data": "2026-11-12"
+        "percentil": 0.8478,
+        "data": "2026-11-13"
       },
       "poc": {
         "qtd": 2,
@@ -394,7 +394,7 @@
       "epss": {
         "score": 0.189,
         "percentil": 0.9734,
-        "data": "2026-11-12"
+        "data": "2026-11-13"
       },
       "poc": {
         "qtd": 36,
@@ -457,8 +457,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4449,
-        "data": "2026-11-12"
+        "percentil": 0.4454,
+        "data": "2026-11-13"
       },
       "poc": {
         "qtd": 0,
@@ -565,9 +565,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0893,
-        "percentil": 0.9531,
-        "data": "2026-11-12"
+        "score": 0.1095,
+        "percentil": 0.9595,
+        "data": "2026-11-13"
       },
       "poc": {
         "qtd": 1,
@@ -656,8 +656,8 @@
       "nota_chegou_em": "2026-11-03T18:28:03Z",
       "epss": {
         "score": 0.0082,
-        "percentil": 0.578,
-        "data": "2026-11-12"
+        "percentil": 0.5786,
+        "data": "2026-11-13"
       }
     },
     {
@@ -722,8 +722,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0064,
-        "percentil": 0.5107,
-        "data": "2026-11-12"
+        "percentil": 0.5113,
+        "data": "2026-11-13"
       },
       "poc": {
         "qtd": 0,
@@ -820,8 +820,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0053,
-        "percentil": 0.455,
-        "data": "2026-11-12"
+        "percentil": 0.4556,
+        "data": "2026-11-13"
       },
       "poc": {
         "qtd": 0,
@@ -906,9 +906,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0082,
-        "percentil": 0.5774,
-        "data": "2026-11-12"
+        "score": 0.0098,
+        "percentil": 0.6263,
+        "data": "2026-11-13"
       },
       "poc": {
         "qtd": 0,
@@ -1011,8 +1011,8 @@
       },
       "epss": {
         "score": 0.0162,
-        "percentil": 0.7642,
-        "data": "2026-11-12"
+        "percentil": 0.7645,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1033,7 +1033,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-13T10:18:08Z",
       "resumo": "FrankenPHP Docker images before 1.1.11 were rebuilt only when new base image tags were created, so security fixes that Alpine, PHP, and Go applied under existing tags were not propagated. Remote attackers could exploit known flaws in the stale system…",
-      "nvd_checado_em": "2026-11-13T10:39:19Z",
+      "nvd_checado_em": "2026-11-13T15:01:54Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1049,6 +1049,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-13T10:39:19Z"
+      },
+      "epss": {
+        "score": 0.0086,
+        "percentil": 0.5895,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1069,7 +1074,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-13T10:18:04Z",
       "resumo": "OpsTree BuildPiper before 2.7.0 contains an improper authorization vulnerability that allows authenticated deploy users to define arbitrary Kubernetes hostPath volumes without allow-list or policy checks. Attackers can set the host path to / in the Define…",
-      "nvd_checado_em": "2026-11-13T10:39:19Z",
+      "nvd_checado_em": "2026-11-13T15:01:54Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1085,6 +1090,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-13T10:39:19Z"
+      },
+      "epss": {
+        "score": 0.0051,
+        "percentil": 0.4378,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1105,7 +1115,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-13T10:18:03Z",
       "resumo": "OpsTree BuildPiper before 2.7.0 contains a privilege escalation vulnerability that allows project users to gain Kubernetes cluster-admin rights by submitting unrestricted manifests through the Additional Manifest feature. Attackers can deploy a…",
-      "nvd_checado_em": "2026-11-13T10:39:19Z",
+      "nvd_checado_em": "2026-11-13T15:01:54Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1121,6 +1131,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-13T10:39:19Z"
+      },
+      "epss": {
+        "score": 0.0051,
+        "percentil": 0.4378,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1141,7 +1156,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-13T10:17:40Z",
       "resumo": "Vvveb through 1.0.8.6 contains a file upload vulnerability in the theme installer validFile() function that uses strpos() instead of strict path matching. Attackers with admin credentials can upload a ZIP containing a PHP file whose path includes /theme.php…",
-      "nvd_checado_em": "2026-11-13T10:39:19Z",
+      "nvd_checado_em": "2026-11-13T15:01:54Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1157,6 +1172,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-13T10:39:19Z"
+      },
+      "epss": {
+        "score": 0.0082,
+        "percentil": 0.5778,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1177,7 +1197,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-13T10:17:40Z",
       "resumo": "Vvveb before 1.0.9.0 contains a denylist bypass in system/traits/media.php where '.phar' is misconfigured with a leading dot, allowing authenticated administrators to upload .phar PHP files. Attackers can upload a GIF magic-byte polyglot webshell bypassing…",
-      "nvd_checado_em": "2026-11-13T10:39:19Z",
+      "nvd_checado_em": "2026-11-13T15:01:54Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1193,6 +1213,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-13T10:39:19Z"
+      },
+      "epss": {
+        "score": 0.0064,
+        "percentil": 0.5139,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1213,7 +1238,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-13T10:17:26Z",
       "resumo": "The ELEX WordPress HelpDesk & Customer Ticketing System plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.3.9 via the 'form (specifically the attacker-controlled ticket_label field inside the url-encoded form…",
-      "nvd_checado_em": "2026-11-13T10:39:19Z",
+      "nvd_checado_em": "2026-11-13T15:01:54Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1229,6 +1254,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-13T10:39:19Z"
+      },
+      "epss": {
+        "score": 0.0134,
+        "percentil": 0.7171,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1260,13 +1290,13 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0086,
-        "percentil": 0.5901,
-        "data": "2026-11-12"
+        "percentil": 0.5907,
+        "data": "2026-11-13"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T14:38:58Z"
+        "checado": "2026-11-13T15:01:54Z"
       }
     },
     {
@@ -1307,12 +1337,12 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-118383.json",
-        "checado": "2026-11-12T14:38:58Z"
+        "checado": "2026-11-13T15:01:54Z"
       },
       "epss": {
         "score": 0.0071,
-        "percentil": 0.5415,
-        "data": "2026-11-12"
+        "percentil": 0.5422,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1352,8 +1382,8 @@
       },
       "epss": {
         "score": 0.006,
-        "percentil": 0.4938,
-        "data": "2026-11-12"
+        "percentil": 0.4944,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1400,9 +1430,9 @@
         "checado": "2026-11-12T18:39:50Z"
       },
       "epss": {
-        "score": 0.0043,
-        "percentil": 0.3743,
-        "data": "2026-11-12"
+        "score": 0.0066,
+        "percentil": 0.5203,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1452,8 +1482,8 @@
       },
       "epss": {
         "score": 0.0081,
-        "percentil": 0.5736,
-        "data": "2026-11-12"
+        "percentil": 0.5742,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1490,7 +1520,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T19:20:26Z",
       "resumo": "Incorrect authorization in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network.",
-      "nvd_checado_em": "2026-11-13T10:39:19Z",
+      "nvd_checado_em": "2026-11-13T15:01:54Z",
       "nota_chegou_em": "2026-11-11T00:04:15Z",
       "exibido_em": "2026-11-11T00:04:15Z",
       "prioridade": "P2",
@@ -1503,8 +1533,8 @@
       },
       "epss": {
         "score": 0.0086,
-        "percentil": 0.5903,
-        "data": "2026-11-12"
+        "percentil": 0.5909,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1540,12 +1570,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T10:42:11Z"
+        "checado": "2026-11-13T15:01:54Z"
       },
       "epss": {
         "score": 0.0015,
         "percentil": 0.042,
-        "data": "2026-11-12"
+        "data": "2026-11-13"
       }
     },
     {
@@ -1589,12 +1619,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T10:42:11Z"
+        "checado": "2026-11-13T15:01:54Z"
       },
       "epss": {
         "score": 0.0043,
-        "percentil": 0.378,
-        "data": "2026-11-12"
+        "percentil": 0.3784,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1638,12 +1668,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T10:42:11Z"
+        "checado": "2026-11-13T15:01:54Z"
       },
       "epss": {
         "score": 0.0032,
-        "percentil": 0.2586,
-        "data": "2026-11-12"
+        "percentil": 0.2587,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1687,12 +1717,12 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76964.json",
-        "checado": "2026-11-12T10:42:11Z"
+        "checado": "2026-11-13T15:01:54Z"
       },
       "epss": {
         "score": 0.0043,
-        "percentil": 0.378,
-        "data": "2026-11-12"
+        "percentil": 0.3784,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1728,12 +1758,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T10:42:11Z"
+        "checado": "2026-11-13T15:01:54Z"
       },
       "epss": {
         "score": 0.0031,
-        "percentil": 0.2442,
-        "data": "2026-11-12"
+        "percentil": 0.2443,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1769,12 +1799,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T10:42:11Z"
+        "checado": "2026-11-13T15:01:54Z"
       },
       "epss": {
         "score": 0.0026,
-        "percentil": 0.1774,
-        "data": "2026-11-12"
+        "percentil": 0.1773,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1810,12 +1840,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T10:42:11Z"
+        "checado": "2026-11-13T15:01:54Z"
       },
       "epss": {
         "score": 0.0041,
-        "percentil": 0.3569,
-        "data": "2026-11-12"
+        "percentil": 0.3572,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1851,12 +1881,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T10:42:11Z"
+        "checado": "2026-11-13T15:01:54Z"
       },
       "epss": {
         "score": 0.0041,
-        "percentil": 0.3569,
-        "data": "2026-11-12"
+        "percentil": 0.3572,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1892,12 +1922,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T10:42:11Z"
+        "checado": "2026-11-13T15:01:54Z"
       },
       "epss": {
         "score": 0.0028,
-        "percentil": 0.2111,
-        "data": "2026-11-12"
+        "percentil": 0.2109,
+        "data": "2026-11-13"
       }
     },
     {
@@ -1989,8 +2019,8 @@
       "nota_chegou_em": "2026-11-11T00:04:15Z",
       "epss": {
         "score": 0.0096,
-        "percentil": 0.6211,
-        "data": "2026-11-12"
+        "percentil": 0.6216,
+        "data": "2026-11-13"
       }
     },
     {
@@ -2030,8 +2060,8 @@
       },
       "epss": {
         "score": 0.004,
-        "percentil": 0.3467,
-        "data": "2026-11-12"
+        "percentil": 0.347,
+        "data": "2026-11-13"
       }
     },
     {
@@ -2071,8 +2101,8 @@
       },
       "epss": {
         "score": 0.0049,
-        "percentil": 0.4253,
-        "data": "2026-11-12"
+        "percentil": 0.4258,
+        "data": "2026-11-13"
       }
     },
     {
@@ -2112,8 +2142,8 @@
       },
       "epss": {
         "score": 0.0035,
-        "percentil": 0.2914,
-        "data": "2026-11-12"
+        "percentil": 0.2915,
+        "data": "2026-11-13"
       }
     },
     {
@@ -2153,8 +2183,8 @@
       },
       "epss": {
         "score": 0.0037,
-        "percentil": 0.3135,
-        "data": "2026-11-12"
+        "percentil": 0.3137,
+        "data": "2026-11-13"
       }
     },
     {
@@ -2194,8 +2224,8 @@
       },
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3896,
-        "data": "2026-11-12"
+        "percentil": 0.3901,
+        "data": "2026-11-13"
       }
     },
     {
@@ -2227,8 +2257,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0089,
-        "percentil": 0.5983,
-        "data": "2026-11-12"
+        "percentil": 0.5989,
+        "data": "2026-11-13"
       },
       "poc": {
         "qtd": 2,
@@ -2273,8 +2303,8 @@
       },
       "epss": {
         "score": 0.0149,
-        "percentil": 0.7441,
-        "data": "2026-11-12"
+        "percentil": 0.7445,
+        "data": "2026-11-13"
       }
     },
     {
@@ -2314,8 +2344,8 @@
       },
       "epss": {
         "score": 0.0095,
-        "percentil": 0.6179,
-        "data": "2026-11-12"
+        "percentil": 0.6185,
+        "data": "2026-11-13"
       }
     },
     {
@@ -2393,9 +2423,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.062,
-        "percentil": 0.936,
-        "data": "2026-11-12"
+        "score": 0.0908,
+        "percentil": 0.9537,
+        "data": "2026-11-13"
       },
       "poc": {
         "qtd": 0,
@@ -2440,8 +2470,8 @@
       },
       "epss": {
         "score": 0.0052,
-        "percentil": 0.4469,
-        "data": "2026-11-12"
+        "percentil": 0.4474,
+        "data": "2026-11-13"
       }
     },
     {
@@ -2518,8 +2548,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.012,
-        "percentil": 0.686,
-        "data": "2026-11-12"
+        "percentil": 0.6865,
+        "data": "2026-11-13"
       },
       "poc": {
         "qtd": 9,
@@ -2593,8 +2623,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.015,
-        "percentil": 0.7467,
-        "data": "2026-11-12"
+        "percentil": 0.7471,
+        "data": "2026-11-13"
       },
       "poc": {
         "qtd": 0,
@@ -2604,6 +2634,12 @@
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "BleepingComputer",
+      "titulo": "Check Point warns of zero-day flaw exploited for root access",
+      "link": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
+      "publicado": "2026-11-13T10:44:22Z"
+    },
     {
       "fonte": "SecurityWeek",
       "titulo": "Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’",
@@ -2735,18 +2771,6 @@
       "titulo": "Over 1,000 GitLab servers vulnerable to ongoing RCE attacks",
       "link": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/",
       "publicado": "2026-11-02T12:47:00Z"
-    },
-    {
-      "fonte": "BleepingComputer",
-      "titulo": "CISA says max severity GitLab flaw now exploited in the wild",
-      "link": "https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/",
-      "publicado": "2026-10-30T13:00:32Z"
-    },
-    {
-      "fonte": "SecurityWeek",
-      "titulo": "Drupal Commerce Core Vulnerability Exploited Against Online Stores",
-      "link": "https://www.securityweek.com/drupal-commerce-core-vulnerability-exploited-against-online-stores/",
-      "publicado": "2026-10-30T11:07:11Z"
     }
   ]
 }
