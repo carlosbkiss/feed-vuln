@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-13T10:38:54Z",
+  "atualizado": "2026-11-13T15:05:00Z",
   "janela": "06 a 13/nov/2026",
   "itens": [
     {
@@ -443,6 +443,54 @@
         }
       ],
       "status": "Novo"
+    },
+    {
+      "data": "2026-11-09",
+      "cve": "CVE-2026-102895 / CVE-2026-102894",
+      "produto": "GPUStack (gestão de clusters de GPU para IA)",
+      "cvss": 9.8,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (CVE-2026-102895 no KEV em 09/11, prazo CISA 12/11; CVE-2026-102894 sem ataque confirmado)",
+      "prioridade": "P2",
+      "tratamento": "Bypass de login por loopback dá admin remoto, e o callback SAML aceita XML sem verificar assinatura (9.1). Se houver em times de IA, subir para 2.2.2; até lá, ligar force_auth_localhost, remover o cabeçalho X-GPUStack-Real-IP no proxy e bloquear /auth/saml/callback de fora.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/gpustack-authentication-bypass-cve-2026-102895-exploited/"
+        },
+        {
+          "nome": "The Hacker News (KEV)",
+          "url": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html"
+        }
+      ],
+      "status": "Pendente"
+    },
+    {
+      "data": "2026-11-09",
+      "cve": "CVE-2026-123158",
+      "produto": "OpenSSH em Linux com musl sem PAM (Alpine, Buildroot, OpenWrt, Yocto)",
+      "cvss": 8.1,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 09/11, prazo CISA 12/11; GreyNoise vê pós-exploração com persistência em authorized_keys e agente C2; watchTowr: botnets e mineradores)",
+      "prioridade": "P1",
+      "tratamento": "Botnets e mineradores exploram sshd em Linux com musl sem PAM. Subir para OpenSSH 10.6p2 ou pacote corrigido da distro e reiniciar o sshd; paliativo: PasswordAuthentication no. Inventariar appliances Buildroot/OpenWrt/Yocto e containers Alpine com sshd, e revisar logins por senha e authorized_keys.",
+      "fontes": [
+        {
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/hackers-exploiting-sshole-authentication-bypass-in-openssh/"
+        },
+        {
+          "nome": "The Hacker News (KEV)",
+          "url": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html"
+        }
+      ],
+      "status": "Pendente"
     },
     {
       "data": "2026-11-08",
