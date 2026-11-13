@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-13T00:28:13Z",
+  "atualizado": "2026-11-13T10:39:19Z",
   "itens": [
     {
       "cve": "CVE-2026-121529",
@@ -128,7 +128,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123218.json",
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       }
     },
     {
@@ -222,7 +222,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-19868.json",
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       },
       "epss": {
         "score": 0.0053,
@@ -299,7 +299,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-116779.json",
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -397,9 +397,9 @@
         "data": "2026-11-12"
       },
       "poc": {
-        "qtd": 33,
+        "qtd": 36,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123158.json",
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       }
     },
     {
@@ -463,7 +463,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -570,47 +570,9 @@
         "data": "2026-11-12"
       },
       "poc": {
-        "qtd": 2,
+        "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-116606.json",
-        "checado": "2026-11-12T01:33:20Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-110264",
-      "fontes": [
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "CISA Warns of GitLab Integer Overflow Vulnerability Exploited in Attacks",
-          "link": "https://cybersecuritynews.com/gitlab-integer-overflow-vulnerability-exploited/",
-          "publicado": "2026-10-30T08:28:50Z",
-          "visto_em": "2026-11-09T21:27:15Z"
-        }
-      ],
-      "detectado": "2026-11-09T21:27:15Z",
-      "zero_day": true,
-      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
-      "aguardando_nota_desde": "2026-10-30T08:28:50Z",
-      "elegivel_por": [
-        "zero-day"
-      ],
-      "primeira_vez": "2026-10-30T08:28:50Z",
-      "primeira_noticia": "2026-10-30T08:28:50Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-110264",
-      "ultima_atividade": "2026-10-30T08:28:50Z",
-      "exibido_em": "2026-11-09T21:27:15Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.0135,
-        "percentil": 0.7189,
-        "data": "2026-11-12"
-      },
-      "poc": {
-        "qtd": 12,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-110264.json",
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       }
     },
     {
@@ -677,7 +639,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       },
       "kev": {
         "adicionado": "2026-10-30",
@@ -766,7 +728,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       },
       "cvss": 4.3,
       "cvss_versao": "3.1",
@@ -864,7 +826,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       }
     },
     {
@@ -951,7 +913,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       },
       "cvss": 7.5,
       "cvss_versao": "3.1",
@@ -1045,12 +1007,228 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-124194.json",
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       },
       "epss": {
         "score": 0.0162,
         "percentil": 0.7642,
         "data": "2026-11-12"
+      }
+    },
+    {
+      "cve": "CVE-2026-128027",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-128027",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-128027",
+          "publicado": "2026-11-13T10:18:08Z",
+          "visto_em": "2026-11-13T10:39:19Z"
+        }
+      ],
+      "detectado": "2026-11-13T10:39:19Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-13T10:18:08Z",
+      "resumo": "FrankenPHP Docker images before 1.1.11 were rebuilt only when new base image tags were created, so security fixes that Alpine, PHP, and Go applied under existing tags were not propagated. Remote attackers could exploit known flaws in the stale system…",
+      "nvd_checado_em": "2026-11-13T10:39:19Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-13T10:18:08Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-128027",
+      "ultima_atividade": "2026-11-13T10:18:08Z",
+      "exibido_em": "2026-11-13T10:39:19Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-13T10:39:19Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-127080",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-127080",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-127080",
+          "publicado": "2026-11-13T10:18:04Z",
+          "visto_em": "2026-11-13T10:39:19Z"
+        }
+      ],
+      "detectado": "2026-11-13T10:39:19Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-13T10:18:04Z",
+      "resumo": "OpsTree BuildPiper before 2.7.0 contains an improper authorization vulnerability that allows authenticated deploy users to define arbitrary Kubernetes hostPath volumes without allow-list or policy checks. Attackers can set the host path to / in the Define…",
+      "nvd_checado_em": "2026-11-13T10:39:19Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-13T10:18:04Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-127080",
+      "ultima_atividade": "2026-11-13T10:18:04Z",
+      "exibido_em": "2026-11-13T10:39:19Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-13T10:39:19Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-127073",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-127073",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-127073",
+          "publicado": "2026-11-13T10:18:03Z",
+          "visto_em": "2026-11-13T10:39:19Z"
+        }
+      ],
+      "detectado": "2026-11-13T10:39:19Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-13T10:18:03Z",
+      "resumo": "OpsTree BuildPiper before 2.7.0 contains a privilege escalation vulnerability that allows project users to gain Kubernetes cluster-admin rights by submitting unrestricted manifests through the Additional Manifest feature. Attackers can deploy a…",
+      "nvd_checado_em": "2026-11-13T10:39:19Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-13T10:18:03Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-127073",
+      "ultima_atividade": "2026-11-13T10:18:03Z",
+      "exibido_em": "2026-11-13T10:39:19Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-13T10:39:19Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-126378",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-126378",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-126378",
+          "publicado": "2026-11-13T10:17:40Z",
+          "visto_em": "2026-11-13T10:39:19Z"
+        }
+      ],
+      "detectado": "2026-11-13T10:39:19Z",
+      "cvss": 9.4,
+      "cvss_versao": "4.0",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-13T10:17:40Z",
+      "resumo": "Vvveb through 1.0.8.6 contains a file upload vulnerability in the theme installer validFile() function that uses strpos() instead of strict path matching. Attackers with admin credentials can upload a ZIP containing a PHP file whose path includes /theme.php…",
+      "nvd_checado_em": "2026-11-13T10:39:19Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-13T10:17:40Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-126378",
+      "ultima_atividade": "2026-11-13T10:17:40Z",
+      "exibido_em": "2026-11-13T10:39:19Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-13T10:39:19Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-126380",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-126380",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-126380",
+          "publicado": "2026-11-13T10:17:40Z",
+          "visto_em": "2026-11-13T10:39:19Z"
+        }
+      ],
+      "detectado": "2026-11-13T10:39:19Z",
+      "cvss": 9.4,
+      "cvss_versao": "4.0",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-13T10:17:40Z",
+      "resumo": "Vvveb before 1.0.9.0 contains a denylist bypass in system/traits/media.php where '.phar' is misconfigured with a leading dot, allowing authenticated administrators to upload .phar PHP files. Attackers can upload a GIF magic-byte polyglot webshell bypassing…",
+      "nvd_checado_em": "2026-11-13T10:39:19Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-13T10:17:40Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-126380",
+      "ultima_atividade": "2026-11-13T10:17:40Z",
+      "exibido_em": "2026-11-13T10:39:19Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-13T10:39:19Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-119077",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-119077",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-119077",
+          "publicado": "2026-11-13T10:17:26Z",
+          "visto_em": "2026-11-13T10:39:19Z"
+        }
+      ],
+      "detectado": "2026-11-13T10:39:19Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-13T10:17:26Z",
+      "resumo": "The ELEX WordPress HelpDesk & Customer Ticketing System plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.3.9 via the 'form (specifically the attacker-controlled ticket_label field inside the url-encoded form…",
+      "nvd_checado_em": "2026-11-13T10:39:19Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-13T10:17:26Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-119077",
+      "ultima_atividade": "2026-11-13T10:17:26Z",
+      "exibido_em": "2026-11-13T10:39:19Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-13T10:39:19Z"
       }
     },
     {
@@ -1170,7 +1348,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       },
       "epss": {
         "score": 0.006,
@@ -1270,7 +1448,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       },
       "epss": {
         "score": 0.0081,
@@ -1312,7 +1490,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T19:20:26Z",
       "resumo": "Incorrect authorization in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network.",
-      "nvd_checado_em": "2026-11-13T00:28:13Z",
+      "nvd_checado_em": "2026-11-13T10:39:19Z",
       "nota_chegou_em": "2026-11-11T00:04:15Z",
       "exibido_em": "2026-11-11T00:04:15Z",
       "prioridade": "P2",
@@ -1321,7 +1499,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       },
       "epss": {
         "score": 0.0086,
@@ -1848,7 +2026,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       },
       "epss": {
         "score": 0.004,
@@ -1889,7 +2067,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-124450.json",
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       },
       "epss": {
         "score": 0.0049,
@@ -1930,7 +2108,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       },
       "epss": {
         "score": 0.0035,
@@ -2222,7 +2400,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       }
     },
     {
@@ -2258,7 +2436,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T01:33:20Z"
+        "checado": "2026-11-13T10:39:19Z"
       },
       "epss": {
         "score": 0.0052,
@@ -2350,47 +2528,6 @@
       }
     },
     {
-      "cve": "CVE-2026-103039",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-103039",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-103039",
-          "publicado": "2026-10-30T07:16:30Z",
-          "visto_em": "2026-10-30T10:39:18Z"
-        }
-      ],
-      "detectado": "2026-10-30T10:39:18Z",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-30T07:16:30Z",
-      "resumo": "The Gravity Forms plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.1.2 via a Post Custom Field whose input type is List. This is due to GFFormsModel::create_post() passing the submitted value to WordPress'…",
-      "nvd_checado_em": "2026-10-30T15:33:44Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-10-30T07:16:30Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-103039",
-      "ultima_atividade": "2026-10-30T07:16:30Z",
-      "exibido_em": "2026-10-30T10:39:18Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-103039.json",
-        "checado": "2026-11-12T01:33:20Z"
-      },
-      "epss": {
-        "score": 0.0051,
-        "percentil": 0.4392,
-        "data": "2026-11-12"
-      }
-    },
-    {
       "cve": "CVE-2024-27834",
       "fontes": [
         {
@@ -2467,6 +2604,12 @@
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "SecurityWeek",
+      "titulo": "Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’",
+      "link": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/",
+      "publicado": "2026-11-13T08:50:36Z"
+    },
     {
       "fonte": "BleepingComputer",
       "titulo": "New N-able \"4EverAble2Shell\" zero-day exploited hours after PoC released",
@@ -2604,12 +2747,6 @@
       "titulo": "Drupal Commerce Core Vulnerability Exploited Against Online Stores",
       "link": "https://www.securityweek.com/drupal-commerce-core-vulnerability-exploited-against-online-stores/",
       "publicado": "2026-10-30T11:07:11Z"
-    },
-    {
-      "fonte": "BleepingComputer",
-      "titulo": "Drupal warns of critical Commerce Core flaw exploited in attacks",
-      "link": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/",
-      "publicado": "2026-10-30T10:16:07Z"
     }
   ]
 }
