@@ -1,0 +1,182 @@
+{
+  "periodo": "07 a 13 de novembro de 2026",
+  "atualizado": "2026-11-13T15:46:41Z",
+  "kpis": [
+    {
+      "n": "10",
+      "l": "CVEs incluídas no CISA KEV",
+      "destaque": false
+    },
+    {
+      "n": "3",
+      "l": "zero-days relevantes para banco",
+      "destaque": true
+    },
+    {
+      "n": "32",
+      "l": "CVEs novas com CVSS ≥ 9.0 relevantes",
+      "destaque": false
+    },
+    {
+      "n": "6",
+      "l": "frentes P0 para 24h",
+      "destaque": true
+    }
+  ],
+  "tese": "Com 10 entradas no KEV e Patch Tuesday, SAP Patch Day e Fortinet no mesmo dia, o maior risco da semana veio das ferramentas de gestão remota de fornecedores e de correções que já saem incompletas.",
+  "historia": [
+    "Na segunda, 09/nov, a CISA pôs quatro falhas no KEV com prazo de só três dias, entre elas o Aspera Faspex de troca de arquivos e o FreeSWITCH de URA e telefonia, e um pesquisador publicou 33 falhas do N-central, o que levou a N-able a tirar a versão em nuvem do ar.",
+    "Na terça, 10/nov, saíram juntos o Patch Tuesday, com cerca de 1.094 falhas e um zero-day no Outlook que vaza credenciais, o SAP Patch Day, com quatro notas 10 sem login incluindo o SAML2 do ABAP, e oito críticas da Fortinet em FortiManager e FortiOS; no mesmo dia entraram no KEV o Barracuda ESG, com prazo em 13/nov, e um zero-day do Chrome.",
+    "Na quarta, 11/nov, veio a público exploit que funciona contra o hotfix do N-central, com relato de servidores já com minerador, e a Huntress expôs o worm SCKit em painéis ScreenConnect de prestadores: o ataque chega pelo fornecedor que administra as máquinas.",
+    "Na quinta, 12/nov, saiu PoC para a falha 9.8 com credencial fixa no Cisco Expressway em cluster e um exploit sem correção que leva usuário comum a SYSTEM no Windows, além do PoC de queda do Apache httpd com HTTP/2 publicado na véspera.",
+    "Canais de cliente (app, internet banking, PIX) não tiveram falha direta; o risco é indireto, via servidores web e proxies da borda, login SAML do SAP, estações com Outlook e Chrome e prestadores com acesso remoto, e o radar teve notícia antes da nota em 12 CVEs, com mediana de 21h, e antes do KEV em 100% dos casos.",
+    "Fontes da semana: Microsoft Security Update Guide e Cyber Security News saíram antes de todos em 2 vulnerabilidades cada, e The Hacker News em 1; Cyber Security News trouxe 6 exclusivas, Microsoft 2 e CISA Advisories 1; SecurityWeek, BleepingComputer e Cisco PSIRT só repetiram, Fortinet PSIRT sumiu do radar desde 10/nov, e Dark Reading, Cybernews, Chrome Releases e Palo Alto não tiveram nada no radar."
+  ],
+  "p0": [
+    {
+      "titulo": "N-able N-central",
+      "cve": "CVE-2026-125882 · -125878 · -125883",
+      "cvss": "n/d",
+      "tags": [
+        "Zero-day",
+        "Hotfix incompleto",
+        "Via MSP"
+      ],
+      "onde": "RMM de prestadores de TI que administram estações e servidores do banco.",
+      "impacto": "Root no servidor de gestão e comando em todas as máquinas gerenciadas; o exploit de 11/nov funciona contra o HF2.",
+      "acao": "Exigir dos prestadores Legacy API desligada e servidor fora da internet, agentes e probes atualizados e revisão de contas e scripts novos desde 11/nov."
+    },
+    {
+      "titulo": "SAP NetWeaver e Web Dispatcher",
+      "cve": "CVE-2026-120017 · -89126 · -89103 · -76964",
+      "cvss": "10.0",
+      "tags": [
+        "Sem login",
+        "SAML2",
+        "Patch Day 10/nov"
+      ],
+      "onde": "ERP, Web Dispatcher exposto e login SAML de integrações e portais.",
+      "impacto": "Asserção SAML aceita sem verificação no ABAP e corrupção de memória na borda do SAP, sem credencial.",
+      "acao": "Aplicar as SAP Notes de 10/nov, começando pelo Web Dispatcher exposto e pelo ABAP com SAML2; revisar ACL do Gateway."
+    },
+    {
+      "titulo": "Barracuda Email Security Gateway",
+      "cve": "CVE-2026-116606 · -111560",
+      "cvss": "9.3",
+      "tags": [
+        "KEV 10/nov",
+        "Prazo 13/nov",
+        "Root"
+      ],
+      "onde": "Gateway de e-mail que filtra a correspondência de funcionários e clientes.",
+      "impacto": "Bypass de autenticação e injeção de comando até root no gateway, já explorados.",
+      "acao": "Confirmar BNSF-40425/40430 aplicados e patch automático ligado, tirar a gestão da internet e procurar alterações estranhas."
+    },
+    {
+      "titulo": "Fortinet FortiManager e FortiOS",
+      "cve": "CVE-2026-126170 · -126262 · -126259",
+      "cvss": "9.8",
+      "tags": [
+        "Sem login",
+        "Fora do KEV",
+        "Diff público"
+      ],
+      "onde": "Gestão central de firewalls e clusters HA da rede.",
+      "impacto": "RCE sem login na API JSON do FortiManager e execução como super admin via HA; patches saíram antes dos detalhes.",
+      "acao": "FortiOS 7.2.14, 7.4.13, 7.6.8 ou 8.0.2 e FortiManager/FortiAnalyzer corrigidos; até lá, rpc-permit none e portas OFTP e FGFM fora da internet."
+    }
+  ],
+  "plano": [
+    {
+      "h": "24h",
+      "t": "Agora",
+      "itens": [
+        "Barracuda ESG: confirmar patches hoje, prazo CISA em 13/nov",
+        "N-central e ScreenConnect: checar com cada prestador Legacy API, exposição e extensões",
+        "SAP: Notes de 10/nov no Web Dispatcher e no ABAP com SAML2",
+        "Fortinet: FortiOS e FortiManager corrigidos ou JSON API desligada",
+        "Apache httpd 2.4.71 (ou HTTP/2 desligado) e Cisco Expressway X15.5.20"
+      ]
+    },
+    {
+      "h": "7 dias",
+      "t": "Esta semana",
+      "itens": [
+        "Outlook e Chrome: correções via gestão central, prazo CISA em 24/nov",
+        "Patch Tuesday: SharePoint, Exchange e Windows LDAP, CredSSP e IIS",
+        "SonicWall SonicOS (prazo 20/nov) e SMA1000; Ivanti Connect Secure, prazo vencido em 13/nov",
+        "MongoDB, Red Hat Quay, Ivanti EPM/CSA e FortiClient: corrigir e restringir acesso",
+        "Pendências ainda exploradas: BeyondTrust, PHP2Shell em appliances e Aspera Faspex"
+      ]
+    },
+    {
+      "h": "30 dias",
+      "t": "Estrutural",
+      "itens": [
+        "SLA de patch para terceiros: prazo contratual e evidência de correção em RMM e acesso remoto",
+        "Inventário de ferramentas de gestão remota usadas por prestadores, com dono e exposição",
+        "Shadow IT: mapear FreeSWITCH, GPUStack, Xen Orchestra e NAS com Plex",
+        "Fontes: rever Dark Reading, Cybernews, Chrome Releases e Palo Alto, sem retorno a semana toda, e o silêncio do Fortinet PSIRT",
+        "Se um prestador confirmar intrusão via N-central ou ScreenConnect: fluxo de incidente relevante (Res. CMN 4.893/2021)"
+      ]
+    }
+  ],
+  "fontes": [
+    [
+      "CISA: catálogo KEV (dados oficiais)",
+      "https://raw.githubusercontent.com/cisagov/kev-data/main/known_exploited_vulnerabilities.json"
+    ],
+    [
+      "eSecurity Planet: quatro falhas no KEV em 09/nov",
+      "https://www.esecurityplanet.com/vulnerabilities/news-cisa-kev-gpustack-freeswitch-openssh-ibm-november-2026/"
+    ],
+    [
+      "Qualys: Patch Tuesday de novembro",
+      "https://blog.qualys.com/vulnerabilities-threat-research/2026/11/10/microsoft-patch-tuesday-november-2026-security-update-review"
+    ],
+    [
+      "SecurityOnline: zero-day do Outlook",
+      "https://securityonline.info/outlook-zero-day-cve-2026-124194/"
+    ],
+    [
+      "SecurityOnline: SAP Patch Day",
+      "https://securityonline.info/sap-security-patch-day-november-2026/"
+    ],
+    [
+      "SecurityOnline: críticas da Fortinet",
+      "https://securityonline.info/fortinet-critical-vulnerabilities-november-2026/"
+    ],
+    [
+      "Huntress: cadeias Able2Shell no N-central",
+      "https://huntress.com/blog/n-able-disables-cloud-services-following-disclosure-of-able2shell-exploit-chains"
+    ],
+    [
+      "The Hacker News: N-able tira N-central do ar",
+      "https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html"
+    ],
+    [
+      "Huntress: worm SCKit no ScreenConnect",
+      "https://www.huntress.com/blog/sckit-worm-rogue-screenconnect"
+    ],
+    [
+      "BleepingComputer: Barracuda até root",
+      "https://bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices"
+    ],
+    [
+      "BleepingComputer: oitavo zero-day do Chrome",
+      "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/"
+    ],
+    [
+      "SecurityWeek: Apache HTTP Server crítico",
+      "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/"
+    ],
+    [
+      "GBHackers: PoC do Cisco Expressway",
+      "https://gbhackers.com/poc-exploit-released-for-critical-cisco-expressway-rce/"
+    ],
+    [
+      "The Hacker News: exploit SignDrop no Windows",
+      "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html"
+    ]
+  ]
+}
