@@ -274,6 +274,39 @@
     ],
     "prioridade_max": "P2"
   },
+  "CVE-2026-114713": {
+    "cve": "CVE-2026-114713",
+    "produto": "UnrealIRCd UnrealIRCd",
+    "titulo": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
+    "cvss": null,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-13",
+      "prazo": "2026-11-16",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-13T00:00:00Z",
+    "primeira_noticia": null,
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-13T18:32:35Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.003,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-114713",
+        "publicado": "2026-11-13"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
   "CVE-2026-116606": {
     "cve": "CVE-2026-116606",
     "produto": "Barracuda Networks Barracuda Email Security Gateway (ESG)",
@@ -564,6 +597,49 @@
       }
     ],
     "prioridade_max": "P2"
+  },
+  "CVE-2026-123039": {
+    "cve": "CVE-2026-123039",
+    "produto": "Check Point Multiple Products",
+    "titulo": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
+    "cvss": 7.8,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-13",
+      "prazo": "2026-11-16",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-12T14:17:24Z",
+    "primeira_noticia": "2026-11-13T07:39:04Z",
+    "publicado_nvd": "2026-11-12T14:17:24Z",
+    "exibido_em": "2026-11-13T18:32:35Z",
+    "aguardando_nota_desde": "2026-11-13T07:39:04Z",
+    "nota_chegou_em": "2026-11-13T18:32:35Z",
+    "epss_max": 0.0127,
+    "poc_qtd": 1,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039",
+        "publicado": "2026-11-12T14:17:24Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-123039",
+        "publicado": "2026-11-13"
+      },
+      {
+        "nome": "SecurityWeek",
+        "link": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/",
+        "publicado": "2026-11-13T07:39:04Z"
+      }
+    ],
+    "prioridade_max": "P0"
   },
   "CVE-2026-123158": {
     "cve": "CVE-2026-123158",

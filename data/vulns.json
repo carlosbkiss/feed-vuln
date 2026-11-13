@@ -1,6 +1,75 @@
 {
-  "atualizado": "2026-11-13T15:01:54Z",
+  "atualizado": "2026-11-13T18:32:35Z",
   "itens": [
+    {
+      "cve": "CVE-2026-123039",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-123039",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039",
+          "publicado": "2026-11-12T14:17:24Z",
+          "visto_em": "2026-11-13T18:32:35Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-123039",
+          "publicado": "2026-11-13",
+          "visto_em": "2026-11-13T18:32:35Z"
+        },
+        {
+          "id": "securityweek",
+          "nome": "SecurityWeek",
+          "titulo": "PHP2Shell Exploited in Destructive Check Point Gateway Attacks",
+          "link": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/",
+          "publicado": "2026-11-13T07:39:04Z",
+          "visto_em": "2026-11-13T10:39:19Z"
+        }
+      ],
+      "detectado": "2026-11-13T10:39:19Z",
+      "aguardando_nota_desde": "2026-11-13T07:39:04Z",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-12T14:17:24Z",
+      "primeira_noticia": "2026-11-13T07:39:04Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039",
+      "ultima_atividade": "2026-11-13T07:39:04Z",
+      "kev": {
+        "adicionado": "2026-11-13",
+        "prazo": "2026-11-16",
+        "ransomware": "Unknown"
+      },
+      "produto": "Check Point Multiple Products",
+      "titulo": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
+      "resumo": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as…",
+      "cvss": 7.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-12T14:17:24Z",
+      "nvd_checado_em": "2026-11-13T18:32:35Z",
+      "nota_chegou_em": "2026-11-13T18:32:35Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "exibido_em": "2026-11-13T18:32:35Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0127,
+        "percentil": 0.7035,
+        "data": "2026-11-13"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123039.json",
+        "checado": "2026-11-13T18:32:35Z"
+      }
+    },
     {
       "cve": "CVE-2026-121529",
       "fontes": [
@@ -1259,6 +1328,52 @@
         "score": 0.0134,
         "percentil": 0.7171,
         "data": "2026-11-13"
+      }
+    },
+    {
+      "cve": "CVE-2026-114713",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-114713",
+          "publicado": "2026-11-13",
+          "visto_em": "2026-11-13T18:32:35Z"
+        }
+      ],
+      "detectado": "2026-11-13T18:32:35Z",
+      "kev": {
+        "adicionado": "2026-11-13",
+        "prazo": "2026-11-16",
+        "ransomware": "Unknown"
+      },
+      "produto": "UnrealIRCd UnrealIRCd",
+      "titulo": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
+      "resumo": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-13T00:00:00Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
+      "ultima_atividade": "2026-11-13T00:00:00Z",
+      "exibido_em": "2026-11-13T18:32:35Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.003,
+        "percentil": 0.233,
+        "data": "2026-11-13"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-13T18:32:35Z"
       }
     },
     {
