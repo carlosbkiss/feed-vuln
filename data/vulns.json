@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-12T18:57:37Z",
+  "atualizado": "2026-11-13T00:28:13Z",
   "itens": [
     {
       "cve": "CVE-2026-121529",
@@ -699,91 +699,6 @@
       }
     },
     {
-      "cve": "CVE-2026-76418",
-      "fontes": [
-        {
-          "id": "cisco",
-          "nome": "Cisco PSIRT",
-          "titulo": "Cisco Secure Firewall Adaptive Security Appliance and Secure Firewall Threat Defense Software Remote Access SSL VPN Tunnel Denial of Service Vulnerability",
-          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-tunnel-dos-s6mgkb75?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Secure%20Firewall%20Adaptive%20Security%20Appliance%20and%20Secure%20Firewall%20Threat%20Defense%20Software%20Remote%20Access%20SSL%20VPN%20Tunnel%20Denial%20of%20Service%20Vulnerability%26vs_k=1",
-          "publicado": "2026-10-28T19:15:00Z",
-          "visto_em": "2026-10-28T21:40:38Z"
-        },
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-76418",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418",
-          "publicado": "2026-10-28T20:18:47Z",
-          "visto_em": "2026-10-29T15:02:43Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-76418",
-          "publicado": "2026-10-29",
-          "visto_em": "2026-10-29T23:18:51Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
-          "link": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
-          "publicado": "2026-10-29T10:44:46Z",
-          "visto_em": "2026-10-29T15:02:43Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-10-29T12:00:00Z",
-          "visto_em": "2026-10-29T23:18:51Z"
-        }
-      ],
-      "detectado": "2026-10-28T21:40:38Z",
-      "aguardando_nota_desde": "2026-10-28T19:15:00Z",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-28T19:15:00Z",
-      "primeira_noticia": "2026-10-28T19:15:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418",
-      "ultima_atividade": "2026-10-29T12:00:00Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "cvss": 8.6,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-28T20:18:47Z",
-      "resumo": "A vulnerability in the Remote Access SSL VPN service of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause the device to reload…",
-      "nvd_checado_em": "2026-10-29T15:02:43Z",
-      "nota_chegou_em": "2026-10-29T15:02:43Z",
-      "exibido_em": "2026-10-29T15:02:43Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.0082,
-        "percentil": 0.5777,
-        "data": "2026-11-12"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-12T01:33:20Z"
-      },
-      "kev": {
-        "adicionado": "2026-10-29",
-        "prazo": "2026-11-01",
-        "ransomware": "Unknown"
-      },
-      "produto": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software",
-      "titulo": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability"
-    },
-    {
       "cve": "CVE-2026-111793",
       "fontes": [
         {
@@ -949,108 +864,6 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T01:33:20Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-97229",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-97229",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229",
-          "publicado": "2026-10-13T02:17:00Z",
-          "visto_em": "2026-10-29T23:18:51Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-97229",
-          "publicado": "2026-10-29",
-          "visto_em": "2026-10-29T23:18:51Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
-          "link": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
-          "publicado": "2026-10-29T09:05:39Z",
-          "visto_em": "2026-10-29T15:02:43Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-10-29T12:00:00Z",
-          "visto_em": "2026-10-29T23:18:51Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
-          "link": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
-          "publicado": "2026-10-30T07:27:05Z",
-          "visto_em": "2026-10-30T10:39:18Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "CISA Warns of GitLab Integer Overflow Vulnerability Exploited in Attacks",
-          "link": "https://cybersecuritynews.com/gitlab-integer-overflow-vulnerability-exploited/",
-          "publicado": "2026-10-30T08:28:50Z",
-          "visto_em": "2026-10-30T10:39:18Z"
-        },
-        {
-          "id": "securityweek",
-          "nome": "SecurityWeek",
-          "titulo": "Max-Severity GitLab Vulnerability Exploited Against Alpine Linux",
-          "link": "https://www.securityweek.com/max-severity-gitlab-vulnerability-exploited-against-alpine-linux/",
-          "publicado": "2026-10-30T09:32:27Z",
-          "visto_em": "2026-10-30T10:39:18Z"
-        }
-      ],
-      "detectado": "2026-10-29T15:02:43Z",
-      "aguardando_nota_desde": "2026-10-29T09:05:39Z",
-      "elegivel_por": [
-        "zero-day",
-        "CVSS ≥ 9",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-13T02:17:00Z",
-      "primeira_noticia": "2026-10-29T09:05:39Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229",
-      "ultima_atividade": "2026-10-30T09:32:27Z",
-      "kev": {
-        "adicionado": "2026-10-29",
-        "prazo": "2026-11-01",
-        "ransomware": "Unknown"
-      },
-      "produto": "GitLab Community Edition and Enterprise Edition",
-      "titulo": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
-      "resumo": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD…",
-      "cvss": 10.0,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-13T02:17:00Z",
-      "nvd_checado_em": "2026-10-29T23:18:51Z",
-      "nota_chegou_em": "2026-10-29T23:18:51Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "exibido_em": "2026-10-29T23:18:51Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.6929,
-        "percentil": 0.9937,
-        "data": "2026-11-12"
-      },
-      "poc": {
-        "qtd": 9,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-97229.json",
         "checado": "2026-11-12T01:33:20Z"
       }
     },
@@ -1342,7 +1155,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-11T21:16:45Z",
       "resumo": "blueprintUE Self-Hosted Edition before 4.3.7 contains an insecure default configuration in its Docker Compose examples that sets MYSQL_ALLOW_EMPTY_PASSWORD=yes in database.env and publishes MariaDB on port 3306. Unauthenticated attackers reaching the Docker…",
-      "nvd_checado_em": "2026-11-12T18:57:37Z",
+      "nvd_checado_em": "2026-11-13T00:28:13Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1499,7 +1312,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-10T19:20:26Z",
       "resumo": "Incorrect authorization in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network.",
-      "nvd_checado_em": "2026-11-12T18:57:37Z",
+      "nvd_checado_em": "2026-11-13T00:28:13Z",
       "nota_chegou_em": "2026-11-11T00:04:15Z",
       "exibido_em": "2026-11-11T00:04:15Z",
       "prioridade": "P2",
@@ -2654,6 +2467,12 @@
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "BleepingComputer",
+      "titulo": "New N-able \"4EverAble2Shell\" zero-day exploited hours after PoC released",
+      "link": "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/",
+      "publicado": "2026-11-12T19:51:16Z"
+    },
     {
       "fonte": "The Hacker News",
       "titulo": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
