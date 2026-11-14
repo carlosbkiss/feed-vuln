@@ -296,7 +296,7 @@
     "exibido_em": "2026-11-13T18:32:35Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.003,
+    "epss_max": 0.0051,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -313,6 +313,11 @@
         "nome": "CISA Advisories",
         "link": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
         "publicado": "2026-11-13T12:00:00Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+        "publicado": "2026-11-14T12:38:35Z"
       }
     ],
     "prioridade_max": "P2"
@@ -448,7 +453,7 @@
     "exibido_em": "2026-11-12T14:38:58Z",
     "aguardando_nota_desde": "2026-11-12T09:25:00Z",
     "nota_chegou_em": "2026-11-13T18:38:57Z",
-    "epss_max": 0.0071,
+    "epss_max": 0.0074,
     "poc_qtd": 1,
     "fontes": [
       {
@@ -636,7 +641,7 @@
     "exibido_em": "2026-11-13T18:32:35Z",
     "aguardando_nota_desde": "2026-11-13T07:39:04Z",
     "nota_chegou_em": "2026-11-13T18:32:35Z",
-    "epss_max": 0.0127,
+    "epss_max": 0.0219,
     "poc_qtd": 1,
     "fontes": [
       {
