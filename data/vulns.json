@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-13T18:38:57Z",
+  "atualizado": "2026-11-14T00:21:02Z",
   "itens": [
     {
       "cve": "CVE-2026-123039",
@@ -27,6 +27,14 @@
           "link": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/",
           "publicado": "2026-11-13T07:39:04Z",
           "visto_em": "2026-11-13T10:39:19Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-13T12:00:00Z",
+          "visto_em": "2026-11-14T00:21:02Z"
         }
       ],
       "detectado": "2026-11-13T10:39:19Z",
@@ -38,7 +46,7 @@
       "primeira_vez": "2026-11-12T14:17:24Z",
       "primeira_noticia": "2026-11-13T07:39:04Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039",
-      "ultima_atividade": "2026-11-13T07:39:04Z",
+      "ultima_atividade": "2026-11-13T12:00:00Z",
       "kev": {
         "adicionado": "2026-11-13",
         "prazo": "2026-11-16",
@@ -708,91 +716,6 @@
       }
     },
     {
-      "cve": "CVE-2026-118527",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-118527",
-          "publicado": "2026-10-30",
-          "visto_em": "2026-10-30T18:39:46Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Ivanti Connect Secure 0-Days Exploited in the Wild to Gain Unauthenticated Root Access",
-          "link": "https://cybersecuritynews.com/ivanti-connect-secure-zero-days-exploited/",
-          "publicado": "2026-10-30T08:26:39Z",
-          "visto_em": "2026-10-30T10:39:18Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-10-30T12:00:00Z",
-          "visto_em": "2026-10-30T18:39:46Z"
-        },
-        {
-          "id": "securityweek",
-          "nome": "SecurityWeek",
-          "titulo": "Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain",
-          "link": "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/",
-          "publicado": "2026-11-02T07:57:49Z",
-          "visto_em": "2026-11-02T15:36:56Z"
-        },
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-118527",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527",
-          "publicado": "2026-11-03T15:17:24Z",
-          "visto_em": "2026-11-03T18:28:03Z"
-        }
-      ],
-      "detectado": "2026-10-30T10:39:18Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "nvd_checado_em": "2026-11-03T18:28:03Z",
-      "aguardando_nota_desde": "2026-10-30T08:26:39Z",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-30T00:00:00Z",
-      "primeira_noticia": "2026-10-30T08:26:39Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527",
-      "ultima_atividade": "2026-11-03T15:17:24Z",
-      "exibido_em": "2026-10-30T10:39:18Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-13T10:39:19Z"
-      },
-      "kev": {
-        "adicionado": "2026-10-30",
-        "prazo": "2026-11-13",
-        "ransomware": "Unknown"
-      },
-      "produto": "Ivanti Connect Secure",
-      "titulo": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
-      "resumo": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. This vulnerability can be chained with…",
-      "cvss": 4.3,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-03T15:17:24Z",
-      "nota_chegou_em": "2026-11-03T18:28:03Z",
-      "epss": {
-        "score": 0.0082,
-        "percentil": 0.5786,
-        "data": "2026-11-13"
-      }
-    },
-    {
       "cve": "CVE-2026-111793",
       "fontes": [
         {
@@ -869,97 +792,6 @@
       "nvd_checado_em": "2026-11-11T10:40:48Z",
       "nota_chegou_em": "2026-11-11T10:40:48Z",
       "escalado": true
-    },
-    {
-      "cve": "CVE-2026-111357",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-111357",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
-          "publicado": "2026-10-15T21:17:13Z",
-          "visto_em": "2026-10-30T18:39:46Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111357",
-          "publicado": "2026-10-30",
-          "visto_em": "2026-10-30T18:39:46Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Ivanti Connect Secure 0-Days Exploited in the Wild to Gain Unauthenticated Root Access",
-          "link": "https://cybersecuritynews.com/ivanti-connect-secure-zero-days-exploited/",
-          "publicado": "2026-10-30T08:26:39Z",
-          "visto_em": "2026-10-30T18:39:46Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-10-30T12:00:00Z",
-          "visto_em": "2026-10-30T18:39:46Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
-          "link": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
-          "publicado": "2026-10-31T08:27:43Z",
-          "visto_em": "2026-10-31T10:50:05Z"
-        },
-        {
-          "id": "securityweek",
-          "nome": "SecurityWeek",
-          "titulo": "Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain",
-          "link": "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/",
-          "publicado": "2026-11-02T07:57:49Z",
-          "visto_em": "2026-11-02T15:36:56Z"
-        }
-      ],
-      "detectado": "2026-10-30T18:39:46Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "kev": {
-        "adicionado": "2026-10-30",
-        "prazo": "2026-11-02",
-        "ransomware": "Unknown"
-      },
-      "produto": "Ivanti Connect Secure",
-      "titulo": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
-      "resumo": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
-      "cvss": 7.0,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-15T21:17:13Z",
-      "nvd_checado_em": "2026-10-30T18:39:46Z",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-15T21:17:13Z",
-      "primeira_noticia": "2026-10-30T08:26:39Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
-      "ultima_atividade": "2026-11-02T07:57:49Z",
-      "exibido_em": "2026-10-30T18:39:46Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.0053,
-        "percentil": 0.4556,
-        "data": "2026-11-13"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-13T10:39:19Z"
-      }
     },
     {
       "cve": "CVE-2026-20320",
@@ -1165,7 +997,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-13T10:18:08Z",
       "resumo": "FrankenPHP Docker images before 1.1.11 were rebuilt only when new base image tags were created, so security fixes that Alpine, PHP, and Go applied under existing tags were not propagated. Remote attackers could exploit known flaws in the stale system…",
-      "nvd_checado_em": "2026-11-13T18:38:57Z",
+      "nvd_checado_em": "2026-11-14T00:21:02Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1288,7 +1120,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-13T10:17:40Z",
       "resumo": "Vvveb through 1.0.8.6 contains a file upload vulnerability in the theme installer validFile() function that uses strpos() instead of strict path matching. Attackers with admin credentials can upload a ZIP containing a PHP file whose path includes /theme.php…",
-      "nvd_checado_em": "2026-11-13T18:38:57Z",
+      "nvd_checado_em": "2026-11-14T00:21:02Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1513,7 +1345,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T18:39:50Z"
+        "checado": "2026-11-14T00:21:02Z"
       },
       "epss": {
         "score": 0.0066,
@@ -2085,9 +1917,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "poc": {
-        "qtd": 3,
+        "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-125350.json",
-        "checado": "2026-11-12T18:39:50Z"
+        "checado": "2026-11-14T00:21:02Z"
       },
       "kev": {
         "adicionado": "2026-11-10",
@@ -2250,6 +2082,14 @@
           "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-114713",
           "publicado": "2026-11-13",
           "visto_em": "2026-11-13T18:32:35Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-13T12:00:00Z",
+          "visto_em": "2026-11-14T00:21:02Z"
         }
       ],
       "detectado": "2026-11-13T18:32:35Z",
@@ -2268,9 +2108,9 @@
         "KEV"
       ],
       "primeira_vez": "2026-11-08T03:16:33Z",
-      "primeira_noticia": null,
+      "primeira_noticia": "2026-11-13T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
-      "ultima_atividade": "2026-11-13T00:00:00Z",
+      "ultima_atividade": "2026-11-13T12:00:00Z",
       "exibido_em": "2026-11-13T18:32:35Z",
       "prioridade": "P2",
       "regra": "explorado fora das listas",
@@ -2324,7 +2164,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T18:39:50Z"
+        "checado": "2026-11-14T00:21:02Z"
       },
       "epss": {
         "score": 0.0037,
@@ -2365,7 +2205,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T18:39:50Z"
+        "checado": "2026-11-14T00:21:02Z"
       },
       "epss": {
         "score": 0.0044,
@@ -2408,7 +2248,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-58115.json",
-        "checado": "2026-11-12T18:39:50Z"
+        "checado": "2026-11-14T00:21:02Z"
       }
     },
     {
@@ -2444,7 +2284,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-86596.json",
-        "checado": "2026-11-12T18:39:50Z"
+        "checado": "2026-11-14T00:21:02Z"
       },
       "epss": {
         "score": 0.0149,
@@ -2485,7 +2325,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T18:39:50Z"
+        "checado": "2026-11-14T00:21:02Z"
       },
       "epss": {
         "score": 0.0095,
@@ -2699,7 +2539,7 @@
       "poc": {
         "qtd": 9,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-119977.json",
-        "checado": "2026-11-12T18:39:50Z"
+        "checado": "2026-11-14T00:21:02Z"
       }
     },
     {
@@ -2774,7 +2614,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-12T18:39:50Z"
+        "checado": "2026-11-14T00:21:02Z"
       }
     }
   ],

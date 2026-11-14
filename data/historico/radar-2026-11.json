@@ -291,7 +291,7 @@
       "ransomware": "Unknown"
     },
     "primeira_vez": "2026-11-08T03:16:33Z",
-    "primeira_noticia": null,
+    "primeira_noticia": "2026-11-13T12:00:00Z",
     "publicado_nvd": "2026-11-08T03:16:33Z",
     "exibido_em": "2026-11-13T18:32:35Z",
     "aguardando_nota_desde": null,
@@ -308,6 +308,11 @@
         "nome": "CISA KEV",
         "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-114713",
         "publicado": "2026-11-13"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-13T12:00:00Z"
       }
     ],
     "prioridade_max": "P2"
@@ -648,6 +653,11 @@
         "nome": "SecurityWeek",
         "link": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/",
         "publicado": "2026-11-13T07:39:04Z"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-13T12:00:00Z"
       }
     ],
     "prioridade_max": "P0"
@@ -939,7 +949,7 @@
     "aguardando_nota_desde": "2026-11-10T04:21:10Z",
     "nota_chegou_em": "2026-11-11T00:04:15Z",
     "epss_max": 0.0096,
-    "poc_qtd": 3,
+    "poc_qtd": 4,
     "fontes": [
       {
         "nome": "CISA KEV",
