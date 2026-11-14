@@ -1,15 +1,33 @@
 {
-  "atualizado": "2026-11-13T18:38:09Z",
-  "janela": "06 a 13/nov/2026",
+  "atualizado": "2026-11-14T10:39:30Z",
+  "janela": "07 a 14/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-13",
+      "cve": "CVE-2026-114713",
+      "produto": "UnrealIRCd (servidores IRC em rede com dois ou mais nós)",
+      "cvss": 8.6,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa",
+      "prioridade": "P2",
+      "tratamento": "Nicho, improvável em banco. Se houver IRC interno ou de laboratório, atualizar UnrealIRCd para a versão corrigida (a confirmar no advisory) ou desligar o servidor.",
+      "fontes": [
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-114713"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-11-12",
       "cve": "CVE-2026-123039",
       "produto": "Check Point Gaia OS (Security Gateway, Management, Multi-Domain, Log Server; R81.20 a R82.20)",
       "cvss": 7.8,
-      "kev": false,
+      "kev": true,
       "zero_day": true,
-      "exploracao": "Ativa (cerca de duas dezenas de clientes desde fim de out/2026; encadeada com PHP2Shell no Mobile Access para virar root, com backdoor e wiper em ESXi)",
+      "exploracao": "Ativa (KEV desde 13/11; cerca de duas dezenas de clientes desde fim de out/2026, encadeada com PHP2Shell no Mobile Access para virar root, com backdoor e wiper em ESXi)",
       "prioridade": "P0",
       "tratamento": "Aplicar o Jumbo Hotfix corrigido do seu ramo (R82 Take 132; demais ramos conferir no advisory), que também fecha o PHP2Shell. Sem hotfix, parar o dynamic_server conforme sk1000362 e caçar comprometimento: webshells, comandos fora do wrapper Clish e acesso do gateway a hosts ESXi.",
       "fontes": [
@@ -18,8 +36,12 @@
           "url": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/"
         },
         {
-          "nome": "WindowsForum",
-          "url": "https://windowsforum.com/news/check-point-gaia-zero-day-cve-2026-123039-patch-firewall-exploit-chain-and-hunt-for-compromise.452160/"
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-123039"
         }
       ],
       "status": "Novo"
@@ -60,6 +82,28 @@
         {
           "nome": "GBHackers",
           "url": "https://gbhackers.com/poc-exploit-released-for-critical-cisco-expressway-rce/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-12",
+      "cve": "CVE-2026-107412 / CVE-2026-120868 / CVE-2026-120869 / CVE-2026-107407 / CVE-2026-107408 / CVE-2026-107409 / CVE-2026-107410 / CVE-2026-107415",
+      "produto": "Citrix NetScaler ADC, NetScaler Gateway e NetScaler Console (4 boletins, 31 CVEs)",
+      "cvss": 9.5,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não confirmada",
+      "prioridade": "P1",
+      "tratamento": "Atualizar ADC/Gateway para 14.1-73.57, 13.1-64.39 ou 13.1-37.293 FIPS/NDcPP (14.1-73.58 FIPS) e Console para 14.1-74.34, começando pelos Gateway/AAA expostos e pelos dois nós do HA. Não há contorno; restringir Console e NSIP à rede de gestão e migrar 12.1/13.0 (sem correção). Falhas anteriores do NetScaler foram exploradas em dias: tratar como quase P0.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/citrix-netscaler-vulnerabilities-november-2026/"
+        },
+        {
+          "nome": "Beazley Security Labs",
+          "url": "https://labs.beazley.security/advisories/BSL-A1246"
         }
       ],
       "status": "Novo"
@@ -560,25 +604,7 @@
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-19868"
         }
       ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-06",
-      "cve": "CVE-2026-96652 / CVE-2026-96654 / CVE-2026-96655 / CVE-2026-96656",
-      "produto": "Plex Media Server em NAS QNAP (cadeia Plex2Shell)",
-      "cvss": null,
-      "kev": true,
-      "zero_day": false,
-      "exploracao": "Ativa (KEV desde 20/10; QNAP confirma NAS invadidos em 06/11)",
-      "prioridade": "P2",
-      "tratamento": "Uso típico de shadow IT. Procurar NAS com Plex exposto na porta 32400 e atualizar para 1.43.3.10861 ou superior; se esteve exposto, tratar como comprometido, reinstalar o sistema e trocar senhas. Nota CVSS a confirmar.",
-      "fontes": [
-        {
-          "nome": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/"
-        }
-      ],
-      "status": "Novo"
+      "status": "Pendente"
     },
     {
       "data": "2026-11-04",
@@ -628,28 +654,6 @@
         {
           "nome": "WindowsForum (Check Point)",
           "url": "https://windowsforum.com/news/check-point-gaia-zero-day-cve-2026-123039-patch-firewall-exploit-chain-and-hunt-for-compromise.452160/"
-        }
-      ],
-      "status": "Pendente"
-    },
-    {
-      "data": "2026-10-30",
-      "cve": "CVE-2026-102764",
-      "produto": "BeyondTrust Remote Support (self-hosted)",
-      "cvss": 9.3,
-      "kev": true,
-      "zero_day": true,
-      "exploracao": "Ativa (KEV em 16/10; zero-day desde ago/2026; módulo Metasploit e análise da Rapid7 em 30/10)",
-      "prioridade": "P0",
-      "tratamento": "Upload sem login até RCE, agora com exploit público: a janela para ataques em massa abriu. Aplicar BT26-05-RS (24.3.1 a 26.2.3; abaixo disso, atualizar) e revisar logs de POST /api/start_session seguido de caminhos sem extensão, além de PHP inesperado no diretório público.",
-      "fontes": [
-        {
-          "nome": "Rapid7",
-          "url": "https://www.rapid7.com/blog/post/ra-rapid7-analysis-unauthenticated-file-upload-to-rce-in-beyondtrust-remote-support-cve-2026-102764/"
-        },
-        {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html"
         }
       ],
       "status": "Pendente"
