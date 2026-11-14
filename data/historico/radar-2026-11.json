@@ -581,7 +581,7 @@
     "aguardando_nota_desde": "2026-11-11T07:05:55Z",
     "nota_chegou_em": null,
     "epss_max": 0.0022,
-    "poc_qtd": 4,
+    "poc_qtd": 5,
     "fontes": [
       {
         "nome": "Cyber Security News",
