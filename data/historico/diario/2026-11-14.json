@@ -1,6 +1,6 @@
 {
   "dia": "2026-11-14",
-  "foto_em": "2026-11-14T10:39:52Z",
+  "foto_em": "2026-11-15T02:41:38Z",
   "metricas": {
     "janela_dias": 7,
     "elegiveis": 45,
@@ -8,16 +8,16 @@
     "p0": 11,
     "p1": 1,
     "p2": 33,
-    "com_poc": 17,
+    "com_poc": 18,
     "epss_alto": 3,
     "novos_7d": 38,
     "radar_dias": 14,
-    "fora_do_escopo": 13,
-    "artigos": 1767,
-    "artigos_com_cve": 1338,
-    "keyword_rn004": 108,
+    "fora_do_escopo": 20,
+    "artigos": 1774,
+    "artigos_com_cve": 1339,
+    "keyword_rn004": 109,
     "keyword_rn004_util": 13,
-    "keyword_precisao": 0.12,
+    "keyword_precisao": 0.119,
     "antecipacao_nvd_mediana_h": -24.9,
     "antes_da_nvd_pct": 0.227,
     "antecipacao_nvd_n": 22,
@@ -40,11 +40,11 @@
       "grupo": "noticias",
       "estado": "ok",
       "papel": "mais do mesmo",
-      "artigos": 63,
-      "cves_elegiveis": 5,
+      "artigos": 64,
+      "cves_elegiveis": 6,
       "primeira": 0,
       "exclusivas": 0,
-      "atraso_mediano_h": 36.1
+      "atraso_mediano_h": 55.2
     },
     {
       "id": "csn",
@@ -52,7 +52,7 @@
       "grupo": "noticias",
       "estado": "ok",
       "papel": "antecipa",
-      "artigos": 124,
+      "artigos": 125,
       "cves_elegiveis": 15,
       "primeira": 2,
       "exclusivas": 6,
@@ -88,7 +88,7 @@
       "grupo": "noticias",
       "estado": "ok",
       "papel": "mais do mesmo",
-      "artigos": 57,
+      "artigos": 59,
       "cves_elegiveis": 6,
       "primeira": 0,
       "exclusivas": 0,
@@ -112,7 +112,7 @@
       "grupo": "noticias",
       "estado": "ok",
       "papel": "sem retorno",
-      "artigos": 86,
+      "artigos": 88,
       "cves_elegiveis": 0,
       "primeira": 0,
       "exclusivas": 0,
@@ -127,7 +127,7 @@
       "artigos": 8,
       "cves_elegiveis": 12,
       "primeira": 0,
-      "exclusivas": 2,
+      "exclusivas": 1,
       "atraso_mediano_h": 91.7
     },
     {
@@ -148,7 +148,7 @@
       "grupo": "fabricante",
       "estado": "ok",
       "papel": "antecipa",
-      "artigos": 1257,
+      "artigos": 1258,
       "cves_elegiveis": 3,
       "primeira": 2,
       "exclusivas": 2,
@@ -215,8 +215,10 @@
       "atraso_mediano_h": null
     }
   ],
-  "rodadas": 1,
-  "falhas_por_fonte": {},
+  "rodadas": 6,
+  "falhas_por_fonte": {
+    "Cybernews": 2
+  },
   "p0": [
     "CVE-2026-123039",
     "CVE-2026-121529",
