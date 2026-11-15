@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-15T10:38:18Z",
+  "atualizado": "2026-11-15T14:38:07Z",
   "janela": "08 a 15/nov/2026",
   "itens": [
     {
@@ -280,6 +280,24 @@
         {
           "nome": "Cybernews",
           "url": "https://cybernews.com/security/fortinet-critical-flaws-patches-november-disclosure/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-10",
+      "cve": "CVE-2026-126147 / CVE-2026-126148 / CVE-2026-126164 / CVE-2026-126155 / CVE-2026-126156 / CVE-2026-126257 / CVE-2026-126251",
+      "produto": "Fortinet FortiMail (gateway de e-mail) e FortiAuthenticator (MFA/SSO)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "FortiMail tem path traversal, injeção de comando via HA e SQLi sem login: atualizar para 8.0.2, 7.6.7 ou 7.4.9 (7.2 migrar) e tirar a interface de gestão e o webmail IBE da internet. FortiAuthenticator tem senha fixa e falha de autorização sem login: atualizar para 8.0.4 ou 6.6.11. FortiMail Cloud já foi corrigido.",
+      "fontes": [
+        {
+          "nome": "Rescana",
+          "url": "https://www.rescana.com/post/fortinet-november-2026-psirt-fortimail-fortimanager-rce-patch-now"
         }
       ],
       "status": "Novo"
