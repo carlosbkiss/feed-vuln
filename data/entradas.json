@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-11-14T18:38:19Z",
-  "janela": "07 a 14/nov/2026",
+  "atualizado": "2026-11-15T10:38:18Z",
+  "janela": "08 a 15/nov/2026",
   "itens": [
     {
       "data": "2026-11-13",
@@ -388,7 +388,7 @@
     },
     {
       "data": "2026-11-10",
-      "cve": "CVE-2026-120017 / CVE-2026-89126 / CVE-2026-76964 / CVE-2026-89103",
+      "cve": "CVE-2026-120017 / CVE-2026-89126 / CVE-2026-76964 / CVE-2026-89103 / CVE-2026-76965 / CVE-2026-109795 / CVE-2026-109803 / CVE-2026-89119 / CVE-2026-109798",
       "produto": "SAP NetWeaver AS ABAP, Web Dispatcher, ICM e Gateway (Patch Day nov/2026)",
       "cvss": 10.0,
       "kev": false,
@@ -400,6 +400,10 @@
         {
           "nome": "SecurityOnline",
           "url": "https://securityonline.info/sap-security-patch-day-november-2026/"
+        },
+        {
+          "nome": "NVD (CVE-2026-76965)",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76965"
         }
       ],
       "status": "Novo"
