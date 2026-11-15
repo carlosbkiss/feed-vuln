@@ -79,7 +79,7 @@
     "aguardando_nota_desde": "2026-11-09T12:00:00Z",
     "nota_chegou_em": "2026-11-10T04:38:14Z",
     "epss_max": 0.0056,
-    "poc_qtd": 0,
+    "poc_qtd": 1,
     "fontes": [
       {
         "nome": "NVD",
@@ -410,7 +410,7 @@
     "aguardando_nota_desde": "2026-11-09T12:00:00Z",
     "nota_chegou_em": "2026-11-10T04:38:14Z",
     "epss_max": 0.0247,
-    "poc_qtd": 2,
+    "poc_qtd": 4,
     "fontes": [
       {
         "nome": "NVD",
@@ -845,7 +845,7 @@
     "aguardando_nota_desde": "2026-11-10T16:00:00Z",
     "nota_chegou_em": "2026-11-11T00:04:15Z",
     "epss_max": 0.0162,
-    "poc_qtd": 2,
+    "poc_qtd": 3,
     "fontes": [
       {
         "nome": "CISA KEV",
@@ -1179,7 +1179,7 @@
     "exibido_em": "2026-11-15T10:38:35Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0061,
     "poc_qtd": 0,
     "fontes": [
       {
