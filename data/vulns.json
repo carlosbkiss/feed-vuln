@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-16T14:39:01Z",
+  "atualizado": "2026-11-16T18:37:53Z",
   "itens": [
     {
       "cve": "CVE-2026-123039",
@@ -1005,7 +1005,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-15T09:16:44Z",
       "resumo": "A vulnerability was identified in D-Link DSL-6740C 20131126. This affects an unknown function of the file /etc/templates/ftpd/ftpd_conf.php of the component FTP Daemon. Such manipulation leads to hard-coded credentials. The attack can be executed remotely.…",
-      "nvd_checado_em": "2026-11-16T14:39:01Z",
+      "nvd_checado_em": "2026-11-16T18:37:53Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2313,7 +2313,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-58115.json",
-        "checado": "2026-11-15T10:38:35Z"
+        "checado": "2026-11-16T18:37:53Z"
       }
     },
     {
@@ -2349,52 +2349,11 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-86596.json",
-        "checado": "2026-11-15T10:38:35Z"
+        "checado": "2026-11-16T18:37:53Z"
       },
       "epss": {
         "score": 0.0149,
         "percentil": 0.7447,
-        "data": "2026-11-16"
-      }
-    },
-    {
-      "cve": "CVE-2026-73695",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-73695",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-73695",
-          "publicado": "2026-11-02T15:17:37Z",
-          "visto_em": "2026-11-02T15:36:56Z"
-        }
-      ],
-      "detectado": "2026-11-02T15:36:56Z",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-02T15:17:37Z",
-      "resumo": "Control Web Panel (CWP) before webpanel_version 1.16 contains a path traversal vulnerability in services/users/index.php, where an attacker-supplied module name is concatenated directly into an include path with no allowlist, basename(), or traversal…",
-      "nvd_checado_em": "2026-11-02T15:36:56Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-11-02T15:17:37Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-73695",
-      "ultima_atividade": "2026-11-02T15:17:37Z",
-      "exibido_em": "2026-11-02T15:36:56Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-15T10:38:35Z"
-      },
-      "epss": {
-        "score": 0.0095,
-        "percentil": 0.6187,
         "data": "2026-11-16"
       }
     },
@@ -2480,7 +2439,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-14T10:39:52Z"
+        "checado": "2026-11-16T18:37:53Z"
       }
     },
     {
@@ -2563,7 +2522,7 @@
       "poc": {
         "qtd": 9,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-119977.json",
-        "checado": "2026-11-15T10:38:35Z"
+        "checado": "2026-11-16T18:37:53Z"
       }
     },
     {
@@ -2638,11 +2597,17 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-15T10:38:35Z"
+        "checado": "2026-11-16T18:37:53Z"
       }
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "Cyber Security News",
+      "titulo": "15 Best Patch Management Tools In 2027",
+      "link": "https://cybersecuritynews.com/patch-management-tools/",
+      "publicado": "2026-11-16T17:40:12Z"
+    },
     {
       "fonte": "BleepingComputer",
       "titulo": "Check Point warns of zero-day flaw exploited for root access",
