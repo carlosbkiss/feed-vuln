@@ -318,6 +318,11 @@
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
         "publicado": "2026-11-14T12:38:35Z"
+      },
+      {
+        "nome": "SecurityWeek",
+        "link": "https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks/",
+        "publicado": "2026-11-16T11:15:48Z"
       }
     ],
     "prioridade_max": "P2"
