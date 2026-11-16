@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-11-15T18:37:40Z",
-  "janela": "08 a 15/nov/2026",
+  "atualizado": "2026-11-16T10:39:25Z",
+  "janela": "09 a 16/nov/2026",
   "itens": [
     {
       "data": "2026-11-13",
@@ -467,6 +467,28 @@
       "status": "Resolvido"
     },
     {
+      "data": "2026-11-10",
+      "cve": "CVE-2026-119958 / CVE-2026-88218 / CVE-2026-88243 / CVE-2026-88234",
+      "produto": "Windows Server (LDAP, DNS, DHCP Server, iSCSI; Patch Tuesday nov/2026)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P0",
+      "tratamento": "RCE sem login em serviços de Windows Server; LDAP atinge controladores de domínio. Aplicar a atualização cumulativa de nov/2026 começando por DCs, DNS e DHCP, e limitar o acesso a esses serviços só a hosts confiáveis enquanto o patch não sai.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline (Windows nov/2026)",
+          "url": "https://securityonline.info/critical-windows-vulnerabilities-november-2026/"
+        },
+        {
+          "nome": "SecurityOnline (CVE-2026-119958)",
+          "url": "https://securityonline.info/cve-watchtower/cve-2026-119958"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
       "data": "2026-11-09",
       "cve": "CVE-2026-125350",
       "produto": "Google Chrome (XML, use-after-free)",
@@ -579,28 +601,6 @@
         }
       ],
       "status": "Pendente"
-    },
-    {
-      "data": "2026-11-08",
-      "cve": "CVE-2026-101117",
-      "produto": "IBM WebSphere eXtreme Scale 8.6.1.0 a 8.6.2.2 (implantação Liberty)",
-      "cvss": 9.1,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não confirmada",
-      "prioridade": "P2",
-      "tratamento": "Política CSP mal configurada permite contornar restrições (risco de XSS) no console/app Liberty. Ir para o fix pack 8.6.2.2 e aplicar o iFix PH73641; sem mitigação oficial, então restringir o acesso à interface web à rede de administração.",
-      "fontes": [
-        {
-          "nome": "IBM Security Bulletin",
-          "url": "https://www.ibm.com/support/pages/node/7293764"
-        },
-        {
-          "nome": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101117"
-        }
-      ],
-      "status": "Novo"
     },
     {
       "data": "2026-11-06",
