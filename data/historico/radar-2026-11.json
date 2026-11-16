@@ -410,7 +410,7 @@
     "aguardando_nota_desde": "2026-11-09T12:00:00Z",
     "nota_chegou_em": "2026-11-10T04:38:14Z",
     "epss_max": 0.0247,
-    "poc_qtd": 5,
+    "poc_qtd": 6,
     "fontes": [
       {
         "nome": "NVD",
@@ -581,7 +581,7 @@
     "aguardando_nota_desde": "2026-11-11T07:05:55Z",
     "nota_chegou_em": null,
     "epss_max": 0.0022,
-    "poc_qtd": 5,
+    "poc_qtd": 4,
     "fontes": [
       {
         "nome": "Cyber Security News",
@@ -642,7 +642,7 @@
     "aguardando_nota_desde": "2026-11-13T07:39:04Z",
     "nota_chegou_em": "2026-11-13T18:32:35Z",
     "epss_max": 0.0219,
-    "poc_qtd": 1,
+    "poc_qtd": 2,
     "fontes": [
       {
         "nome": "NVD",
