@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-17T14:39:57Z",
+  "atualizado": "2026-11-17T18:43:49Z",
   "itens": [
     {
       "cve": "CVE-2026-123039",
@@ -985,6 +985,52 @@
         "score": 0.0162,
         "percentil": 0.765,
         "data": "2026-11-17"
+      }
+    },
+    {
+      "cve": "CVE-2026-115731",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-115731",
+          "publicado": "2026-11-17",
+          "visto_em": "2026-11-17T18:43:49Z"
+        }
+      ],
+      "detectado": "2026-11-17T18:43:49Z",
+      "kev": {
+        "adicionado": "2026-11-17",
+        "prazo": "2026-12-01",
+        "ransomware": "Unknown"
+      },
+      "produto": "Perforce Puppet Enterprise",
+      "titulo": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
+      "resumo": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet’s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service user by…",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-17T00:00:00Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731",
+      "ultima_atividade": "2026-11-17T00:00:00Z",
+      "exibido_em": "2026-11-17T18:43:49Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0037,
+        "percentil": 0.3088,
+        "data": "2026-11-17"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-17T18:43:49Z"
       }
     },
     {
@@ -2360,7 +2406,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-16T18:37:53Z"
+        "checado": "2026-11-17T18:43:49Z"
       }
     },
     {
@@ -2443,7 +2489,7 @@
       "poc": {
         "qtd": 9,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-119977.json",
-        "checado": "2026-11-16T18:37:53Z"
+        "checado": "2026-11-17T18:43:49Z"
       }
     },
     {
@@ -2518,7 +2564,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-16T18:37:53Z"
+        "checado": "2026-11-17T18:43:49Z"
       }
     }
   ],
