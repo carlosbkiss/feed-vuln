@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-16T18:37:53Z",
+  "atualizado": "2026-11-17T03:55:29Z",
   "itens": [
     {
       "cve": "CVE-2026-123039",
@@ -2314,47 +2314,6 @@
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-58115.json",
         "checado": "2026-11-16T18:37:53Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-86596",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-86596",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-86596",
-          "publicado": "2026-11-02T22:17:23Z",
-          "visto_em": "2026-11-03T02:55:51Z"
-        }
-      ],
-      "detectado": "2026-11-03T02:55:51Z",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-02T22:17:23Z",
-      "resumo": "The s2Member plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, <= 260927 via the 'item_name' parameter parameter. This is due to insufficient sanitization in strip_php_tags_deep(), which only strips literal…",
-      "nvd_checado_em": "2026-11-05T18:41:26Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-11-02T22:17:23Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-86596",
-      "ultima_atividade": "2026-11-02T22:17:23Z",
-      "exibido_em": "2026-11-03T02:55:51Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "poc": {
-        "qtd": 2,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-86596.json",
-        "checado": "2026-11-16T18:37:53Z"
-      },
-      "epss": {
-        "score": 0.0149,
-        "percentil": 0.7447,
-        "data": "2026-11-16"
       }
     },
     {
