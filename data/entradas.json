@@ -1,7 +1,29 @@
 {
-  "atualizado": "2026-11-17T14:45:00Z",
+  "atualizado": "2026-11-17T18:45:00Z",
   "janela": "10 a 17/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-17",
+      "cve": "CVE-2026-114938",
+      "produto": "Java SE / OpenJDK 17 (CPU de Java da Oracle de nov/2026, 11 falhas, e RCE relatada no OpenJDK 17)",
+      "cvss": null,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não confirmada",
+      "prioridade": "P1",
+      "tratamento": "Oracle publica hoje as builds 8u513, 11.0.33.1, 17.0.21.1, 21.0.13.1, 25.0.5.1 e 27.0.1.1 (11 falhas sem login, nota máxima 8.1). A RCE CVE-2026-114938 no OpenJDK 17 (9.2 relatado) ainda está a confirmar: inventariar runtimes Java 17, inclusive imagens de contêiner e JDKs embutidos, priorizar serviços expostos e aplicar as builds novas de cada distribuição assim que saírem.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html"
+        },
+        {
+          "nome": "Astra Security",
+          "url": "https://www.getastra.com/blog/security-advisory/cve-2026-114938/"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-11-16",
       "cve": "sem CVE (Optimizely Web Experimentation)",
@@ -180,22 +202,22 @@
     },
     {
       "data": "2026-11-11",
-      "cve": "sem CVE (ConnectWise ScreenConnect, campanha SCKit)",
-      "produto": "ConnectWise ScreenConnect (painéis em nuvem de MSPs, extensões de terceiros)",
-      "cvss": null,
-      "kev": false,
+      "cve": "CVE-2026-84869 / CVE-2026-127063",
+      "produto": "ConnectWise ScreenConnect (cliente do técnico e extensão RMM+; campanha SCKit contra MSPs)",
+      "cvss": 9.9,
+      "kev": true,
       "zero_day": false,
-      "exploracao": "Ativa (worm SCKit: 288 máquinas em 48 organizações via painéis de MSPs)",
+      "exploracao": "Ativa (Huntress ligou a campanha SCKit à falha de transferência de arquivo do cliente, CVE-2026-84869, no KEV desde set/2026; 688 mil pedidos de \"run file\" a 42 servidores de MSPs entre 20/10 e 16/11)",
       "prioridade": "P1",
-      "tratamento": "Sem CVE: acesso por credencial ou sessão sequestrada, possivelmente via extensões Labtech Plus e RMM+. Mapear fornecedores que usam ScreenConnect no banco, desativar essas extensões, revisar o histórico de Run Command, procurar segundo cliente ScreenConnect e a tarefa TrapWatch, e trocar credenciais a partir de máquina limpa.",
+      "tratamento": "Atualizar servidores on-premise para 26.6.5 e, na nuvem, reinstalar clientes host e agentes de acesso. Mapear fornecedores que usam ScreenConnect no banco, desativar extensões RMM+ e Labtech Plus, procurar update.bat ou update_<hex>.bat, segundo cliente ScreenConnect e a tarefa TrapWatch, e trocar credenciais a partir de máquina limpa.",
       "fontes": [
         {
           "nome": "Huntress",
           "url": "https://www.huntress.com/blog/sckit-worm-rogue-screenconnect"
         },
         {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html"
+          "nome": "Cybersecurity Dive",
+          "url": "https://www.cybersecuritydive.com/news/critical-flaw-screenconnect-malicious-files-msp/874900/"
         }
       ],
       "status": "Novo"
@@ -540,6 +562,24 @@
         {
           "nome": "SecurityOnline (CVE-2026-119958)",
           "url": "https://securityonline.info/cve-watchtower/cve-2026-119958"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-10",
+      "cve": "CVE-2026-125350",
+      "produto": "Google Chrome e navegadores Chromium (componente XML)",
+      "cvss": null,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (Google confirma; KEV em 10/11, prazo CISA 24/11)",
+      "prioridade": "P1",
+      "tratamento": "Garantir Chrome 157.0.8103.50/.51 (Windows e Mac) ou 157.0.8103.50 (Linux) em todas as estações e forçar reinício do navegador; atualizar Edge e outros Chromium quando o fabricante liberar. Conferir no inventário as máquinas que ficaram abaixo dessa versão.",
+      "fontes": [
+        {
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/"
         }
       ],
       "status": "Novo"
