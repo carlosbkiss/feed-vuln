@@ -1,7 +1,33 @@
 {
-  "atualizado": "2026-11-16T18:37:39Z",
-  "janela": "09 a 16/nov/2026",
+  "atualizado": "2026-11-17T10:34:34Z",
+  "janela": "10 a 17/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-16",
+      "cve": "CVE-2026-90436",
+      "produto": "Atlassian Confluence Data Center até 9.x com Remote API (XML-RPC e SOAP) ligada (Apache Axis 1.x)",
+      "cvss": 9.3,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Ativa (Rapid7 viu exploração em cliente em 13/11; PoC público derivado da cadeia do N-central)",
+      "prioridade": "P0",
+      "tratamento": "Atualizar para 9.2.28 ou migrar para a 10.x, que removeu a Remote API; Cloud não é afetado. Sem patch, desligar a Remote API em Configuração geral (sem reinício) e confirmar 403 em /plugins/servlet/soap-axis1/confluenceservice-v2; caçar comprometimento nas instâncias que ficaram expostas, incluindo os IPs publicados pela Rapid7.",
+      "fontes": [
+        {
+          "nome": "Atlassian CONFSERVER-104610",
+          "url": "https://jira.atlassian.com/browse/CONFSERVER-104610"
+        },
+        {
+          "nome": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/hackers-exploiting-atlassian-confluence-vulnerability/"
+        },
+        {
+          "nome": "Cyber Daily",
+          "url": "https://www.cyberdaily.au/security/14450-patch-now-hackers-targeting-critical-vulnerability-impacting-atlassian-n-able-products"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-11-13",
       "cve": "CVE-2026-114713",
@@ -115,13 +141,17 @@
       "cvss": 9.8,
       "kev": false,
       "zero_day": false,
-      "exploracao": "Exploit público (PoC derruba o processo; RCE não demonstrado)",
+      "exploracao": "Ativa (exploração relatada pela CSA de Singapura em 17/11; PoC público derruba o processo)",
       "prioridade": "P0",
       "tratamento": "Atualizar para 2.4.71 ou pacote corrigido da distribuição, começando pelos servidores expostos e proxies reversos. Sem patch imediato, desligar HTTP/2 (Protocols só com http/1.1); levantar também appliances e imagens de contêiner que embutem httpd.",
       "fontes": [
         {
           "nome": "SecurityWeek",
           "url": "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/"
+        },
+        {
+          "nome": "CSA Singapura (AL-2026-164)",
+          "url": "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-164/"
         }
       ],
       "status": "Novo"
@@ -433,9 +463,9 @@
       "cvss": null,
       "kev": false,
       "zero_day": true,
-      "exploracao": "Ativa (4EverAble2Shell: 21 servidores com minerador em 12/11, inclusive com 2026.4 HF2)",
+      "exploracao": "Ativa (4EverAble2Shell com minerador em servidores com Legacy API; PoC público)",
       "prioridade": "P0",
-      "tratamento": "O HF2 de 10/11 não cobre a nova cadeia, que dá root; sem correção completa, confirmar Legacy API desligada, manter o servidor fora da internet e aplicar as restrições do fabricante. Procurar requisições a /dms/services/ServerUI com jline, serviço xvd.service e arquivos em /tmp/.xvd; se achar, tratar como comprometido e cobrar o mesmo de fornecedores que usam N-central.",
+      "tratamento": "Atualizar servidores on-premise para 2026.4 HF3, que remove a Legacy API e corrige mais 17 CVEs, e atualizar todos os agentes e probes. Procurar requisições a /dms/services/ServerUI com jline, serviço xvd.service e arquivos em /tmp/.xvd; se achar, tratar como comprometido e cobrar o mesmo de fornecedores que usam N-central.",
       "fontes": [
         {
           "nome": "BleepingComputer",
@@ -444,6 +474,10 @@
         {
           "nome": "The Hacker News",
           "url": "https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html"
+        },
+        {
+          "nome": "The Hacker News (HF3)",
+          "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html"
         }
       ],
       "status": "Novo"
@@ -484,72 +518,6 @@
         {
           "nome": "SecurityOnline (CVE-2026-119958)",
           "url": "https://securityonline.info/cve-watchtower/cve-2026-119958"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-09",
-      "cve": "CVE-2026-125350",
-      "produto": "Google Chrome (XML, use-after-free)",
-      "cvss": null,
-      "kev": true,
-      "zero_day": true,
-      "exploracao": "Ativa (KEV em 10/11, prazo CISA 24/11; Google confirma exploit em uso)",
-      "prioridade": "P1",
-      "tratamento": "Oitavo zero-day do Chrome em 2026. Forçar a atualização para 157.0.8103.50/.51 via gestão central e acompanhar Edge e outros navegadores Chromium até saírem as correções; nota a confirmar.",
-      "fontes": [
-        {
-          "nome": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/"
-        },
-        {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-09",
-      "cve": "CVE-2026-123218",
-      "produto": "IBM Aspera Faspex 5.0.0 a 5.0.19 (troca de arquivos)",
-      "cvss": 9.8,
-      "kev": true,
-      "zero_day": true,
-      "exploracao": "Ativa (KEV em 09/11, prazo CISA 12/11; sem detalhes públicos)",
-      "prioridade": "P1",
-      "tratamento": "Usuário logado forja mensagem e vira administrador. Subir para 5.0.19 PL1 e conferir a imagem faspex-core; não há mitigação oficial, então restringir o acesso externo e revisar contas admin criadas recentemente.",
-      "fontes": [
-        {
-          "nome": "IBM Security Bulletin",
-          "url": "https://www.ibm.com/support/pages/node/7295921"
-        },
-        {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-09",
-      "cve": "CVE-2026-116779",
-      "produto": "SignalWire FreeSWITCH 1.11.2 e anteriores (VoIP, SIP)",
-      "cvss": 9.8,
-      "kev": true,
-      "zero_day": false,
-      "exploracao": "Ativa (KEV em 09/11, prazo CISA 12/11)",
-      "prioridade": "P1",
-      "tratamento": "SIP MESSAGE forjada executa comandos no servidor. Checar se URA, call center ou PABX usam FreeSWITCH e subir para 1.11.3; até lá, enable-chat=false nos perfis, manter enable-chat-api-proto desligado e remover usuários sem senha.",
-      "fontes": [
-        {
-          "nome": "SecurityOnline",
-          "url": "https://securityonline.info/freeswitch-vulnerability-cve-2026-116779-exploited/"
-        },
-        {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html"
         }
       ],
       "status": "Novo"
