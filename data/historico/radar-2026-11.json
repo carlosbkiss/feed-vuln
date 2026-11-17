@@ -331,10 +331,11 @@
     "cve": "CVE-2026-115731",
     "produto": "Perforce Puppet Enterprise",
     "titulo": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
-    "cvss": null,
-    "prioridade": "P2",
+    "cvss": 9.4,
+    "prioridade": "P0",
     "elegivel_por": [
       "zero-day",
+      "CVSS ≥ 9",
       "KEV"
     ],
     "zero_day": true,
@@ -343,9 +344,9 @@
       "prazo": "2026-12-01",
       "ransomware": "Unknown"
     },
-    "primeira_vez": "2026-11-17T00:00:00Z",
-    "primeira_noticia": null,
-    "publicado_nvd": null,
+    "primeira_vez": "2026-11-03T21:17:01Z",
+    "primeira_noticia": "2026-11-17T12:00:00Z",
+    "publicado_nvd": "2026-11-03T21:17:01Z",
     "exibido_em": "2026-11-17T18:43:49Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
@@ -353,12 +354,22 @@
     "poc_qtd": 0,
     "fontes": [
       {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731",
+        "publicado": "2026-11-03T21:17:01Z"
+      },
+      {
         "nome": "CISA KEV",
         "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-115731",
         "publicado": "2026-11-17"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
+        "publicado": "2026-11-17T12:00:00Z"
       }
     ],
-    "prioridade_max": "P2"
+    "prioridade_max": "P0"
   },
   "CVE-2026-116606": {
     "cve": "CVE-2026-116606",
