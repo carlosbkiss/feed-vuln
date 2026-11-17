@@ -415,7 +415,7 @@
     "aguardando_nota_desde": "2026-11-09T12:00:00Z",
     "nota_chegou_em": "2026-11-10T04:38:14Z",
     "epss_max": 0.0247,
-    "poc_qtd": 6,
+    "poc_qtd": 7,
     "fontes": [
       {
         "nome": "NVD",
@@ -700,7 +700,7 @@
     "aguardando_nota_desde": "2026-11-06T15:21:49Z",
     "nota_chegou_em": "2026-11-09T21:27:15Z",
     "epss_max": 0.189,
-    "poc_qtd": 38,
+    "poc_qtd": 40,
     "fontes": [
       {
         "nome": "NVD",
@@ -1218,7 +1218,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0062,
-    "poc_qtd": 2,
+    "poc_qtd": 1,
     "fontes": [
       {
         "nome": "CISA KEV",

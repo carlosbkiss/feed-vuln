@@ -1494,7 +1494,7 @@
     "exibido_em": "2026-11-03T23:59:40Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.012,
+    "epss_max": 0.0159,
     "poc_qtd": 9,
     "fontes": [
       {

@@ -1,7 +1,29 @@
 {
-  "atualizado": "2026-11-17T10:34:34Z",
+  "atualizado": "2026-11-17T14:45:00Z",
   "janela": "10 a 17/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-16",
+      "cve": "sem CVE (Optimizely Web Experimentation)",
+      "produto": "Optimizely Web Experimentation e outros scripts de terceiros (Kissmetrics, StorifyMe, minute-ly) em sites públicos",
+      "cvss": null,
+      "kev": false,
+      "zero_day": true,
+      "exploracao": "Ativa (falha no cadastro de contas da Optimizely usada para injetar skimmer de cartão, roubo de cookies e troca de carteiras cripto em 178+ sites em 16/11, inclusive do setor financeiro)",
+      "prioridade": "P0",
+      "tratamento": "Listar páginas de login, cadastro e pagamento que carregam scripts da Optimizely ou dos outros três serviços e comparar o código dos projetos com versões guardadas; procurar nos logs de proxy e WAF os IOCs publicados (1688360[.]cc, webshell[.]lol, card.php, hit.php). Exigir CSP e SRI em scripts de terceiros, considerar cache de até 1 dia e acionar antifraude para clientes que acessaram em 16/11.",
+      "fontes": [
+        {
+          "nome": "The Next Web",
+          "url": "https://thenextweb.com/news/optimizely-hack-malware-zoom-bbc-cnn-hsbc-178-sites"
+        },
+        {
+          "nome": "Infostealers",
+          "url": "https://www.infostealers.com/article/beyond-optimizely-malicious-scripts-traced-across-four-web-services/"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-11-16",
       "cve": "CVE-2026-90436",
@@ -521,54 +543,6 @@
         }
       ],
       "status": "Novo"
-    },
-    {
-      "data": "2026-11-09",
-      "cve": "CVE-2026-102895 / CVE-2026-102894",
-      "produto": "GPUStack (gestão de clusters de GPU para IA)",
-      "cvss": 9.8,
-      "kev": true,
-      "zero_day": false,
-      "exploracao": "Ativa (CVE-2026-102895 no KEV em 09/11, prazo CISA 12/11; CVE-2026-102894 sem ataque confirmado)",
-      "prioridade": "P2",
-      "tratamento": "Bypass de login por loopback dá admin remoto, e o callback SAML aceita XML sem verificar assinatura (9.1). Se houver em times de IA, subir para 2.2.2; até lá, ligar force_auth_localhost, remover o cabeçalho X-GPUStack-Real-IP no proxy e bloquear /auth/saml/callback de fora.",
-      "fontes": [
-        {
-          "nome": "SecurityOnline",
-          "url": "https://securityonline.info/gpustack-authentication-bypass-cve-2026-102895-exploited/"
-        },
-        {
-          "nome": "The Hacker News (KEV)",
-          "url": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html"
-        }
-      ],
-      "status": "Pendente"
-    },
-    {
-      "data": "2026-11-09",
-      "cve": "CVE-2026-123158",
-      "produto": "OpenSSH em Linux com musl sem PAM (Alpine, Buildroot, OpenWrt, Yocto)",
-      "cvss": 8.1,
-      "kev": true,
-      "zero_day": false,
-      "exploracao": "Ativa (KEV em 09/11, prazo CISA 12/11; GreyNoise vê pós-exploração com persistência em authorized_keys e agente C2; watchTowr: botnets e mineradores)",
-      "prioridade": "P1",
-      "tratamento": "Botnets e mineradores exploram sshd em Linux com musl sem PAM. Subir para OpenSSH 10.6p2 ou pacote corrigido da distro e reiniciar o sshd; paliativo: PasswordAuthentication no. Inventariar appliances Buildroot/OpenWrt/Yocto e containers Alpine com sshd, e revisar logins por senha e authorized_keys.",
-      "fontes": [
-        {
-          "nome": "SecurityWeek",
-          "url": "https://www.securityweek.com/hackers-exploiting-sshole-authentication-bypass-in-openssh/"
-        },
-        {
-          "nome": "The Hacker News (KEV)",
-          "url": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html"
-        },
-        {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html"
-        }
-      ],
-      "status": "Pendente"
     },
     {
       "data": "2026-11-06",
