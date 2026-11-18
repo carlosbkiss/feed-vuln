@@ -72,7 +72,7 @@
     "exibido_em": "2026-11-18T02:55:02Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0035,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -106,7 +106,7 @@
     "exibido_em": "2026-11-09T21:27:15Z",
     "aguardando_nota_desde": "2026-11-09T12:00:00Z",
     "nota_chegou_em": "2026-11-10T04:38:14Z",
-    "epss_max": 0.0056,
+    "epss_max": 0.0573,
     "poc_qtd": 1,
     "fontes": [
       {
@@ -372,7 +372,7 @@
     "exibido_em": "2026-11-18T02:55:02Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0048,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -400,7 +400,7 @@
     "exibido_em": "2026-11-18T02:55:02Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0048,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -428,7 +428,7 @@
     "exibido_em": "2026-11-18T02:55:02Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0052,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -456,7 +456,7 @@
     "exibido_em": "2026-11-18T02:55:02Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0052,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -484,7 +484,7 @@
     "exibido_em": "2026-11-18T02:55:02Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0048,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -512,7 +512,7 @@
     "exibido_em": "2026-11-18T02:55:02Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0051,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -540,7 +540,7 @@
     "exibido_em": "2026-11-18T02:55:02Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0035,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -574,7 +574,7 @@
     "exibido_em": "2026-11-17T18:43:49Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0037,
+    "epss_max": 0.0069,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -692,7 +692,7 @@
     "exibido_em": "2026-11-09T21:27:15Z",
     "aguardando_nota_desde": "2026-11-09T12:00:00Z",
     "nota_chegou_em": "2026-11-10T04:38:14Z",
-    "epss_max": 0.0247,
+    "epss_max": 0.2208,
     "poc_qtd": 7,
     "fontes": [
       {
@@ -850,22 +850,28 @@
     "cve": "CVE-2026-121529",
     "produto": "",
     "titulo": "",
-    "cvss": null,
+    "cvss": 9.6,
     "prioridade": "P0",
     "elegivel_por": [
-      "zero-day"
+      "zero-day",
+      "CVSS ≥ 9"
     ],
     "zero_day": true,
     "kev": null,
-    "primeira_vez": "2026-11-11T07:05:55Z",
+    "primeira_vez": "2026-11-10T20:18:56Z",
     "primeira_noticia": "2026-11-11T07:05:55Z",
-    "publicado_nvd": null,
+    "publicado_nvd": "2026-11-10T20:18:56Z",
     "exibido_em": "2026-11-11T10:40:48Z",
     "aguardando_nota_desde": "2026-11-11T07:05:55Z",
-    "nota_chegou_em": null,
+    "nota_chegou_em": "2026-11-18T14:39:33Z",
     "epss_max": 0.0022,
     "poc_qtd": 4,
     "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-121529",
+        "publicado": "2026-11-10T20:18:56Z"
+      },
       {
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/fortinet2shell-vulnerability/",
@@ -1891,7 +1897,7 @@
     "exibido_em": "2026-11-18T02:55:02Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0044,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -1919,7 +1925,7 @@
     "exibido_em": "2026-11-18T02:55:02Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0046,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -1947,7 +1953,7 @@
     "exibido_em": "2026-11-18T02:55:02Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0034,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -1975,7 +1981,7 @@
     "exibido_em": "2026-11-18T02:55:02Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0046,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -2003,7 +2009,7 @@
     "exibido_em": "2026-11-18T02:55:02Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0039,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -2031,7 +2037,7 @@
     "exibido_em": "2026-11-18T02:55:02Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0052,
     "poc_qtd": 0,
     "fontes": [
       {

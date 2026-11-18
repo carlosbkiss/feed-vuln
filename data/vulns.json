@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-18T10:44:49Z",
+  "atualizado": "2026-11-18T14:39:33Z",
   "itens": [
     {
       "cve": "CVE-2026-123039",
@@ -77,51 +77,13 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0194,
-        "percentil": 0.8049,
-        "data": "2026-11-17"
+        "percentil": 0.8054,
+        "data": "2026-11-18"
       },
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123039.json",
         "checado": "2026-11-17T14:39:57Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-121529",
-      "fontes": [
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Critical Fortinet2Shell Vulnerability Enables RCE Attacks in FortiClient with FortiPAM Enabled",
-          "link": "https://cybersecuritynews.com/fortinet2shell-vulnerability/",
-          "publicado": "2026-11-11T07:05:55Z",
-          "visto_em": "2026-11-11T10:40:48Z"
-        }
-      ],
-      "detectado": "2026-11-11T10:40:48Z",
-      "zero_day": true,
-      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
-      "aguardando_nota_desde": "2026-11-11T07:05:55Z",
-      "elegivel_por": [
-        "zero-day"
-      ],
-      "primeira_vez": "2026-11-11T07:05:55Z",
-      "primeira_noticia": "2026-11-11T07:05:55Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-121529",
-      "ultima_atividade": "2026-11-11T07:05:55Z",
-      "exibido_em": "2026-11-11T10:40:48Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "poc": {
-        "qtd": 4,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-121529.json",
-        "checado": "2026-11-17T14:39:57Z"
-      },
-      "epss": {
-        "score": 0.0022,
-        "percentil": 0.1236,
-        "data": "2026-11-17"
       }
     },
     {
@@ -175,8 +137,8 @@
       },
       "epss": {
         "score": 0.0074,
-        "percentil": 0.5513,
-        "data": "2026-11-17"
+        "percentil": 0.5524,
+        "data": "2026-11-18"
       },
       "cvss": 10.0,
       "cvss_versao": "3.1",
@@ -186,6 +148,60 @@
       "nvd_checado_em": "2026-11-13T18:38:57Z",
       "nota_chegou_em": "2026-11-13T18:38:57Z",
       "escalado": true
+    },
+    {
+      "cve": "CVE-2026-121529",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-121529",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-121529",
+          "publicado": "2026-11-10T20:18:56Z",
+          "visto_em": "2026-11-18T14:39:33Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical Fortinet2Shell Vulnerability Enables RCE Attacks in FortiClient with FortiPAM Enabled",
+          "link": "https://cybersecuritynews.com/fortinet2shell-vulnerability/",
+          "publicado": "2026-11-11T07:05:55Z",
+          "visto_em": "2026-11-11T10:40:48Z"
+        }
+      ],
+      "detectado": "2026-11-11T10:40:48Z",
+      "zero_day": true,
+      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
+      "aguardando_nota_desde": "2026-11-11T07:05:55Z",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-10T20:18:56Z",
+      "primeira_noticia": "2026-11-11T07:05:55Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-121529",
+      "ultima_atividade": "2026-11-11T07:05:55Z",
+      "exibido_em": "2026-11-11T10:40:48Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "poc": {
+        "qtd": 4,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-121529.json",
+        "checado": "2026-11-17T14:39:57Z"
+      },
+      "epss": {
+        "score": 0.0022,
+        "percentil": 0.1236,
+        "data": "2026-11-18"
+      },
+      "cvss": 9.6,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-10T20:18:56Z",
+      "resumo": "A origin validation error vulnerability in Fortinet FortiClientMac 7.4.0 through 7.4.7, FortiClientWindows 7.4.0 through 7.4.7, FortiClientWindows 7.2.0 through 7.2.14, FortiClientWindowsPAM 7.4.7, FortiClientWindowsPAM 7.2.14 may allow an unauthorized…",
+      "nvd_checado_em": "2026-11-18T14:39:33Z",
+      "nota_chegou_em": "2026-11-18T14:39:33Z"
     },
     {
       "cve": "CVE-2026-123218",
@@ -270,8 +286,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0053,
-        "percentil": 0.4573,
-        "data": "2026-11-17"
+        "percentil": 0.4585,
+        "data": "2026-11-18"
       },
       "poc": {
         "qtd": 1,
@@ -374,8 +390,8 @@
       },
       "epss": {
         "score": 0.0053,
-        "percentil": 0.4556,
-        "data": "2026-11-17"
+        "percentil": 0.4566,
+        "data": "2026-11-18"
       }
     },
     {
@@ -440,9 +456,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0247,
-        "percentil": 0.8481,
-        "data": "2026-11-17"
+        "score": 0.2208,
+        "percentil": 0.9771,
+        "data": "2026-11-18"
       },
       "poc": {
         "qtd": 7,
@@ -541,8 +557,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.189,
-        "percentil": 0.9734,
-        "data": "2026-11-17"
+        "percentil": 0.9735,
+        "data": "2026-11-18"
       },
       "poc": {
         "qtd": 40,
@@ -604,9 +620,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0052,
-        "percentil": 0.4457,
-        "data": "2026-11-17"
+        "score": 0.0573,
+        "percentil": 0.932,
+        "data": "2026-11-18"
       },
       "poc": {
         "qtd": 1,
@@ -690,9 +706,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0037,
-        "percentil": 0.3088,
-        "data": "2026-11-17"
+        "score": 0.0069,
+        "percentil": 0.5355,
+        "data": "2026-11-18"
       },
       "poc": {
         "qtd": 0,
@@ -799,8 +815,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.1095,
-        "percentil": 0.9596,
-        "data": "2026-11-17"
+        "percentil": 0.9597,
+        "data": "2026-11-18"
       },
       "poc": {
         "qtd": 1,
@@ -870,8 +886,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0064,
-        "percentil": 0.5119,
-        "data": "2026-11-17"
+        "percentil": 0.513,
+        "data": "2026-11-18"
       },
       "poc": {
         "qtd": 0,
@@ -964,8 +980,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0098,
-        "percentil": 0.6269,
-        "data": "2026-11-17"
+        "percentil": 0.6279,
+        "data": "2026-11-18"
       },
       "poc": {
         "qtd": 0,
@@ -997,7 +1013,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:24Z",
       "resumo": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: TopLink Integration).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows…",
-      "nvd_checado_em": "2026-11-18T10:44:49Z",
+      "nvd_checado_em": "2026-11-18T14:39:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1013,6 +1029,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-18T02:55:02Z"
+      },
+      "epss": {
+        "score": 0.0052,
+        "percentil": 0.45,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1033,7 +1054,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:22Z",
       "resumo": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker…",
-      "nvd_checado_em": "2026-11-18T10:44:49Z",
+      "nvd_checado_em": "2026-11-18T14:39:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1049,6 +1070,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-18T02:55:02Z"
+      },
+      "epss": {
+        "score": 0.0044,
+        "percentil": 0.3874,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1069,7 +1095,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:22Z",
       "resumo": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with…",
-      "nvd_checado_em": "2026-11-18T10:44:49Z",
+      "nvd_checado_em": "2026-11-18T14:39:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1085,6 +1111,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-18T02:55:02Z"
+      },
+      "epss": {
+        "score": 0.0046,
+        "percentil": 0.4025,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1105,7 +1136,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:22Z",
       "resumo": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with…",
-      "nvd_checado_em": "2026-11-18T10:44:49Z",
+      "nvd_checado_em": "2026-11-18T14:39:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1121,6 +1152,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-18T02:55:02Z"
+      },
+      "epss": {
+        "score": 0.0034,
+        "percentil": 0.2778,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1141,7 +1177,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:22Z",
       "resumo": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with…",
-      "nvd_checado_em": "2026-11-18T10:44:49Z",
+      "nvd_checado_em": "2026-11-18T14:39:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1157,6 +1193,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-18T02:55:02Z"
+      },
+      "epss": {
+        "score": 0.0046,
+        "percentil": 0.4025,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1177,7 +1218,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:11Z",
       "resumo": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Admin Console).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network…",
-      "nvd_checado_em": "2026-11-18T10:44:49Z",
+      "nvd_checado_em": "2026-11-18T14:39:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1193,6 +1234,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-18T02:55:02Z"
+      },
+      "epss": {
+        "score": 0.0052,
+        "percentil": 0.45,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1284,8 +1330,8 @@
       },
       "epss": {
         "score": 0.0162,
-        "percentil": 0.765,
-        "data": "2026-11-17"
+        "percentil": 0.7656,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1306,7 +1352,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:24Z",
       "resumo": "Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via RMI…",
-      "nvd_checado_em": "2026-11-18T10:44:49Z",
+      "nvd_checado_em": "2026-11-18T14:39:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1322,6 +1368,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-18T02:55:02Z"
+      },
+      "epss": {
+        "score": 0.0039,
+        "percentil": 0.3395,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1342,7 +1393,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:23Z",
       "resumo": "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Integration Broker).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerability allows unauthenticated attacker with network access via…",
-      "nvd_checado_em": "2026-11-18T10:44:49Z",
+      "nvd_checado_em": "2026-11-18T14:39:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1358,6 +1409,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-18T02:55:02Z"
+      },
+      "epss": {
+        "score": 0.0035,
+        "percentil": 0.2964,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1378,7 +1434,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:17Z",
       "resumo": "Vulnerability in the Document Management and Collaboration product of Oracle E-Business Suite (component: Attachments).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network…",
-      "nvd_checado_em": "2026-11-18T10:44:49Z",
+      "nvd_checado_em": "2026-11-18T14:39:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1394,6 +1450,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-18T02:55:02Z"
+      },
+      "epss": {
+        "score": 0.0051,
+        "percentil": 0.4408,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1414,7 +1475,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:13Z",
       "resumo": "Vulnerability in the Oracle Text component of Oracle Database Server.  Supported versions that are affected are 19.3-19.33, 21.3-21.24 and  23.4.0-23.26.3. Easily exploitable vulnerability allows low privileged attacker having Create Session privilege with…",
-      "nvd_checado_em": "2026-11-18T10:44:49Z",
+      "nvd_checado_em": "2026-11-18T14:39:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1430,6 +1491,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-18T02:55:02Z"
+      },
+      "epss": {
+        "score": 0.0048,
+        "percentil": 0.4206,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1450,7 +1516,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:10Z",
       "resumo": "Vulnerability in the RDBMS component of Oracle Database Server.  Supported versions that are affected are 23.4.0-23.26.4. Easily exploitable vulnerability allows low privileged attacker having Create Session privilege with network access via Oracle Net to…",
-      "nvd_checado_em": "2026-11-18T10:44:49Z",
+      "nvd_checado_em": "2026-11-18T14:39:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1466,6 +1532,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-18T02:55:02Z"
+      },
+      "epss": {
+        "score": 0.0048,
+        "percentil": 0.4206,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1486,7 +1557,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:10Z",
       "resumo": "Vulnerability in the Oracle Platform Security for Java product of Oracle Fusion Middleware (component: Centralized Thirdparty Jars).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated…",
-      "nvd_checado_em": "2026-11-18T10:44:49Z",
+      "nvd_checado_em": "2026-11-18T14:39:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1502,6 +1573,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-18T02:55:02Z"
+      },
+      "epss": {
+        "score": 0.0052,
+        "percentil": 0.45,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1522,7 +1598,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:09Z",
       "resumo": "Vulnerability in the Oracle Text component of Oracle Database Server.  Supported versions that are affected are 19.3-19.32, 21.3-21.24 and  23.4.0-23.26.3. Easily exploitable vulnerability allows low privileged attacker having Create Session privilege with…",
-      "nvd_checado_em": "2026-11-18T10:44:49Z",
+      "nvd_checado_em": "2026-11-18T14:39:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1538,6 +1614,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-18T02:55:02Z"
+      },
+      "epss": {
+        "score": 0.0048,
+        "percentil": 0.4206,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1558,7 +1639,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:04Z",
       "resumo": "Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Admin UI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP…",
-      "nvd_checado_em": "2026-11-18T10:44:49Z",
+      "nvd_checado_em": "2026-11-18T14:39:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1574,6 +1655,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-18T02:55:02Z"
+      },
+      "epss": {
+        "score": 0.0035,
+        "percentil": 0.2964,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1613,8 +1699,8 @@
       },
       "epss": {
         "score": 0.0061,
-        "percentil": 0.4963,
-        "data": "2026-11-17"
+        "percentil": 0.4975,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1654,8 +1740,8 @@
       },
       "epss": {
         "score": 0.0077,
-        "percentil": 0.5638,
-        "data": "2026-11-17"
+        "percentil": 0.5649,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1695,8 +1781,8 @@
       },
       "epss": {
         "score": 0.005,
-        "percentil": 0.4376,
-        "data": "2026-11-17"
+        "percentil": 0.4385,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1736,8 +1822,8 @@
       },
       "epss": {
         "score": 0.0043,
-        "percentil": 0.3745,
-        "data": "2026-11-17"
+        "percentil": 0.3755,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1777,8 +1863,8 @@
       },
       "epss": {
         "score": 0.0063,
-        "percentil": 0.5104,
-        "data": "2026-11-17"
+        "percentil": 0.5116,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1818,8 +1904,8 @@
       },
       "epss": {
         "score": 0.0055,
-        "percentil": 0.4662,
-        "data": "2026-11-17"
+        "percentil": 0.4673,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1859,8 +1945,8 @@
       },
       "epss": {
         "score": 0.0134,
-        "percentil": 0.7176,
-        "data": "2026-11-17"
+        "percentil": 0.7184,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1892,8 +1978,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0086,
-        "percentil": 0.5913,
-        "data": "2026-11-17"
+        "percentil": 0.5923,
+        "data": "2026-11-18"
       },
       "poc": {
         "qtd": 0,
@@ -1938,8 +2024,8 @@
       },
       "epss": {
         "score": 0.006,
-        "percentil": 0.495,
-        "data": "2026-11-17"
+        "percentil": 0.4963,
+        "data": "2026-11-18"
       }
     },
     {
@@ -1987,8 +2073,8 @@
       },
       "epss": {
         "score": 0.0066,
-        "percentil": 0.5208,
-        "data": "2026-11-17"
+        "percentil": 0.522,
+        "data": "2026-11-18"
       }
     },
     {
@@ -2038,8 +2124,8 @@
       },
       "epss": {
         "score": 0.0081,
-        "percentil": 0.5748,
-        "data": "2026-11-17"
+        "percentil": 0.5759,
+        "data": "2026-11-18"
       }
     },
     {
@@ -2089,8 +2175,8 @@
       },
       "epss": {
         "score": 0.0086,
-        "percentil": 0.5914,
-        "data": "2026-11-17"
+        "percentil": 0.5925,
+        "data": "2026-11-18"
       }
     },
     {
@@ -2131,7 +2217,7 @@
       "epss": {
         "score": 0.0015,
         "percentil": 0.0419,
-        "data": "2026-11-17"
+        "data": "2026-11-18"
       }
     },
     {
@@ -2179,8 +2265,8 @@
       },
       "epss": {
         "score": 0.0043,
-        "percentil": 0.3787,
-        "data": "2026-11-17"
+        "percentil": 0.3797,
+        "data": "2026-11-18"
       }
     },
     {
@@ -2228,8 +2314,8 @@
       },
       "epss": {
         "score": 0.0032,
-        "percentil": 0.259,
-        "data": "2026-11-17"
+        "percentil": 0.2594,
+        "data": "2026-11-18"
       }
     },
     {
@@ -2277,8 +2363,8 @@
       },
       "epss": {
         "score": 0.0043,
-        "percentil": 0.3787,
-        "data": "2026-11-17"
+        "percentil": 0.3797,
+        "data": "2026-11-18"
       }
     },
     {
@@ -2318,8 +2404,8 @@
       },
       "epss": {
         "score": 0.0031,
-        "percentil": 0.2445,
-        "data": "2026-11-17"
+        "percentil": 0.2448,
+        "data": "2026-11-18"
       }
     },
     {
@@ -2359,8 +2445,8 @@
       },
       "epss": {
         "score": 0.0026,
-        "percentil": 0.1771,
-        "data": "2026-11-17"
+        "percentil": 0.1774,
+        "data": "2026-11-18"
       }
     },
     {
@@ -2400,8 +2486,8 @@
       },
       "epss": {
         "score": 0.0041,
-        "percentil": 0.3576,
-        "data": "2026-11-17"
+        "percentil": 0.3585,
+        "data": "2026-11-18"
       }
     },
     {
@@ -2441,8 +2527,8 @@
       },
       "epss": {
         "score": 0.0041,
-        "percentil": 0.3576,
-        "data": "2026-11-17"
+        "percentil": 0.3585,
+        "data": "2026-11-18"
       }
     },
     {
@@ -2482,8 +2568,8 @@
       },
       "epss": {
         "score": 0.0028,
-        "percentil": 0.211,
-        "data": "2026-11-17"
+        "percentil": 0.2114,
+        "data": "2026-11-18"
       }
     },
     {
@@ -2575,8 +2661,8 @@
       "nota_chegou_em": "2026-11-11T00:04:15Z",
       "epss": {
         "score": 0.0096,
-        "percentil": 0.6222,
-        "data": "2026-11-17"
+        "percentil": 0.6231,
+        "data": "2026-11-18"
       }
     },
     {
@@ -2616,8 +2702,8 @@
       },
       "epss": {
         "score": 0.004,
-        "percentil": 0.3473,
-        "data": "2026-11-17"
+        "percentil": 0.3482,
+        "data": "2026-11-18"
       }
     },
     {
@@ -2657,8 +2743,8 @@
       },
       "epss": {
         "score": 0.0049,
-        "percentil": 0.4261,
-        "data": "2026-11-17"
+        "percentil": 0.4272,
+        "data": "2026-11-18"
       }
     },
     {
@@ -2698,8 +2784,8 @@
       },
       "epss": {
         "score": 0.0035,
-        "percentil": 0.292,
-        "data": "2026-11-17"
+        "percentil": 0.2925,
+        "data": "2026-11-18"
       }
     },
     {
@@ -2771,8 +2857,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0047,
-        "percentil": 0.4101,
-        "data": "2026-11-17"
+        "percentil": 0.4111,
+        "data": "2026-11-18"
       },
       "poc": {
         "qtd": 3,
@@ -2822,8 +2908,8 @@
       },
       "epss": {
         "score": 0.0037,
-        "percentil": 0.314,
-        "data": "2026-11-17"
+        "percentil": 0.3146,
+        "data": "2026-11-18"
       }
     },
     {
@@ -2863,8 +2949,8 @@
       },
       "epss": {
         "score": 0.0044,
-        "percentil": 0.3904,
-        "data": "2026-11-17"
+        "percentil": 0.3913,
+        "data": "2026-11-18"
       }
     },
     {
@@ -2943,8 +3029,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0908,
-        "percentil": 0.9538,
-        "data": "2026-11-17"
+        "percentil": 0.9539,
+        "data": "2026-11-18"
       },
       "poc": {
         "qtd": 0,
@@ -3018,8 +3104,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.015,
-        "percentil": 0.7475,
-        "data": "2026-11-17"
+        "percentil": 0.7482,
+        "data": "2026-11-18"
       },
       "poc": {
         "qtd": 0,
@@ -3166,12 +3252,6 @@
       "titulo": "Zyxel fixes zero-day exploited to hack nearly 1,000 network switches",
       "link": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
       "publicado": "2026-11-04T20:58:19Z"
-    },
-    {
-      "fonte": "BleepingComputer",
-      "titulo": "CISA flags WordPress RCE flaw as actively exploited in attacks",
-      "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/",
-      "publicado": "2026-11-04T12:11:05Z"
     }
   ]
 }
