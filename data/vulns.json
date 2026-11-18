@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-18T14:39:33Z",
+  "atualizado": "2026-11-18T18:44:33Z",
   "itens": [
     {
       "cve": "CVE-2026-123039",
@@ -83,7 +83,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123039.json",
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       }
     },
     {
@@ -133,7 +133,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-118383.json",
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0074,
@@ -188,7 +188,7 @@
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-121529.json",
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0022,
@@ -292,7 +292,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123218.json",
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       }
     },
     {
@@ -386,7 +386,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-19868.json",
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0053,
@@ -463,7 +463,7 @@
       "poc": {
         "qtd": 7,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-116779.json",
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -561,9 +561,9 @@
         "data": "2026-11-18"
       },
       "poc": {
-        "qtd": 40,
+        "qtd": 41,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123158.json",
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       }
     },
     {
@@ -627,7 +627,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-102895.json",
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -711,9 +711,9 @@
         "data": "2026-11-18"
       },
       "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-17T18:43:49Z"
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-115731.json",
+        "checado": "2026-11-18T18:44:33Z"
       },
       "cvss": 9.4,
       "cvss_versao": "4.0",
@@ -821,7 +821,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-116606.json",
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       }
     },
     {
@@ -892,7 +892,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "cvss": 4.3,
       "cvss_versao": "3.1",
@@ -986,7 +986,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "cvss": 7.5,
       "cvss_versao": "3.1",
@@ -1054,7 +1054,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:22Z",
       "resumo": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker…",
-      "nvd_checado_em": "2026-11-18T14:39:33Z",
+      "nvd_checado_em": "2026-11-18T18:44:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1136,7 +1136,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:22Z",
       "resumo": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with…",
-      "nvd_checado_em": "2026-11-18T14:39:33Z",
+      "nvd_checado_em": "2026-11-18T18:44:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1177,7 +1177,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:22Z",
       "resumo": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with…",
-      "nvd_checado_em": "2026-11-18T14:39:33Z",
+      "nvd_checado_em": "2026-11-18T18:44:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1326,7 +1326,7 @@
       "poc": {
         "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-124194.json",
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0162,
@@ -1352,7 +1352,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:24Z",
       "resumo": "Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via RMI…",
-      "nvd_checado_em": "2026-11-18T14:39:33Z",
+      "nvd_checado_em": "2026-11-18T18:44:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1393,7 +1393,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:23Z",
       "resumo": "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Integration Broker).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerability allows unauthenticated attacker with network access via…",
-      "nvd_checado_em": "2026-11-18T14:39:33Z",
+      "nvd_checado_em": "2026-11-18T18:44:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1434,7 +1434,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:17Z",
       "resumo": "Vulnerability in the Document Management and Collaboration product of Oracle E-Business Suite (component: Attachments).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network…",
-      "nvd_checado_em": "2026-11-18T14:39:33Z",
+      "nvd_checado_em": "2026-11-18T18:44:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1639,7 +1639,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:04Z",
       "resumo": "Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Admin UI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP…",
-      "nvd_checado_em": "2026-11-18T14:39:33Z",
+      "nvd_checado_em": "2026-11-18T18:44:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1695,7 +1695,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0061,
@@ -1736,7 +1736,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-128027.json",
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0077,
@@ -1777,7 +1777,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.005,
@@ -1818,7 +1818,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0043,
@@ -1859,7 +1859,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0063,
@@ -1900,7 +1900,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0055,
@@ -1941,50 +1941,12 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-119077.json",
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0134,
         "percentil": 0.7184,
         "data": "2026-11-18"
-      }
-    },
-    {
-      "cve": "CVE-2026-25611",
-      "fontes": [
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Critical MongoDB Flaw Lets Attackers Crash Database Servers With Just Two Ping Requests",
-          "link": "https://cybersecuritynews.com/mongodb-database-crash-vulnerability/",
-          "publicado": "2026-11-12T12:22:28Z",
-          "visto_em": "2026-11-12T14:38:58Z"
-        }
-      ],
-      "detectado": "2026-11-12T14:38:58Z",
-      "zero_day": true,
-      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
-      "aguardando_nota_desde": "2026-11-12T12:22:28Z",
-      "elegivel_por": [
-        "zero-day"
-      ],
-      "primeira_vez": "2026-11-12T12:22:28Z",
-      "primeira_noticia": "2026-11-12T12:22:28Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-25611",
-      "ultima_atividade": "2026-11-12T12:22:28Z",
-      "exibido_em": "2026-11-12T14:38:58Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.0086,
-        "percentil": 0.5923,
-        "data": "2026-11-18"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-17T14:39:57Z"
       }
     },
     {
@@ -2020,7 +1982,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.006,
@@ -2069,7 +2031,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0066,
@@ -2120,7 +2082,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0081,
@@ -2171,7 +2133,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0086,
@@ -2212,7 +2174,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0015,
@@ -2261,7 +2223,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0043,
@@ -2310,7 +2272,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0032,
@@ -2359,7 +2321,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76964.json",
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0043,
@@ -2400,7 +2362,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0031,
@@ -2441,7 +2403,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0026,
@@ -2482,7 +2444,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0041,
@@ -2523,7 +2485,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0041,
@@ -2564,7 +2526,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0028,
@@ -2643,7 +2605,7 @@
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-125350.json",
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "kev": {
         "adicionado": "2026-11-10",
@@ -2698,7 +2660,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.004,
@@ -2739,7 +2701,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-124450.json",
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0049,
@@ -2780,7 +2742,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0035,
@@ -2863,7 +2825,7 @@
       "poc": {
         "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-114713.json",
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "cvss": 8.6,
       "cvss_versao": "3.1",
@@ -2904,7 +2866,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0037,
@@ -2945,7 +2907,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T14:39:57Z"
+        "checado": "2026-11-18T18:44:33Z"
       },
       "epss": {
         "score": 0.0044,
@@ -3115,6 +3077,12 @@
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "Cyber Security News",
+      "titulo": "OX Security Launches OX Radar and Response Center to Show Companies Which Cyber Threats Actually Affect Them",
+      "link": "https://cybersecuritynews.com/ox-security-ox-radar-response-center/",
+      "publicado": "2026-11-18T14:30:20Z"
+    },
     {
       "fonte": "BleepingComputer",
       "titulo": "Apache warns of Roller RCE vulnerability exploited in attacks",

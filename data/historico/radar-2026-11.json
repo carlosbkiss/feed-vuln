@@ -575,7 +575,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0069,
-    "poc_qtd": 0,
+    "poc_qtd": 1,
     "fontes": [
       {
         "nome": "NVD",
@@ -984,7 +984,7 @@
     "aguardando_nota_desde": "2026-11-06T15:21:49Z",
     "nota_chegou_em": "2026-11-09T21:27:15Z",
     "epss_max": 0.189,
-    "poc_qtd": 40,
+    "poc_qtd": 41,
     "fontes": [
       {
         "nome": "NVD",
