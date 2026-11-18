@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-18T18:44:33Z",
+  "atualizado": "2026-11-18T19:24:42Z",
   "itens": [
     {
       "cve": "CVE-2026-123039",
@@ -293,6 +293,84 @@
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123218.json",
         "checado": "2026-11-18T18:44:33Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-90436",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-90436",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-90436",
+          "publicado": "2026-11-06T16:18:59Z",
+          "visto_em": "2026-11-18T19:24:42Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical Java 17 RCE Vulnerability Puts Servers at Risk as Oracle Releases 11 Security Fixes",
+          "link": "https://cybersecuritynews.com/java-17-rce-vulnerability/",
+          "publicado": "2026-11-17T16:11:10Z",
+          "visto_em": "2026-11-17T18:43:49Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Apache Axis Unsafe Reflection Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-90436",
+          "publicado": "2026-11-18",
+          "visto_em": "2026-11-18T19:24:42Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Atlassian Patches 318 Security Vulnerabilities Across Jira, Confluence, Bitbucket and Other Products",
+          "link": "https://cybersecuritynews.com/atlassian-patches-318-security-vulnerabilities/",
+          "publicado": "2026-11-18T09:43:21Z",
+          "visto_em": "2026-11-18T10:44:49Z"
+        }
+      ],
+      "detectado": "2026-11-17T18:43:49Z",
+      "aguardando_nota_desde": "2026-11-17T16:11:10Z",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-06T16:18:59Z",
+      "primeira_noticia": "2026-11-17T16:11:10Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-90436",
+      "ultima_atividade": "2026-11-18T09:43:21Z",
+      "kev": {
+        "adicionado": "2026-11-18",
+        "prazo": "2026-11-21",
+        "ransomware": "Unknown"
+      },
+      "produto": "Apache Axis",
+      "titulo": "Apache Axis Unsafe Reflection Vulnerability",
+      "resumo": "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a crafted SOAP fault message that causes Axis to load and instantiate an attacker-specified class when a suitable class…",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-06T16:18:59Z",
+      "nvd_checado_em": "2026-11-18T19:24:42Z",
+      "nota_chegou_em": "2026-11-18T19:24:42Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "exibido_em": "2026-11-18T19:24:42Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0113,
+        "percentil": 0.6701,
+        "data": "2026-11-18"
+      },
+      "poc": {
+        "qtd": 3,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-90436.json",
+        "checado": "2026-11-18T19:24:42Z"
       }
     },
     {
@@ -1054,7 +1132,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:22Z",
       "resumo": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker…",
-      "nvd_checado_em": "2026-11-18T18:44:33Z",
+      "nvd_checado_em": "2026-11-18T19:24:42Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1136,7 +1214,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:22Z",
       "resumo": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with…",
-      "nvd_checado_em": "2026-11-18T18:44:33Z",
+      "nvd_checado_em": "2026-11-18T19:24:42Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1177,7 +1255,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:22Z",
       "resumo": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with…",
-      "nvd_checado_em": "2026-11-18T18:44:33Z",
+      "nvd_checado_em": "2026-11-18T19:24:42Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1335,6 +1413,144 @@
       }
     },
     {
+      "cve": "CVE-2024-10441",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2024-10441",
+          "publicado": "2026-11-18",
+          "visto_em": "2026-11-18T19:24:42Z"
+        }
+      ],
+      "detectado": "2026-11-18T19:24:42Z",
+      "kev": {
+        "adicionado": "2026-11-18",
+        "prazo": "2026-11-21",
+        "ransomware": "Unknown"
+      },
+      "produto": "Synology DiskStation Manager (DSM)",
+      "titulo": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+      "resumo": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-18T00:00:00Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2024-10441",
+      "ultima_atividade": "2026-11-18T00:00:00Z",
+      "exibido_em": "2026-11-18T19:24:42Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0125,
+        "percentil": 0.7001,
+        "data": "2026-11-18"
+      },
+      "poc": {
+        "qtd": 2,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2024/CVE-2024-10441.json",
+        "checado": "2026-11-18T19:24:42Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-40217",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-40217",
+          "publicado": "2026-11-18",
+          "visto_em": "2026-11-18T19:24:42Z"
+        }
+      ],
+      "detectado": "2026-11-18T19:24:42Z",
+      "kev": {
+        "adicionado": "2026-11-18",
+        "prazo": "2026-12-02",
+        "ransomware": "Unknown"
+      },
+      "produto": "BerriAI LiteLLM",
+      "titulo": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+      "resumo": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-18T00:00:00Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-40217",
+      "ultima_atividade": "2026-11-18T00:00:00Z",
+      "exibido_em": "2026-11-18T19:24:42Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.1702,
+        "percentil": 0.9713,
+        "data": "2026-11-18"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-40217.json",
+        "checado": "2026-11-18T19:24:42Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-90817",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-90817",
+          "publicado": "2026-11-18",
+          "visto_em": "2026-11-18T19:24:42Z"
+        }
+      ],
+      "detectado": "2026-11-18T19:24:42Z",
+      "kev": {
+        "adicionado": "2026-11-18",
+        "prazo": "2026-11-21",
+        "ransomware": "Unknown"
+      },
+      "produto": "Vanderbilt University Research Electronic Data Capture (REDCap)",
+      "titulo": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+      "resumo": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP requests that…",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-18T00:00:00Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-90817",
+      "ultima_atividade": "2026-11-18T00:00:00Z",
+      "exibido_em": "2026-11-18T19:24:42Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0375,
+        "percentil": 0.9009,
+        "data": "2026-11-18"
+      },
+      "poc": {
+        "qtd": 6,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-90817.json",
+        "checado": "2026-11-18T19:24:42Z"
+      }
+    },
+    {
       "cve": "CVE-2026-91561",
       "fontes": [
         {
@@ -1352,7 +1568,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:24Z",
       "resumo": "Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via RMI…",
-      "nvd_checado_em": "2026-11-18T18:44:33Z",
+      "nvd_checado_em": "2026-11-18T19:24:42Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1393,7 +1609,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:23Z",
       "resumo": "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Integration Broker).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerability allows unauthenticated attacker with network access via…",
-      "nvd_checado_em": "2026-11-18T18:44:33Z",
+      "nvd_checado_em": "2026-11-18T19:24:42Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1434,7 +1650,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:17Z",
       "resumo": "Vulnerability in the Document Management and Collaboration product of Oracle E-Business Suite (component: Attachments).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network…",
-      "nvd_checado_em": "2026-11-18T18:44:33Z",
+      "nvd_checado_em": "2026-11-18T19:24:42Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1639,7 +1855,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:04Z",
       "resumo": "Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Admin UI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP…",
-      "nvd_checado_em": "2026-11-18T18:44:33Z",
+      "nvd_checado_em": "2026-11-18T19:24:42Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1947,6 +2163,44 @@
         "score": 0.0134,
         "percentil": 0.7184,
         "data": "2026-11-18"
+      }
+    },
+    {
+      "cve": "CVE-2026-25611",
+      "fontes": [
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical MongoDB Flaw Lets Attackers Crash Database Servers With Just Two Ping Requests",
+          "link": "https://cybersecuritynews.com/mongodb-database-crash-vulnerability/",
+          "publicado": "2026-11-12T12:22:28Z",
+          "visto_em": "2026-11-18T19:24:42Z"
+        }
+      ],
+      "detectado": "2026-11-18T19:24:42Z",
+      "zero_day": true,
+      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
+      "aguardando_nota_desde": "2026-11-12T12:22:28Z",
+      "elegivel_por": [
+        "zero-day"
+      ],
+      "primeira_vez": "2026-11-12T12:22:28Z",
+      "primeira_noticia": "2026-11-12T12:22:28Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-25611",
+      "ultima_atividade": "2026-11-12T12:22:28Z",
+      "exibido_em": "2026-11-18T19:24:42Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0086,
+        "percentil": 0.5923,
+        "data": "2026-11-18"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-18T19:24:42Z"
       }
     },
     {
@@ -2997,7 +3251,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T18:43:49Z"
+        "checado": "2026-11-18T19:24:42Z"
       }
     },
     {
@@ -3072,7 +3326,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-17T18:43:49Z"
+        "checado": "2026-11-18T19:24:42Z"
       }
     }
   ],
