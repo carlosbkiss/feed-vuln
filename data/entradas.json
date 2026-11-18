@@ -1,17 +1,83 @@
 {
-  "atualizado": "2026-11-17T18:45:00Z",
-  "janela": "10 a 17/nov/2026",
+  "atualizado": "2026-11-18T10:44:27Z",
+  "janela": "11 a 18/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-17",
+      "cve": "CVE-2026-91569 / CVE-2026-91570 / CVE-2026-91583 / CVE-2026-91585 / CVE-2026-91456 / CVE-2026-91470 / CVE-2026-91469 / CVE-2026-114835 / CVE-2026-91500 / CVE-2026-91510 / CVE-2026-91507",
+      "produto": "Oracle WebLogic Server e Oracle Access Manager (Security Patch Update de nov/2026)",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P0",
+      "tratamento": "Quatro falhas nota 10 sem login (TopLink do WebLogic e motor de autenticação/console do OAM) em WebLogic 12.2.1.4 a 15.1.1 e OAM 12.2.1.4 e 14.1.2.1. Aplicar o patch de 17/11 primeiro em OAM e WebLogic expostos; até lá, bloquear T3/IIOP e consoles de administração na borda.",
+      "fontes": [
+        {
+          "nome": "Oracle CSPU nov/2026",
+          "url": "https://www.oracle.com/security-alerts/cspunov2026.html"
+        },
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91569"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-17",
+      "cve": "CVE-2026-114819 / CVE-2026-114848 / CVE-2026-114822",
+      "produto": "Oracle Database Server (Security Patch Update de nov/2026)",
+      "cvss": 9.9,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Três falhas 9.9 no Database Server no mesmo pacote de 17/11, que também traz 9.8 em E-Business Suite, APEX e REST Data Services. Planejar o patch nos bancos Oracle de produção e revisar quem tem conta com acesso de rede ao listener.",
+      "fontes": [
+        {
+          "nome": "Oracle CSPU nov/2026",
+          "url": "https://www.oracle.com/security-alerts/cspunov2026.html"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-17",
+      "cve": "CVE-2026-115731 / CVE-2026-115732",
+      "produto": "Puppet Enterprise, Puppet open source e OpenVox Server (processamento de relatórios de agente)",
+      "cvss": 9.9,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 17/11, prazo CISA 01/12; PoC público desde 03/11)",
+      "prioridade": "P0",
+      "tratamento": "Atualizar para PE 2023.8.13, 2025.12.1 ou 2026.0.1 (OpenVox Server 8.18.0/9.2.0). Sem patch, desligar ou restringir o autosign e limitar o acesso ao Puppet Server; se houver suspeita, caçar shells filhos do puppetserver e trocar a chave da CA.",
+      "fontes": [
+        {
+          "nome": "Cipher's Security",
+          "url": "https://cipherssecurity.com/puppet-cve-2026-115731-report-rce/"
+        },
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/puppet-server-rce-cve-2026-115731-poc/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-115731"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-11-17",
       "cve": "CVE-2026-114938",
       "produto": "Java SE / OpenJDK 17 (CPU de Java da Oracle de nov/2026, 11 falhas, e RCE relatada no OpenJDK 17)",
-      "cvss": null,
+      "cvss": 9.2,
       "kev": false,
       "zero_day": false,
-      "exploracao": "Não confirmada",
+      "exploracao": "Não confirmada (Wiz montou PoC em 2h; sem ataque relatado)",
       "prioridade": "P1",
-      "tratamento": "Oracle publica hoje as builds 8u513, 11.0.33.1, 17.0.21.1, 21.0.13.1, 25.0.5.1 e 27.0.1.1 (11 falhas sem login, nota máxima 8.1). A RCE CVE-2026-114938 no OpenJDK 17 (9.2 relatado) ainda está a confirmar: inventariar runtimes Java 17, inclusive imagens de contêiner e JDKs embutidos, priorizar serviços expostos e aplicar as builds novas de cada distribuição assim que saírem.",
+      "tratamento": "RCE sem login (CVSS 4.0 9.2) só em CPUs x86-64 com AVX-512 VBMI (Xeon Ice Lake em diante, AMD Zen 4+); ARM não é afetado. Aplicar as builds Java de 17/11 de cada distribuição, começando por Jenkins, Confluence, Jira, Tomcat e Keycloak expostos; sem patch, usar -XX:-UseBASE64Intrinsics.",
       "fontes": [
         {
           "nome": "The Hacker News",
@@ -20,6 +86,10 @@
         {
           "nome": "Astra Security",
           "url": "https://www.getastra.com/blog/security-advisory/cve-2026-114938/"
+        },
+        {
+          "nome": "Wiz",
+          "url": "https://www.wiz.io/blog/cve-2026-114938-rce-java4shell-openjdk"
         }
       ],
       "status": "Novo"
@@ -242,76 +312,6 @@
     },
     {
       "data": "2026-11-10",
-      "cve": "CVE-2026-118383",
-      "produto": "MongoDB Server em replica set e sharded cluster (use-after-free na replicação)",
-      "cvss": 9.5,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Exploit público (PoC de crash no GitHub; sem ataques relatados)",
-      "prioridade": "P1",
-      "tratamento": "Atualizar todos os membros para 9.0.7, 8.3.16, 8.0.37, 7.0.48, 6.0.30, 5.0.35 ou 4.4.32; autenticação ligada não bloqueia. Até lá, restringir acesso de rede ao banco; standalone não é afetado e Atlas corrige na manutenção.",
-      "fontes": [
-        {
-          "nome": "Datadog Security Labs",
-          "url": "https://securitylabs.datadoghq.com/articles/cve-2026-118383-mongodb-server-use-after-free/"
-        },
-        {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-10",
-      "cve": "CVE-2026-121529",
-      "produto": "Fortinet FortiClient Windows/Mac 7.2 e 7.4 (Fortinet2Shell, crítico com FortiPAM)",
-      "cvss": 9.1,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não confirmada (Fortinet diz que não há ataques; pesquisador publicou a técnica)",
-      "prioridade": "P1",
-      "tratamento": "Basta o usuário abrir um site malicioso para a API local do FortiClient executar código, sobretudo com FortiPAM ativo. Atualizar para 7.4.8 ou 7.2.15 (ou 8.0) via EMS, priorizando estações com FortiPAM e de administradores; não há patch virtual (FG-IR-26-194).",
-      "fontes": [
-        {
-          "nome": "GBHackers",
-          "url": "https://gbhackers.com/fortinet2shell-vulnerability/"
-        },
-        {
-          "nome": "SecurityWeek",
-          "url": "https://www.securityweek.com/fortinet-patches-nearly-100-vulnerabilities/"
-        },
-        {
-          "nome": "Cyber Security News",
-          "url": "https://cybersecuritynews.com/fortinet2shell-vulnerability/"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-10",
-      "cve": "CVE-2026-121653 / CVE-2026-121683",
-      "produto": "Ivanti Endpoint Manager (EPM) e Cloud Services Appliance (CSA)",
-      "cvss": 9.8,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P1",
-      "tratamento": "SQL injection sem login dá RCE no EPM Core (corrigido no 2024 SU8); o CSA 5.0.8 deixa incluir ou apagar certificados confiáveis do EPM sem autenticação (corrigido no 5.0.8.1). Corrigir o CSA primeiro se estiver exposto, manter o modelo de duas interfaces e restringir acesso ao EPM Core; EPM já foi alvo de exploração no passado.",
-      "fontes": [
-        {
-          "nome": "GBHackers",
-          "url": "https://gbhackers.com/ivanti-patches-critical-sql-injection-flaw/"
-        },
-        {
-          "nome": "OffSeq Radar",
-          "url": "https://radar.offseq.com/threat/citrix-ivanti-patch-critical-and-high-severity-vulnerabilities-7faf8187ee8f9a38"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-10",
       "cve": "CVE-2026-116606 / CVE-2026-111560",
       "produto": "Barracuda Email Security Gateway (e WAF, WSG, ADC, Archiver na injeção de comando)",
       "cvss": 9.3,
@@ -334,171 +334,7 @@
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-116606"
         }
       ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-10",
-      "cve": "CVE-2026-126170 / CVE-2026-126262 / CVE-2026-126254 / CVE-2026-126253 / CVE-2026-126259",
-      "produto": "Fortinet FortiManager, FortiAnalyzer e FortiOS (8 advisories críticos de 10/11)",
-      "cvss": 9.8,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P0",
-      "tratamento": "RCE sem login na API JSON do FortiManager/FortiAnalyzer, SQLi via OFTP e falhas em OSPF, BGP e HA do FortiOS; patches saíram em out/2026, antes dos detalhes, então o diff já está nas mãos de atacantes. Atualizar FortiOS para 7.2.14, 7.4.13, 7.6.8 ou 8.0.2 e FortiManager/FortiAnalyzer para 7.2.13, 7.4.12, 7.6.8 ou 8.0.2; até lá, 'set rpc-permit none' nos perfis de admin e portas OFTP/FGFM fora da internet.",
-      "fontes": [
-        {
-          "nome": "SecurityOnline",
-          "url": "https://securityonline.info/fortinet-critical-vulnerabilities-november-2026/"
-        },
-        {
-          "nome": "Cybernews",
-          "url": "https://cybernews.com/security/fortinet-critical-flaws-patches-november-disclosure/"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-10",
-      "cve": "CVE-2026-126147 / CVE-2026-126148 / CVE-2026-126164 / CVE-2026-126155 / CVE-2026-126156 / CVE-2026-126257 / CVE-2026-126251",
-      "produto": "Fortinet FortiMail (gateway de e-mail) e FortiAuthenticator (MFA/SSO)",
-      "cvss": 9.8,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P1",
-      "tratamento": "FortiMail tem path traversal, injeção de comando via HA e SQLi sem login: atualizar para 8.0.2, 7.6.7 ou 7.4.9 (7.2 migrar) e tirar a interface de gestão e o webmail IBE da internet. FortiAuthenticator tem senha fixa e falha de autorização sem login: atualizar para 8.0.4 ou 6.6.11. FortiMail Cloud já foi corrigido.",
-      "fontes": [
-        {
-          "nome": "Rescana",
-          "url": "https://www.rescana.com/post/fortinet-november-2026-psirt-fortimail-fortimanager-rce-patch-now"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-10",
-      "cve": "CVE-2026-124194",
-      "produto": "Microsoft Outlook (Microsoft 365 Apps, Office LTSC 2021 e 2024)",
-      "cvss": 6.5,
-      "kev": true,
-      "zero_day": true,
-      "exploracao": "Ativa (KEV em 10/11, prazo CISA 24/11; Microsoft não detalha a campanha)",
-      "prioridade": "P1",
-      "tratamento": "Único zero-day do Patch Tuesday de novembro: Outlook executa ação insegura sem avisar o usuário, com impacto alto em confidencialidade. Garantir que o canal do Microsoft 365 Apps entregou a correção (LTSC 2021 16.0.14334.21048, LTSC 2024 16.0.17932.21140) em todas as estações e reforçar o alerta a usuários sobre prompts inesperados.",
-      "fontes": [
-        {
-          "nome": "SecurityOnline",
-          "url": "https://securityonline.info/outlook-zero-day-cve-2026-124194/"
-        },
-        {
-          "nome": "Microsoft MSRC",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124194"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-10",
-      "cve": "CVE-2026-120002 / CVE-2026-80095",
-      "produto": "Microsoft SharePoint Server (Patch Tuesday nov/2026)",
-      "cvss": 9.9,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P1",
-      "tratamento": "Elevação de privilégio pela rede para usuário autenticado (autorização incorreta e XSS). Aplicar o update de novembro nos farms on-premises, priorizando os publicados para fora; versões exatas a confirmar no MSRC.",
-      "fontes": [
-        {
-          "nome": "Microsoft MSRC",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120002"
-        },
-        {
-          "nome": "Microsoft MSRC",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-80095"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-10",
-      "cve": "sem CVE (Xen Orchestra, VSA-2026-062)",
-      "produto": "Xen Orchestra e XOA (gestão de XCP-ng)",
-      "cvss": null,
-      "kev": false,
-      "zero_day": true,
-      "exploracao": "Ativa (Vates confirma; cookie forjado dá admin e root nos hosts XCP-ng)",
-      "prioridade": "P2",
-      "tratamento": "Bypass de autenticação com cookie vazio dá admin sem senha. Se houver XCP-ng, atualizar para Xen Orchestra 6.9.1 ou 6.10.0, restringir a interface à rede de gestão, caçar VM 'pivot2', serial 'file' e arquivos zz-ustar em /etc/cron.d, e trocar segredos se houver indício.",
-      "fontes": [
-        {
-          "nome": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-10",
-      "cve": "CVE-2026-20320",
-      "produto": "Cisco BroadWorks (plataforma de voz de operadoras)",
-      "cvss": 7.5,
-      "kev": true,
-      "zero_day": false,
-      "exploracao": "Ativa (KEV em 10/11, prazo CISA 24/11)",
-      "prioridade": "P2",
-      "tratamento": "XXE sem login no parser OCI lê configurações sensíveis; corrigido na release RI.2026.07 desde agosto, sem workaround. Raro em banco: só checar se há BroadWorks próprio ou de operadora contratada, e restringir OCI-P a redes de administração.",
-      "fontes": [
-        {
-          "nome": "Cyberpress",
-          "url": "https://cyberpress.org/cisco-broadworks-xxe-flaw/"
-        },
-        {
-          "nome": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-20320"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-10",
-      "cve": "CVE-2026-111793",
-      "produto": "Openwave Webtop Media Transcoder (webmail de operadoras)",
-      "cvss": null,
-      "kev": true,
-      "zero_day": false,
-      "exploracao": "Ativa (KEV em 10/11, prazo CISA 24/11)",
-      "prioridade": "P2",
-      "tratamento": "Usuário autenticado converte tipos de documento indevidos contornando o webmail. Produto de nicho; versão corrigida a confirmar com o fabricante, verificar só se houver uso.",
-      "fontes": [
-        {
-          "nome": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111793"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-10",
-      "cve": "CVE-2026-120017 / CVE-2026-89126 / CVE-2026-76964 / CVE-2026-89103 / CVE-2026-76965 / CVE-2026-109795 / CVE-2026-109803 / CVE-2026-89119 / CVE-2026-109798",
-      "produto": "SAP NetWeaver AS ABAP, Web Dispatcher, ICM e Gateway (Patch Day nov/2026)",
-      "cvss": 10.0,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P0",
-      "tratamento": "Quatro falhas nota 10 sem login: SAML2 sem verificação de asserção no ABAP, corrupção de memória no Web Dispatcher e no ICM, e ACL padrão permissiva no Gateway; há mais 5 críticas (9.1 a 9.9). Aplicar as SAP Notes de 10/11 começando pelo que está exposto à internet; até lá, restringir portas de Gateway, Web Dispatcher e ICM e revisar a configuração SAML2.",
-      "fontes": [
-        {
-          "nome": "SecurityOnline",
-          "url": "https://securityonline.info/sap-security-patch-day-november-2026/"
-        },
-        {
-          "nome": "NVD (CVE-2026-76965)",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76965"
-        }
-      ],
-      "status": "Novo"
+      "status": "Pendente"
     },
     {
       "data": "2026-11-10",
@@ -524,65 +360,7 @@
           "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html"
         }
       ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-10",
-      "cve": "CVE-2026-109469",
-      "produto": "Microsoft Entra ID (Device Registration, nuvem)",
-      "cvss": 10.0,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P2",
-      "tratamento": "Falha de autorização no registro de dispositivos do Entra, já corrigida pela Microsoft no serviço; não há patch nem configuração a aplicar. Como higiene, revisar nos logs de auditoria do Entra registros de dispositivo fora do padrão.",
-      "fontes": [
-        {
-          "nome": "SOCRadar (via Malware News)",
-          "url": "https://malware.news/t/cve-2026-109469-cvss-10-entra-device-registration-flaw/127146"
-        }
-      ],
-      "status": "Resolvido"
-    },
-    {
-      "data": "2026-11-10",
-      "cve": "CVE-2026-119958 / CVE-2026-88218 / CVE-2026-88243 / CVE-2026-88234",
-      "produto": "Windows Server (LDAP, DNS, DHCP Server, iSCSI; Patch Tuesday nov/2026)",
-      "cvss": 9.8,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P0",
-      "tratamento": "RCE sem login em serviços de Windows Server; LDAP atinge controladores de domínio. Aplicar a atualização cumulativa de nov/2026 começando por DCs, DNS e DHCP, e limitar o acesso a esses serviços só a hosts confiáveis enquanto o patch não sai.",
-      "fontes": [
-        {
-          "nome": "SecurityOnline (Windows nov/2026)",
-          "url": "https://securityonline.info/critical-windows-vulnerabilities-november-2026/"
-        },
-        {
-          "nome": "SecurityOnline (CVE-2026-119958)",
-          "url": "https://securityonline.info/cve-watchtower/cve-2026-119958"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-10",
-      "cve": "CVE-2026-125350",
-      "produto": "Google Chrome e navegadores Chromium (componente XML)",
-      "cvss": null,
-      "kev": true,
-      "zero_day": true,
-      "exploracao": "Ativa (Google confirma; KEV em 10/11, prazo CISA 24/11)",
-      "prioridade": "P1",
-      "tratamento": "Garantir Chrome 157.0.8103.50/.51 (Windows e Mac) ou 157.0.8103.50 (Linux) em todas as estações e forçar reinício do navegador; atualizar Edge e outros Chromium quando o fabricante liberar. Conferir no inventário as máquinas que ficaram abaixo dessa versão.",
-      "fontes": [
-        {
-          "nome": "SecurityWeek",
-          "url": "https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/"
-        }
-      ],
-      "status": "Novo"
+      "status": "Pendente"
     },
     {
       "data": "2026-11-06",
@@ -632,32 +410,6 @@
         {
           "nome": "eSecurityPlanet",
           "url": "https://www.esecurityplanet.com/threats/news-sonicwall-sma1000-cve-2026-102255-exploitation/"
-        }
-      ],
-      "status": "Pendente"
-    },
-    {
-      "data": "2026-11-03",
-      "cve": "CVE-2026-109618 / CVE-2026-109619",
-      "produto": "PHP2Shell em appliances de borda (PAN-OS e Panorama, NetScaler, BIG-IP APM, Cisco Expressway e Duo Access Gateway, FortiSOAR, Check Point Gaia)",
-      "cvss": 9.8,
-      "kev": true,
-      "zero_day": true,
-      "exploracao": "Ativa (contra gestão do PAN-OS exposta, com root via Fragnesia; e contra Mobile Access da Check Point, com root via CVE-2026-123039)",
-      "prioridade": "P0",
-      "tratamento": "O PHP vulnerável vem embutido em firewalls, ADCs e gateways. Conferir os advisories de cada fabricante e aplicar as versões corrigidas; tirar interfaces de gestão da internet e investigar sinais de root, persistência e binds LDAP estranhos nesses equipamentos. Check Point: R82 Jumbo Hotfix Take 132 ou equivalente do ramo. Para PHP próprio, subir para 8.2.35, 8.3.36, 8.4.27 ou 8.5.12.",
-      "fontes": [
-        {
-          "nome": "CSA Singapura (AL-2026-157)",
-          "url": "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-157/"
-        },
-        {
-          "nome": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/"
-        },
-        {
-          "nome": "WindowsForum (Check Point)",
-          "url": "https://windowsforum.com/news/check-point-gaia-zero-day-cve-2026-123039-patch-firewall-exploit-chain-and-hunt-for-compromise.452160/"
         }
       ],
       "status": "Pendente"
