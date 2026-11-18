@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-18T14:39:19Z",
+  "atualizado": "2026-11-18T18:44:13Z",
   "janela": "11 a 18/nov/2026",
   "itens": [
     {
@@ -71,25 +71,25 @@
     {
       "data": "2026-11-17",
       "cve": "CVE-2026-114938",
-      "produto": "Java SE / OpenJDK 17 (CPU de Java da Oracle de nov/2026, 11 falhas, e RCE relatada no OpenJDK 17)",
+      "produto": "Java SE / OpenJDK 17, 21, 25 e 27 e GraalVM (Java4Shell; CPU de Java da Oracle de nov/2026)",
       "cvss": 9.2,
       "kev": false,
       "zero_day": false,
-      "exploracao": "Não confirmada (Wiz montou PoC em 2h; sem ataque relatado)",
+      "exploracao": "Não confirmada (sem ataques segundo o Cyber Centre do Canadá; outros laboratórios só reproduziram crash e vazamento de memória)",
       "prioridade": "P1",
-      "tratamento": "RCE sem login (CVSS 4.0 9.2) só em CPUs x86-64 com AVX-512 VBMI (Xeon Ice Lake em diante, AMD Zen 4+); ARM não é afetado. Aplicar as builds Java de 17/11 de cada distribuição, começando por Jenkins, Confluence, Jira, Tomcat e Keycloak expostos; sem patch, usar -XX:-UseBASE64Intrinsics.",
+      "tratamento": "RCE sem login, em configuração padrão, em Keycloak, Jira, Confluence, Jenkins, Artifactory e PingFederate, só em x86-64 com AVX-512 VBMI (Java 8 e 11 comuns não afetados). Aplicar as builds corrigidas (Oracle 17.0.21.1/21.0.13.1, Corretto e Zulu já saíram; RHEL ainda sem patch) e refazer imagens; até lá usar -XX:-UseBASE64Intrinsics, começando por identidade e CI/CD expostos.",
       "fontes": [
         {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html"
-        },
-        {
-          "nome": "Astra Security",
-          "url": "https://www.getastra.com/blog/security-advisory/cve-2026-114938/"
+          "nome": "The Hacker News (Java4Shell)",
+          "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html"
         },
         {
           "nome": "Wiz",
           "url": "https://www.wiz.io/blog/cve-2026-114938-rce-java4shell-openjdk"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html"
         }
       ],
       "status": "Novo"
@@ -316,15 +316,19 @@
     },
     {
       "data": "2026-11-11",
-      "cve": "CVE-2026-123710",
-      "produto": "Red Hat Quay (registry de contêineres)",
-      "cvss": 9.8,
+      "cve": "CVE-2026-123710 / CVE-2026-110697",
+      "produto": "Red Hat Quay 3 e 5 (registry de contêineres)",
+      "cvss": 9.9,
       "kev": false,
       "zero_day": false,
       "exploracao": "Não",
       "prioridade": "P1",
-      "tratamento": "Sem login, um atacante obtém token anônimo e instala chave de assinatura própria sem validade, podendo forjar acesso ao registry e envenenar imagens. Versão corrigida a confirmar no advisory da Red Hat; até lá restringir o acesso de rede ao Quay e auditar as chaves de serviço aprovadas.",
+      "tratamento": "Sem login dá para plantar chave de assinatura e ler ou sobrescrever imagens privadas (9.8); a outra (9.9) rouba tokens de robôs de outros tenants. Instalar a build corrigida do seu ramo (Red Hat publicou para oito ramos do Quay 3; números a confirmar no advisory); até lá bloquear /keys no proxy, remover chaves de serviço desconhecidas e trocar tokens de robôs.",
       "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html"
+        },
         {
           "nome": "NVD",
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123710"
