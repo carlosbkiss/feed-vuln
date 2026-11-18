@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-18T10:44:27Z",
+  "atualizado": "2026-11-18T14:39:19Z",
   "janela": "11 a 18/nov/2026",
   "itens": [
     {
@@ -90,6 +90,28 @@
         {
           "nome": "Wiz",
           "url": "https://www.wiz.io/blog/cve-2026-114938-rce-java4shell-openjdk"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-17",
+      "cve": "CVE-2026-129448",
+      "produto": "Apache Roller (servidor de blog Java, versões 4.0.0 a 6.1.4, endpoint XML-RPC)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Ativa (Apache confirma ataques; sem detalhes de autoria ou vítimas)",
+      "prioridade": "P2",
+      "tratamento": "RCE sem login por desserialização no XML-RPC, antes da checagem de autenticação. Raro em banco: se houver blog ou portal com Roller, subir para 6.1.6 ou superior; sem patch, pôr enabledForExtensions=false no web.xml ou remover o mapeamento /roller-services/xmlrpc e reiniciar (desligar o XML-RPC no painel não basta) e revisar logs de XML-RPC.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/apache-roller-vulnerability-cve-2026-129448/"
+        },
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/"
         }
       ],
       "status": "Novo"
