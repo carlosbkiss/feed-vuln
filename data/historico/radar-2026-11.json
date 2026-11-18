@@ -591,6 +591,16 @@
         "nome": "CISA Advisories",
         "link": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
         "publicado": "2026-11-17T12:00:00Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
+        "publicado": "2026-11-18T08:24:31Z"
+      },
+      {
+        "nome": "SecurityWeek",
+        "link": "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/",
+        "publicado": "2026-11-18T10:37:08Z"
       }
     ],
     "prioridade_max": "P0"
