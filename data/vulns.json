@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-19T14:39:31Z",
+  "atualizado": "2026-11-19T19:29:36Z",
   "itens": [
     {
       "cve": "CVE-2026-123039",
@@ -83,7 +83,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123039.json",
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       }
     },
     {
@@ -133,7 +133,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-118383.json",
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0074,
@@ -188,7 +188,7 @@
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-121529.json",
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0022,
@@ -292,7 +292,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123218.json",
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       }
     },
     {
@@ -337,6 +337,14 @@
           "link": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
           "publicado": "2026-11-18T12:00:00Z",
           "visto_em": "2026-11-19T02:35:56Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns Hackers Are Actively Exploiting Four Flaws in Synology, LiteLLM, Apache Axis and REDCap",
+          "link": "https://cybersecuritynews.com/flaws-in-synology-litellm-apache-axis-and-redcap/",
+          "publicado": "2026-11-19T13:06:39Z",
+          "visto_em": "2026-11-19T19:29:36Z"
         }
       ],
       "detectado": "2026-11-17T18:43:49Z",
@@ -349,7 +357,7 @@
       "primeira_vez": "2026-11-06T16:18:59Z",
       "primeira_noticia": "2026-11-17T16:11:10Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-90436",
-      "ultima_atividade": "2026-11-18T12:00:00Z",
+      "ultima_atividade": "2026-11-19T13:06:39Z",
       "kev": {
         "adicionado": "2026-11-18",
         "prazo": "2026-11-21",
@@ -376,9 +384,9 @@
         "data": "2026-11-19"
       },
       "poc": {
-        "qtd": 3,
+        "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-90436.json",
-        "checado": "2026-11-18T19:24:42Z"
+        "checado": "2026-11-19T19:29:36Z"
       }
     },
     {
@@ -472,7 +480,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-19868.json",
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0053,
@@ -549,7 +557,7 @@
       "poc": {
         "qtd": 7,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-116779.json",
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -647,9 +655,9 @@
         "data": "2026-11-19"
       },
       "poc": {
-        "qtd": 41,
+        "qtd": 44,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123158.json",
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       }
     },
     {
@@ -713,7 +721,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-102895.json",
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -799,7 +807,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-115731.json",
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "cvss": 9.4,
       "cvss_versao": "4.0",
@@ -907,7 +915,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-116606.json",
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       }
     },
     {
@@ -978,7 +986,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "cvss": 4.3,
       "cvss_versao": "3.1",
@@ -1014,6 +1022,14 @@
           "link": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
           "publicado": "2026-11-18T12:00:00Z",
           "visto_em": "2026-11-19T02:35:56Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns Hackers Are Actively Exploiting Four Flaws in Synology, LiteLLM, Apache Axis and REDCap",
+          "link": "https://cybersecuritynews.com/flaws-in-synology-litellm-apache-axis-and-redcap/",
+          "publicado": "2026-11-19T13:06:39Z",
+          "visto_em": "2026-11-19T19:29:36Z"
         }
       ],
       "detectado": "2026-11-18T19:24:42Z",
@@ -1035,7 +1051,7 @@
       "primeira_vez": "2026-09-20T13:17:44Z",
       "primeira_noticia": "2026-11-18T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-90817",
-      "ultima_atividade": "2026-11-18T12:00:00Z",
+      "ultima_atividade": "2026-11-19T13:06:39Z",
       "exibido_em": "2026-11-18T19:24:42Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -1048,7 +1064,7 @@
       "poc": {
         "qtd": 6,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-90817.json",
-        "checado": "2026-11-18T19:24:42Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -1141,7 +1157,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "cvss": 7.5,
       "cvss_versao": "3.1",
@@ -1176,6 +1192,14 @@
           "link": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
           "publicado": "2026-11-18T12:00:00Z",
           "visto_em": "2026-11-19T02:35:56Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns Hackers Are Actively Exploiting Four Flaws in Synology, LiteLLM, Apache Axis and REDCap",
+          "link": "https://cybersecuritynews.com/flaws-in-synology-litellm-apache-axis-and-redcap/",
+          "publicado": "2026-11-19T13:06:39Z",
+          "visto_em": "2026-11-19T19:29:36Z"
         }
       ],
       "detectado": "2026-11-18T19:24:42Z",
@@ -1197,7 +1221,7 @@
       "primeira_vez": "2025-03-19T02:15:27Z",
       "primeira_noticia": "2026-11-18T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2024-10441",
-      "ultima_atividade": "2026-11-18T12:00:00Z",
+      "ultima_atividade": "2026-11-19T13:06:39Z",
       "exibido_em": "2026-11-18T19:24:42Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -1210,7 +1234,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2024/CVE-2024-10441.json",
-        "checado": "2026-11-18T19:24:42Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -1548,9 +1572,9 @@
       "regra": "explorado em plataforma corporativa",
       "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
       "poc": {
-        "qtd": 3,
+        "qtd": 5,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-124194.json",
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0162,
@@ -1576,7 +1600,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-19T10:17:28Z",
       "resumo": "The WP Duplicate – WordPress Migration Plugin plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.1.11 via the save_single_batch_file function. This is due to a PHP type-juggling authentication bypass via loose…",
-      "nvd_checado_em": "2026-11-19T14:39:31Z",
+      "nvd_checado_em": "2026-11-19T19:29:36Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2006,7 +2030,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0061,
@@ -2047,7 +2071,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-128027.json",
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0077,
@@ -2088,7 +2112,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.005,
@@ -2129,7 +2153,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0043,
@@ -2170,7 +2194,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0063,
@@ -2211,7 +2235,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0055,
@@ -2252,7 +2276,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-119077.json",
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0134,
@@ -2295,7 +2319,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T19:24:42Z"
+        "checado": "2026-11-19T19:29:36Z"
       }
     },
     {
@@ -2331,7 +2355,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.006,
@@ -2380,7 +2404,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0066,
@@ -2431,7 +2455,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0081,
@@ -2482,7 +2506,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0086,
@@ -2523,7 +2547,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0015,
@@ -2572,7 +2596,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0043,
@@ -2621,7 +2645,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0032,
@@ -2670,7 +2694,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76964.json",
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0043,
@@ -2711,7 +2735,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0031,
@@ -2752,7 +2776,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0026,
@@ -2793,7 +2817,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0041,
@@ -2834,7 +2858,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0041,
@@ -2875,7 +2899,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0028,
@@ -2952,9 +2976,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "poc": {
-        "qtd": 4,
+        "qtd": 5,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-125350.json",
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "kev": {
         "adicionado": "2026-11-10",
@@ -3009,7 +3033,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.004,
@@ -3050,7 +3074,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-124450.json",
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-19T19:29:36Z"
       },
       "epss": {
         "score": 0.0153,
@@ -3293,6 +3317,14 @@
           "link": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
           "publicado": "2026-11-18T12:00:00Z",
           "visto_em": "2026-11-19T02:35:56Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns Hackers Are Actively Exploiting Four Flaws in Synology, LiteLLM, Apache Axis and REDCap",
+          "link": "https://cybersecuritynews.com/flaws-in-synology-litellm-apache-axis-and-redcap/",
+          "publicado": "2026-11-19T13:06:39Z",
+          "visto_em": "2026-11-19T19:29:36Z"
         }
       ],
       "detectado": "2026-11-18T19:24:42Z",
@@ -3313,7 +3345,7 @@
       "primeira_vez": "2026-04-10T14:16:36Z",
       "primeira_noticia": "2026-11-18T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-40217",
-      "ultima_atividade": "2026-11-18T12:00:00Z",
+      "ultima_atividade": "2026-11-19T13:06:39Z",
       "exibido_em": "2026-11-18T19:24:42Z",
       "prioridade": "P2",
       "regra": "explorado fora das listas",
@@ -3336,6 +3368,12 @@
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "SecurityWeek",
+      "titulo": "Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT",
+      "link": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/",
+      "publicado": "2026-11-19T19:21:06Z"
+    },
     {
       "fonte": "SecurityWeek",
       "titulo": "Critical Apache Roller, Axis Vulnerabilities Exploited in Attacks",
