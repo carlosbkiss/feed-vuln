@@ -76,6 +76,11 @@
         "nome": "CISA Advisories",
         "link": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
         "publicado": "2026-11-18T12:00:00Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/flaws-in-synology-litellm-apache-axis-and-redcap/",
+        "publicado": "2026-11-19T13:06:39Z"
       }
     ],
     "prioridade_max": "P2"
