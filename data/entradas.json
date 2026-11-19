@@ -1,7 +1,91 @@
 {
-  "atualizado": "2026-11-18T18:44:13Z",
-  "janela": "11 a 18/nov/2026",
+  "atualizado": "2026-11-19T10:39:03Z",
+  "janela": "12 a 19/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-18",
+      "cve": "CVE-2026-123007 / CVE-2026-123633 / CVE-2026-123634 / CVE-2026-121810 / CVE-2026-113425",
+      "produto": "F5 NGINX Open Source e NGINX Plus (NGINX2Root: HTTP/2, HTTP/3, resolver e mail proxy)",
+      "cvss": 9.2,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Exploit público (PoC de RCE sem login no GitHub para a CVE-2026-123007, difícil de usar; sem ataque relatado até 18/11)",
+      "prioridade": "P0",
+      "tratamento": "Atualizar para NGINX 1.30.7 ou 1.31.9 e Plus 37.0.8.1 ou 37.3.0.1 (R33 a R36 sem patch: migrar para 37.x) e reiniciar o processo, pois reload não troca o binário. Começar pelos proxies reversos e balanceadores expostos e levantar imagens de contêiner e appliances com NGINX; até corrigir, desligar HTTP/3 e HTTP/2 onde der, fechar o mail proxy e bloquear o módulo SCTP do kernel onde não é usado.",
+      "fontes": [
+        {
+          "nome": "Tenable",
+          "url": "https://www.tenable.com/blog/nginx2root-cve-2026-123007-frequently-asked-questions-about-five-critical-nginx"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-18",
+      "cve": "CVE-2024-10441",
+      "produto": "Synology DiskStation Manager e BeeStation OS (NAS)",
+      "cvss": 9.8,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 18/11, prazo CISA 21/11)",
+      "prioridade": "P2",
+      "tratamento": "RCE sem login em NAS, mais comum como shadow IT ou em agências. Subir DSM para 7.2.2-72806-1, 7.2.1-69057-6 ou 7.2-64570-4 ou superior, tirar o NAS da internet e procurar equipamentos Synology não inventariados.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/cisa-adds-4-exploited-flaws-kev-synology-litellm/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2024-10441"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-18",
+      "cve": "CVE-2026-40217",
+      "produto": "BerriAI LiteLLM (proxy e gateway de LLM)",
+      "cvss": 8.8,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 18/11, prazo CISA 02/12; template Nuclei público)",
+      "prioridade": "P2",
+      "tratamento": "Usuário logado executa código no servidor pela rota /guardrails/test_custom_code. Levantar instâncias de LiteLLM em times de IA, usar build posterior a 08/04/2026 (versão a confirmar), bloquear essa rota no proxy e trocar as chaves de API de modelos guardadas no servidor.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/cisa-adds-4-exploited-flaws-kev-synology-litellm/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-40217"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-18",
+      "cve": "CVE-2026-90817",
+      "produto": "REDCap (Vanderbilt, coleta de dados de pesquisa)",
+      "cvss": 9.8,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 18/11, prazo CISA 21/11; template Nuclei público)",
+      "prioridade": "P2",
+      "tratamento": "RCE sem login a partir de um link público de pesquisa. Raro em banco: se houver REDCap em área de pesquisa ou parceiro, subir para 16.0.49, 17.3.10 ou 17.4.4.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/cisa-adds-4-exploited-flaws-kev-synology-litellm/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-90817"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-11-17",
       "cve": "CVE-2026-91569 / CVE-2026-91570 / CVE-2026-91583 / CVE-2026-91585 / CVE-2026-91456 / CVE-2026-91470 / CVE-2026-91469 / CVE-2026-114835 / CVE-2026-91500 / CVE-2026-91510 / CVE-2026-91507",
@@ -143,9 +227,9 @@
       "cve": "CVE-2026-90436",
       "produto": "Atlassian Confluence Data Center até 9.x com Remote API (XML-RPC e SOAP) ligada (Apache Axis 1.x)",
       "cvss": 9.3,
-      "kev": false,
+      "kev": true,
       "zero_day": false,
-      "exploracao": "Ativa (Rapid7 viu exploração em cliente em 13/11; PoC público derivado da cadeia do N-central)",
+      "exploracao": "Ativa (KEV em 18/11 pela falha no Apache Axis, prazo CISA 21/11; Rapid7 viu exploração em 13/11; PoC público)",
       "prioridade": "P0",
       "tratamento": "Atualizar para 9.2.28 ou migrar para a 10.x, que removeu a Remote API; Cloud não é afetado. Sem patch, desligar a Remote API em Configuração geral (sem reinício) e confirmar 403 em /plugins/servlet/soap-axis1/confluenceservice-v2; caçar comprometimento nas instâncias que ficaram expostas, incluindo os IPs publicados pela Rapid7.",
       "fontes": [
@@ -158,8 +242,8 @@
           "url": "https://cybersecuritynews.com/hackers-exploiting-atlassian-confluence-vulnerability/"
         },
         {
-          "nome": "Cyber Daily",
-          "url": "https://www.cyberdaily.au/security/14450-patch-now-hackers-targeting-critical-vulnerability-impacting-atlassian-n-able-products"
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-90436"
         }
       ],
       "status": "Novo"
@@ -290,51 +374,7 @@
           "url": "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-164/"
         }
       ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-11",
-      "cve": "CVE-2026-84869 / CVE-2026-127063",
-      "produto": "ConnectWise ScreenConnect (cliente do técnico e extensão RMM+; campanha SCKit contra MSPs)",
-      "cvss": 9.9,
-      "kev": true,
-      "zero_day": false,
-      "exploracao": "Ativa (Huntress ligou a campanha SCKit à falha de transferência de arquivo do cliente, CVE-2026-84869, no KEV desde set/2026; 688 mil pedidos de \"run file\" a 42 servidores de MSPs entre 20/10 e 16/11)",
-      "prioridade": "P1",
-      "tratamento": "Atualizar servidores on-premise para 26.6.5 e, na nuvem, reinstalar clientes host e agentes de acesso. Mapear fornecedores que usam ScreenConnect no banco, desativar extensões RMM+ e Labtech Plus, procurar update.bat ou update_<hex>.bat, segundo cliente ScreenConnect e a tarefa TrapWatch, e trocar credenciais a partir de máquina limpa.",
-      "fontes": [
-        {
-          "nome": "Huntress",
-          "url": "https://www.huntress.com/blog/sckit-worm-rogue-screenconnect"
-        },
-        {
-          "nome": "Cybersecurity Dive",
-          "url": "https://www.cybersecuritydive.com/news/critical-flaw-screenconnect-malicious-files-msp/874900/"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-11",
-      "cve": "CVE-2026-123710 / CVE-2026-110697",
-      "produto": "Red Hat Quay 3 e 5 (registry de contêineres)",
-      "cvss": 9.9,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P1",
-      "tratamento": "Sem login dá para plantar chave de assinatura e ler ou sobrescrever imagens privadas (9.8); a outra (9.9) rouba tokens de robôs de outros tenants. Instalar a build corrigida do seu ramo (Red Hat publicou para oito ramos do Quay 3; números a confirmar no advisory); até lá bloquear /keys no proxy, remover chaves de serviço desconhecidas e trocar tokens de robôs.",
-      "fontes": [
-        {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html"
-        },
-        {
-          "nome": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123710"
-        }
-      ],
-      "status": "Novo"
+      "status": "Pendente"
     },
     {
       "data": "2026-11-10",
@@ -367,9 +407,9 @@
       "cve": "CVE-2026-90436 / CVE-2026-125882 / CVE-2026-125878 / CVE-2026-125883 / CVE-2026-125879",
       "produto": "N-able N-central (RMM; cadeia 4EverAble2Shell via Apache Axis)",
       "cvss": null,
-      "kev": false,
+      "kev": true,
       "zero_day": true,
-      "exploracao": "Ativa (4EverAble2Shell com minerador em servidores com Legacy API; PoC público)",
+      "exploracao": "Ativa (4EverAble2Shell com minerador; Axis no KEV desde 18/11; PoC público)",
       "prioridade": "P0",
       "tratamento": "Atualizar servidores on-premise para 2026.4 HF3, que remove a Legacy API e corrige mais 17 CVEs, e atualizar todos os agentes e probes. Procurar requisições a /dms/services/ServerUI com jline, serviço xvd.service e arquivos em /tmp/.xvd; se achar, tratar como comprometido e cobrar o mesmo de fornecedores que usam N-central.",
       "fontes": [
@@ -410,32 +450,6 @@
         {
           "nome": "CISA KEV",
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-19868"
-        }
-      ],
-      "status": "Pendente"
-    },
-    {
-      "data": "2026-11-04",
-      "cve": "CVE-2026-102255 / CVE-2026-109593 / CVE-2026-109594",
-      "produto": "SonicWall SMA1000 e GMS",
-      "cvss": 10.0,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Ativa (SMA1000: 2.541 tentativas desde 09/10 e até 30 em 03/11, pela Previdian; SonicWall não confirmava em 12/10)",
-      "prioridade": "P0",
-      "tratamento": "SMA1000 (6210, 7210, 8200v): SSRF sem login, nota 10. Subir para 12.4.3-03670 ou 12.5.0-03082 ou superior: não há workaround, e alertas de governo divergem nos números, então conferir no SNWLID-2026-0017 pelo MySonicWall. GMS até 9.5.2 tem leitura de arquivos sem login (9.1) e SQL injection com login (6.8), sem patch por fim de vida: migrar para NSM e isolar o console. Fora do KEV até a última lista consultada; entrada a confirmar.",
-      "fontes": [
-        {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html"
-        },
-        {
-          "nome": "Security Affairs",
-          "url": "https://securityaffairs.com/200816/hacking/sonicwall-patches-cvss-10-0-ssrf-flaw-as-attacks-be"
-        },
-        {
-          "nome": "eSecurityPlanet",
-          "url": "https://www.esecurityplanet.com/threats/news-sonicwall-sma1000-cve-2026-102255-exploitation/"
         }
       ],
       "status": "Pendente"
