@@ -105,7 +105,7 @@
     "exibido_em": "2026-11-18T02:55:02Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0035,
+    "epss_max": 0.0038,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -1247,7 +1247,7 @@
     "exibido_em": "2026-11-08T14:38:16Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0049,
+    "epss_max": 0.0153,
     "poc_qtd": 1,
     "fontes": [
       {
@@ -1562,7 +1562,7 @@
     "exibido_em": "2026-11-19T10:39:29Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0236,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -2030,7 +2030,7 @@
     "exibido_em": "2026-11-18T19:24:42Z",
     "aguardando_nota_desde": "2026-11-17T16:11:10Z",
     "nota_chegou_em": "2026-11-18T19:24:42Z",
-    "epss_max": 0.0113,
+    "epss_max": 0.0177,
     "poc_qtd": 3,
     "fontes": [
       {

@@ -1,7 +1,65 @@
 {
-  "atualizado": "2026-11-19T10:39:03Z",
+  "atualizado": "2026-11-19T14:39:07Z",
   "janela": "12 a 19/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-19",
+      "cve": "CVE-2026-115560",
+      "produto": "PHP 8.2 a 8.5 (upload progress de sessão; release de segurança de 19/11)",
+      "cvss": null,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "RCE só em configuração incomum: serialize_handler php_binary/php_serialize trocado para php via ini_set() antes do session_start(), com upload progress ligado (padrão). Aplicar as versões de 19/11 (números a confirmar) ou backport da distribuição; até lá, session.upload_progress.enabled=0 no php.ini/pool FPM e reiniciar os workers.",
+      "fontes": [
+        {
+          "nome": "The CyberSec Guru",
+          "url": "https://thecybersecguru.com/news/php-security-release-19-november-2026/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-19",
+      "cve": "CVE-2026-76466",
+      "produto": "Cisco Expressway-C e Expressway-E em cluster (credencial fixa no cm_server)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Ativa (F6 relatou em 19/11 invasão de dois Expressway X15.5.3 expostos com pivô para os nós internos do cluster; Cisco ainda não atualizou o advisory)",
+      "prioridade": "P0",
+      "tratamento": "Atualizar para X15.5.20 (X14 e anteriores precisam migrar); sem workaround, bloquear TCP 4371/4372 exceto entre os nós do cluster. Caçar comprometimento no log Erlang do Expressway e em acessos dele a SMB, SQL Server, WinRM e GitLab internos.",
+      "fontes": [
+        {
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/"
+        },
+        {
+          "nome": "GBHackers",
+          "url": "https://gbhackers.com/poc-exploit-released-for-critical-cisco-expressway-rce/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-18",
+      "cve": "CVE-2026-132165 / CVE-2026-132166",
+      "produto": "Drupal core (instalador install.php)",
+      "cvss": null,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "RCE sem login pelo install.php; Drupal alerta que exploit pode sair em horas. Se houver portal ou site institucional em Drupal, subir para 10.6.22, 11.3.22 ou 11.4.13 e bloquear /core/install.php no servidor web (nota CVSS a confirmar).",
+      "fontes": [
+        {
+          "nome": "Tech Bytes",
+          "url": "https://techbytes.app/posts/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-11-18",
       "cve": "CVE-2026-123007 / CVE-2026-123633 / CVE-2026-123634 / CVE-2026-121810 / CVE-2026-113425",
@@ -310,24 +368,6 @@
         {
           "nome": "The Hacker News",
           "url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-12",
-      "cve": "CVE-2026-76466",
-      "produto": "Cisco Expressway-C e Expressway-E em cluster (credencial fixa no cm_server)",
-      "cvss": 9.8,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Exploit público (PoC e detector no GitHub em 12/11; sem ataque relatado)",
-      "prioridade": "P0",
-      "tratamento": "Advisory de 21/10, reaberto pelo PoC público. Atualizar para X15.5.20 (X14 e anteriores precisam migrar); sem workaround, restringir TCP 4371/4372 aos pares do cluster e alertar conexões de outras origens.",
-      "fontes": [
-        {
-          "nome": "GBHackers",
-          "url": "https://gbhackers.com/poc-exploit-released-for-critical-cisco-expressway-rce/"
         }
       ],
       "status": "Novo"
