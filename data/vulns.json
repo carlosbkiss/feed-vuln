@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-19T02:35:56Z",
+  "atualizado": "2026-11-19T10:39:29Z",
   "itens": [
     {
       "cve": "CVE-2026-123039",
@@ -1252,7 +1252,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T02:55:02Z"
+        "checado": "2026-11-19T10:39:29Z"
       },
       "epss": {
         "score": 0.0052,
@@ -1278,7 +1278,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:22Z",
       "resumo": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker…",
-      "nvd_checado_em": "2026-11-19T02:35:56Z",
+      "nvd_checado_em": "2026-11-19T10:39:29Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1293,7 +1293,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T02:55:02Z"
+        "checado": "2026-11-19T10:39:29Z"
       },
       "epss": {
         "score": 0.0044,
@@ -1334,7 +1334,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T02:55:02Z"
+        "checado": "2026-11-19T10:39:29Z"
       },
       "epss": {
         "score": 0.0046,
@@ -1360,7 +1360,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:22Z",
       "resumo": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with…",
-      "nvd_checado_em": "2026-11-19T02:35:56Z",
+      "nvd_checado_em": "2026-11-19T10:39:29Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1375,7 +1375,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T02:55:02Z"
+        "checado": "2026-11-19T10:39:29Z"
       },
       "epss": {
         "score": 0.0034,
@@ -1416,7 +1416,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T02:55:02Z"
+        "checado": "2026-11-19T10:39:29Z"
       },
       "epss": {
         "score": 0.0046,
@@ -1457,7 +1457,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T02:55:02Z"
+        "checado": "2026-11-19T10:39:29Z"
       },
       "epss": {
         "score": 0.0052,
@@ -1559,6 +1559,42 @@
       }
     },
     {
+      "cve": "CVE-2026-14492",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-14492",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-14492",
+          "publicado": "2026-11-19T10:17:28Z",
+          "visto_em": "2026-11-19T10:39:29Z"
+        }
+      ],
+      "detectado": "2026-11-19T10:39:29Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-19T10:17:28Z",
+      "resumo": "The WP Duplicate – WordPress Migration Plugin plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.1.11 via the save_single_batch_file function. This is due to a PHP type-juggling authentication bypass via loose…",
+      "nvd_checado_em": "2026-11-19T10:39:29Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-19T10:17:28Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-14492",
+      "ultima_atividade": "2026-11-19T10:17:28Z",
+      "exibido_em": "2026-11-19T10:39:29Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-19T10:39:29Z"
+      }
+    },
+    {
       "cve": "CVE-2026-129448",
       "fontes": [
         {
@@ -1568,6 +1604,14 @@
           "link": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
           "publicado": "2026-11-18T17:10:45Z",
           "visto_em": "2026-11-19T02:35:56Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Hackers Actively Exploit Critical Apache Roller RCE Flaw to Execute Code Without Authentication",
+          "link": "https://cybersecuritynews.com/apache-roller-rce-exploitation/",
+          "publicado": "2026-11-19T05:15:41Z",
+          "visto_em": "2026-11-19T10:39:29Z"
         }
       ],
       "detectado": "2026-11-19T02:35:56Z",
@@ -1580,7 +1624,7 @@
       "primeira_vez": "2026-11-18T17:10:45Z",
       "primeira_noticia": "2026-11-18T17:10:45Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
-      "ultima_atividade": "2026-11-18T17:10:45Z",
+      "ultima_atividade": "2026-11-19T05:15:41Z",
       "exibido_em": "2026-11-19T02:35:56Z",
       "prioridade": "P2",
       "regra": "explorado fora das listas",
@@ -1629,7 +1673,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T02:55:02Z"
+        "checado": "2026-11-19T10:39:29Z"
       },
       "epss": {
         "score": 0.0039,
@@ -1655,7 +1699,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:23Z",
       "resumo": "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Integration Broker).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerability allows unauthenticated attacker with network access via…",
-      "nvd_checado_em": "2026-11-19T02:35:56Z",
+      "nvd_checado_em": "2026-11-19T10:39:29Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1670,7 +1714,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T02:55:02Z"
+        "checado": "2026-11-19T10:39:29Z"
       },
       "epss": {
         "score": 0.0035,
@@ -1696,7 +1740,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:17Z",
       "resumo": "Vulnerability in the Document Management and Collaboration product of Oracle E-Business Suite (component: Attachments).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network…",
-      "nvd_checado_em": "2026-11-19T02:35:56Z",
+      "nvd_checado_em": "2026-11-19T10:39:29Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1711,7 +1755,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T02:55:02Z"
+        "checado": "2026-11-19T10:39:29Z"
       },
       "epss": {
         "score": 0.0051,
@@ -1752,7 +1796,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T02:55:02Z"
+        "checado": "2026-11-19T10:39:29Z"
       },
       "epss": {
         "score": 0.0048,
@@ -1793,7 +1837,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T02:55:02Z"
+        "checado": "2026-11-19T10:39:29Z"
       },
       "epss": {
         "score": 0.0048,
@@ -1834,7 +1878,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T02:55:02Z"
+        "checado": "2026-11-19T10:39:29Z"
       },
       "epss": {
         "score": 0.0052,
@@ -1875,7 +1919,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T02:55:02Z"
+        "checado": "2026-11-19T10:39:29Z"
       },
       "epss": {
         "score": 0.0048,
@@ -1901,7 +1945,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:04Z",
       "resumo": "Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Admin UI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP…",
-      "nvd_checado_em": "2026-11-19T02:35:56Z",
+      "nvd_checado_em": "2026-11-19T10:39:29Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1916,7 +1960,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T02:55:02Z"
+        "checado": "2026-11-19T10:39:29Z"
       },
       "epss": {
         "score": 0.0035,
@@ -3134,47 +3178,6 @@
       "nvd_checado_em": "2026-11-13T18:38:57Z"
     },
     {
-      "cve": "CVE-2026-122310",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-122310",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-122310",
-          "publicado": "2026-11-05T03:17:23Z",
-          "visto_em": "2026-11-05T10:41:26Z"
-        }
-      ],
-      "detectado": "2026-11-05T10:41:26Z",
-      "cvss": 9.9,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-05T03:17:23Z",
-      "resumo": "Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath after cleaning it but executes the raw path, whose fragment or query the Kubernetes client discards. A namespace-scoped user who can create a Policy can hide ../ segments behind #…",
-      "nvd_checado_em": "2026-11-07T20:54:35Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-11-05T03:17:23Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-122310",
-      "ultima_atividade": "2026-11-05T03:17:23Z",
-      "exibido_em": "2026-11-05T10:41:26Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-18T18:44:33Z"
-      },
-      "epss": {
-        "score": 0.0037,
-        "percentil": 0.3146,
-        "data": "2026-11-18"
-      }
-    },
-    {
       "cve": "CVE-2026-111560",
       "fontes": [
         {
@@ -3459,12 +3462,6 @@
       "titulo": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
       "link": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
       "publicado": "2026-11-06T16:08:38Z"
-    },
-    {
-      "fonte": "The Hacker News",
-      "titulo": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
-      "link": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
-      "publicado": "2026-11-05T07:06:33Z"
     }
   ]
 }
