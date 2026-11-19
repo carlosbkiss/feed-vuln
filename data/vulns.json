@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-18T19:24:42Z",
+  "atualizado": "2026-11-19T02:35:56Z",
   "itens": [
     {
       "cve": "CVE-2026-123039",
@@ -329,6 +329,14 @@
           "link": "https://cybersecuritynews.com/atlassian-patches-318-security-vulnerabilities/",
           "publicado": "2026-11-18T09:43:21Z",
           "visto_em": "2026-11-18T10:44:49Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-18T12:00:00Z",
+          "visto_em": "2026-11-19T02:35:56Z"
         }
       ],
       "detectado": "2026-11-17T18:43:49Z",
@@ -341,7 +349,7 @@
       "primeira_vez": "2026-11-06T16:18:59Z",
       "primeira_noticia": "2026-11-17T16:11:10Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-90436",
-      "ultima_atividade": "2026-11-18T09:43:21Z",
+      "ultima_atividade": "2026-11-18T12:00:00Z",
       "kev": {
         "adicionado": "2026-11-18",
         "prazo": "2026-11-21",
@@ -981,6 +989,75 @@
       "escalado": true
     },
     {
+      "cve": "CVE-2026-90817",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-90817",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-90817",
+          "publicado": "2026-09-20T13:17:44Z",
+          "visto_em": "2026-11-19T02:35:56Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-90817",
+          "publicado": "2026-11-18",
+          "visto_em": "2026-11-18T19:24:42Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-18T12:00:00Z",
+          "visto_em": "2026-11-19T02:35:56Z"
+        }
+      ],
+      "detectado": "2026-11-18T19:24:42Z",
+      "kev": {
+        "adicionado": "2026-11-18",
+        "prazo": "2026-11-21",
+        "ransomware": "Unknown"
+      },
+      "produto": "Vanderbilt University Research Electronic Data Capture (REDCap)",
+      "titulo": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+      "resumo": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP requests that…",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-09-20T13:17:44Z",
+      "primeira_noticia": "2026-11-18T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-90817",
+      "ultima_atividade": "2026-11-18T12:00:00Z",
+      "exibido_em": "2026-11-18T19:24:42Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0375,
+        "percentil": 0.9009,
+        "data": "2026-11-18"
+      },
+      "poc": {
+        "qtd": 6,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-90817.json",
+        "checado": "2026-11-18T19:24:42Z"
+      },
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-09-20T13:17:44Z",
+      "nvd_checado_em": "2026-11-19T02:35:56Z",
+      "escalado": true
+    },
+    {
       "cve": "CVE-2026-20320",
       "fontes": [
         {
@@ -1074,6 +1151,75 @@
       "nota_chegou_em": "2026-11-11T10:40:48Z"
     },
     {
+      "cve": "CVE-2024-10441",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2024-10441",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-10441",
+          "publicado": "2025-03-19T02:15:27Z",
+          "visto_em": "2026-11-19T02:35:56Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2024-10441",
+          "publicado": "2026-11-18",
+          "visto_em": "2026-11-18T19:24:42Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-18T12:00:00Z",
+          "visto_em": "2026-11-19T02:35:56Z"
+        }
+      ],
+      "detectado": "2026-11-18T19:24:42Z",
+      "kev": {
+        "adicionado": "2026-11-18",
+        "prazo": "2026-11-21",
+        "ransomware": "Unknown"
+      },
+      "produto": "Synology DiskStation Manager (DSM)",
+      "titulo": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+      "resumo": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2025-03-19T02:15:27Z",
+      "primeira_noticia": "2026-11-18T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2024-10441",
+      "ultima_atividade": "2026-11-18T12:00:00Z",
+      "exibido_em": "2026-11-18T19:24:42Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0125,
+        "percentil": 0.7001,
+        "data": "2026-11-18"
+      },
+      "poc": {
+        "qtd": 2,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2024/CVE-2024-10441.json",
+        "checado": "2026-11-18T19:24:42Z"
+      },
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2025-03-19T02:15:27Z",
+      "nvd_checado_em": "2026-11-19T02:35:56Z",
+      "escalado": true
+    },
+    {
       "cve": "CVE-2026-91569",
       "fontes": [
         {
@@ -1132,7 +1278,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:22Z",
       "resumo": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker…",
-      "nvd_checado_em": "2026-11-18T19:24:42Z",
+      "nvd_checado_em": "2026-11-19T02:35:56Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1214,7 +1360,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:22Z",
       "resumo": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with…",
-      "nvd_checado_em": "2026-11-18T19:24:42Z",
+      "nvd_checado_em": "2026-11-19T02:35:56Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1255,7 +1401,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:22Z",
       "resumo": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with…",
-      "nvd_checado_em": "2026-11-18T19:24:42Z",
+      "nvd_checado_em": "2026-11-19T02:35:56Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1413,141 +1559,41 @@
       }
     },
     {
-      "cve": "CVE-2024-10441",
+      "cve": "CVE-2026-129448",
       "fontes": [
         {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2024-10441",
-          "publicado": "2026-11-18",
-          "visto_em": "2026-11-18T19:24:42Z"
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+          "link": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+          "publicado": "2026-11-18T17:10:45Z",
+          "visto_em": "2026-11-19T02:35:56Z"
         }
       ],
-      "detectado": "2026-11-18T19:24:42Z",
-      "kev": {
-        "adicionado": "2026-11-18",
-        "prazo": "2026-11-21",
-        "ransomware": "Unknown"
-      },
-      "produto": "Synology DiskStation Manager (DSM)",
-      "titulo": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
-      "resumo": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
+      "detectado": "2026-11-19T02:35:56Z",
       "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
+      "zero_day_motivo": "The Hacker News: exploração ativa relatada",
+      "aguardando_nota_desde": "2026-11-18T17:10:45Z",
       "elegivel_por": [
-        "zero-day",
-        "KEV"
+        "zero-day"
       ],
-      "primeira_vez": "2026-11-18T00:00:00Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2024-10441",
-      "ultima_atividade": "2026-11-18T00:00:00Z",
-      "exibido_em": "2026-11-18T19:24:42Z",
+      "primeira_vez": "2026-11-18T17:10:45Z",
+      "primeira_noticia": "2026-11-18T17:10:45Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
+      "ultima_atividade": "2026-11-18T17:10:45Z",
+      "exibido_em": "2026-11-19T02:35:56Z",
       "prioridade": "P2",
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.0125,
-        "percentil": 0.7001,
-        "data": "2026-11-18"
-      },
-      "poc": {
-        "qtd": 2,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2024/CVE-2024-10441.json",
-        "checado": "2026-11-18T19:24:42Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-40217",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-40217",
-          "publicado": "2026-11-18",
-          "visto_em": "2026-11-18T19:24:42Z"
-        }
-      ],
-      "detectado": "2026-11-18T19:24:42Z",
-      "kev": {
-        "adicionado": "2026-11-18",
-        "prazo": "2026-12-02",
-        "ransomware": "Unknown"
-      },
-      "produto": "BerriAI LiteLLM",
-      "titulo": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
-      "resumo": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-18T00:00:00Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-40217",
-      "ultima_atividade": "2026-11-18T00:00:00Z",
-      "exibido_em": "2026-11-18T19:24:42Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.1702,
-        "percentil": 0.9713,
+        "score": 0.0164,
+        "percentil": 0.7686,
         "data": "2026-11-18"
       },
       "poc": {
         "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-40217.json",
-        "checado": "2026-11-18T19:24:42Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-90817",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-90817",
-          "publicado": "2026-11-18",
-          "visto_em": "2026-11-18T19:24:42Z"
-        }
-      ],
-      "detectado": "2026-11-18T19:24:42Z",
-      "kev": {
-        "adicionado": "2026-11-18",
-        "prazo": "2026-11-21",
-        "ransomware": "Unknown"
-      },
-      "produto": "Vanderbilt University Research Electronic Data Capture (REDCap)",
-      "titulo": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
-      "resumo": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP requests that…",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-18T00:00:00Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-90817",
-      "ultima_atividade": "2026-11-18T00:00:00Z",
-      "exibido_em": "2026-11-18T19:24:42Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.0375,
-        "percentil": 0.9009,
-        "data": "2026-11-18"
-      },
-      "poc": {
-        "qtd": 6,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-90817.json",
-        "checado": "2026-11-18T19:24:42Z"
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-129448.json",
+        "checado": "2026-11-19T02:35:56Z"
       }
     },
     {
@@ -1568,7 +1614,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:19:24Z",
       "resumo": "Vulnerability in the Oracle Service Bus product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via RMI…",
-      "nvd_checado_em": "2026-11-18T19:24:42Z",
+      "nvd_checado_em": "2026-11-19T02:35:56Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1609,7 +1655,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:23Z",
       "resumo": "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Integration Broker).  Supported versions that are affected are 8.61-8.63. Easily exploitable vulnerability allows unauthenticated attacker with network access via…",
-      "nvd_checado_em": "2026-11-18T19:24:42Z",
+      "nvd_checado_em": "2026-11-19T02:35:56Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1650,7 +1696,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:17Z",
       "resumo": "Vulnerability in the Document Management and Collaboration product of Oracle E-Business Suite (component: Attachments).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network…",
-      "nvd_checado_em": "2026-11-18T19:24:42Z",
+      "nvd_checado_em": "2026-11-19T02:35:56Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1855,7 +1901,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-17T22:18:04Z",
       "resumo": "Vulnerability in the Oracle Mobile Field Service product of Oracle E-Business Suite (component: Admin UI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP…",
-      "nvd_checado_em": "2026-11-18T19:24:42Z",
+      "nvd_checado_em": "2026-11-19T02:35:56Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -3129,47 +3175,6 @@
       }
     },
     {
-      "cve": "CVE-2025-71457",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2025-71457",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-71457",
-          "publicado": "2026-11-04T21:17:40Z",
-          "visto_em": "2026-11-05T00:23:25Z"
-        }
-      ],
-      "detectado": "2026-11-05T00:23:25Z",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-04T21:17:40Z",
-      "resumo": "vtenext 25.02 before 25.02.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to change any account password via hub/rpwd.php without token verification. Attackers knowing a valid user_name can send action=change_password…",
-      "nvd_checado_em": "2026-11-05T18:41:26Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-11-04T21:17:40Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2025-71457",
-      "ultima_atividade": "2026-11-04T21:17:40Z",
-      "exibido_em": "2026-11-05T00:23:25Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-18T18:44:33Z"
-      },
-      "epss": {
-        "score": 0.0044,
-        "percentil": 0.3913,
-        "data": "2026-11-18"
-      }
-    },
-    {
       "cve": "CVE-2026-111560",
       "fontes": [
         {
@@ -3255,79 +3260,71 @@
       }
     },
     {
-      "cve": "CVE-2024-27834",
+      "cve": "CVE-2026-40217",
       "fontes": [
         {
           "id": "nvd",
           "nome": "NVD",
-          "titulo": "CVE-2024-27834",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-27834",
-          "publicado": "2024-05-14T15:13:06Z",
-          "visto_em": "2026-11-05T00:23:25Z"
+          "titulo": "CVE-2026-40217",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-40217",
+          "publicado": "2026-04-10T14:16:36Z",
+          "visto_em": "2026-11-19T02:35:56Z"
         },
         {
           "id": "kev",
           "nome": "CISA KEV",
-          "titulo": "Apple Multiple Products Improper Authentication Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2024-27834",
-          "publicado": "2026-11-04",
-          "visto_em": "2026-11-05T00:23:25Z"
+          "titulo": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-40217",
+          "publicado": "2026-11-18",
+          "visto_em": "2026-11-18T19:24:42Z"
         },
         {
           "id": "cisa-adv",
           "nome": "CISA Advisories",
-          "titulo": "CISA Adds One Known Exploited Vulnerability to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog",
-          "publicado": "2026-11-04T12:00:00Z",
-          "visto_em": "2026-11-06T00:18:37Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
-          "link": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
-          "publicado": "2026-11-05T05:17:04Z",
-          "visto_em": "2026-11-05T10:41:26Z"
+          "titulo": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-18T12:00:00Z",
+          "visto_em": "2026-11-19T02:35:56Z"
         }
       ],
-      "detectado": "2026-11-05T00:23:25Z",
+      "detectado": "2026-11-18T19:24:42Z",
       "kev": {
-        "adicionado": "2026-11-04",
-        "prazo": "2026-11-18",
+        "adicionado": "2026-11-18",
+        "prazo": "2026-12-02",
         "ransomware": "Unknown"
       },
-      "produto": "Apple Multiple Products",
-      "titulo": "Apple Multiple Products Improper Authentication Vulnerability",
-      "resumo": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication.",
-      "cvss": 5.5,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "NVD",
-      "publicado_nvd": "2024-05-14T15:13:06Z",
-      "nvd_checado_em": "2026-11-05T00:23:25Z",
+      "produto": "BerriAI LiteLLM",
+      "titulo": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+      "resumo": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
       "elegivel_por": [
         "zero-day",
         "KEV"
       ],
-      "primeira_vez": "2024-05-14T15:13:06Z",
-      "primeira_noticia": "2026-11-04T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2024-27834",
-      "ultima_atividade": "2026-11-05T05:17:04Z",
-      "exibido_em": "2026-11-05T00:23:25Z",
+      "primeira_vez": "2026-04-10T14:16:36Z",
+      "primeira_noticia": "2026-11-18T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-40217",
+      "ultima_atividade": "2026-11-18T12:00:00Z",
+      "exibido_em": "2026-11-18T19:24:42Z",
       "prioridade": "P2",
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.015,
-        "percentil": 0.7482,
+        "score": 0.1702,
+        "percentil": 0.9713,
         "data": "2026-11-18"
       },
       "poc": {
-        "qtd": 0,
-        "link": null,
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-40217.json",
         "checado": "2026-11-18T19:24:42Z"
-      }
+      },
+      "cvss": 8.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-04-10T14:16:36Z",
+      "nvd_checado_em": "2026-11-19T02:35:56Z"
     }
   ],
   "sem_cve": [
@@ -3468,12 +3465,6 @@
       "titulo": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
       "link": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
       "publicado": "2026-11-05T07:06:33Z"
-    },
-    {
-      "fonte": "BleepingComputer",
-      "titulo": "Zyxel fixes zero-day exploited to hack nearly 1,000 network switches",
-      "link": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
-      "publicado": "2026-11-04T20:58:19Z"
     }
   ]
 }

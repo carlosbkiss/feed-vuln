@@ -1512,6 +1512,34 @@
     ],
     "prioridade_max": "P2"
   },
+  "CVE-2026-129448": {
+    "cve": "CVE-2026-129448",
+    "produto": "",
+    "titulo": "",
+    "cvss": null,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day"
+    ],
+    "zero_day": true,
+    "kev": null,
+    "primeira_vez": "2026-11-18T17:10:45Z",
+    "primeira_noticia": "2026-11-18T17:10:45Z",
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-19T02:35:56Z",
+    "aguardando_nota_desde": "2026-11-18T17:10:45Z",
+    "nota_chegou_em": null,
+    "epss_max": 0.0164,
+    "poc_qtd": 1,
+    "fontes": [
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+        "publicado": "2026-11-18T17:10:45Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
   "CVE-2026-19868": {
     "cve": "CVE-2026-19868",
     "produto": "SonicWall SonicOS SSLVPN",
@@ -1991,6 +2019,11 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/atlassian-patches-318-security-vulnerabilities/",
         "publicado": "2026-11-18T09:43:21Z"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-18T12:00:00Z"
       }
     ],
     "prioridade_max": "P0"

@@ -1,4 +1,48 @@
 {
+  "CVE-2026-90817": {
+    "cve": "CVE-2026-90817",
+    "produto": "Vanderbilt University Research Electronic Data Capture (REDCap)",
+    "titulo": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+    "cvss": 9.8,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-18",
+      "prazo": "2026-11-21",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-09-20T13:17:44Z",
+    "primeira_noticia": "2026-11-18T12:00:00Z",
+    "publicado_nvd": "2026-09-20T13:17:44Z",
+    "exibido_em": "2026-11-18T19:24:42Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0375,
+    "poc_qtd": 6,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-90817",
+        "publicado": "2026-09-20T13:17:44Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-90817",
+        "publicado": "2026-11-18"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-18T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
   "CVE-2026-96652": {
     "cve": "CVE-2026-96652",
     "produto": "Plex Media Server",
