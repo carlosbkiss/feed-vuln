@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-19T19:29:36Z",
+  "atualizado": "2026-11-20T02:21:11Z",
   "itens": [
     {
       "cve": "CVE-2026-123039",
@@ -1583,6 +1583,78 @@
       }
     },
     {
+      "cve": "CVE-2026-84236",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-84236",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-84236",
+          "publicado": "2026-11-19T21:18:06Z",
+          "visto_em": "2026-11-20T02:21:11Z"
+        }
+      ],
+      "detectado": "2026-11-20T02:21:11Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-19T21:18:06Z",
+      "resumo": "IBM Guardium Data Protection 12.2 is vulnerable to insecure deserialization in the SharePoint Tap MulticastTransceiver component. An unauthenticated remote attacker could exploit this vulnerability to execute arbitrary code on the affected system.",
+      "nvd_checado_em": "2026-11-20T02:21:11Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-19T21:18:06Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-84236",
+      "ultima_atividade": "2026-11-19T21:18:06Z",
+      "exibido_em": "2026-11-20T02:21:11Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-20T02:21:11Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-82339",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-82339",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-82339",
+          "publicado": "2026-11-19T21:18:05Z",
+          "visto_em": "2026-11-20T02:21:11Z"
+        }
+      ],
+      "detectado": "2026-11-20T02:21:11Z",
+      "cvss": 9.1,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-19T21:18:05Z",
+      "resumo": "IBM Guardium Data Protection 12.2 is vulnerable to missing authentication in the SharePoint S-TAP RelayService, allowing an unauthenticated network attacker to inject forged audit events and access the active monitoring policy.",
+      "nvd_checado_em": "2026-11-20T02:21:11Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-19T21:18:05Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-82339",
+      "ultima_atividade": "2026-11-19T21:18:05Z",
+      "exibido_em": "2026-11-20T02:21:11Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-20T02:21:11Z"
+      }
+    },
+    {
       "cve": "CVE-2026-14492",
       "fontes": [
         {
@@ -1600,7 +1672,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-19T10:17:28Z",
       "resumo": "The WP Duplicate – WordPress Migration Plugin plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.1.11 via the save_single_batch_file function. This is due to a PHP type-juggling authentication bypass via loose…",
-      "nvd_checado_em": "2026-11-19T19:29:36Z",
+      "nvd_checado_em": "2026-11-20T02:21:11Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -3115,7 +3187,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-20T02:21:11Z"
       },
       "epss": {
         "score": 0.0035,
@@ -3198,7 +3270,7 @@
       "poc": {
         "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-114713.json",
-        "checado": "2026-11-18T18:44:33Z"
+        "checado": "2026-11-20T02:21:11Z"
       },
       "cvss": 8.6,
       "cvss_versao": "3.1",
@@ -3288,7 +3360,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-18T19:24:42Z"
+        "checado": "2026-11-20T02:21:11Z"
       }
     },
     {
@@ -3358,7 +3430,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-40217.json",
-        "checado": "2026-11-18T19:24:42Z"
+        "checado": "2026-11-20T02:21:11Z"
       },
       "cvss": 8.8,
       "cvss_versao": "3.1",
@@ -3368,6 +3440,12 @@
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "BleepingComputer",
+      "titulo": "VMware patches vCenter zero-day exploited in attacks since September",
+      "link": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
+      "publicado": "2026-11-20T00:26:25Z"
+    },
     {
       "fonte": "SecurityWeek",
       "titulo": "Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT",
