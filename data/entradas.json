@@ -1,7 +1,65 @@
 {
-  "atualizado": "2026-11-19T18:45:00Z",
-  "janela": "12 a 19/nov/2026",
+  "atualizado": "2026-11-20T10:55:00Z",
+  "janela": "13 a 20/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-19",
+      "cve": "CVE-2026-123890",
+      "produto": "VMware vCenter Server e Cloud Foundation (vmdir, bypass de autenticação; VMSA-2026-0009)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": true,
+      "exploracao": "Ativa (zero-day desde set/2026 por grupo de espionagem ligado à China, segundo o Google; roubo da chave SAML e tokens forjados)",
+      "prioridade": "P0",
+      "tratamento": "Atualizar para vCenter 8.0 U3m, 9.0.2.0200 ou 9.1.1.0200 (7.0 sem correção pública; VCF 5.x confirmar com a Broadcom); sem workaround, restringir as portas 443, 2012, 5480 e 22 do vCenter à rede de gestão. Caçar comprometimento desde setembro (admins SSO desconhecidos, SSH ligado e desligado no VAMI) e, se houver suspeita, trocar o certificado de assinatura STS e as credenciais SSO, pois o patch não derruba tokens forjados.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/vcenter-zero-day-cve-2026-123890-exploited/"
+        },
+        {
+          "nome": "Rescana",
+          "url": "https://www.rescana.com/post/vmware-vcenter-cve-2026-123890-directory-service-auth-bypass-patch-now"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-19",
+      "cve": "CVE-2026-132231 / CVE-2026-132232 / CVE-2026-132233 / CVE-2026-132234",
+      "produto": "JetBrains TeamCity (RCE via Perforce, Mercurial e atributos de build)",
+      "cvss": 9.9,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Quatro RCE nota 9.9 no servidor de CI; versão corrigida a confirmar no boletim da JetBrains. Levantar servidores TeamCity on-premise, atualizar assim que confirmado e tirar o servidor da internet; TeamCity já foi alvo de exploração em massa no passado.",
+      "fontes": [
+        {
+          "nome": "CVE Brief 19/11",
+          "url": "https://cvebrief.com/archive/2026/11/19/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-19",
+      "cve": "CVE-2026-95787",
+      "produto": "HPE Aruba ArubaOS (protocolo PAPI)",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Bypass de autenticação sem login pode dar controle administrativo de controladores e APs Aruba. Versão corrigida a confirmar no advisory da HPE; até lá, bloquear a porta UDP 8211 (PAPI) fora da rede de gestão dos controladores.",
+      "fontes": [
+        {
+          "nome": "CVE Brief 19/11",
+          "url": "https://cvebrief.com/archive/2026/11/19/"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-11-19",
       "cve": "CVE-2026-115560",
@@ -352,51 +410,7 @@
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-123039"
         }
       ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-12",
-      "cve": "sem CVE (Windows CLFS, SignDrop)",
-      "produto": "Microsoft Windows 11 e Windows Server 2025 (driver CLFS, elevação local)",
-      "cvss": null,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Exploit público (PoC funcional, sem patch e sem ataque relatado)",
-      "prioridade": "P1",
-      "tratamento": "Usuário comum vira SYSTEM e pode desligar o antivírus; Microsoft ainda não se pronunciou, então não há correção (a confirmar). Reforçar EDR para criação de arquivos .blf e processos SYSTEM vindos de sessões de usuário, priorizar estações de usuários privilegiados e servidores com acesso interativo.",
-      "fontes": [
-        {
-          "nome": "SecurityWeek",
-          "url": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/"
-        },
-        {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-12",
-      "cve": "CVE-2026-107412 / CVE-2026-120868 / CVE-2026-120869 / CVE-2026-107407 / CVE-2026-107408 / CVE-2026-107409 / CVE-2026-107410 / CVE-2026-107415",
-      "produto": "Citrix NetScaler ADC, NetScaler Gateway e NetScaler Console (4 boletins, 31 CVEs)",
-      "cvss": 9.5,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não confirmada",
-      "prioridade": "P1",
-      "tratamento": "Atualizar ADC/Gateway para 14.1-73.57, 13.1-64.39 ou 13.1-37.293 FIPS/NDcPP (14.1-73.58 FIPS) e Console para 14.1-74.34, começando pelos Gateway/AAA expostos e pelos dois nós do HA. Não há contorno; restringir Console e NSIP à rede de gestão e migrar 12.1/13.0 (sem correção). Falhas anteriores do NetScaler foram exploradas em dias: tratar como quase P0.",
-      "fontes": [
-        {
-          "nome": "SecurityOnline",
-          "url": "https://securityonline.info/citrix-netscaler-vulnerabilities-november-2026/"
-        },
-        {
-          "nome": "Beazley Security Labs",
-          "url": "https://labs.beazley.security/advisories/BSL-A1246"
-        }
-      ],
-      "status": "Novo"
+      "status": "Pendente"
     },
     {
       "data": "2026-11-11",
