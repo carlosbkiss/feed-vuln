@@ -1,0 +1,40 @@
+{
+  "CVE-2025-42884": {
+    "cve": "CVE-2025-42884",
+    "produto": "SAP NetWeaver",
+    "titulo": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+    "cvss": 6.5,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-20",
+      "prazo": "2026-11-23",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2025-11-11T01:15:36Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2025-11-11T01:15:36Z",
+    "exibido_em": "2026-11-20T18:39:04Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0028,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884",
+        "publicado": "2025-11-11T01:15:36Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-42884",
+        "publicado": "2026-11-20"
+      }
+    ],
+    "prioridade_max": "P1"
+  }
+}

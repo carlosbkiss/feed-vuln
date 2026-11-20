@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-20T18:39:04Z",
+  "atualizado": "2026-11-20T19:07:33Z",
   "itens": [
     {
       "cve": "CVE-2026-123890",
@@ -1479,52 +1479,6 @@
       "escalado": true
     },
     {
-      "cve": "CVE-2025-42884",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-42884",
-          "publicado": "2026-11-20",
-          "visto_em": "2026-11-20T18:39:04Z"
-        }
-      ],
-      "detectado": "2026-11-20T18:39:04Z",
-      "kev": {
-        "adicionado": "2026-11-20",
-        "prazo": "2026-11-23",
-        "ransomware": "Unknown"
-      },
-      "produto": "SAP NetWeaver",
-      "titulo": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
-      "resumo": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used…",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-20T00:00:00Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884",
-      "ultima_atividade": "2026-11-20T00:00:00Z",
-      "exibido_em": "2026-11-20T18:39:04Z",
-      "prioridade": "P1",
-      "regra": "explorado em plataforma corporativa",
-      "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
-      "epss": {
-        "score": 0.0028,
-        "percentil": 0.2048,
-        "data": "2026-11-20"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-20T18:39:04Z"
-      }
-    },
-    {
       "cve": "CVE-2026-91569",
       "fontes": [
         {
@@ -1864,6 +1818,65 @@
       }
     },
     {
+      "cve": "CVE-2025-42884",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2025-42884",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884",
+          "publicado": "2025-11-11T01:15:36Z",
+          "visto_em": "2026-11-20T19:07:33Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-42884",
+          "publicado": "2026-11-20",
+          "visto_em": "2026-11-20T18:39:04Z"
+        }
+      ],
+      "detectado": "2026-11-20T18:39:04Z",
+      "kev": {
+        "adicionado": "2026-11-20",
+        "prazo": "2026-11-23",
+        "ransomware": "Unknown"
+      },
+      "produto": "SAP NetWeaver",
+      "titulo": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+      "resumo": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used…",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2025-11-11T01:15:36Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884",
+      "ultima_atividade": "2026-11-20T00:00:00Z",
+      "exibido_em": "2026-11-20T18:39:04Z",
+      "prioridade": "P1",
+      "regra": "explorado em plataforma corporativa",
+      "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
+      "epss": {
+        "score": 0.0028,
+        "percentil": 0.2048,
+        "data": "2026-11-20"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-20T18:39:04Z"
+      },
+      "cvss": 6.5,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2025-11-11T01:15:36Z",
+      "nvd_checado_em": "2026-11-20T19:07:33Z"
+    },
+    {
       "cve": "CVE-2026-84236",
       "fontes": [
         {
@@ -1963,7 +1976,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-19T10:17:28Z",
       "resumo": "The WP Duplicate – WordPress Migration Plugin plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.1.11 via the save_single_batch_file function. This is due to a PHP type-juggling authentication bypass via loose…",
-      "nvd_checado_em": "2026-11-20T18:39:04Z",
+      "nvd_checado_em": "2026-11-20T19:07:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -3685,6 +3698,12 @@
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "Cyber Security News",
+      "titulo": "Hackers Use AI-Powered ARTEX Framework to Automate Cyberattacks Without Relying on Zero-Day Exploits",
+      "link": "https://cybersecuritynews.com/hackers-use-ai-powered-artex-framework/",
+      "publicado": "2026-11-20T11:27:05Z"
+    },
     {
       "fonte": "BleepingComputer",
       "titulo": "VMware patches vCenter zero-day exploited in attacks since September",
