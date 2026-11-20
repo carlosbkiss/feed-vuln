@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-20T14:38:57Z",
+  "atualizado": "2026-11-20T18:38:47Z",
   "janela": "13 a 20/nov/2026",
   "itens": [
     {
@@ -33,8 +33,12 @@
       "zero_day": false,
       "exploracao": "Não",
       "prioridade": "P1",
-      "tratamento": "Quatro RCE nota 9.9 no servidor de CI; versão corrigida a confirmar no boletim da JetBrains. Levantar servidores TeamCity on-premise, atualizar assim que confirmado e tirar o servidor da internet; TeamCity já foi alvo de exploração em massa no passado.",
+      "tratamento": "Quatro RCE nota 9.9 no servidor de CI (argumentos em VCS roots Perforce e Mercurial e path traversal na importação de projetos), sem exploração nem exploit público segundo a JetBrains. Subir para 2026.1.3 ou 2025.11.8 (a fonte cita também 2025.11.7: conferir no boletim da JetBrains), revisar quem pode editar projetos e tirar a interface do TeamCity da internet.",
       "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/teamcity-security-update-fixes-21-flaws/"
+        },
         {
           "nome": "CVE Brief 19/11",
           "url": "https://cvebrief.com/archive/2026/11/19/"
