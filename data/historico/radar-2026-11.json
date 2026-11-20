@@ -32,6 +32,39 @@
     ],
     "prioridade_max": "P2"
   },
+  "CVE-2025-42884": {
+    "cve": "CVE-2025-42884",
+    "produto": "SAP NetWeaver",
+    "titulo": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+    "cvss": null,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-20",
+      "prazo": "2026-11-23",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-20T00:00:00Z",
+    "primeira_noticia": null,
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-20T18:39:04Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0028,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-42884",
+        "publicado": "2026-11-20"
+      }
+    ],
+    "prioridade_max": "P1"
+  },
   "CVE-2025-71457": {
     "cve": "CVE-2025-71457",
     "produto": "",
@@ -1146,28 +1179,44 @@
   },
   "CVE-2026-123890": {
     "cve": "CVE-2026-123890",
-    "produto": "",
-    "titulo": "",
-    "cvss": null,
+    "produto": "Broadcom VMware vCenter",
+    "titulo": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+    "cvss": 9.8,
     "prioridade": "P0",
     "elegivel_por": [
-      "zero-day"
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
     ],
     "zero_day": true,
-    "kev": null,
-    "primeira_vez": "2026-11-19T16:30:55Z",
+    "kev": {
+      "adicionado": "2026-11-20",
+      "prazo": "2026-11-23",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-19T15:17:25Z",
     "primeira_noticia": "2026-11-19T16:30:55Z",
-    "publicado_nvd": null,
+    "publicado_nvd": "2026-11-19T15:17:25Z",
     "exibido_em": "2026-11-20T10:40:33Z",
     "aguardando_nota_desde": "2026-11-19T16:30:55Z",
-    "nota_chegou_em": null,
+    "nota_chegou_em": "2026-11-20T18:39:04Z",
     "epss_max": 0.0084,
     "poc_qtd": 2,
     "fontes": [
       {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
+        "publicado": "2026-11-19T15:17:25Z"
+      },
+      {
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/vmware-vcenter-authentication-bypass/",
         "publicado": "2026-11-19T16:30:55Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-123890",
+        "publicado": "2026-11-20"
       },
       {
         "nome": "Cyber Security News",
@@ -1552,24 +1601,35 @@
   },
   "CVE-2026-129448": {
     "cve": "CVE-2026-129448",
-    "produto": "",
-    "titulo": "",
-    "cvss": null,
-    "prioridade": "P2",
+    "produto": "Apache Roller",
+    "titulo": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+    "cvss": 9.8,
+    "prioridade": "P0",
     "elegivel_por": [
-      "zero-day"
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
     ],
     "zero_day": true,
-    "kev": null,
-    "primeira_vez": "2026-11-18T17:10:45Z",
+    "kev": {
+      "adicionado": "2026-11-20",
+      "prazo": "2026-11-23",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-17T11:17:28Z",
     "primeira_noticia": "2026-11-18T17:10:45Z",
-    "publicado_nvd": null,
+    "publicado_nvd": "2026-11-17T11:17:28Z",
     "exibido_em": "2026-11-19T02:35:56Z",
     "aguardando_nota_desde": "2026-11-18T17:10:45Z",
-    "nota_chegou_em": null,
+    "nota_chegou_em": "2026-11-20T18:39:04Z",
     "epss_max": 0.0164,
     "poc_qtd": 2,
     "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
+        "publicado": "2026-11-17T11:17:28Z"
+      },
       {
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
@@ -1579,9 +1639,14 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/apache-roller-rce-exploitation/",
         "publicado": "2026-11-19T05:15:41Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-129448",
+        "publicado": "2026-11-20"
       }
     ],
-    "prioridade_max": "P2"
+    "prioridade_max": "P0"
   },
   "CVE-2026-14492": {
     "cve": "CVE-2026-14492",

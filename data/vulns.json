@@ -1,9 +1,17 @@
 {
-  "atualizado": "2026-11-20T10:40:33Z",
+  "atualizado": "2026-11-20T18:39:04Z",
   "itens": [
     {
       "cve": "CVE-2026-123890",
       "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-123890",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
+          "publicado": "2026-11-19T15:17:25Z",
+          "visto_em": "2026-11-20T18:39:04Z"
+        },
         {
           "id": "csn",
           "nome": "Cyber Security News",
@@ -11,6 +19,14 @@
           "link": "https://cybersecuritynews.com/vmware-vcenter-authentication-bypass/",
           "publicado": "2026-11-19T16:30:55Z",
           "visto_em": "2026-11-19T18:38:58Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-123890",
+          "publicado": "2026-11-20",
+          "visto_em": "2026-11-20T18:39:04Z"
         },
         {
           "id": "csn",
@@ -32,14 +48,16 @@
       "detectado": "2026-11-19T18:38:58Z",
       "aguardando_nota_desde": "2026-11-19T16:30:55Z",
       "elegivel_por": [
-        "zero-day"
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
       ],
-      "primeira_vez": "2026-11-19T16:30:55Z",
+      "primeira_vez": "2026-11-19T15:17:25Z",
       "primeira_noticia": "2026-11-19T16:30:55Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
       "ultima_atividade": "2026-11-20T09:38:15Z",
       "zero_day": true,
-      "zero_day_motivo": "The Hacker News: exploração ativa relatada",
+      "zero_day_motivo": "CISA KEV",
       "exibido_em": "2026-11-20T10:40:33Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -48,7 +66,105 @@
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123890.json",
         "checado": "2026-11-20T10:40:33Z"
+      },
+      "kev": {
+        "adicionado": "2026-11-20",
+        "prazo": "2026-11-23",
+        "ransomware": "Unknown"
+      },
+      "produto": "Broadcom VMware vCenter",
+      "titulo": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "resumo": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and gain unauthorized…",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-19T15:17:25Z",
+      "nvd_checado_em": "2026-11-20T18:39:04Z",
+      "nota_chegou_em": "2026-11-20T18:39:04Z",
+      "epss": {
+        "score": 0.0084,
+        "percentil": 0.5885,
+        "data": "2026-11-20"
       }
+    },
+    {
+      "cve": "CVE-2026-129448",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-129448",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
+          "publicado": "2026-11-17T11:17:28Z",
+          "visto_em": "2026-11-20T18:39:04Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+          "link": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+          "publicado": "2026-11-18T17:10:45Z",
+          "visto_em": "2026-11-19T02:35:56Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Hackers Actively Exploit Critical Apache Roller RCE Flaw to Execute Code Without Authentication",
+          "link": "https://cybersecuritynews.com/apache-roller-rce-exploitation/",
+          "publicado": "2026-11-19T05:15:41Z",
+          "visto_em": "2026-11-19T10:39:29Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-129448",
+          "publicado": "2026-11-20",
+          "visto_em": "2026-11-20T18:39:04Z"
+        }
+      ],
+      "detectado": "2026-11-19T02:35:56Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "aguardando_nota_desde": "2026-11-18T17:10:45Z",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-17T11:17:28Z",
+      "primeira_noticia": "2026-11-18T17:10:45Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
+      "ultima_atividade": "2026-11-20T00:00:00Z",
+      "exibido_em": "2026-11-19T02:35:56Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0119,
+        "percentil": 0.6872,
+        "data": "2026-11-20"
+      },
+      "poc": {
+        "qtd": 2,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-129448.json",
+        "checado": "2026-11-20T10:40:33Z"
+      },
+      "kev": {
+        "adicionado": "2026-11-20",
+        "prazo": "2026-11-23",
+        "ransomware": "Unknown"
+      },
+      "produto": "Apache Roller",
+      "titulo": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+      "resumo": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE…",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-17T11:17:28Z",
+      "nvd_checado_em": "2026-11-20T18:39:04Z",
+      "nota_chegou_em": "2026-11-20T18:39:04Z",
+      "escalado": true
     },
     {
       "cve": "CVE-2026-123039",
@@ -126,8 +242,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0194,
-        "percentil": 0.8057,
-        "data": "2026-11-19"
+        "percentil": 0.8063,
+        "data": "2026-11-20"
       },
       "poc": {
         "qtd": 2,
@@ -186,8 +302,8 @@
       },
       "epss": {
         "score": 0.0074,
-        "percentil": 0.553,
-        "data": "2026-11-19"
+        "percentil": 0.5543,
+        "data": "2026-11-20"
       },
       "cvss": 10.0,
       "cvss_versao": "3.1",
@@ -241,8 +357,8 @@
       },
       "epss": {
         "score": 0.0022,
-        "percentil": 0.1241,
-        "data": "2026-11-19"
+        "percentil": 0.1252,
+        "data": "2026-11-20"
       },
       "cvss": 9.6,
       "cvss_versao": "3.1",
@@ -335,8 +451,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0053,
-        "percentil": 0.4592,
-        "data": "2026-11-19"
+        "percentil": 0.4606,
+        "data": "2026-11-20"
       },
       "poc": {
         "qtd": 1,
@@ -428,9 +544,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0177,
-        "percentil": 0.7866,
-        "data": "2026-11-19"
+        "score": 0.0183,
+        "percentil": 0.7943,
+        "data": "2026-11-20"
       },
       "poc": {
         "qtd": 4,
@@ -533,8 +649,8 @@
       },
       "epss": {
         "score": 0.0053,
-        "percentil": 0.4573,
-        "data": "2026-11-19"
+        "percentil": 0.4587,
+        "data": "2026-11-20"
       }
     },
     {
@@ -600,8 +716,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.2208,
-        "percentil": 0.9771,
-        "data": "2026-11-19"
+        "percentil": 0.9772,
+        "data": "2026-11-20"
       },
       "poc": {
         "qtd": 7,
@@ -700,8 +816,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.189,
-        "percentil": 0.9735,
-        "data": "2026-11-19"
+        "percentil": 0.9736,
+        "data": "2026-11-20"
       },
       "poc": {
         "qtd": 44,
@@ -764,8 +880,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0573,
-        "percentil": 0.9321,
-        "data": "2026-11-19"
+        "percentil": 0.9323,
+        "data": "2026-11-20"
       },
       "poc": {
         "qtd": 1,
@@ -850,8 +966,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0069,
-        "percentil": 0.536,
-        "data": "2026-11-19"
+        "percentil": 0.5375,
+        "data": "2026-11-20"
       },
       "poc": {
         "qtd": 1,
@@ -958,13 +1074,83 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.1095,
-        "percentil": 0.9598,
-        "data": "2026-11-19"
+        "percentil": 0.9599,
+        "data": "2026-11-20"
       },
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-116606.json",
         "checado": "2026-11-19T19:29:36Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-76466",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-76466",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
+          "publicado": "2026-10-21T17:19:06Z",
+          "visto_em": "2026-11-20T18:39:04Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-76466",
+          "publicado": "2026-11-20",
+          "visto_em": "2026-11-20T18:39:04Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
+          "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
+          "publicado": "2026-11-20T10:32:50Z",
+          "visto_em": "2026-11-20T14:39:19Z"
+        }
+      ],
+      "detectado": "2026-11-20T14:39:19Z",
+      "aguardando_nota_desde": "2026-11-20T10:32:50Z",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-21T17:19:06Z",
+      "primeira_noticia": "2026-11-20T10:32:50Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
+      "ultima_atividade": "2026-11-20T10:32:50Z",
+      "kev": {
+        "adicionado": "2026-11-20",
+        "prazo": "2026-11-23",
+        "ransomware": "Unknown"
+      },
+      "produto": "Cisco Expressway Series",
+      "titulo": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+      "resumo": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-21T17:19:06Z",
+      "nvd_checado_em": "2026-11-20T18:39:04Z",
+      "nota_chegou_em": "2026-11-20T18:39:04Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "exibido_em": "2026-11-20T18:39:04Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0042,
+        "percentil": 0.3684,
+        "data": "2026-11-20"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76466.json",
+        "checado": "2026-11-20T18:39:04Z"
       }
     },
     {
@@ -1029,8 +1215,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0064,
-        "percentil": 0.5136,
-        "data": "2026-11-19"
+        "percentil": 0.5151,
+        "data": "2026-11-20"
       },
       "poc": {
         "qtd": 0,
@@ -1106,9 +1292,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.2519,
-        "percentil": 0.9797,
-        "data": "2026-11-19"
+        "score": 0.2566,
+        "percentil": 0.9801,
+        "data": "2026-11-20"
       },
       "poc": {
         "qtd": 6,
@@ -1200,8 +1386,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0098,
-        "percentil": 0.6284,
-        "data": "2026-11-19"
+        "percentil": 0.6295,
+        "data": "2026-11-20"
       },
       "poc": {
         "qtd": 0,
@@ -1276,9 +1462,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0215,
-        "percentil": 0.8251,
-        "data": "2026-11-19"
+        "score": 0.0242,
+        "percentil": 0.8454,
+        "data": "2026-11-20"
       },
       "poc": {
         "qtd": 2,
@@ -1291,6 +1477,52 @@
       "publicado_nvd": "2025-03-19T02:15:27Z",
       "nvd_checado_em": "2026-11-19T02:35:56Z",
       "escalado": true
+    },
+    {
+      "cve": "CVE-2025-42884",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-42884",
+          "publicado": "2026-11-20",
+          "visto_em": "2026-11-20T18:39:04Z"
+        }
+      ],
+      "detectado": "2026-11-20T18:39:04Z",
+      "kev": {
+        "adicionado": "2026-11-20",
+        "prazo": "2026-11-23",
+        "ransomware": "Unknown"
+      },
+      "produto": "SAP NetWeaver",
+      "titulo": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+      "resumo": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used…",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-20T00:00:00Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884",
+      "ultima_atividade": "2026-11-20T00:00:00Z",
+      "exibido_em": "2026-11-20T18:39:04Z",
+      "prioridade": "P1",
+      "regra": "explorado em plataforma corporativa",
+      "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
+      "epss": {
+        "score": 0.0028,
+        "percentil": 0.2048,
+        "data": "2026-11-20"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-20T18:39:04Z"
+      }
     },
     {
       "cve": "CVE-2026-91569",
@@ -1329,8 +1561,8 @@
       },
       "epss": {
         "score": 0.0042,
-        "percentil": 0.3731,
-        "data": "2026-11-19"
+        "percentil": 0.3744,
+        "data": "2026-11-20"
       }
     },
     {
@@ -1369,9 +1601,9 @@
         "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
-        "score": 0.0038,
-        "percentil": 0.3314,
-        "data": "2026-11-19"
+        "score": 0.0036,
+        "percentil": 0.2997,
+        "data": "2026-11-20"
       }
     },
     {
@@ -1411,8 +1643,8 @@
       },
       "epss": {
         "score": 0.0038,
-        "percentil": 0.3251,
-        "data": "2026-11-19"
+        "percentil": 0.3265,
+        "data": "2026-11-20"
       }
     },
     {
@@ -1451,9 +1683,9 @@
         "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
-        "score": 0.0023,
-        "percentil": 0.1448,
-        "data": "2026-11-19"
+        "score": 0.0022,
+        "percentil": 0.1302,
+        "data": "2026-11-20"
       }
     },
     {
@@ -1492,9 +1724,9 @@
         "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
-        "score": 0.004,
-        "percentil": 0.3492,
-        "data": "2026-11-19"
+        "score": 0.0038,
+        "percentil": 0.3265,
+        "data": "2026-11-20"
       }
     },
     {
@@ -1534,8 +1766,8 @@
       },
       "epss": {
         "score": 0.0036,
-        "percentil": 0.2987,
-        "data": "2026-11-19"
+        "percentil": 0.3001,
+        "data": "2026-11-20"
       }
     },
     {
@@ -1627,8 +1859,8 @@
       },
       "epss": {
         "score": 0.0162,
-        "percentil": 0.7659,
-        "data": "2026-11-19"
+        "percentil": 0.7667,
+        "data": "2026-11-20"
       }
     },
     {
@@ -1665,6 +1897,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-20T02:21:11Z"
+      },
+      "epss": {
+        "score": 0.0063,
+        "percentil": 0.5098,
+        "data": "2026-11-20"
       }
     },
     {
@@ -1701,6 +1938,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-20T02:21:11Z"
+      },
+      "epss": {
+        "score": 0.004,
+        "percentil": 0.3478,
+        "data": "2026-11-20"
       }
     },
     {
@@ -1721,7 +1963,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-19T10:17:28Z",
       "resumo": "The WP Duplicate – WordPress Migration Plugin plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.1.11 via the save_single_batch_file function. This is due to a PHP type-juggling authentication bypass via loose…",
-      "nvd_checado_em": "2026-11-20T10:40:33Z",
+      "nvd_checado_em": "2026-11-20T18:39:04Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1739,55 +1981,9 @@
         "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
-        "score": 0.0236,
-        "percentil": 0.841,
-        "data": "2026-11-19"
-      }
-    },
-    {
-      "cve": "CVE-2026-129448",
-      "fontes": [
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
-          "link": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
-          "publicado": "2026-11-18T17:10:45Z",
-          "visto_em": "2026-11-19T02:35:56Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Hackers Actively Exploit Critical Apache Roller RCE Flaw to Execute Code Without Authentication",
-          "link": "https://cybersecuritynews.com/apache-roller-rce-exploitation/",
-          "publicado": "2026-11-19T05:15:41Z",
-          "visto_em": "2026-11-19T10:39:29Z"
-        }
-      ],
-      "detectado": "2026-11-19T02:35:56Z",
-      "zero_day": true,
-      "zero_day_motivo": "The Hacker News: exploração ativa relatada",
-      "aguardando_nota_desde": "2026-11-18T17:10:45Z",
-      "elegivel_por": [
-        "zero-day"
-      ],
-      "primeira_vez": "2026-11-18T17:10:45Z",
-      "primeira_noticia": "2026-11-18T17:10:45Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
-      "ultima_atividade": "2026-11-19T05:15:41Z",
-      "exibido_em": "2026-11-19T02:35:56Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.0119,
-        "percentil": 0.6863,
-        "data": "2026-11-19"
-      },
-      "poc": {
-        "qtd": 2,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-129448.json",
-        "checado": "2026-11-20T10:40:33Z"
+        "score": 0.0122,
+        "percentil": 0.6952,
+        "data": "2026-11-20"
       }
     },
     {
@@ -1827,8 +2023,8 @@
       },
       "epss": {
         "score": 0.0024,
-        "percentil": 0.1504,
-        "data": "2026-11-19"
+        "percentil": 0.1515,
+        "data": "2026-11-20"
       }
     },
     {
@@ -1867,9 +2063,9 @@
         "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
-        "score": 0.0026,
-        "percentil": 0.1766,
-        "data": "2026-11-19"
+        "score": 0.0024,
+        "percentil": 0.1593,
+        "data": "2026-11-20"
       }
     },
     {
@@ -1909,8 +2105,8 @@
       },
       "epss": {
         "score": 0.0041,
-        "percentil": 0.3605,
-        "data": "2026-11-19"
+        "percentil": 0.3619,
+        "data": "2026-11-20"
       }
     },
     {
@@ -1950,8 +2146,8 @@
       },
       "epss": {
         "score": 0.0045,
-        "percentil": 0.3967,
-        "data": "2026-11-19"
+        "percentil": 0.398,
+        "data": "2026-11-20"
       }
     },
     {
@@ -1991,8 +2187,8 @@
       },
       "epss": {
         "score": 0.0031,
-        "percentil": 0.2486,
-        "data": "2026-11-19"
+        "percentil": 0.2499,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2032,8 +2228,8 @@
       },
       "epss": {
         "score": 0.0042,
-        "percentil": 0.3748,
-        "data": "2026-11-19"
+        "percentil": 0.3761,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2073,8 +2269,8 @@
       },
       "epss": {
         "score": 0.0042,
-        "percentil": 0.3676,
-        "data": "2026-11-19"
+        "percentil": 0.369,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2113,9 +2309,9 @@
         "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
-        "score": 0.0038,
-        "percentil": 0.3268,
-        "data": "2026-11-19"
+        "score": 0.0036,
+        "percentil": 0.3054,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2155,8 +2351,8 @@
       },
       "epss": {
         "score": 0.0061,
-        "percentil": 0.4981,
-        "data": "2026-11-19"
+        "percentil": 0.4995,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2196,8 +2392,8 @@
       },
       "epss": {
         "score": 0.0077,
-        "percentil": 0.5655,
-        "data": "2026-11-19"
+        "percentil": 0.5668,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2237,8 +2433,8 @@
       },
       "epss": {
         "score": 0.005,
-        "percentil": 0.4393,
-        "data": "2026-11-19"
+        "percentil": 0.4407,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2278,8 +2474,8 @@
       },
       "epss": {
         "score": 0.0043,
-        "percentil": 0.3765,
-        "data": "2026-11-19"
+        "percentil": 0.3777,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2319,8 +2515,8 @@
       },
       "epss": {
         "score": 0.0063,
-        "percentil": 0.5122,
-        "data": "2026-11-19"
+        "percentil": 0.5137,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2360,8 +2556,8 @@
       },
       "epss": {
         "score": 0.0055,
-        "percentil": 0.468,
-        "data": "2026-11-19"
+        "percentil": 0.4693,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2401,8 +2597,8 @@
       },
       "epss": {
         "score": 0.0134,
-        "percentil": 0.7187,
-        "data": "2026-11-19"
+        "percentil": 0.7196,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2434,8 +2630,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0086,
-        "percentil": 0.5928,
-        "data": "2026-11-19"
+        "percentil": 0.5941,
+        "data": "2026-11-20"
       },
       "poc": {
         "qtd": 0,
@@ -2480,8 +2676,8 @@
       },
       "epss": {
         "score": 0.006,
-        "percentil": 0.4969,
-        "data": "2026-11-19"
+        "percentil": 0.4983,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2529,8 +2725,8 @@
       },
       "epss": {
         "score": 0.0066,
-        "percentil": 0.5226,
-        "data": "2026-11-19"
+        "percentil": 0.524,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2580,8 +2776,8 @@
       },
       "epss": {
         "score": 0.0081,
-        "percentil": 0.5765,
-        "data": "2026-11-19"
+        "percentil": 0.5778,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2631,8 +2827,8 @@
       },
       "epss": {
         "score": 0.0086,
-        "percentil": 0.593,
-        "data": "2026-11-19"
+        "percentil": 0.5943,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2672,8 +2868,8 @@
       },
       "epss": {
         "score": 0.0015,
-        "percentil": 0.0422,
-        "data": "2026-11-19"
+        "percentil": 0.042,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2721,8 +2917,8 @@
       },
       "epss": {
         "score": 0.0043,
-        "percentil": 0.3807,
-        "data": "2026-11-19"
+        "percentil": 0.382,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2770,8 +2966,8 @@
       },
       "epss": {
         "score": 0.0032,
-        "percentil": 0.2605,
-        "data": "2026-11-19"
+        "percentil": 0.2618,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2819,8 +3015,8 @@
       },
       "epss": {
         "score": 0.0043,
-        "percentil": 0.3807,
-        "data": "2026-11-19"
+        "percentil": 0.382,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2860,8 +3056,8 @@
       },
       "epss": {
         "score": 0.0031,
-        "percentil": 0.2458,
-        "data": "2026-11-19"
+        "percentil": 0.2471,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2901,8 +3097,8 @@
       },
       "epss": {
         "score": 0.0026,
-        "percentil": 0.1779,
-        "data": "2026-11-19"
+        "percentil": 0.1792,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2942,8 +3138,8 @@
       },
       "epss": {
         "score": 0.0041,
-        "percentil": 0.3594,
-        "data": "2026-11-19"
+        "percentil": 0.3608,
+        "data": "2026-11-20"
       }
     },
     {
@@ -2983,8 +3179,8 @@
       },
       "epss": {
         "score": 0.0041,
-        "percentil": 0.3594,
-        "data": "2026-11-19"
+        "percentil": 0.3608,
+        "data": "2026-11-20"
       }
     },
     {
@@ -3024,8 +3220,8 @@
       },
       "epss": {
         "score": 0.0028,
-        "percentil": 0.2122,
-        "data": "2026-11-19"
+        "percentil": 0.2134,
+        "data": "2026-11-20"
       }
     },
     {
@@ -3117,8 +3313,8 @@
       "nota_chegou_em": "2026-11-11T00:04:15Z",
       "epss": {
         "score": 0.0096,
-        "percentil": 0.6236,
-        "data": "2026-11-19"
+        "percentil": 0.6248,
+        "data": "2026-11-20"
       }
     },
     {
@@ -3158,8 +3354,8 @@
       },
       "epss": {
         "score": 0.004,
-        "percentil": 0.3492,
-        "data": "2026-11-19"
+        "percentil": 0.3505,
+        "data": "2026-11-20"
       }
     },
     {
@@ -3199,8 +3395,8 @@
       },
       "epss": {
         "score": 0.0153,
-        "percentil": 0.7533,
-        "data": "2026-11-19"
+        "percentil": 0.7541,
+        "data": "2026-11-20"
       }
     },
     {
@@ -3240,8 +3436,8 @@
       },
       "epss": {
         "score": 0.0035,
-        "percentil": 0.2935,
-        "data": "2026-11-19"
+        "percentil": 0.2949,
+        "data": "2026-11-20"
       }
     },
     {
@@ -3313,8 +3509,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0047,
-        "percentil": 0.412,
-        "data": "2026-11-19"
+        "percentil": 0.4133,
+        "data": "2026-11-20"
       },
       "poc": {
         "qtd": 3,
@@ -3403,8 +3599,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0908,
-        "percentil": 0.954,
-        "data": "2026-11-19"
+        "percentil": 0.9542,
+        "data": "2026-11-20"
       },
       "poc": {
         "qtd": 0,
@@ -3472,9 +3668,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.6191,
-        "percentil": 0.9919,
-        "data": "2026-11-19"
+        "score": 0.689,
+        "percentil": 0.9937,
+        "data": "2026-11-20"
       },
       "poc": {
         "qtd": 1,
@@ -3632,12 +3828,6 @@
       "titulo": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
       "link": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
       "publicado": "2026-11-07T00:00:55Z"
-    },
-    {
-      "fonte": "The Hacker News",
-      "titulo": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
-      "link": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
-      "publicado": "2026-11-06T16:08:38Z"
     }
   ]
 }
