@@ -1,6 +1,55 @@
 {
-  "atualizado": "2026-11-20T02:21:11Z",
+  "atualizado": "2026-11-20T10:40:33Z",
   "itens": [
+    {
+      "cve": "CVE-2026-123890",
+      "fontes": [
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical VMware vCenter Flaws Let Hackers Bypass Authentication and Access Servers",
+          "link": "https://cybersecuritynews.com/vmware-vcenter-authentication-bypass/",
+          "publicado": "2026-11-19T16:30:55Z",
+          "visto_em": "2026-11-19T18:38:58Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Hackers Exploit VMware vCenter 0-Day Since September to Hijack Admin Accounts and Steal VM Data",
+          "link": "https://cybersecuritynews.com/hackers-exploit-vmware-vcenter-0-day/",
+          "publicado": "2026-11-20T01:47:52Z",
+          "visto_em": "2026-11-20T02:21:11Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
+          "link": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
+          "publicado": "2026-11-20T09:38:15Z",
+          "visto_em": "2026-11-20T10:40:33Z"
+        }
+      ],
+      "detectado": "2026-11-19T18:38:58Z",
+      "aguardando_nota_desde": "2026-11-19T16:30:55Z",
+      "elegivel_por": [
+        "zero-day"
+      ],
+      "primeira_vez": "2026-11-19T16:30:55Z",
+      "primeira_noticia": "2026-11-19T16:30:55Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
+      "ultima_atividade": "2026-11-20T09:38:15Z",
+      "zero_day": true,
+      "zero_day_motivo": "The Hacker News: exploração ativa relatada",
+      "exibido_em": "2026-11-20T10:40:33Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "poc": {
+        "qtd": 2,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123890.json",
+        "checado": "2026-11-20T10:40:33Z"
+      }
+    },
     {
       "cve": "CVE-2026-123039",
       "fontes": [
@@ -1276,7 +1325,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T10:39:29Z"
+        "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
         "score": 0.0042,
@@ -1317,7 +1366,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T10:39:29Z"
+        "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
         "score": 0.0038,
@@ -1358,7 +1407,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T10:39:29Z"
+        "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
         "score": 0.0038,
@@ -1399,7 +1448,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T10:39:29Z"
+        "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
         "score": 0.0023,
@@ -1440,7 +1489,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T10:39:29Z"
+        "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
         "score": 0.004,
@@ -1481,7 +1530,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T10:39:29Z"
+        "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
         "score": 0.0036,
@@ -1672,7 +1721,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-19T10:17:28Z",
       "resumo": "The WP Duplicate – WordPress Migration Plugin plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.1.11 via the save_single_batch_file function. This is due to a PHP type-juggling authentication bypass via loose…",
-      "nvd_checado_em": "2026-11-20T02:21:11Z",
+      "nvd_checado_em": "2026-11-20T10:40:33Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1687,7 +1736,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T10:39:29Z"
+        "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
         "score": 0.0236,
@@ -1736,9 +1785,9 @@
         "data": "2026-11-19"
       },
       "poc": {
-        "qtd": 1,
+        "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-129448.json",
-        "checado": "2026-11-19T02:35:56Z"
+        "checado": "2026-11-20T10:40:33Z"
       }
     },
     {
@@ -1774,7 +1823,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T10:39:29Z"
+        "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
         "score": 0.0024,
@@ -1815,7 +1864,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T10:39:29Z"
+        "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
         "score": 0.0026,
@@ -1856,7 +1905,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T10:39:29Z"
+        "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
         "score": 0.0041,
@@ -1897,7 +1946,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T10:39:29Z"
+        "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
         "score": 0.0045,
@@ -1938,7 +1987,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T10:39:29Z"
+        "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
         "score": 0.0031,
@@ -1979,7 +2028,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T10:39:29Z"
+        "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
         "score": 0.0042,
@@ -2020,7 +2069,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T10:39:29Z"
+        "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
         "score": 0.0042,
@@ -2061,7 +2110,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T10:39:29Z"
+        "checado": "2026-11-20T10:40:33Z"
       },
       "epss": {
         "score": 0.0038,
