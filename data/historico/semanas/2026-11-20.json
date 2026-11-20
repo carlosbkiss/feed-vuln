@@ -1,0 +1,185 @@
+{
+  "periodo": "14 a 20 de novembro de 2026",
+  "atualizado": "2026-11-20T14:54:57Z",
+  "kpis": [
+    {
+      "n": "5",
+      "l": "CVEs incluídas no CISA KEV",
+      "destaque": false
+    },
+    {
+      "n": "2",
+      "l": "zero-days relevantes para banco",
+      "destaque": true
+    },
+    {
+      "n": "27",
+      "l": "CVEs novas com CVSS ≥ 9.0 relevantes",
+      "destaque": false
+    },
+    {
+      "n": "8",
+      "l": "frentes P0 para 24h",
+      "destaque": true
+    }
+  ],
+  "tese": "A semana saiu da borda e foi para o miolo: o ataque mirou a camada que administra tudo (vCenter, Confluence, Puppet, Expressway em cluster) e os scripts de terceiros nas páginas públicas, onde um patch sozinho não desfaz o acesso já obtido.",
+  "historia": [
+    "Na segunda, 16/nov, uma falha no cadastro de contas da Optimizely permitiu injetar skimmer de cartão e roubo de cookies em mais de 178 sites, inclusive do setor financeiro, mostrando que o script de teste A/B na página de login também é superfície de ataque.",
+    "Na terça, 17/nov, o pacote de segurança da Oracle trouxe quatro notas 10 sem login em WebLogic e Oracle Access Manager, 9.9 no Database e o Java4Shell no Java SE, e a CISA pôs no KEV o Puppet, que distribui configuração para todos os servidores, com PoC público desde 03/nov.",
+    "Na quarta, 18/nov, a F5 soltou patches de emergência para seis falhas críticas no BIG-IP, com mais de 177 mil APM expostos, e para o NGINX2Root, e a CISA incluiu no KEV a falha do Apache Axis que abre o Confluence e o N-central, com prazo em 21/nov.",
+    "Na quinta, 19/nov, a Broadcom corrigiu um zero-day do vCenter explorado desde setembro por espionagem ligada à China, que rouba a chave SAML e forja tokens de admin que o patch não derruba; no mesmo dia a F6 relatou invasão de Cisco Expressway pela credencial fixa, e saíram o phpAfterShell, que contorna o patch do PHP2Shell, e críticas 9.9 no TeamCity.",
+    "Canais de cliente (app, internet banking, PIX) não tiveram falha direta, mas foram tocados indiretamente pelos scripts de terceiros nas páginas públicas e pelos F5 e NGINX que ficam na frente deles, e o vCenter hospeda o que está por trás; o radar teve notícia antes da nota em 15 CVEs, com mediana de 23h, e antes do KEV em 100% dos casos.",
+    "Fontes da semana: Cyber Security News saiu antes de todos em 1 vulnerabilidade, o zero-day do vCenter, e The Hacker News em 1, antecipando na maioria dos dias; CISA Advisories trouxe 3 exclusivas com o KEV de 18/nov e Cyber Security News 2; SecurityWeek, Cisco PSIRT e BleepingComputer só repetiram, e Dark Reading, Cybernews, Chrome Releases, Palo Alto e Fortinet PSIRT não tiveram nada no radar."
+  ],
+  "p0": [
+    {
+      "titulo": "VMware vCenter Server",
+      "cve": "CVE-2026-123890",
+      "cvss": "9.8",
+      "tags": [
+        "Zero-day",
+        "Espionagem",
+        "Tokens SAML"
+      ],
+      "onde": "Virtualização que hospeda core, internet banking, AD e bancos de dados.",
+      "impacto": "Bypass de autenticação no vmdir, roubo da chave SAML e tokens de admin forjados; explorado desde setembro e o patch não invalida tokens emitidos.",
+      "acao": "vCenter 8.0 U3m, 9.0.2.0200 ou 9.1.1.0200, portas de gestão só na rede de gestão e caça desde setembro; se houver suspeita, trocar o certificado STS e as credenciais SSO."
+    },
+    {
+      "titulo": "Apache Axis no Confluence e no N-central",
+      "cve": "CVE-2026-90436",
+      "cvss": "9.8",
+      "tags": [
+        "KEV 18/nov",
+        "Prazo 21/nov",
+        "Credenciais"
+      ],
+      "onde": "Wiki interna Confluence Data Center e RMM de prestadores de TI.",
+      "impacto": "Execução remota pela Remote API; a Rapid7 viu ataque chegar a conta de serviço, data warehouse e Microsoft 365 em 12h.",
+      "acao": "Confluence 9.2.28 ou 10.x, ou Remote API desligada já; trocar credenciais guardadas no Confluence exposto e cobrar N-central HF3 dos prestadores."
+    },
+    {
+      "titulo": "Cisco Expressway em cluster",
+      "cve": "CVE-2026-76466",
+      "cvss": "9.8",
+      "tags": [
+        "Explorado",
+        "Credencial fixa",
+        "Pivô interno"
+      ],
+      "onde": "Borda de voz e vídeo (Webex, telefonia e atendimento) com nós internos.",
+      "impacto": "Root no cluster e pivô do Expressway exposto para os nós internos e daí para SMB, SQL Server e GitLab.",
+      "acao": "Atualizar para X15.5.20, bloquear TCP 4371/4372 fora do cluster e revisar o log Erlang e acessos do Expressway à rede interna."
+    },
+    {
+      "titulo": "F5 BIG-IP e NGINX",
+      "cve": "CVE-2026-123637 · -123007 · -121805",
+      "cvss": "9.8",
+      "tags": [
+        "Borda",
+        "Sem login",
+        "PoC NGINX"
+      ],
+      "onde": "Balanceadores, APM e proxies reversos na frente do internet banking e das APIs.",
+      "impacto": "Estouro de pilha no TMM sem login (queda e possível RCE) e RCE no NGINX via HTTP/2 e HTTP/3, com PoC público.",
+      "acao": "Hotfix F5 do ramo começando pelos BIG-IP com APM; NGINX 1.30.7/1.31.9 ou Plus 37.x com reinício do processo; até lá, HTTP/3 desligado."
+    }
+  ],
+  "plano": [
+    {
+      "h": "24h",
+      "t": "Agora",
+      "itens": [
+        "vCenter: patch, gestão isolada e caça de admins SSO e SSH desde setembro",
+        "Confluence: Remote API desligada antes do prazo CISA de 21/nov",
+        "Cisco Expressway X15.5.20 e portas de cluster fechadas",
+        "F5 BIG-IP com APM e NGINX de borda: hotfix ou mitigação",
+        "Scripts de terceiros: checar Optimizely nas páginas de login e cadastro, IOCs no proxy e antifraude para acessos de 16/nov"
+      ]
+    },
+    {
+      "h": "7 dias",
+      "t": "Esta semana",
+      "itens": [
+        "Oracle: WebLogic e OAM expostos primeiro, depois Database e Java SE (Java4Shell em identidade e CI/CD)",
+        "Puppet: atualizar e limitar autosign, prazo CISA em 01/dez",
+        "PHP de 19/nov (phpAfterShell), TeamCity e ArubaOS",
+        "Pendências ainda exploradas: Check Point Gaia, Apache httpd 2.4.71, Barracuda ESG, N-central e SonicWall SSLVPN (prazo venceu em 20/nov)"
+      ]
+    },
+    {
+      "h": "30 dias",
+      "t": "Estrutural",
+      "itens": [
+        "SLA de patch para camada de gestão (vCenter, Puppet, wiki, RMM) com rotação de segredos quando o patch não basta",
+        "Inventário de scripts de terceiros nas páginas públicas, com CSP e SRI obrigatórios",
+        "Shadow IT: mapear LiteLLM, NAS Synology, REDCap e Apache Roller",
+        "Fontes: rever Dark Reading, Cybernews, Chrome Releases, Palo Alto e Fortinet PSIRT, sem retorno a semana toda",
+        "Se a caça no vCenter, no Confluence ou nos scripts de terceiros achar comprometimento: fluxo de incidente relevante (Res. CMN 4.893/2021)"
+      ]
+    }
+  ],
+  "fontes": [
+    [
+      "CISA: catálogo KEV (Apache Axis)",
+      "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-90436"
+    ],
+    [
+      "SecurityOnline: zero-day do vCenter",
+      "https://securityonline.info/vcenter-zero-day-cve-2026-123890-exploited/"
+    ],
+    [
+      "The Hacker News: espionagem no vCenter",
+      "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html"
+    ],
+    [
+      "BleepingComputer: patch do vCenter",
+      "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/"
+    ],
+    [
+      "Atlassian: Remote API do Confluence",
+      "https://jira.atlassian.com/browse/CONFSERVER-104610"
+    ],
+    [
+      "SecurityWeek: Apache Roller e Axis explorados",
+      "https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/"
+    ],
+    [
+      "SecurityWeek: ataque ao Cisco Expressway",
+      "https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/"
+    ],
+    [
+      "The Hacker News: seis críticas no BIG-IP",
+      "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html"
+    ],
+    [
+      "Tenable: NGINX2Root",
+      "https://www.tenable.com/blog/nginx2root-cve-2026-123007-frequently-asked-questions-about-five-critical-nginx"
+    ],
+    [
+      "Oracle: Security Patch Update de novembro",
+      "https://www.oracle.com/security-alerts/cspunov2026.html"
+    ],
+    [
+      "The Hacker News: Java4Shell",
+      "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html"
+    ],
+    [
+      "SecurityOnline: PoC do Puppet Server",
+      "https://securityonline.info/puppet-server-rce-cve-2026-115731-poc/"
+    ],
+    [
+      "SecurityOnline: KEV de 18/nov",
+      "https://securityonline.info/cisa-adds-4-exploited-flaws-kev-synology-litellm/"
+    ],
+    [
+      "The Next Web: ataque via Optimizely",
+      "https://thenextweb.com/news/optimizely-hack-malware-zoom-bbc-cnn-hsbc-178-sites"
+    ],
+    [
+      "Malware News: phpAfterShell",
+      "https://malware.news/t/phpaftershell-cve-2026-126714-slips-past-php2shell-patch/127511"
+    ]
+  ]
+}
