@@ -1,25 +1,51 @@
 {
-  "atualizado": "2026-11-20T18:38:47Z",
-  "janela": "13 a 20/nov/2026",
+  "atualizado": "2026-11-21T10:38:57Z",
+  "janela": "14 a 21/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-20",
+      "cve": "CVE-2025-42884",
+      "produto": "SAP NetWeaver Enterprise Portal 7.50 (injeção JNDI sem login)",
+      "cvss": 6.5,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 20/11, prazo CISA 23/11; sem detalhes públicos dos ataques)",
+      "prioridade": "P1",
+      "tratamento": "Falha corrigida pela SAP em nov/2025 que permite a quem não está logado ler ou alterar informações do servidor do portal. Confirmar que a SAP Note 3660969 está aplicada em todos os Enterprise Portal, começando pelos expostos a parceiros ou à internet (nesses, tratar como urgente) e revisar logs do portal desde então.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/cisa-kev-catalog-vcenter-cisco-expressway/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-42884"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-11-19",
       "cve": "CVE-2026-123890",
       "produto": "VMware vCenter Server e Cloud Foundation (vmdir, bypass de autenticação; VMSA-2026-0009)",
       "cvss": 9.8,
-      "kev": false,
+      "kev": true,
       "zero_day": true,
-      "exploracao": "Ativa (zero-day desde set/2026 por grupo de espionagem ligado à China, segundo o Google; roubo da chave SAML e tokens forjados)",
+      "exploracao": "Ativa (KEV em 20/11, prazo CISA 23/11; zero-day desde set/2026 pelo grupo chinês Armory Castle, ex-UNC5221, segundo o Google, encadeado com o BeyondTrust Remote Support CVE-2026-102764; roubo da chave SAML e tokens forjados)",
       "prioridade": "P0",
-      "tratamento": "Atualizar para vCenter 8.0 U3m, 9.0.2.0200 ou 9.1.1.0200 (7.0 sem correção pública; VCF 5.x confirmar com a Broadcom); sem workaround, restringir as portas 443, 2012, 5480 e 22 do vCenter à rede de gestão. Caçar comprometimento desde setembro (admins SSO desconhecidos, SSH ligado e desligado no VAMI) e, se houver suspeita, trocar o certificado de assinatura STS e as credenciais SSO, pois o patch não derruba tokens forjados.",
+      "tratamento": "Atualizar para vCenter 8.0 U3m, 9.0.2.0200 ou 9.1.1.0200 (7.0 sem correção pública; VCF 5.x confirmar com a Broadcom); sem workaround, restringir as portas 443, 2012, 5480 e 22 do vCenter à rede de gestão. Caçar comprometimento desde setembro (admins SSO desconhecidos, SSH ligado e desligado no VAMI) e, se houver suspeita, trocar o certificado de assinatura STS e as credenciais SSO, pois o patch não derruba tokens forjados. Conferir também se o BeyondTrust Remote Support está com o patch da CVE-2026-102764, usada no mesmo ataque.",
       "fontes": [
         {
           "nome": "SecurityOnline",
           "url": "https://securityonline.info/vcenter-zero-day-cve-2026-123890-exploited/"
         },
         {
-          "nome": "Rescana",
-          "url": "https://www.rescana.com/post/vmware-vcenter-cve-2026-123890-directory-service-auth-bypass-patch-now"
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-123890"
         }
       ],
       "status": "Novo"
@@ -91,9 +117,9 @@
       "cve": "CVE-2026-76466",
       "produto": "Cisco Expressway-C e Expressway-E em cluster (credencial fixa no cm_server)",
       "cvss": 9.8,
-      "kev": false,
+      "kev": true,
       "zero_day": false,
-      "exploracao": "Ativa (F6 relatou em 19/11 invasão de dois Expressway X15.5.3 expostos com pivô para os nós internos do cluster; Cisco ainda não atualizou o advisory)",
+      "exploracao": "Ativa (KEV em 20/11, prazo CISA 23/11; F6 relatou invasão de Expressway X15.5.3 expostos com pivô para a rede interna logo após o PoC público)",
       "prioridade": "P0",
       "tratamento": "Atualizar para X15.5.20 (X14 e anteriores precisam migrar); sem workaround, bloquear TCP 4371/4372 exceto entre os nós do cluster. Caçar comprometimento no log Erlang do Expressway e em acessos dele a SMB, SQL Server, WinRM e GitLab internos.",
       "fontes": [
@@ -102,8 +128,12 @@
           "url": "https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/"
         },
         {
-          "nome": "GBHackers",
-          "url": "https://gbhackers.com/poc-exploit-released-for-critical-cisco-expressway-rce/"
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-76466"
         }
       ],
       "status": "Novo"
@@ -347,9 +377,9 @@
       "cve": "CVE-2026-129448",
       "produto": "Apache Roller (servidor de blog Java, versões 4.0.0 a 6.1.4, endpoint XML-RPC)",
       "cvss": 9.8,
-      "kev": false,
+      "kev": true,
       "zero_day": false,
-      "exploracao": "Ativa (Apache confirma ataques; sem detalhes de autoria ou vítimas)",
+      "exploracao": "Ativa (Apache confirma ataques; KEV em 20/11, prazo CISA 23/11)",
       "prioridade": "P2",
       "tratamento": "RCE sem login por desserialização no XML-RPC, antes da checagem de autenticação (mesma falha da CVE-2026-82384 de setembro, cujo patch 6.1.5 não bastou). Raro em banco: se houver blog ou portal com Roller, subir para 6.1.6 ou superior (6.1.7 fecha mais 15 falhas); sem patch, pôr enabledForExtensions=false no web.xml ou remover o mapeamento /roller-services/xmlrpc e reiniciar (desligar o XML-RPC no painel não basta).",
       "fontes": [
@@ -362,8 +392,8 @@
           "url": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/"
         },
         {
-          "nome": "SecurityWeek",
-          "url": "https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/"
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-129448"
         }
       ],
       "status": "Novo"
@@ -412,24 +442,6 @@
         {
           "nome": "CISA KEV",
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-90436"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-13",
-      "cve": "CVE-2026-114713",
-      "produto": "UnrealIRCd (servidores IRC em rede com dois ou mais nós)",
-      "cvss": 8.6,
-      "kev": true,
-      "zero_day": false,
-      "exploracao": "Ativa",
-      "prioridade": "P2",
-      "tratamento": "Nicho, improvável em banco. Se houver IRC interno ou de laboratório, atualizar UnrealIRCd para a versão corrigida (a confirmar no advisory) ou desligar o servidor.",
-      "fontes": [
-        {
-          "nome": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-114713"
         }
       ],
       "status": "Novo"
@@ -530,32 +542,6 @@
         {
           "nome": "The Hacker News (HF3)",
           "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html"
-        }
-      ],
-      "status": "Pendente"
-    },
-    {
-      "data": "2026-11-06",
-      "cve": "CVE-2026-19868",
-      "produto": "SonicWall SonicOS SSLVPN Gen7 e Gen8 (login SAML)",
-      "cvss": 7.5,
-      "kev": true,
-      "zero_day": true,
-      "exploracao": "Ativa (KEV em 06/11, prazo CISA 20/11; SonicWall apura relato de exploração)",
-      "prioridade": "P0",
-      "tratamento": "Conta com outro método de login entra na VPN sem passar pelo SAML e pelo MFA. Subir Gen7 para 7.3.4-7013 e Gen8 para 8.2.3-8015; até lá, desativar contas SSLVPN com login fora do SAML, restringir origem e revisar logins não-SAML nos logs.",
-      "fontes": [
-        {
-          "nome": "Ostorlab",
-          "url": "https://blog.ostorlab.co/sonicwall-sslvpn-saml-bypass-cve-2026-19868.html"
-        },
-        {
-          "nome": "Security Affairs",
-          "url": "https://securityaffairs.com/202581/security/u-s-cisa-adds-sonicwall-sonicos-sslvpn-flaw-to-its-known-exploited-vulnerabilities-catalog.html"
-        },
-        {
-          "nome": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-19868"
         }
       ],
       "status": "Pendente"
