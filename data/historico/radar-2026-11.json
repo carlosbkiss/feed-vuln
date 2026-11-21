@@ -1050,7 +1050,7 @@
     "aguardando_nota_desde": "2026-11-06T15:21:49Z",
     "nota_chegou_em": "2026-11-09T21:27:15Z",
     "epss_max": 0.189,
-    "poc_qtd": 44,
+    "poc_qtd": 47,
     "fontes": [
       {
         "nome": "NVD",
@@ -1227,6 +1227,11 @@
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
         "publicado": "2026-11-20T09:38:15Z"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-20T12:00:00Z"
       }
     ],
     "prioridade_max": "P0"
@@ -1644,6 +1649,11 @@
         "nome": "CISA KEV",
         "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-129448",
         "publicado": "2026-11-20"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-20T12:00:00Z"
       }
     ],
     "prioridade_max": "P0"

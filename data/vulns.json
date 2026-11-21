@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-20T19:07:33Z",
+  "atualizado": "2026-11-21T00:49:22Z",
   "itens": [
     {
       "cve": "CVE-2026-123890",
@@ -43,6 +43,14 @@
           "link": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
           "publicado": "2026-11-20T09:38:15Z",
           "visto_em": "2026-11-20T10:40:33Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-20T12:00:00Z",
+          "visto_em": "2026-11-21T00:49:22Z"
         }
       ],
       "detectado": "2026-11-19T18:38:58Z",
@@ -55,7 +63,7 @@
       "primeira_vez": "2026-11-19T15:17:25Z",
       "primeira_noticia": "2026-11-19T16:30:55Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
-      "ultima_atividade": "2026-11-20T09:38:15Z",
+      "ultima_atividade": "2026-11-20T12:00:00Z",
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
       "exibido_em": "2026-11-20T10:40:33Z",
@@ -121,6 +129,14 @@
           "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-129448",
           "publicado": "2026-11-20",
           "visto_em": "2026-11-20T18:39:04Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-20T12:00:00Z",
+          "visto_em": "2026-11-21T00:49:22Z"
         }
       ],
       "detectado": "2026-11-19T02:35:56Z",
@@ -135,7 +151,7 @@
       "primeira_vez": "2026-11-17T11:17:28Z",
       "primeira_noticia": "2026-11-18T17:10:45Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
-      "ultima_atividade": "2026-11-20T00:00:00Z",
+      "ultima_atividade": "2026-11-20T12:00:00Z",
       "exibido_em": "2026-11-19T02:35:56Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -248,7 +264,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123039.json",
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       }
     },
     {
@@ -298,7 +314,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-118383.json",
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0074,
@@ -353,7 +369,7 @@
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-121529.json",
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0022,
@@ -457,7 +473,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123218.json",
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       }
     },
     {
@@ -551,106 +567,7 @@
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-90436.json",
-        "checado": "2026-11-19T19:29:36Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-19868",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-19868",
-          "publicado": "2026-11-06",
-          "visto_em": "2026-11-06T23:44:07Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds One Known Exploited Vulnerability to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
-          "publicado": "2026-11-06T12:00:00Z",
-          "visto_em": "2026-11-06T23:44:07Z"
-        },
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-19868",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-19868",
-          "publicado": "2026-11-06T19:17:48Z",
-          "visto_em": "2026-11-06T23:44:07Z"
-        },
-        {
-          "id": "securityweek",
-          "nome": "SecurityWeek",
-          "titulo": "SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins",
-          "link": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/",
-          "publicado": "2026-11-07T10:16:23Z",
-          "visto_em": "2026-11-07T10:38:44Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "SonicWall Warns of Potential In-the-Wild Exploitation of SSLVPN Flaw That Bypasses MFA",
-          "link": "https://cybersecuritynews.com/sonicos-sslvpn-vulnerability-exploited/",
-          "publicado": "2026-11-07T12:59:02Z",
-          "visto_em": "2026-11-07T20:54:35Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
-          "link": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
-          "publicado": "2026-11-09T06:05:24Z",
-          "visto_em": "2026-11-09T10:36:01Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "CISA Warns of SonicWall SonicOS SSLVPN Vulnerability Exploited in Attacks",
-          "link": "https://cybersecuritynews.com/sonicwall-sonicos-sslvpn-vulnerability-exploited/",
-          "publicado": "2026-11-09T11:40:18Z",
-          "visto_em": "2026-11-09T14:37:01Z"
-        }
-      ],
-      "detectado": "2026-11-06T23:44:07Z",
-      "kev": {
-        "adicionado": "2026-11-06",
-        "prazo": "2026-11-20",
-        "ransomware": "Unknown"
-      },
-      "produto": "SonicWall SonicOS SSLVPN",
-      "titulo": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
-      "resumo": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass…",
-      "cvss": 7.5,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-06T19:17:48Z",
-      "nvd_checado_em": "2026-11-06T23:44:07Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-06T00:00:00Z",
-      "primeira_noticia": "2026-11-06T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-19868",
-      "ultima_atividade": "2026-11-09T11:40:18Z",
-      "exibido_em": "2026-11-06T23:44:07Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-19868.json",
-        "checado": "2026-11-19T19:29:36Z"
-      },
-      "epss": {
-        "score": 0.0053,
-        "percentil": 0.4587,
-        "data": "2026-11-20"
+        "checado": "2026-11-21T00:49:22Z"
       }
     },
     {
@@ -722,7 +639,7 @@
       "poc": {
         "qtd": 7,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-116779.json",
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -820,9 +737,9 @@
         "data": "2026-11-20"
       },
       "poc": {
-        "qtd": 44,
+        "qtd": 47,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123158.json",
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       }
     },
     {
@@ -886,7 +803,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-102895.json",
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -972,7 +889,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-115731.json",
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "cvss": 9.4,
       "cvss_versao": "4.0",
@@ -1080,7 +997,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-116606.json",
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       }
     },
     {
@@ -1109,6 +1026,14 @@
           "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
           "publicado": "2026-11-20T10:32:50Z",
           "visto_em": "2026-11-20T14:39:19Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-20T12:00:00Z",
+          "visto_em": "2026-11-21T00:49:22Z"
         }
       ],
       "detectado": "2026-11-20T14:39:19Z",
@@ -1121,7 +1046,7 @@
       "primeira_vez": "2026-10-21T17:19:06Z",
       "primeira_noticia": "2026-11-20T10:32:50Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
-      "ultima_atividade": "2026-11-20T10:32:50Z",
+      "ultima_atividade": "2026-11-20T12:00:00Z",
       "kev": {
         "adicionado": "2026-11-20",
         "prazo": "2026-11-23",
@@ -1221,7 +1146,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "cvss": 4.3,
       "cvss_versao": "3.1",
@@ -1299,7 +1224,7 @@
       "poc": {
         "qtd": 6,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-90817.json",
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -1392,7 +1317,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "cvss": 7.5,
       "cvss_versao": "3.1",
@@ -1469,7 +1394,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2024/CVE-2024-10441.json",
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -1809,7 +1734,7 @@
       "poc": {
         "qtd": 5,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-124194.json",
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0162,
@@ -1835,6 +1760,14 @@
           "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-42884",
           "publicado": "2026-11-20",
           "visto_em": "2026-11-20T18:39:04Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-20T12:00:00Z",
+          "visto_em": "2026-11-21T00:49:22Z"
         }
       ],
       "detectado": "2026-11-20T18:39:04Z",
@@ -1853,9 +1786,9 @@
         "KEV"
       ],
       "primeira_vez": "2025-11-11T01:15:36Z",
-      "primeira_noticia": null,
+      "primeira_noticia": "2026-11-20T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884",
-      "ultima_atividade": "2026-11-20T00:00:00Z",
+      "ultima_atividade": "2026-11-20T12:00:00Z",
       "exibido_em": "2026-11-20T18:39:04Z",
       "prioridade": "P1",
       "regra": "explorado em plataforma corporativa",
@@ -2360,7 +2293,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0061,
@@ -2401,7 +2334,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-128027.json",
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0077,
@@ -2442,7 +2375,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.005,
@@ -2483,7 +2416,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0043,
@@ -2524,7 +2457,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0063,
@@ -2565,7 +2498,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0055,
@@ -2606,7 +2539,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-119077.json",
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0134,
@@ -2649,7 +2582,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       }
     },
     {
@@ -2685,7 +2618,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.006,
@@ -2734,7 +2667,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0066,
@@ -2785,7 +2718,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0081,
@@ -2836,7 +2769,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0086,
@@ -2877,7 +2810,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0015,
@@ -2926,7 +2859,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0043,
@@ -2975,7 +2908,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0032,
@@ -3024,7 +2957,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76964.json",
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0043,
@@ -3065,7 +2998,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0031,
@@ -3106,7 +3039,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0026,
@@ -3147,7 +3080,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0041,
@@ -3188,7 +3121,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0041,
@@ -3229,7 +3162,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0028,
@@ -3308,7 +3241,7 @@
       "poc": {
         "qtd": 5,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-125350.json",
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "kev": {
         "adicionado": "2026-11-10",
@@ -3363,7 +3296,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.004,
@@ -3404,7 +3337,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-124450.json",
-        "checado": "2026-11-19T19:29:36Z"
+        "checado": "2026-11-21T00:49:22Z"
       },
       "epss": {
         "score": 0.0153,
@@ -3841,12 +3774,6 @@
       "titulo": "N-able takes cloud platform offline after 30+ \"zero-days\" published",
       "link": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/",
       "publicado": "2026-11-09T21:26:25Z"
-    },
-    {
-      "fonte": "BleepingComputer",
-      "titulo": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
-      "link": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
-      "publicado": "2026-11-07T00:00:55Z"
     }
   ]
 }
