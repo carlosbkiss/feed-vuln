@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-21T00:49:22Z",
+  "atualizado": "2026-11-21T10:39:10Z",
   "itens": [
     {
       "cve": "CVE-2026-123890",
@@ -137,6 +137,14 @@
           "link": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
           "publicado": "2026-11-20T12:00:00Z",
           "visto_em": "2026-11-21T00:49:22Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+          "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+          "publicado": "2026-11-21T08:49:13Z",
+          "visto_em": "2026-11-21T10:39:10Z"
         }
       ],
       "detectado": "2026-11-19T02:35:56Z",
@@ -151,7 +159,7 @@
       "primeira_vez": "2026-11-17T11:17:28Z",
       "primeira_noticia": "2026-11-18T17:10:45Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
-      "ultima_atividade": "2026-11-20T12:00:00Z",
+      "ultima_atividade": "2026-11-21T08:49:13Z",
       "exibido_em": "2026-11-19T02:35:56Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -1810,6 +1818,42 @@
       "nvd_checado_em": "2026-11-20T19:07:33Z"
     },
     {
+      "cve": "CVE-2026-120539",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-120539",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-120539",
+          "publicado": "2026-11-21T06:16:33Z",
+          "visto_em": "2026-11-21T10:39:10Z"
+        }
+      ],
+      "detectado": "2026-11-21T10:39:10Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-21T06:16:33Z",
+      "resumo": "The Restrictions for BuddyPress plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.5.4 This is due to the plugin splicing the attacker-controlled request URI into a PHP expression inside a double-quoted string…",
+      "nvd_checado_em": "2026-11-21T10:39:10Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-21T06:16:33Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-120539",
+      "ultima_atividade": "2026-11-21T06:16:33Z",
+      "exibido_em": "2026-11-21T10:39:10Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-120539.json",
+        "checado": "2026-11-21T10:39:10Z"
+      }
+    },
+    {
       "cve": "CVE-2026-84236",
       "fontes": [
         {
@@ -1842,7 +1886,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-20T02:21:11Z"
+        "checado": "2026-11-21T10:39:10Z"
       },
       "epss": {
         "score": 0.0063,
@@ -1883,7 +1927,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-20T02:21:11Z"
+        "checado": "2026-11-21T10:39:10Z"
       },
       "epss": {
         "score": 0.004,
@@ -3378,7 +3422,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-20T02:21:11Z"
+        "checado": "2026-11-21T10:39:10Z"
       },
       "epss": {
         "score": 0.0035,
@@ -3461,7 +3505,7 @@
       "poc": {
         "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-114713.json",
-        "checado": "2026-11-20T02:21:11Z"
+        "checado": "2026-11-21T10:39:10Z"
       },
       "cvss": 8.6,
       "cvss_versao": "3.1",
@@ -3551,7 +3595,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-20T02:21:11Z"
+        "checado": "2026-11-21T10:39:10Z"
       }
     },
     {
@@ -3621,7 +3665,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-40217.json",
-        "checado": "2026-11-20T02:21:11Z"
+        "checado": "2026-11-21T10:39:10Z"
       },
       "cvss": 8.8,
       "cvss_versao": "3.1",

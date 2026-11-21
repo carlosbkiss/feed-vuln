@@ -912,6 +912,34 @@
     ],
     "prioridade_max": "P2"
   },
+  "CVE-2026-120539": {
+    "cve": "CVE-2026-120539",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.8,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-11-21T06:16:33Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-11-21T06:16:33Z",
+    "exibido_em": "2026-11-21T10:39:10Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 1,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-120539",
+        "publicado": "2026-11-21T06:16:33Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
   "CVE-2026-121529": {
     "cve": "CVE-2026-121529",
     "produto": "",
@@ -1654,6 +1682,11 @@
         "nome": "CISA Advisories",
         "link": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
         "publicado": "2026-11-20T12:00:00Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+        "publicado": "2026-11-21T08:49:13Z"
       }
     ],
     "prioridade_max": "P0"
