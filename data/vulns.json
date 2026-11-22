@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-22T14:39:47Z",
+  "atualizado": "2026-11-22T18:32:16Z",
   "itens": [
     {
       "cve": "CVE-2026-123890",
@@ -1835,7 +1835,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-21T06:16:33Z",
       "resumo": "The Restrictions for BuddyPress plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.5.4 This is due to the plugin splicing the attacker-controlled request URI into a PHP expression inside a double-quoted string…",
-      "nvd_checado_em": "2026-11-22T14:39:47Z",
+      "nvd_checado_em": "2026-11-22T18:32:16Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2465,7 +2465,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "epss": {
         "score": 0.0043,
@@ -2506,7 +2506,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "epss": {
         "score": 0.0063,
@@ -2547,7 +2547,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "epss": {
         "score": 0.0055,
@@ -2588,7 +2588,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-119077.json",
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "epss": {
         "score": 0.0137,
@@ -2631,7 +2631,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       }
     },
     {
@@ -2667,7 +2667,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "epss": {
         "score": 0.006,
@@ -2716,7 +2716,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "epss": {
         "score": 0.0087,
@@ -2767,7 +2767,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "epss": {
         "score": 0.0081,
@@ -2818,7 +2818,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "epss": {
         "score": 0.0086,
@@ -2859,7 +2859,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "epss": {
         "score": 0.0018,
@@ -2908,7 +2908,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "epss": {
         "score": 0.007,
@@ -2957,7 +2957,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "epss": {
         "score": 0.0055,
@@ -3006,7 +3006,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76964.json",
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "epss": {
         "score": 0.0084,
@@ -3047,7 +3047,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "epss": {
         "score": 0.0039,
@@ -3088,7 +3088,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "epss": {
         "score": 0.0041,
@@ -3129,7 +3129,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "epss": {
         "score": 0.0054,
@@ -3170,7 +3170,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "epss": {
         "score": 0.0054,
@@ -3211,7 +3211,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "epss": {
         "score": 0.0036,
@@ -3290,7 +3290,7 @@
       "poc": {
         "qtd": 5,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-125350.json",
-        "checado": "2026-11-21T00:49:22Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "kev": {
         "adicionado": "2026-11-10",
@@ -3309,47 +3309,6 @@
       "epss": {
         "score": 0.068,
         "percentil": 0.9416,
-        "data": "2026-11-22"
-      }
-    },
-    {
-      "cve": "CVE-2026-101117",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-101117",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-101117",
-          "publicado": "2026-11-08T16:16:36Z",
-          "visto_em": "2026-11-08T17:05:27Z"
-        }
-      ],
-      "detectado": "2026-11-08T17:05:27Z",
-      "cvss": 9.1,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-08T16:16:36Z",
-      "resumo": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.2.2 could allow a remote attacker to bypass security restrictions due to improper Content Security Policy configuration.",
-      "nvd_checado_em": "2026-11-09T14:37:01Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-11-08T16:16:36Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-101117",
-      "ultima_atividade": "2026-11-08T16:16:36Z",
-      "exibido_em": "2026-11-08T17:05:27Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-21T00:49:22Z"
-      },
-      "epss": {
-        "score": 0.004,
-        "percentil": 0.3494,
         "data": "2026-11-22"
       }
     },
@@ -3428,7 +3387,7 @@
       "poc": {
         "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-114713.json",
-        "checado": "2026-11-21T10:39:10Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "cvss": 8.6,
       "cvss_versao": "3.1",
@@ -3518,7 +3477,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-21T10:39:10Z"
+        "checado": "2026-11-22T18:32:16Z"
       }
     },
     {
@@ -3588,7 +3547,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-40217.json",
-        "checado": "2026-11-21T10:39:10Z"
+        "checado": "2026-11-22T18:32:16Z"
       },
       "cvss": 8.8,
       "cvss_versao": "3.1",
