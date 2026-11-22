@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-22T10:38:13Z",
+  "atualizado": "2026-11-22T14:39:33Z",
   "janela": "15 a 22/nov/2026",
   "itens": [
     {
@@ -20,6 +20,32 @@
         {
           "nome": "CISA KEV",
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-42884"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-20",
+      "cve": "sem CVE (Qubole)",
+      "produto": "Qubole (data lake em AWS): papéis IAM de confiança entre contas criados para o fornecedor",
+      "cvss": null,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Ativa (AssumeRole com a conta da Qubole de 14 a 26/out via VPN e hospedagem; roubo de segredos, dados de S3 e teste de credenciais de Entra ID e Okta; empresas do setor financeiro divulgaram incidentes de terceiros em 19 e 20/11)",
+      "prioridade": "P1",
+      "tratamento": "Inventariar papéis que confiam em contas externas e remover os da Qubole sem uso; nos que ficam, trocar o principal :root por um específico, restringir origem por IP ou VPCE e trocar o External ID. Revisar CloudTrail desde 01/10 por AssumeRole da conta 805246085872 fora da AWS e sessões quiam-*, e rotacionar segredos alcançáveis por esses papéis.",
+      "fontes": [
+        {
+          "nome": "Wiz",
+          "url": "https://www.wiz.io/pt-br/blog/qubole-cross-account-access-abused-in-the-wild"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html"
+        },
+        {
+          "nome": "DEV Community",
+          "url": "https://dev.to/rokkhe/old-doors-trusted-keys-6-attacks-this-week-and-how-to-check-yours-before-monday-48kp"
         }
       ],
       "status": "Novo"
