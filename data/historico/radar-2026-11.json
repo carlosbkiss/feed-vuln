@@ -1077,7 +1077,7 @@
     "exibido_em": "2026-11-09T21:27:15Z",
     "aguardando_nota_desde": "2026-11-06T15:21:49Z",
     "nota_chegou_em": "2026-11-09T21:27:15Z",
-    "epss_max": 0.8768,
+    "epss_max": 0.9554,
     "poc_qtd": 48,
     "fontes": [
       {
@@ -1228,8 +1228,8 @@
     "exibido_em": "2026-11-20T10:40:33Z",
     "aguardando_nota_desde": "2026-11-19T16:30:55Z",
     "nota_chegou_em": "2026-11-20T18:39:04Z",
-    "epss_max": 0.0299,
-    "poc_qtd": 7,
+    "epss_max": 0.0353,
+    "poc_qtd": 8,
     "fontes": [
       {
         "nome": "NVD",
@@ -1400,7 +1400,7 @@
     "exibido_em": "2026-11-10T10:44:29Z",
     "aguardando_nota_desde": "2026-11-10T04:21:10Z",
     "nota_chegou_em": "2026-11-11T00:04:15Z",
-    "epss_max": 0.0189,
+    "epss_max": 0.068,
     "poc_qtd": 5,
     "fontes": [
       {
