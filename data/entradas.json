@@ -1,7 +1,25 @@
 {
-  "atualizado": "2026-11-22T14:39:33Z",
+  "atualizado": "2026-11-22T18:39:01Z",
   "janela": "15 a 22/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-20",
+      "cve": "CVE-2026-132658 / CVE-2026-132659 / CVE-2026-132660",
+      "produto": "EnterpriseDB Postgres Enterprise Manager (PEM)",
+      "cvss": 9.4,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Falhas que exigem acesso prévio (usuário do PEM ou agente comprometido) e permitem chegar a superusuário SQL ou mexer no servidor do PEM. Se usar PEM, aplicar a versão corrigida da EDB (a confirmar no advisory) e restringir quem acessa o console e os agentes.",
+      "fontes": [
+        {
+          "nome": "CVE Brief 21/11",
+          "url": "https://cvebrief.com/archive/2026/11/21/"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-11-20",
       "cve": "CVE-2025-42884",
