@@ -1806,7 +1806,7 @@
     "aguardando_nota_desde": "2026-11-20T10:32:50Z",
     "nota_chegou_em": "2026-11-20T18:39:04Z",
     "epss_max": 0.0219,
-    "poc_qtd": 1,
+    "poc_qtd": 3,
     "fontes": [
       {
         "nome": "NVD",
