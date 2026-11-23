@@ -1260,6 +1260,11 @@
         "nome": "CISA Advisories",
         "link": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
         "publicado": "2026-11-20T12:00:00Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/alleged-vmware-vcenter-0-day-exploit/",
+        "publicado": "2026-11-23T04:30:26Z"
       }
     ],
     "prioridade_max": "P0"
@@ -1690,6 +1695,39 @@
       }
     ],
     "prioridade_max": "P0"
+  },
+  "CVE-2026-131914": {
+    "cve": "CVE-2026-131914",
+    "produto": "",
+    "titulo": "",
+    "cvss": null,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day"
+    ],
+    "zero_day": true,
+    "kev": null,
+    "primeira_vez": "2026-11-23T09:11:56Z",
+    "primeira_noticia": "2026-11-23T09:11:56Z",
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-23T10:40:13Z",
+    "aguardando_nota_desde": "2026-11-23T09:11:56Z",
+    "nota_chegou_em": null,
+    "epss_max": 0.0061,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+        "publicado": "2026-11-23T09:11:56Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/asp-net-anticsrf-flaw-under-attack/",
+        "publicado": "2026-11-23T10:25:17Z"
+      }
+    ],
+    "prioridade_max": "P2"
   },
   "CVE-2026-14492": {
     "cve": "CVE-2026-14492",

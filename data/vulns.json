@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-22T18:32:16Z",
+  "atualizado": "2026-11-23T10:40:13Z",
   "itens": [
     {
       "cve": "CVE-2026-123890",
@@ -51,6 +51,14 @@
           "link": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
           "publicado": "2026-11-20T12:00:00Z",
           "visto_em": "2026-11-21T00:49:22Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Hackers Allegedly Claiming Exploit for VMware vCenter 0-day Vulnerability",
+          "link": "https://cybersecuritynews.com/alleged-vmware-vcenter-0-day-exploit/",
+          "publicado": "2026-11-23T04:30:26Z",
+          "visto_em": "2026-11-23T10:40:13Z"
         }
       ],
       "detectado": "2026-11-19T18:38:58Z",
@@ -63,7 +71,7 @@
       "primeira_vez": "2026-11-19T15:17:25Z",
       "primeira_noticia": "2026-11-19T16:30:55Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
-      "ultima_atividade": "2026-11-20T12:00:00Z",
+      "ultima_atividade": "2026-11-23T04:30:26Z",
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
       "exibido_em": "2026-11-20T10:40:33Z",
@@ -1818,6 +1826,52 @@
       "nvd_checado_em": "2026-11-20T19:07:33Z"
     },
     {
+      "cve": "CVE-2026-131914",
+      "fontes": [
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+          "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+          "publicado": "2026-11-23T09:11:56Z",
+          "visto_em": "2026-11-23T10:40:13Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical ASP.NET AntiCsrf Flaw Under Attack, Allowing Hackers to Execute Code Without Login",
+          "link": "https://cybersecuritynews.com/asp-net-anticsrf-flaw-under-attack/",
+          "publicado": "2026-11-23T10:25:17Z",
+          "visto_em": "2026-11-23T10:40:13Z"
+        }
+      ],
+      "detectado": "2026-11-23T10:40:13Z",
+      "zero_day": true,
+      "zero_day_motivo": "The Hacker News: exploração ativa relatada",
+      "aguardando_nota_desde": "2026-11-23T09:11:56Z",
+      "elegivel_por": [
+        "zero-day"
+      ],
+      "primeira_vez": "2026-11-23T09:11:56Z",
+      "primeira_noticia": "2026-11-23T09:11:56Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
+      "ultima_atividade": "2026-11-23T10:25:17Z",
+      "exibido_em": "2026-11-23T10:40:13Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0061,
+        "percentil": 0.5037,
+        "data": "2026-11-22"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-23T10:40:13Z"
+      }
+    },
+    {
       "cve": "CVE-2026-120539",
       "fontes": [
         {
@@ -1835,7 +1889,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-21T06:16:33Z",
       "resumo": "The Restrictions for BuddyPress plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.5.4 This is due to the plugin splicing the attacker-controlled request URI into a PHP expression inside a double-quoted string…",
-      "nvd_checado_em": "2026-11-22T18:32:16Z",
+      "nvd_checado_em": "2026-11-23T10:40:13Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2594,44 +2648,6 @@
         "score": 0.0137,
         "percentil": 0.7266,
         "data": "2026-11-22"
-      }
-    },
-    {
-      "cve": "CVE-2026-25611",
-      "fontes": [
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Critical MongoDB Flaw Lets Attackers Crash Database Servers With Just Two Ping Requests",
-          "link": "https://cybersecuritynews.com/mongodb-database-crash-vulnerability/",
-          "publicado": "2026-11-12T12:22:28Z",
-          "visto_em": "2026-11-18T19:24:42Z"
-        }
-      ],
-      "detectado": "2026-11-18T19:24:42Z",
-      "zero_day": true,
-      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
-      "aguardando_nota_desde": "2026-11-12T12:22:28Z",
-      "elegivel_por": [
-        "zero-day"
-      ],
-      "primeira_vez": "2026-11-12T12:22:28Z",
-      "primeira_noticia": "2026-11-12T12:22:28Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-25611",
-      "ultima_atividade": "2026-11-12T12:22:28Z",
-      "exibido_em": "2026-11-18T19:24:42Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.0086,
-        "percentil": 0.5945,
-        "data": "2026-11-22"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-22T18:32:16Z"
       }
     },
     {
@@ -3558,6 +3574,18 @@
   ],
   "sem_cve": [
     {
+      "fonte": "BleepingComputer",
+      "titulo": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+      "publicado": "2026-11-23T07:44:19Z"
+    },
+    {
+      "fonte": "Cyber Security News",
+      "titulo": "OpenAI’s GPT-6.2 Astra Discovers 0-Day Vulnerabilities Enabling Mobile OS Security Bypass and RCE",
+      "link": "https://cybersecuritynews.com/openai-gpt-6-2-astra-0-day-vulnerabilities/",
+      "publicado": "2026-11-23T03:06:27Z"
+    },
+    {
       "fonte": "Cyber Security News",
       "titulo": "Hackers Use AI-Powered ARTEX Framework to Automate Cyberattacks Without Relying on Zero-Day Exploits",
       "link": "https://cybersecuritynews.com/hackers-use-ai-powered-artex-framework/",
@@ -3694,12 +3722,6 @@
       "titulo": "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
       "link": "https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/",
       "publicado": "2026-11-10T06:12:24Z"
-    },
-    {
-      "fonte": "BleepingComputer",
-      "titulo": "N-able takes cloud platform offline after 30+ \"zero-days\" published",
-      "link": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/",
-      "publicado": "2026-11-09T21:26:25Z"
     }
   ]
 }
