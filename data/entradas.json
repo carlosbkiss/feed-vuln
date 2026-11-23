@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-11-22T18:39:01Z",
-  "janela": "15 a 22/nov/2026",
+  "atualizado": "2026-11-23T10:40:00Z",
+  "janela": "16 a 23/nov/2026",
   "itens": [
     {
       "data": "2026-11-20",
@@ -178,6 +178,28 @@
         {
           "nome": "CISA KEV",
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-76466"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-19",
+      "cve": "CVE-2026-131914",
+      "produto": "Idunno.AntiCsrf 0.9.1 (módulo anti-CSRF legado para ASP.NET WebForms/IIS)",
+      "cvss": 9.3,
+      "kev": false,
+      "zero_day": true,
+      "exploracao": "Ativa (Mandiant relata exploração; sem detalhes de alvos)",
+      "prioridade": "P1",
+      "tratamento": "Desserialização sem login que dá RCE no w3wp.exe com um POST. Projeto abandonado e sem patch: procurar Idunno.AntiCsrf/AntiCsrfModule em Web.config e bin/ das aplicações WebForms, trocar pelo AntiForgery nativo; se a app for exposta à internet, tratar como P0 e revisar logs do IIS e segredos do machineKey.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html"
+        },
+        {
+          "nome": "SecurityOnline CVE Watchtower",
+          "url": "https://securityonline.info/cve-watchtower/cve-2026-131914/"
         }
       ],
       "status": "Novo"
