@@ -1406,7 +1406,7 @@
     "aguardando_nota_desde": "2026-11-10T04:21:10Z",
     "nota_chegou_em": "2026-11-11T00:04:15Z",
     "epss_max": 0.068,
-    "poc_qtd": 4,
+    "poc_qtd": 5,
     "fontes": [
       {
         "nome": "CISA KEV",
@@ -1735,6 +1735,99 @@
     ],
     "prioridade_max": "P0"
   },
+  "CVE-2026-133968": {
+    "cve": "CVE-2026-133968",
+    "produto": "Project MONAI MONAI Label",
+    "titulo": "Project MONAI MONAI Label Path Traversal Vulnerability",
+    "cvss": 9.8,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-23",
+      "prazo": "2026-11-26",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-20T19:18:51Z",
+    "primeira_noticia": "2026-11-23T12:00:00Z",
+    "publicado_nvd": "2026-11-20T19:18:51Z",
+    "exibido_em": "2026-11-23T22:40:39Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0366,
+    "poc_qtd": 1,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-133968",
+        "publicado": "2026-11-20T19:18:51Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133968",
+        "publicado": "2026-11-23"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-23T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
+  "CVE-2026-134624": {
+    "cve": "CVE-2026-134624",
+    "produto": "N-able MailAssure",
+    "titulo": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
+    "cvss": 9.3,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-23",
+      "prazo": "2026-11-26",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-22T19:16:32Z",
+    "primeira_noticia": "2026-11-23T12:00:00Z",
+    "publicado_nvd": "2026-11-22T19:16:32Z",
+    "exibido_em": "2026-11-23T22:40:39Z",
+    "aguardando_nota_desde": "2026-11-23T12:28:09Z",
+    "nota_chegou_em": "2026-11-23T22:40:39Z",
+    "epss_max": 0.0035,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624",
+        "publicado": "2026-11-22T19:16:32Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-134624",
+        "publicado": "2026-11-23"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-23T12:00:00Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
+        "publicado": "2026-11-23T12:28:09Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
   "CVE-2026-14492": {
     "cve": "CVE-2026-14492",
     "produto": "",
@@ -1949,6 +2042,34 @@
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
         "publicado": "2026-11-03T05:34:41Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-70193": {
+    "cve": "CVE-2026-70193",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.9,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-11-23T22:22:36Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-11-23T22:22:36Z",
+    "exibido_em": "2026-11-23T22:40:39Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-70193",
+        "publicado": "2026-11-23T22:22:36Z"
       }
     ],
     "prioridade_max": "P2"

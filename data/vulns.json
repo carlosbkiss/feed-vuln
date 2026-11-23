@@ -1,6 +1,152 @@
 {
-  "atualizado": "2026-11-23T14:41:08Z",
+  "atualizado": "2026-11-23T22:40:39Z",
   "itens": [
+    {
+      "cve": "CVE-2026-134624",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-134624",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624",
+          "publicado": "2026-11-22T19:16:32Z",
+          "visto_em": "2026-11-23T22:40:39Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-134624",
+          "publicado": "2026-11-23",
+          "visto_em": "2026-11-23T22:40:39Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-23T12:00:00Z",
+          "visto_em": "2026-11-23T22:40:39Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+          "link": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
+          "publicado": "2026-11-23T12:28:09Z",
+          "visto_em": "2026-11-23T14:41:08Z"
+        }
+      ],
+      "detectado": "2026-11-23T14:41:08Z",
+      "aguardando_nota_desde": "2026-11-23T12:28:09Z",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-22T19:16:32Z",
+      "primeira_noticia": "2026-11-23T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624",
+      "ultima_atividade": "2026-11-23T12:28:09Z",
+      "kev": {
+        "adicionado": "2026-11-23",
+        "prazo": "2026-11-26",
+        "ransomware": "Unknown"
+      },
+      "produto": "N-able MailAssure",
+      "titulo": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
+      "resumo": "N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are reachable, and send…",
+      "cvss": 9.3,
+      "cvss_versao": "4.0",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-22T19:16:32Z",
+      "nvd_checado_em": "2026-11-23T22:40:39Z",
+      "nota_chegou_em": "2026-11-23T22:40:39Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "exibido_em": "2026-11-23T22:40:39Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0035,
+        "percentil": 0.2969,
+        "data": "2026-11-23"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-23T22:40:39Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-133968",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-133968",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-133968",
+          "publicado": "2026-11-20T19:18:51Z",
+          "visto_em": "2026-11-23T22:40:39Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Project MONAI MONAI Label Path Traversal Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133968",
+          "publicado": "2026-11-23",
+          "visto_em": "2026-11-23T22:40:39Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-23T12:00:00Z",
+          "visto_em": "2026-11-23T22:40:39Z"
+        }
+      ],
+      "detectado": "2026-11-23T22:40:39Z",
+      "kev": {
+        "adicionado": "2026-11-23",
+        "prazo": "2026-11-26",
+        "ransomware": "Unknown"
+      },
+      "produto": "Project MONAI MONAI Label",
+      "titulo": "Project MONAI MONAI Label Path Traversal Vulnerability",
+      "resumo": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-20T19:18:51Z",
+      "nvd_checado_em": "2026-11-23T22:40:39Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-20T19:18:51Z",
+      "primeira_noticia": "2026-11-23T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-133968",
+      "ultima_atividade": "2026-11-23T12:00:00Z",
+      "exibido_em": "2026-11-23T22:40:39Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0366,
+        "percentil": 0.8992,
+        "data": "2026-11-23"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-133968.json",
+        "checado": "2026-11-23T22:40:39Z"
+      }
+    },
     {
       "cve": "CVE-2026-123890",
       "fontes": [
@@ -1121,6 +1267,14 @@
           "link": "https://cybersecuritynews.com/hackers-exploit-critical-cisco-expressway-flaw/",
           "publicado": "2026-11-23T12:02:15Z",
           "visto_em": "2026-11-23T14:41:08Z"
+        },
+        {
+          "id": "cisco",
+          "nome": "Cisco PSIRT",
+          "titulo": "Cisco Expressway Series Remote Code Execution Vulnerability",
+          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Expressway%20Series%20Remote%20Code%20Execution%20Vulnerability%26vs_k=1",
+          "publicado": "2026-11-23T15:51:28Z",
+          "visto_em": "2026-11-23T22:40:39Z"
         }
       ],
       "detectado": "2026-11-20T14:39:19Z",
@@ -1133,7 +1287,7 @@
       "primeira_vez": "2026-10-21T17:19:06Z",
       "primeira_noticia": "2026-11-20T10:32:50Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
-      "ultima_atividade": "2026-11-23T12:02:15Z",
+      "ultima_atividade": "2026-11-23T15:51:28Z",
       "kev": {
         "adicionado": "2026-11-20",
         "prazo": "2026-11-23",
@@ -1897,6 +2051,42 @@
       "nvd_checado_em": "2026-11-20T19:07:33Z"
     },
     {
+      "cve": "CVE-2026-70193",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-70193",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-70193",
+          "publicado": "2026-11-23T22:22:36Z",
+          "visto_em": "2026-11-23T22:40:39Z"
+        }
+      ],
+      "detectado": "2026-11-23T22:40:39Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-23T22:22:36Z",
+      "resumo": "Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+      "nvd_checado_em": "2026-11-23T22:40:39Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-23T22:22:36Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-70193",
+      "ultima_atividade": "2026-11-23T22:22:36Z",
+      "exibido_em": "2026-11-23T22:40:39Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-23T22:40:39Z"
+      }
+    },
+    {
       "cve": "CVE-2026-120539",
       "fontes": [
         {
@@ -2544,7 +2734,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "epss": {
         "score": 0.0043,
@@ -2585,7 +2775,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "epss": {
         "score": 0.0063,
@@ -2626,7 +2816,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "epss": {
         "score": 0.0055,
@@ -2665,9 +2855,9 @@
       "regra": "CVSS ≥ 9 em plataforma corporativa",
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "poc": {
-        "qtd": 1,
+        "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-119077.json",
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "epss": {
         "score": 0.0137,
@@ -2708,7 +2898,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "epss": {
         "score": 0.006,
@@ -2757,7 +2947,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "epss": {
         "score": 0.0087,
@@ -2808,7 +2998,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "epss": {
         "score": 0.0081,
@@ -2859,7 +3049,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "epss": {
         "score": 0.0086,
@@ -2900,7 +3090,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "epss": {
         "score": 0.0018,
@@ -2949,7 +3139,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "epss": {
         "score": 0.007,
@@ -2998,7 +3188,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "epss": {
         "score": 0.0055,
@@ -3047,7 +3237,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76964.json",
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "epss": {
         "score": 0.0084,
@@ -3088,7 +3278,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "epss": {
         "score": 0.0039,
@@ -3129,7 +3319,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "epss": {
         "score": 0.0041,
@@ -3170,7 +3360,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "epss": {
         "score": 0.0054,
@@ -3211,7 +3401,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "epss": {
         "score": 0.0054,
@@ -3252,7 +3442,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "epss": {
         "score": 0.0036,
@@ -3331,7 +3521,7 @@
       "poc": {
         "qtd": 5,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-125350.json",
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "kev": {
         "adicionado": "2026-11-10",
@@ -3428,7 +3618,7 @@
       "poc": {
         "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-114713.json",
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "cvss": 8.6,
       "cvss_versao": "3.1",
@@ -3518,7 +3708,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       }
     },
     {
@@ -3588,7 +3778,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-40217.json",
-        "checado": "2026-11-22T18:32:16Z"
+        "checado": "2026-11-23T22:40:39Z"
       },
       "cvss": 8.8,
       "cvss_versao": "3.1",
