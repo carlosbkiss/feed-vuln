@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-23T10:40:13Z",
+  "atualizado": "2026-11-23T14:41:08Z",
   "itens": [
     {
       "cve": "CVE-2026-123890",
@@ -81,7 +81,7 @@
       "poc": {
         "qtd": 8,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123890.json",
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "kev": {
         "adicionado": "2026-11-20",
@@ -100,8 +100,71 @@
       "epss": {
         "score": 0.0353,
         "percentil": 0.8953,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       }
+    },
+    {
+      "cve": "CVE-2026-131914",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-131914",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
+          "publicado": "2026-11-19T02:17:20Z",
+          "visto_em": "2026-11-23T14:41:08Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+          "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+          "publicado": "2026-11-23T09:11:56Z",
+          "visto_em": "2026-11-23T10:40:13Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical ASP.NET AntiCsrf Flaw Under Attack, Allowing Hackers to Execute Code Without Login",
+          "link": "https://cybersecuritynews.com/asp-net-anticsrf-flaw-under-attack/",
+          "publicado": "2026-11-23T10:25:17Z",
+          "visto_em": "2026-11-23T10:40:13Z"
+        }
+      ],
+      "detectado": "2026-11-23T10:40:13Z",
+      "zero_day": true,
+      "zero_day_motivo": "The Hacker News: exploração ativa relatada",
+      "aguardando_nota_desde": "2026-11-23T09:11:56Z",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-19T02:17:20Z",
+      "primeira_noticia": "2026-11-23T09:11:56Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
+      "ultima_atividade": "2026-11-23T10:25:17Z",
+      "exibido_em": "2026-11-23T10:40:13Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0061,
+        "percentil": 0.5037,
+        "data": "2026-11-23"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-23T10:40:13Z"
+      },
+      "cvss": 9.3,
+      "cvss_versao": "4.0",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-19T02:17:20Z",
+      "resumo": "Deserialization of untrusted data in double-submit cookie vs. form field validation in Idunno.AntiCsrf versions through 0.9.1 Beta on ASP.NET allows remote unauthenticated attackers to execute code via object injection",
+      "nvd_checado_em": "2026-11-23T14:41:08Z",
+      "nota_chegou_em": "2026-11-23T14:41:08Z",
+      "escalado": true
     },
     {
       "cve": "CVE-2026-129448",
@@ -175,12 +238,12 @@
       "epss": {
         "score": 0.0546,
         "percentil": 0.9294,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       },
       "poc": {
         "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-129448.json",
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "kev": {
         "adicionado": "2026-11-20",
@@ -274,13 +337,13 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0327,
-        "percentil": 0.8871,
-        "data": "2026-11-22"
+        "percentil": 0.8872,
+        "data": "2026-11-23"
       },
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123039.json",
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       }
     },
     {
@@ -330,12 +393,12 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-118383.json",
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0088,
-        "percentil": 0.5986,
-        "data": "2026-11-22"
+        "percentil": 0.5987,
+        "data": "2026-11-23"
       },
       "cvss": 10.0,
       "cvss_versao": "3.1",
@@ -385,12 +448,12 @@
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-121529.json",
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0026,
-        "percentil": 0.174,
-        "data": "2026-11-22"
+        "percentil": 0.1738,
+        "data": "2026-11-23"
       },
       "cvss": 9.6,
       "cvss_versao": "3.1",
@@ -484,12 +547,12 @@
       "epss": {
         "score": 0.0101,
         "percentil": 0.6409,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       },
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123218.json",
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       }
     },
     {
@@ -576,14 +639,14 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0381,
-        "percentil": 0.9031,
-        "data": "2026-11-22"
+        "score": 0.0587,
+        "percentil": 0.9339,
+        "data": "2026-11-23"
       },
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-90436.json",
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       }
     },
     {
@@ -650,12 +713,12 @@
       "epss": {
         "score": 0.4411,
         "percentil": 0.9878,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       },
       "poc": {
         "qtd": 7,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-116779.json",
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -750,12 +813,12 @@
       "epss": {
         "score": 0.9554,
         "percentil": 0.9987,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       },
       "poc": {
-        "qtd": 48,
+        "qtd": 49,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123158.json",
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       }
     },
     {
@@ -814,12 +877,12 @@
       "epss": {
         "score": 0.1879,
         "percentil": 0.9735,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       },
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-102895.json",
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -898,14 +961,14 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0123,
-        "percentil": 0.697,
-        "data": "2026-11-22"
+        "score": 0.1284,
+        "percentil": 0.9639,
+        "data": "2026-11-23"
       },
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-115731.json",
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "cvss": 9.4,
       "cvss_versao": "4.0",
@@ -1008,12 +1071,12 @@
       "epss": {
         "score": 0.7452,
         "percentil": 0.9951,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       },
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-116606.json",
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       }
     },
     {
@@ -1050,6 +1113,14 @@
           "link": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
           "publicado": "2026-11-20T12:00:00Z",
           "visto_em": "2026-11-21T00:49:22Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Hackers Exploit Critical Cisco Expressway Flaw to Gain Root Access and Infiltrate Internal Networks",
+          "link": "https://cybersecuritynews.com/hackers-exploit-critical-cisco-expressway-flaw/",
+          "publicado": "2026-11-23T12:02:15Z",
+          "visto_em": "2026-11-23T14:41:08Z"
         }
       ],
       "detectado": "2026-11-20T14:39:19Z",
@@ -1062,7 +1133,7 @@
       "primeira_vez": "2026-10-21T17:19:06Z",
       "primeira_noticia": "2026-11-20T10:32:50Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
-      "ultima_atividade": "2026-11-20T12:00:00Z",
+      "ultima_atividade": "2026-11-23T12:02:15Z",
       "kev": {
         "adicionado": "2026-11-20",
         "prazo": "2026-11-23",
@@ -1085,13 +1156,13 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0219,
-        "percentil": 0.8287,
-        "data": "2026-11-22"
+        "percentil": 0.8288,
+        "data": "2026-11-23"
       },
       "poc": {
         "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76466.json",
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       }
     },
     {
@@ -1156,13 +1227,13 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0117,
-        "percentil": 0.6824,
-        "data": "2026-11-22"
+        "percentil": 0.6825,
+        "data": "2026-11-23"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "cvss": 4.3,
       "cvss_versao": "3.1",
@@ -1235,12 +1306,12 @@
       "epss": {
         "score": 0.3433,
         "percentil": 0.9845,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       },
       "poc": {
         "qtd": 6,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-90817.json",
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -1327,13 +1398,13 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0168,
-        "percentil": 0.7756,
-        "data": "2026-11-22"
+        "percentil": 0.7757,
+        "data": "2026-11-23"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "cvss": 7.5,
       "cvss_versao": "3.1",
@@ -1382,7 +1453,7 @@
       "kev": {
         "adicionado": "2026-11-18",
         "prazo": "2026-11-21",
-        "ransomware": "Unknown"
+        "ransomware": "Known"
       },
       "produto": "Synology DiskStation Manager (DSM)",
       "titulo": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
@@ -1405,12 +1476,12 @@
       "epss": {
         "score": 0.0313,
         "percentil": 0.8819,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       },
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2024/CVE-2024-10441.json",
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -1452,12 +1523,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0048,
-        "percentil": 0.4245,
-        "data": "2026-11-22"
+        "percentil": 0.4243,
+        "data": "2026-11-23"
       }
     },
     {
@@ -1493,12 +1564,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0036,
-        "percentil": 0.2985,
-        "data": "2026-11-22"
+        "percentil": 0.2983,
+        "data": "2026-11-23"
       }
     },
     {
@@ -1534,12 +1605,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0038,
-        "percentil": 0.3252,
-        "data": "2026-11-22"
+        "percentil": 0.3251,
+        "data": "2026-11-23"
       }
     },
     {
@@ -1575,12 +1646,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0022,
-        "percentil": 0.1281,
-        "data": "2026-11-22"
+        "percentil": 0.1278,
+        "data": "2026-11-23"
       }
     },
     {
@@ -1616,12 +1687,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0038,
-        "percentil": 0.3252,
-        "data": "2026-11-22"
+        "percentil": 0.3251,
+        "data": "2026-11-23"
       }
     },
     {
@@ -1657,12 +1728,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0036,
-        "percentil": 0.2984,
-        "data": "2026-11-22"
+        "percentil": 0.2982,
+        "data": "2026-11-23"
       }
     },
     {
@@ -1748,14 +1819,14 @@
       "regra": "explorado em plataforma corporativa",
       "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
       "poc": {
-        "qtd": 5,
+        "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-124194.json",
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
-        "score": 0.0194,
-        "percentil": 0.8066,
-        "data": "2026-11-22"
+        "score": 0.2489,
+        "percentil": 0.9796,
+        "data": "2026-11-23"
       }
     },
     {
@@ -1810,66 +1881,20 @@
       "regra": "explorado em plataforma corporativa",
       "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
       "epss": {
-        "score": 0.0071,
-        "percentil": 0.546,
-        "data": "2026-11-22"
+        "score": 0.009,
+        "percentil": 0.6064,
+        "data": "2026-11-23"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "cvss": 6.5,
       "cvss_versao": "3.1",
       "cvss_fonte": "CNA",
       "publicado_nvd": "2025-11-11T01:15:36Z",
       "nvd_checado_em": "2026-11-20T19:07:33Z"
-    },
-    {
-      "cve": "CVE-2026-131914",
-      "fontes": [
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
-          "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
-          "publicado": "2026-11-23T09:11:56Z",
-          "visto_em": "2026-11-23T10:40:13Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Critical ASP.NET AntiCsrf Flaw Under Attack, Allowing Hackers to Execute Code Without Login",
-          "link": "https://cybersecuritynews.com/asp-net-anticsrf-flaw-under-attack/",
-          "publicado": "2026-11-23T10:25:17Z",
-          "visto_em": "2026-11-23T10:40:13Z"
-        }
-      ],
-      "detectado": "2026-11-23T10:40:13Z",
-      "zero_day": true,
-      "zero_day_motivo": "The Hacker News: exploração ativa relatada",
-      "aguardando_nota_desde": "2026-11-23T09:11:56Z",
-      "elegivel_por": [
-        "zero-day"
-      ],
-      "primeira_vez": "2026-11-23T09:11:56Z",
-      "primeira_noticia": "2026-11-23T09:11:56Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
-      "ultima_atividade": "2026-11-23T10:25:17Z",
-      "exibido_em": "2026-11-23T10:40:13Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.0061,
-        "percentil": 0.5037,
-        "data": "2026-11-22"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-23T10:40:13Z"
-      }
     },
     {
       "cve": "CVE-2026-120539",
@@ -1889,7 +1914,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-21T06:16:33Z",
       "resumo": "The Restrictions for BuddyPress plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.5.4 This is due to the plugin splicing the attacker-controlled request URI into a PHP expression inside a double-quoted string…",
-      "nvd_checado_em": "2026-11-23T10:40:13Z",
+      "nvd_checado_em": "2026-11-23T14:41:08Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1904,12 +1929,12 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-120539.json",
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0216,
         "percentil": 0.8265,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       }
     },
     {
@@ -1945,12 +1970,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0063,
         "percentil": 0.51,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       }
     },
     {
@@ -1986,12 +2011,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.004,
-        "percentil": 0.3467,
-        "data": "2026-11-22"
+        "percentil": 0.3466,
+        "data": "2026-11-23"
       }
     },
     {
@@ -2027,12 +2052,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0122,
-        "percentil": 0.6954,
-        "data": "2026-11-22"
+        "percentil": 0.6955,
+        "data": "2026-11-23"
       }
     },
     {
@@ -2068,12 +2093,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0024,
-        "percentil": 0.1495,
-        "data": "2026-11-22"
+        "percentil": 0.1494,
+        "data": "2026-11-23"
       }
     },
     {
@@ -2109,12 +2134,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0024,
-        "percentil": 0.1573,
-        "data": "2026-11-22"
+        "percentil": 0.1571,
+        "data": "2026-11-23"
       }
     },
     {
@@ -2150,12 +2175,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0043,
-        "percentil": 0.3766,
-        "data": "2026-11-22"
+        "percentil": 0.3764,
+        "data": "2026-11-23"
       }
     },
     {
@@ -2191,12 +2216,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0045,
-        "percentil": 0.3971,
-        "data": "2026-11-22"
+        "percentil": 0.3969,
+        "data": "2026-11-23"
       }
     },
     {
@@ -2232,12 +2257,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0031,
-        "percentil": 0.248,
-        "data": "2026-11-22"
+        "percentil": 0.2478,
+        "data": "2026-11-23"
       }
     },
     {
@@ -2273,12 +2298,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0042,
-        "percentil": 0.3751,
-        "data": "2026-11-22"
+        "percentil": 0.375,
+        "data": "2026-11-23"
       }
     },
     {
@@ -2314,12 +2339,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0042,
-        "percentil": 0.368,
-        "data": "2026-11-22"
+        "percentil": 0.3678,
+        "data": "2026-11-23"
       }
     },
     {
@@ -2355,12 +2380,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0036,
-        "percentil": 0.3038,
-        "data": "2026-11-22"
+        "percentil": 0.3037,
+        "data": "2026-11-23"
       }
     },
     {
@@ -2396,12 +2421,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0062,
         "percentil": 0.5059,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       }
     },
     {
@@ -2437,12 +2462,12 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-128027.json",
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.0089,
-        "percentil": 0.6029,
-        "data": "2026-11-22"
+        "percentil": 0.603,
+        "data": "2026-11-23"
       }
     },
     {
@@ -2478,12 +2503,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-22T14:39:47Z"
+        "checado": "2026-11-23T14:41:08Z"
       },
       "epss": {
         "score": 0.005,
-        "percentil": 0.4403,
-        "data": "2026-11-22"
+        "percentil": 0.4402,
+        "data": "2026-11-23"
       }
     },
     {
@@ -2523,8 +2548,8 @@
       },
       "epss": {
         "score": 0.0043,
-        "percentil": 0.3768,
-        "data": "2026-11-22"
+        "percentil": 0.3766,
+        "data": "2026-11-23"
       }
     },
     {
@@ -2565,7 +2590,7 @@
       "epss": {
         "score": 0.0063,
         "percentil": 0.5137,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       }
     },
     {
@@ -2606,7 +2631,7 @@
       "epss": {
         "score": 0.0055,
         "percentil": 0.4691,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       }
     },
     {
@@ -2646,8 +2671,8 @@
       },
       "epss": {
         "score": 0.0137,
-        "percentil": 0.7266,
-        "data": "2026-11-22"
+        "percentil": 0.7267,
+        "data": "2026-11-23"
       }
     },
     {
@@ -2688,7 +2713,7 @@
       "epss": {
         "score": 0.006,
         "percentil": 0.4983,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       }
     },
     {
@@ -2736,8 +2761,8 @@
       },
       "epss": {
         "score": 0.0087,
-        "percentil": 0.597,
-        "data": "2026-11-22"
+        "percentil": 0.5971,
+        "data": "2026-11-23"
       }
     },
     {
@@ -2788,7 +2813,7 @@
       "epss": {
         "score": 0.0081,
         "percentil": 0.5781,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       }
     },
     {
@@ -2838,8 +2863,8 @@
       },
       "epss": {
         "score": 0.0086,
-        "percentil": 0.5946,
-        "data": "2026-11-22"
+        "percentil": 0.5947,
+        "data": "2026-11-23"
       }
     },
     {
@@ -2879,8 +2904,8 @@
       },
       "epss": {
         "score": 0.0018,
-        "percentil": 0.0787,
-        "data": "2026-11-22"
+        "percentil": 0.0783,
+        "data": "2026-11-23"
       }
     },
     {
@@ -2929,7 +2954,7 @@
       "epss": {
         "score": 0.007,
         "percentil": 0.5413,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       }
     },
     {
@@ -2977,8 +3002,8 @@
       },
       "epss": {
         "score": 0.0055,
-        "percentil": 0.4666,
-        "data": "2026-11-22"
+        "percentil": 0.4665,
+        "data": "2026-11-23"
       }
     },
     {
@@ -3026,8 +3051,8 @@
       },
       "epss": {
         "score": 0.0084,
-        "percentil": 0.5868,
-        "data": "2026-11-22"
+        "percentil": 0.5869,
+        "data": "2026-11-23"
       }
     },
     {
@@ -3067,8 +3092,8 @@
       },
       "epss": {
         "score": 0.0039,
-        "percentil": 0.3395,
-        "data": "2026-11-22"
+        "percentil": 0.3393,
+        "data": "2026-11-23"
       }
     },
     {
@@ -3108,8 +3133,8 @@
       },
       "epss": {
         "score": 0.0041,
-        "percentil": 0.3644,
-        "data": "2026-11-22"
+        "percentil": 0.3642,
+        "data": "2026-11-23"
       }
     },
     {
@@ -3149,8 +3174,8 @@
       },
       "epss": {
         "score": 0.0054,
-        "percentil": 0.4645,
-        "data": "2026-11-22"
+        "percentil": 0.4644,
+        "data": "2026-11-23"
       }
     },
     {
@@ -3190,8 +3215,8 @@
       },
       "epss": {
         "score": 0.0054,
-        "percentil": 0.4645,
-        "data": "2026-11-22"
+        "percentil": 0.4644,
+        "data": "2026-11-23"
       }
     },
     {
@@ -3231,8 +3256,8 @@
       },
       "epss": {
         "score": 0.0036,
-        "percentil": 0.298,
-        "data": "2026-11-22"
+        "percentil": 0.2978,
+        "data": "2026-11-23"
       }
     },
     {
@@ -3325,7 +3350,7 @@
       "epss": {
         "score": 0.068,
         "percentil": 0.9416,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       }
     },
     {
@@ -3397,8 +3422,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0115,
-        "percentil": 0.6765,
-        "data": "2026-11-22"
+        "percentil": 0.6766,
+        "data": "2026-11-23"
       },
       "poc": {
         "qtd": 3,
@@ -3488,7 +3513,7 @@
       "epss": {
         "score": 0.6377,
         "percentil": 0.9924,
-        "data": "2026-11-22"
+        "data": "2026-11-23"
       },
       "poc": {
         "qtd": 0,
@@ -3556,9 +3581,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.78,
-        "percentil": 0.9958,
-        "data": "2026-11-22"
+        "score": 0.828,
+        "percentil": 0.9968,
+        "data": "2026-11-23"
       },
       "poc": {
         "qtd": 1,
@@ -3573,6 +3598,12 @@
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "SecurityWeek",
+      "titulo": "SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks",
+      "link": "https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/",
+      "publicado": "2026-11-23T11:35:15Z"
+    },
     {
       "fonte": "BleepingComputer",
       "titulo": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
@@ -3716,12 +3747,6 @@
       "titulo": "Google patches eighth Chrome zero-day exploited in attacks this year",
       "link": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/",
       "publicado": "2026-11-10T08:51:25Z"
-    },
-    {
-      "fonte": "SecurityWeek",
-      "titulo": "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
-      "link": "https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/",
-      "publicado": "2026-11-10T06:12:24Z"
     }
   ]
 }

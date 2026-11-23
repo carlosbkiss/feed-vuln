@@ -1827,6 +1827,11 @@
         "nome": "CISA Advisories",
         "link": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
         "publicado": "2026-11-20T12:00:00Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/hackers-exploit-critical-cisco-expressway-flaw/",
+        "publicado": "2026-11-23T12:02:15Z"
       }
     ],
     "prioridade_max": "P0"

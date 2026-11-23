@@ -640,7 +640,7 @@
     "exibido_em": "2026-11-17T18:43:49Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0123,
+    "epss_max": 0.1284,
     "poc_qtd": 1,
     "fontes": [
       {
@@ -1078,7 +1078,7 @@
     "aguardando_nota_desde": "2026-11-06T15:21:49Z",
     "nota_chegou_em": "2026-11-09T21:27:15Z",
     "epss_max": 0.9554,
-    "poc_qtd": 48,
+    "poc_qtd": 49,
     "fontes": [
       {
         "nome": "NVD",
@@ -1291,8 +1291,8 @@
     "exibido_em": "2026-11-11T00:04:15Z",
     "aguardando_nota_desde": "2026-11-10T16:00:00Z",
     "nota_chegou_em": "2026-11-11T00:04:15Z",
-    "epss_max": 0.0194,
-    "poc_qtd": 5,
+    "epss_max": 0.2489,
+    "poc_qtd": 4,
     "fontes": [
       {
         "nome": "CISA KEV",
@@ -1700,22 +1700,28 @@
     "cve": "CVE-2026-131914",
     "produto": "",
     "titulo": "",
-    "cvss": null,
-    "prioridade": "P2",
+    "cvss": 9.3,
+    "prioridade": "P0",
     "elegivel_por": [
-      "zero-day"
+      "zero-day",
+      "CVSS ≥ 9"
     ],
     "zero_day": true,
     "kev": null,
-    "primeira_vez": "2026-11-23T09:11:56Z",
+    "primeira_vez": "2026-11-19T02:17:20Z",
     "primeira_noticia": "2026-11-23T09:11:56Z",
-    "publicado_nvd": null,
+    "publicado_nvd": "2026-11-19T02:17:20Z",
     "exibido_em": "2026-11-23T10:40:13Z",
     "aguardando_nota_desde": "2026-11-23T09:11:56Z",
-    "nota_chegou_em": null,
+    "nota_chegou_em": "2026-11-23T14:41:08Z",
     "epss_max": 0.0061,
     "poc_qtd": 0,
     "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
+        "publicado": "2026-11-19T02:17:20Z"
+      },
       {
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
@@ -1727,7 +1733,7 @@
         "publicado": "2026-11-23T10:25:17Z"
       }
     ],
-    "prioridade_max": "P2"
+    "prioridade_max": "P0"
   },
   "CVE-2026-14492": {
     "cve": "CVE-2026-14492",
@@ -2270,7 +2276,7 @@
     "exibido_em": "2026-11-18T19:24:42Z",
     "aguardando_nota_desde": "2026-11-17T16:11:10Z",
     "nota_chegou_em": "2026-11-18T19:24:42Z",
-    "epss_max": 0.0381,
+    "epss_max": 0.0587,
     "poc_qtd": 4,
     "fontes": [
       {
