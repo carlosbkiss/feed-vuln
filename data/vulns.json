@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-24T18:36:51Z",
+  "atualizado": "2026-11-24T21:14:23Z",
   "itens": [
     {
       "cve": "CVE-2026-123903",
@@ -24,7 +24,7 @@
       "detectado": "2026-11-24T14:37:30Z",
       "zero_day": true,
       "zero_day_motivo": "The Hacker News: exploração ativa relatada",
-      "nvd_checado_em": "2026-11-24T14:37:30Z",
+      "nvd_checado_em": "2026-11-24T21:14:23Z",
       "aguardando_nota_desde": "2026-11-24T13:28:26Z",
       "elegivel_por": [
         "zero-day"
@@ -704,60 +704,6 @@
       "nvd_checado_em": "2026-11-13T18:38:57Z",
       "nota_chegou_em": "2026-11-13T18:38:57Z",
       "escalado": true
-    },
-    {
-      "cve": "CVE-2026-121529",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-121529",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-121529",
-          "publicado": "2026-11-10T20:18:56Z",
-          "visto_em": "2026-11-18T14:39:33Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Critical Fortinet2Shell Vulnerability Enables RCE Attacks in FortiClient with FortiPAM Enabled",
-          "link": "https://cybersecuritynews.com/fortinet2shell-vulnerability/",
-          "publicado": "2026-11-11T07:05:55Z",
-          "visto_em": "2026-11-11T10:40:48Z"
-        }
-      ],
-      "detectado": "2026-11-11T10:40:48Z",
-      "zero_day": true,
-      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
-      "aguardando_nota_desde": "2026-11-11T07:05:55Z",
-      "elegivel_por": [
-        "zero-day",
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-11-10T20:18:56Z",
-      "primeira_noticia": "2026-11-11T07:05:55Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-121529",
-      "ultima_atividade": "2026-11-11T07:05:55Z",
-      "exibido_em": "2026-11-11T10:40:48Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "poc": {
-        "qtd": 4,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-121529.json",
-        "checado": "2026-11-24T18:36:51Z"
-      },
-      "epss": {
-        "score": 0.0026,
-        "percentil": 0.1722,
-        "data": "2026-11-24"
-      },
-      "cvss": 9.6,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-10T20:18:56Z",
-      "resumo": "A origin validation error vulnerability in Fortinet FortiClientMac 7.4.0 through 7.4.7, FortiClientWindows 7.4.0 through 7.4.7, FortiClientWindows 7.2.0 through 7.2.14, FortiClientWindowsPAM 7.4.7, FortiClientWindowsPAM 7.2.14 may allow an unauthorized…",
-      "nvd_checado_em": "2026-11-18T14:39:33Z",
-      "nota_chegou_em": "2026-11-18T14:39:33Z"
     },
     {
       "cve": "CVE-2026-90436",
@@ -1932,6 +1878,42 @@
       "nvd_checado_em": "2026-11-20T19:07:33Z"
     },
     {
+      "cve": "CVE-2026-135797",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-135797",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-135797",
+          "publicado": "2026-11-24T19:18:14Z",
+          "visto_em": "2026-11-24T21:14:23Z"
+        }
+      ],
+      "detectado": "2026-11-24T21:14:23Z",
+      "cvss": 10.0,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-24T19:18:14Z",
+      "resumo": "A vulnerability was identified in Volans NGFW Next-Generation Firewall r5.1. Impacted is the function exec of the file sslvpn/sslvpn_client.php of the component SSLVPN Client. Such manipulation of the argument img leads to os command injection. The attack…",
+      "nvd_checado_em": "2026-11-24T21:14:23Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-24T19:18:14Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-135797",
+      "ultima_atividade": "2026-11-24T19:18:14Z",
+      "exibido_em": "2026-11-24T21:14:23Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-24T21:14:23Z"
+      }
+    },
+    {
       "cve": "CVE-2026-123167",
       "fontes": [
         {
@@ -1949,7 +1931,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-24T17:18:13Z",
       "resumo": "SolarWinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, can allow a domain administrator to access files that otherwise would require elevated privileges. The risk is lower for Windows installations.",
-      "nvd_checado_em": "2026-11-24T18:36:51Z",
+      "nvd_checado_em": "2026-11-24T21:14:23Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1965,6 +1947,50 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-24T18:36:51Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-112732",
+      "fontes": [
+        {
+          "id": "msrc",
+          "nome": "Microsoft Security Update Guide",
+          "titulo": "CVE-2026-112732 Microsoft Office Visio Remote Code Execution Vulnerability",
+          "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-112732",
+          "publicado": "2026-11-24T16:00:00Z",
+          "visto_em": "2026-11-24T21:14:23Z"
+        },
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-112732",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-112732",
+          "publicado": "2026-11-24T20:18:21Z",
+          "visto_em": "2026-11-24T21:14:23Z"
+        }
+      ],
+      "detectado": "2026-11-24T21:14:23Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-24T20:18:21Z",
+      "resumo": "Double free in Microsoft Office Visio allows an unauthorized attacker to execute code over a network.",
+      "nvd_checado_em": "2026-11-24T21:14:23Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-24T16:00:00Z",
+      "primeira_noticia": "2026-11-24T16:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-112732",
+      "ultima_atividade": "2026-11-24T20:18:21Z",
+      "exibido_em": "2026-11-24T21:14:23Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-24T21:14:23Z"
       }
     },
     {
@@ -3399,12 +3425,6 @@
       "titulo": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
       "link": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
       "publicado": "2026-11-10T22:26:51Z"
-    },
-    {
-      "fonte": "BleepingComputer",
-      "titulo": "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
-      "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
-      "publicado": "2026-11-10T19:07:36Z"
     }
   ]
 }

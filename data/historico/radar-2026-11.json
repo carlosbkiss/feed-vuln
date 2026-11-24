@@ -368,6 +368,39 @@
     ],
     "prioridade_max": "P2"
   },
+  "CVE-2026-112732": {
+    "cve": "CVE-2026-112732",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.8,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-11-24T16:00:00Z",
+    "primeira_noticia": "2026-11-24T16:00:00Z",
+    "publicado_nvd": "2026-11-24T20:18:21Z",
+    "exibido_em": "2026-11-24T21:14:23Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "Microsoft Security Update Guide",
+        "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-112732",
+        "publicado": "2026-11-24T16:00:00Z"
+      },
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-112732",
+        "publicado": "2026-11-24T20:18:21Z"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
   "CVE-2026-114713": {
     "cve": "CVE-2026-114713",
     "produto": "UnrealIRCd UnrealIRCd",
@@ -2028,6 +2061,34 @@
       }
     ],
     "prioridade_max": "P0"
+  },
+  "CVE-2026-135797": {
+    "cve": "CVE-2026-135797",
+    "produto": "",
+    "titulo": "",
+    "cvss": 10.0,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-11-24T19:18:14Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-11-24T19:18:14Z",
+    "exibido_em": "2026-11-24T21:14:23Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-135797",
+        "publicado": "2026-11-24T19:18:14Z"
+      }
+    ],
+    "prioridade_max": "P2"
   },
   "CVE-2026-14492": {
     "cve": "CVE-2026-14492",
