@@ -1824,6 +1824,11 @@
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
         "publicado": "2026-11-23T12:28:09Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
+        "publicado": "2026-11-24T06:02:45Z"
       }
     ],
     "prioridade_max": "P0"

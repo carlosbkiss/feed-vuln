@@ -1837,6 +1837,11 @@
         "nome": "Cisco PSIRT",
         "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20Expressway%20Series%20Remote%20Code%20Execution%20Vulnerability%26vs_k=1",
         "publicado": "2026-11-23T15:51:28Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/cisco-expressway-vulnerability-exploited/",
+        "publicado": "2026-11-24T04:53:16Z"
       }
     ],
     "prioridade_max": "P0"
