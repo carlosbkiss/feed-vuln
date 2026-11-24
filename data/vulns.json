@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-24T06:57:47Z",
+  "atualizado": "2026-11-24T10:39:57Z",
   "itens": [
     {
       "cve": "CVE-2026-134624",
@@ -1749,7 +1749,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-23T22:22:36Z",
       "resumo": "Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
-      "nvd_checado_em": "2026-11-24T06:57:47Z",
+      "nvd_checado_em": "2026-11-24T10:39:57Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -3219,12 +3219,6 @@
       "titulo": "Critical Xen Orchestra auth bypass flaw exploited to hijack VM servers",
       "link": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/",
       "publicado": "2026-11-10T16:17:16Z"
-    },
-    {
-      "fonte": "BleepingComputer",
-      "titulo": "Google patches eighth Chrome zero-day exploited in attacks this year",
-      "link": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/",
-      "publicado": "2026-11-10T08:51:25Z"
     }
   ]
 }
