@@ -641,7 +641,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.1284,
-    "poc_qtd": 1,
+    "poc_qtd": 2,
     "fontes": [
       {
         "nome": "NVD",
@@ -695,7 +695,7 @@
     "aguardando_nota_desde": "2026-11-03T15:59:19Z",
     "nota_chegou_em": "2026-11-11T00:04:15Z",
     "epss_max": 0.7452,
-    "poc_qtd": 1,
+    "poc_qtd": 2,
     "fontes": [
       {
         "nome": "NVD",
@@ -930,7 +930,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0216,
-    "poc_qtd": 1,
+    "poc_qtd": 2,
     "fontes": [
       {
         "nome": "NVD",
@@ -1025,7 +1025,7 @@
     "aguardando_nota_desde": "2026-11-13T07:39:04Z",
     "nota_chegou_em": "2026-11-13T18:32:35Z",
     "epss_max": 0.0327,
-    "poc_qtd": 2,
+    "poc_qtd": 3,
     "fontes": [
       {
         "nome": "NVD",
@@ -1112,6 +1112,34 @@
       }
     ],
     "prioridade_max": "P0"
+  },
+  "CVE-2026-123167": {
+    "cve": "CVE-2026-123167",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.1,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-11-24T17:18:13Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-11-24T17:18:13Z",
+    "exibido_em": "2026-11-24T18:36:51Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-123167",
+        "publicado": "2026-11-24T17:18:13Z"
+      }
+    ],
+    "prioridade_max": "P2"
   },
   "CVE-2026-123218": {
     "cve": "CVE-2026-123218",
@@ -1335,7 +1363,7 @@
     "aguardando_nota_desde": "2026-11-10T16:00:00Z",
     "nota_chegou_em": "2026-11-11T00:04:15Z",
     "epss_max": 0.2489,
-    "poc_qtd": 4,
+    "poc_qtd": 5,
     "fontes": [
       {
         "nome": "CISA KEV",
@@ -1704,7 +1732,7 @@
     "aguardando_nota_desde": "2026-11-18T17:10:45Z",
     "nota_chegou_em": "2026-11-20T18:39:04Z",
     "epss_max": 0.4007,
-    "poc_qtd": 3,
+    "poc_qtd": 4,
     "fontes": [
       {
         "nome": "NVD",
@@ -1746,16 +1774,21 @@
   },
   "CVE-2026-131914": {
     "cve": "CVE-2026-131914",
-    "produto": "",
-    "titulo": "",
+    "produto": "Idunno AntiCsrf",
+    "titulo": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
     "cvss": 9.3,
     "prioridade": "P0",
     "elegivel_por": [
       "zero-day",
-      "CVSS ≥ 9"
+      "CVSS ≥ 9",
+      "KEV"
     ],
     "zero_day": true,
-    "kev": null,
+    "kev": {
+      "adicionado": "2026-11-24",
+      "prazo": "2026-11-27",
+      "ransomware": "Unknown"
+    },
     "primeira_vez": "2026-11-19T02:17:20Z",
     "primeira_noticia": "2026-11-23T09:11:56Z",
     "publicado_nvd": "2026-11-19T02:17:20Z",
@@ -1781,12 +1814,88 @@
         "publicado": "2026-11-23T10:25:17Z"
       },
       {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-131914",
+        "publicado": "2026-11-24"
+      },
+      {
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/critical-asp-net-anticsrf-flaw-exploited/",
         "publicado": "2026-11-24T12:55:28Z"
       }
     ],
     "prioridade_max": "P0"
+  },
+  "CVE-2026-132165": {
+    "cve": "CVE-2026-132165",
+    "produto": "Drupal Core",
+    "titulo": "Drupal Core Remote Code Execution Vulnerability",
+    "cvss": null,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-24",
+      "prazo": "2026-11-27",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-24T00:00:00Z",
+    "primeira_noticia": null,
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-24T18:36:51Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 1,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-132165",
+        "publicado": "2026-11-24"
+      }
+    ],
+    "prioridade_max": "P1"
+  },
+  "CVE-2026-132224": {
+    "cve": "CVE-2026-132224",
+    "produto": "Optimizely Web Experimentation",
+    "titulo": "Optimizely Web Experimentation External Control of Critical State Data Vulnerability",
+    "cvss": 8.7,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-24",
+      "prazo": "2026-11-27",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-18T16:18:15Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-11-18T16:18:15Z",
+    "exibido_em": "2026-11-24T18:36:51Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0041,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-132224",
+        "publicado": "2026-11-18T16:18:15Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-132224",
+        "publicado": "2026-11-24"
+      }
+    ],
+    "prioridade_max": "P2"
   },
   "CVE-2026-133968": {
     "cve": "CVE-2026-133968",
@@ -1938,7 +2047,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0236,
-    "poc_qtd": 0,
+    "poc_qtd": 1,
     "fontes": [
       {
         "nome": "NVD",
@@ -2490,7 +2599,7 @@
     "aguardando_nota_desde": "2026-11-17T16:11:10Z",
     "nota_chegou_em": "2026-11-18T19:24:42Z",
     "epss_max": 0.0587,
-    "poc_qtd": 4,
+    "poc_qtd": 5,
     "fontes": [
       {
         "nome": "NVD",

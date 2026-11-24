@@ -1,7 +1,29 @@
 {
-  "atualizado": "2026-11-24T14:37:15Z",
+  "atualizado": "2026-11-24T18:36:33Z",
   "janela": "17 a 24/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-24",
+      "cve": "CVE-2026-123903 / CVE-2026-123910 / CVE-2026-123911",
+      "produto": "VMware vCenter Server (vmdir) e ESX (serviço I/O filter), boletim VMSA-2026-0011",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não (sem ataque relatado; mesmo componente vmdir da CVE-2026-123890 explorada como zero-day)",
+      "prioridade": "P0",
+      "tratamento": "Atualizar vCenter para 8.0 U3m, 9.0.2.0300 ou 9.1.2 (VCF 5.x: 5.2.5; vCenter 7.0 via suporte Broadcom) e ESXi para 8.0 U3m ou 9.1.2. Não há contorno para o vCenter; restringir o acesso de rede à interface de gestão e, no ESX 8.0, aplicar o contorno do KB463535 até corrigir.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html"
+        },
+        {
+          "nome": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/vmware-esx-host-vulnerabilities/"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-11-24",
       "cve": "sem CVE (Azure API Management)",
@@ -16,6 +38,28 @@
         {
           "nome": "Techzine",
           "url": "https://www.techzine.eu/news/security/146028/microsoft-patches-actively-exploited-vulnerability-in-azure-api-management/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-23",
+      "cve": "CVE-2026-134401",
+      "produto": "Google Chrome (componente Variations, fuga do sandbox)",
+      "cvss": 9.6,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Forçar Chrome 158.0.8127.88 ou superior (ou .89 em parte dos builds Windows e macOS) via gestão de estações e conferir navegadores baseados em Chromium (Edge e outros) quando saírem as versões deles.",
+      "fontes": [
+        {
+          "nome": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/critical-google-chrome-flaw/"
+        },
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134401"
         }
       ],
       "status": "Novo"

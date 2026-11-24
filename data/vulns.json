@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-24T14:37:30Z",
+  "atualizado": "2026-11-24T18:36:51Z",
   "itens": [
     {
       "cve": "CVE-2026-123903",
@@ -345,7 +345,7 @@
       "poc": {
         "qtd": 8,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123890.json",
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "kev": {
         "adicionado": "2026-11-20",
@@ -395,6 +395,14 @@
           "visto_em": "2026-11-23T10:40:13Z"
         },
         {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-131914",
+          "publicado": "2026-11-24",
+          "visto_em": "2026-11-24T18:36:51Z"
+        },
+        {
           "id": "csn",
           "nome": "Cyber Security News",
           "titulo": "Critical ASP.NET AntiCsrf Flaw Exploited in Attacks by triggering a web redirect on vulnerable apps",
@@ -405,11 +413,12 @@
       ],
       "detectado": "2026-11-23T10:40:13Z",
       "zero_day": true,
-      "zero_day_motivo": "The Hacker News: exploração ativa relatada",
+      "zero_day_motivo": "CISA KEV",
       "aguardando_nota_desde": "2026-11-23T09:11:56Z",
       "elegivel_por": [
         "zero-day",
-        "CVSS ≥ 9"
+        "CVSS ≥ 9",
+        "KEV"
       ],
       "primeira_vez": "2026-11-19T02:17:20Z",
       "primeira_noticia": "2026-11-23T09:11:56Z",
@@ -436,7 +445,14 @@
       "resumo": "Deserialization of untrusted data in double-submit cookie vs. form field validation in Idunno.AntiCsrf versions through 0.9.1 Beta on ASP.NET allows remote unauthenticated attackers to execute code via object injection",
       "nvd_checado_em": "2026-11-23T14:41:08Z",
       "nota_chegou_em": "2026-11-23T14:41:08Z",
-      "escalado": true
+      "escalado": true,
+      "kev": {
+        "adicionado": "2026-11-24",
+        "prazo": "2026-11-27",
+        "ransomware": "Unknown"
+      },
+      "produto": "Idunno AntiCsrf",
+      "titulo": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability"
     },
     {
       "cve": "CVE-2026-129448",
@@ -521,9 +537,9 @@
         "data": "2026-11-24"
       },
       "poc": {
-        "qtd": 3,
+        "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-129448.json",
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "kev": {
         "adicionado": "2026-11-20",
@@ -621,9 +637,9 @@
         "data": "2026-11-24"
       },
       "poc": {
-        "qtd": 2,
+        "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123039.json",
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       }
     },
     {
@@ -673,7 +689,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-118383.json",
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0088,
@@ -728,7 +744,7 @@
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-121529.json",
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0026,
@@ -832,9 +848,9 @@
         "data": "2026-11-24"
       },
       "poc": {
-        "qtd": 4,
+        "qtd": 5,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-90436.json",
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       }
     },
     {
@@ -911,9 +927,9 @@
         "data": "2026-11-24"
       },
       "poc": {
-        "qtd": 1,
+        "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-115731.json",
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "cvss": 9.4,
       "cvss_versao": "4.0",
@@ -1019,9 +1035,9 @@
         "data": "2026-11-24"
       },
       "poc": {
-        "qtd": 1,
+        "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-116606.json",
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       }
     },
     {
@@ -1129,9 +1145,9 @@
         "data": "2026-11-24"
       },
       "poc": {
-        "qtd": 3,
+        "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76466.json",
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       }
     },
     {
@@ -1200,9 +1216,9 @@
         "data": "2026-11-24"
       },
       "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-111793.json",
+        "checado": "2026-11-24T18:36:51Z"
       },
       "cvss": 4.3,
       "cvss_versao": "3.1",
@@ -1278,9 +1294,9 @@
         "data": "2026-11-24"
       },
       "poc": {
-        "qtd": 6,
+        "qtd": 7,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-90817.json",
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -1371,9 +1387,9 @@
         "data": "2026-11-24"
       },
       "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-20320.json",
+        "checado": "2026-11-24T18:36:51Z"
       },
       "cvss": 7.5,
       "cvss_versao": "3.1",
@@ -1448,9 +1464,9 @@
         "data": "2026-11-24"
       },
       "poc": {
-        "qtd": 2,
+        "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2024/CVE-2024-10441.json",
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -1458,6 +1474,48 @@
       "publicado_nvd": "2025-03-19T02:15:27Z",
       "nvd_checado_em": "2026-11-19T02:35:56Z",
       "escalado": true
+    },
+    {
+      "cve": "CVE-2026-132165",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Drupal Core Remote Code Execution Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-132165",
+          "publicado": "2026-11-24",
+          "visto_em": "2026-11-24T18:36:51Z"
+        }
+      ],
+      "detectado": "2026-11-24T18:36:51Z",
+      "kev": {
+        "adicionado": "2026-11-24",
+        "prazo": "2026-11-27",
+        "ransomware": "Unknown"
+      },
+      "produto": "Drupal Core",
+      "titulo": "Drupal Core Remote Code Execution Vulnerability",
+      "resumo": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to…",
+      "nvd_checado_em": "2026-11-24T18:36:51Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-24T00:00:00Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165",
+      "ultima_atividade": "2026-11-24T00:00:00Z",
+      "exibido_em": "2026-11-24T18:36:51Z",
+      "prioridade": "P1",
+      "regra": "explorado em plataforma corporativa",
+      "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-132165.json",
+        "checado": "2026-11-24T18:36:51Z"
+      }
     },
     {
       "cve": "CVE-2026-91569",
@@ -1492,7 +1550,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0048,
@@ -1533,7 +1591,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0036,
@@ -1574,7 +1632,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0038,
@@ -1615,7 +1673,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0022,
@@ -1656,7 +1714,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0038,
@@ -1697,7 +1755,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0036,
@@ -1788,9 +1846,9 @@
       "regra": "explorado em plataforma corporativa",
       "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
       "poc": {
-        "qtd": 4,
+        "qtd": 5,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-124194.json",
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.2489,
@@ -1863,15 +1921,51 @@
         "data": "2026-11-24"
       },
       "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2025/CVE-2025-42884.json",
+        "checado": "2026-11-24T18:36:51Z"
       },
       "cvss": 6.5,
       "cvss_versao": "3.1",
       "cvss_fonte": "CNA",
       "publicado_nvd": "2025-11-11T01:15:36Z",
       "nvd_checado_em": "2026-11-20T19:07:33Z"
+    },
+    {
+      "cve": "CVE-2026-123167",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-123167",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-123167",
+          "publicado": "2026-11-24T17:18:13Z",
+          "visto_em": "2026-11-24T18:36:51Z"
+        }
+      ],
+      "detectado": "2026-11-24T18:36:51Z",
+      "cvss": 9.1,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-24T17:18:13Z",
+      "resumo": "SolarWinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, can allow a domain administrator to access files that otherwise would require elevated privileges. The risk is lower for Windows installations.",
+      "nvd_checado_em": "2026-11-24T18:36:51Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-24T17:18:13Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-123167",
+      "ultima_atividade": "2026-11-24T17:18:13Z",
+      "exibido_em": "2026-11-24T18:36:51Z",
+      "prioridade": "P2",
+      "regra": "CVSS ≥ 9 em plataforma corporativa",
+      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-24T18:36:51Z"
+      }
     },
     {
       "cve": "CVE-2026-70193",
@@ -1945,9 +2039,9 @@
       "regra": "CVSS ≥ 9 em plataforma corporativa",
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "poc": {
-        "qtd": 1,
+        "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-120539.json",
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0216,
@@ -1988,7 +2082,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0063,
@@ -2029,7 +2123,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.004,
@@ -2068,14 +2162,73 @@
       "regra": "CVSS ≥ 9 em plataforma corporativa",
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-14492.json",
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0122,
         "percentil": 0.6939,
         "data": "2026-11-24"
+      }
+    },
+    {
+      "cve": "CVE-2026-132224",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-132224",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-132224",
+          "publicado": "2026-11-18T16:18:15Z",
+          "visto_em": "2026-11-24T18:36:51Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Optimizely Web Experimentation External Control of Critical State Data Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-132224",
+          "publicado": "2026-11-24",
+          "visto_em": "2026-11-24T18:36:51Z"
+        }
+      ],
+      "detectado": "2026-11-24T18:36:51Z",
+      "kev": {
+        "adicionado": "2026-11-24",
+        "prazo": "2026-11-27",
+        "ransomware": "Unknown"
+      },
+      "produto": "Optimizely Web Experimentation",
+      "titulo": "Optimizely Web Experimentation External Control of Critical State Data Vulnerability",
+      "resumo": "Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modify Project JavaScript. Successful exploitation can result…",
+      "cvss": 8.7,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "NVD",
+      "publicado_nvd": "2026-11-18T16:18:15Z",
+      "nvd_checado_em": "2026-11-24T18:36:51Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-18T16:18:15Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-132224",
+      "ultima_atividade": "2026-11-24T00:00:00Z",
+      "exibido_em": "2026-11-24T18:36:51Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0041,
+        "percentil": 0.3584,
+        "data": "2026-11-24"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-24T18:36:51Z"
       }
     },
     {
@@ -2111,7 +2264,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0024,
@@ -2152,7 +2305,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0024,
@@ -2193,7 +2346,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0043,
@@ -2234,7 +2387,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0045,
@@ -2275,7 +2428,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0031,
@@ -2316,7 +2469,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0042,
@@ -2357,7 +2510,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0042,
@@ -2398,7 +2551,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0036,
@@ -2439,7 +2592,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0062,
@@ -2480,7 +2633,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-128027.json",
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.0089,
@@ -2521,7 +2674,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T14:41:08Z"
+        "checado": "2026-11-24T18:36:51Z"
       },
       "epss": {
         "score": 0.005,
@@ -2780,108 +2933,6 @@
       "epss": {
         "score": 0.009,
         "percentil": 0.605,
-        "data": "2026-11-24"
-      }
-    },
-    {
-      "cve": "CVE-2026-80095",
-      "fontes": [
-        {
-          "id": "msrc",
-          "nome": "Microsoft Security Update Guide",
-          "titulo": "CVE-2026-80095 Microsoft Office SharePoint Elevation of Privilege Vulnerability",
-          "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-80095",
-          "publicado": "2026-11-10T16:00:00Z",
-          "visto_em": "2026-11-10T18:38:17Z"
-        },
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-80095",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-80095",
-          "publicado": "2026-11-10T19:21:22Z",
-          "visto_em": "2026-11-11T00:04:15Z"
-        }
-      ],
-      "detectado": "2026-11-10T18:38:17Z",
-      "aguardando_nota_desde": "2026-11-10T16:00:00Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-11-10T16:00:00Z",
-      "primeira_noticia": "2026-11-10T16:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-80095",
-      "ultima_atividade": "2026-11-10T19:21:22Z",
-      "cvss": 9.0,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-10T19:21:22Z",
-      "resumo": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network.",
-      "nvd_checado_em": "2026-11-11T10:40:48Z",
-      "nota_chegou_em": "2026-11-11T00:04:15Z",
-      "exibido_em": "2026-11-11T00:04:15Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-23T22:40:39Z"
-      },
-      "epss": {
-        "score": 0.0081,
-        "percentil": 0.5763,
-        "data": "2026-11-24"
-      }
-    },
-    {
-      "cve": "CVE-2026-120002",
-      "fontes": [
-        {
-          "id": "msrc",
-          "nome": "Microsoft Security Update Guide",
-          "titulo": "CVE-2026-120002 Microsoft SharePoint Server Elevation of Privilege Vulnerability",
-          "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120002",
-          "publicado": "2026-11-10T16:00:00Z",
-          "visto_em": "2026-11-10T18:38:17Z"
-        },
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-120002",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-120002",
-          "publicado": "2026-11-10T19:20:26Z",
-          "visto_em": "2026-11-11T00:04:15Z"
-        }
-      ],
-      "detectado": "2026-11-10T18:38:17Z",
-      "aguardando_nota_desde": "2026-11-10T16:00:00Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-11-10T16:00:00Z",
-      "primeira_noticia": "2026-11-10T16:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-120002",
-      "ultima_atividade": "2026-11-10T19:20:26Z",
-      "cvss": 9.9,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-10T19:20:26Z",
-      "resumo": "Incorrect authorization in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network.",
-      "nvd_checado_em": "2026-11-13T18:38:57Z",
-      "nota_chegou_em": "2026-11-11T00:04:15Z",
-      "exibido_em": "2026-11-11T00:04:15Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-23T22:40:39Z"
-      },
-      "epss": {
-        "score": 0.0086,
-        "percentil": 0.5929,
         "data": "2026-11-24"
       }
     },
@@ -3354,18 +3405,6 @@
       "titulo": "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
       "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
       "publicado": "2026-11-10T19:07:36Z"
-    },
-    {
-      "fonte": "The Hacker News",
-      "titulo": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
-      "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
-      "publicado": "2026-11-10T18:12:21Z"
-    },
-    {
-      "fonte": "BleepingComputer",
-      "titulo": "Critical Xen Orchestra auth bypass flaw exploited to hijack VM servers",
-      "link": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/",
-      "publicado": "2026-11-10T16:17:16Z"
     }
   ]
 }
