@@ -1,7 +1,77 @@
 {
-  "atualizado": "2026-11-23T18:38:27Z",
-  "janela": "16 a 23/nov/2026",
+  "atualizado": "2026-11-24T10:39:26Z",
+  "janela": "17 a 24/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-23",
+      "cve": "CVE-2026-134624",
+      "produto": "N-able MailAssure (SpamExperts), filtro de e-mail em nuvem",
+      "cvss": 9.3,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (KEV em 23/11, prazo CISA 26/11; a N-able diz ter achado a falha ao investigar uma invasão)",
+      "prioridade": "P2",
+      "tratamento": "SSRF na checagem de sincronização LDAP que exige usuário de API e deixa varrer e alcançar hosts internos. Pouco usado em banco: verificar se algum fornecedor ou MSP usa MailAssure para domínios da casa, revogar e trocar chaves de API e conferir a correção com a N-able (versão a confirmar).",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-134624"
+        },
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-23",
+      "cve": "CVE-2026-133968",
+      "produto": "Project MONAI Label (anotação de imagens médicas com IA)",
+      "cvss": 9.8,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (KEV em 23/11, prazo CISA 26/11; PoC público no GitHub)",
+      "prioridade": "P2",
+      "tratamento": "Path traversal sem login que grava arquivos fora do datastore e pode virar RCE. Nicho em banco: procurar instâncias em times de dados e IA (shadow IT), tirar da internet e atualizar para a versão corrigida (a confirmar).",
+      "fontes": [
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133968"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html"
+        },
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133968"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-23",
+      "cve": "CVE-2026-70193",
+      "produto": "Microsoft SharePoint (path traversal com RCE por usuário autenticado)",
+      "cvss": 9.9,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Qualquer usuário autenticado pode executar código no servidor SharePoint. Confirmar no Security Update Guide da Microsoft qual atualização corrige (a confirmar), aplicar primeiro nos farms publicados para parceiros e revisar quem tem conta nesses sites.",
+      "fontes": [
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70193"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-11-20",
       "cve": "CVE-2026-132658 / CVE-2026-132659 / CVE-2026-132660",
@@ -484,7 +554,7 @@
           "url": "https://www.infostealers.com/article/beyond-optimizely-malicious-scripts-traced-across-four-web-services/"
         }
       ],
-      "status": "Novo"
+      "status": "Pendente"
     },
     {
       "data": "2026-11-16",
@@ -510,7 +580,7 @@
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-90436"
         }
       ],
-      "status": "Novo"
+      "status": "Pendente"
     },
     {
       "data": "2026-11-12",
