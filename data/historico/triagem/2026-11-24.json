@@ -1,7 +1,25 @@
 {
-  "atualizado": "2026-11-24T10:39:26Z",
+  "atualizado": "2026-11-24T14:37:15Z",
   "janela": "17 a 24/nov/2026",
   "itens": [
+    {
+      "data": "2026-11-24",
+      "cve": "sem CVE (Azure API Management)",
+      "produto": "Microsoft Azure API Management Classic (camadas Developer, Basic, Standard e Premium)",
+      "cvss": null,
+      "kev": false,
+      "zero_day": true,
+      "exploracao": "Ativa (roubo de credenciais de API guardadas; ataques a empresas na Noruega relatados pela NSM; Microsoft corrigiu em 19/11)",
+      "prioridade": "P0",
+      "tratamento": "A Microsoft corrigiu do lado dela, mas credenciais usadas antes da correção continuam válidas. Trocar segredos, chaves e named values guardados em instâncias APIM Classic, revisar logs desde meados de novembro e acompanhar o aviso no Azure Service Health (Consumption e v2 não afetados).",
+      "fontes": [
+        {
+          "nome": "Techzine",
+          "url": "https://www.techzine.eu/news/security/146028/microsoft-patches-actively-exploited-vulnerability-in-azure-api-management/"
+        }
+      ],
+      "status": "Novo"
+    },
     {
       "data": "2026-11-23",
       "cve": "CVE-2026-134624",

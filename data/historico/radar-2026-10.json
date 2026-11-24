@@ -1842,6 +1842,11 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/cisco-expressway-vulnerability-exploited/",
         "publicado": "2026-11-24T04:53:16Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/cisa-warns-vmware-sap-cisco-apache-roller-flaws-exploited/",
+        "publicado": "2026-11-24T10:00:33Z"
       }
     ],
     "prioridade_max": "P0"

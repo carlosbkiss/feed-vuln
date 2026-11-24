@@ -390,7 +390,7 @@
     "exibido_em": "2026-11-13T18:32:35Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0115,
+    "epss_max": 0.0135,
     "poc_qtd": 3,
     "fontes": [
       {
@@ -1189,7 +1189,7 @@
     "exibido_em": "2026-11-11T18:39:31Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0087,
+    "epss_max": 0.009,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -1265,6 +1265,49 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/alleged-vmware-vcenter-0-day-exploit/",
         "publicado": "2026-11-23T04:30:26Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/cisa-warns-vmware-sap-cisco-apache-roller-flaws-exploited/",
+        "publicado": "2026-11-24T10:00:33Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/vmware-esx-host-vulnerabilities/",
+        "publicado": "2026-11-24T14:11:04Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
+  "CVE-2026-123903": {
+    "cve": "CVE-2026-123903",
+    "produto": "",
+    "titulo": "",
+    "cvss": null,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day"
+    ],
+    "zero_day": true,
+    "kev": null,
+    "primeira_vez": "2026-11-24T13:28:26Z",
+    "primeira_noticia": "2026-11-24T13:28:26Z",
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-24T14:37:30Z",
+    "aguardando_nota_desde": "2026-11-24T13:28:26Z",
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 1,
+    "fontes": [
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+        "publicado": "2026-11-24T13:28:26Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/vmware-esx-host-vulnerabilities/",
+        "publicado": "2026-11-24T14:11:04Z"
       }
     ],
     "prioridade_max": "P0"
@@ -1660,7 +1703,7 @@
     "exibido_em": "2026-11-19T02:35:56Z",
     "aguardando_nota_desde": "2026-11-18T17:10:45Z",
     "nota_chegou_em": "2026-11-20T18:39:04Z",
-    "epss_max": 0.0546,
+    "epss_max": 0.4007,
     "poc_qtd": 3,
     "fontes": [
       {
@@ -1692,6 +1735,11 @@
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
         "publicado": "2026-11-21T08:49:13Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/cisa-warns-vmware-sap-cisco-apache-roller-flaws-exploited/",
+        "publicado": "2026-11-24T10:00:33Z"
       }
     ],
     "prioridade_max": "P0"
@@ -1715,7 +1763,7 @@
     "aguardando_nota_desde": "2026-11-23T09:11:56Z",
     "nota_chegou_em": "2026-11-23T14:41:08Z",
     "epss_max": 0.0061,
-    "poc_qtd": 0,
+    "poc_qtd": 3,
     "fontes": [
       {
         "nome": "NVD",
@@ -1731,6 +1779,11 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/asp-net-anticsrf-flaw-under-attack/",
         "publicado": "2026-11-23T10:25:17Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/critical-asp-net-anticsrf-flaw-exploited/",
+        "publicado": "2026-11-24T12:55:28Z"
       }
     ],
     "prioridade_max": "P0"
@@ -1758,7 +1811,7 @@
     "exibido_em": "2026-11-23T22:40:39Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0366,
+    "epss_max": 0.498,
     "poc_qtd": 1,
     "fontes": [
       {
@@ -1775,6 +1828,40 @@
         "nome": "CISA Advisories",
         "link": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
         "publicado": "2026-11-23T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P0"
+  },
+  "CVE-2026-134401": {
+    "cve": "CVE-2026-134401",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.6,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "CVSS ≥ 9"
+    ],
+    "zero_day": true,
+    "kev": null,
+    "primeira_vez": "2026-11-24T00:17:30Z",
+    "primeira_noticia": "2026-11-24T09:37:46Z",
+    "publicado_nvd": "2026-11-24T00:17:30Z",
+    "exibido_em": "2026-11-24T14:37:30Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0041,
+    "poc_qtd": 1,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-134401",
+        "publicado": "2026-11-24T00:17:30Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/critical-google-chrome-flaw/",
+        "publicado": "2026-11-24T09:37:46Z"
       }
     ],
     "prioridade_max": "P0"
@@ -1802,7 +1889,7 @@
     "exibido_em": "2026-11-23T22:40:39Z",
     "aguardando_nota_desde": "2026-11-23T12:28:09Z",
     "nota_chegou_em": "2026-11-23T22:40:39Z",
-    "epss_max": 0.0035,
+    "epss_max": 0.0062,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -2068,7 +2155,7 @@
     "exibido_em": "2026-11-23T22:40:39Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0102,
     "poc_qtd": 0,
     "fontes": [
       {

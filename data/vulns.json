@@ -1,6 +1,100 @@
 {
-  "atualizado": "2026-11-24T10:39:57Z",
+  "atualizado": "2026-11-24T14:37:30Z",
   "itens": [
+    {
+      "cve": "CVE-2026-123903",
+      "fontes": [
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+          "link": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+          "publicado": "2026-11-24T13:28:26Z",
+          "visto_em": "2026-11-24T14:37:30Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical VMware ESX Flaws Let Remote Attackers Execute Malicious Code on Virtualization Hosts",
+          "link": "https://cybersecuritynews.com/vmware-esx-host-vulnerabilities/",
+          "publicado": "2026-11-24T14:11:04Z",
+          "visto_em": "2026-11-24T14:37:30Z"
+        }
+      ],
+      "detectado": "2026-11-24T14:37:30Z",
+      "zero_day": true,
+      "zero_day_motivo": "The Hacker News: exploração ativa relatada",
+      "nvd_checado_em": "2026-11-24T14:37:30Z",
+      "aguardando_nota_desde": "2026-11-24T13:28:26Z",
+      "elegivel_por": [
+        "zero-day"
+      ],
+      "primeira_vez": "2026-11-24T13:28:26Z",
+      "primeira_noticia": "2026-11-24T13:28:26Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-123903",
+      "ultima_atividade": "2026-11-24T14:11:04Z",
+      "exibido_em": "2026-11-24T14:37:30Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123903.json",
+        "checado": "2026-11-24T14:37:30Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-134401",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-134401",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-134401",
+          "publicado": "2026-11-24T00:17:30Z",
+          "visto_em": "2026-11-24T14:37:30Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical Google Chrome Flaw Could Let Hackers Execute Malicious Code Outside Browser Sandbox",
+          "link": "https://cybersecuritynews.com/critical-google-chrome-flaw/",
+          "publicado": "2026-11-24T09:37:46Z",
+          "visto_em": "2026-11-24T14:37:30Z"
+        }
+      ],
+      "detectado": "2026-11-24T14:37:30Z",
+      "zero_day": true,
+      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
+      "cvss": 9.6,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-24T00:17:30Z",
+      "resumo": "Improper input validation in Variations in Google Chrome prior to 158.0.8127.88 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+      "nvd_checado_em": "2026-11-24T14:37:30Z",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-24T00:17:30Z",
+      "primeira_noticia": "2026-11-24T09:37:46Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-134401",
+      "ultima_atividade": "2026-11-24T09:37:46Z",
+      "exibido_em": "2026-11-24T14:37:30Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0041,
+        "percentil": 0.3562,
+        "data": "2026-11-24"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-134401.json",
+        "checado": "2026-11-24T14:37:30Z"
+      }
+    },
     {
       "cve": "CVE-2026-134624",
       "fontes": [
@@ -77,9 +171,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0035,
-        "percentil": 0.2969,
-        "data": "2026-11-23"
+        "score": 0.0062,
+        "percentil": 0.5029,
+        "data": "2026-11-24"
       },
       "poc": {
         "qtd": 0,
@@ -145,9 +239,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0366,
-        "percentil": 0.8992,
-        "data": "2026-11-23"
+        "score": 0.498,
+        "percentil": 0.9892,
+        "data": "2026-11-24"
       },
       "poc": {
         "qtd": 1,
@@ -213,6 +307,22 @@
           "link": "https://cybersecuritynews.com/alleged-vmware-vcenter-0-day-exploit/",
           "publicado": "2026-11-23T04:30:26Z",
           "visto_em": "2026-11-23T10:40:13Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns of VMware vCenter, SAP NetWeaver, Cisco Expressway, and Apache Roller Flaws Exploited in Attacks",
+          "link": "https://cybersecuritynews.com/cisa-warns-vmware-sap-cisco-apache-roller-flaws-exploited/",
+          "publicado": "2026-11-24T10:00:33Z",
+          "visto_em": "2026-11-24T14:37:30Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical VMware ESX Flaws Let Remote Attackers Execute Malicious Code on Virtualization Hosts",
+          "link": "https://cybersecuritynews.com/vmware-esx-host-vulnerabilities/",
+          "publicado": "2026-11-24T14:11:04Z",
+          "visto_em": "2026-11-24T14:37:30Z"
         }
       ],
       "detectado": "2026-11-19T18:38:58Z",
@@ -225,7 +335,7 @@
       "primeira_vez": "2026-11-19T15:17:25Z",
       "primeira_noticia": "2026-11-19T16:30:55Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
-      "ultima_atividade": "2026-11-23T04:30:26Z",
+      "ultima_atividade": "2026-11-24T14:11:04Z",
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
       "exibido_em": "2026-11-20T10:40:33Z",
@@ -253,8 +363,8 @@
       "nota_chegou_em": "2026-11-20T18:39:04Z",
       "epss": {
         "score": 0.0353,
-        "percentil": 0.8953,
-        "data": "2026-11-23"
+        "percentil": 0.8944,
+        "data": "2026-11-24"
       }
     },
     {
@@ -283,6 +393,14 @@
           "link": "https://cybersecuritynews.com/asp-net-anticsrf-flaw-under-attack/",
           "publicado": "2026-11-23T10:25:17Z",
           "visto_em": "2026-11-23T10:40:13Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical ASP.NET AntiCsrf Flaw Exploited in Attacks by triggering a web redirect on vulnerable apps",
+          "link": "https://cybersecuritynews.com/critical-asp-net-anticsrf-flaw-exploited/",
+          "publicado": "2026-11-24T12:55:28Z",
+          "visto_em": "2026-11-24T14:37:30Z"
         }
       ],
       "detectado": "2026-11-23T10:40:13Z",
@@ -296,20 +414,20 @@
       "primeira_vez": "2026-11-19T02:17:20Z",
       "primeira_noticia": "2026-11-23T09:11:56Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
-      "ultima_atividade": "2026-11-23T10:25:17Z",
+      "ultima_atividade": "2026-11-24T12:55:28Z",
       "exibido_em": "2026-11-23T10:40:13Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0061,
-        "percentil": 0.5037,
-        "data": "2026-11-23"
+        "percentil": 0.5015,
+        "data": "2026-11-24"
       },
       "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-23T10:40:13Z"
+        "qtd": 3,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-131914.json",
+        "checado": "2026-11-24T14:37:30Z"
       },
       "cvss": 9.3,
       "cvss_versao": "4.0",
@@ -370,6 +488,14 @@
           "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
           "publicado": "2026-11-21T08:49:13Z",
           "visto_em": "2026-11-21T10:39:10Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns of VMware vCenter, SAP NetWeaver, Cisco Expressway, and Apache Roller Flaws Exploited in Attacks",
+          "link": "https://cybersecuritynews.com/cisa-warns-vmware-sap-cisco-apache-roller-flaws-exploited/",
+          "publicado": "2026-11-24T10:00:33Z",
+          "visto_em": "2026-11-24T14:37:30Z"
         }
       ],
       "detectado": "2026-11-19T02:35:56Z",
@@ -384,15 +510,15 @@
       "primeira_vez": "2026-11-17T11:17:28Z",
       "primeira_noticia": "2026-11-18T17:10:45Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
-      "ultima_atividade": "2026-11-21T08:49:13Z",
+      "ultima_atividade": "2026-11-24T10:00:33Z",
       "exibido_em": "2026-11-19T02:35:56Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0546,
-        "percentil": 0.9294,
-        "data": "2026-11-23"
+        "score": 0.4007,
+        "percentil": 0.9865,
+        "data": "2026-11-24"
       },
       "poc": {
         "qtd": 3,
@@ -491,8 +617,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0327,
-        "percentil": 0.8872,
-        "data": "2026-11-23"
+        "percentil": 0.8862,
+        "data": "2026-11-24"
       },
       "poc": {
         "qtd": 2,
@@ -551,8 +677,8 @@
       },
       "epss": {
         "score": 0.0088,
-        "percentil": 0.5987,
-        "data": "2026-11-23"
+        "percentil": 0.5969,
+        "data": "2026-11-24"
       },
       "cvss": 10.0,
       "cvss_versao": "3.1",
@@ -606,8 +732,8 @@
       },
       "epss": {
         "score": 0.0026,
-        "percentil": 0.1738,
-        "data": "2026-11-23"
+        "percentil": 0.1722,
+        "data": "2026-11-24"
       },
       "cvss": 9.6,
       "cvss_versao": "3.1",
@@ -702,8 +828,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0587,
-        "percentil": 0.9339,
-        "data": "2026-11-23"
+        "percentil": 0.9332,
+        "data": "2026-11-24"
       },
       "poc": {
         "qtd": 4,
@@ -781,8 +907,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.1284,
-        "percentil": 0.9639,
-        "data": "2026-11-23"
+        "percentil": 0.9637,
+        "data": "2026-11-24"
       },
       "poc": {
         "qtd": 1,
@@ -889,8 +1015,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.7452,
-        "percentil": 0.9951,
-        "data": "2026-11-23"
+        "percentil": 0.995,
+        "data": "2026-11-24"
       },
       "poc": {
         "qtd": 1,
@@ -956,6 +1082,14 @@
           "link": "https://cybersecuritynews.com/cisco-expressway-vulnerability-exploited/",
           "publicado": "2026-11-24T04:53:16Z",
           "visto_em": "2026-11-24T06:57:47Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns of VMware vCenter, SAP NetWeaver, Cisco Expressway, and Apache Roller Flaws Exploited in Attacks",
+          "link": "https://cybersecuritynews.com/cisa-warns-vmware-sap-cisco-apache-roller-flaws-exploited/",
+          "publicado": "2026-11-24T10:00:33Z",
+          "visto_em": "2026-11-24T14:37:30Z"
         }
       ],
       "detectado": "2026-11-20T14:39:19Z",
@@ -968,7 +1102,7 @@
       "primeira_vez": "2026-10-21T17:19:06Z",
       "primeira_noticia": "2026-11-20T10:32:50Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
-      "ultima_atividade": "2026-11-24T04:53:16Z",
+      "ultima_atividade": "2026-11-24T10:00:33Z",
       "kev": {
         "adicionado": "2026-11-20",
         "prazo": "2026-11-23",
@@ -991,8 +1125,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0219,
-        "percentil": 0.8288,
-        "data": "2026-11-23"
+        "percentil": 0.8276,
+        "data": "2026-11-24"
       },
       "poc": {
         "qtd": 3,
@@ -1062,8 +1196,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0117,
-        "percentil": 0.6825,
-        "data": "2026-11-23"
+        "percentil": 0.6809,
+        "data": "2026-11-24"
       },
       "poc": {
         "qtd": 0,
@@ -1140,8 +1274,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.3433,
-        "percentil": 0.9845,
-        "data": "2026-11-23"
+        "percentil": 0.9843,
+        "data": "2026-11-24"
       },
       "poc": {
         "qtd": 6,
@@ -1233,8 +1367,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0168,
-        "percentil": 0.7757,
-        "data": "2026-11-23"
+        "percentil": 0.7744,
+        "data": "2026-11-24"
       },
       "poc": {
         "qtd": 0,
@@ -1310,8 +1444,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0313,
-        "percentil": 0.8819,
-        "data": "2026-11-23"
+        "percentil": 0.881,
+        "data": "2026-11-24"
       },
       "poc": {
         "qtd": 2,
@@ -1362,8 +1496,8 @@
       },
       "epss": {
         "score": 0.0048,
-        "percentil": 0.4243,
-        "data": "2026-11-23"
+        "percentil": 0.4215,
+        "data": "2026-11-24"
       }
     },
     {
@@ -1403,8 +1537,8 @@
       },
       "epss": {
         "score": 0.0036,
-        "percentil": 0.2983,
-        "data": "2026-11-23"
+        "percentil": 0.2959,
+        "data": "2026-11-24"
       }
     },
     {
@@ -1444,8 +1578,8 @@
       },
       "epss": {
         "score": 0.0038,
-        "percentil": 0.3251,
-        "data": "2026-11-23"
+        "percentil": 0.3226,
+        "data": "2026-11-24"
       }
     },
     {
@@ -1485,8 +1619,8 @@
       },
       "epss": {
         "score": 0.0022,
-        "percentil": 0.1278,
-        "data": "2026-11-23"
+        "percentil": 0.1264,
+        "data": "2026-11-24"
       }
     },
     {
@@ -1526,8 +1660,8 @@
       },
       "epss": {
         "score": 0.0038,
-        "percentil": 0.3251,
-        "data": "2026-11-23"
+        "percentil": 0.3226,
+        "data": "2026-11-24"
       }
     },
     {
@@ -1567,8 +1701,8 @@
       },
       "epss": {
         "score": 0.0036,
-        "percentil": 0.2982,
-        "data": "2026-11-23"
+        "percentil": 0.2958,
+        "data": "2026-11-24"
       }
     },
     {
@@ -1660,8 +1794,8 @@
       },
       "epss": {
         "score": 0.2489,
-        "percentil": 0.9796,
-        "data": "2026-11-23"
+        "percentil": 0.9794,
+        "data": "2026-11-24"
       }
     },
     {
@@ -1690,6 +1824,14 @@
           "link": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
           "publicado": "2026-11-20T12:00:00Z",
           "visto_em": "2026-11-21T00:49:22Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns of VMware vCenter, SAP NetWeaver, Cisco Expressway, and Apache Roller Flaws Exploited in Attacks",
+          "link": "https://cybersecuritynews.com/cisa-warns-vmware-sap-cisco-apache-roller-flaws-exploited/",
+          "publicado": "2026-11-24T10:00:33Z",
+          "visto_em": "2026-11-24T14:37:30Z"
         }
       ],
       "detectado": "2026-11-20T18:39:04Z",
@@ -1710,15 +1852,15 @@
       "primeira_vez": "2025-11-11T01:15:36Z",
       "primeira_noticia": "2026-11-20T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884",
-      "ultima_atividade": "2026-11-20T12:00:00Z",
+      "ultima_atividade": "2026-11-24T10:00:33Z",
       "exibido_em": "2026-11-20T18:39:04Z",
       "prioridade": "P1",
       "regra": "explorado em plataforma corporativa",
       "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
       "epss": {
         "score": 0.009,
-        "percentil": 0.6064,
-        "data": "2026-11-23"
+        "percentil": 0.6047,
+        "data": "2026-11-24"
       },
       "poc": {
         "qtd": 0,
@@ -1749,7 +1891,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-23T22:22:36Z",
       "resumo": "Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
-      "nvd_checado_em": "2026-11-24T10:39:57Z",
+      "nvd_checado_em": "2026-11-24T14:37:30Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1765,6 +1907,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-23T22:40:39Z"
+      },
+      "epss": {
+        "score": 0.0102,
+        "percentil": 0.6421,
+        "data": "2026-11-24"
       }
     },
     {
@@ -1804,8 +1951,8 @@
       },
       "epss": {
         "score": 0.0216,
-        "percentil": 0.8265,
-        "data": "2026-11-23"
+        "percentil": 0.8253,
+        "data": "2026-11-24"
       }
     },
     {
@@ -1845,8 +1992,8 @@
       },
       "epss": {
         "score": 0.0063,
-        "percentil": 0.51,
-        "data": "2026-11-23"
+        "percentil": 0.5078,
+        "data": "2026-11-24"
       }
     },
     {
@@ -1886,8 +2033,8 @@
       },
       "epss": {
         "score": 0.004,
-        "percentil": 0.3466,
-        "data": "2026-11-23"
+        "percentil": 0.3439,
+        "data": "2026-11-24"
       }
     },
     {
@@ -1927,8 +2074,8 @@
       },
       "epss": {
         "score": 0.0122,
-        "percentil": 0.6955,
-        "data": "2026-11-23"
+        "percentil": 0.6939,
+        "data": "2026-11-24"
       }
     },
     {
@@ -1968,8 +2115,8 @@
       },
       "epss": {
         "score": 0.0024,
-        "percentil": 0.1494,
-        "data": "2026-11-23"
+        "percentil": 0.1479,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2009,8 +2156,8 @@
       },
       "epss": {
         "score": 0.0024,
-        "percentil": 0.1571,
-        "data": "2026-11-23"
+        "percentil": 0.1556,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2050,8 +2197,8 @@
       },
       "epss": {
         "score": 0.0043,
-        "percentil": 0.3764,
-        "data": "2026-11-23"
+        "percentil": 0.3738,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2091,8 +2238,8 @@
       },
       "epss": {
         "score": 0.0045,
-        "percentil": 0.3969,
-        "data": "2026-11-23"
+        "percentil": 0.3941,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2132,8 +2279,8 @@
       },
       "epss": {
         "score": 0.0031,
-        "percentil": 0.2478,
-        "data": "2026-11-23"
+        "percentil": 0.2456,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2173,8 +2320,8 @@
       },
       "epss": {
         "score": 0.0042,
-        "percentil": 0.375,
-        "data": "2026-11-23"
+        "percentil": 0.3723,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2214,8 +2361,8 @@
       },
       "epss": {
         "score": 0.0042,
-        "percentil": 0.3678,
-        "data": "2026-11-23"
+        "percentil": 0.3651,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2255,8 +2402,8 @@
       },
       "epss": {
         "score": 0.0036,
-        "percentil": 0.3037,
-        "data": "2026-11-23"
+        "percentil": 0.3013,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2296,8 +2443,8 @@
       },
       "epss": {
         "score": 0.0062,
-        "percentil": 0.5059,
-        "data": "2026-11-23"
+        "percentil": 0.5038,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2337,8 +2484,8 @@
       },
       "epss": {
         "score": 0.0089,
-        "percentil": 0.603,
-        "data": "2026-11-23"
+        "percentil": 0.6014,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2378,8 +2525,8 @@
       },
       "epss": {
         "score": 0.005,
-        "percentil": 0.4402,
-        "data": "2026-11-23"
+        "percentil": 0.4375,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2419,8 +2566,8 @@
       },
       "epss": {
         "score": 0.0043,
-        "percentil": 0.3766,
-        "data": "2026-11-23"
+        "percentil": 0.374,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2460,8 +2607,8 @@
       },
       "epss": {
         "score": 0.0063,
-        "percentil": 0.5137,
-        "data": "2026-11-23"
+        "percentil": 0.5116,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2501,8 +2648,8 @@
       },
       "epss": {
         "score": 0.0055,
-        "percentil": 0.4691,
-        "data": "2026-11-23"
+        "percentil": 0.4666,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2542,8 +2689,8 @@
       },
       "epss": {
         "score": 0.0137,
-        "percentil": 0.7267,
-        "data": "2026-11-23"
+        "percentil": 0.7252,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2583,8 +2730,8 @@
       },
       "epss": {
         "score": 0.006,
-        "percentil": 0.4983,
-        "data": "2026-11-23"
+        "percentil": 0.4961,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2631,9 +2778,9 @@
         "checado": "2026-11-23T22:40:39Z"
       },
       "epss": {
-        "score": 0.0087,
-        "percentil": 0.5971,
-        "data": "2026-11-23"
+        "score": 0.009,
+        "percentil": 0.605,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2683,8 +2830,8 @@
       },
       "epss": {
         "score": 0.0081,
-        "percentil": 0.5781,
-        "data": "2026-11-23"
+        "percentil": 0.5763,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2734,8 +2881,8 @@
       },
       "epss": {
         "score": 0.0086,
-        "percentil": 0.5947,
-        "data": "2026-11-23"
+        "percentil": 0.5929,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2827,8 +2974,8 @@
       "nota_chegou_em": "2026-11-11T00:04:15Z",
       "epss": {
         "score": 0.068,
-        "percentil": 0.9416,
-        "data": "2026-11-23"
+        "percentil": 0.9409,
+        "data": "2026-11-24"
       }
     },
     {
@@ -2899,9 +3046,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.0115,
-        "percentil": 0.6766,
-        "data": "2026-11-23"
+        "score": 0.0135,
+        "percentil": 0.7212,
+        "data": "2026-11-24"
       },
       "poc": {
         "qtd": 3,
@@ -2990,8 +3137,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.6377,
-        "percentil": 0.9924,
-        "data": "2026-11-23"
+        "percentil": 0.9923,
+        "data": "2026-11-24"
       },
       "poc": {
         "qtd": 0,
@@ -3060,8 +3207,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.828,
-        "percentil": 0.9968,
-        "data": "2026-11-23"
+        "percentil": 0.9967,
+        "data": "2026-11-24"
       },
       "poc": {
         "qtd": 1,
