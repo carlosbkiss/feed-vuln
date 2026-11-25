@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-24T21:14:23Z",
+  "atualizado": "2026-11-25T04:16:46Z",
   "itens": [
     {
       "cve": "CVE-2026-123903",
@@ -24,7 +24,7 @@
       "detectado": "2026-11-24T14:37:30Z",
       "zero_day": true,
       "zero_day_motivo": "The Hacker News: exploração ativa relatada",
-      "nvd_checado_em": "2026-11-24T21:14:23Z",
+      "nvd_checado_em": "2026-11-25T04:16:46Z",
       "aguardando_nota_desde": "2026-11-24T13:28:26Z",
       "elegivel_por": [
         "zero-day"
@@ -176,9 +176,9 @@
         "data": "2026-11-24"
       },
       "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-23T22:40:39Z"
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-134624.json",
+        "checado": "2026-11-25T04:16:46Z"
       }
     },
     {
@@ -244,9 +244,9 @@
         "data": "2026-11-24"
       },
       "poc": {
-        "qtd": 1,
+        "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-133968.json",
-        "checado": "2026-11-23T22:40:39Z"
+        "checado": "2026-11-25T04:16:46Z"
       }
     },
     {
@@ -401,6 +401,14 @@
           "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-131914",
           "publicado": "2026-11-24",
           "visto_em": "2026-11-24T18:36:51Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-24T12:00:00Z",
+          "visto_em": "2026-11-25T04:16:46Z"
         },
         {
           "id": "csn",
@@ -643,69 +651,6 @@
       }
     },
     {
-      "cve": "CVE-2026-118383",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-118383",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-118383",
-          "publicado": "2026-11-10T21:18:58Z",
-          "visto_em": "2026-11-13T18:38:57Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
-          "link": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
-          "publicado": "2026-11-12T09:25:00Z",
-          "visto_em": "2026-11-12T10:42:11Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Critical MongoDB Flaw Lets Attackers Crash Database Servers With Just Two Ping Requests",
-          "link": "https://cybersecuritynews.com/mongodb-database-crash-vulnerability/",
-          "publicado": "2026-11-12T12:22:28Z",
-          "visto_em": "2026-11-12T14:38:58Z"
-        }
-      ],
-      "detectado": "2026-11-12T10:42:11Z",
-      "aguardando_nota_desde": "2026-11-12T09:25:00Z",
-      "elegivel_por": [
-        "zero-day",
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-11-10T21:18:58Z",
-      "primeira_noticia": "2026-11-12T09:25:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-118383",
-      "ultima_atividade": "2026-11-12T12:22:28Z",
-      "zero_day": true,
-      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
-      "exibido_em": "2026-11-12T14:38:58Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-118383.json",
-        "checado": "2026-11-24T18:36:51Z"
-      },
-      "epss": {
-        "score": 0.0088,
-        "percentil": 0.5969,
-        "data": "2026-11-24"
-      },
-      "cvss": 10.0,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "NVD",
-      "publicado_nvd": "2026-11-10T21:18:58Z",
-      "resumo": "A use-after-free in the replication component of MongoDB Server can occur when a newly elected replica set primary completes catch-up. The condition can be caused by requests that do not require authentication, and may result in the server terminating…",
-      "nvd_checado_em": "2026-11-13T18:38:57Z",
-      "nota_chegou_em": "2026-11-13T18:38:57Z",
-      "escalado": true
-    },
-    {
       "cve": "CVE-2026-90436",
       "fontes": [
         {
@@ -885,108 +830,6 @@
       "escalado": true
     },
     {
-      "cve": "CVE-2026-116606",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-116606",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606",
-          "publicado": "2026-11-02T13:17:37Z",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access",
-          "link": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
-          "publicado": "2026-11-03T15:59:19Z",
-          "visto_em": "2026-11-03T18:28:03Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Critical Barracuda Security Flaws Could Let Hackers Bypass Authentication and Gain Root Access",
-          "link": "https://cybersecuritynews.com/critical-barracuda-security-flaws/",
-          "publicado": "2026-11-04T13:07:41Z",
-          "visto_em": "2026-11-04T18:39:45Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
-          "link": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html",
-          "publicado": "2026-11-06T05:39:10Z",
-          "visto_em": "2026-11-06T10:50:33Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-116606",
-          "publicado": "2026-11-10",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-11-10T12:00:00Z",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Barracuda Confirms Active Exploitation of Email Gateway Flaws Allowing Root Access",
-          "link": "https://cybersecuritynews.com/barracuda-email-gateway-flaws/",
-          "publicado": "2026-11-10T16:05:32Z",
-          "visto_em": "2026-11-10T18:38:17Z"
-        }
-      ],
-      "detectado": "2026-11-03T18:28:03Z",
-      "aguardando_nota_desde": "2026-11-03T15:59:19Z",
-      "elegivel_por": [
-        "zero-day",
-        "CVSS ≥ 9",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-02T13:17:37Z",
-      "primeira_noticia": "2026-11-03T15:59:19Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606",
-      "ultima_atividade": "2026-11-10T16:05:32Z",
-      "kev": {
-        "adicionado": "2026-11-10",
-        "prazo": "2026-11-13",
-        "ransomware": "Unknown"
-      },
-      "produto": "Barracuda Networks Barracuda Email Security Gateway (ESG)",
-      "titulo": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "resumo": "Barracuda Networks Email Security Gateway (ESG) contains an authentication bypass using an alternate path or channel that could allow an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup…",
-      "cvss": 9.3,
-      "cvss_versao": "4.0",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-02T13:17:37Z",
-      "nvd_checado_em": "2026-11-11T00:04:15Z",
-      "nota_chegou_em": "2026-11-11T00:04:15Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "exibido_em": "2026-11-11T00:04:15Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.7452,
-        "percentil": 0.995,
-        "data": "2026-11-24"
-      },
-      "poc": {
-        "qtd": 2,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-116606.json",
-        "checado": "2026-11-24T18:36:51Z"
-      }
-    },
-    {
       "cve": "CVE-2026-76466",
       "fontes": [
         {
@@ -1097,84 +940,6 @@
       }
     },
     {
-      "cve": "CVE-2026-111793",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-111793",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793",
-          "publicado": "2026-10-16T19:17:05Z",
-          "visto_em": "2026-11-11T10:40:48Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111793",
-          "publicado": "2026-11-10",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-11-10T12:00:00Z",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "securityweek",
-          "nome": "SecurityWeek",
-          "titulo": "Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities",
-          "link": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
-          "publicado": "2026-11-11T09:01:07Z",
-          "visto_em": "2026-11-11T10:40:48Z"
-        }
-      ],
-      "detectado": "2026-11-11T00:04:15Z",
-      "kev": {
-        "adicionado": "2026-11-10",
-        "prazo": "2026-11-24",
-        "ransomware": "Unknown"
-      },
-      "produto": "Openwave Messaging Limited Webtop Media Transcoder",
-      "titulo": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
-      "resumo": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing the Webmail experience.",
-      "aguardando_nota_desde": "2026-11-10T12:00:00Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-10-16T19:17:05Z",
-      "primeira_noticia": "2026-11-10T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793",
-      "ultima_atividade": "2026-11-11T09:01:07Z",
-      "exibido_em": "2026-11-11T00:04:15Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.0117,
-        "percentil": 0.6809,
-        "data": "2026-11-24"
-      },
-      "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-111793.json",
-        "checado": "2026-11-24T18:36:51Z"
-      },
-      "cvss": 4.3,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-10-16T19:17:05Z",
-      "nvd_checado_em": "2026-11-11T10:40:48Z",
-      "nota_chegou_em": "2026-11-11T10:40:48Z",
-      "escalado": true
-    },
-    {
       "cve": "CVE-2026-90817",
       "fontes": [
         {
@@ -1250,99 +1015,6 @@
       "publicado_nvd": "2026-09-20T13:17:44Z",
       "nvd_checado_em": "2026-11-19T02:35:56Z",
       "escalado": true
-    },
-    {
-      "cve": "CVE-2026-20320",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-20320",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-20320",
-          "publicado": "2026-08-19T17:18:40Z",
-          "visto_em": "2026-11-11T10:40:48Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-20320",
-          "publicado": "2026-11-10",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-11-10T12:00:00Z",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
-          "link": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
-          "publicado": "2026-11-11T06:04:02Z",
-          "visto_em": "2026-11-11T10:40:48Z"
-        },
-        {
-          "id": "securityweek",
-          "nome": "SecurityWeek",
-          "titulo": "Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities",
-          "link": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
-          "publicado": "2026-11-11T09:01:07Z",
-          "visto_em": "2026-11-11T10:40:48Z"
-        },
-        {
-          "id": "cisco",
-          "nome": "Cisco PSIRT",
-          "titulo": "Cisco BroadWorks Out-of-Band Blind XML External Entity Injection Vulnerability",
-          "link": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-bworks-xxe-uwUd7CEt?vs_f=Cisco%20Security%20Advisory%26vs_cat=Security%20Intelligence%26vs_type=RSS%26vs_p=Cisco%20BroadWorks%20Out-of-Band%20Blind%20XML%20External%20Entity%20Injection%20Vulnerability%26vs_k=1",
-          "publicado": "2026-11-12T17:25:12Z",
-          "visto_em": "2026-11-12T18:39:50Z"
-        }
-      ],
-      "detectado": "2026-11-11T00:04:15Z",
-      "kev": {
-        "adicionado": "2026-11-10",
-        "prazo": "2026-11-24",
-        "ransomware": "Unknown"
-      },
-      "produto": "Cisco BroadWorks",
-      "titulo": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
-      "resumo": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.",
-      "aguardando_nota_desde": "2026-11-10T12:00:00Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-08-19T17:18:40Z",
-      "primeira_noticia": "2026-11-10T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-20320",
-      "ultima_atividade": "2026-11-12T17:25:12Z",
-      "exibido_em": "2026-11-11T00:04:15Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.0168,
-        "percentil": 0.7744,
-        "data": "2026-11-24"
-      },
-      "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-20320.json",
-        "checado": "2026-11-24T18:36:51Z"
-      },
-      "cvss": 7.5,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-08-19T17:18:40Z",
-      "nvd_checado_em": "2026-11-11T10:40:48Z",
-      "nota_chegou_em": "2026-11-11T10:40:48Z"
     },
     {
       "cve": "CVE-2024-10441",
@@ -1431,6 +1103,14 @@
           "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-132165",
           "publicado": "2026-11-24",
           "visto_em": "2026-11-24T18:36:51Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-24T12:00:00Z",
+          "visto_em": "2026-11-25T04:16:46Z"
         }
       ],
       "detectado": "2026-11-24T18:36:51Z",
@@ -1442,7 +1122,7 @@
       "produto": "Drupal Core",
       "titulo": "Drupal Core Remote Code Execution Vulnerability",
       "resumo": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to…",
-      "nvd_checado_em": "2026-11-24T18:36:51Z",
+      "nvd_checado_em": "2026-11-25T04:16:46Z",
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
       "elegivel_por": [
@@ -1450,9 +1130,9 @@
         "KEV"
       ],
       "primeira_vez": "2026-11-24T00:00:00Z",
-      "primeira_noticia": null,
+      "primeira_noticia": "2026-11-24T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165",
-      "ultima_atividade": "2026-11-24T00:00:00Z",
+      "ultima_atividade": "2026-11-24T12:00:00Z",
       "exibido_em": "2026-11-24T18:36:51Z",
       "prioridade": "P1",
       "regra": "explorado em plataforma corporativa",
@@ -1461,7 +1141,8 @@
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-132165.json",
         "checado": "2026-11-24T18:36:51Z"
-      }
+      },
+      "aguardando_nota_desde": "2026-11-24T12:00:00Z"
     },
     {
       "cve": "CVE-2026-91569",
@@ -1710,99 +1391,6 @@
       }
     },
     {
-      "cve": "CVE-2026-124194",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-124194",
-          "publicado": "2026-11-10",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-11-10T12:00:00Z",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "msrc",
-          "nome": "Microsoft Security Update Guide",
-          "titulo": "CVE-2026-124194 Microsoft Outlook Spoofing Vulnerability",
-          "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-124194",
-          "publicado": "2026-11-10T16:00:00Z",
-          "visto_em": "2026-11-10T18:38:17Z"
-        },
-        {
-          "id": "securityweek",
-          "nome": "SecurityWeek",
-          "titulo": "Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft",
-          "link": "https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/",
-          "publicado": "2026-11-10T19:19:46Z",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-124194",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194",
-          "publicado": "2026-11-10T19:20:48Z",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "CISA Confirms Active Exploitation of Outlook User Interaction 0-Day Vulnerability",
-          "link": "https://cybersecuritynews.com/active-exploitation-of-outlook-0-day-vulnerability/",
-          "publicado": "2026-11-12T14:11:54Z",
-          "visto_em": "2026-11-12T14:38:58Z"
-        }
-      ],
-      "detectado": "2026-11-10T18:38:17Z",
-      "aguardando_nota_desde": "2026-11-10T16:00:00Z",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-10T00:00:00Z",
-      "primeira_noticia": "2026-11-10T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194",
-      "ultima_atividade": "2026-11-12T14:11:54Z",
-      "kev": {
-        "adicionado": "2026-11-10",
-        "prazo": "2026-11-24",
-        "ransomware": "Unknown"
-      },
-      "produto": "Microsoft Office",
-      "titulo": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
-      "resumo": "Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
-      "cvss": 6.5,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-10T19:20:48Z",
-      "nvd_checado_em": "2026-11-11T00:04:15Z",
-      "nota_chegou_em": "2026-11-11T00:04:15Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "exibido_em": "2026-11-11T00:04:15Z",
-      "prioridade": "P1",
-      "regra": "explorado em plataforma corporativa",
-      "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
-      "poc": {
-        "qtd": 5,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-124194.json",
-        "checado": "2026-11-24T18:36:51Z"
-      },
-      "epss": {
-        "score": 0.2489,
-        "percentil": 0.9794,
-        "data": "2026-11-24"
-      }
-    },
-    {
       "cve": "CVE-2025-42884",
       "fontes": [
         {
@@ -1895,7 +1483,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-24T19:18:14Z",
       "resumo": "A vulnerability was identified in Volans NGFW Next-Generation Firewall r5.1. Impacted is the function exec of the file sslvpn/sslvpn_client.php of the component SSLVPN Client. Such manipulation of the argument img leads to os command injection. The attack…",
-      "nvd_checado_em": "2026-11-24T21:14:23Z",
+      "nvd_checado_em": "2026-11-25T04:16:46Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1931,7 +1519,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-24T17:18:13Z",
       "resumo": "SolarWinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, can allow a domain administrator to access files that otherwise would require elevated privileges. The risk is lower for Windows installations.",
-      "nvd_checado_em": "2026-11-24T21:14:23Z",
+      "nvd_checado_em": "2026-11-25T04:16:46Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2024,9 +1612,9 @@
       "regra": "CVSS ≥ 9 em plataforma corporativa",
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-23T22:40:39Z"
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-70193.json",
+        "checado": "2026-11-25T04:16:46Z"
       },
       "epss": {
         "score": 0.0102,
@@ -2216,6 +1804,14 @@
           "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-132224",
           "publicado": "2026-11-24",
           "visto_em": "2026-11-24T18:36:51Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-24T12:00:00Z",
+          "visto_em": "2026-11-25T04:16:46Z"
         }
       ],
       "detectado": "2026-11-24T18:36:51Z",
@@ -2239,9 +1835,9 @@
         "KEV"
       ],
       "primeira_vez": "2026-11-18T16:18:15Z",
-      "primeira_noticia": null,
+      "primeira_noticia": "2026-11-24T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-132224",
-      "ultima_atividade": "2026-11-24T00:00:00Z",
+      "ultima_atividade": "2026-11-24T12:00:00Z",
       "exibido_em": "2026-11-24T18:36:51Z",
       "prioridade": "P2",
       "regra": "explorado fora das listas",
@@ -2741,7 +2337,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T22:40:39Z"
+        "checado": "2026-11-25T04:16:46Z"
       },
       "epss": {
         "score": 0.0043,
@@ -2782,7 +2378,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T22:40:39Z"
+        "checado": "2026-11-25T04:16:46Z"
       },
       "epss": {
         "score": 0.0063,
@@ -2823,7 +2419,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T22:40:39Z"
+        "checado": "2026-11-25T04:16:46Z"
       },
       "epss": {
         "score": 0.0055,
@@ -2864,7 +2460,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-119077.json",
-        "checado": "2026-11-23T22:40:39Z"
+        "checado": "2026-11-25T04:16:46Z"
       },
       "epss": {
         "score": 0.0137,
@@ -2905,7 +2501,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T22:40:39Z"
+        "checado": "2026-11-25T04:16:46Z"
       },
       "epss": {
         "score": 0.006,
@@ -2954,104 +2550,11 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-23T22:40:39Z"
+        "checado": "2026-11-25T04:16:46Z"
       },
       "epss": {
         "score": 0.009,
         "percentil": 0.605,
-        "data": "2026-11-24"
-      }
-    },
-    {
-      "cve": "CVE-2026-125350",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Google Chromium Use-After-Free Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-125350",
-          "publicado": "2026-11-10",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Google Chrome 0-Day Vulnerability in the Wild to Execute Malicious Code Remotely",
-          "link": "https://cybersecuritynews.com/google-chrome-0-day-exploited/",
-          "publicado": "2026-11-10T04:21:10Z",
-          "visto_em": "2026-11-10T04:38:14Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
-          "link": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
-          "publicado": "2026-11-10T06:52:54Z",
-          "visto_em": "2026-11-10T10:44:29Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-11-10T12:00:00Z",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-125350",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-125350",
-          "publicado": "2026-11-10T18:17:35Z",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "CISA Warns of Google Chromium 0-Day Vulnerability Actively Exploited in Attacks",
-          "link": "https://cybersecuritynews.com/google-chromium-0-day-vulnerability-exploited/",
-          "publicado": "2026-11-12T13:28:29Z",
-          "visto_em": "2026-11-12T14:38:58Z"
-        }
-      ],
-      "detectado": "2026-11-10T04:38:14Z",
-      "aguardando_nota_desde": "2026-11-10T04:21:10Z",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-10T00:00:00Z",
-      "primeira_noticia": "2026-11-10T04:21:10Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-125350",
-      "ultima_atividade": "2026-11-12T13:28:29Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "exibido_em": "2026-11-10T10:44:29Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "poc": {
-        "qtd": 5,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-125350.json",
-        "checado": "2026-11-23T22:40:39Z"
-      },
-      "kev": {
-        "adicionado": "2026-11-10",
-        "prazo": "2026-11-24",
-        "ransomware": "Unknown"
-      },
-      "produto": "Google Chromium",
-      "titulo": "Google Chromium Use-After-Free Vulnerability",
-      "resumo": "Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulnerability could affect multiple web browsers that utilize…",
-      "cvss": 8.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-10T18:17:35Z",
-      "nvd_checado_em": "2026-11-11T00:04:15Z",
-      "nota_chegou_em": "2026-11-11T00:04:15Z",
-      "epss": {
-        "score": 0.068,
-        "percentil": 0.9409,
         "data": "2026-11-24"
       }
     },
@@ -3128,100 +2631,15 @@
         "data": "2026-11-24"
       },
       "poc": {
-        "qtd": 3,
+        "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-114713.json",
-        "checado": "2026-11-23T22:40:39Z"
+        "checado": "2026-11-25T04:16:46Z"
       },
       "cvss": 8.6,
       "cvss_versao": "3.1",
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-08T03:16:33Z",
       "nvd_checado_em": "2026-11-13T18:38:57Z"
-    },
-    {
-      "cve": "CVE-2026-111560",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-111560",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-111560",
-          "publicado": "2026-11-02T13:17:35Z",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Critical Barracuda Security Flaws Could Let Hackers Bypass Authentication and Gain Root Access",
-          "link": "https://cybersecuritynews.com/critical-barracuda-security-flaws/",
-          "publicado": "2026-11-04T13:07:41Z",
-          "visto_em": "2026-11-04T18:39:45Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-111560",
-          "publicado": "2026-11-10",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-11-10T12:00:00Z",
-          "visto_em": "2026-11-11T00:04:15Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Barracuda Confirms Active Exploitation of Email Gateway Flaws Allowing Root Access",
-          "link": "https://cybersecuritynews.com/barracuda-email-gateway-flaws/",
-          "publicado": "2026-11-10T16:05:32Z",
-          "visto_em": "2026-11-10T18:38:17Z"
-        }
-      ],
-      "detectado": "2026-11-04T18:39:45Z",
-      "aguardando_nota_desde": "2026-11-04T13:07:41Z",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-02T13:17:35Z",
-      "primeira_noticia": "2026-11-04T13:07:41Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-111560",
-      "ultima_atividade": "2026-11-10T16:05:32Z",
-      "kev": {
-        "adicionado": "2026-11-10",
-        "prazo": "2026-11-13",
-        "ransomware": "Unknown"
-      },
-      "produto": "Barracuda Networks Multiple Products",
-      "titulo": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
-      "resumo": "Barracuda Networks Email Security Gateway (ESG), Load Balancer, Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Security Gateway (WSG) contain an OS command injection…",
-      "cvss": 8.6,
-      "cvss_versao": "4.0",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-02T13:17:35Z",
-      "nvd_checado_em": "2026-11-11T00:04:15Z",
-      "nota_chegou_em": "2026-11-11T00:04:15Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "exibido_em": "2026-11-11T00:04:15Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.6377,
-        "percentil": 0.9923,
-        "data": "2026-11-24"
-      },
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-23T22:40:39Z"
-      }
     },
     {
       "cve": "CVE-2026-40217",
@@ -3288,9 +2706,9 @@
         "data": "2026-11-24"
       },
       "poc": {
-        "qtd": 1,
+        "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-40217.json",
-        "checado": "2026-11-23T22:40:39Z"
+        "checado": "2026-11-25T04:16:46Z"
       },
       "cvss": 8.8,
       "cvss_versao": "3.1",
@@ -3419,12 +2837,6 @@
       "titulo": "Recently Patched Barracuda Vulnerabilities Exploited in Attacks",
       "link": "https://www.securityweek.com/recently-patched-barracuda-vulnerabilities-exploited-in-attacks/",
       "publicado": "2026-11-11T07:53:51Z"
-    },
-    {
-      "fonte": "Dark Reading",
-      "titulo": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
-      "link": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
-      "publicado": "2026-11-10T22:26:51Z"
     }
   ]
 }

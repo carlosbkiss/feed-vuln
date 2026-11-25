@@ -424,7 +424,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0135,
-    "poc_qtd": 3,
+    "poc_qtd": 4,
     "fontes": [
       {
         "nome": "NVD",
@@ -1852,6 +1852,11 @@
         "publicado": "2026-11-24"
       },
       {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-24T12:00:00Z"
+      },
+      {
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/critical-asp-net-anticsrf-flaw-exploited/",
         "publicado": "2026-11-24T12:55:28Z"
@@ -1876,10 +1881,10 @@
       "ransomware": "Unknown"
     },
     "primeira_vez": "2026-11-24T00:00:00Z",
-    "primeira_noticia": null,
+    "primeira_noticia": "2026-11-24T12:00:00Z",
     "publicado_nvd": null,
     "exibido_em": "2026-11-24T18:36:51Z",
-    "aguardando_nota_desde": null,
+    "aguardando_nota_desde": "2026-11-24T12:00:00Z",
     "nota_chegou_em": null,
     "epss_max": null,
     "poc_qtd": 1,
@@ -1888,6 +1893,11 @@
         "nome": "CISA KEV",
         "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-132165",
         "publicado": "2026-11-24"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-24T12:00:00Z"
       }
     ],
     "prioridade_max": "P1"
@@ -1909,7 +1919,7 @@
       "ransomware": "Unknown"
     },
     "primeira_vez": "2026-11-18T16:18:15Z",
-    "primeira_noticia": null,
+    "primeira_noticia": "2026-11-24T12:00:00Z",
     "publicado_nvd": "2026-11-18T16:18:15Z",
     "exibido_em": "2026-11-24T18:36:51Z",
     "aguardando_nota_desde": null,
@@ -1926,6 +1936,11 @@
         "nome": "CISA KEV",
         "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-132224",
         "publicado": "2026-11-24"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-24T12:00:00Z"
       }
     ],
     "prioridade_max": "P2"
@@ -1954,7 +1969,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.498,
-    "poc_qtd": 1,
+    "poc_qtd": 3,
     "fontes": [
       {
         "nome": "NVD",
@@ -2032,7 +2047,7 @@
     "aguardando_nota_desde": "2026-11-23T12:28:09Z",
     "nota_chegou_em": "2026-11-23T22:40:39Z",
     "epss_max": 0.0062,
-    "poc_qtd": 0,
+    "poc_qtd": 1,
     "fontes": [
       {
         "nome": "NVD",
@@ -2326,7 +2341,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0102,
-    "poc_qtd": 0,
+    "poc_qtd": 1,
     "fontes": [
       {
         "nome": "NVD",
