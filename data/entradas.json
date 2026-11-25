@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-11-24T18:36:33Z",
-  "janela": "17 a 24/nov/2026",
+  "atualizado": "2026-11-25T10:39:40Z",
+  "janela": "18 a 25/nov/2026",
   "itens": [
     {
       "data": "2026-11-24",
@@ -337,6 +337,24 @@
       "status": "Novo"
     },
     {
+      "data": "2026-11-19",
+      "cve": "CVE-2026-84236 / CVE-2026-82339 / CVE-2026-84273 / CVE-2026-85018 / CVE-2026-87977",
+      "produto": "IBM Guardium Data Protection 12.2 (S-TAP de SharePoint e outros componentes)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Atualizar o Guardium Data Protection para 12.2.4 (boletim IBM de 19/11); não há contorno. Até corrigir, limitar o acesso de rede aos serviços do S-TAP de SharePoint e conferir se há eventos de auditoria forjados ou mudança na política de monitoramento.",
+      "fontes": [
+        {
+          "nome": "IBM Security Bulletin",
+          "url": "https://www.ibm.com/support/pages/node/7297484"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
       "data": "2026-11-18",
       "cve": "CVE-2026-123637 / CVE-2026-121805 / CVE-2026-120292 / CVE-2026-120285 / CVE-2026-116953 / CVE-2026-120722",
       "produto": "F5 BIG-IP (TMM, APM, iRules, PEM, DNS) e BIG-IP Next for Kubernetes/CNF",
@@ -480,46 +498,6 @@
     },
     {
       "data": "2026-11-17",
-      "cve": "CVE-2026-91569 / CVE-2026-91570 / CVE-2026-91583 / CVE-2026-91585 / CVE-2026-91456 / CVE-2026-91470 / CVE-2026-91469 / CVE-2026-114835 / CVE-2026-91500 / CVE-2026-91510 / CVE-2026-91507",
-      "produto": "Oracle WebLogic Server e Oracle Access Manager (Security Patch Update de nov/2026)",
-      "cvss": 10.0,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P0",
-      "tratamento": "Quatro falhas nota 10 sem login (TopLink do WebLogic e motor de autenticação/console do OAM) em WebLogic 12.2.1.4 a 15.1.1 e OAM 12.2.1.4 e 14.1.2.1. Aplicar o patch de 17/11 primeiro em OAM e WebLogic expostos; até lá, bloquear T3/IIOP e consoles de administração na borda.",
-      "fontes": [
-        {
-          "nome": "Oracle CSPU nov/2026",
-          "url": "https://www.oracle.com/security-alerts/cspunov2026.html"
-        },
-        {
-          "nome": "NVD",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91569"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-17",
-      "cve": "CVE-2026-114819 / CVE-2026-114848 / CVE-2026-114822",
-      "produto": "Oracle Database Server (Security Patch Update de nov/2026)",
-      "cvss": 9.9,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não",
-      "prioridade": "P1",
-      "tratamento": "Três falhas 9.9 no Database Server no mesmo pacote de 17/11, que também traz 9.8 em E-Business Suite, APEX e REST Data Services. Planejar o patch nos bancos Oracle de produção e revisar quem tem conta com acesso de rede ao listener.",
-      "fontes": [
-        {
-          "nome": "Oracle CSPU nov/2026",
-          "url": "https://www.oracle.com/security-alerts/cspunov2026.html"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-17",
       "cve": "CVE-2026-115731 / CVE-2026-115732",
       "produto": "Puppet Enterprise, Puppet open source e OpenVox Server (processamento de relatórios de agente)",
       "cvss": 9.9,
@@ -542,71 +520,23 @@
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-115731"
         }
       ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-17",
-      "cve": "CVE-2026-114938",
-      "produto": "Java SE / OpenJDK 17, 21, 25 e 27 e GraalVM (Java4Shell; CPU de Java da Oracle de nov/2026)",
-      "cvss": 9.2,
-      "kev": false,
-      "zero_day": false,
-      "exploracao": "Não confirmada (sem ataques segundo o Cyber Centre do Canadá; outros laboratórios só reproduziram crash e vazamento de memória)",
-      "prioridade": "P1",
-      "tratamento": "RCE sem login, em configuração padrão, em Keycloak, Jira, Confluence, Jenkins, Artifactory e PingFederate, só em x86-64 com AVX-512 VBMI (Java 8 e 11 comuns não afetados). Aplicar as builds corrigidas (Oracle 17.0.21.1/21.0.13.1, Corretto e Zulu já saíram; RHEL ainda sem patch) e refazer imagens; até lá usar -XX:-UseBASE64Intrinsics, começando por identidade e CI/CD expostos.",
-      "fontes": [
-        {
-          "nome": "The Hacker News (Java4Shell)",
-          "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html"
-        },
-        {
-          "nome": "Wiz",
-          "url": "https://www.wiz.io/blog/cve-2026-114938-rce-java4shell-openjdk"
-        },
-        {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html"
-        }
-      ],
-      "status": "Novo"
-    },
-    {
-      "data": "2026-11-17",
-      "cve": "CVE-2026-129448",
-      "produto": "Apache Roller (servidor de blog Java, versões 4.0.0 a 6.1.4, endpoint XML-RPC)",
-      "cvss": 9.8,
-      "kev": true,
-      "zero_day": false,
-      "exploracao": "Ativa (Apache confirma ataques; KEV em 20/11, prazo CISA 23/11)",
-      "prioridade": "P2",
-      "tratamento": "RCE sem login por desserialização no XML-RPC, antes da checagem de autenticação (mesma falha da CVE-2026-82384 de setembro, cujo patch 6.1.5 não bastou). Raro em banco: se houver blog ou portal com Roller, subir para 6.1.6 ou superior (6.1.7 fecha mais 15 falhas); sem patch, pôr enabledForExtensions=false no web.xml ou remover o mapeamento /roller-services/xmlrpc e reiniciar (desligar o XML-RPC no painel não basta).",
-      "fontes": [
-        {
-          "nome": "SecurityOnline",
-          "url": "https://securityonline.info/apache-roller-vulnerability-cve-2026-129448/"
-        },
-        {
-          "nome": "BleepingComputer",
-          "url": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/"
-        },
-        {
-          "nome": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-129448"
-        }
-      ],
-      "status": "Novo"
+      "status": "Pendente"
     },
     {
       "data": "2026-11-16",
-      "cve": "sem CVE (Optimizely Web Experimentation)",
+      "cve": "CVE-2026-132224",
       "produto": "Optimizely Web Experimentation e outros scripts de terceiros (Kissmetrics, StorifyMe, minute-ly) em sites públicos",
-      "cvss": null,
-      "kev": false,
+      "cvss": 8.7,
+      "kev": true,
       "zero_day": true,
-      "exploracao": "Ativa (falha no cadastro de contas da Optimizely usada para injetar skimmer de cartão, roubo de cookies e troca de carteiras cripto em 178+ sites em 16/11, inclusive do setor financeiro)",
+      "exploracao": "Ativa (KEV em 24/11, prazo CISA 27/11; falha no cadastro de contas usada para injetar skimmer e troca de carteiras cripto em 178 organizações a partir de 13 a 16/11, inclusive do setor financeiro)",
       "prioridade": "P0",
-      "tratamento": "Listar páginas de login, cadastro e pagamento que carregam scripts da Optimizely ou dos outros três serviços e comparar o código dos projetos com versões guardadas; procurar nos logs de proxy e WAF os IOCs publicados (1688360[.]cc, webshell[.]lol, card.php, hit.php). Exigir CSP e SRI em scripts de terceiros, considerar cache de até 1 dia e acionar antifraude para clientes que acessaram em 16/11.",
+      "tratamento": "A Optimizely diz ter corrigido o serviço e removido o código injetado; mesmo assim revisar o Project JavaScript de todos os projetos desde 13/11, trocar senhas e tokens da conta e bloquear/procurar 1688360[.]cc e os outros IOCs nos logs de proxy e WAF. Exigir CSP sem unsafe-eval e SRI em scripts de terceiros nas páginas de login e pagamento, e acionar antifraude para quem acessou no período.",
       "fontes": [
+        {
+          "nome": "Bitsight",
+          "url": "https://www.bitsight.com/blog/cve-2026-132224-optimizely-third-party-supply-chain-attack"
+        },
         {
           "nome": "The Next Web",
           "url": "https://thenextweb.com/news/optimizely-hack-malware-zoom-bbc-cnn-hsbc-178-sites"
@@ -688,58 +618,6 @@
         {
           "nome": "CSA Singapura (AL-2026-164)",
           "url": "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-164/"
-        }
-      ],
-      "status": "Pendente"
-    },
-    {
-      "data": "2026-11-10",
-      "cve": "CVE-2026-116606 / CVE-2026-111560",
-      "produto": "Barracuda Email Security Gateway (e WAF, WSG, ADC, Archiver na injeção de comando)",
-      "cvss": 9.3,
-      "kev": true,
-      "zero_day": false,
-      "exploracao": "Ativa (KEV em 10/11, prazo CISA 13/11)",
-      "prioridade": "P0",
-      "tratamento": "Cadeia de bypass de autenticação e injeção de comando leva a root no gateway de e-mail. Confirmar que os patches BNSF-40425/40430 (ESG) e os dos demais produtos estão aplicados, religar o patch automático, tirar a interface de admin da internet e procurar alterações de configuração ou backups importados.",
-      "fontes": [
-        {
-          "nome": "BleepingComputer",
-          "url": "https://bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices"
-        },
-        {
-          "nome": "SecurityWeek",
-          "url": "https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/"
-        },
-        {
-          "nome": "CISA KEV",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-116606"
-        }
-      ],
-      "status": "Pendente"
-    },
-    {
-      "data": "2026-11-10",
-      "cve": "CVE-2026-90436 / CVE-2026-125882 / CVE-2026-125878 / CVE-2026-125883 / CVE-2026-125879",
-      "produto": "N-able N-central (RMM; cadeia 4EverAble2Shell via Apache Axis)",
-      "cvss": null,
-      "kev": true,
-      "zero_day": true,
-      "exploracao": "Ativa (4EverAble2Shell com minerador; Axis no KEV desde 18/11; PoC público)",
-      "prioridade": "P0",
-      "tratamento": "Atualizar servidores on-premise para 2026.4 HF3, que remove a Legacy API e corrige mais 17 CVEs, e atualizar todos os agentes e probes. Procurar requisições a /dms/services/ServerUI com jline, serviço xvd.service e arquivos em /tmp/.xvd; se achar, tratar como comprometido e cobrar o mesmo de fornecedores que usam N-central.",
-      "fontes": [
-        {
-          "nome": "BleepingComputer",
-          "url": "https://bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released"
-        },
-        {
-          "nome": "The Hacker News",
-          "url": "https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html"
-        },
-        {
-          "nome": "The Hacker News (HF3)",
-          "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html"
         }
       ],
       "status": "Pendente"
