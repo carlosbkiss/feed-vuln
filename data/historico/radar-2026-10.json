@@ -228,31 +228,42 @@
   },
   "CVE-2026-103406": {
     "cve": "CVE-2026-103406",
-    "produto": "",
-    "titulo": "",
+    "produto": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router",
+    "titulo": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability",
     "cvss": 9.8,
-    "prioridade": "P1",
+    "prioridade": "P0",
     "elegivel_por": [
-      "CVSS ≥ 9"
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
     ],
-    "zero_day": false,
-    "kev": null,
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-25",
+      "prazo": "2026-11-28",
+      "ransomware": "Unknown"
+    },
     "primeira_vez": "2026-10-28T17:17:25Z",
     "primeira_noticia": null,
     "publicado_nvd": "2026-10-28T17:17:25Z",
-    "exibido_em": "2026-10-28T18:39:56Z",
+    "exibido_em": "2026-11-25T20:29:26Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0052,
-    "poc_qtd": 0,
+    "epss_max": 0.0086,
+    "poc_qtd": 1,
     "fontes": [
       {
         "nome": "NVD",
         "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406",
         "publicado": "2026-10-28T17:17:25Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-103406",
+        "publicado": "2026-11-25"
       }
     ],
-    "prioridade_max": "P1"
+    "prioridade_max": "P0"
   },
   "CVE-2026-103409": {
     "cve": "CVE-2026-103409",

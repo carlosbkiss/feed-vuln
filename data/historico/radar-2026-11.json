@@ -1,4 +1,37 @@
 {
+  "CVE-2023-25915": {
+    "cve": "CVE-2023-25915",
+    "produto": "Danfoss AK-SM 800A Series",
+    "titulo": "Danfoss AK-SM 800A Series Improper Input Validation Vulnerability",
+    "cvss": null,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-25",
+      "prazo": "2026-11-28",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-25T00:00:00Z",
+    "primeira_noticia": null,
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-25T20:29:26Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0143,
+    "poc_qtd": null,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2023-25915",
+        "publicado": "2026-11-25"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
   "CVE-2024-10441": {
     "cve": "CVE-2024-10441",
     "produto": "Synology DiskStation Manager (DSM)",
@@ -385,7 +418,7 @@
     "exibido_em": "2026-11-24T21:14:23Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0134,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -527,7 +560,7 @@
     "exibido_em": "2026-11-18T02:55:02Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0052,
+    "epss_max": 0.0056,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -1157,7 +1190,7 @@
     "exibido_em": "2026-11-24T18:36:51Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0094,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -1283,7 +1316,7 @@
     "exibido_em": "2026-11-20T10:40:33Z",
     "aguardando_nota_desde": "2026-11-19T16:30:55Z",
     "nota_chegou_em": "2026-11-20T18:39:04Z",
-    "epss_max": 0.0353,
+    "epss_max": 0.0501,
     "poc_qtd": 8,
     "fontes": [
       {
@@ -1352,7 +1385,7 @@
     "aguardando_nota_desde": "2026-11-24T13:28:26Z",
     "nota_chegou_em": null,
     "epss_max": null,
-    "poc_qtd": 1,
+    "poc_qtd": 2,
     "fontes": [
       {
         "nome": "The Hacker News",
@@ -1612,7 +1645,7 @@
     "exibido_em": "2026-11-12T01:33:20Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.006,
+    "epss_max": 0.0069,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -1724,7 +1757,7 @@
     "exibido_em": "2026-11-15T10:38:35Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0062,
+    "epss_max": 0.0127,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -1822,8 +1855,8 @@
     "exibido_em": "2026-11-23T10:40:13Z",
     "aguardando_nota_desde": "2026-11-23T09:11:56Z",
     "nota_chegou_em": "2026-11-23T14:41:08Z",
-    "epss_max": 0.0061,
-    "poc_qtd": 3,
+    "epss_max": 0.0429,
+    "poc_qtd": 4,
     "fontes": [
       {
         "nome": "NVD",
@@ -1859,6 +1892,11 @@
         "nome": "SecurityWeek",
         "link": "https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/",
         "publicado": "2026-11-25T09:05:13Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/drupal-idunno-anticsrf-optimizely-flaws-exploited/",
+        "publicado": "2026-11-25T16:57:24Z"
       }
     ],
     "prioridade_max": "P0"
@@ -1886,7 +1924,7 @@
     "aguardando_nota_desde": "2026-11-24T12:00:00Z",
     "nota_chegou_em": null,
     "epss_max": null,
-    "poc_qtd": 1,
+    "poc_qtd": 5,
     "fontes": [
       {
         "nome": "CISA KEV",
@@ -1897,6 +1935,21 @@
         "nome": "CISA Advisories",
         "link": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
         "publicado": "2026-11-24T12:00:00Z"
+      },
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+        "publicado": "2026-11-25T11:23:26Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/drupal-critical-security-flaw/",
+        "publicado": "2026-11-25T14:51:54Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/drupal-idunno-anticsrf-optimizely-flaws-exploited/",
+        "publicado": "2026-11-25T16:57:24Z"
       }
     ],
     "prioridade_max": "P1"
@@ -1923,7 +1976,7 @@
     "exibido_em": "2026-11-24T18:36:51Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0041,
+    "epss_max": 0.0078,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -1940,9 +1993,218 @@
         "nome": "CISA Advisories",
         "link": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
         "publicado": "2026-11-24T12:00:00Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/drupal-idunno-anticsrf-optimizely-flaws-exploited/",
+        "publicado": "2026-11-25T16:57:24Z"
       }
     ],
     "prioridade_max": "P2"
+  },
+  "CVE-2026-133275": {
+    "cve": "CVE-2026-133275",
+    "produto": "Mitel MiCollab",
+    "titulo": "Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability",
+    "cvss": null,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-25",
+      "prazo": "2026-11-28",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-25T00:00:00Z",
+    "primeira_noticia": null,
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-25T20:29:26Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0032,
+    "poc_qtd": null,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133275",
+        "publicado": "2026-11-25"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-133303": {
+    "cve": "CVE-2026-133303",
+    "produto": "Mitel MiCollab",
+    "titulo": "Mitel MiCollab XML Injection Vulnerability",
+    "cvss": null,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-25",
+      "prazo": "2026-11-28",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-25T00:00:00Z",
+    "primeira_noticia": null,
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-25T20:29:26Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0052,
+    "poc_qtd": null,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133303",
+        "publicado": "2026-11-25"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-133311": {
+    "cve": "CVE-2026-133311",
+    "produto": "Mitel MiCollab",
+    "titulo": "Mitel MiCollab Weak Authentication Vulnerability",
+    "cvss": null,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-25",
+      "prazo": "2026-12-09",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-25T00:00:00Z",
+    "primeira_noticia": null,
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-25T20:29:26Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.004,
+    "poc_qtd": null,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133311",
+        "publicado": "2026-11-25"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-133323": {
+    "cve": "CVE-2026-133323",
+    "produto": "Mitel MiCollab",
+    "titulo": "Mitel MiCollab OS Command Injection Vulnerability",
+    "cvss": null,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-25",
+      "prazo": "2026-11-28",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-25T00:00:00Z",
+    "primeira_noticia": null,
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-25T20:29:26Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0255,
+    "poc_qtd": null,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133323",
+        "publicado": "2026-11-25"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-133324": {
+    "cve": "CVE-2026-133324",
+    "produto": "Mitel MiCollab",
+    "titulo": "Mitel MiCollab Not Failing Securely Vulnerability",
+    "cvss": null,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-25",
+      "prazo": "2026-11-28",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-25T00:00:00Z",
+    "primeira_noticia": null,
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-25T20:29:26Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0041,
+    "poc_qtd": null,
+    "fontes": [
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133324",
+        "publicado": "2026-11-25"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
+  "CVE-2026-133469": {
+    "cve": "CVE-2026-133469",
+    "produto": "Vates Xen Orchestra",
+    "titulo": "Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability",
+    "cvss": 9.8,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-25",
+      "prazo": "2026-11-28",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-23T17:17:31Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-11-23T17:17:31Z",
+    "exibido_em": "2026-11-25T20:29:26Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.011,
+    "poc_qtd": 1,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-133469",
+        "publicado": "2026-11-23T17:17:31Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133469",
+        "publicado": "2026-11-25"
+      }
+    ],
+    "prioridade_max": "P0"
   },
   "CVE-2026-133968": {
     "cve": "CVE-2026-133968",
@@ -2006,8 +2268,8 @@
     "exibido_em": "2026-11-24T14:37:30Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0041,
-    "poc_qtd": 1,
+    "epss_max": 0.0113,
+    "poc_qtd": 2,
     "fontes": [
       {
         "nome": "NVD",
@@ -2045,7 +2307,7 @@
     "exibido_em": "2026-11-23T22:40:39Z",
     "aguardando_nota_desde": "2026-11-23T12:28:09Z",
     "nota_chegou_em": "2026-11-23T22:40:39Z",
-    "epss_max": 0.0062,
+    "epss_max": 0.0179,
     "poc_qtd": 1,
     "fontes": [
       {
@@ -2093,7 +2355,7 @@
     "exibido_em": "2026-11-24T21:14:23Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0234,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -2339,7 +2601,7 @@
     "exibido_em": "2026-11-23T22:40:39Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0102,
+    "epss_max": 0.0157,
     "poc_qtd": 1,
     "fontes": [
       {
@@ -2489,7 +2751,7 @@
     "exibido_em": "2026-11-20T02:21:11Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.004,
+    "epss_max": 0.005,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -2517,7 +2779,7 @@
     "exibido_em": "2026-11-20T02:21:11Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0063,
+    "epss_max": 0.0085,
     "poc_qtd": 0,
     "fontes": [
       {

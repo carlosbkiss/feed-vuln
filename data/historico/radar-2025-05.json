@@ -1,0 +1,40 @@
+{
+  "CVE-2025-41450": {
+    "cve": "CVE-2025-41450",
+    "produto": "Danfoss AK-SM 800A Series",
+    "titulo": "Danfoss AK-SM 800A Series Improper Authentication Vulnerability",
+    "cvss": 8.2,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-25",
+      "prazo": "2026-12-09",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2025-05-08T10:15:18Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2025-05-08T10:15:18Z",
+    "exibido_em": "2026-11-25T20:29:26Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0051,
+    "poc_qtd": 3,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-41450",
+        "publicado": "2025-05-08T10:15:18Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-41450",
+        "publicado": "2026-11-25"
+      }
+    ],
+    "prioridade_max": "P2"
+  }
+}

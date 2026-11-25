@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-25T10:40:02Z",
+  "atualizado": "2026-11-25T20:29:26Z",
   "itens": [
     {
       "cve": "CVE-2026-123903",
@@ -38,9 +38,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "poc": {
-        "qtd": 1,
+        "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123903.json",
-        "checado": "2026-11-24T14:37:30Z"
+        "checado": "2026-11-25T20:29:26Z"
       }
     },
     {
@@ -85,14 +85,74 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0041,
-        "percentil": 0.3562,
-        "data": "2026-11-24"
+        "score": 0.0113,
+        "percentil": 0.6617,
+        "data": "2026-11-25"
+      },
+      "poc": {
+        "qtd": 2,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-134401.json",
+        "checado": "2026-11-25T20:29:26Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-133469",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-133469",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-133469",
+          "publicado": "2026-11-23T17:17:31Z",
+          "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133469",
+          "publicado": "2026-11-25",
+          "visto_em": "2026-11-25T20:29:26Z"
+        }
+      ],
+      "detectado": "2026-11-25T20:29:26Z",
+      "kev": {
+        "adicionado": "2026-11-25",
+        "prazo": "2026-11-28",
+        "ransomware": "Unknown"
+      },
+      "produto": "Vates Xen Orchestra",
+      "titulo": "Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability",
+      "resumo": "Vates Xen Orchestra contains an improper validation of specified type of input vulnerability that could allow an unauthenticated attacker to bypass authentication and perform actions with administrative privileges via a specially crafted authentication token…",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-23T17:17:31Z",
+      "nvd_checado_em": "2026-11-25T20:29:26Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-23T17:17:31Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-133469",
+      "ultima_atividade": "2026-11-25T00:00:00Z",
+      "exibido_em": "2026-11-25T20:29:26Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.011,
+        "percentil": 0.6526,
+        "data": "2026-11-25"
       },
       "poc": {
         "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-134401.json",
-        "checado": "2026-11-24T14:37:30Z"
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-133469.json",
+        "checado": "2026-11-25T20:29:26Z"
       }
     },
     {
@@ -171,9 +231,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0062,
-        "percentil": 0.5029,
-        "data": "2026-11-24"
+        "score": 0.0179,
+        "percentil": 0.7889,
+        "data": "2026-11-25"
       },
       "poc": {
         "qtd": 1,
@@ -239,9 +299,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.498,
-        "percentil": 0.9892,
-        "data": "2026-11-24"
+        "score": 0.2716,
+        "percentil": 0.9849,
+        "data": "2026-11-25"
       },
       "poc": {
         "qtd": 3,
@@ -345,7 +405,7 @@
       "poc": {
         "qtd": 8,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123890.json",
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "kev": {
         "adicionado": "2026-11-20",
@@ -362,9 +422,9 @@
       "nvd_checado_em": "2026-11-20T18:39:04Z",
       "nota_chegou_em": "2026-11-20T18:39:04Z",
       "epss": {
-        "score": 0.0353,
-        "percentil": 0.8944,
-        "data": "2026-11-24"
+        "score": 0.0501,
+        "percentil": 0.9301,
+        "data": "2026-11-25"
       }
     },
     {
@@ -425,6 +485,14 @@
           "link": "https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/",
           "publicado": "2026-11-25T09:05:13Z",
           "visto_em": "2026-11-25T10:40:02Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns of Drupal Core RCE, Idunno AntiCsrf and Optimizely Flaws Exploited in Attacks",
+          "link": "https://cybersecuritynews.com/drupal-idunno-anticsrf-optimizely-flaws-exploited/",
+          "publicado": "2026-11-25T16:57:24Z",
+          "visto_em": "2026-11-25T20:29:26Z"
         }
       ],
       "detectado": "2026-11-23T10:40:13Z",
@@ -439,20 +507,20 @@
       "primeira_vez": "2026-11-19T02:17:20Z",
       "primeira_noticia": "2026-11-23T09:11:56Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
-      "ultima_atividade": "2026-11-25T09:05:13Z",
+      "ultima_atividade": "2026-11-25T16:57:24Z",
       "exibido_em": "2026-11-23T10:40:13Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0061,
-        "percentil": 0.5015,
-        "data": "2026-11-24"
+        "score": 0.0429,
+        "percentil": 0.9189,
+        "data": "2026-11-25"
       },
       "poc": {
-        "qtd": 3,
+        "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-131914.json",
-        "checado": "2026-11-24T14:37:30Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "cvss": 9.3,
       "cvss_versao": "4.0",
@@ -548,14 +616,14 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.4007,
-        "percentil": 0.9865,
-        "data": "2026-11-24"
+        "score": 0.2416,
+        "percentil": 0.9833,
+        "data": "2026-11-25"
       },
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-129448.json",
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "kev": {
         "adicionado": "2026-11-20",
@@ -648,14 +716,14 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0327,
-        "percentil": 0.8862,
-        "data": "2026-11-24"
+        "score": 0.0023,
+        "percentil": 0.0843,
+        "data": "2026-11-25"
       },
       "poc": {
         "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123039.json",
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       }
     },
     {
@@ -742,14 +810,14 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0587,
-        "percentil": 0.9332,
-        "data": "2026-11-24"
+        "score": 0.027,
+        "percentil": 0.8663,
+        "data": "2026-11-25"
       },
       "poc": {
         "qtd": 5,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-90436.json",
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       }
     },
     {
@@ -821,14 +889,14 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.1284,
-        "percentil": 0.9637,
-        "data": "2026-11-24"
+        "score": 0.1258,
+        "percentil": 0.9693,
+        "data": "2026-11-25"
       },
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-115731.json",
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "cvss": 9.4,
       "cvss_versao": "4.0",
@@ -836,6 +904,66 @@
       "publicado_nvd": "2026-11-03T21:17:01Z",
       "nvd_checado_em": "2026-11-17T19:53:13Z",
       "escalado": true
+    },
+    {
+      "cve": "CVE-2026-103406",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-103406",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406",
+          "publicado": "2026-10-28T17:17:25Z",
+          "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-103406",
+          "publicado": "2026-11-25",
+          "visto_em": "2026-11-25T20:29:26Z"
+        }
+      ],
+      "detectado": "2026-11-25T20:29:26Z",
+      "kev": {
+        "adicionado": "2026-11-25",
+        "prazo": "2026-11-28",
+        "ransomware": "Unknown"
+      },
+      "produto": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router",
+      "titulo": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability",
+      "resumo": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router contain an OS command injection vulnerability that could allow a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-10-28T17:17:25Z",
+      "nvd_checado_em": "2026-11-25T20:29:26Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-10-28T17:17:25Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406",
+      "ultima_atividade": "2026-11-25T00:00:00Z",
+      "exibido_em": "2026-11-25T20:29:26Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0086,
+        "percentil": 0.5602,
+        "data": "2026-11-25"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-103406.json",
+        "checado": "2026-11-25T20:29:26Z"
+      }
     },
     {
       "cve": "CVE-2026-76466",
@@ -937,14 +1065,14 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0219,
-        "percentil": 0.8276,
-        "data": "2026-11-24"
+        "score": 0.0112,
+        "percentil": 0.6569,
+        "data": "2026-11-25"
       },
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76466.json",
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       }
     },
     {
@@ -1008,14 +1136,14 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.3433,
-        "percentil": 0.9843,
-        "data": "2026-11-24"
+        "score": 0.1888,
+        "percentil": 0.9786,
+        "data": "2026-11-25"
       },
       "poc": {
         "qtd": 7,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-90817.json",
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -1085,14 +1213,14 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0313,
-        "percentil": 0.881,
-        "data": "2026-11-24"
+        "score": 0.0276,
+        "percentil": 0.8699,
+        "data": "2026-11-25"
       },
       "poc": {
         "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2024/CVE-2024-10441.json",
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -1119,6 +1247,30 @@
           "link": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
           "publicado": "2026-11-24T12:00:00Z",
           "visto_em": "2026-11-25T04:16:46Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
+          "link": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+          "publicado": "2026-11-25T11:23:26Z",
+          "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Hackers Are Exploiting a Critical Drupal Flaw to Target Websites Without Needing a Password",
+          "link": "https://cybersecuritynews.com/drupal-critical-security-flaw/",
+          "publicado": "2026-11-25T14:51:54Z",
+          "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns of Drupal Core RCE, Idunno AntiCsrf and Optimizely Flaws Exploited in Attacks",
+          "link": "https://cybersecuritynews.com/drupal-idunno-anticsrf-optimizely-flaws-exploited/",
+          "publicado": "2026-11-25T16:57:24Z",
+          "visto_em": "2026-11-25T20:29:26Z"
         }
       ],
       "detectado": "2026-11-24T18:36:51Z",
@@ -1130,7 +1282,7 @@
       "produto": "Drupal Core",
       "titulo": "Drupal Core Remote Code Execution Vulnerability",
       "resumo": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to…",
-      "nvd_checado_em": "2026-11-25T10:40:02Z",
+      "nvd_checado_em": "2026-11-25T20:29:26Z",
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
       "elegivel_por": [
@@ -1140,15 +1292,15 @@
       "primeira_vez": "2026-11-24T00:00:00Z",
       "primeira_noticia": "2026-11-24T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165",
-      "ultima_atividade": "2026-11-24T12:00:00Z",
+      "ultima_atividade": "2026-11-25T16:57:24Z",
       "exibido_em": "2026-11-24T18:36:51Z",
       "prioridade": "P1",
       "regra": "explorado em plataforma corporativa",
       "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
       "poc": {
-        "qtd": 1,
+        "qtd": 5,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-132165.json",
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "aguardando_nota_desde": "2026-11-24T12:00:00Z"
     },
@@ -1185,12 +1337,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
         "score": 0.0048,
-        "percentil": 0.4215,
-        "data": "2026-11-24"
+        "percentil": 0.3421,
+        "data": "2026-11-25"
       }
     },
     {
@@ -1226,12 +1378,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.0036,
-        "percentil": 0.2959,
-        "data": "2026-11-24"
+        "score": 0.004,
+        "percentil": 0.2635,
+        "data": "2026-11-25"
       }
     },
     {
@@ -1267,12 +1419,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.0038,
-        "percentil": 0.3226,
-        "data": "2026-11-24"
+        "score": 0.0043,
+        "percentil": 0.2934,
+        "data": "2026-11-25"
       }
     },
     {
@@ -1308,12 +1460,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.0022,
-        "percentil": 0.1264,
-        "data": "2026-11-24"
+        "score": 0.0032,
+        "percentil": 0.1758,
+        "data": "2026-11-25"
       }
     },
     {
@@ -1349,12 +1501,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.0038,
-        "percentil": 0.3226,
-        "data": "2026-11-24"
+        "score": 0.0043,
+        "percentil": 0.2934,
+        "data": "2026-11-25"
       }
     },
     {
@@ -1390,12 +1542,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.0036,
-        "percentil": 0.2958,
-        "data": "2026-11-24"
+        "score": 0.0048,
+        "percentil": 0.342,
+        "data": "2026-11-25"
       }
     },
     {
@@ -1458,20 +1610,266 @@
       "regra": "explorado em plataforma corporativa",
       "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
       "epss": {
-        "score": 0.009,
-        "percentil": 0.6047,
-        "data": "2026-11-24"
+        "score": 0.011,
+        "percentil": 0.6529,
+        "data": "2026-11-25"
       },
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2025/CVE-2025-42884.json",
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "cvss": 6.5,
       "cvss_versao": "3.1",
       "cvss_fonte": "CNA",
       "publicado_nvd": "2025-11-11T01:15:36Z",
       "nvd_checado_em": "2026-11-20T19:07:33Z"
+    },
+    {
+      "cve": "CVE-2023-25915",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Danfoss AK-SM 800A Series Improper Input Validation Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2023-25915",
+          "publicado": "2026-11-25",
+          "visto_em": "2026-11-25T20:29:26Z"
+        }
+      ],
+      "detectado": "2026-11-25T20:29:26Z",
+      "kev": {
+        "adicionado": "2026-11-25",
+        "prazo": "2026-11-28",
+        "ransomware": "Unknown"
+      },
+      "produto": "Danfoss AK-SM 800A Series",
+      "titulo": "Danfoss AK-SM 800A Series Improper Input Validation Vulnerability",
+      "resumo": "Danfoss AK-SM 800A Series contains an improper input validation vulnerability that could allow a remote attacker to run arbitrary commands on the affected system.",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-25T00:00:00Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2023-25915",
+      "ultima_atividade": "2026-11-25T00:00:00Z",
+      "exibido_em": "2026-11-25T20:29:26Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0143,
+        "percentil": 0.7323,
+        "data": "2026-11-25"
+      }
+    },
+    {
+      "cve": "CVE-2026-133324",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Mitel MiCollab Not Failing Securely Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133324",
+          "publicado": "2026-11-25",
+          "visto_em": "2026-11-25T20:29:26Z"
+        }
+      ],
+      "detectado": "2026-11-25T20:29:26Z",
+      "kev": {
+        "adicionado": "2026-11-25",
+        "prazo": "2026-11-28",
+        "ransomware": "Unknown"
+      },
+      "produto": "Mitel MiCollab",
+      "titulo": "Mitel MiCollab Not Failing Securely Vulnerability",
+      "resumo": "Mitel MiCollab contains a not failing securely vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to bypass authentication controls and perform unauthorized actions.",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-25T00:00:00Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-133324",
+      "ultima_atividade": "2026-11-25T00:00:00Z",
+      "exibido_em": "2026-11-25T20:29:26Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0041,
+        "percentil": 0.273,
+        "data": "2026-11-25"
+      }
+    },
+    {
+      "cve": "CVE-2026-133275",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133275",
+          "publicado": "2026-11-25",
+          "visto_em": "2026-11-25T20:29:26Z"
+        }
+      ],
+      "detectado": "2026-11-25T20:29:26Z",
+      "kev": {
+        "adicionado": "2026-11-25",
+        "prazo": "2026-11-28",
+        "ransomware": "Unknown"
+      },
+      "produto": "Mitel MiCollab",
+      "titulo": "Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "resumo": "Mitel MiCollab contains an unrestricted upload of file with dangerous type vulnerability in the Audio, Web and Video Conferencing (AWV) component due to insufficient file type validation that could allow an unauthenticated attacker to upload arbitrary files.",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-25T00:00:00Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-133275",
+      "ultima_atividade": "2026-11-25T00:00:00Z",
+      "exibido_em": "2026-11-25T20:29:26Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0032,
+        "percentil": 0.1686,
+        "data": "2026-11-25"
+      }
+    },
+    {
+      "cve": "CVE-2026-133311",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Mitel MiCollab Weak Authentication Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133311",
+          "publicado": "2026-11-25",
+          "visto_em": "2026-11-25T20:29:26Z"
+        }
+      ],
+      "detectado": "2026-11-25T20:29:26Z",
+      "kev": {
+        "adicionado": "2026-11-25",
+        "prazo": "2026-12-09",
+        "ransomware": "Unknown"
+      },
+      "produto": "Mitel MiCollab",
+      "titulo": "Mitel MiCollab Weak Authentication Vulnerability",
+      "resumo": "Mitel MiCollab contains a weak authentication vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to access sensitive information using a specific system-generated random identifier or…",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-25T00:00:00Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-133311",
+      "ultima_atividade": "2026-11-25T00:00:00Z",
+      "exibido_em": "2026-11-25T20:29:26Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.004,
+        "percentil": 0.2537,
+        "data": "2026-11-25"
+      }
+    },
+    {
+      "cve": "CVE-2026-133303",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Mitel MiCollab XML Injection Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133303",
+          "publicado": "2026-11-25",
+          "visto_em": "2026-11-25T20:29:26Z"
+        }
+      ],
+      "detectado": "2026-11-25T20:29:26Z",
+      "kev": {
+        "adicionado": "2026-11-25",
+        "prazo": "2026-11-28",
+        "ransomware": "Unknown"
+      },
+      "produto": "Mitel MiCollab",
+      "titulo": "Mitel MiCollab XML Injection Vulnerability",
+      "resumo": "Mitel MiCollab contains an XML injection vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary commands using pre-staged malicious content.",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-25T00:00:00Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-133303",
+      "ultima_atividade": "2026-11-25T00:00:00Z",
+      "exibido_em": "2026-11-25T20:29:26Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0052,
+        "percentil": 0.3711,
+        "data": "2026-11-25"
+      }
+    },
+    {
+      "cve": "CVE-2026-133323",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Mitel MiCollab OS Command Injection Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133323",
+          "publicado": "2026-11-25",
+          "visto_em": "2026-11-25T20:29:26Z"
+        }
+      ],
+      "detectado": "2026-11-25T20:29:26Z",
+      "kev": {
+        "adicionado": "2026-11-25",
+        "prazo": "2026-11-28",
+        "ransomware": "Unknown"
+      },
+      "produto": "Mitel MiCollab",
+      "titulo": "Mitel MiCollab OS Command Injection Vulnerability",
+      "resumo": "Mitel MiCollab contains an improper neutralization of special elements used in an OS command (OS command injection) vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary…",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-25T00:00:00Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323",
+      "ultima_atividade": "2026-11-25T00:00:00Z",
+      "exibido_em": "2026-11-25T20:29:26Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0255,
+        "percentil": 0.8572,
+        "data": "2026-11-25"
+      }
     },
     {
       "cve": "CVE-2026-135797",
@@ -1491,7 +1889,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-24T19:18:14Z",
       "resumo": "A vulnerability was identified in Volans NGFW Next-Generation Firewall r5.1. Impacted is the function exec of the file sslvpn/sslvpn_client.php of the component SSLVPN Client. Such manipulation of the argument img leads to os command injection. The attack…",
-      "nvd_checado_em": "2026-11-25T10:40:02Z",
+      "nvd_checado_em": "2026-11-25T20:29:26Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1507,6 +1905,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-24T21:14:23Z"
+      },
+      "epss": {
+        "score": 0.0234,
+        "percentil": 0.843,
+        "data": "2026-11-25"
       }
     },
     {
@@ -1542,7 +1945,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
+      },
+      "epss": {
+        "score": 0.0094,
+        "percentil": 0.5948,
+        "data": "2026-11-25"
       }
     },
     {
@@ -1587,6 +1995,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-24T21:14:23Z"
+      },
+      "epss": {
+        "score": 0.0134,
+        "percentil": 0.7144,
+        "data": "2026-11-25"
       }
     },
     {
@@ -1625,9 +2038,9 @@
         "checado": "2026-11-25T04:16:46Z"
       },
       "epss": {
-        "score": 0.0102,
-        "percentil": 0.6421,
-        "data": "2026-11-24"
+        "score": 0.0157,
+        "percentil": 0.7566,
+        "data": "2026-11-25"
       }
     },
     {
@@ -1663,12 +2076,12 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-120539.json",
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.0216,
-        "percentil": 0.8253,
-        "data": "2026-11-24"
+        "score": 0.0139,
+        "percentil": 0.7253,
+        "data": "2026-11-25"
       }
     },
     {
@@ -1704,12 +2117,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.0063,
-        "percentil": 0.5078,
-        "data": "2026-11-24"
+        "score": 0.0085,
+        "percentil": 0.5555,
+        "data": "2026-11-25"
       }
     },
     {
@@ -1745,12 +2158,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.004,
-        "percentil": 0.3439,
-        "data": "2026-11-24"
+        "score": 0.005,
+        "percentil": 0.3557,
+        "data": "2026-11-25"
       }
     },
     {
@@ -1786,12 +2199,12 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-14492.json",
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.0122,
-        "percentil": 0.6939,
-        "data": "2026-11-24"
+        "score": 0.0177,
+        "percentil": 0.7866,
+        "data": "2026-11-25"
       }
     },
     {
@@ -1820,6 +2233,14 @@
           "link": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
           "publicado": "2026-11-24T12:00:00Z",
           "visto_em": "2026-11-25T04:16:46Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns of Drupal Core RCE, Idunno AntiCsrf and Optimizely Flaws Exploited in Attacks",
+          "link": "https://cybersecuritynews.com/drupal-idunno-anticsrf-optimizely-flaws-exploited/",
+          "publicado": "2026-11-25T16:57:24Z",
+          "visto_em": "2026-11-25T20:29:26Z"
         }
       ],
       "detectado": "2026-11-24T18:36:51Z",
@@ -1845,20 +2266,20 @@
       "primeira_vez": "2026-11-18T16:18:15Z",
       "primeira_noticia": "2026-11-24T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-132224",
-      "ultima_atividade": "2026-11-24T12:00:00Z",
+      "ultima_atividade": "2026-11-25T16:57:24Z",
       "exibido_em": "2026-11-24T18:36:51Z",
       "prioridade": "P2",
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.0041,
-        "percentil": 0.3584,
-        "data": "2026-11-24"
+        "score": 0.0078,
+        "percentil": 0.5254,
+        "data": "2026-11-25"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       }
     },
     {
@@ -1894,12 +2315,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.0024,
-        "percentil": 0.1479,
-        "data": "2026-11-24"
+        "score": 0.0035,
+        "percentil": 0.2103,
+        "data": "2026-11-25"
       }
     },
     {
@@ -1935,12 +2356,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.0024,
-        "percentil": 0.1556,
-        "data": "2026-11-24"
+        "score": 0.0034,
+        "percentil": 0.1942,
+        "data": "2026-11-25"
       }
     },
     {
@@ -1976,12 +2397,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.0043,
-        "percentil": 0.3738,
-        "data": "2026-11-24"
+        "score": 0.0051,
+        "percentil": 0.366,
+        "data": "2026-11-25"
       }
     },
     {
@@ -2017,12 +2438,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.0045,
-        "percentil": 0.3941,
-        "data": "2026-11-24"
+        "score": 0.0042,
+        "percentil": 0.2768,
+        "data": "2026-11-25"
       }
     },
     {
@@ -2058,12 +2479,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.0031,
-        "percentil": 0.2456,
-        "data": "2026-11-24"
+        "score": 0.0042,
+        "percentil": 0.277,
+        "data": "2026-11-25"
       }
     },
     {
@@ -2099,12 +2520,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.0042,
-        "percentil": 0.3723,
-        "data": "2026-11-24"
+        "score": 0.0056,
+        "percentil": 0.4057,
+        "data": "2026-11-25"
       }
     },
     {
@@ -2140,12 +2561,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
         "score": 0.0042,
-        "percentil": 0.3651,
-        "data": "2026-11-24"
+        "percentil": 0.277,
+        "data": "2026-11-25"
       }
     },
     {
@@ -2181,12 +2602,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.0036,
-        "percentil": 0.3013,
-        "data": "2026-11-24"
+        "score": 0.0034,
+        "percentil": 0.1942,
+        "data": "2026-11-25"
       }
     },
     {
@@ -2222,12 +2643,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.0062,
-        "percentil": 0.5038,
-        "data": "2026-11-24"
+        "score": 0.0127,
+        "percentil": 0.6974,
+        "data": "2026-11-25"
       }
     },
     {
@@ -2263,12 +2684,12 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-128027.json",
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.0089,
-        "percentil": 0.6014,
-        "data": "2026-11-24"
+        "score": 0.0086,
+        "percentil": 0.5588,
+        "data": "2026-11-25"
       }
     },
     {
@@ -2304,12 +2725,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T18:36:51Z"
+        "checado": "2026-11-25T20:29:26Z"
       },
       "epss": {
-        "score": 0.005,
-        "percentil": 0.4375,
-        "data": "2026-11-24"
+        "score": 0.0051,
+        "percentil": 0.3636,
+        "data": "2026-11-25"
       }
     },
     {
@@ -2348,9 +2769,9 @@
         "checado": "2026-11-25T04:16:46Z"
       },
       "epss": {
-        "score": 0.0043,
-        "percentil": 0.374,
-        "data": "2026-11-24"
+        "score": 0.0051,
+        "percentil": 0.3637,
+        "data": "2026-11-25"
       }
     },
     {
@@ -2389,9 +2810,9 @@
         "checado": "2026-11-25T04:16:46Z"
       },
       "epss": {
-        "score": 0.0063,
-        "percentil": 0.5116,
-        "data": "2026-11-24"
+        "score": 0.0082,
+        "percentil": 0.5431,
+        "data": "2026-11-25"
       }
     },
     {
@@ -2430,9 +2851,9 @@
         "checado": "2026-11-25T04:16:46Z"
       },
       "epss": {
-        "score": 0.0055,
-        "percentil": 0.4666,
-        "data": "2026-11-24"
+        "score": 0.0064,
+        "percentil": 0.4538,
+        "data": "2026-11-25"
       }
     },
     {
@@ -2471,9 +2892,9 @@
         "checado": "2026-11-25T04:16:46Z"
       },
       "epss": {
-        "score": 0.0137,
-        "percentil": 0.7252,
-        "data": "2026-11-24"
+        "score": 0.0134,
+        "percentil": 0.7136,
+        "data": "2026-11-25"
       }
     },
     {
@@ -2504,9 +2925,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.0086,
-        "percentil": 0.5928,
-        "data": "2026-11-24"
+        "score": 0.0075,
+        "percentil": 0.5129,
+        "data": "2026-11-25"
       },
       "poc": {
         "qtd": 0,
@@ -2550,9 +2971,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.0088,
-        "percentil": 0.5969,
-        "data": "2026-11-24"
+        "score": 0.0071,
+        "percentil": 0.491,
+        "data": "2026-11-25"
       },
       "poc": {
         "qtd": 1,
@@ -2596,58 +3017,9 @@
         "checado": "2026-11-25T04:16:46Z"
       },
       "epss": {
-        "score": 0.006,
-        "percentil": 0.4961,
-        "data": "2026-11-24"
-      }
-    },
-    {
-      "cve": "CVE-2026-123710",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-123710",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-123710",
-          "publicado": "2026-11-11T15:17:18Z",
-          "visto_em": "2026-11-11T18:39:31Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Critical Red Hat Quay Vulnerability Allows Unauthenticated Attackers to Hijack Container Registries",
-          "link": "https://cybersecuritynews.com/red-hat-quay-vulnerability/",
-          "publicado": "2026-11-12T13:57:37Z",
-          "visto_em": "2026-11-12T14:38:58Z"
-        }
-      ],
-      "detectado": "2026-11-11T18:39:31Z",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-11T15:17:18Z",
-      "resumo": "A flaw was found in Red Hat Quay. An unauthenticated client can obtain an anonymous registry token with an audience it controls, present that token to the service key rotation endpoint, and install its own approved signing key with no expiry. Registry tokens…",
-      "nvd_checado_em": "2026-11-12T10:42:11Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-11-11T15:17:18Z",
-      "primeira_noticia": "2026-11-12T13:57:37Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-123710",
-      "ultima_atividade": "2026-11-12T13:57:37Z",
-      "exibido_em": "2026-11-11T18:39:31Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-25T04:16:46Z"
-      },
-      "epss": {
-        "score": 0.009,
-        "percentil": 0.605,
-        "data": "2026-11-24"
+        "score": 0.0069,
+        "percentil": 0.4827,
+        "data": "2026-11-25"
       }
     },
     {
@@ -2719,8 +3091,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0135,
-        "percentil": 0.7212,
-        "data": "2026-11-24"
+        "percentil": 0.7165,
+        "data": "2026-11-25"
       },
       "poc": {
         "qtd": 4,
@@ -2793,9 +3165,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.828,
-        "percentil": 0.9967,
-        "data": "2026-11-24"
+        "score": 0.2021,
+        "percentil": 0.9801,
+        "data": "2026-11-25"
       },
       "poc": {
         "qtd": 2,
@@ -2807,6 +3179,124 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-04-10T14:16:36Z",
       "nvd_checado_em": "2026-11-19T02:35:56Z"
+    },
+    {
+      "cve": "CVE-2025-41450",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2025-41450",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-41450",
+          "publicado": "2025-05-08T10:15:18Z",
+          "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Danfoss AK-SM 800A Series Improper Authentication Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-41450",
+          "publicado": "2026-11-25",
+          "visto_em": "2026-11-25T20:29:26Z"
+        }
+      ],
+      "detectado": "2026-11-25T20:29:26Z",
+      "kev": {
+        "adicionado": "2026-11-25",
+        "prazo": "2026-12-09",
+        "ransomware": "Unknown"
+      },
+      "produto": "Danfoss AK-SM 800A Series",
+      "titulo": "Danfoss AK-SM 800A Series Improper Authentication Vulnerability",
+      "resumo": "Danfoss AK-SM 800A Series contains an improper authentication vulnerability that could allow an attacker to generate a web report exposing sensitive information, including internal IP addresses, usernames, and store names.",
+      "cvss": 8.2,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2025-05-08T10:15:18Z",
+      "nvd_checado_em": "2026-11-25T20:29:26Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2025-05-08T10:15:18Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2025-41450",
+      "ultima_atividade": "2026-11-25T00:00:00Z",
+      "exibido_em": "2026-11-25T20:29:26Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0051,
+        "percentil": 0.3703,
+        "data": "2026-11-25"
+      },
+      "poc": {
+        "qtd": 3,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2025/CVE-2025-41450.json",
+        "checado": "2026-11-25T20:29:26Z"
+      }
+    },
+    {
+      "cve": "CVE-2023-25914",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2023-25914",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-25914",
+          "publicado": "2023-08-21T21:15:08Z",
+          "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Danfoss AK-SM 800A Series Path Traversal Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2023-25914",
+          "publicado": "2026-11-25",
+          "visto_em": "2026-11-25T20:29:26Z"
+        }
+      ],
+      "detectado": "2026-11-25T20:29:26Z",
+      "kev": {
+        "adicionado": "2026-11-25",
+        "prazo": "2026-11-28",
+        "ransomware": "Unknown"
+      },
+      "produto": "Danfoss AK-SM 800A Series",
+      "titulo": "Danfoss AK-SM 800A Series Path Traversal Vulnerability",
+      "resumo": "Danfoss AK-SM 800A Series contains a path traversal vulnerability that could allow an attacker to access and read underlying server system files via the XML interface.",
+      "cvss": 8.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2023-08-21T21:15:08Z",
+      "nvd_checado_em": "2026-11-25T20:29:26Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2023-08-21T21:15:08Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2023-25914",
+      "ultima_atividade": "2026-11-25T00:00:00Z",
+      "exibido_em": "2026-11-25T20:29:26Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0108,
+        "percentil": 0.6459,
+        "data": "2026-11-25"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-25T20:29:26Z"
+      }
     }
   ],
   "sem_cve": [
@@ -2923,12 +3413,6 @@
       "titulo": "New Windows SignDrop zero-day gives hackers SYSTEM privileges",
       "link": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
       "publicado": "2026-11-12T16:04:00Z"
-    },
-    {
-      "fonte": "SecurityWeek",
-      "titulo": "Critical Xen Orchestra Flaws Exploited in Attacks",
-      "link": "https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/",
-      "publicado": "2026-11-11T15:42:47Z"
     }
   ]
 }
