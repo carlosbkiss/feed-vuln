@@ -1,0 +1,626 @@
+{
+  "atualizado": "2026-11-25T10:39:40Z",
+  "janela": "18 a 25/nov/2026",
+  "itens": [
+    {
+      "data": "2026-11-24",
+      "cve": "CVE-2026-123903 / CVE-2026-123910 / CVE-2026-123911",
+      "produto": "VMware vCenter Server (vmdir) e ESX (serviço I/O filter), boletim VMSA-2026-0011",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não (sem ataque relatado; mesmo componente vmdir da CVE-2026-123890 explorada como zero-day)",
+      "prioridade": "P0",
+      "tratamento": "Atualizar vCenter para 8.0 U3m, 9.0.2.0300 ou 9.1.2 (VCF 5.x: 5.2.5; vCenter 7.0 via suporte Broadcom) e ESXi para 8.0 U3m ou 9.1.2. Não há contorno para o vCenter; restringir o acesso de rede à interface de gestão e, no ESX 8.0, aplicar o contorno do KB463535 até corrigir.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html"
+        },
+        {
+          "nome": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/vmware-esx-host-vulnerabilities/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-24",
+      "cve": "sem CVE (Azure API Management)",
+      "produto": "Microsoft Azure API Management Classic (camadas Developer, Basic, Standard e Premium)",
+      "cvss": null,
+      "kev": false,
+      "zero_day": true,
+      "exploracao": "Ativa (roubo de credenciais de API guardadas; ataques a empresas na Noruega relatados pela NSM; Microsoft corrigiu em 19/11)",
+      "prioridade": "P0",
+      "tratamento": "A Microsoft corrigiu do lado dela, mas credenciais usadas antes da correção continuam válidas. Trocar segredos, chaves e named values guardados em instâncias APIM Classic, revisar logs desde meados de novembro e acompanhar o aviso no Azure Service Health (Consumption e v2 não afetados).",
+      "fontes": [
+        {
+          "nome": "Techzine",
+          "url": "https://www.techzine.eu/news/security/146028/microsoft-patches-actively-exploited-vulnerability-in-azure-api-management/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-23",
+      "cve": "CVE-2026-134401",
+      "produto": "Google Chrome (componente Variations, fuga do sandbox)",
+      "cvss": 9.6,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Forçar Chrome 158.0.8127.88 ou superior (ou .89 em parte dos builds Windows e macOS) via gestão de estações e conferir navegadores baseados em Chromium (Edge e outros) quando saírem as versões deles.",
+      "fontes": [
+        {
+          "nome": "Cyber Security News",
+          "url": "https://cybersecuritynews.com/critical-google-chrome-flaw/"
+        },
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134401"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-23",
+      "cve": "CVE-2026-134624",
+      "produto": "N-able MailAssure (SpamExperts), filtro de e-mail em nuvem",
+      "cvss": 9.3,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (KEV em 23/11, prazo CISA 26/11; a N-able diz ter achado a falha ao investigar uma invasão)",
+      "prioridade": "P2",
+      "tratamento": "SSRF na checagem de sincronização LDAP que exige usuário de API e deixa varrer e alcançar hosts internos. Pouco usado em banco: verificar se algum fornecedor ou MSP usa MailAssure para domínios da casa, revogar e trocar chaves de API e conferir a correção com a N-able (versão a confirmar).",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-134624"
+        },
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-23",
+      "cve": "CVE-2026-133968",
+      "produto": "Project MONAI Label (anotação de imagens médicas com IA)",
+      "cvss": 9.8,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (KEV em 23/11, prazo CISA 26/11; PoC público no GitHub)",
+      "prioridade": "P2",
+      "tratamento": "Path traversal sem login que grava arquivos fora do datastore e pode virar RCE. Nicho em banco: procurar instâncias em times de dados e IA (shadow IT), tirar da internet e atualizar para a versão corrigida (a confirmar).",
+      "fontes": [
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133968"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html"
+        },
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133968"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-23",
+      "cve": "CVE-2026-70193",
+      "produto": "Microsoft SharePoint (path traversal com RCE por usuário autenticado)",
+      "cvss": 9.9,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Qualquer usuário autenticado pode executar código no servidor SharePoint. Confirmar no Security Update Guide da Microsoft qual atualização corrige (a confirmar), aplicar primeiro nos farms publicados para parceiros e revisar quem tem conta nesses sites.",
+      "fontes": [
+        {
+          "nome": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70193"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-20",
+      "cve": "CVE-2026-132658 / CVE-2026-132659 / CVE-2026-132660",
+      "produto": "EnterpriseDB Postgres Enterprise Manager (PEM)",
+      "cvss": 9.4,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "Falhas que exigem acesso prévio (usuário do PEM ou agente comprometido) e permitem chegar a superusuário SQL ou mexer no servidor do PEM. Se usar PEM, aplicar a versão corrigida da EDB (a confirmar no advisory) e restringir quem acessa o console e os agentes.",
+      "fontes": [
+        {
+          "nome": "CVE Brief 21/11",
+          "url": "https://cvebrief.com/archive/2026/11/21/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-20",
+      "cve": "CVE-2025-42884",
+      "produto": "SAP NetWeaver Enterprise Portal 7.50 (injeção JNDI sem login)",
+      "cvss": 6.5,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 20/11, prazo CISA 23/11; sem detalhes públicos dos ataques)",
+      "prioridade": "P1",
+      "tratamento": "Falha corrigida pela SAP em nov/2025 que permite a quem não está logado ler ou alterar informações do servidor do portal. Confirmar que a SAP Note 3660969 está aplicada em todos os Enterprise Portal, começando pelos expostos a parceiros ou à internet (nesses, tratar como urgente) e revisar logs do portal desde então.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/cisa-kev-catalog-vcenter-cisco-expressway/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-42884"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-20",
+      "cve": "sem CVE (Qubole)",
+      "produto": "Qubole (data lake em AWS): papéis IAM de confiança entre contas criados para o fornecedor",
+      "cvss": null,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Ativa (AssumeRole com a conta da Qubole de 14 a 26/out via VPN e hospedagem; roubo de segredos, dados de S3 e teste de credenciais de Entra ID e Okta; empresas do setor financeiro divulgaram incidentes de terceiros em 19 e 20/11)",
+      "prioridade": "P1",
+      "tratamento": "Inventariar papéis que confiam em contas externas e remover os da Qubole sem uso; nos que ficam, trocar o principal :root por um específico, restringir origem por IP ou VPCE e trocar o External ID. Revisar CloudTrail desde 01/10 por AssumeRole da conta 805246085872 fora da AWS e sessões quiam-*, e rotacionar segredos alcançáveis por esses papéis.",
+      "fontes": [
+        {
+          "nome": "Wiz",
+          "url": "https://www.wiz.io/pt-br/blog/qubole-cross-account-access-abused-in-the-wild"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html"
+        },
+        {
+          "nome": "DEV Community",
+          "url": "https://dev.to/rokkhe/old-doors-trusted-keys-6-attacks-this-week-and-how-to-check-yours-before-monday-48kp"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-19",
+      "cve": "CVE-2026-123890",
+      "produto": "VMware vCenter Server e Cloud Foundation (vmdir, bypass de autenticação; VMSA-2026-0009)",
+      "cvss": 9.8,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (KEV em 20/11, prazo CISA 23/11; zero-day desde set/2026 pelo grupo chinês Armory Castle, ex-UNC5221, segundo o Google, encadeado com o BeyondTrust Remote Support CVE-2026-102764; roubo da chave SAML e tokens forjados)",
+      "prioridade": "P0",
+      "tratamento": "Atualizar para vCenter 8.0 U3m, 9.0.2.0200 ou 9.1.1.0200 (7.0 sem correção pública; VCF 5.x confirmar com a Broadcom); sem workaround, restringir as portas 443, 2012, 5480 e 22 do vCenter à rede de gestão. Caçar comprometimento desde setembro (admins SSO desconhecidos, SSH ligado e desligado no VAMI) e, se houver suspeita, trocar o certificado de assinatura STS e as credenciais SSO, pois o patch não derruba tokens forjados. Conferir também se o BeyondTrust Remote Support está com o patch da CVE-2026-102764, usada no mesmo ataque.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/vcenter-zero-day-cve-2026-123890-exploited/"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-123890"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-19",
+      "cve": "CVE-2026-132231 / CVE-2026-132232 / CVE-2026-132233 / CVE-2026-132234",
+      "produto": "JetBrains TeamCity (RCE via Perforce, Mercurial e atributos de build)",
+      "cvss": 9.9,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Quatro RCE nota 9.9 no servidor de CI (argumentos em VCS roots Perforce e Mercurial e path traversal na importação de projetos), sem exploração nem exploit público segundo a JetBrains. Subir para 2026.1.3 ou 2025.11.8 (a fonte cita também 2025.11.7: conferir no boletim da JetBrains), revisar quem pode editar projetos e tirar a interface do TeamCity da internet.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/teamcity-security-update-fixes-21-flaws/"
+        },
+        {
+          "nome": "CVE Brief 19/11",
+          "url": "https://cvebrief.com/archive/2026/11/19/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-19",
+      "cve": "CVE-2026-95787",
+      "produto": "HPE Aruba ArubaOS (protocolo PAPI)",
+      "cvss": 10.0,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Bypass de autenticação sem login pode dar controle administrativo de controladores e APs Aruba. Versão corrigida a confirmar no advisory da HPE; até lá, bloquear a porta UDP 8211 (PAPI) fora da rede de gestão dos controladores.",
+      "fontes": [
+        {
+          "nome": "CVE Brief 19/11",
+          "url": "https://cvebrief.com/archive/2026/11/19/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-19",
+      "cve": "CVE-2026-126714 / CVE-2026-115560 / CVE-2026-129289",
+      "produto": "PHP 8.2 a 8.5 (phpAfterShell, que contorna o patch do PHP2Shell, e mais seis críticas; release de 19/11)",
+      "cvss": 9.2,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não (PoC inofensivo publicado; cadeia completa não é pública; fora do KEV)",
+      "prioridade": "P1",
+      "tratamento": "phpAfterShell burla a correção do PHP2Shell de outubro; o mesmo pacote fecha RCE no upload progress de sessão e request smuggling no PHP-FPM. Subir para 8.2.36, 8.3.37, 8.4.28 ou 8.5.13 (ou backport da distribuição) e reiniciar FPM/Apache; até lá, session.upload_progress.enabled=0 e nada de entrada não confiável em sessão.",
+      "fontes": [
+        {
+          "nome": "Malware News (SOCRadar)",
+          "url": "https://malware.news/t/phpaftershell-cve-2026-126714-slips-past-php2shell-patch/127511"
+        },
+        {
+          "nome": "The CyberSec Guru",
+          "url": "https://thecybersecguru.com/news/php-security-release-19-november-2026/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-19",
+      "cve": "CVE-2026-76466",
+      "produto": "Cisco Expressway-C e Expressway-E em cluster (credencial fixa no cm_server)",
+      "cvss": 9.8,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 20/11, prazo CISA 23/11; F6 relatou invasão de Expressway X15.5.3 expostos com pivô para a rede interna logo após o PoC público)",
+      "prioridade": "P0",
+      "tratamento": "Atualizar para X15.5.20 (X14 e anteriores precisam migrar); sem workaround, bloquear TCP 4371/4372 exceto entre os nós do cluster. Caçar comprometimento no log Erlang do Expressway e em acessos dele a SMB, SQL Server, WinRM e GitLab internos.",
+      "fontes": [
+        {
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/"
+        },
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-76466"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-19",
+      "cve": "CVE-2026-131914",
+      "produto": "Idunno.AntiCsrf 0.9.1 (módulo anti-CSRF legado para ASP.NET WebForms/IIS)",
+      "cvss": 9.3,
+      "kev": false,
+      "zero_day": true,
+      "exploracao": "Ativa (Mandiant relata exploração; sem detalhes de alvos)",
+      "prioridade": "P1",
+      "tratamento": "Desserialização sem login que dá RCE no w3wp.exe com um POST. Projeto abandonado e sem patch: procurar Idunno.AntiCsrf/AntiCsrfModule em Web.config e bin/ das aplicações WebForms, trocar pelo AntiForgery nativo; se a app for exposta à internet, tratar como P0 e revisar logs do IIS e segredos do machineKey.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html"
+        },
+        {
+          "nome": "SecurityOnline CVE Watchtower",
+          "url": "https://securityonline.info/cve-watchtower/cve-2026-131914/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-19",
+      "cve": "CVE-2026-84236 / CVE-2026-82339 / CVE-2026-84273 / CVE-2026-85018 / CVE-2026-87977",
+      "produto": "IBM Guardium Data Protection 12.2 (S-TAP de SharePoint e outros componentes)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P1",
+      "tratamento": "Atualizar o Guardium Data Protection para 12.2.4 (boletim IBM de 19/11); não há contorno. Até corrigir, limitar o acesso de rede aos serviços do S-TAP de SharePoint e conferir se há eventos de auditoria forjados ou mudança na política de monitoramento.",
+      "fontes": [
+        {
+          "nome": "IBM Security Bulletin",
+          "url": "https://www.ibm.com/support/pages/node/7297484"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-18",
+      "cve": "CVE-2026-123637 / CVE-2026-121805 / CVE-2026-120292 / CVE-2026-120285 / CVE-2026-116953 / CVE-2026-120722",
+      "produto": "F5 BIG-IP (TMM, APM, iRules, PEM, DNS) e BIG-IP Next for Kubernetes/CNF",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não (sem ataque relatado até 20/11; mais de 177 mil BIG-IP com APM expostos segundo a Shadowserver)",
+      "prioridade": "P0",
+      "tratamento": "Seis estouros de pilha no TMM sem login (queda e possível RCE), cada um ligado a uma configuração de virtual server (APM per-request, iRules com PEM::subscriber, MR::message, PSC::ip_address, GENERICMESSAGE::route, DNS::scrape). Não há workaround: pedir à F5 o engineering hotfix do seu ramo (K000164058), começando pelos BIG-IP de borda com APM, e levantar quais virtual servers usam esses iRules; no mesmo lote, restringir iControl SOAP/REST à rede de gestão e subir para 21.1.0.3, 17.5.1.10 ou 17.1.3.6.",
+      "fontes": [
+        {
+          "nome": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html"
+        },
+        {
+          "nome": "Tech Bytes",
+          "url": "https://techbytes.app/posts/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-18",
+      "cve": "CVE-2026-132825",
+      "produto": "Ruby 3.3, 3.4 e 4.0 (Ruby2Shell, conversão de maiúsculas em encodings de 1 byte)",
+      "cvss": 7.4,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não (exploração real considerada difícil; PoC só depois dos patches dos grandes fornecedores)",
+      "prioridade": "P2",
+      "tratamento": "Estouro de heap alcançável sem login em Rails e Sinatra padrão; GitHub Enterprise Server afetado e GitLab já corrigiu. Subir Ruby para 4.0.10, 3.4.13 ou 3.3.14, refazer imagens e aplicar as versões corrigidas de GitHub Enterprise e GitLab quando saírem.",
+      "fontes": [
+        {
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-18",
+      "cve": "CVE-2026-132165 / CVE-2026-132166",
+      "produto": "Drupal core (instalador install.php)",
+      "cvss": null,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Não",
+      "prioridade": "P2",
+      "tratamento": "RCE sem login pelo install.php; Drupal alerta que exploit pode sair em horas. Se houver portal ou site institucional em Drupal, subir para 10.6.22, 11.3.22 ou 11.4.13 e bloquear /core/install.php no servidor web (nota CVSS a confirmar).",
+      "fontes": [
+        {
+          "nome": "Tech Bytes",
+          "url": "https://techbytes.app/posts/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-18",
+      "cve": "CVE-2026-123007 / CVE-2026-123633 / CVE-2026-123634 / CVE-2026-121810 / CVE-2026-113425",
+      "produto": "F5 NGINX Open Source e NGINX Plus (NGINX2Root: HTTP/2, HTTP/3, resolver e mail proxy)",
+      "cvss": 9.2,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Exploit público (PoC de RCE sem login no GitHub para a CVE-2026-123007, difícil de usar; sem ataque relatado até 18/11)",
+      "prioridade": "P0",
+      "tratamento": "Atualizar para NGINX 1.30.7 ou 1.31.9 e Plus 37.0.8.1 ou 37.3.0.1 (R33 a R36 sem patch: migrar para 37.x) e reiniciar o processo, pois reload não troca o binário. Começar pelos proxies reversos e balanceadores expostos e levantar imagens de contêiner e appliances com NGINX; até corrigir, desligar HTTP/3 e HTTP/2 onde der, fechar o mail proxy e bloquear o módulo SCTP do kernel onde não é usado.",
+      "fontes": [
+        {
+          "nome": "Tenable",
+          "url": "https://www.tenable.com/blog/nginx2root-cve-2026-123007-frequently-asked-questions-about-five-critical-nginx"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-18",
+      "cve": "CVE-2024-10441",
+      "produto": "Synology DiskStation Manager e BeeStation OS (NAS)",
+      "cvss": 9.8,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 18/11, prazo CISA 21/11)",
+      "prioridade": "P2",
+      "tratamento": "RCE sem login em NAS, mais comum como shadow IT ou em agências. Subir DSM para 7.2.2-72806-1, 7.2.1-69057-6 ou 7.2-64570-4 ou superior, tirar o NAS da internet e procurar equipamentos Synology não inventariados.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/cisa-adds-4-exploited-flaws-kev-synology-litellm/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2024-10441"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-18",
+      "cve": "CVE-2026-40217",
+      "produto": "BerriAI LiteLLM (proxy e gateway de LLM)",
+      "cvss": 8.8,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 18/11, prazo CISA 02/12; template Nuclei público)",
+      "prioridade": "P2",
+      "tratamento": "Usuário logado executa código no servidor pela rota /guardrails/test_custom_code. Levantar instâncias de LiteLLM em times de IA, usar build posterior a 08/04/2026 (versão a confirmar), bloquear essa rota no proxy e trocar as chaves de API de modelos guardadas no servidor.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/cisa-adds-4-exploited-flaws-kev-synology-litellm/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-40217"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-18",
+      "cve": "CVE-2026-90817",
+      "produto": "REDCap (Vanderbilt, coleta de dados de pesquisa)",
+      "cvss": 9.8,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 18/11, prazo CISA 21/11; template Nuclei público)",
+      "prioridade": "P2",
+      "tratamento": "RCE sem login a partir de um link público de pesquisa. Raro em banco: se houver REDCap em área de pesquisa ou parceiro, subir para 16.0.49, 17.3.10 ou 17.4.4.",
+      "fontes": [
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/cisa-adds-4-exploited-flaws-kev-synology-litellm/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-90817"
+        }
+      ],
+      "status": "Novo"
+    },
+    {
+      "data": "2026-11-17",
+      "cve": "CVE-2026-115731 / CVE-2026-115732",
+      "produto": "Puppet Enterprise, Puppet open source e OpenVox Server (processamento de relatórios de agente)",
+      "cvss": 9.9,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 17/11, prazo CISA 01/12; PoC público desde 03/11)",
+      "prioridade": "P0",
+      "tratamento": "Atualizar para PE 2023.8.13, 2025.12.1 ou 2026.0.1 (OpenVox Server 8.18.0/9.2.0). Sem patch, desligar ou restringir o autosign e limitar o acesso ao Puppet Server; se houver suspeita, caçar shells filhos do puppetserver e trocar a chave da CA.",
+      "fontes": [
+        {
+          "nome": "Cipher's Security",
+          "url": "https://cipherssecurity.com/puppet-cve-2026-115731-report-rce/"
+        },
+        {
+          "nome": "SecurityOnline",
+          "url": "https://securityonline.info/puppet-server-rce-cve-2026-115731-poc/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-115731"
+        }
+      ],
+      "status": "Pendente"
+    },
+    {
+      "data": "2026-11-16",
+      "cve": "CVE-2026-132224",
+      "produto": "Optimizely Web Experimentation e outros scripts de terceiros (Kissmetrics, StorifyMe, minute-ly) em sites públicos",
+      "cvss": 8.7,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (KEV em 24/11, prazo CISA 27/11; falha no cadastro de contas usada para injetar skimmer e troca de carteiras cripto em 178 organizações a partir de 13 a 16/11, inclusive do setor financeiro)",
+      "prioridade": "P0",
+      "tratamento": "A Optimizely diz ter corrigido o serviço e removido o código injetado; mesmo assim revisar o Project JavaScript de todos os projetos desde 13/11, trocar senhas e tokens da conta e bloquear/procurar 1688360[.]cc e os outros IOCs nos logs de proxy e WAF. Exigir CSP sem unsafe-eval e SRI em scripts de terceiros nas páginas de login e pagamento, e acionar antifraude para quem acessou no período.",
+      "fontes": [
+        {
+          "nome": "Bitsight",
+          "url": "https://www.bitsight.com/blog/cve-2026-132224-optimizely-third-party-supply-chain-attack"
+        },
+        {
+          "nome": "The Next Web",
+          "url": "https://thenextweb.com/news/optimizely-hack-malware-zoom-bbc-cnn-hsbc-178-sites"
+        },
+        {
+          "nome": "Infostealers",
+          "url": "https://www.infostealers.com/article/beyond-optimizely-malicious-scripts-traced-across-four-web-services/"
+        }
+      ],
+      "status": "Pendente"
+    },
+    {
+      "data": "2026-11-16",
+      "cve": "CVE-2026-90436",
+      "produto": "Atlassian Confluence Data Center até 9.x com Remote API (XML-RPC e SOAP) ligada (Apache Axis 1.x)",
+      "cvss": 9.8,
+      "kev": true,
+      "zero_day": false,
+      "exploracao": "Ativa (KEV em 18/11 pela falha no Apache Axis, prazo CISA 21/11; Rapid7 viu exploração em 13/11 que chegou a credencial de serviço, data warehouse em nuvem e Microsoft 365 em 12h; PoC público)",
+      "prioridade": "P0",
+      "tratamento": "Atualizar para 9.2.28 ou migrar para a 10.x, que removeu a Remote API; Cloud não é afetado. Sem patch, desligar a Remote API em Configuração geral (sem reinício) e confirmar 403 em /plugins/servlet/soap-axis1/confluenceservice-v2; nas instâncias que ficaram expostas, trocar as credenciais de banco e de contas de serviço/integração guardadas no Confluence e revisar logins dessas contas no Microsoft 365 e na nuvem.",
+      "fontes": [
+        {
+          "nome": "Atlassian CONFSERVER-104610",
+          "url": "https://jira.atlassian.com/browse/CONFSERVER-104610"
+        },
+        {
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-90436"
+        }
+      ],
+      "status": "Pendente"
+    },
+    {
+      "data": "2026-11-12",
+      "cve": "CVE-2026-123039",
+      "produto": "Check Point Gaia OS (Security Gateway, Management, Multi-Domain, Log Server; R81.20 a R82.20)",
+      "cvss": 7.8,
+      "kev": true,
+      "zero_day": true,
+      "exploracao": "Ativa (KEV desde 13/11; cerca de duas dezenas de clientes desde fim de out/2026, encadeada com PHP2Shell no Mobile Access para virar root, com backdoor e wiper em ESXi)",
+      "prioridade": "P0",
+      "tratamento": "Aplicar o Jumbo Hotfix corrigido do seu ramo (R82 Take 132; demais ramos conferir no advisory), que também fecha o PHP2Shell. Sem hotfix, parar o dynamic_server conforme sk1000362 e caçar comprometimento: webshells, comandos fora do wrapper Clish e acesso do gateway a hosts ESXi.",
+      "fontes": [
+        {
+          "nome": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/"
+        },
+        {
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/"
+        },
+        {
+          "nome": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-123039"
+        }
+      ],
+      "status": "Pendente"
+    },
+    {
+      "data": "2026-11-11",
+      "cve": "CVE-2026-119618",
+      "produto": "Apache HTTP Server 2.4.55 a 2.4.70 com HTTP/2 (mod_http2)",
+      "cvss": 9.8,
+      "kev": false,
+      "zero_day": false,
+      "exploracao": "Ativa (exploração relatada pela CSA de Singapura em 17/11; PoC público derruba o processo)",
+      "prioridade": "P0",
+      "tratamento": "Atualizar para 2.4.71 ou pacote corrigido da distribuição, começando pelos servidores expostos e proxies reversos. Sem patch imediato, desligar HTTP/2 (Protocols só com http/1.1); levantar também appliances e imagens de contêiner que embutem httpd.",
+      "fontes": [
+        {
+          "nome": "SecurityWeek",
+          "url": "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/"
+        },
+        {
+          "nome": "CSA Singapura (AL-2026-164)",
+          "url": "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-164/"
+        }
+      ],
+      "status": "Pendente"
+    }
+  ]
+}

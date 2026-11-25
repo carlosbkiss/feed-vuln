@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-25T04:16:46Z",
+  "atualizado": "2026-11-25T10:40:02Z",
   "itens": [
     {
       "cve": "CVE-2026-123903",
@@ -417,6 +417,14 @@
           "link": "https://cybersecuritynews.com/critical-asp-net-anticsrf-flaw-exploited/",
           "publicado": "2026-11-24T12:55:28Z",
           "visto_em": "2026-11-24T14:37:30Z"
+        },
+        {
+          "id": "securityweek",
+          "nome": "SecurityWeek",
+          "titulo": "Hackers Exploit Unpatched Flaw in Defunct Idunno AntiCsrf Library",
+          "link": "https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/",
+          "publicado": "2026-11-25T09:05:13Z",
+          "visto_em": "2026-11-25T10:40:02Z"
         }
       ],
       "detectado": "2026-11-23T10:40:13Z",
@@ -431,7 +439,7 @@
       "primeira_vez": "2026-11-19T02:17:20Z",
       "primeira_noticia": "2026-11-23T09:11:56Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
-      "ultima_atividade": "2026-11-24T12:55:28Z",
+      "ultima_atividade": "2026-11-25T09:05:13Z",
       "exibido_em": "2026-11-23T10:40:13Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -1122,7 +1130,7 @@
       "produto": "Drupal Core",
       "titulo": "Drupal Core Remote Code Execution Vulnerability",
       "resumo": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to…",
-      "nvd_checado_em": "2026-11-25T04:16:46Z",
+      "nvd_checado_em": "2026-11-25T10:40:02Z",
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
       "elegivel_por": [
@@ -1483,7 +1491,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-24T19:18:14Z",
       "resumo": "A vulnerability was identified in Volans NGFW Next-Generation Firewall r5.1. Impacted is the function exec of the file sslvpn/sslvpn_client.php of the component SSLVPN Client. Such manipulation of the argument img leads to os command injection. The attack…",
-      "nvd_checado_em": "2026-11-25T04:16:46Z",
+      "nvd_checado_em": "2026-11-25T10:40:02Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2469,6 +2477,90 @@
       }
     },
     {
+      "cve": "CVE-2026-25611",
+      "fontes": [
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical MongoDB Flaw Lets Attackers Crash Database Servers With Just Two Ping Requests",
+          "link": "https://cybersecuritynews.com/mongodb-database-crash-vulnerability/",
+          "publicado": "2026-11-12T12:22:28Z",
+          "visto_em": "2026-11-25T10:40:02Z"
+        }
+      ],
+      "detectado": "2026-11-25T10:40:02Z",
+      "zero_day": true,
+      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
+      "aguardando_nota_desde": "2026-11-12T12:22:28Z",
+      "elegivel_por": [
+        "zero-day"
+      ],
+      "primeira_vez": "2026-11-12T12:22:28Z",
+      "primeira_noticia": "2026-11-12T12:22:28Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-25611",
+      "ultima_atividade": "2026-11-12T12:22:28Z",
+      "exibido_em": "2026-11-25T10:40:02Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0086,
+        "percentil": 0.5928,
+        "data": "2026-11-24"
+      },
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-25T10:40:02Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-118383",
+      "fontes": [
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
+          "link": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
+          "publicado": "2026-11-12T09:25:00Z",
+          "visto_em": "2026-11-25T10:40:02Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Critical MongoDB Flaw Lets Attackers Crash Database Servers With Just Two Ping Requests",
+          "link": "https://cybersecuritynews.com/mongodb-database-crash-vulnerability/",
+          "publicado": "2026-11-12T12:22:28Z",
+          "visto_em": "2026-11-25T10:40:02Z"
+        }
+      ],
+      "detectado": "2026-11-25T10:40:02Z",
+      "zero_day": true,
+      "zero_day_motivo": "Cyber Security News: exploração ativa relatada",
+      "aguardando_nota_desde": "2026-11-12T09:25:00Z",
+      "elegivel_por": [
+        "zero-day"
+      ],
+      "primeira_vez": "2026-11-12T09:25:00Z",
+      "primeira_noticia": "2026-11-12T09:25:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-118383",
+      "ultima_atividade": "2026-11-12T12:22:28Z",
+      "exibido_em": "2026-11-25T10:40:02Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0088,
+        "percentil": 0.5969,
+        "data": "2026-11-24"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-118383.json",
+        "checado": "2026-11-25T10:40:02Z"
+      }
+    },
+    {
       "cve": "CVE-2026-126812",
       "fontes": [
         {
@@ -2719,6 +2811,18 @@
   ],
   "sem_cve": [
     {
+      "fonte": "BleepingComputer",
+      "titulo": "Hackers now exploit critical Drupal RCE flaw to hijack sites",
+      "link": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/",
+      "publicado": "2026-11-25T10:10:20Z"
+    },
+    {
+      "fonte": "SecurityWeek",
+      "titulo": "Drupal Flaw Found by Anthropic Scanner Exploited in Attacks",
+      "link": "https://www.securityweek.com/drupal-flaw-found-by-anthropic-scanner-exploited-in-attacks/",
+      "publicado": "2026-11-25T08:01:06Z"
+    },
+    {
       "fonte": "SecurityWeek",
       "titulo": "SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks",
       "link": "https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/",
@@ -2825,18 +2929,6 @@
       "titulo": "Critical Xen Orchestra Flaws Exploited in Attacks",
       "link": "https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/",
       "publicado": "2026-11-11T15:42:47Z"
-    },
-    {
-      "fonte": "BleepingComputer",
-      "titulo": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
-      "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/",
-      "publicado": "2026-11-11T10:12:08Z"
-    },
-    {
-      "fonte": "SecurityWeek",
-      "titulo": "Recently Patched Barracuda Vulnerabilities Exploited in Attacks",
-      "link": "https://www.securityweek.com/recently-patched-barracuda-vulnerabilities-exploited-in-attacks/",
-      "publicado": "2026-11-11T07:53:51Z"
     }
   ]
 }

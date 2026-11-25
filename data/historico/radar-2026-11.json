@@ -821,28 +821,22 @@
     "cve": "CVE-2026-118383",
     "produto": "",
     "titulo": "",
-    "cvss": 10.0,
-    "prioridade": "P0",
+    "cvss": null,
+    "prioridade": "P2",
     "elegivel_por": [
-      "zero-day",
-      "CVSS ≥ 9"
+      "zero-day"
     ],
     "zero_day": true,
     "kev": null,
-    "primeira_vez": "2026-11-10T21:18:58Z",
+    "primeira_vez": "2026-11-12T09:25:00Z",
     "primeira_noticia": "2026-11-12T09:25:00Z",
-    "publicado_nvd": "2026-11-10T21:18:58Z",
-    "exibido_em": "2026-11-12T14:38:58Z",
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-25T10:40:02Z",
     "aguardando_nota_desde": "2026-11-12T09:25:00Z",
-    "nota_chegou_em": "2026-11-13T18:38:57Z",
+    "nota_chegou_em": null,
     "epss_max": 0.0088,
     "poc_qtd": 1,
     "fontes": [
-      {
-        "nome": "NVD",
-        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-118383",
-        "publicado": "2026-11-10T21:18:58Z"
-      },
       {
         "nome": "The Hacker News",
         "link": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
@@ -1860,6 +1854,11 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/critical-asp-net-anticsrf-flaw-exploited/",
         "publicado": "2026-11-24T12:55:28Z"
+      },
+      {
+        "nome": "SecurityWeek",
+        "link": "https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/",
+        "publicado": "2026-11-25T09:05:13Z"
       }
     ],
     "prioridade_max": "P0"
@@ -2248,7 +2247,7 @@
     "primeira_vez": "2026-11-12T12:22:28Z",
     "primeira_noticia": "2026-11-12T12:22:28Z",
     "publicado_nvd": null,
-    "exibido_em": "2026-11-18T19:24:42Z",
+    "exibido_em": "2026-11-25T10:40:02Z",
     "aguardando_nota_desde": "2026-11-12T12:22:28Z",
     "nota_chegou_em": null,
     "epss_max": 0.0086,
