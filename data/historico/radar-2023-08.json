@@ -16,7 +16,7 @@
       "ransomware": "Unknown"
     },
     "primeira_vez": "2023-08-21T21:15:08Z",
-    "primeira_noticia": null,
+    "primeira_noticia": "2026-11-25T12:00:00Z",
     "publicado_nvd": "2023-08-21T21:15:08Z",
     "exibido_em": "2026-11-25T20:29:26Z",
     "aguardando_nota_desde": null,
@@ -33,8 +33,57 @@
         "nome": "CISA KEV",
         "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2023-25914",
         "publicado": "2026-11-25"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-25T12:00:00Z"
       }
     ],
     "prioridade_max": "P2"
+  },
+  "CVE-2023-25915": {
+    "cve": "CVE-2023-25915",
+    "produto": "Danfoss AK-SM 800A Series",
+    "titulo": "Danfoss AK-SM 800A Series Improper Input Validation Vulnerability",
+    "cvss": 9.9,
+    "prioridade": "P0",
+    "elegivel_por": [
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-25",
+      "prazo": "2026-11-28",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2023-08-21T21:15:09Z",
+    "primeira_noticia": "2026-11-25T12:00:00Z",
+    "publicado_nvd": "2023-08-21T21:15:09Z",
+    "exibido_em": "2026-11-25T20:29:26Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": 0.0143,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-25915",
+        "publicado": "2023-08-21T21:15:09Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2023-25915",
+        "publicado": "2026-11-25"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-25T12:00:00Z"
+      }
+    ],
+    "prioridade_max": "P0"
   }
 }

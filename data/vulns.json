@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-25T20:29:26Z",
+  "atualizado": "2026-11-26T03:36:00Z",
   "itens": [
     {
       "cve": "CVE-2026-123903",
@@ -113,6 +113,14 @@
           "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133469",
           "publicado": "2026-11-25",
           "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-25T12:00:00Z",
+          "visto_em": "2026-11-26T03:36:00Z"
         }
       ],
       "detectado": "2026-11-25T20:29:26Z",
@@ -137,9 +145,9 @@
         "KEV"
       ],
       "primeira_vez": "2026-11-23T17:17:31Z",
-      "primeira_noticia": null,
+      "primeira_noticia": "2026-11-25T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-133469",
-      "ultima_atividade": "2026-11-25T00:00:00Z",
+      "ultima_atividade": "2026-11-25T12:00:00Z",
       "exibido_em": "2026-11-25T20:29:26Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -307,6 +315,144 @@
         "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-133968.json",
         "checado": "2026-11-25T04:16:46Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-133323",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-133323",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323",
+          "publicado": "2026-11-19T17:18:52Z",
+          "visto_em": "2026-11-26T03:36:00Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Mitel MiCollab OS Command Injection Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133323",
+          "publicado": "2026-11-25",
+          "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-25T12:00:00Z",
+          "visto_em": "2026-11-26T03:36:00Z"
+        }
+      ],
+      "detectado": "2026-11-25T20:29:26Z",
+      "kev": {
+        "adicionado": "2026-11-25",
+        "prazo": "2026-11-28",
+        "ransomware": "Unknown"
+      },
+      "produto": "Mitel MiCollab",
+      "titulo": "Mitel MiCollab OS Command Injection Vulnerability",
+      "resumo": "Mitel MiCollab contains an improper neutralization of special elements used in an OS command (OS command injection) vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary…",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-19T17:18:52Z",
+      "primeira_noticia": "2026-11-25T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323",
+      "ultima_atividade": "2026-11-25T12:00:00Z",
+      "exibido_em": "2026-11-25T20:29:26Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0255,
+        "percentil": 0.8572,
+        "data": "2026-11-25"
+      },
+      "cvss": 10.0,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-19T17:18:52Z",
+      "nvd_checado_em": "2026-11-26T03:36:00Z",
+      "escalado": true,
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-133323.json",
+        "checado": "2026-11-26T03:36:00Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-133303",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-133303",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-133303",
+          "publicado": "2026-11-19T17:18:51Z",
+          "visto_em": "2026-11-26T03:36:00Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Mitel MiCollab XML Injection Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133303",
+          "publicado": "2026-11-25",
+          "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-25T12:00:00Z",
+          "visto_em": "2026-11-26T03:36:00Z"
+        }
+      ],
+      "detectado": "2026-11-25T20:29:26Z",
+      "kev": {
+        "adicionado": "2026-11-25",
+        "prazo": "2026-11-28",
+        "ransomware": "Unknown"
+      },
+      "produto": "Mitel MiCollab",
+      "titulo": "Mitel MiCollab XML Injection Vulnerability",
+      "resumo": "Mitel MiCollab contains an XML injection vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary commands using pre-staged malicious content.",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-19T17:18:51Z",
+      "primeira_noticia": "2026-11-25T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-133303",
+      "ultima_atividade": "2026-11-25T12:00:00Z",
+      "exibido_em": "2026-11-25T20:29:26Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0052,
+        "percentil": 0.3711,
+        "data": "2026-11-25"
+      },
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "NVD",
+      "publicado_nvd": "2026-11-19T17:18:51Z",
+      "nvd_checado_em": "2026-11-26T03:36:00Z",
+      "escalado": true,
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-26T03:36:00Z"
       }
     },
     {
@@ -923,6 +1069,14 @@
           "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-103406",
           "publicado": "2026-11-25",
           "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-25T12:00:00Z",
+          "visto_em": "2026-11-26T03:36:00Z"
         }
       ],
       "detectado": "2026-11-25T20:29:26Z",
@@ -947,9 +1101,9 @@
         "KEV"
       ],
       "primeira_vez": "2026-10-28T17:17:25Z",
-      "primeira_noticia": null,
+      "primeira_noticia": "2026-11-25T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406",
-      "ultima_atividade": "2026-11-25T00:00:00Z",
+      "ultima_atividade": "2026-11-25T12:00:00Z",
       "exibido_em": "2026-11-25T20:29:26Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -1230,6 +1384,75 @@
       "escalado": true
     },
     {
+      "cve": "CVE-2023-25915",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2023-25915",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-25915",
+          "publicado": "2023-08-21T21:15:09Z",
+          "visto_em": "2026-11-26T03:36:00Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Danfoss AK-SM 800A Series Improper Input Validation Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2023-25915",
+          "publicado": "2026-11-25",
+          "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-25T12:00:00Z",
+          "visto_em": "2026-11-26T03:36:00Z"
+        }
+      ],
+      "detectado": "2026-11-25T20:29:26Z",
+      "kev": {
+        "adicionado": "2026-11-25",
+        "prazo": "2026-11-28",
+        "ransomware": "Unknown"
+      },
+      "produto": "Danfoss AK-SM 800A Series",
+      "titulo": "Danfoss AK-SM 800A Series Improper Input Validation Vulnerability",
+      "resumo": "Danfoss AK-SM 800A Series contains an improper input validation vulnerability that could allow a remote attacker to run arbitrary commands on the affected system.",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2023-08-21T21:15:09Z",
+      "primeira_noticia": "2026-11-25T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2023-25915",
+      "ultima_atividade": "2026-11-25T12:00:00Z",
+      "exibido_em": "2026-11-25T20:29:26Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0143,
+        "percentil": 0.7323,
+        "data": "2026-11-25"
+      },
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2023-08-21T21:15:09Z",
+      "nvd_checado_em": "2026-11-26T03:36:00Z",
+      "escalado": true,
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-26T03:36:00Z"
+      }
+    },
+    {
       "cve": "CVE-2026-132165",
       "fontes": [
         {
@@ -1271,6 +1494,14 @@
           "link": "https://cybersecuritynews.com/drupal-idunno-anticsrf-optimizely-flaws-exploited/",
           "publicado": "2026-11-25T16:57:24Z",
           "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-132165",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165",
+          "publicado": "2026-11-26T01:17:10Z",
+          "visto_em": "2026-11-26T03:36:00Z"
         }
       ],
       "detectado": "2026-11-24T18:36:51Z",
@@ -1282,7 +1513,7 @@
       "produto": "Drupal Core",
       "titulo": "Drupal Core Remote Code Execution Vulnerability",
       "resumo": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to…",
-      "nvd_checado_em": "2026-11-25T20:29:26Z",
+      "nvd_checado_em": "2026-11-26T03:36:00Z",
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
       "elegivel_por": [
@@ -1292,7 +1523,7 @@
       "primeira_vez": "2026-11-24T00:00:00Z",
       "primeira_noticia": "2026-11-24T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165",
-      "ultima_atividade": "2026-11-25T16:57:24Z",
+      "ultima_atividade": "2026-11-26T01:17:10Z",
       "exibido_em": "2026-11-24T18:36:51Z",
       "prioridade": "P1",
       "regra": "explorado em plataforma corporativa",
@@ -1302,7 +1533,11 @@
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-132165.json",
         "checado": "2026-11-25T20:29:26Z"
       },
-      "aguardando_nota_desde": "2026-11-24T12:00:00Z"
+      "aguardando_nota_desde": "2026-11-24T12:00:00Z",
+      "cvss": null,
+      "cvss_versao": "",
+      "cvss_fonte": "",
+      "publicado_nvd": "2026-11-26T01:17:10Z"
     },
     {
       "cve": "CVE-2026-91569",
@@ -1626,252 +1861,6 @@
       "nvd_checado_em": "2026-11-20T19:07:33Z"
     },
     {
-      "cve": "CVE-2023-25915",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Danfoss AK-SM 800A Series Improper Input Validation Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2023-25915",
-          "publicado": "2026-11-25",
-          "visto_em": "2026-11-25T20:29:26Z"
-        }
-      ],
-      "detectado": "2026-11-25T20:29:26Z",
-      "kev": {
-        "adicionado": "2026-11-25",
-        "prazo": "2026-11-28",
-        "ransomware": "Unknown"
-      },
-      "produto": "Danfoss AK-SM 800A Series",
-      "titulo": "Danfoss AK-SM 800A Series Improper Input Validation Vulnerability",
-      "resumo": "Danfoss AK-SM 800A Series contains an improper input validation vulnerability that could allow a remote attacker to run arbitrary commands on the affected system.",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-25T00:00:00Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2023-25915",
-      "ultima_atividade": "2026-11-25T00:00:00Z",
-      "exibido_em": "2026-11-25T20:29:26Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.0143,
-        "percentil": 0.7323,
-        "data": "2026-11-25"
-      }
-    },
-    {
-      "cve": "CVE-2026-133324",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Mitel MiCollab Not Failing Securely Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133324",
-          "publicado": "2026-11-25",
-          "visto_em": "2026-11-25T20:29:26Z"
-        }
-      ],
-      "detectado": "2026-11-25T20:29:26Z",
-      "kev": {
-        "adicionado": "2026-11-25",
-        "prazo": "2026-11-28",
-        "ransomware": "Unknown"
-      },
-      "produto": "Mitel MiCollab",
-      "titulo": "Mitel MiCollab Not Failing Securely Vulnerability",
-      "resumo": "Mitel MiCollab contains a not failing securely vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to bypass authentication controls and perform unauthorized actions.",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-25T00:00:00Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-133324",
-      "ultima_atividade": "2026-11-25T00:00:00Z",
-      "exibido_em": "2026-11-25T20:29:26Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.0041,
-        "percentil": 0.273,
-        "data": "2026-11-25"
-      }
-    },
-    {
-      "cve": "CVE-2026-133275",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133275",
-          "publicado": "2026-11-25",
-          "visto_em": "2026-11-25T20:29:26Z"
-        }
-      ],
-      "detectado": "2026-11-25T20:29:26Z",
-      "kev": {
-        "adicionado": "2026-11-25",
-        "prazo": "2026-11-28",
-        "ransomware": "Unknown"
-      },
-      "produto": "Mitel MiCollab",
-      "titulo": "Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability",
-      "resumo": "Mitel MiCollab contains an unrestricted upload of file with dangerous type vulnerability in the Audio, Web and Video Conferencing (AWV) component due to insufficient file type validation that could allow an unauthenticated attacker to upload arbitrary files.",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-25T00:00:00Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-133275",
-      "ultima_atividade": "2026-11-25T00:00:00Z",
-      "exibido_em": "2026-11-25T20:29:26Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.0032,
-        "percentil": 0.1686,
-        "data": "2026-11-25"
-      }
-    },
-    {
-      "cve": "CVE-2026-133311",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Mitel MiCollab Weak Authentication Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133311",
-          "publicado": "2026-11-25",
-          "visto_em": "2026-11-25T20:29:26Z"
-        }
-      ],
-      "detectado": "2026-11-25T20:29:26Z",
-      "kev": {
-        "adicionado": "2026-11-25",
-        "prazo": "2026-12-09",
-        "ransomware": "Unknown"
-      },
-      "produto": "Mitel MiCollab",
-      "titulo": "Mitel MiCollab Weak Authentication Vulnerability",
-      "resumo": "Mitel MiCollab contains a weak authentication vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to access sensitive information using a specific system-generated random identifier or…",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-25T00:00:00Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-133311",
-      "ultima_atividade": "2026-11-25T00:00:00Z",
-      "exibido_em": "2026-11-25T20:29:26Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.004,
-        "percentil": 0.2537,
-        "data": "2026-11-25"
-      }
-    },
-    {
-      "cve": "CVE-2026-133303",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Mitel MiCollab XML Injection Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133303",
-          "publicado": "2026-11-25",
-          "visto_em": "2026-11-25T20:29:26Z"
-        }
-      ],
-      "detectado": "2026-11-25T20:29:26Z",
-      "kev": {
-        "adicionado": "2026-11-25",
-        "prazo": "2026-11-28",
-        "ransomware": "Unknown"
-      },
-      "produto": "Mitel MiCollab",
-      "titulo": "Mitel MiCollab XML Injection Vulnerability",
-      "resumo": "Mitel MiCollab contains an XML injection vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary commands using pre-staged malicious content.",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-25T00:00:00Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-133303",
-      "ultima_atividade": "2026-11-25T00:00:00Z",
-      "exibido_em": "2026-11-25T20:29:26Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.0052,
-        "percentil": 0.3711,
-        "data": "2026-11-25"
-      }
-    },
-    {
-      "cve": "CVE-2026-133323",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Mitel MiCollab OS Command Injection Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133323",
-          "publicado": "2026-11-25",
-          "visto_em": "2026-11-25T20:29:26Z"
-        }
-      ],
-      "detectado": "2026-11-25T20:29:26Z",
-      "kev": {
-        "adicionado": "2026-11-25",
-        "prazo": "2026-11-28",
-        "ransomware": "Unknown"
-      },
-      "produto": "Mitel MiCollab",
-      "titulo": "Mitel MiCollab OS Command Injection Vulnerability",
-      "resumo": "Mitel MiCollab contains an improper neutralization of special elements used in an OS command (OS command injection) vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary…",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-25T00:00:00Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323",
-      "ultima_atividade": "2026-11-25T00:00:00Z",
-      "exibido_em": "2026-11-25T20:29:26Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.0255,
-        "percentil": 0.8572,
-        "data": "2026-11-25"
-      }
-    },
-    {
       "cve": "CVE-2026-135797",
       "fontes": [
         {
@@ -1889,7 +1878,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-24T19:18:14Z",
       "resumo": "A vulnerability was identified in Volans NGFW Next-Generation Firewall r5.1. Impacted is the function exec of the file sslvpn/sslvpn_client.php of the component SSLVPN Client. Such manipulation of the argument img leads to os command injection. The attack…",
-      "nvd_checado_em": "2026-11-25T20:29:26Z",
+      "nvd_checado_em": "2026-11-26T03:36:00Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1904,7 +1893,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T21:14:23Z"
+        "checado": "2026-11-26T03:36:00Z"
       },
       "epss": {
         "score": 0.0234,
@@ -1994,7 +1983,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-24T21:14:23Z"
+        "checado": "2026-11-26T03:36:00Z"
       },
       "epss": {
         "score": 0.0134,
@@ -2164,6 +2153,207 @@
         "score": 0.005,
         "percentil": 0.3557,
         "data": "2026-11-25"
+      }
+    },
+    {
+      "cve": "CVE-2026-133324",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-133324",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-133324",
+          "publicado": "2026-11-19T17:18:53Z",
+          "visto_em": "2026-11-26T03:36:00Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Mitel MiCollab Not Failing Securely Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133324",
+          "publicado": "2026-11-25",
+          "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-25T12:00:00Z",
+          "visto_em": "2026-11-26T03:36:00Z"
+        }
+      ],
+      "detectado": "2026-11-25T20:29:26Z",
+      "kev": {
+        "adicionado": "2026-11-25",
+        "prazo": "2026-11-28",
+        "ransomware": "Unknown"
+      },
+      "produto": "Mitel MiCollab",
+      "titulo": "Mitel MiCollab Not Failing Securely Vulnerability",
+      "resumo": "Mitel MiCollab contains a not failing securely vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to bypass authentication controls and perform unauthorized actions.",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-19T17:18:53Z",
+      "primeira_noticia": "2026-11-25T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-133324",
+      "ultima_atividade": "2026-11-25T12:00:00Z",
+      "exibido_em": "2026-11-25T20:29:26Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0041,
+        "percentil": 0.273,
+        "data": "2026-11-25"
+      },
+      "cvss": 5.3,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-19T17:18:53Z",
+      "nvd_checado_em": "2026-11-26T03:36:00Z",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-26T03:36:00Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-133311",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-133311",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-133311",
+          "publicado": "2026-11-19T17:18:52Z",
+          "visto_em": "2026-11-26T03:36:00Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Mitel MiCollab Weak Authentication Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133311",
+          "publicado": "2026-11-25",
+          "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-25T12:00:00Z",
+          "visto_em": "2026-11-26T03:36:00Z"
+        }
+      ],
+      "detectado": "2026-11-25T20:29:26Z",
+      "kev": {
+        "adicionado": "2026-11-25",
+        "prazo": "2026-12-09",
+        "ransomware": "Unknown"
+      },
+      "produto": "Mitel MiCollab",
+      "titulo": "Mitel MiCollab Weak Authentication Vulnerability",
+      "resumo": "Mitel MiCollab contains a weak authentication vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to access sensitive information using a specific system-generated random identifier or…",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-19T17:18:52Z",
+      "primeira_noticia": "2026-11-25T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-133311",
+      "ultima_atividade": "2026-11-25T12:00:00Z",
+      "exibido_em": "2026-11-25T20:29:26Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.004,
+        "percentil": 0.2537,
+        "data": "2026-11-25"
+      },
+      "cvss": 5.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-19T17:18:52Z",
+      "nvd_checado_em": "2026-11-26T03:36:00Z",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-26T03:36:00Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-133275",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-133275",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-133275",
+          "publicado": "2026-11-19T16:21:31Z",
+          "visto_em": "2026-11-26T03:36:00Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-133275",
+          "publicado": "2026-11-25",
+          "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-25T12:00:00Z",
+          "visto_em": "2026-11-26T03:36:00Z"
+        }
+      ],
+      "detectado": "2026-11-25T20:29:26Z",
+      "kev": {
+        "adicionado": "2026-11-25",
+        "prazo": "2026-11-28",
+        "ransomware": "Unknown"
+      },
+      "produto": "Mitel MiCollab",
+      "titulo": "Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "resumo": "Mitel MiCollab contains an unrestricted upload of file with dangerous type vulnerability in the Audio, Web and Video Conferencing (AWV) component due to insufficient file type validation that could allow an unauthenticated attacker to upload arbitrary files.",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-19T16:21:31Z",
+      "primeira_noticia": "2026-11-25T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-133275",
+      "ultima_atividade": "2026-11-25T12:00:00Z",
+      "exibido_em": "2026-11-25T20:29:26Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "epss": {
+        "score": 0.0032,
+        "percentil": 0.1686,
+        "data": "2026-11-25"
+      },
+      "cvss": 5.3,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-19T16:21:31Z",
+      "nvd_checado_em": "2026-11-26T03:36:00Z",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-26T03:36:00Z"
       }
     },
     {
@@ -2982,47 +3172,6 @@
       }
     },
     {
-      "cve": "CVE-2026-126812",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-126812",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-126812",
-          "publicado": "2026-11-11T21:16:45Z",
-          "visto_em": "2026-11-12T01:33:20Z"
-        }
-      ],
-      "detectado": "2026-11-12T01:33:20Z",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-11T21:16:45Z",
-      "resumo": "blueprintUE Self-Hosted Edition before 4.3.7 contains an insecure default configuration in its Docker Compose examples that sets MYSQL_ALLOW_EMPTY_PASSWORD=yes in database.env and publishes MariaDB on port 3306. Unauthenticated attackers reaching the Docker…",
-      "nvd_checado_em": "2026-11-13T00:28:13Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-11-11T21:16:45Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-126812",
-      "ultima_atividade": "2026-11-11T21:16:45Z",
-      "exibido_em": "2026-11-12T01:33:20Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-25T04:16:46Z"
-      },
-      "epss": {
-        "score": 0.0069,
-        "percentil": 0.4827,
-        "data": "2026-11-25"
-      }
-    },
-    {
       "cve": "CVE-2026-114713",
       "fontes": [
         {
@@ -3198,6 +3347,14 @@
           "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-41450",
           "publicado": "2026-11-25",
           "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-25T12:00:00Z",
+          "visto_em": "2026-11-26T03:36:00Z"
         }
       ],
       "detectado": "2026-11-25T20:29:26Z",
@@ -3221,9 +3378,9 @@
         "KEV"
       ],
       "primeira_vez": "2025-05-08T10:15:18Z",
-      "primeira_noticia": null,
+      "primeira_noticia": "2026-11-25T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2025-41450",
-      "ultima_atividade": "2026-11-25T00:00:00Z",
+      "ultima_atividade": "2026-11-25T12:00:00Z",
       "exibido_em": "2026-11-25T20:29:26Z",
       "prioridade": "P2",
       "regra": "explorado fora das listas",
@@ -3257,6 +3414,14 @@
           "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2023-25914",
           "publicado": "2026-11-25",
           "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-25T12:00:00Z",
+          "visto_em": "2026-11-26T03:36:00Z"
         }
       ],
       "detectado": "2026-11-25T20:29:26Z",
@@ -3280,9 +3445,9 @@
         "KEV"
       ],
       "primeira_vez": "2023-08-21T21:15:08Z",
-      "primeira_noticia": null,
+      "primeira_noticia": "2026-11-25T12:00:00Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2023-25914",
-      "ultima_atividade": "2026-11-25T00:00:00Z",
+      "ultima_atividade": "2026-11-25T12:00:00Z",
       "exibido_em": "2026-11-25T20:29:26Z",
       "prioridade": "P2",
       "regra": "explorado fora das listas",
