@@ -21,7 +21,7 @@
     "exibido_em": "2026-11-25T20:29:26Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": 0.0051,
+    "epss_max": 0.0427,
     "poc_qtd": 3,
     "fontes": [
       {
@@ -38,6 +38,11 @@
         "nome": "CISA Advisories",
         "link": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
         "publicado": "2026-11-25T12:00:00Z"
+      },
+      {
+        "nome": "Cyber Security News",
+        "link": "https://cybersecuritynews.com/cisa-adds-10-flaws-to-kev/",
+        "publicado": "2026-11-26T14:09:18Z"
       }
     ],
     "prioridade_max": "P2"
