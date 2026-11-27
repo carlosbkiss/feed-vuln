@@ -1,6 +1,85 @@
 {
-  "atualizado": "2026-11-27T03:39:05Z",
+  "atualizado": "2026-11-27T19:58:59Z",
   "itens": [
+    {
+      "cve": "CVE-2026-136716",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-136716",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-136716",
+          "publicado": "2026-11-26T01:17:10Z",
+          "visto_em": "2026-11-26T20:12:03Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+          "link": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+          "publicado": "2026-11-26T07:02:34Z",
+          "visto_em": "2026-11-26T20:12:03Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Drupal Warns of Active Attacks Exploiting New Critical Website Takeover Vulnerability",
+          "link": "https://cybersecuritynews.com/drupal-website-takeover-flaw/",
+          "publicado": "2026-11-26T09:06:38Z",
+          "visto_em": "2026-11-26T20:12:03Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Drupal Core Improper Check for Unusual or Exceptional Conditions Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-136716",
+          "publicado": "2026-11-27",
+          "visto_em": "2026-11-27T19:58:59Z"
+        }
+      ],
+      "detectado": "2026-11-26T20:12:03Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-26T01:17:10Z",
+      "resumo": "Improper Check for Unusual or Exceptional Conditions vulnerability in Drupal Drupal core allows Forceful Browsing. This issue affects Drupal core versions: from 0.0.0 to 10.6.23, from 11.0.0 to 11.3.23, from 11.4.0 to 11.4.14.",
+      "nvd_checado_em": "2026-11-27T19:58:59Z",
+      "aguardando_nota_desde": "2026-11-26T07:02:34Z",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-26T01:17:10Z",
+      "primeira_noticia": "2026-11-26T07:02:34Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-136716",
+      "ultima_atividade": "2026-11-27T00:00:00Z",
+      "exibido_em": "2026-11-26T20:12:03Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "epss": {
+        "score": 0.0121,
+        "percentil": 0.6845,
+        "data": "2026-11-27"
+      },
+      "poc": {
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-136716.json",
+        "checado": "2026-11-26T20:12:03Z"
+      },
+      "kev": {
+        "adicionado": "2026-11-27",
+        "prazo": "2026-11-30",
+        "ransomware": "Unknown"
+      },
+      "produto": "Drupal Core",
+      "titulo": "Drupal Core Improper Check for Unusual or Exceptional Conditions Vulnerability",
+      "nota_chegou_em": "2026-11-27T19:58:59Z",
+      "escalado": true
+    },
     {
       "cve": "CVE-2026-123903",
       "fontes": [
@@ -58,9 +137,9 @@
       "resumo": "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service. Broadcom has evaluated the severity of this issue to be in the Critical severity range with a maximum CVSSv3 base score of 9.8.\nAffected versions:\nVMware vCenter…",
       "nota_chegou_em": "2026-11-26T20:12:03Z",
       "epss": {
-        "score": 0.0061,
-        "percentil": 0.4369,
-        "data": "2026-11-26"
+        "score": 0.0245,
+        "percentil": 0.8508,
+        "data": "2026-11-27"
       }
     },
     {
@@ -106,14 +185,125 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0114,
-        "percentil": 0.6633,
-        "data": "2026-11-26"
+        "percentil": 0.6636,
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-134401.json",
         "checado": "2026-11-27T03:39:05Z"
       }
+    },
+    {
+      "cve": "CVE-2026-132165",
+      "fontes": [
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "Drupal Core Remote Code Execution Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-132165",
+          "publicado": "2026-11-24",
+          "visto_em": "2026-11-24T18:36:51Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-24T12:00:00Z",
+          "visto_em": "2026-11-25T04:16:46Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
+          "link": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+          "publicado": "2026-11-25T11:23:26Z",
+          "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Hackers Are Exploiting a Critical Drupal Flaw to Target Websites Without Needing a Password",
+          "link": "https://cybersecuritynews.com/drupal-critical-security-flaw/",
+          "publicado": "2026-11-25T14:51:54Z",
+          "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "CISA Warns of Drupal Core RCE, Idunno AntiCsrf and Optimizely Flaws Exploited in Attacks",
+          "link": "https://cybersecuritynews.com/drupal-idunno-anticsrf-optimizely-flaws-exploited/",
+          "publicado": "2026-11-25T16:57:24Z",
+          "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-132165",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165",
+          "publicado": "2026-11-26T01:17:10Z",
+          "visto_em": "2026-11-26T03:36:00Z"
+        },
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+          "link": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+          "publicado": "2026-11-26T07:02:34Z",
+          "visto_em": "2026-11-26T20:12:03Z"
+        },
+        {
+          "id": "csn",
+          "nome": "Cyber Security News",
+          "titulo": "Drupal Warns of Active Attacks Exploiting New Critical Website Takeover Vulnerability",
+          "link": "https://cybersecuritynews.com/drupal-website-takeover-flaw/",
+          "publicado": "2026-11-26T09:06:38Z",
+          "visto_em": "2026-11-26T20:12:03Z"
+        }
+      ],
+      "detectado": "2026-11-24T18:36:51Z",
+      "kev": {
+        "adicionado": "2026-11-24",
+        "prazo": "2026-11-27",
+        "ransomware": "Unknown"
+      },
+      "produto": "Drupal Core",
+      "titulo": "Drupal Core Remote Code Execution Vulnerability",
+      "resumo": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to…",
+      "nvd_checado_em": "2026-11-27T19:58:59Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "elegivel_por": [
+        "zero-day",
+        "CVSS ≥ 9",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-24T00:00:00Z",
+      "primeira_noticia": "2026-11-24T12:00:00Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165",
+      "ultima_atividade": "2026-11-26T09:06:38Z",
+      "exibido_em": "2026-11-24T18:36:51Z",
+      "prioridade": "P0",
+      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
+      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
+      "poc": {
+        "qtd": 6,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-132165.json",
+        "checado": "2026-11-27T03:39:05Z"
+      },
+      "aguardando_nota_desde": "2026-11-24T12:00:00Z",
+      "cvss": 9.8,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "NVD",
+      "publicado_nvd": "2026-11-26T01:17:10Z",
+      "epss": {
+        "score": 0.0838,
+        "percentil": 0.9574,
+        "data": "2026-11-27"
+      },
+      "nota_chegou_em": "2026-11-27T19:58:59Z",
+      "escalado": true
     },
     {
       "cve": "CVE-2026-133469",
@@ -183,7 +373,7 @@
       "epss": {
         "score": 0.3177,
         "percentil": 0.987,
-        "data": "2026-11-26"
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 1,
@@ -268,8 +458,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0179,
-        "percentil": 0.7891,
-        "data": "2026-11-26"
+        "percentil": 0.7893,
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 1,
@@ -337,7 +527,7 @@
       "epss": {
         "score": 0.2716,
         "percentil": 0.985,
-        "data": "2026-11-26"
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 4,
@@ -407,8 +597,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0563,
-        "percentil": 0.9371,
-        "data": "2026-11-26"
+        "percentil": 0.9372,
+        "data": "2026-11-27"
       },
       "cvss": 10.0,
       "cvss_versao": "3.1",
@@ -484,8 +674,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0133,
-        "percentil": 0.7108,
-        "data": "2026-11-26"
+        "percentil": 0.7111,
+        "data": "2026-11-27"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -568,8 +758,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0077,
-        "percentil": 0.5206,
-        "data": "2026-11-26"
+        "percentil": 0.5209,
+        "data": "2026-11-27"
       },
       "cvss": 5.3,
       "cvss_versao": "3.1",
@@ -697,8 +887,8 @@
       "nota_chegou_em": "2026-11-20T18:39:04Z",
       "epss": {
         "score": 0.0501,
-        "percentil": 0.9302,
-        "data": "2026-11-26"
+        "percentil": 0.9303,
+        "data": "2026-11-27"
       }
     },
     {
@@ -787,9 +977,9 @@
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
-        "score": 0.0429,
-        "percentil": 0.919,
-        "data": "2026-11-26"
+        "score": 0.0424,
+        "percentil": 0.918,
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 4,
@@ -892,7 +1082,7 @@
       "epss": {
         "score": 0.2416,
         "percentil": 0.9833,
-        "data": "2026-11-26"
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 4,
@@ -991,8 +1181,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0023,
-        "percentil": 0.0841,
-        "data": "2026-11-26"
+        "percentil": 0.0843,
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 3,
@@ -1085,8 +1275,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.027,
-        "percentil": 0.8665,
-        "data": "2026-11-26"
+        "percentil": 0.8666,
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 5,
@@ -1165,7 +1355,7 @@
       "epss": {
         "score": 0.1258,
         "percentil": 0.9693,
-        "data": "2026-11-26"
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 2,
@@ -1254,8 +1444,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0154,
-        "percentil": 0.7516,
-        "data": "2026-11-26"
+        "percentil": 0.7518,
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 2,
@@ -1364,8 +1554,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0112,
-        "percentil": 0.6571,
-        "data": "2026-11-26"
+        "percentil": 0.6574,
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 4,
@@ -1435,8 +1625,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.1888,
-        "percentil": 0.9786,
-        "data": "2026-11-26"
+        "percentil": 0.9787,
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 7,
@@ -1512,8 +1702,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0276,
-        "percentil": 0.87,
-        "data": "2026-11-26"
+        "percentil": 0.8701,
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 3,
@@ -1589,8 +1779,8 @@
       "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
       "epss": {
         "score": 0.0249,
-        "percentil": 0.8533,
-        "data": "2026-11-26"
+        "percentil": 0.8535,
+        "data": "2026-11-27"
       },
       "cvss": 9.9,
       "cvss_versao": "3.1",
@@ -1622,7 +1812,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-27T03:17:04Z",
       "resumo": "Smart Portal developed by Direk Tech has a Missing Authorization vulnerability. Authenticated remote attackers can add a specified account to the Active Directory Domain Admins group, thereby obtaining domain administrator privileges.",
-      "nvd_checado_em": "2026-11-27T03:39:05Z",
+      "nvd_checado_em": "2026-11-27T19:58:59Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -1638,114 +1828,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-27T03:39:05Z"
-      }
-    },
-    {
-      "cve": "CVE-2026-132165",
-      "fontes": [
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Drupal Core Remote Code Execution Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-132165",
-          "publicado": "2026-11-24",
-          "visto_em": "2026-11-24T18:36:51Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-11-24T12:00:00Z",
-          "visto_em": "2026-11-25T04:16:46Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
-          "link": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
-          "publicado": "2026-11-25T11:23:26Z",
-          "visto_em": "2026-11-25T20:29:26Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Hackers Are Exploiting a Critical Drupal Flaw to Target Websites Without Needing a Password",
-          "link": "https://cybersecuritynews.com/drupal-critical-security-flaw/",
-          "publicado": "2026-11-25T14:51:54Z",
-          "visto_em": "2026-11-25T20:29:26Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "CISA Warns of Drupal Core RCE, Idunno AntiCsrf and Optimizely Flaws Exploited in Attacks",
-          "link": "https://cybersecuritynews.com/drupal-idunno-anticsrf-optimizely-flaws-exploited/",
-          "publicado": "2026-11-25T16:57:24Z",
-          "visto_em": "2026-11-25T20:29:26Z"
-        },
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-132165",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165",
-          "publicado": "2026-11-26T01:17:10Z",
-          "visto_em": "2026-11-26T03:36:00Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
-          "link": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
-          "publicado": "2026-11-26T07:02:34Z",
-          "visto_em": "2026-11-26T20:12:03Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Drupal Warns of Active Attacks Exploiting New Critical Website Takeover Vulnerability",
-          "link": "https://cybersecuritynews.com/drupal-website-takeover-flaw/",
-          "publicado": "2026-11-26T09:06:38Z",
-          "visto_em": "2026-11-26T20:12:03Z"
-        }
-      ],
-      "detectado": "2026-11-24T18:36:51Z",
-      "kev": {
-        "adicionado": "2026-11-24",
-        "prazo": "2026-11-27",
-        "ransomware": "Unknown"
       },
-      "produto": "Drupal Core",
-      "titulo": "Drupal Core Remote Code Execution Vulnerability",
-      "resumo": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to…",
-      "nvd_checado_em": "2026-11-27T03:39:05Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-24T00:00:00Z",
-      "primeira_noticia": "2026-11-24T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165",
-      "ultima_atividade": "2026-11-26T09:06:38Z",
-      "exibido_em": "2026-11-24T18:36:51Z",
-      "prioridade": "P1",
-      "regra": "explorado em plataforma corporativa",
-      "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
-      "poc": {
-        "qtd": 6,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-132165.json",
-        "checado": "2026-11-27T03:39:05Z"
-      },
-      "aguardando_nota_desde": "2026-11-24T12:00:00Z",
-      "cvss": null,
-      "cvss_versao": "",
-      "cvss_fonte": "",
-      "publicado_nvd": "2026-11-26T01:17:10Z",
       "epss": {
-        "score": 0.1105,
-        "percentil": 0.9663,
-        "data": "2026-11-26"
+        "score": 0.0053,
+        "percentil": 0.3804,
+        "data": "2026-11-27"
       }
     },
     {
@@ -1785,8 +1872,8 @@
       },
       "epss": {
         "score": 0.0048,
-        "percentil": 0.3423,
-        "data": "2026-11-26"
+        "percentil": 0.3424,
+        "data": "2026-11-27"
       }
     },
     {
@@ -1826,8 +1913,8 @@
       },
       "epss": {
         "score": 0.004,
-        "percentil": 0.2636,
-        "data": "2026-11-26"
+        "percentil": 0.2638,
+        "data": "2026-11-27"
       }
     },
     {
@@ -1867,8 +1954,8 @@
       },
       "epss": {
         "score": 0.0043,
-        "percentil": 0.2934,
-        "data": "2026-11-26"
+        "percentil": 0.2936,
+        "data": "2026-11-27"
       }
     },
     {
@@ -1908,8 +1995,8 @@
       },
       "epss": {
         "score": 0.0032,
-        "percentil": 0.1757,
-        "data": "2026-11-26"
+        "percentil": 0.1761,
+        "data": "2026-11-27"
       }
     },
     {
@@ -1949,8 +2036,8 @@
       },
       "epss": {
         "score": 0.0043,
-        "percentil": 0.2934,
-        "data": "2026-11-26"
+        "percentil": 0.2936,
+        "data": "2026-11-27"
       }
     },
     {
@@ -1990,8 +2077,8 @@
       },
       "epss": {
         "score": 0.0048,
-        "percentil": 0.3421,
-        "data": "2026-11-26"
+        "percentil": 0.3424,
+        "data": "2026-11-27"
       }
     },
     {
@@ -2055,8 +2142,8 @@
       "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
       "epss": {
         "score": 0.011,
-        "percentil": 0.6531,
-        "data": "2026-11-26"
+        "percentil": 0.6534,
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 1,
@@ -2087,7 +2174,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-26T15:17:26Z",
       "resumo": "The PDF Invoice for WooCommerce + Drag and Drop Template Builder plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 7.2.0 via deserialization of untrusted input . This makes it possible for unauthenticated…",
-      "nvd_checado_em": "2026-11-27T03:39:05Z",
+      "nvd_checado_em": "2026-11-27T19:58:59Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2103,6 +2190,11 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-26T20:12:03Z"
+      },
+      "epss": {
+        "score": 0.0105,
+        "percentil": 0.6355,
+        "data": "2026-11-27"
       }
     },
     {
@@ -2123,7 +2215,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-26T15:17:25Z",
       "resumo": "The Simple Membership plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 4.8.9 This is due to the site-wide signing secret `swpm_private_key_one` being generated at install time with PHP's non-cryptographic…",
-      "nvd_checado_em": "2026-11-27T03:39:05Z",
+      "nvd_checado_em": "2026-11-27T19:58:59Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2139,66 +2231,113 @@
         "qtd": 0,
         "link": null,
         "checado": "2026-11-26T20:12:03Z"
+      },
+      "epss": {
+        "score": 0.0069,
+        "percentil": 0.48,
+        "data": "2026-11-27"
       }
     },
     {
-      "cve": "CVE-2026-136716",
+      "cve": "CVE-2026-120705",
       "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-136716",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-136716",
-          "publicado": "2026-11-26T01:17:10Z",
-          "visto_em": "2026-11-26T20:12:03Z"
-        },
         {
           "id": "thn",
           "nome": "The Hacker News",
-          "titulo": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
-          "link": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
-          "publicado": "2026-11-26T07:02:34Z",
-          "visto_em": "2026-11-26T20:12:03Z"
+          "titulo": "Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
+          "link": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
+          "publicado": "2026-11-25T12:48:54Z",
+          "visto_em": "2026-11-25T20:29:26Z"
         },
         {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "Drupal Warns of Active Attacks Exploiting New Critical Website Takeover Vulnerability",
-          "link": "https://cybersecuritynews.com/drupal-website-takeover-flaw/",
-          "publicado": "2026-11-26T09:06:38Z",
-          "visto_em": "2026-11-26T20:12:03Z"
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "OSGeo GeoServer XML Injection Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-120705",
+          "publicado": "2026-11-27",
+          "visto_em": "2026-11-27T19:58:59Z"
         }
       ],
-      "detectado": "2026-11-26T20:12:03Z",
-      "zero_day": true,
-      "zero_day_motivo": "The Hacker News: exploração ativa relatada",
-      "cvss": null,
-      "cvss_versao": "",
-      "cvss_fonte": "",
-      "publicado_nvd": "2026-11-26T01:17:10Z",
-      "resumo": "Improper Check for Unusual or Exceptional Conditions vulnerability in Drupal Drupal core allows Forceful Browsing. This issue affects Drupal core versions: from 0.0.0 to 10.6.23, from 11.0.0 to 11.3.23, from 11.4.0 to 11.4.14.",
-      "nvd_checado_em": "2026-11-27T03:39:05Z",
-      "aguardando_nota_desde": "2026-11-26T07:02:34Z",
+      "detectado": "2026-11-25T20:29:26Z",
+      "aguardando_nota_desde": "2026-11-25T12:48:54Z",
       "elegivel_por": [
-        "zero-day"
+        "zero-day",
+        "KEV"
       ],
-      "primeira_vez": "2026-11-26T01:17:10Z",
-      "primeira_noticia": "2026-11-26T07:02:34Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-136716",
-      "ultima_atividade": "2026-11-26T09:06:38Z",
-      "exibido_em": "2026-11-26T20:12:03Z",
+      "primeira_vez": "2026-11-25T12:48:54Z",
+      "primeira_noticia": "2026-11-25T12:48:54Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-120705",
+      "ultima_atividade": "2026-11-27T00:00:00Z",
+      "kev": {
+        "adicionado": "2026-11-27",
+        "prazo": "2026-11-30",
+        "ransomware": "Unknown"
+      },
+      "produto": "OSGeo GeoServer",
+      "titulo": "OSGeo GeoServer XML Injection Vulnerability",
+      "resumo": "OsGeo GeoServer contains an XML injection vulnerability that allows an unauthenticated remote attacker to cause the server to read local text files accessible to the GeoServer process or fetch attacker-specified HTTP or HTTPS URLs via a crafted ID parameter…",
+      "nvd_checado_em": "2026-11-27T19:58:59Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "exibido_em": "2026-11-27T19:58:59Z",
       "prioridade": "P2",
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.0101,
-        "percentil": 0.6227,
-        "data": "2026-11-26"
-      },
       "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-136716.json",
-        "checado": "2026-11-26T20:12:03Z"
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-27T19:58:59Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-129243",
+      "fontes": [
+        {
+          "id": "thn",
+          "nome": "The Hacker News",
+          "titulo": "Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
+          "link": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
+          "publicado": "2026-11-25T12:48:54Z",
+          "visto_em": "2026-11-25T20:29:26Z"
+        },
+        {
+          "id": "kev",
+          "nome": "CISA KEV",
+          "titulo": "OSGeo GeoServer Incorrect Authorization Vulnerability",
+          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-129243",
+          "publicado": "2026-11-27",
+          "visto_em": "2026-11-27T19:58:59Z"
+        }
+      ],
+      "detectado": "2026-11-25T20:29:26Z",
+      "aguardando_nota_desde": "2026-11-25T12:48:54Z",
+      "elegivel_por": [
+        "zero-day",
+        "KEV"
+      ],
+      "primeira_vez": "2026-11-25T12:48:54Z",
+      "primeira_noticia": "2026-11-25T12:48:54Z",
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-129243",
+      "ultima_atividade": "2026-11-27T00:00:00Z",
+      "kev": {
+        "adicionado": "2026-11-27",
+        "prazo": "2026-11-30",
+        "ransomware": "Unknown"
+      },
+      "produto": "OSGeo GeoServer",
+      "titulo": "OSGeo GeoServer Incorrect Authorization Vulnerability",
+      "resumo": "GeoServer contains an incorrect authorization vulnerability that allows an unauthenticated remote attacker to bypass service-level role checks and invoke operations protected solely by those checks via a request with a prefixed service parameter. This…",
+      "nvd_checado_em": "2026-11-27T19:58:59Z",
+      "zero_day": true,
+      "zero_day_motivo": "CISA KEV",
+      "exibido_em": "2026-11-27T19:58:59Z",
+      "prioridade": "P2",
+      "regra": "explorado fora das listas",
+      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-27T19:58:59Z"
       }
     },
     {
@@ -2238,8 +2377,8 @@
       },
       "epss": {
         "score": 0.0234,
-        "percentil": 0.8431,
-        "data": "2026-11-26"
+        "percentil": 0.8433,
+        "data": "2026-11-27"
       }
     },
     {
@@ -2279,8 +2418,8 @@
       },
       "epss": {
         "score": 0.0094,
-        "percentil": 0.595,
-        "data": "2026-11-26"
+        "percentil": 0.5953,
+        "data": "2026-11-27"
       }
     },
     {
@@ -2328,8 +2467,8 @@
       },
       "epss": {
         "score": 0.0134,
-        "percentil": 0.7146,
-        "data": "2026-11-26"
+        "percentil": 0.715,
+        "data": "2026-11-27"
       }
     },
     {
@@ -2369,8 +2508,8 @@
       },
       "epss": {
         "score": 0.0157,
-        "percentil": 0.7568,
-        "data": "2026-11-26"
+        "percentil": 0.7571,
+        "data": "2026-11-27"
       }
     },
     {
@@ -2410,8 +2549,8 @@
       },
       "epss": {
         "score": 0.0139,
-        "percentil": 0.7255,
-        "data": "2026-11-26"
+        "percentil": 0.7258,
+        "data": "2026-11-27"
       }
     },
     {
@@ -2451,8 +2590,8 @@
       },
       "epss": {
         "score": 0.0085,
-        "percentil": 0.5557,
-        "data": "2026-11-26"
+        "percentil": 0.5561,
+        "data": "2026-11-27"
       }
     },
     {
@@ -2492,8 +2631,8 @@
       },
       "epss": {
         "score": 0.005,
-        "percentil": 0.3558,
-        "data": "2026-11-26"
+        "percentil": 0.3561,
+        "data": "2026-11-27"
       }
     },
     {
@@ -2557,8 +2696,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0083,
-        "percentil": 0.5481,
-        "data": "2026-11-26"
+        "percentil": 0.5485,
+        "data": "2026-11-27"
       },
       "cvss": 5.3,
       "cvss_versao": "3.1",
@@ -2632,8 +2771,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0098,
-        "percentil": 0.6119,
-        "data": "2026-11-26"
+        "percentil": 0.6122,
+        "data": "2026-11-27"
       },
       "cvss": 5.9,
       "cvss_versao": "3.1",
@@ -2683,8 +2822,8 @@
       },
       "epss": {
         "score": 0.0177,
-        "percentil": 0.7868,
-        "data": "2026-11-26"
+        "percentil": 0.787,
+        "data": "2026-11-27"
       }
     },
     {
@@ -2753,8 +2892,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0106,
-        "percentil": 0.6382,
-        "data": "2026-11-26"
+        "percentil": 0.6385,
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 0,
@@ -2799,8 +2938,8 @@
       },
       "epss": {
         "score": 0.0035,
-        "percentil": 0.2103,
-        "data": "2026-11-26"
+        "percentil": 0.2105,
+        "data": "2026-11-27"
       }
     },
     {
@@ -2840,8 +2979,8 @@
       },
       "epss": {
         "score": 0.0034,
-        "percentil": 0.1941,
-        "data": "2026-11-26"
+        "percentil": 0.1944,
+        "data": "2026-11-27"
       }
     },
     {
@@ -2881,8 +3020,8 @@
       },
       "epss": {
         "score": 0.0051,
-        "percentil": 0.3661,
-        "data": "2026-11-26"
+        "percentil": 0.3664,
+        "data": "2026-11-27"
       }
     },
     {
@@ -2922,8 +3061,8 @@
       },
       "epss": {
         "score": 0.0042,
-        "percentil": 0.2769,
-        "data": "2026-11-26"
+        "percentil": 0.2773,
+        "data": "2026-11-27"
       }
     },
     {
@@ -2959,12 +3098,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T19:58:59Z"
       },
       "epss": {
         "score": 0.0042,
         "percentil": 0.2773,
-        "data": "2026-11-26"
+        "data": "2026-11-27"
       }
     },
     {
@@ -3000,12 +3139,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T19:58:59Z"
       },
       "epss": {
         "score": 0.0056,
-        "percentil": 0.4056,
-        "data": "2026-11-26"
+        "percentil": 0.4061,
+        "data": "2026-11-27"
       }
     },
     {
@@ -3041,12 +3180,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T19:58:59Z"
       },
       "epss": {
         "score": 0.0042,
         "percentil": 0.2773,
-        "data": "2026-11-26"
+        "data": "2026-11-27"
       }
     },
     {
@@ -3082,12 +3221,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T19:58:59Z"
       },
       "epss": {
         "score": 0.0034,
-        "percentil": 0.1941,
-        "data": "2026-11-26"
+        "percentil": 0.1944,
+        "data": "2026-11-27"
       }
     },
     {
@@ -3123,258 +3262,12 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T19:58:59Z"
       },
       "epss": {
         "score": 0.0127,
-        "percentil": 0.6976,
-        "data": "2026-11-26"
-      }
-    },
-    {
-      "cve": "CVE-2026-128027",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-128027",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-128027",
-          "publicado": "2026-11-13T10:18:08Z",
-          "visto_em": "2026-11-13T10:39:19Z"
-        }
-      ],
-      "detectado": "2026-11-13T10:39:19Z",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-13T10:18:08Z",
-      "resumo": "FrankenPHP Docker images before 1.1.11 were rebuilt only when new base image tags were created, so security fixes that Alpine, PHP, and Go applied under existing tags were not propagated. Remote attackers could exploit known flaws in the stale system…",
-      "nvd_checado_em": "2026-11-15T10:38:35Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-11-13T10:18:08Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-128027",
-      "ultima_atividade": "2026-11-13T10:18:08Z",
-      "exibido_em": "2026-11-13T10:39:19Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "poc": {
-        "qtd": 1,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-128027.json",
-        "checado": "2026-11-25T20:29:26Z"
-      },
-      "epss": {
-        "score": 0.0086,
-        "percentil": 0.559,
-        "data": "2026-11-26"
-      }
-    },
-    {
-      "cve": "CVE-2026-127080",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-127080",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-127080",
-          "publicado": "2026-11-13T10:18:04Z",
-          "visto_em": "2026-11-13T10:39:19Z"
-        }
-      ],
-      "detectado": "2026-11-13T10:39:19Z",
-      "cvss": 9.9,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-13T10:18:04Z",
-      "resumo": "OpsTree BuildPiper before 2.7.0 contains an improper authorization vulnerability that allows authenticated deploy users to define arbitrary Kubernetes hostPath volumes without allow-list or policy checks. Attackers can set the host path to / in the Define…",
-      "nvd_checado_em": "2026-11-13T18:38:57Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-11-13T10:18:04Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-127080",
-      "ultima_atividade": "2026-11-13T10:18:04Z",
-      "exibido_em": "2026-11-13T10:39:19Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-25T20:29:26Z"
-      },
-      "epss": {
-        "score": 0.0051,
-        "percentil": 0.3638,
-        "data": "2026-11-26"
-      }
-    },
-    {
-      "cve": "CVE-2026-127073",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-127073",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-127073",
-          "publicado": "2026-11-13T10:18:03Z",
-          "visto_em": "2026-11-13T10:39:19Z"
-        }
-      ],
-      "detectado": "2026-11-13T10:39:19Z",
-      "cvss": 9.9,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-13T10:18:03Z",
-      "resumo": "OpsTree BuildPiper before 2.7.0 contains a privilege escalation vulnerability that allows project users to gain Kubernetes cluster-admin rights by submitting unrestricted manifests through the Additional Manifest feature. Attackers can deploy a…",
-      "nvd_checado_em": "2026-11-13T18:38:57Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-11-13T10:18:03Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-127073",
-      "ultima_atividade": "2026-11-13T10:18:03Z",
-      "exibido_em": "2026-11-13T10:39:19Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-26T20:12:03Z"
-      },
-      "epss": {
-        "score": 0.0051,
-        "percentil": 0.3638,
-        "data": "2026-11-26"
-      }
-    },
-    {
-      "cve": "CVE-2026-126378",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-126378",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-126378",
-          "publicado": "2026-11-13T10:17:40Z",
-          "visto_em": "2026-11-13T10:39:19Z"
-        }
-      ],
-      "detectado": "2026-11-13T10:39:19Z",
-      "cvss": 9.4,
-      "cvss_versao": "4.0",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-13T10:17:40Z",
-      "resumo": "Vvveb through 1.0.8.6 contains a file upload vulnerability in the theme installer validFile() function that uses strpos() instead of strict path matching. Attackers with admin credentials can upload a ZIP containing a PHP file whose path includes /theme.php…",
-      "nvd_checado_em": "2026-11-15T10:38:35Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-11-13T10:17:40Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-126378",
-      "ultima_atividade": "2026-11-13T10:17:40Z",
-      "exibido_em": "2026-11-13T10:39:19Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-26T20:12:03Z"
-      },
-      "epss": {
-        "score": 0.0082,
-        "percentil": 0.5432,
-        "data": "2026-11-26"
-      }
-    },
-    {
-      "cve": "CVE-2026-126380",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-126380",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-126380",
-          "publicado": "2026-11-13T10:17:40Z",
-          "visto_em": "2026-11-13T10:39:19Z"
-        }
-      ],
-      "detectado": "2026-11-13T10:39:19Z",
-      "cvss": 9.4,
-      "cvss_versao": "4.0",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-13T10:17:40Z",
-      "resumo": "Vvveb before 1.0.9.0 contains a denylist bypass in system/traits/media.php where '.phar' is misconfigured with a leading dot, allowing authenticated administrators to upload .phar PHP files. Attackers can upload a GIF magic-byte polyglot webshell bypassing…",
-      "nvd_checado_em": "2026-11-13T18:38:57Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-11-13T10:17:40Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-126380",
-      "ultima_atividade": "2026-11-13T10:17:40Z",
-      "exibido_em": "2026-11-13T10:39:19Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-26T20:12:03Z"
-      },
-      "epss": {
-        "score": 0.0064,
-        "percentil": 0.454,
-        "data": "2026-11-26"
-      }
-    },
-    {
-      "cve": "CVE-2026-119077",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-119077",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-119077",
-          "publicado": "2026-11-13T10:17:26Z",
-          "visto_em": "2026-11-13T10:39:19Z"
-        }
-      ],
-      "detectado": "2026-11-13T10:39:19Z",
-      "cvss": 9.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-13T10:17:26Z",
-      "resumo": "The ELEX WordPress HelpDesk & Customer Ticketing System plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.3.9 via the 'form (specifically the attacker-controlled ticket_label field inside the url-encoded form…",
-      "nvd_checado_em": "2026-11-13T18:38:57Z",
-      "elegivel_por": [
-        "CVSS ≥ 9"
-      ],
-      "primeira_vez": "2026-11-13T10:17:26Z",
-      "primeira_noticia": null,
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-119077",
-      "ultima_atividade": "2026-11-13T10:17:26Z",
-      "exibido_em": "2026-11-13T10:39:19Z",
-      "prioridade": "P2",
-      "regra": "CVSS ≥ 9 em plataforma corporativa",
-      "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
-      "poc": {
-        "qtd": 2,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-119077.json",
-        "checado": "2026-11-26T20:12:03Z"
-      },
-      "epss": {
-        "score": 0.0134,
-        "percentil": 0.7138,
-        "data": "2026-11-26"
+        "percentil": 0.698,
+        "data": "2026-11-27"
       }
     },
     {
@@ -3446,8 +3339,8 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.102,
-        "percentil": 0.964,
-        "data": "2026-11-26"
+        "percentil": 0.9641,
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 4,
@@ -3520,9 +3413,9 @@
       "regra": "explorado fora das listas",
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
-        "score": 0.2021,
-        "percentil": 0.9801,
-        "data": "2026-11-26"
+        "score": 0.2063,
+        "percentil": 0.9806,
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 2,
@@ -3601,13 +3494,13 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0427,
-        "percentil": 0.9186,
-        "data": "2026-11-26"
+        "percentil": 0.9187,
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2025/CVE-2025-41450.json",
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T19:58:59Z"
       }
     },
     {
@@ -3676,17 +3569,23 @@
       "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
       "epss": {
         "score": 0.0185,
-        "percentil": 0.7957,
-        "data": "2026-11-26"
+        "percentil": 0.7959,
+        "data": "2026-11-27"
       },
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T19:58:59Z"
       }
     }
   ],
   "sem_cve": [
+    {
+      "fonte": "BleepingComputer",
+      "titulo": "Drupal warns of new site takeover flaw exploited in attacks",
+      "link": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
+      "publicado": "2026-11-27T10:10:15Z"
+    },
     {
       "fonte": "BleepingComputer",
       "titulo": "Remus malware steals Gmail messages via fake Google Sheets extension",
@@ -3770,18 +3669,6 @@
       "titulo": "15 Best Patch Management Tools In 2027",
       "link": "https://cybersecuritynews.com/patch-management-tools/",
       "publicado": "2026-11-16T17:40:12Z"
-    },
-    {
-      "fonte": "BleepingComputer",
-      "titulo": "Check Point warns of zero-day flaw exploited for root access",
-      "link": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
-      "publicado": "2026-11-13T10:44:22Z"
-    },
-    {
-      "fonte": "SecurityWeek",
-      "titulo": "Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’",
-      "link": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/",
-      "publicado": "2026-11-13T08:50:36Z"
     }
   ]
 }

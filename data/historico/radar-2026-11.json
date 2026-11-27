@@ -1000,6 +1000,44 @@
     ],
     "prioridade_max": "P2"
   },
+  "CVE-2026-120705": {
+    "cve": "CVE-2026-120705",
+    "produto": "OSGeo GeoServer",
+    "titulo": "OSGeo GeoServer XML Injection Vulnerability",
+    "cvss": null,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-27",
+      "prazo": "2026-11-30",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-25T12:48:54Z",
+    "primeira_noticia": "2026-11-25T12:48:54Z",
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-27T19:58:59Z",
+    "aguardando_nota_desde": "2026-11-25T12:48:54Z",
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
+        "publicado": "2026-11-25T12:48:54Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-120705",
+        "publicado": "2026-11-27"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
   "CVE-2026-121529": {
     "cve": "CVE-2026-121529",
     "produto": "",
@@ -1385,7 +1423,7 @@
     "exibido_em": "2026-11-24T14:37:30Z",
     "aguardando_nota_desde": "2026-11-24T13:28:26Z",
     "nota_chegou_em": "2026-11-26T20:12:03Z",
-    "epss_max": 0.0061,
+    "epss_max": 0.0245,
     "poc_qtd": 2,
     "fontes": [
       {
@@ -1746,6 +1784,44 @@
     ],
     "prioridade_max": "P2"
   },
+  "CVE-2026-129243": {
+    "cve": "CVE-2026-129243",
+    "produto": "OSGeo GeoServer",
+    "titulo": "OSGeo GeoServer Incorrect Authorization Vulnerability",
+    "cvss": null,
+    "prioridade": "P2",
+    "elegivel_por": [
+      "zero-day",
+      "KEV"
+    ],
+    "zero_day": true,
+    "kev": {
+      "adicionado": "2026-11-27",
+      "prazo": "2026-11-30",
+      "ransomware": "Unknown"
+    },
+    "primeira_vez": "2026-11-25T12:48:54Z",
+    "primeira_noticia": "2026-11-25T12:48:54Z",
+    "publicado_nvd": null,
+    "exibido_em": "2026-11-27T19:58:59Z",
+    "aguardando_nota_desde": "2026-11-25T12:48:54Z",
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "The Hacker News",
+        "link": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
+        "publicado": "2026-11-25T12:48:54Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-129243",
+        "publicado": "2026-11-27"
+      }
+    ],
+    "prioridade_max": "P2"
+  },
   "CVE-2026-129444": {
     "cve": "CVE-2026-129444",
     "produto": "",
@@ -1911,10 +1987,11 @@
     "cve": "CVE-2026-132165",
     "produto": "Drupal Core",
     "titulo": "Drupal Core Remote Code Execution Vulnerability",
-    "cvss": null,
-    "prioridade": "P1",
+    "cvss": 9.8,
+    "prioridade": "P0",
     "elegivel_por": [
       "zero-day",
+      "CVSS ≥ 9",
       "KEV"
     ],
     "zero_day": true,
@@ -1928,7 +2005,7 @@
     "publicado_nvd": "2026-11-26T01:17:10Z",
     "exibido_em": "2026-11-24T18:36:51Z",
     "aguardando_nota_desde": "2026-11-24T12:00:00Z",
-    "nota_chegou_em": null,
+    "nota_chegou_em": "2026-11-27T19:58:59Z",
     "epss_max": 0.1105,
     "poc_qtd": 6,
     "fontes": [
@@ -1973,7 +2050,7 @@
         "publicado": "2026-11-26T09:06:38Z"
       }
     ],
-    "prioridade_max": "P1"
+    "prioridade_max": "P0"
   },
   "CVE-2026-132224": {
     "cve": "CVE-2026-132224",
@@ -2336,7 +2413,7 @@
     "exibido_em": "2026-11-26T20:12:03Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0069,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -2524,7 +2601,7 @@
     "exibido_em": "2026-11-26T20:12:03Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0105,
     "poc_qtd": 0,
     "fontes": [
       {
@@ -2537,22 +2614,28 @@
   },
   "CVE-2026-136716": {
     "cve": "CVE-2026-136716",
-    "produto": "",
-    "titulo": "",
-    "cvss": null,
-    "prioridade": "P2",
+    "produto": "Drupal Core",
+    "titulo": "Drupal Core Improper Check for Unusual or Exceptional Conditions Vulnerability",
+    "cvss": 9.8,
+    "prioridade": "P0",
     "elegivel_por": [
-      "zero-day"
+      "zero-day",
+      "CVSS ≥ 9",
+      "KEV"
     ],
     "zero_day": true,
-    "kev": null,
+    "kev": {
+      "adicionado": "2026-11-27",
+      "prazo": "2026-11-30",
+      "ransomware": "Unknown"
+    },
     "primeira_vez": "2026-11-26T01:17:10Z",
     "primeira_noticia": "2026-11-26T07:02:34Z",
     "publicado_nvd": "2026-11-26T01:17:10Z",
     "exibido_em": "2026-11-26T20:12:03Z",
     "aguardando_nota_desde": "2026-11-26T07:02:34Z",
-    "nota_chegou_em": null,
-    "epss_max": 0.0101,
+    "nota_chegou_em": "2026-11-27T19:58:59Z",
+    "epss_max": 0.0121,
     "poc_qtd": 1,
     "fontes": [
       {
@@ -2569,9 +2652,14 @@
         "nome": "Cyber Security News",
         "link": "https://cybersecuritynews.com/drupal-website-takeover-flaw/",
         "publicado": "2026-11-26T09:06:38Z"
+      },
+      {
+        "nome": "CISA KEV",
+        "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-136716",
+        "publicado": "2026-11-27"
       }
     ],
-    "prioridade_max": "P2"
+    "prioridade_max": "P0"
   },
   "CVE-2026-137706": {
     "cve": "CVE-2026-137706",
@@ -2590,7 +2678,7 @@
     "exibido_em": "2026-11-27T03:39:05Z",
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
-    "epss_max": null,
+    "epss_max": 0.0053,
     "poc_qtd": 0,
     "fontes": [
       {
