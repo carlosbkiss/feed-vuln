@@ -1930,7 +1930,7 @@
     "aguardando_nota_desde": "2026-11-24T12:00:00Z",
     "nota_chegou_em": null,
     "epss_max": 0.1105,
-    "poc_qtd": 5,
+    "poc_qtd": 6,
     "fontes": [
       {
         "nome": "CISA KEV",
@@ -2197,7 +2197,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0563,
-    "poc_qtd": 1,
+    "poc_qtd": 2,
     "fontes": [
       {
         "nome": "NVD",
@@ -2497,7 +2497,7 @@
     "aguardando_nota_desde": null,
     "nota_chegou_em": null,
     "epss_max": 0.0234,
-    "poc_qtd": 0,
+    "poc_qtd": 1,
     "fontes": [
       {
         "nome": "NVD",
@@ -2572,6 +2572,34 @@
       }
     ],
     "prioridade_max": "P2"
+  },
+  "CVE-2026-137706": {
+    "cve": "CVE-2026-137706",
+    "produto": "",
+    "titulo": "",
+    "cvss": 9.9,
+    "prioridade": "P1",
+    "elegivel_por": [
+      "CVSS ≥ 9"
+    ],
+    "zero_day": false,
+    "kev": null,
+    "primeira_vez": "2026-11-27T03:17:04Z",
+    "primeira_noticia": null,
+    "publicado_nvd": "2026-11-27T03:17:04Z",
+    "exibido_em": "2026-11-27T03:39:05Z",
+    "aguardando_nota_desde": null,
+    "nota_chegou_em": null,
+    "epss_max": null,
+    "poc_qtd": 0,
+    "fontes": [
+      {
+        "nome": "NVD",
+        "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-137706",
+        "publicado": "2026-11-27T03:17:04Z"
+      }
+    ],
+    "prioridade_max": "P1"
   },
   "CVE-2026-14492": {
     "cve": "CVE-2026-14492",

@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-26T20:12:03Z",
+  "atualizado": "2026-11-27T03:39:05Z",
   "itens": [
     {
       "cve": "CVE-2026-123903",
@@ -49,7 +49,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123903.json",
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -112,7 +112,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-134401.json",
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       }
     },
     {
@@ -188,7 +188,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-133469.json",
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       }
     },
     {
@@ -417,9 +417,9 @@
       "nvd_checado_em": "2026-11-26T03:36:00Z",
       "escalado": true,
       "poc": {
-        "qtd": 1,
+        "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-133323.json",
-        "checado": "2026-11-26T03:36:00Z"
+        "checado": "2026-11-27T03:39:05Z"
       }
     },
     {
@@ -496,7 +496,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-26T03:36:00Z"
+        "checado": "2026-11-27T03:39:05Z"
       }
     },
     {
@@ -579,7 +579,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-26T03:36:00Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "escalado": true
     },
@@ -679,7 +679,7 @@
       "poc": {
         "qtd": 8,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123890.json",
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "kev": {
         "adicionado": "2026-11-20",
@@ -794,7 +794,7 @@
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-131914.json",
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "cvss": 9.3,
       "cvss_versao": "4.0",
@@ -897,7 +897,7 @@
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-129448.json",
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "kev": {
         "adicionado": "2026-11-20",
@@ -997,7 +997,7 @@
       "poc": {
         "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123039.json",
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       }
     },
     {
@@ -1091,7 +1091,7 @@
       "poc": {
         "qtd": 5,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-90436.json",
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       }
     },
     {
@@ -1170,7 +1170,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-115731.json",
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "cvss": 9.4,
       "cvss_versao": "4.0",
@@ -1258,9 +1258,9 @@
         "data": "2026-11-26"
       },
       "poc": {
-        "qtd": 1,
+        "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-103406.json",
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       }
     },
     {
@@ -1370,7 +1370,7 @@
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-76466.json",
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       }
     },
     {
@@ -1441,7 +1441,7 @@
       "poc": {
         "qtd": 7,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-90817.json",
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -1518,7 +1518,7 @@
       "poc": {
         "qtd": 3,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2024/CVE-2024-10441.json",
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "cvss": 9.8,
       "cvss_versao": "3.1",
@@ -1601,7 +1601,43 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-26T03:36:00Z"
+        "checado": "2026-11-27T03:39:05Z"
+      }
+    },
+    {
+      "cve": "CVE-2026-137706",
+      "fontes": [
+        {
+          "id": "nvd",
+          "nome": "NVD",
+          "titulo": "CVE-2026-137706",
+          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-137706",
+          "publicado": "2026-11-27T03:17:04Z",
+          "visto_em": "2026-11-27T03:39:05Z"
+        }
+      ],
+      "detectado": "2026-11-27T03:39:05Z",
+      "cvss": 9.9,
+      "cvss_versao": "3.1",
+      "cvss_fonte": "CNA",
+      "publicado_nvd": "2026-11-27T03:17:04Z",
+      "resumo": "Smart Portal developed by Direk Tech has a Missing Authorization vulnerability. Authenticated remote attackers can add a specified account to the Active Directory Domain Admins group, thereby obtaining domain administrator privileges.",
+      "nvd_checado_em": "2026-11-27T03:39:05Z",
+      "elegivel_por": [
+        "CVSS ≥ 9"
+      ],
+      "primeira_vez": "2026-11-27T03:17:04Z",
+      "primeira_noticia": null,
+      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-137706",
+      "ultima_atividade": "2026-11-27T03:17:04Z",
+      "exibido_em": "2026-11-27T03:39:05Z",
+      "prioridade": "P1",
+      "regra": "CVSS ≥ 9 em borda/acesso",
+      "tratamento": "Crítico em borda, acesso ou CI/CD, sem exploração confirmada: checar exposição; exposto à internet vira P0.",
+      "poc": {
+        "qtd": 0,
+        "link": null,
+        "checado": "2026-11-27T03:39:05Z"
       }
     },
     {
@@ -1681,7 +1717,7 @@
       "produto": "Drupal Core",
       "titulo": "Drupal Core Remote Code Execution Vulnerability",
       "resumo": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to…",
-      "nvd_checado_em": "2026-11-26T20:12:03Z",
+      "nvd_checado_em": "2026-11-27T03:39:05Z",
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
       "elegivel_por": [
@@ -1697,9 +1733,9 @@
       "regra": "explorado em plataforma corporativa",
       "tratamento": "Explorado em plataforma corporativa: confirmar inventário e corrigir em até 72h.",
       "poc": {
-        "qtd": 5,
+        "qtd": 6,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-132165.json",
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "aguardando_nota_desde": "2026-11-24T12:00:00Z",
       "cvss": null,
@@ -1745,7 +1781,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "epss": {
         "score": 0.0048,
@@ -1786,7 +1822,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "epss": {
         "score": 0.004,
@@ -1827,7 +1863,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "epss": {
         "score": 0.0043,
@@ -1868,7 +1904,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "epss": {
         "score": 0.0032,
@@ -1909,7 +1945,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "epss": {
         "score": 0.0043,
@@ -1950,7 +1986,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "epss": {
         "score": 0.0048,
@@ -2025,7 +2061,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2025/CVE-2025-42884.json",
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "cvss": 6.5,
       "cvss_versao": "3.1",
@@ -2051,7 +2087,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-26T15:17:26Z",
       "resumo": "The PDF Invoice for WooCommerce + Drag and Drop Template Builder plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 7.2.0 via deserialization of untrusted input . This makes it possible for unauthenticated…",
-      "nvd_checado_em": "2026-11-26T20:12:03Z",
+      "nvd_checado_em": "2026-11-27T03:39:05Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2087,7 +2123,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-26T15:17:25Z",
       "resumo": "The Simple Membership plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 4.8.9 This is due to the site-wide signing secret `swpm_private_key_one` being generated at install time with PHP's non-cryptographic…",
-      "nvd_checado_em": "2026-11-26T20:12:03Z",
+      "nvd_checado_em": "2026-11-27T03:39:05Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2141,7 +2177,7 @@
       "cvss_fonte": "",
       "publicado_nvd": "2026-11-26T01:17:10Z",
       "resumo": "Improper Check for Unusual or Exceptional Conditions vulnerability in Drupal Drupal core allows Forceful Browsing. This issue affects Drupal core versions: from 0.0.0 to 10.6.23, from 11.0.0 to 11.3.23, from 11.4.0 to 11.4.14.",
-      "nvd_checado_em": "2026-11-26T20:12:03Z",
+      "nvd_checado_em": "2026-11-27T03:39:05Z",
       "aguardando_nota_desde": "2026-11-26T07:02:34Z",
       "elegivel_por": [
         "zero-day"
@@ -2183,7 +2219,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-24T19:18:14Z",
       "resumo": "A vulnerability was identified in Volans NGFW Next-Generation Firewall r5.1. Impacted is the function exec of the file sslvpn/sslvpn_client.php of the component SSLVPN Client. Such manipulation of the argument img leads to os command injection. The attack…",
-      "nvd_checado_em": "2026-11-26T20:12:03Z",
+      "nvd_checado_em": "2026-11-27T03:39:05Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2196,9 +2232,9 @@
       "regra": "CVSS ≥ 9 em plataforma corporativa",
       "tratamento": "Crítico em plataforma corporativa, sem exploração: confirmar no inventário e corrigir no ciclo normal.",
       "poc": {
-        "qtd": 0,
-        "link": null,
-        "checado": "2026-11-26T03:36:00Z"
+        "qtd": 1,
+        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-135797.json",
+        "checado": "2026-11-27T03:39:05Z"
       },
       "epss": {
         "score": 0.0234,
@@ -2239,7 +2275,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "epss": {
         "score": 0.0094,
@@ -2288,7 +2324,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-26T03:36:00Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "epss": {
         "score": 0.0134,
@@ -2370,7 +2406,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-120539.json",
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "epss": {
         "score": 0.0139,
@@ -2411,7 +2447,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "epss": {
         "score": 0.0085,
@@ -2452,7 +2488,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "epss": {
         "score": 0.005,
@@ -2532,7 +2568,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-26T03:36:00Z"
+        "checado": "2026-11-27T03:39:05Z"
       }
     },
     {
@@ -2607,7 +2643,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-26T03:36:00Z"
+        "checado": "2026-11-27T03:39:05Z"
       }
     },
     {
@@ -2643,7 +2679,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-14492.json",
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "epss": {
         "score": 0.0177,
@@ -2723,7 +2759,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       }
     },
     {
@@ -2759,7 +2795,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "epss": {
         "score": 0.0035,
@@ -2800,7 +2836,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "epss": {
         "score": 0.0034,
@@ -2841,7 +2877,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "epss": {
         "score": 0.0051,
@@ -2882,7 +2918,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-25T20:29:26Z"
+        "checado": "2026-11-27T03:39:05Z"
       },
       "epss": {
         "score": 0.0042,
