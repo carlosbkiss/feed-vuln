@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-27T19:58:59Z",
+  "atualizado": "2026-11-28T03:19:44Z",
   "itens": [
     {
       "cve": "CVE-2026-136716",
@@ -35,6 +35,14 @@
           "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-136716",
           "publicado": "2026-11-27",
           "visto_em": "2026-11-27T19:58:59Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-27T12:00:00Z",
+          "visto_em": "2026-11-28T03:19:44Z"
         }
       ],
       "detectado": "2026-11-26T20:12:03Z",
@@ -55,7 +63,7 @@
       "primeira_vez": "2026-11-26T01:17:10Z",
       "primeira_noticia": "2026-11-26T07:02:34Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-136716",
-      "ultima_atividade": "2026-11-27T00:00:00Z",
+      "ultima_atividade": "2026-11-27T12:00:00Z",
       "exibido_em": "2026-11-26T20:12:03Z",
       "prioridade": "P0",
       "regra": "explorado + borda/acesso ou CVSS ≥ 9",
@@ -68,7 +76,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-136716.json",
-        "checado": "2026-11-26T20:12:03Z"
+        "checado": "2026-11-28T03:19:44Z"
       },
       "kev": {
         "adicionado": "2026-11-27",
@@ -271,7 +279,7 @@
       "produto": "Drupal Core",
       "titulo": "Drupal Core Remote Code Execution Vulnerability",
       "resumo": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to…",
-      "nvd_checado_em": "2026-11-27T19:58:59Z",
+      "nvd_checado_em": "2026-11-28T03:19:44Z",
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
       "elegivel_por": [
@@ -464,7 +472,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-134624.json",
-        "checado": "2026-11-26T20:12:03Z"
+        "checado": "2026-11-28T03:19:44Z"
       }
     },
     {
@@ -532,7 +540,7 @@
       "poc": {
         "qtd": 4,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-133968.json",
-        "checado": "2026-11-26T20:12:03Z"
+        "checado": "2026-11-28T03:19:44Z"
       }
     },
     {
@@ -1104,91 +1112,6 @@
       "nvd_checado_em": "2026-11-20T18:39:04Z",
       "nota_chegou_em": "2026-11-20T18:39:04Z",
       "escalado": true
-    },
-    {
-      "cve": "CVE-2026-123039",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-123039",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039",
-          "publicado": "2026-11-12T14:17:24Z",
-          "visto_em": "2026-11-13T18:32:35Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-123039",
-          "publicado": "2026-11-13",
-          "visto_em": "2026-11-13T18:32:35Z"
-        },
-        {
-          "id": "securityweek",
-          "nome": "SecurityWeek",
-          "titulo": "PHP2Shell Exploited in Destructive Check Point Gateway Attacks",
-          "link": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/",
-          "publicado": "2026-11-13T07:39:04Z",
-          "visto_em": "2026-11-13T10:39:19Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-11-13T12:00:00Z",
-          "visto_em": "2026-11-14T00:21:02Z"
-        },
-        {
-          "id": "csn",
-          "nome": "Cyber Security News",
-          "titulo": "CISA Warns of Check Point 0-Day Vulnerability Exploited to Gain Root Access",
-          "link": "https://cybersecuritynews.com/check-point-0-day-vulnerability/",
-          "publicado": "2026-11-14T03:47:33Z",
-          "visto_em": "2026-11-14T10:39:52Z"
-        }
-      ],
-      "detectado": "2026-11-13T10:39:19Z",
-      "aguardando_nota_desde": "2026-11-13T07:39:04Z",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-12T14:17:24Z",
-      "primeira_noticia": "2026-11-13T07:39:04Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039",
-      "ultima_atividade": "2026-11-14T03:47:33Z",
-      "kev": {
-        "adicionado": "2026-11-13",
-        "prazo": "2026-11-16",
-        "ransomware": "Unknown"
-      },
-      "produto": "Check Point Multiple Products",
-      "titulo": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
-      "resumo": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as…",
-      "cvss": 7.8,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-12T14:17:24Z",
-      "nvd_checado_em": "2026-11-13T18:32:35Z",
-      "nota_chegou_em": "2026-11-13T18:32:35Z",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "exibido_em": "2026-11-13T18:32:35Z",
-      "prioridade": "P0",
-      "regra": "explorado + borda/acesso ou CVSS ≥ 9",
-      "tratamento": "Explorado em borda, acesso, identidade ou CI/CD: corrigir em até 24h e caçar IOCs retroativos.",
-      "epss": {
-        "score": 0.0023,
-        "percentil": 0.0843,
-        "data": "2026-11-27"
-      },
-      "poc": {
-        "qtd": 3,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-123039.json",
-        "checado": "2026-11-27T03:39:05Z"
-      }
     },
     {
       "cve": "CVE-2026-90436",
@@ -1812,7 +1735,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-27T03:17:04Z",
       "resumo": "Smart Portal developed by Direk Tech has a Missing Authorization vulnerability. Authenticated remote attackers can add a specified account to the Active Directory Domain Admins group, thereby obtaining domain administrator privileges.",
-      "nvd_checado_em": "2026-11-27T19:58:59Z",
+      "nvd_checado_em": "2026-11-28T03:19:44Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2174,7 +2097,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-26T15:17:26Z",
       "resumo": "The PDF Invoice for WooCommerce + Drag and Drop Template Builder plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 7.2.0 via deserialization of untrusted input . This makes it possible for unauthenticated…",
-      "nvd_checado_em": "2026-11-27T19:58:59Z",
+      "nvd_checado_em": "2026-11-28T03:19:44Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2189,7 +2112,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-26T20:12:03Z"
+        "checado": "2026-11-28T03:19:44Z"
       },
       "epss": {
         "score": 0.0105,
@@ -2215,7 +2138,7 @@
       "cvss_fonte": "CNA",
       "publicado_nvd": "2026-11-26T15:17:25Z",
       "resumo": "The Simple Membership plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 4.8.9 This is due to the site-wide signing secret `swpm_private_key_one` being generated at install time with PHP's non-cryptographic…",
-      "nvd_checado_em": "2026-11-27T19:58:59Z",
+      "nvd_checado_em": "2026-11-28T03:19:44Z",
       "elegivel_por": [
         "CVSS ≥ 9"
       ],
@@ -2230,7 +2153,7 @@
       "poc": {
         "qtd": 0,
         "link": null,
-        "checado": "2026-11-26T20:12:03Z"
+        "checado": "2026-11-28T03:19:44Z"
       },
       "epss": {
         "score": 0.0069,
@@ -2256,6 +2179,14 @@
           "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-120705",
           "publicado": "2026-11-27",
           "visto_em": "2026-11-27T19:58:59Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-27T12:00:00Z",
+          "visto_em": "2026-11-28T03:19:44Z"
         }
       ],
       "detectado": "2026-11-25T20:29:26Z",
@@ -2267,7 +2198,7 @@
       "primeira_vez": "2026-11-25T12:48:54Z",
       "primeira_noticia": "2026-11-25T12:48:54Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-120705",
-      "ultima_atividade": "2026-11-27T00:00:00Z",
+      "ultima_atividade": "2026-11-27T12:00:00Z",
       "kev": {
         "adicionado": "2026-11-27",
         "prazo": "2026-11-30",
@@ -2276,7 +2207,7 @@
       "produto": "OSGeo GeoServer",
       "titulo": "OSGeo GeoServer XML Injection Vulnerability",
       "resumo": "OsGeo GeoServer contains an XML injection vulnerability that allows an unauthenticated remote attacker to cause the server to read local text files accessible to the GeoServer process or fetch attacker-specified HTTP or HTTPS URLs via a crafted ID parameter…",
-      "nvd_checado_em": "2026-11-27T19:58:59Z",
+      "nvd_checado_em": "2026-11-28T03:19:44Z",
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
       "exibido_em": "2026-11-27T19:58:59Z",
@@ -2307,6 +2238,14 @@
           "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-129243",
           "publicado": "2026-11-27",
           "visto_em": "2026-11-27T19:58:59Z"
+        },
+        {
+          "id": "cisa-adv",
+          "nome": "CISA Advisories",
+          "titulo": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+          "link": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+          "publicado": "2026-11-27T12:00:00Z",
+          "visto_em": "2026-11-28T03:19:44Z"
         }
       ],
       "detectado": "2026-11-25T20:29:26Z",
@@ -2318,7 +2257,7 @@
       "primeira_vez": "2026-11-25T12:48:54Z",
       "primeira_noticia": "2026-11-25T12:48:54Z",
       "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-129243",
-      "ultima_atividade": "2026-11-27T00:00:00Z",
+      "ultima_atividade": "2026-11-27T12:00:00Z",
       "kev": {
         "adicionado": "2026-11-27",
         "prazo": "2026-11-30",
@@ -2327,7 +2266,7 @@
       "produto": "OSGeo GeoServer",
       "titulo": "OSGeo GeoServer Incorrect Authorization Vulnerability",
       "resumo": "GeoServer contains an incorrect authorization vulnerability that allows an unauthenticated remote attacker to bypass service-level role checks and invoke operations protected solely by those checks via a request with a prefixed service parameter. This…",
-      "nvd_checado_em": "2026-11-27T19:58:59Z",
+      "nvd_checado_em": "2026-11-28T03:19:44Z",
       "zero_day": true,
       "zero_day_motivo": "CISA KEV",
       "exibido_em": "2026-11-27T19:58:59Z",
@@ -2504,7 +2443,7 @@
       "poc": {
         "qtd": 1,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-70193.json",
-        "checado": "2026-11-26T20:12:03Z"
+        "checado": "2026-11-28T03:19:44Z"
       },
       "epss": {
         "score": 0.0157,
@@ -3271,89 +3210,6 @@
       }
     },
     {
-      "cve": "CVE-2026-114713",
-      "fontes": [
-        {
-          "id": "nvd",
-          "nome": "NVD",
-          "titulo": "CVE-2026-114713",
-          "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
-          "publicado": "2026-11-08T03:16:33Z",
-          "visto_em": "2026-11-13T18:38:57Z"
-        },
-        {
-          "id": "kev",
-          "nome": "CISA KEV",
-          "titulo": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
-          "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-114713",
-          "publicado": "2026-11-13",
-          "visto_em": "2026-11-13T18:32:35Z"
-        },
-        {
-          "id": "cisa-adv",
-          "nome": "CISA Advisories",
-          "titulo": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-          "link": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-          "publicado": "2026-11-13T12:00:00Z",
-          "visto_em": "2026-11-14T00:21:02Z"
-        },
-        {
-          "id": "thn",
-          "nome": "The Hacker News",
-          "titulo": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
-          "link": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
-          "publicado": "2026-11-14T12:38:35Z",
-          "visto_em": "2026-11-15T10:38:35Z"
-        },
-        {
-          "id": "securityweek",
-          "nome": "SecurityWeek",
-          "titulo": "Recent UnrealIRCd Vulnerability Exploited in Attacks",
-          "link": "https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks/",
-          "publicado": "2026-11-16T11:15:48Z",
-          "visto_em": "2026-11-16T14:39:01Z"
-        }
-      ],
-      "detectado": "2026-11-13T18:32:35Z",
-      "kev": {
-        "adicionado": "2026-11-13",
-        "prazo": "2026-11-16",
-        "ransomware": "Unknown"
-      },
-      "produto": "UnrealIRCd UnrealIRCd",
-      "titulo": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
-      "resumo": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.",
-      "zero_day": true,
-      "zero_day_motivo": "CISA KEV",
-      "elegivel_por": [
-        "zero-day",
-        "KEV"
-      ],
-      "primeira_vez": "2026-11-08T03:16:33Z",
-      "primeira_noticia": "2026-11-13T12:00:00Z",
-      "link_nvd": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
-      "ultima_atividade": "2026-11-16T11:15:48Z",
-      "exibido_em": "2026-11-13T18:32:35Z",
-      "prioridade": "P2",
-      "regra": "explorado fora das listas",
-      "tratamento": "Explorado, mas fora do parque típico de banco: se aparecer no inventário, é shadow IT; remover ou corrigir.",
-      "epss": {
-        "score": 0.102,
-        "percentil": 0.9641,
-        "data": "2026-11-27"
-      },
-      "poc": {
-        "qtd": 4,
-        "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-114713.json",
-        "checado": "2026-11-26T20:12:03Z"
-      },
-      "cvss": 8.6,
-      "cvss_versao": "3.1",
-      "cvss_fonte": "CNA",
-      "publicado_nvd": "2026-11-08T03:16:33Z",
-      "nvd_checado_em": "2026-11-13T18:38:57Z"
-    },
-    {
       "cve": "CVE-2026-40217",
       "fontes": [
         {
@@ -3420,7 +3276,7 @@
       "poc": {
         "qtd": 2,
         "link": "https://github.com/nomi-sec/PoC-in-GitHub/blob/master/2026/CVE-2026-40217.json",
-        "checado": "2026-11-26T20:12:03Z"
+        "checado": "2026-11-28T03:19:44Z"
       },
       "cvss": 8.8,
       "cvss_versao": "3.1",

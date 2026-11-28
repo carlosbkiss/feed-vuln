@@ -1034,6 +1034,11 @@
         "nome": "CISA KEV",
         "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-120705",
         "publicado": "2026-11-27"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-27T12:00:00Z"
       }
     ],
     "prioridade_max": "P2"
@@ -1818,6 +1823,11 @@
         "nome": "CISA KEV",
         "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-129243",
         "publicado": "2026-11-27"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-27T12:00:00Z"
       }
     ],
     "prioridade_max": "P2"
@@ -2657,6 +2667,11 @@
         "nome": "CISA KEV",
         "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-136716",
         "publicado": "2026-11-27"
+      },
+      {
+        "nome": "CISA Advisories",
+        "link": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+        "publicado": "2026-11-27T12:00:00Z"
       }
     ],
     "prioridade_max": "P0"
